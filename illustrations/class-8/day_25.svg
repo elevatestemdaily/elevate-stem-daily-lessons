@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does rainwater become groundwater?</text>
+<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 25</text>
+<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
+<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
+<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
+<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
+<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
+<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
+<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
+<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
+<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
+<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
+<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
+<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
+<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
+<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
+<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
+<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
+<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
+<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
+<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
+<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
+<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+</svg>
