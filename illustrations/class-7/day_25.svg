@@ -1,26 +1,159 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="riseArr25" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#0369a1"/>
+  </marker>
+  <marker id="rainArr25" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#1d4ed8"/>
+  </marker>
+</defs>
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do clouds form?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 25</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">How do clouds form?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rising air cools → dew point → condenses on dust → cloud droplets — Day 25</text>
+
+<!-- Vertical divider between main panel and right column -->
+<line x1="650" y1="68" x2="650" y2="495" stroke="#ccc" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+<!-- MAIN PANEL: Vertical cross-section (x=20-640) -->
+
+<!-- Zone 1: Upper sky / cloud zone (y=68-185) -->
+<rect x="20" y="68" width="620" height="117" rx="0" fill="#dbeafe"/>
+
+<!-- Cloud (cumulus) -->
+<ellipse cx="220" cy="105" rx="70" ry="32" fill="white" stroke="#93c5fd" stroke-width="2"/>
+<ellipse cx="170" cy="115" rx="45" ry="28" fill="white" stroke="#93c5fd" stroke-width="2"/>
+<ellipse cx="275" cy="113" rx="52" ry="30" fill="white" stroke="#93c5fd" stroke-width="2"/>
+<!-- Cloud droplets label -->
+<text x="220" y="105" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1e40af">Cloud droplets</text>
+<text x="220" y="118" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">(10–20 µm)</text>
+
+<!-- Rain from cloud -->
+<line x1="185" y1="143" x2="178" y2="175" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#rainArr25)"/>
+<line x1="200" y1="144" x2="193" y2="176" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#rainArr25)"/>
+<line x1="215" y1="144" x2="208" y2="176" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#rainArr25)"/>
+<line x1="230" y1="144" x2="223" y2="176" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#rainArr25)"/>
+<text x="260" y="165" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">rain falls</text>
+<text x="260" y="176" font-family="Arial" font-size="14" fill="#1d4ed8">when droplets</text>
+<text x="260" y="187" font-family="Arial" font-size="14" fill="#1d4ed8">coalesce to 100µm</text>
+
+<!-- Temperature label upper zone -->
+<text x="430" y="90" font-family="Arial" font-size="14" fill="#1e40af" font-weight="700">Altitude ~1,000 m:</text>
+<text x="430" y="103" font-family="Arial" font-size="14" fill="#1e40af">Temp ≈ dew point</text>
+<text x="430" y="116" font-family="Arial" font-size="14" fill="#1e40af">Water vapour condenses</text>
+<text x="430" y="129" font-family="Arial" font-size="14" fill="#1e40af">→ visible cloud forms</text>
+<text x="430" y="142" font-family="Arial" font-size="14" fill="#555">Flat cloud base = dew point altitude</text>
+
+<!-- Zone 2: DEW POINT LINE (sharp flat bottom) -->
+<rect x="20" y="185" width="620" height="16" rx="0" fill="#1f5f8b" opacity="0.7"/>
+<text x="330" y="197" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">DEW POINT ALTITUDE — condensation begins here (flat cloud base)</text>
+
+<!-- Zone 3: Saturated air rising (y=201-310) -->
+<rect x="20" y="201" width="620" height="109" rx="0" fill="#e0f2fe"/>
+
+<!-- Adiabatic cooling label -->
+<text x="340" y="222" text-anchor="middle" font-family="Arial" font-size="14" fill="#0369a1" font-weight="700">Adiabatic cooling: −10°C per 1,000 m rise</text>
+<text x="340" y="236" text-anchor="middle" font-family="Arial" font-size="14" fill="#0369a1">Air expands as pressure drops → temperature falls</text>
+<!-- Temp annotations -->
+<text x="520" y="258" font-family="Arial" font-size="14" fill="#0369a1" font-weight="700">Temp: ~30°C</text>
+<text x="520" y="272" font-family="Arial" font-size="14" fill="#0369a1">(rising, cooling)</text>
+<text x="520" y="290" font-family="Arial" font-size="14" fill="#0369a1">Humidity: 100%</text>
+<text x="520" y="304" font-family="Arial" font-size="14" fill="#555">(saturated)</text>
+
+<!-- Rising moist air arrows -->
+<line x1="80" y1="298" x2="80" y2="212" stroke="#0369a1" stroke-width="2" marker-end="url(#riseArr25)"/>
+<line x1="130" y1="300" x2="130" y2="214" stroke="#0369a1" stroke-width="2" marker-end="url(#riseArr25)"/>
+<line x1="175" y1="300" x2="175" y2="214" stroke="#0369a1" stroke-width="2" marker-end="url(#riseArr25)"/>
+<line x1="220" y1="298" x2="220" y2="212" stroke="#0369a1" stroke-width="2" marker-end="url(#riseArr25)"/>
+
+<!-- Zone 4: Ground + hot air (y=310-413) -->
+<rect x="20" y="310" width="620" height="103" rx="0" fill="#fef9c3"/>
+
+<!-- Sun heating ground -->
+<circle cx="55" cy="335" r="22" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+<text x="55" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">SUN</text>
+<!-- Heat arrows from ground -->
+<line x1="150" y1="310" x2="150" y2="245" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#riseArr25)"/>
+<line x1="200" y1="310" x2="200" y2="248" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#riseArr25)"/>
+<line x1="250" y1="310" x2="250" y2="248" stroke="#f97316" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#riseArr25)"/>
+<!-- Warm air explanation -->
+<text x="340" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e" font-weight="700">Warm moist air rises</text>
+<text x="340" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sun heats ground → ground heats air</text>
+<text x="340" y="372" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Warm air less dense → rises (convection)</text>
+<text x="340" y="388" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Temp: ~34°C. Humidity: 70% (unsaturated)</text>
+<text x="340" y="404" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Holds water vapour: invisible gas</text>
+
+<!-- Ground line -->
+<rect x="20" y="413" width="620" height="18" rx="0" fill="#92400e"/>
+<text x="330" y="426" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">GROUND</text>
+
+<!-- Altitude scale (left side) -->
+<line x1="25" y1="413" x2="25" y2="68" stroke="#555" stroke-width="1.5"/>
+<!-- Tick marks -->
+<line x1="21" y1="413" x2="29" y2="413" stroke="#555" stroke-width="1.5"/>
+<text x="36" y="416" font-family="Arial" font-size="14" fill="#555">0 m</text>
+<line x1="21" y1="310" x2="29" y2="310" stroke="#555" stroke-width="1.5"/>
+<text x="32" y="313" font-family="Arial" font-size="14" fill="#555">~500m</text>
+<line x1="21" y1="185" x2="29" y2="185" stroke="#555" stroke-width="1.5"/>
+<text x="32" y="188" font-family="Arial" font-size="14" fill="#555">~1000m</text>
+<line x1="21" y1="68" x2="29" y2="68" stroke="#555" stroke-width="1.5"/>
+<text x="32" y="71" font-family="Arial" font-size="14" fill="#555">~1500m</text>
+<text x="22" y="245" font-family="Arial" font-size="14" fill="#555" transform="rotate(-90, 22, 245)">ALTITUDE</text>
+
+<!-- RIGHT COLUMN: Condensation nucleus zoom + cloud types (x=660-978) -->
+<rect x="660" y="68" width="318" height="180" rx="6" fill="#f0f7ff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="819" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Condensation Nucleus (zoom)</text>
+
+<!-- Dust particle centre -->
+<circle cx="760" cy="162" r="18" fill="#d97706" stroke="#92400e" stroke-width="2"/>
+<text x="760" y="166" text-anchor="middle" font-family="Arial" font-size="14" fill="white">dust</text>
+
+<!-- Water molecules condensing on it -->
+<circle cx="740" cy="145" r="8" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="740" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">H₂O</text>
+<circle cx="780" cy="145" r="8" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="780" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">H₂O</text>
+<circle cx="738" cy="178" r="8" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="738" y="181" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">H₂O</text>
+<circle cx="782" cy="178" r="8" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="782" y="181" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">H₂O</text>
+<circle cx="760" cy="135" r="8" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="760" y="138" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">H₂O</text>
+<circle cx="760" cy="190" r="8" fill="#93c5fd" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="760" y="193" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">H₂O</text>
+
+<text x="820" y="128" font-family="Arial" font-size="14" fill="#333" font-weight="700">Nuclei types:</text>
+<text x="820" y="143" font-family="Arial" font-size="14" fill="#333">• Dust, sea salt</text>
+<text x="820" y="157" font-family="Arial" font-size="14" fill="#333">• Pollen, spores</text>
+<text x="820" y="171" font-family="Arial" font-size="14" fill="#333">• Soot, smoke</text>
+<text x="820" y="185" font-family="Arial" font-size="14" fill="#333">• Even bacteria!</text>
+<text x="820" y="200" font-family="Arial" font-size="14" fill="#555">(10–20 nm size)</text>
+<text x="820" y="215" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">Need nuclei → droplet</text>
+<text x="820" y="227" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">can form. No nuclei →</text>
+<text x="820" y="239" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">supersaturated air only.</text>
+
+<!-- Cloud types box -->
+<rect x="660" y="258" width="318" height="175" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="819" y="278" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Cloud Types</text>
+<text x="675" y="296" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">Cumulus</text>
+<text x="675" y="309" font-family="Arial" font-size="14" fill="#333">Puffy, flat base. Fair weather.</text>
+<text x="675" y="323" font-family="Arial" font-size="14" fill="#7c3aed" font-weight="700">Cumulonimbus</text>
+<text x="675" y="336" font-family="Arial" font-size="14" fill="#333">Towering. Thunder, heavy rain.</text>
+<text x="675" y="350" font-family="Arial" font-size="14" fill="#555" font-weight="700">Stratus</text>
+<text x="675" y="363" font-family="Arial" font-size="14" fill="#333">Flat layers. Drizzle, fog.</text>
+<text x="675" y="377" font-family="Arial" font-size="14" fill="#9ca3af" font-weight="700">Cirrus</text>
+<text x="675" y="390" font-family="Arial" font-size="14" fill="#333">Wispy. High altitude. Ice crystals.</text>
+<text x="675" y="407" font-family="Arial" font-size="14" fill="#555" font-weight="700">Fog</text>
+<text x="675" y="420" font-family="Arial" font-size="14" fill="#333">= cloud at ground level (dew point</text>
+<text x="675" y="432" font-family="Arial" font-size="14" fill="#333">at surface). Common on cold mornings.</text>
+
+<!-- Challenge: cloud base calculation -->
+<rect x="20" y="440" width="620" height="52" rx="5" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="330" y="459" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Cloud base calculation: Surface 34°C, Dew point 24°C</text>
+<text x="330" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Temperature must drop by 10°C @ rate of 10°C/1,000 m → cloud base at 1,000 m</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Warm moist air rises and cools 10°C per 1,000 m. At dew point, vapour condenses on dust → cloud droplets form.</text>
 </svg>

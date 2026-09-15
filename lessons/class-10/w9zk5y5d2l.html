@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 20 — What causes genetic diseases? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 20</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>What causes genetic diseases?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to define mutation and explain how it disrupts protein function, distinguish between dominant and recessive inheritance with named examples, and use a Punnett square to calculate the 25% risk when two carriers of a recessive disease have children.</p>
+</div><h2>1. The mystery</h2>
+<p>A baby is born with thick, sticky mucus clogging the lungs and digestive tract — cystic fibrosis. Both parents are completely healthy. A child in a tribal community in Odisha develops sickle-shaped red blood cells that block capillaries and cause episodes of agonising pain — sickle cell anaemia. A person in their 40s begins losing control of their movements and eventually their mind — Huntington's disease — even though their parent who had the disease managed to hide the symptoms until they were in their 50s. None of these people chose their condition, none caught it from another person, none developed it because of what they ate. The cause was written into their DNA at the moment of fertilisation. How does a change in a single gene — sometimes a change in just one DNA base out of three billion — produce such devastating consequences?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Mutations: errors in the genetic code</strong></p>
+<p>A <strong>mutation</strong> is a permanent change in the DNA base sequence. Mutations can arise spontaneously during DNA replication (when the copying machinery makes an error) or be triggered by mutagens — UV radiation, certain chemicals, X-rays. The main types are:</p>
+<ul>
+<li><strong>Point mutation (substitution)</strong>: One base is replaced by another. In sickle cell anaemia, a single adenine (A) is replaced by thymine (T) in the gene encoding the beta chain of haemoglobin. This changes one amino acid: glutamic acid → valine. The altered haemoglobin (HbS) polymerises when oxygen is low, distorting red blood cells into a rigid sickle shape that blocks blood vessels and is destroyed rapidly, causing anaemia.</li>
+<li><strong>Insertion or deletion</strong>: One or more bases are added or removed. This causes a <strong>frameshift mutation</strong> — the reading frame of all codons downstream of the change is shifted, usually producing a completely non-functional protein. Frameshift mutations in the <strong>CFTR gene</strong> (cystic fibrosis transmembrane conductance regulator) — particularly the deletion of three bases coding for phenylalanine at position 508 (ΔF508) — account for about 70% of cystic fibrosis cases worldwide. CFTR normally forms a chloride ion channel in epithelial cells; without it, cells cannot move chloride out, water does not follow, and mucus becomes abnormally thick.</li>
+</ul>
+<p><strong>Alleles, dominant and recessive inheritance</strong></p>
+<p>Every gene exists in two copies (<strong>alleles</strong>), one on each homologous chromosome. The relationship between alleles determines whether a disease appears:</p>
+<ul>
+<li>
+<p><strong>Recessive disease</strong>: Both alleles must be faulty for the disease to manifest. A person with one normal allele (A) and one faulty allele (a) is a <strong>carrier</strong> — they are phenotypically normal but can pass the faulty allele to children. <strong>Cystic fibrosis</strong> follows this pattern. In India, sickle cell anaemia is a major public health issue in tribal populations of Maharashtra, Chhattisgarh, and Odisha, also following autosomal recessive inheritance.</p>
+</li>
+<li>
+<p><strong>Dominant disease</strong>: One faulty allele is sufficient to cause disease, even when the other allele is normal. <strong>Huntington's disease</strong> is caused by a dominant mutation — an expanded CAG repeat in the HTT gene on chromosome 4. A person with even one copy of the expanded allele will develop the disease, usually between ages 30 and 50. Every child of an affected parent has a 50% chance of inheriting the faulty allele.</p>
+</li>
+<li>
+<p><strong>Codominant alleles</strong>: Both alleles are expressed simultaneously. In <strong>sickle cell anaemia</strong>, HbA (normal haemoglobin) and HbS (sickle haemoglobin) are codominant. A person with one HbA and one HbS allele (HbAS) shows the <strong>sickle cell trait</strong> — they are largely healthy but produce some sickle haemoglobin and are mildly protected against malaria. This is why the HbS allele is maintained at relatively high frequency in malaria-endemic regions: carriers have a survival advantage.</p>
+</li>
+</ul>
+<p><strong>The Punnett square: predicting risk</strong></p>
+<p>When two carriers (each with genotype Aa) have children, the Punnett square shows all possible combinations:</p>
+<pre><code>         A (carrier parent 1)    a (carrier parent 1)
+A        AA (unaffected)         Aa (carrier)
+(parent 2)
+a        Aa (carrier)            aa (AFFECTED)
+(parent 2)
+</code></pre>
+<p>The ratios are: 1 AA (unaffected, non-carrier) : 2 Aa (carriers) : 1 aa (affected). Each pregnancy has a <strong>25% (1 in 4) chance</strong> of producing an affected child, a 50% chance of a carrier, and a 25% chance of a completely unaffected non-carrier. This ratio holds independently for every pregnancy — if the first child is affected, the second still has a 25% risk.</p>
+<p><strong>Chromosomal disorders: errors in chromosome number</strong></p>
+<p>Some genetic diseases arise not from a mutation in a single gene but from having the wrong number of chromosomes. <strong>Down syndrome</strong> is caused by <strong>trisomy 21</strong> — the presence of three copies of chromosome 21 instead of two, usually from failure of homologous chromosomes to separate during meiosis (called <strong>non-disjunction</strong>). The extra chromosome disrupts the dosage of hundreds of genes simultaneously, affecting development of the face, brain, heart, and immune system. Down syndrome affects approximately 1 in 800 live births and is the most common chromosomal disorder worldwide.</p>
+<p><strong>From gene to disease: the causal chain</strong></p>
+<p>The unifying logic across all genetic diseases is: <strong>mutated or extra/missing gene → abnormal or absent protein → disrupted cell/tissue function → disease symptoms</strong>. In cystic fibrosis: CFTR mutation → non-functional chloride channel → thick mucus → blocked airways and repeated lung infections → progressive lung damage. In sickle cell anaemia: beta-globin mutation → misshapen haemoglobin → sickle-shaped red blood cells → vascular occlusion and haemolysis → pain crises and anaemia.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a gene as a recipe in a cookbook. The protein it encodes is the dish. A mutation is a misprint in the recipe:</p>
+<ul>
+<li>A <strong>point mutation</strong> changes one ingredient (e.g., "add 1 tsp salt" becomes "add 1 tsp sand") — the dish may be ruined or subtly altered.</li>
+<li>A <strong>frameshift</strong> (insertion/deletion) garbles every instruction from that point onward, like shifting every word in the recipe left by one — what follows is nonsense.</li>
+<li><strong>Dominant disease</strong> = a bad ingredient that poisons the entire dish even when you use the correct recipe alongside it.</li>
+<li><strong>Recessive disease</strong> = a bad recipe that only ruins the dish if you use it from both copies; having one good recipe (one normal allele) produces enough of the right protein.</li>
+<li><strong>Carrier</strong> = someone who has one good and one bad recipe; they cook edible food, but half their recipe cards are bad — and they might pass bad cards to their children.</li>
+</ul>
+<h2>4. Visual explanation</h2>
+<p>The included SVG has three panels. Panel 1 shows a DNA double helix with a single base change highlighted in red (point mutation), an arrow leading to an altered amino acid in a protein chain, and the protein misfolds — illustrating the gene → protein → disease pathway. Panel 2 shows a Punnett square for two Aa carriers, with the four boxes colour-coded: green (AA), yellow (Aa, ×2), red (aa), and the 1:2:1 ratio labelled. Panel 3 shows a karyotype schematic with three copies of chromosome 21 highlighted, labelled "Trisomy 21 — Down syndrome," alongside a normal karyotype with two copies for comparison.</p>
+<figure><img src="../../illustrations/class-10/day_20.svg" alt="Diagram for What causes genetic diseases?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Sickle cell screening in tribal India</strong>: The Government of India launched the National Sickle Cell Anaemia Elimination Mission in 2023, targeting tribal populations in 17 states where carrier frequency can exceed 20–30% in some communities. Universal newborn screening and carrier testing of couples before marriage are being used to identify at-risk families — a direct application of understanding recessive inheritance and Punnett square probabilities.</li>
+<li><strong>Genetic counselling</strong>: When a couple has already had a child with a recessive condition like cystic fibrosis, genetic counsellors use the Punnett square framework to explain the 25% per-pregnancy risk to subsequent children, enabling informed family planning decisions.</li>
+<li><strong>Prenatal testing</strong>: Amniocentesis (sampling amniotic fluid) and chorionic villus sampling (CVS) allow fetal DNA to be tested for specific mutations or chromosomal abnormalities such as Down syndrome. In India, prenatal testing for chromosomal conditions is available in urban hospitals, though sex-determination tests are banned under the Pre-Conception and Pre-Natal Diagnostic Techniques (PCPNDT) Act.</li>
+<li><strong>Gene therapy</strong>: Understanding that cystic fibrosis is caused by a single faulty gene has made it a target for gene therapy — delivering a functional copy of the CFTR gene to lung cells. mRNA-based approaches, building on COVID-19 vaccine technology, are now in clinical trials.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>what causes genetic diseases</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Both parents in a family are healthy, but they are both carriers of sickle cell anaemia (genotype HbA HbS). They already have one child with sickle cell disease (HbS HbS) and one child with sickle cell trait (HbA HbS). They are expecting a third child.</p>
+<p><strong>Predict:</strong> What is the probability that the third child will have sickle cell disease? Does the fact that the first child already has the disease change this probability? Now consider: sickle cell trait (HbA HbS) carriers living in malaria-endemic regions of Odisha are healthier on average than HbA HbA individuals in the same region. Using what you know about codominance and natural selection (from Day 14), predict whether the HbS allele will increase or decrease in frequency in this population over many generations, and explain the mechanism.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the direct cause of most genetic diseases?</p>
+<ul>
+<li>a. Mutations or inherited faulty alleles alter the DNA sequence, disrupting normal gene function</li>
+<li>b. Genetic diseases are caused by poor diet that chemically damages chromosomes</li>
+<li>c. Genetic diseases result from viruses permanently rewriting large sections of DNA</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding inheritance mechanisms more useful than just listing genetic diseases?</p>
+<ul>
+<li>a. Because all genetic diseases are untreatable so understanding them serves no purpose</li>
+<li>b. Because genetic diseases only occur randomly and no pattern can be identified</li>
+<li>c. Knowing inheritance patterns predicts disease risk and informs genetic counselling</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q3</h3>
+<p>What would happen if both parents carry one copy of a recessive disease gene?</p>
+<ul>
+<li>a. Each child would have a 25% chance of inheriting two copies and showing the disease</li>
+<li>b. All children would be healthy because recessive genes are always masked</li>
+<li>c. No children would carry the gene since parents are merely carriers</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Huntington's disease has a peculiar feature: the age of onset gets earlier in successive generations, a phenomenon called <strong>anticipation</strong>. The mutation is an expanded CAG repeat in the HTT gene — the more repeats, the earlier the disease strikes. When the faulty allele is passed from father to child, the repeat region can expand further during sperm production. So a father who develops symptoms at 50 may have a child who develops symptoms at 40, and that child may have a child who develops symptoms at 30. The gene gets "worse" with each generation — the opposite of what you might expect from inheritance, where the same allele is passed on unchanged. This was only understood once scientists could read the actual DNA sequence of the mutation in 1993.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Genetic diseases arise when mutations or inherited faulty alleles disrupt the protein a gene encodes; dominant diseases (like Huntington's) require only one faulty allele while recessive diseases (like cystic fibrosis and sickle cell anaemia) require two — meaning two carrier parents (each Aa) face a 25% chance per pregnancy of an affected child (aa), as the Punnett square 1:2:1 ratio shows.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 20 of 30</footer>
+</div>
+</body>
+</html>

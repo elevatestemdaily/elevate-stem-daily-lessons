@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 12 — The architecture of a cell | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 12</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>The architecture of a cell</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to identify and describe key cell organelles, explain how they interact, and predict what happens if the cell membrane becomes fully impermeable.</p>
+</div><h2>1. The mystery</h2>
+<p>A single cell — invisible to the naked eye — can replicate itself, produce energy, respond to signals, repair damage, and maintain a precise internal chemical environment. It does this with no brain, no planning, using only molecular machines. How?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Cell membrane:</strong> Phospholipid bilayer with embedded proteins. Selectively permeable — controls what enters and exits. Lipid core repels water-soluble substances, protein channels allow selective passage.</p>
+<p><strong>Nucleus:</strong> Double-membrane organelle containing DNA. Nuclear pores allow mRNA out, proteins in. Controls all cellular activities.</p>
+<p><strong>Mitochondria:</strong> Double membrane. Inner membrane folded (cristae) — site of electron transport chain and ATP production. Has own DNA (evidence of ancient bacterial endosymbiosis). Number varies: liver cells ~2,000, sperm ~100.</p>
+<p><strong>Endoplasmic reticulum (ER):</strong>
+- Rough ER: studded with ribosomes → protein synthesis and folding
+- Smooth ER: lipid synthesis, calcium storage, drug detoxification</p>
+<p><strong>Golgi apparatus:</strong> "Post office" of the cell. Sorts, modifies, and packages proteins for export (secretion) or internal use. Creates lysosomes.</p>
+<p><strong>Ribosomes:</strong> Sites of protein synthesis. Translate mRNA code into amino acid chains.</p>
+<p><strong>Lysosomes:</strong> Contain digestive enzymes. Break down old organelles, bacteria, food particles. If ruptured → cell self-digestion (apoptosis).</p>
+<p><strong>Vacuole:</strong> Large in plant cells (central vacuole for turgor pressure). Small in animal cells.</p>
+<p><strong>Cell wall (plant cells only):</strong> Cellulose. Provides rigidity. Prevents excessive osmotic swelling.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the cell as a self-contained factory building:</p>
+<ul>
+<li><strong>The cell membrane</strong> is the security perimeter fence with electronic gates. It decides exactly what enters and exits — nutrients in, waste out. Nothing moves without authorisation (a protein channel or carrier).</li>
+<li><strong>The nucleus</strong> is the managing director's office. It holds the master blueprints (DNA) and sends out work orders (mRNA) through guarded doors (nuclear pores) — but never lets the blueprints leave the office.</li>
+<li><strong>Ribosomes</strong> are the assembly workers who read the work orders (mRNA) and build the products (proteins), working at benches both inside the rough ER and floating freely.</li>
+<li><strong>The rough ER</strong> is the production floor attached to the director's office — proteins are made and folded here.</li>
+<li><strong>The Golgi apparatus</strong> is the dispatch and packaging department — it receives finished proteins, stamps them with the correct address label, and sends them to the right destination.</li>
+<li><strong>Mitochondria</strong> are the power generators in the basement, burning fuel (glucose) to keep the factory running.</li>
+<li><strong>Lysosomes</strong> are the waste management team — they digest broken machinery and invaders, keeping the factory clean.</li>
+</ul>
+<p>Remove the security fence (membrane) and the factory dissolves into its surroundings. Remove the director (nucleus) and production eventually stops because no new work orders can be issued.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a large oval animal cell cut in cross-section. The outer boundary is the cell membrane (labelled, double line in blue), with protein channels shown as darker embedded rectangles. Inside, a large circular nucleus sits near the centre, with a double membrane boundary and small dark dots labelling nuclear pores; the interior is labelled "DNA/chromatin." Radiating outward from the nucleus is a network of rough ER (bumpy orange lines) and smooth ER (smooth orange curves). To the right of the ER sits the Golgi apparatus — a stack of curved flattened sacs (shown in green), with vesicle bubbles budding off its face. Oval mitochondria (purple, inner cristae shown as ridges) are scattered in the cytoplasm. Small black dots labelled "ribosomes" stud the rough ER and float in the cytoplasm. A round lysosome (red) is shown near the Golgi. All organelles are labelled with leader lines, and directional arrows show the protein production pathway: nucleus → rough ER → Golgi → vesicle → membrane.</p>
+<figure><img src="../../illustrations/class-9/day_12.svg" alt="Diagram for The architecture of a cell"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India's pharmaceutical industry (Sun Pharma, Dr Reddy's) targets specific organelles. Antibiotics target bacterial ribosomes (which differ from eukaryotic ribosomes — that's why antibiotics kill bacteria without harming your cells). Chemotherapy targets rapid cell division — disrupts nuclear DNA or mitosis machinery. India's AIIMS studies mitochondrial diseases — conditions caused by mutations in mitochondrial DNA, inherited maternally. 35 million Indians have diabetes — a disease of cellular glucose uptake (GLUT4 transporters in membranes). Every drug that works does so by interacting with a specific organelle or membrane protein.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Make a model cell using a clear zip-lock bag (membrane), a smaller bag inside (nucleus with twisted string for DNA), cooked spaghetti for ER, grapes for mitochondria, gummy bears for ribosomes. Label each part. The model shows relative positions and the nested structure of membrane-bound organelles within a membrane-bound cell. Once assembled, remove the "nucleus" bag and think: which factory functions would fail immediately, which could continue briefly using mRNA already in the cytoplasm, and which would be unaffected? This exercise maps structure to function rather than just memorising names.</p>
+</div><h2>7. Think deeper</h2>
+<p>Endosymbiotic theory (Lynn Margulis, 1967): mitochondria were once free-living alpha-proteobacteria engulfed by a host cell ~2 billion years ago. Evidence: mitochondria have their own circular DNA, double membranes, divide by binary fission like bacteria, and their ribosomes are more similar to bacterial than eukaryotic ribosomes. Chloroplasts similarly were cyanobacteria. This merger created the eukaryotic cell — the ancestor of all plants, animals, and fungi. One of the most important events in the history of life.</p>
+<p><strong>Predict:</strong> If mitochondria truly were once independent bacteria that were engulfed, what would you expect to happen if scientists tried to culture isolated mitochondria in a dish outside the cell? What resources would they need to provide, and what would they still not be able to do that a free-living bacterium can?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which structure controls all activities of the cell and contains its genetic material?</p>
+<ul>
+<li>A. The nucleus, which houses DNA and directs all cellular processes and protein synthesis</li>
+<li>B. The mitochondria, which store DNA and control the cell's metabolic rate and growth</li>
+<li>C. The cell membrane, which acts as a command centre regulating all internal chemical signals</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding how cell organelles interact more useful than listing them separately?</p>
+<ul>
+<li>A. Listing organelles is only required for diagrams, not for explanatory written answers</li>
+<li>B. Interaction data changes frequently, so understanding lists is more reliable long-term</li>
+<li>C. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If the cell membrane were made completely impermeable, what would you predict?</p>
+<ul>
+<li>A. The cell would grow faster because more nutrients would be retained inside permanently</li>
+<li>B. The cell would die because nutrients could not enter and waste products could not leave</li>
+<li>C. The nucleus would compensate by producing more enzymes to sustain internal reactions</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A liver cell and a muscle cell both come from the same person and contain identical DNA. Yet the liver cell has ~2,000 mitochondria and a large smooth ER for detoxification, while the muscle cell has highly organised myofibrils and many glycogen granules.</p>
+<p>Explain in three steps: (a) how two cells with identical DNA can have such different structures; (b) why the liver cell specifically needs a large smooth ER (name the process it performs); and (c) predict what would happen to a liver cell if its Golgi apparatus were chemically destroyed — which of its functions would fail first and why, naming the specific molecule type that would accumulate in the wrong location.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The cell membrane is not a static fence — it is a fluid mosaic that flows and reshuffles constantly at body temperature. Proteins drift laterally across its surface like boats on a lake. If you cool a cell enough, the membrane solidifies and all transport stops — the cell behaves as if impermeable. This is precisely how refrigeration preserves organs for transplant: the cold slows membrane traffic to a near halt, buying surgeons hours that would otherwise be minutes.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A cell is not a bag of chemicals — it is a precisely organised factory where each organelle performs a specific job, and removing any one component disrupts the entire production chain.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 12 of 30</footer>
+</div>
+</body>
+</html>

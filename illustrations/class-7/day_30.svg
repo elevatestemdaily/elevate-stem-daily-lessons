@@ -1,26 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="loopArr30" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#065f46"/>
+  </marker>
+  <marker id="loopArr30r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#1f5f8b"/>
+  </marker>
+</defs>
+<!-- Background: deep space feel -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">The Ultimate Challenge: Design a self-sust</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 30</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Stars (subtle) -->
+<circle cx="30" cy="85" r="1.5" fill="#93c5fd"/>
+<circle cx="75" cy="140" r="1" fill="#93c5fd"/>
+<circle cx="950" cy="90" r="1.5" fill="#93c5fd"/>
+<circle cx="920" cy="200" r="1" fill="#93c5fd"/>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1f5f8b">The Ultimate Challenge: Design a Self-Sustaining Space Habitat</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Closed-loop life support — every gramme cycles — Day 30</text>
+
+<!-- HABITAT CENTRAL CIRCLE (x=370-630, y=160-340) -->
+<circle cx="500" cy="250" r="85" fill="#1f5f8b" opacity="0.9"/>
+<text x="500" y="245" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">HABITAT</text>
+<text x="500" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">6 crew</text>
+<text x="500" y="274" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">all loops closed</text>
+
+<!-- SUN ARROW (input) -->
+<circle cx="500" cy="80" r="28" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+<text x="500" y="85" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#78350f">SUNLIGHT</text>
+<text x="500" y="97" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">(only input)</text>
+<line x1="500" y1="108" x2="500" y2="162" stroke="#fbbf24" stroke-width="3" marker-end="url(#loopArr30)"/>
+
+<!-- 6 MODULE SATELLITES around the hub -->
+
+<!-- Module 1: Oxygen (top-left) — green -->
+<rect x="145" y="115" width="170" height="110" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="230" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">O₂ Module</text>
+<text x="230" y="152" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Electrolysis: H₂O → O₂+H₂</text>
+<text x="230" y="166" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Plants: CO₂ + H₂O → O₂</text>
+<text x="230" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">(photosynthesis)</text>
+<text x="230" y="196" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Spirulina algae: 1 m² =</text>
+<text x="230" y="208" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">O₂ for 1 person/day</text>
+<!-- Connector arrow to hub -->
+<line x1="315" y1="185" x2="420" y2="218" stroke="#065f46" stroke-width="2" marker-end="url(#loopArr30)"/>
+
+<!-- Module 2: Water (left) — blue -->
+<rect x="68" y="245" width="170" height="110" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="153" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Water Module</text>
+<text x="153" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Urine → filtered → drinking</text>
+<text x="153" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">(93% recovery, ISS system)</text>
+<text x="153" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sweat + exhaled vapour</text>
+<text x="153" y="324" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ condensed → reused</text>
+<text x="153" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Plant transpiration → water</text>
+<!-- Connector -->
+<line x1="238" y1="295" x2="415" y2="255" stroke="#1d4ed8" stroke-width="2" marker-end="url(#loopArr30r)"/>
+
+<!-- Module 3: Food (bottom-left) — amber -->
+<rect x="145" y="375" width="170" height="110" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="230" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Food Module</text>
+<text x="230" y="412" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Hydroponics: LED-lit, no soil</text>
+<text x="230" y="426" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">200 m² → 2,000 kcal/person</text>
+<text x="230" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Algae + insects: protein</text>
+<text x="230" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">NASA VEGGIE: lettuce, kale</text>
+<text x="230" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Absorbs CO₂ → makes O₂</text>
+<!-- Connector -->
+<line x1="315" y1="410" x2="420" y2="320" stroke="#d97706" stroke-width="2" marker-end="url(#loopArr30)"/>
+
+<!-- Module 4: Energy (top-right) — purple -->
+<rect x="685" y="115" width="170" height="110" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="770" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Energy Module</text>
+<text x="770" y="152" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Solar panels (reduced at Mars:</text>
+<text x="770" y="166" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">43% of Earth output)</text>
+<text x="770" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Kilopower nuclear reactor:</text>
+<text x="770" y="194" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">10 kW, 1.5 m tall, Mars-ready</text>
+<text x="770" y="208" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Powers electrolysis + lights</text>
+<!-- Connector -->
+<line x1="685" y1="185" x2="585" y2="218" stroke="#7c3aed" stroke-width="2" marker-end="url(#loopArr30)"/>
+
+<!-- Module 5: Radiation Shield (right) — red -->
+<rect x="762" y="245" width="170" height="110" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="847" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Radiation Module</text>
+<text x="847" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Underground tunnel habitat</text>
+<text x="847" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">2 m regolith shielding</text>
+<text x="847" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">or water-wall panels</text>
+<text x="847" y="324" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Protective suits for EVAs</text>
+<text x="847" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Mars: no magnetic field</text>
+<!-- Connector -->
+<line x1="762" y1="295" x2="585" y2="255" stroke="#dc2626" stroke-width="2" marker-end="url(#loopArr30r)"/>
+
+<!-- Module 6: Waste (bottom-right) — grey-green -->
+<rect x="685" y="375" width="170" height="120" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="770" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Waste Module</text>
+<text x="770" y="412" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Compost → nutrients → plants</text>
+<text x="770" y="426" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CO₂ from crew → plants</text>
+<text x="770" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Urine → water recycler</text>
+<text x="770" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Nothing discarded — zero waste</text>
+<text x="770" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Biosphere 2 (1991): showed how</text>
+<text x="770" y="481" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">closed-loop life support works.</text>
+<!-- Connector -->
+<line x1="685" y1="410" x2="585" y2="320" stroke="#16a34a" stroke-width="2" marker-end="url(#loopArr30)"/>
+
+<!-- Key principle band at bottom -->
+<rect x="20" y="490" width="960" height="0" fill="none"/>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Habitat closes every loop: O₂ recycled, water recycled, food grown, waste composted. Only input is sunlight.</text>
 </svg>

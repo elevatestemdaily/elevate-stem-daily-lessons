@@ -1,26 +1,115 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does mass stay conserved in a reaction</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 10</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why does mass stay conserved in a reaction?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Atoms rearrange, never disappear — balancing equations and moles — Day 10</text>
+
+<!-- LEFT: Conservation of mass -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Conservation of Mass</text>
+
+<rect x="30" y="104" width="290" height="96" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="175" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Lavoisier's Law (1789)</text>
+<text x="40" y="144" font-family="Arial" font-size="14" fill="#333">Mass of reactants = Mass of products</text>
+<text x="40" y="164" font-family="Arial" font-size="14" fill="#333">Atoms are rearranged, not created</text>
+<text x="40" y="184" font-family="Arial" font-size="14" fill="#555">or destroyed, in a chemical reaction</text>
+
+<!-- Visual: H2 + O2 → H2O -->
+<rect x="30" y="210" width="290" height="120" rx="4" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="175" y="228" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">2H₂ + O₂ → 2H₂O</text>
+<!-- H2 molecules -->
+<circle cx="55" cy="270" r="12" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="55" y="274" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<circle cx="79" cy="270" r="12" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="79" y="274" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<circle cx="55" cy="298" r="12" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="55" y="302" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<circle cx="79" cy="298" r="12" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="79" y="302" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<!-- O2 molecule -->
+<circle cx="114" cy="284" r="15" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="114" y="289" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">O</text>
+<circle cx="144" cy="284" r="15" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="144" y="289" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">O</text>
+<text x="180" y="289" text-anchor="middle" font-family="Arial" font-size="18" fill="#16a34a">→</text>
+<!-- 2 H2O -->
+<circle cx="218" cy="268" r="15" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="218" y="273" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">O</text>
+<circle cx="204" cy="288" r="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="204" y="292" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<circle cx="234" cy="288" r="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="234" y="292" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<circle cx="270" cy="268" r="15" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="270" y="273" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">O</text>
+<circle cx="256" cy="288" r="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="256" y="292" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<circle cx="286" cy="288" r="10" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="286" y="292" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">H</text>
+<text x="175" y="322" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">4H + 2O → 4H + 2O ✓ (balanced!)</text>
+
+<rect x="30" y="344" width="290" height="138" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="175" y="362" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Balancing Equations</text>
+<text x="40" y="382" font-family="Arial" font-size="14" fill="#333">Fe + O₂ → Fe₂O₃ (unbalanced)</text>
+<text x="40" y="402" font-family="Arial" font-size="14" fill="#333">4Fe + 3O₂ → 2Fe₂O₃ (balanced)</text>
+<text x="40" y="422" font-family="Arial" font-size="14" fill="#555">Check: 4Fe each side ✓  6O each side ✓</text>
+<text x="40" y="442" font-family="Arial" font-size="14" fill="#555">Never change a formula subscript</text>
+<text x="40" y="462" font-family="Arial" font-size="14" fill="#555">Only add coefficients in front</text>
+
+<!-- CENTRE: Moles -->
+<rect x="344" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The Mole</text>
+
+<rect x="354" y="104" width="292" height="118" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Avogadro's Number</text>
+<text x="364" y="144" font-family="Arial" font-size="14" fill="#333">1 mole = 6.022 × 10²³ particles</text>
+<text x="364" y="164" font-family="Arial" font-size="14" fill="#333">Molar mass: mass of 1 mole in grams</text>
+<text x="364" y="184" font-family="Arial" font-size="14" fill="#555">C = 12 g/mol   H₂O = 18 g/mol</text>
+<text x="364" y="204" font-family="Arial" font-size="14" fill="#555">NaCl = 58.5 g/mol   Fe = 56 g/mol</text>
+
+<rect x="354" y="232" width="292" height="118" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="250" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Mole Calculations</text>
+<text x="364" y="270" font-family="Arial" font-size="14" fill="#333">n = mass / molar mass</text>
+<text x="364" y="290" font-family="Arial" font-size="14" fill="#333">36 g of H₂O = 36/18 = 2 mol</text>
+<text x="364" y="310" font-family="Arial" font-size="14" fill="#555">2 mol H₂O = 2 × 6.022×10²³</text>
+<text x="364" y="330" font-family="Arial" font-size="14" fill="#555">= 1.204 × 10²⁴ molecules</text>
+<text x="364" y="346" font-family="Arial" font-size="14" fill="#555">112 g Fe = 2 mol = 2×6.022×10²³ atoms</text>
+
+<rect x="354" y="360" width="292" height="122" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="378" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Why Moles Matter</text>
+<text x="364" y="398" font-family="Arial" font-size="14" fill="#333">Equations are in mole ratios</text>
+<text x="364" y="418" font-family="Arial" font-size="14" fill="#333">2H₂ + O₂ → 2H₂O</text>
+<text x="364" y="438" font-family="Arial" font-size="14" fill="#555">2 mol H₂ + 1 mol O₂ → 2 mol H₂O</text>
+<text x="364" y="458" font-family="Arial" font-size="14" fill="#555">4 g H₂ + 32 g O₂ → 36 g H₂O</text>
+<text x="364" y="476" font-family="Arial" font-size="14" fill="#555">Mass is conserved: 36 g = 36 g ✓</text>
+
+<!-- RIGHT: India context -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Chemical Industry</text>
+
+<rect x="680" y="104" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Fertiliser Production</text>
+<text x="825" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">N₂ + 3H₂ → 2NH₃ (Haber process)</text>
+<text x="825" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 25 million t urea/year</text>
+<text x="825" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Feeds 1.4 billion people</text>
+
+<rect x="680" y="202" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Rustless Steel (Corrosion)</text>
+<text x="825" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">4Fe + 3O₂ → 2Fe₂O₃ (rust)</text>
+<text x="825" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Stainless steel: Cr blocks reaction</text>
+<text x="825" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India: 3rd largest steel producer</text>
+
+<rect x="680" y="300" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Combustion &amp; Energy</text>
+<text x="825" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CH₄ + 2O₂ → CO₂ + 2H₂O</text>
+<text x="825" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 55 billion m³ natural gas/year</text>
+<text x="825" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cooks food, powers turbines</text>
+
+<rect x="680" y="398" width="290" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Lavoisier's Legacy</text>
+<text x="825" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1789: mass conservation law</text>
+<text x="825" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Foundation of all chemical engineering</text>
+<text x="825" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Every Indian factory uses this law</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Atoms rearrange in reactions — mass is always conserved. 1 mole = 6.022 × 10²³ particles.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Balance equations by adjusting coefficients only. India makes 25 million t urea/year using Haber process.</text>
 </svg>

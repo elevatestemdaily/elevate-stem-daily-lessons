@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 23 — How does household electricity work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 23</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does household electricity work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why household electricity uses alternating current, describe the roles of the live, neutral, and earth wires in an Indian plug, explain how a fuse protects a circuit, and predict what would happen to appliances if supply voltage suddenly doubled.</p>
+</div><h2>1. The mystery</h2>
+<p>You plug a phone charger into a wall socket and it works. You plug a bulb in and it glows. The electricity comes from somewhere far away — sometimes hundreds of kilometres — yet it arrives at exactly 230 V, 50 Hz without you doing anything. What type of current actually flows through your home wiring? Why three pins in an Indian plug and not two? And why does flipping the wrong switch sometimes trip a breaker or blow a fuse?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Alternating current (AC) vs direct current (DC).</strong> A battery produces direct current (DC): electrons drift steadily in one direction. The power station and your home supply produce <strong>alternating current (AC)</strong>: the direction of electron flow reverses repeatedly. In India, this reversal happens <strong>50 times per second</strong>, so the frequency is <strong>50 Hz</strong>. The voltage swings between +325 V and −325 V in a sine wave; the effective (RMS) value is <strong>230 V</strong>, which is what appliances are rated for. AC is used for transmission because transformers — which only work with AC — can step voltage up for transmission and then back down for use.</p>
+<p><strong>Why AC is transmitted at high voltage.</strong> When electricity travels from a power station in, say, Singrauli to homes in Delhi — a distance of over 1000 km — some energy is inevitably lost as heat in the transmission wires. The power lost is P_loss = I²R. If you reduce the current I by stepping voltage up (using a step-up transformer at the power station), the same power (P = VI) is transmitted with far less current, reducing I²R losses dramatically. Voltage is stepped up to 400 kV or higher for long-distance transmission, then stepped down by a series of step-down transformers to 11 kV, then 415 V (for industrial areas), then finally 230 V for homes.</p>
+<p><strong>Inside an Indian household circuit.</strong> Three wires enter your home from the electricity board's pole transformer:</p>
+<ul>
+<li><strong>Live wire (L):</strong> Carries the alternating current at 230 V (relative to earth). In Indian wiring, this wire is coloured red (or brown in newer standards). It is the wire that is "hot" — dangerous to touch.</li>
+<li><strong>Neutral wire (N):</strong> Provides the return path for current. It is kept at (approximately) 0 V potential by being connected to earth at the substation. Coloured black (or blue).</li>
+<li><strong>Earth wire (E):</strong> A safety wire connected directly to the metal body of appliances and to a buried metal rod (earth electrode) outside the building. Under normal conditions, no current flows through it. Its colour is green (or green-yellow). If a fault occurs inside an appliance — for example, the live wire's insulation breaks and touches the metal casing — the earth wire provides a low-resistance path to the ground, causing a large current surge that blows the fuse or trips the circuit breaker before anyone is electrocuted.</li>
+</ul>
+<p><strong>How a fuse protects the circuit.</strong> A fuse is a short piece of wire with a low melting point (commonly a tin-lead alloy). It is connected in series with the live wire. Each circuit in a home has a fuse or MCB (miniature circuit breaker) rated to a specific current — typically 5 A for lighting, 15 A for power sockets. If the current exceeds this rating (because of a short circuit or too many appliances), the fuse wire heats up by P = I²R and melts within milliseconds, breaking the circuit before wires or appliances are damaged. An MCB uses a bimetallic strip that bends under excess heat and trips a switch — it can be reset without replacement.</p>
+<p><strong>Why voltage must be stable at 230 V.</strong> Appliances are designed with specific resistance values for their rated voltage. A 100 W, 230 V bulb has a filament resistance of about 529 Ω. The current it draws is I = V/R = 230/529 ≈ 0.43 A. The power dissipated as heat/light is exactly 100 W. If voltage doubles to 460 V, current doubles to 0.87 A and power jumps to P = V²/R = 460²/529 ≈ 400 W — four times the rated wattage. This excess energy causes the filament to overheat and burn out within seconds, and the same excess current would overheat the wiring and insulation throughout the circuit.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of household wiring as a water supply system in a high-rise apartment:</p>
+<ul>
+<li><strong>Live wire</strong> = the pressurised supply pipe (carries the "pressure" / voltage)</li>
+<li><strong>Neutral wire</strong> = the drain pipe (returns water / current after use)</li>
+<li><strong>Earth wire</strong> = an emergency overflow drain that normally carries nothing but prevents flooding (electrocution) if a pipe bursts (fault)</li>
+<li><strong>Fuse/MCB</strong> = a pressure-release valve that snaps shut if flow becomes dangerously high</li>
+</ul>
+<p>AC current: instead of water flowing continuously in one direction, imagine it surging back and forth 50 times a second — the appliance uses energy from each surge regardless of direction.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a schematic of the Indian household supply:</p>
+<ul>
+<li><strong>Top:</strong> A pole transformer with three output wires — live (red), neutral (black), earth (green) — entering a home.</li>
+<li><strong>Middle panel:</strong> A three-pin Indian plug. Each pin is labelled (L top-right, N top-left, E large top-centre) with wire colours.</li>
+<li><strong>Bottom left:</strong> A fuse symbol in series with the live wire, with an arrow showing current path through the appliance and back via neutral.</li>
+<li><strong>Bottom right:</strong> A fault scenario — live wire touches metal casing; current diverts through earth wire; fuse symbol shown as blown (broken line).</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_23.svg" alt="Diagram for How does household electricity work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>MCBs in your home's distribution board:</strong> Modern Indian homes use a distribution board (DB box) with one MCB per circuit. When you overload a socket by running a geyser and an iron simultaneously, the MCB trips within seconds. This is why electricians specify separate 20 A circuits for geysers and air conditioners — they draw large currents.</li>
+<li><strong>Voltage fluctuations:</strong> In rural India, voltage fluctuation (low voltage from overloaded feeders, or high voltage surges) is a common cause of appliance failure — exactly the mechanism described above: P = V²/R means power consumption changes with the square of voltage.</li>
+<li><strong>Stabilisers:</strong> A voltage stabiliser (used widely in India with refrigerators and air conditioners) uses an auto-transformer to maintain output near 230 V even when input varies between 160 V and 270 V, protecting appliances from the V² effect.</li>
+<li><strong>Inverters:</strong> Homes with inverters or solar panels store DC in batteries and convert it back to 230 V AC (50 Hz) using an inverter circuit — this is why your AC fan still runs during a power cut, but the power comes from stored DC converted to AC.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Draw the inside of a three-pin Indian plug. Label the live, neutral, and earth pins with their colours and voltages.</li>
+<li>Trace the path of current from the live pin through a 1000 W iron and back through the neutral — show where the fuse sits.</li>
+<li>An electric kettle rated 1500 W, 230 V is used on a circuit protected by a 5 A fuse. Calculate the current it draws (I = P/V). Does the fuse blow?</li>
+<li>Describe what the earth wire does during a fault, step by step.</li>
+<li>Predict: a household runs five 100 W bulbs and one 1500 W heater on a single 15 A circuit. Calculate total current. Is this safe?</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that doubling the supply voltage would cause excess current to flow and potentially burn out components. Now extend this further: during a lightning storm, an extremely high-voltage surge can reach a home's wiring through the supply lines. A standard MCB rated at 15 A trips in about 0.1 seconds when current is 15–20 A, but a lightning surge can drive tens of thousands of amperes for microseconds. Explain why a standard fuse or MCB would fail to protect sensitive electronics (computers, TVs) from a lightning surge, and describe what a <strong>surge protector</strong> (SPD — surge protective device) would need to do differently to protect them.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What type of current is used in household electricity and why?</p>
+<ul>
+<li>a) Alternating current (AC) is used because it can be transmitted efficiently over long distances</li>
+<li>b) Direct current (DC) is used in homes because it is safer than alternating current</li>
+<li>c) Pulsed current is used in homes because it reduces energy loss in appliances</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding AC supply and earthing more useful than just knowing plugs have three pins?</p>
+<ul>
+<li>a) Because all countries use the same plug type so mechanism is universal everywhere</li>
+<li>b) The mechanism explains live, neutral and earth roles and how fuses protect circuits</li>
+<li>c) Because understanding AC means you can always repair electrical faults without tools</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to household appliances if supply voltage suddenly doubled?</p>
+<ul>
+<li>a) Appliances would work better because more voltage provides more useful energy</li>
+<li>b) Excess current would flow through appliances, potentially burning out components</li>
+<li>c) Appliances would switch to safe mode automatically using built-in regulators</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a Class 5 student using no technical terms at all — describe the live, neutral, and earth wires using a simple water-pipe analogy. Then explain it again using the correct terms: AC, 50 Hz, 230 V RMS, live, neutral, earth, fuse, MCB. Both explanations must correctly describe what each wire does and why three wires are needed instead of two.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The reason your 230 V household supply can kill you but a 9 V battery cannot is not just about voltage — it is about the current the supply can sustain. The human body's resistance (skin to skin) is roughly 1000–10000 Ω when dry. At 230 V, that gives 23–230 mA through the body. Current above about 10 mA causes painful muscle contractions; above 50–100 mA it can cause ventricular fibrillation (the heart stops pumping). A 9 V battery through the same resistance gives at most 9 mA — below the threshold of serious harm. The household supply is dangerous not just because of the voltage, but because it has effectively unlimited current available from the grid.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Household electricity uses 230 V, 50 Hz alternating current because AC can be stepped up for efficient long-distance transmission; the live wire carries the voltage, the neutral provides the return path, the earth wire diverts fault currents, and fuses or MCBs break the circuit before excess current causes damage.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 23 of 30</footer>
+</div>
+</body>
+</html>

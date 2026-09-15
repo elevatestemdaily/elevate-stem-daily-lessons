@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 07 — Why do some materials float while others sink? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 07</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do some materials float while others sink?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to define density, explain Archimedes' principle in your own words, and predict whether a given object will float or sink in water.</p>
+</div><h2>1. The mystery</h2>
+<p>A massive steel ship weighing thousands of tonnes floats on the ocean. A tiny iron nail dropped into a glass of water sinks immediately. Both are made of similar material. Why does the ship float while the nail sinks?</p>
+<h2>2. The science behind it</h2>
+<p>The key concept is <strong>density</strong> — how much mass is packed into a given volume.</p>
+<p>$$\text{Density} = \frac{\text{Mass}}{\text{Volume}}$$</p>
+<p>The density of water is <strong>1 g/cm³</strong> (or 1000 kg/m³). The rule is simple:
+- If an object's density is <strong>less than</strong> water's density → it <strong>floats</strong>
+- If an object's density is <strong>greater than</strong> water's density → it <strong>sinks</strong></p>
+<p><strong>Why the nail sinks:</strong> A solid iron nail has a density of about <strong>7.8 g/cm³</strong> — nearly eight times denser than water. It sinks because the water cannot push it up with enough force.</p>
+<p><strong>Why a cork floats:</strong> Cork has a density of about <strong>0.12 g/cm³</strong> — much less than water. It floats very high, with most of its volume above the surface.</p>
+<p><strong>Why the steel ship floats — Archimedes' principle.</strong> When an object is placed in water, the water pushes back with an upward force called the <strong>buoyant force</strong>. Archimedes discovered that this upward force equals the weight of water displaced (pushed aside) by the object. A ship's hull is not a solid block of steel — it is a hollow shape. The hollow interior is filled with air (density ≈ 0.001 g/cm³). The ship + air system has an <strong>average density</strong> much less than 1 g/cm³, so it floats and displaces only as much water as needed to balance its total weight.</p>
+<p><strong>The Dead Sea:</strong> The water in the Dead Sea is so salty that its density is about <strong>1.24 g/cm³</strong> — higher than the human body (≈ 1.0 g/cm³). This is why people float effortlessly in the Dead Sea without any swimming effort.</p>
+<p><strong>Submarines</strong> use this principle deliberately: they pump water into ballast tanks to increase their average density (dive) and expel water using compressed air to decrease it (surface).</p>
+<h2>3. Build the mental model</h2>
+<p>Think of it as a competition between two forces:
+- <strong>Gravity</strong> pulls the object downward (its weight)
+- <strong>Buoyant force</strong> pushes the object upward (= weight of water displaced)</p>
+<p>If buoyant force ≥ object's weight → the object floats (or is suspended).
+If buoyant force &lt; object's weight → the object sinks.</p>
+<p>An object floats when it displaces enough water to create a buoyant force equal to its own weight. A hollow or low-density object achieves this easily; a dense solid cannot.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows three comparison columns in water:
+- <strong>Left column (cork, density 0.12 g/cm³):</strong> Object floating high above the waterline
+- <strong>Centre column (hollow ship hull, average density &lt; 1):</strong> Object sitting at the waterline, displacing a large volume of water
+- <strong>Right column (iron nail, density 7.8 g/cm³):</strong> Object sunk to the bottom with a downward arrow</p>
+<p>Below each object, a label shows its density value and float/sink outcome. An Archimedes' principle box at the bottom explains buoyant force = weight of water displaced.</p>
+<figure><img src="../../illustrations/class-7/day_07.svg" alt="Diagram for Why do some materials float while others sink?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Life jackets:</strong> Made of foam (very low density), they increase the average density of the person + life jacket system to well below 1 g/cm³ — keeping the wearer afloat even unconscious.</li>
+<li><strong>Ice in drinks:</strong> Ice floats (density 0.917 g/cm³), which is why ice cubes stay at the top of your nimbu pani instead of sinking.</li>
+<li><strong>Boats and canoes:</strong> All rely on a hollow hull to keep average density below water's density. A crack in the hull lets water in, increasing average density → the vessel sinks.</li>
+<li><strong>Hydrometer:</strong> A simple instrument that measures the density of a liquid by how high it floats in it — used to test car battery acid and milk quality.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Fill a large bowl with water.</li>
+<li>Take a lump of clay and drop it in — it sinks (density &gt; 1 g/cm³ when solid).</li>
+<li>Now shape the same clay into a boat shape with high walls.</li>
+<li>Place it gently on the water — it floats!</li>
+<li>Explain in one sentence why the same clay floats as a boat but sinks as a lump. Use "density" and "average" in your sentence.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A fresh egg sinks in plain water but floats in very salty water. This is because salt raises the water's density above the egg's density.</p>
+<p>Sailors in ancient times discovered that their ships rode higher (floated more) in seawater than in river water. A ship fully loaded in the ocean might be dangerously overloaded in a river because the river water's lower density provides less buoyant force for the same volume.</p>
+<p><strong>Predict:</strong> If you sailed a fully loaded ship from the salty Arabian Sea into the freshwater Ganga river, would the ship sit higher or lower in the water? Why? Would this be a safety concern?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What determines whether an object floats or sinks in water?</p>
+<ul>
+<li>A. An object floats if it is made of natural materials and sinks if it is made of synthetic ones.</li>
+<li>B. An object floats if its density is less than water and sinks if its density is greater than water.</li>
+<li>C. An object floats only if it is hollow and sinks only if it is completely solid.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding density and buoyancy more useful than just knowing which objects float?</p>
+<ul>
+<li>A. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>B. Every object floats in water, so there is no need to understand the mechanism.</li>
+<li>C. Buoyancy only applies to water, so the mechanism has no real-world applications.</li>
+</ul>
+<h3>Q3</h3>
+<p>If you added salt to water until it became very dense, what would you predict would happen to an egg placed in it?</p>
+<ul>
+<li>A. The egg would float because the saltwater's density becomes greater than the egg's density.</li>
+<li>B. The egg would sink faster because salt increases the gravitational pull on objects.</li>
+<li>C. The egg would dissolve because salt reacts chemically with the eggshell.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Without using the word "density," explain to a Class 3 student why a massive ship floats but a small iron nail sinks. Your explanation must mention the ship's hollow shape and the water being "pushed aside." Then give the full scientific explanation using density, buoyancy, and Archimedes' principle.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The largest ship ever built (the Seawise Giant, at 458 metres long and 564,000 tonnes) floated because its average density — metal hull plus all the oil it carried plus the enclosed air spaces — was still less than seawater's density. The ocean didn't "decide" to hold it up; it simply obeyed a 2,200-year-old principle that Archimedes described after noticing his bath overflow.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Density decides: less dense than water = float, more dense = sink. A hollow shape lowers average density — that is why ships float despite being made of steel.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

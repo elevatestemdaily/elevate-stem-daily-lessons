@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 07 — Why are some atoms radioactive? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 07</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why are some atoms radioactive?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain what causes radioactivity, describe alpha, beta, and gamma radiation, and predict what happens to an atom's stability as it loses neutrons.</p>
+</div><h2>1. The mystery</h2>
+<p>Uranium ore left on a photographic plate exposes it even in the dark. Marie Curie discovered radium glows, heats its surroundings, and causes radiation burns — without any obvious energy source. What is driving this invisible energy release?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Radioactivity:</strong> When a nucleus has too many or too few neutrons relative to protons, the strong nuclear force cannot hold it together stably. The nucleus spontaneously emits radiation to reach a more stable configuration.</p>
+<p><strong>Types of radiation:</strong>
+- <strong>Alpha (α):</strong> Helium nucleus (2p + 2n). Stopped by paper or skin. Dangerous if inhaled.
+- <strong>Beta (β):</strong> Fast electron or positron from nucleus. Stopped by aluminium foil. Penetrates skin.
+- <strong>Gamma (γ):</strong> High-energy electromagnetic wave. Stopped by thick lead or concrete. Most penetrating.</p>
+<p><strong>Half-life:</strong> Time for half the radioactive atoms in a sample to decay. Uranium-238: 4.5 billion years. Carbon-14: 5,730 years. Iodine-131: 8 days. Polonium-218: 3 minutes. The decay rate is constant and unaffected by temperature, pressure, or chemistry.</p>
+<p><strong>Radioactive decay chain:</strong> Uranium-238 → (18 steps of alpha and beta decays) → Lead-206 (stable).</p>
+<p><strong>Nuclear equations:</strong> ²³⁸U → ²³⁴Th + ⁴He (alpha decay)</p>
+<h2>3. Build the mental model</h2>
+<p>Think of nuclear stability as a see-saw balanced between protons and neutrons:</p>
+<ul>
+<li><strong>Protons</strong> all carry positive charge and repel each other through the electromagnetic force. Left alone, they would fly apart instantly.</li>
+<li><strong>Neutrons</strong> act as spacers — they contribute to the strong nuclear force (which attracts all nucleons) without adding any repulsive charge. The right neutron-to-proton ratio keeps the see-saw balanced and the nucleus stable.</li>
+<li><strong>Too few neutrons:</strong> not enough strong-force glue → nucleus unstable → emits radiation to shed protons or gain neutrons.</li>
+<li><strong>Too many neutrons:</strong> the balance tips the other way → beta decay converts a neutron into a proton, emitting an electron.</li>
+<li><strong>Very heavy nuclei (Z &gt; 82):</strong> so many protons that even the ideal neutron count cannot fully compensate → alpha decay sheds 2 protons and 2 neutrons at once, reducing the nucleus toward manageable size.</li>
+</ul>
+<p>Half-life is the statistical tipping point: in any large sample, half the unstable nuclei will have decayed by the time one half-life passes, not because they all decay at once, but because each nucleus has a fixed probability of decaying per second — like flipping a coin that has a 50% chance per half-life of landing on "decay."</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows radioactive decay as a central diagram with three branching pathways and a half-life graph.</p>
+<p>At the centre, an unstable nucleus is labelled with an excess-neutron indicator (N &gt;&gt; Z). Three arrows branch outward: the first (alpha decay, red) shows a helium-4 nucleus ejecting with the equation ²³⁸U → ²³⁴Th + ⁴He; the second (beta decay, orange) shows an electron ejecting from the nucleus as a neutron converts to a proton; the third (gamma decay, yellow) shows a wavy electromagnetic wave releasing from a nucleus that remains the same element but drops to a lower energy state. Each pathway is labelled with the penetration ability: alpha stopped by a sheet of paper, beta stopped by aluminium sheet, gamma requiring thick lead. In the bottom right, a half-life graph plots sample mass (y-axis) against time in multiples of half-life (x-axis), showing the exponential curve dropping 50% each interval, with ¹⁴C labelled at 5,730 years.</p>
+<figure><img src="../../illustrations/class-9/day_07.svg" alt="Diagram for Why are some atoms radioactive?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India has the world's largest thorium reserves (~25% of global deposits, primarily in Kerala's monazite sands). BARC's thorium-based nuclear programme aims to power India with domestic fuel through a three-stage reactor plan. Nuclear medicine at AIIMS: I-131 treats thyroid cancer, Tc-99m images bones, Y-90 treats liver cancer. Radiation therapy is the primary treatment for 60% of India's 1.5 million annual cancer cases. India's Nuclear Power Corporation operates 22 reactors using controlled fission chain reactions.</p>
+<p>Radiocarbon dating (using C-14's 5,730-year half-life) has been used by the Archaeological Survey of India to date ancient sites including Mohenjo-daro artefacts and charcoal from early Vedic settlements. The precise, predictable decay rate of C-14 makes it a reliable clock across timescales from hundreds to about 50,000 years — a direct application of the half-life concept.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Carbon-14 dating thought experiment: A dead tree has C-14 that decays with half-life 5,730 years. After 5,730 years, half remains. After 11,460 years, one quarter remains. If a sample has 1/8 of its original C-14, it is 3 × 5,730 = 17,190 years old. Calculate how old a sample is if it has 1/16 of its original C-14. (Answer: 4 half-lives = 22,920 years.)</p>
+<p>Now try the inverse: if an archaeologist finds charcoal with 1/32 of its original C-14, how many half-lives have passed and what is the age? Sketch the half-life curve on graph paper from 0 to 6 half-lives and mark the 1/32 point. (Answer: 5 half-lives = 28,650 years.)</p>
+</div><h2>7. Think deeper</h2>
+<p>The strong nuclear force holds protons together despite their mutual electrostatic repulsion. It is the strongest fundamental force, but only acts over distances of ~10⁻¹⁵ m (nuclear scale). For nuclei heavier than iron-56, adding more nucleons actually becomes energy-unfavourable — this is why elements heavier than uranium tend to be unstable and radioactive. The hunt for the "island of stability" — super-heavy elements with magic proton/neutron numbers that might be stable — is active at labs including JINR (Russia) and GSI (Germany).</p>
+<p><strong>Predict:</strong> Polonium-218 has a half-life of just 3 minutes. Uranium-238 has a half-life of 4.5 billion years. Both are radioactive. Using the neutron-to-proton balance model, predict whether polonium-218 or uranium-238 has a more severely imbalanced nucleus, and explain why a more imbalanced nucleus would have a shorter half-life.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes an atom to be radioactive?</p>
+<ul>
+<li>A. An unstable nucleus spontaneously emits radiation to achieve a more stable nuclear configuration</li>
+<li>B. An atom becomes radioactive when it gains extra electrons from a nearby charged object</li>
+<li>C. Radioactivity occurs when atoms absorb too much sunlight and re-emit it as particles</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q2</h3>
+<p>Why is identifying the mechanism of radioactive decay more useful than just knowing it emits radiation?</p>
+<ul>
+<li>A. Knowing radiation exists is sufficient for safety; mechanisms are only for scientists</li>
+<li>B. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>C. The mechanism helps calculate tax on nuclear materials in industrial settings</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If a radioactive isotope lost neutrons until its nucleus became stable, what would you predict?</p>
+<ul>
+<li>A. The atom would continue emitting stronger and stronger radiation indefinitely</li>
+<li>B. The rate of radioactive emission would decrease and eventually the atom would become stable</li>
+<li>C. The atom would split into two equal halves and both halves would remain radioactive</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A hospital uses Iodine-131 (half-life 8 days) to treat thyroid cancer. A patient receives a dose of 400 MBq (megabecquerels — a measure of radioactive decay events per second) on Day 0. Regulations require the patient to stay in an isolation room until the activity drops below 25 MBq to protect family members.</p>
+<p>Calculate how many days the patient must remain in isolation. Show your work using the half-life decay sequence. Then explain why the doctor chose I-131 specifically for thyroid treatment — use your knowledge of how the thyroid gland concentrates iodine — and discuss one advantage and one risk of using a radioactive isotope with a short half-life versus a long one for medical treatment.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Marie Curie is the only person to have won Nobel Prizes in two different sciences — Physics (1903) and Chemistry (1911). She carried out most of her radioactivity research while pregnant and with two young daughters, in a shed with no proper ventilation, using her bare hands to handle radium. She kept a jar of radium on her bedside table because she found its glow beautiful. Her laboratory notebooks are still so radioactive that they are stored in lead-lined boxes in Paris and visitors must sign a waiver before handling them. She died in 1934 from aplastic anaemia — almost certainly caused by decades of radiation exposure from the very element she discovered.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Radioactivity is a nucleus correcting an imbalance between protons and neutrons — it emits particles or energy to reach stability, and the rate of that correction (half-life) is fixed by physics, not chemistry or temperature.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

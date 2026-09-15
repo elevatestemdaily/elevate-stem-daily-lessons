@@ -1,26 +1,141 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does a bicycle stay upright?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 15</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">Why does a bicycle stay upright?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Gyroscopic effect + trail/caster effect + rider micro-corrections work together</text>
+
+<!-- ═══ LEFT COLUMN: Gyroscopic Effect  x=20–295 ═══ -->
+<rect x="20" y="88" width="275" height="350" rx="7" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="157" y="110" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1e3a5f">① Gyroscopic Effect</text>
+
+<!-- Spinning wheel circle -->
+<circle cx="157" cy="245" r="72" fill="none" stroke="#3b82f6" stroke-width="3"/>
+<!-- Spokes -->
+<line x1="157" y1="173" x2="157" y2="317" stroke="#93c5fd" stroke-width="1.5"/>
+<line x1="85" y1="245" x2="229" y2="245" stroke="#93c5fd" stroke-width="1.5"/>
+<line x1="106" y1="194" x2="208" y2="296" stroke="#93c5fd" stroke-width="1.5"/>
+<line x1="208" y1="194" x2="106" y2="296" stroke="#93c5fd" stroke-width="1.5"/>
+<!-- Hub -->
+<circle cx="157" cy="245" r="10" fill="#1e3a5f"/>
+<!-- Rotation arrow arc (clockwise) -->
+<path d="M 157,165 A 80,80 0 0,1 229,217" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="0"/>
+<polygon points="229,217 237,203 221,207" fill="#2563eb"/>
+<text x="155" y="162" text-anchor="middle" font-family="Arial" font-size="14" fill="#2563eb" font-weight="700">spinning →</text>
+<!-- Angular momentum arrow (pointing right = L vector) -->
+<line x1="157" y1="245" x2="215" y2="245" stroke="#1f5f8b" stroke-width="3"/>
+<polygon points="215,245 205,240 205,250" fill="#1f5f8b"/>
+<text x="215" y="238" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">L</text>
+
+<!-- Key facts text -->
+<text x="35" y="342" font-family="Arial" font-size="14" fill="#1e3a5f">• Spinning wheel has angular momentum L</text>
+<text x="35" y="360" font-family="Arial" font-size="14" fill="#1e3a5f">• L resists any change in direction</text>
+<text x="35" y="378" font-family="Arial" font-size="14" fill="#1e3a5f">• Tilt bike → L vector changes → gyro</text>
+<text x="35" y="395" font-family="Arial" font-size="14" fill="#1e3a5f">  reaction pushes wheel upright again</text>
+<text x="35" y="413" font-family="Arial" font-size="14" fill="#1e3a5f">• Stronger at high speed (larger L)</text>
+<text x="35" y="431" font-family="Arial" font-size="14" fill="#1e3a5f">• Weak or absent at very low speed</text>
+
+<!-- ═══ CENTRE: Bicycle diagram  x=315–680 ═══ -->
+<rect x="315" y="88" width="365" height="285" rx="7" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="497" y="110" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Bicycle Side View</text>
+
+<!-- Ground line -->
+<line x1="325" y1="340" x2="670" y2="340" stroke="#92400e" stroke-width="2.5"/>
+
+<!-- Rear wheel: cx=400, cy=340 -->
+<circle cx="400" cy="340" r="58" fill="none" stroke="#374151" stroke-width="2.5"/>
+<circle cx="400" cy="340" r="8" fill="#374151"/>
+<!-- Rear spokes -->
+<line x1="400" y1="282" x2="400" y2="398" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="342" y1="340" x2="458" y2="340" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="359" y1="299" x2="441" y2="381" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="441" y1="299" x2="359" y2="381" stroke="#94a3b8" stroke-width="1.2"/>
+
+<!-- Front wheel: cx=580, cy=340 -->
+<circle cx="580" cy="340" r="58" fill="none" stroke="#374151" stroke-width="2.5"/>
+<circle cx="580" cy="340" r="8" fill="#374151"/>
+<!-- Front spokes -->
+<line x1="580" y1="282" x2="580" y2="398" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="522" y1="340" x2="638" y2="340" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="539" y1="299" x2="621" y2="381" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="621" y1="299" x2="539" y2="381" stroke="#94a3b8" stroke-width="1.2"/>
+
+<!-- Frame: rear hub → seat post top; seat post → handlebar; handlebar → front hub -->
+<line x1="400" y1="340" x2="445" y2="250" stroke="#374151" stroke-width="3"/>
+<line x1="445" y1="250" x2="555" y2="265" stroke="#374151" stroke-width="3"/>
+<line x1="555" y1="265" x2="580" y2="340" stroke="#374151" stroke-width="2.5"/>
+<line x1="400" y1="340" x2="580" y2="340" stroke="#374151" stroke-width="2.5"/>
+<!-- Seat -->
+<line x1="445" y1="250" x2="445" y2="225" stroke="#374151" stroke-width="2.5"/>
+<line x1="430" y1="225" x2="462" y2="225" stroke="#374151" stroke-width="3"/>
+<!-- Handlebar -->
+<line x1="555" y1="265" x2="558" y2="240" stroke="#374151" stroke-width="2.5"/>
+<line x1="545" y1="240" x2="572" y2="240" stroke="#374151" stroke-width="3"/>
+
+<!-- Speed arrow -->
+<line x1="605" y1="310" x2="655" y2="310" stroke="#059669" stroke-width="2.5"/>
+<polygon points="655,310 645,305 645,315" fill="#059669"/>
+<text x="628" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#059669" font-weight="700">v</text>
+
+<!-- TRAIL annotation at front wheel -->
+<!-- Fork axis (angled) from handlebar to contact point -->
+<line x1="558" y1="240" x2="584" y2="340" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,4"/>
+<!-- Steering axis extension to ground -->
+<line x1="584" y1="340" x2="596" y2="340" stroke="#dc2626" stroke-width="2.5"/>
+<!-- Trail label -->
+<text x="590" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">trail</text>
+
+<!-- Stability labels -->
+<text x="497" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">MOVING → STABLE</text>
+<text x="497" y="386" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">All 3 effects help balance together</text>
+
+<!-- ═══ RIGHT COLUMN: Trail Effect + Rider  x=700–978 ═══ -->
+<rect x="700" y="88" width="278" height="175" rx="7" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<text x="839" y="110" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">② Trail / Caster Effect</text>
+
+<!-- Fork geometry diagram (simplified) -->
+<!-- Front wheel circle (small) -->
+<circle cx="839" cy="215" r="38" fill="none" stroke="#d97706" stroke-width="2"/>
+<!-- Fork tube (angled backward = typical bicycle geometry) -->
+<line x1="833" y1="178" x2="818" y2="132" stroke="#92400e" stroke-width="3"/>
+<!-- Steering axis extended to ground -->
+<line x1="818" y1="132" x2="808" y2="265" stroke="#92400e" stroke-width="1.5" stroke-dasharray="5,4"/>
+<!-- Ground line -->
+<line x1="790" y1="253" x2="968" y2="253" stroke="#374151" stroke-width="1.5"/>
+<!-- Contact point (where tire touches ground) -->
+<circle cx="839" cy="253" r="4" fill="#d97706"/>
+<!-- Where steering axis hits ground -->
+<circle cx="820" cy="253" r="4" fill="#dc2626"/>
+<!-- Trail arrow between them -->
+<line x1="820" y1="245" x2="839" y2="245" stroke="#dc2626" stroke-width="2"/>
+<text x="829" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">trail</text>
+<text x="815" y="268" font-family="Arial" font-size="14" fill="#dc2626">axis</text>
+<text x="836" y="268" font-family="Arial" font-size="14" fill="#d97706">contact</text>
+
+<!-- Trail key fact -->
+<text x="715" y="152" font-family="Arial" font-size="14" fill="#78350f">Fork angle creates "trail":</text>
+<text x="715" y="168" font-family="Arial" font-size="14" fill="#78350f">contact point trails behind</text>
+<text x="715" y="184" font-family="Arial" font-size="14" fill="#78350f">steering axis → self-steers</text>
+<text x="715" y="200" font-family="Arial" font-size="14" fill="#78350f">like a shopping cart wheel.</text>
+
+<!-- Rider micro-corrections box -->
+<rect x="700" y="275" width="278" height="173" rx="7" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+<text x="839" y="295" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">③ Rider Micro-corrections</text>
+<text x="715" y="315" font-family="Arial" font-size="14" fill="#064e3b">• At low speed: rider shifts weight</text>
+<text x="715" y="333" font-family="Arial" font-size="14" fill="#064e3b">  and steers constantly</text>
+<text x="715" y="351" font-family="Arial" font-size="14" fill="#064e3b">• At medium speed: trail dominates</text>
+<text x="715" y="369" font-family="Arial" font-size="14" fill="#064e3b">• At high speed: gyro strongest</text>
+<text x="715" y="387" font-family="Arial" font-size="14" fill="#064e3b">• STATIONARY: no gyro, no trail,</text>
+<text x="715" y="405" font-family="Arial" font-size="14" fill="#064e3b">  no momentum → always falls</text>
+<text x="715" y="427" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">All 3 effects absent → must</text>
+<text x="715" y="445" font-family="Arial" font-size="14" fill="#064e3b">  balance manually or use supports</text>
+
+<!-- ── BOTTOM COMPARISON BAND  y=392–490 ── -->
+<rect x="20" y="455" width="655" height="35" rx="6" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+<text x="347" y="469" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">MOVING → Gyroscope + Trail + Rider = STABLE</text>
+<text x="347" y="485" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">STATIONARY → All 3 absent → Falls unless held upright</text>
+
+<!-- TAKEAWAY STRIP -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">Bicycle stays up: gyroscopic momentum + trail self-steering + rider corrections — none works alone.</text>
 </svg>

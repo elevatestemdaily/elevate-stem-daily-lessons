@@ -1,26 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does sound change pitch?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 26</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why does sound change pitch?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Frequency, Doppler effect, and the link to expanding universe — Day 26</text>
+
+<!-- LEFT: Frequency and pitch -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Frequency &amp; Pitch</text>
+
+<!-- Wave diagrams: high vs low freq -->
+<rect x="30" y="104" width="280" height="160" rx="4" fill="white" stroke="#0284c7" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">HIGH frequency = HIGH pitch</text>
+<!-- High freq wave -->
+<path d="M 40 145 Q 52 130 64 145 Q 76 160 88 145 Q 100 130 112 145 Q 124 160 136 145 Q 148 130 160 145 Q 172 160 184 145 Q 196 130 208 145 Q 220 160 232 145 Q 244 130 256 145 Q 268 160 280 145 Q 290 130 302 145"
+  fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<text x="170" y="172" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Many cycles per second</text>
+<text x="170" y="192" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">LOW frequency = LOW pitch</text>
+<!-- Low freq wave -->
+<path d="M 40 234 Q 90 204 140 234 Q 190 264 240 234 Q 270 214 302 234"
+  fill="none" stroke="#1d4ed8" stroke-width="2.5"/>
+<text x="170" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">Few cycles per second</text>
+
+<rect x="30" y="274" width="280" height="90" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="292" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Key Relationships</text>
+<text x="40" y="314" font-family="Arial" font-size="14" fill="#333">v = fλ (speed = freq × wavelength)</text>
+<text x="40" y="334" font-family="Arial" font-size="14" fill="#555">f↑ → λ↓ (at same speed)</text>
+<text x="40" y="350" font-family="Arial" font-size="14" fill="#555">A4 note: 440 Hz. Octave up: 880 Hz</text>
+
+<rect x="30" y="374" width="280" height="108" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="392" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Decibels (Amplitude = Loudness)</text>
+<text x="40" y="412" font-family="Arial" font-size="14" fill="#333">Amplitude: height of wave</text>
+<text x="40" y="430" font-family="Arial" font-size="14" fill="#333">More amplitude → louder sound</text>
+<text x="40" y="448" font-family="Arial" font-size="14" fill="#555">Frequency = pitch (completely separate)</text>
+<text x="40" y="468" font-family="Arial" font-size="14" fill="#555">Timbre: mix of harmonics = instrument</text>
+
+<!-- CENTRE: Doppler effect -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The Doppler Effect</text>
+
+<rect x="344" y="104" width="312" height="190" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Moving Source Changes Pitch</text>
+<!-- Train moving right -->
+<rect x="440" y="162" width="50" height="24" rx="3" fill="#374151"/>
+<text x="465" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="white">train →</text>
+<!-- Compressed waves on right (approaching) -->
+<ellipse cx="510" cy="174" rx="20" ry="18" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<ellipse cx="528" cy="174" rx="12" ry="14" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<ellipse cx="540" cy="174" rx="6" ry="10" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<!-- Spread waves on left (receding) -->
+<ellipse cx="430" cy="174" rx="22" ry="18" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+<ellipse cx="408" cy="174" rx="34" ry="26" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+<ellipse cx="380" cy="174" rx="46" ry="34" fill="none" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="552" y="202" font-family="Arial" font-size="14" fill="#dc2626">HIGH pitch</text>
+<text x="552" y="218" font-family="Arial" font-size="14" fill="#dc2626">(approaching)</text>
+<text x="344" y="202" font-family="Arial" font-size="14" fill="#1d4ed8">LOW pitch</text>
+<text x="344" y="218" font-family="Arial" font-size="14" fill="#1d4ed8">(receding)</text>
+<text x="500" y="244" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Source moves → waves compressed ahead</text>
+<text x="500" y="264" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">= higher frequency = higher pitch</text>
+<text x="500" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Source recedes → stretched waves → lower f</text>
+
+<rect x="344" y="304" width="312" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="322" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Doppler Formula</text>
+<text x="354" y="344" font-family="Arial" font-size="14" fill="#333">f_obs = f_src × (v ± v_obs) / (v ∓ v_src)</text>
+<text x="354" y="364" font-family="Arial" font-size="14" fill="#555">v = speed of sound, ± depends on direction</text>
+<text x="354" y="384" font-family="Arial" font-size="14" fill="#555">Medical Doppler: blood flow velocity</text>
+
+<rect x="344" y="404" width="312" height="78" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="422" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Doppler for Light (Redshift)</text>
+<text x="354" y="444" font-family="Arial" font-size="14" fill="#333">Same effect for light: star recedes →</text>
+<text x="354" y="464" font-family="Arial" font-size="14" fill="#555">wavelength stretches → shifts red</text>
+<text x="354" y="480" font-family="Arial" font-size="14" fill="#555">Proved universe is expanding (Hubble)</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Frequency Science</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Indian Classical Music</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Raga: specific frequency relationships</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sa Re Ga Ma Pa Dha Ni Sa</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">3,000 years of tuning precision</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Doppler Cardiac Ultrasound</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Blood moving toward probe: f ↑</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Measures blood flow in heart valves</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">2 million Indians diagnosed/year</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Traffic Speed (RADAR)</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Doppler radar: vehicle speed = Δf</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: NHAI speed cameras</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Microwave Doppler, not sound</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Tejas Fighter: Sonic Boom</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mach 1.8 = 1.8 × 343 = 617 m/s</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Outruns its own sound → shockwave</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Sonic boom: extreme Doppler effect</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Pitch = frequency. Doppler: source approaching → waves compress → higher pitch.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Light Doppler = redshift: proved universe expands. India: Doppler cardiac ultrasound diagnoses 2M/year.</text>
 </svg>

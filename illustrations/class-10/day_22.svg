@@ -1,26 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does resistance occur?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 22</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why Does Resistance Occur?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Electron collisions, R = ρL/A, temperature, superconductors — Day 22</text>
+
+<!-- LEFT: Mechanism of resistance -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#dc2626">What Causes Resistance?</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Electron-Ion Collisions</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Electrons drift; collide with vibrating ions</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">Each collision: electron loses momentum</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">Collision energy → heat (Joule heating)</text>
+<text x="40" y="198" font-family="Arial" font-size="14" fill="#555">More collisions → higher resistance</text>
+
+<rect x="30" y="214" width="280" height="100" rx="4" fill="white" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Resistivity Formula: R = ρL/A</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">ρ = resistivity (material property, Ω·m)</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#333">L = length of wire (longer → more R)</text>
+<text x="40" y="292" font-family="Arial" font-size="14" fill="#555">A = cross-section area (thicker → less R)</text>
+<text x="40" y="308" font-family="Arial" font-size="14" fill="#555">Copper: ρ = 1.7×10⁻⁸ Ω·m (low resistance)</text>
+
+<rect x="30" y="324" width="280" height="80" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="342" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Effect of Temperature</text>
+<text x="40" y="362" font-family="Arial" font-size="14" fill="#333">Metal: R increases with T (more ion vibration)</text>
+<text x="40" y="382" font-family="Arial" font-size="14" fill="#555">Semiconductor (Si, Ge): R decreases with T</text>
+<text x="40" y="398" font-family="Arial" font-size="14" fill="#555">R = R₀(1 + αΔT); α varies by material</text>
+
+<rect x="30" y="414" width="280" height="68" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Resistivity Table</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">Silver: 1.6×10⁻⁸  Copper: 1.7×10⁻⁸ Ω·m</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">Nichrome: 1.1×10⁻⁶  Rubber: 10¹³ Ω·m</text>
+
+<!-- CENTRE: Superconductors + applications -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Superconductors and Applications</text>
+
+<rect x="344" y="104" width="312" height="110" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Superconductivity</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">Below critical temperature T_c: R = 0 exactly</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">Mercury: T_c = 4.2 K (Onnes, 1911)</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">Meissner effect: expels magnetic field (levitation)</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">HTS: cuprates work at 77 K (liquid N₂)</text>
+
+<rect x="344" y="224" width="312" height="88" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="242" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Joule Heating (Useful)</text>
+<text x="354" y="262" font-family="Arial" font-size="14" fill="#333">P = I²R — heat dissipated in resistor</text>
+<text x="354" y="282" font-family="Arial" font-size="14" fill="#333">Electric heater, toaster, electric iron</text>
+<text x="354" y="302" font-family="Arial" font-size="14" fill="#555">Fuse wire: melts at designed current (safety)</text>
+<text x="354" y="318" font-family="Arial" font-size="14" fill="#555">Filament bulb: tungsten glows at 3000°C</text>
+
+<rect x="344" y="322" width="312" height="88" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="340" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Semiconductors</text>
+<text x="354" y="360" font-family="Arial" font-size="14" fill="#333">Si, Ge: conductivity between metal and insulator</text>
+<text x="354" y="380" font-family="Arial" font-size="14" fill="#333">Doping: add impurity → n-type or p-type</text>
+<text x="354" y="400" font-family="Arial" font-size="14" fill="#555">p-n junction: diode, transistor, solar cell, LED</text>
+
+<rect x="344" y="420" width="312" height="62" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="500" y="438" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">MRI machine: superconducting coil magnets (4K)</text>
+<text x="500" y="456" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CERN LHC: 1,232 superconducting dipole magnets</text>
+<text x="500" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">No resistance → can carry huge currents</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Resistance in Action</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Overhead Power Lines</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: ACSR conductors (aluminium steel core)</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">400 kV transmission reduces I → cuts I²R losses</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Power corridor: 800 kV UHVDC commissioned</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Indian Semiconductor Mission</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">₹76,000 crore: chip fabrication in India</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Micron + Tata: semiconductor fabs in Gujarat</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">IIT research: GaN transistors for 5G</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Nichrome Heating Elements</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Nichrome (NiCr): stable resistivity to 1,200°C</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">All electric heaters, ovens, toasters in India</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">BEE star rating: energy efficiency of appliances</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">BARC Superconductor Research</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">BARC Mumbai: HTS for fusion reactor coils</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India in ITER project: superconducting magnets</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">TIFR: superconductor research since 1960s</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">R = ρL/A. Metal R rises with T (more collisions). Below T_c: superconductor R = 0 exactly.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">P = I²R: Joule heating in elements, fuses. India: 800 kV UHVDC; ₹76,000 crore semiconductor mission.</text>
 </svg>

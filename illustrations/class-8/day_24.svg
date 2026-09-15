@@ -1,26 +1,130 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr24d" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+  <marker id="arr24g" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#16a34a"/></marker>
+  <marker id="arr24b" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">What happens when an ecosystem loses one s</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 24</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">What happens when an ecosystem loses a species?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Trophic cascade — removing one predator reshapes the whole system — Day 24</text>
+
+<!-- ── LEFT: Before wolves ── -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="170" y="93" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#dc2626">Yellowstone WITHOUT Wolves</text>
+<text x="170" y="110" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">(1920s–1994)</text>
+
+<rect x="30" y="118" width="280" height="36" rx="4" fill="#fca5a5" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="141" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7f1d1d">Wolves hunted to extinction</text>
+
+<line x1="170" y1="154" x2="170" y2="164" stroke="#dc2626" stroke-width="2" marker-end="url(#arr24d)"/>
+
+<rect x="30" y="166" width="280" height="36" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="189" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Elk population exploded</text>
+
+<line x1="170" y1="202" x2="170" y2="212" stroke="#dc2626" stroke-width="2" marker-end="url(#arr24d)"/>
+
+<rect x="30" y="214" width="280" height="36" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="237" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Elk over-grazed riverbanks</text>
+
+<line x1="170" y1="250" x2="170" y2="260" stroke="#dc2626" stroke-width="2" marker-end="url(#arr24d)"/>
+
+<rect x="30" y="262" width="280" height="36" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Riverbank vegetation stripped</text>
+<text x="170" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Banks eroded, rivers shallowed</text>
+
+<line x1="170" y1="300" x2="170" y2="310" stroke="#dc2626" stroke-width="2" marker-end="url(#arr24d)"/>
+
+<rect x="30" y="312" width="280" height="36" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="335" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Fish declined (warm, shallow)</text>
+
+<line x1="170" y1="348" x2="170" y2="358" stroke="#dc2626" stroke-width="2" marker-end="url(#arr24d)"/>
+
+<rect x="30" y="360" width="280" height="36" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="383" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Songbirds lost (no shrubs/trees)</text>
+
+<!-- Summary -->
+<rect x="30" y="408" width="280" height="72" rx="4" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="170" y="428" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Result: ecosystem collapse</text>
+<text x="170" y="446" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Fewer species, eroded rivers,</text>
+<text x="170" y="462" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">less biodiversity — all from</text>
+<text x="170" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">removing 1 predator</text>
+
+<!-- ── CENTRE: After wolves + India ── -->
+<rect x="334" y="74" width="330" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="499" y="93" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#16a34a">WITH Wolves (reintroduced 1995)</text>
+
+<rect x="344" y="102" width="310" height="36" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/>
+<text x="499" y="125" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">14 wolves released → ecosystem healed</text>
+
+<line x1="499" y1="138" x2="499" y2="148" stroke="#16a34a" stroke-width="2" marker-end="url(#arr24g)"/>
+
+<rect x="344" y="150" width="310" height="36" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="499" y="173" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Elk avoided riverbanks (fear effect)</text>
+
+<line x1="499" y1="186" x2="499" y2="196" stroke="#16a34a" stroke-width="2" marker-end="url(#arr24g)"/>
+
+<rect x="344" y="198" width="310" height="36" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="499" y="221" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Willows, aspens regrew on banks</text>
+
+<line x1="499" y1="234" x2="499" y2="244" stroke="#16a34a" stroke-width="2" marker-end="url(#arr24g)"/>
+
+<rect x="344" y="246" width="310" height="36" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="499" y="265" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Beavers returned — built dams</text>
+<text x="499" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">→ ponds → wetlands</text>
+
+<line x1="499" y1="284" x2="499" y2="294" stroke="#16a34a" stroke-width="2" marker-end="url(#arr24g)"/>
+
+<rect x="344" y="296" width="310" height="36" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="499" y="315" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Fish recovered, songbirds returned</text>
+<text x="499" y="331" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rivers deepened, banks stabilised</text>
+
+<!-- Key concept: ecology of fear -->
+<rect x="344" y="346" width="310" height="56" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="499" y="365" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Ecology of Fear</text>
+<text x="499" y="383" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Prey change behaviour knowing</text>
+<text x="499" y="400" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">predators exist — without being eaten</text>
+
+<!-- India examples -->
+<rect x="344" y="410" width="310" height="72" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="499" y="428" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">India: Keystone Species</text>
+<text x="499" y="446" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Tiger: controls deer → forest health</text>
+<text x="499" y="464" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Elephant: water holes, seed dispersal</text>
+<text x="499" y="480" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Vulture loss → ₹34 billion cost</text>
+
+<!-- ── RIGHT: Concept summary ── -->
+<rect x="678" y="74" width="302" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="829" y="93" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Trophic Cascade</text>
+
+<rect x="688" y="102" width="282" height="100" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="829" y="120" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">What is it?</text>
+<text x="829" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">When removing one species</text>
+<text x="829" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">causes chain reactions through</text>
+<text x="829" y="176" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">all trophic levels below it</text>
+<text x="829" y="194" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">— top-down regulation</text>
+
+<rect x="688" y="210" width="282" height="84" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+<text x="829" y="228" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Keystone Species</text>
+<text x="829" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Disproportionately large effect</text>
+<text x="829" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">relative to its own biomass</text>
+<text x="829" y="284" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Remove it → ecosystem shifts</text>
+
+<rect x="688" y="302" width="282" height="84" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="829" y="320" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Project Tiger — India</text>
+<text x="829" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">2014: 1,827 tigers</text>
+<text x="829" y="358" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">2022: 3,167 tigers ↑</text>
+<text x="829" y="376" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Tiger reserves protect water</text>
+
+<rect x="688" y="394" width="282" height="88" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="829" y="412" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Why Conservation Matters</text>
+<text x="829" y="432" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Forests near tiger reserves:</text>
+<text x="829" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">higher tree density &amp; diversity</text>
+<text x="829" y="468" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Carbon storage + rainfall</text>
+<text x="829" y="480" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">benefit surrounding farms</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Trophic cascade: removing one predator ripples through an entire ecosystem.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Yellowstone wolves changed rivers. India: tigers protect forests, water, and biodiversity far beyond them.</text>
 </svg>

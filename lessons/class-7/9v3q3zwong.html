@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 12 — How does a mirror produce your image? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 12</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a mirror produce your image?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to state the law of reflection, explain how a plane mirror forms a virtual image, and predict what happens to a reflection when the mirror surface becomes rough.</p>
+</div><h2>1. The mystery</h2>
+<p>Stand in front of a mirror — you see yourself, but your reflection has your left hand where your right hand should be. The mirror seems to have flipped you left-to-right, yet it has not flipped you upside down. Why does the mirror invert left and right but not up and down? And how does the mirror "remember" your face to show it to you?</p>
+<h2>2. The science behind it</h2>
+<p>A mirror does not store images. What it does is <strong>redirect light</strong> following a simple, precise rule.</p>
+<p><strong>The law of reflection.</strong> Every surface reflects light to some degree. A mirror has an extremely smooth, polished metal surface (usually aluminium or silver deposited behind glass). When a ray of light hits a smooth surface, it bounces off at the exact same angle at which it arrived, measured from a line called the <strong>normal</strong> (an imaginary line perpendicular to the surface at the point where light hits).</p>
+<p><strong>Law of reflection:</strong> Angle of incidence = Angle of reflection</p>
+<p>Both angles are measured from the normal, not from the surface itself.</p>
+<p><strong>How the image forms.</strong> Your face is constantly reflecting light in all directions. Some of those light rays travel toward the mirror. Each ray hits the mirror and bounces back at an equal angle. When these reflected rays reach your eye, your brain traces them backward as straight lines — as if they had come directly from a point behind the mirror. The place where those imaginary straight-line extensions meet behind the mirror is the <strong>virtual image</strong> of your face.</p>
+<p><strong>Properties of a plane mirror image:</strong>
+- <strong>Same size</strong> as the object
+- <strong>Same distance</strong> behind the mirror as the object is in front
+- <strong>Virtual</strong> — the image cannot be projected onto a screen; it only appears to be behind the mirror
+- <strong>Laterally inverted</strong> — left and right appear swapped</p>
+<p><strong>Why left-right but not up-down?</strong> The mirror does not actually flip left and right. It flips front and back — your nose, which points toward the mirror in reality, now appears to point away from you in the reflection. When you then mentally "turn the image to face you," left and right appear swapped. Up and down are not affected because the swap is front-back, not vertical.</p>
+<p><strong>Diffuse vs specular reflection.</strong> A rough surface like a wall also reflects light, but each part of the rough surface faces a slightly different direction. Rays scatter in many different directions (diffuse reflection) — no image forms. Only a very smooth surface produces <strong>specular reflection</strong> — all rays bouncing in organised, predictable directions — which is what creates a clear image.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the mirror as a perfect signboard: whatever direction light arrives from, it sends it back on a precisely mirrored path. Your eye receives those return rays, and your brain — which assumes light always travels in straight lines — traces the rays backward to find the "source." That imaginary source is the virtual image.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a plane mirror as a vertical line in the centre of the canvas:</p>
+<ul>
+<li><strong>Left of mirror:</strong> A labelled face/object at a fixed distance from the mirror surface</li>
+<li><strong>Arrows:</strong> Several light rays from the face hitting the mirror surface, with angle of incidence marked</li>
+<li><strong>Normal lines:</strong> Dashed perpendicular lines at each reflection point</li>
+<li><strong>Reflected rays:</strong> Bouncing back at equal angles toward the eye (shown on the left)</li>
+<li><strong>Right of mirror (behind the glass):</strong> Dashed lines showing where the reflected rays appear to originate — the virtual image, same distance behind the mirror</li>
+<li>Key labels: "Angle of incidence = Angle of reflection," "Virtual image," "Same distance behind mirror"</li>
+</ul>
+<figure><img src="../../illustrations/class-7/day_12.svg" alt="Diagram for How does a mirror produce your image?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>AMBULANCE written backwards:</strong> The word AMBULANCE is painted in mirror-writing on the front of the vehicle so that drivers ahead see it correctly when looking in their rear-view mirrors — a deliberate use of lateral inversion.</li>
+<li><strong>Periscopes:</strong> Two plane mirrors arranged at 45° allow light from above to travel down into a submarine (or over a crowd) — using two reflections to maintain the upright image.</li>
+<li><strong>Rear-view and side mirrors in vehicles:</strong> Plane (for direct view) or convex (for wider field of view) mirrors redirect light from behind the vehicle to the driver's eye.</li>
+<li><strong>Dentist's mirror:</strong> A small plane mirror allows dentists to see the backs of teeth by reflecting the image to their eyes.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Hold a mirror flat and look down at a word written on paper beneath it. The word appears inverted.</li>
+<li>Now tilt the mirror at 45° and look at the same word from the side — the word now appears to come from below. This is a periscope arrangement.</li>
+<li>Write "SCHOOL" on paper and predict what it will look like in a mirror before you check. Was your prediction correct?</li>
+<li>Challenge: which letters of the alphabet look the same in a mirror? (Hint: think about symmetry.)</li>
+<li>Predict: if you moved 1 metre closer to a mirror, how much closer would your image appear to move?</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>When you look at yourself in a mirror, you are looking at a <strong>virtual image</strong> — one that cannot be caught on a piece of paper. A camera, however, captures a <strong>real image</strong> — one that is projected onto the camera sensor (or old film) by a lens.</p>
+<p>A concave mirror (curved inward like a bowl, the kind used in shaving/makeup mirrors) can form a <strong>real image</strong> — actual light rays meeting at a point in front of the mirror — or a magnified virtual image, depending on the object distance. This is why a concave shaving mirror makes your face look larger.</p>
+<p><strong>Predict:</strong> If you held a piece of white paper in front of a concave shaving mirror at just the right distance, would you expect to see an image of a bright lamp behind you projected onto the paper? Explain why or why not, using the difference between real and virtual images.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the mechanism by which a flat mirror produces a reflection of your face?</p>
+<ul>
+<li>A. Light rays from your face hit the smooth mirror surface and bounce back at equal but opposite angles, forming a virtual image.</li>
+<li>B. Mirrors contain a thin film of glass that stores a photographic imprint of whatever is in front of it.</li>
+<li>C. The silver coating in a mirror emits its own light shaped like the object placed in front of it.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding how light reflects off mirrors more useful than knowing mirrors show your image?</p>
+<ul>
+<li>A. All surfaces reflect light equally, so the mechanism of mirrors is not unique.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Mirror reflections are an optical illusion and cannot be explained by a mechanism.</li>
+</ul>
+<h3>Q3</h3>
+<p>If you covered a mirror with a rough, uneven coating, what would you predict would happen to the reflection?</p>
+<ul>
+<li>A. The image would become sharper because rough surfaces scatter light more precisely.</li>
+<li>B. The image would become blurry or disappear because the rough surface scatters light in many directions.</li>
+<li>C. The image would become brighter because roughness increases the amount of light reflected.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Without a mirror, can you tell what the back of your own head looks like? Design a system using two plane mirrors and explain the path light must take from the back of your head to reach your eyes. Draw the ray diagram with arrows and label the angles of incidence and reflection at each mirror.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The mirrors we call "one-way mirrors" (used in interrogation rooms and spy thrillers) are not actually mirrors that work in only one direction — the law of reflection is the same on both sides. They are glass with a very thin silver coating (a half-mirror) that reflects about half the light and transmits the other half. In a dimly lit observation room and a brightly lit interrogation room, the difference in brightness makes the brighter side see a reflection rather than through — but if both rooms were equally bright, it would be transparent in both directions.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Plane mirror: angle of incidence = angle of reflection. Virtual image forms same distance behind the mirror — same size, not projectable, and laterally inverted front-to-back.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 12 of 30</footer>
+</div>
+</body>
+</html>

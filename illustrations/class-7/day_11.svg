@@ -1,26 +1,105 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why do shadows change during the day?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 11</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<defs>
+  <marker id="shadArr11" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#374151"/>
+  </marker>
+</defs>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">Why do shadows change during the day?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Earth rotates east → Sun appears to move west → shadow always points away from Sun</text>
+
+<!-- ── THREE TIME-OF-DAY PANELS  y=88–450 ── -->
+<line x1="322" y1="88" x2="322" y2="450" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="678" y1="88" x2="678" y2="450" stroke="#94a3b8" stroke-width="1.5"/>
+
+<!-- ══ MORNING PANEL  x=22–322 ══ -->
+<rect x="22" y="88" width="300" height="330" fill="#bae6fd"/>
+<rect x="22" y="418" width="300" height="32" fill="#92400e" rx="0"/>
+<!-- Sun (east = right of panel), low -->
+<circle cx="300" cy="170" r="22" fill="#fbbf24"/>
+<line x1="300" y1="142" x2="300" y2="132" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="300" y1="198" x2="300" y2="208" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="272" y1="170" x2="262" y2="170" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="280" y1="150" x2="273" y2="143" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="280" y1="190" x2="273" y2="197" stroke="#f59e0b" stroke-width="2.5"/>
+<!-- Dashed ray to pole top -->
+<line x1="280" y1="180" x2="164" y2="310" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,4"/>
+<!-- Pole at x=164 -->
+<rect x="161" y="310" width="6" height="108" fill="#1e293b"/>
+<circle cx="164" cy="308" r="4" fill="#1e293b"/>
+<!-- Long morning shadow going WEST (left) -->
+<line x1="164" y1="418" x2="32" y2="418" stroke="#475569" stroke-width="5" stroke-linecap="round" marker-end="url(#shadArr11)" transform="rotate(180 98 418)"/>
+<!-- Panel labels -->
+<text x="172" y="108" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0c4a6e">MORNING</text>
+<text x="172" y="127" text-anchor="middle" font-family="Arial" font-size="14" fill="#0c4a6e">6 – 9 AM</text>
+<text x="172" y="148" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">☀ Sun: LOW in EAST</text>
+<text x="172" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e293b">Shadow points WEST</text>
+<text x="172" y="186" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Shadow is LONG</text>
+<text x="40" y="440" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">W ←</text>
+<text x="264" y="440" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">→ E</text>
+
+<!-- ══ NOON PANEL  x=322–678 ══ -->
+<rect x="322" y="88" width="356" height="330" fill="#7dd3fc"/>
+<rect x="322" y="418" width="356" height="32" fill="#92400e" rx="0"/>
+<!-- Sun high overhead -->
+<circle cx="500" cy="105" r="22" fill="#fbbf24"/>
+<line x1="500" y1="77" x2="500" y2="67" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="472" y1="105" x2="462" y2="105" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="528" y1="105" x2="538" y2="105" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="480" y1="85" x2="473" y2="78" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="520" y1="85" x2="527" y2="78" stroke="#f59e0b" stroke-width="2.5"/>
+<!-- Dashed ray (nearly vertical) to pole top -->
+<line x1="500" y1="127" x2="500" y2="308" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,4"/>
+<!-- Pole at x=500 -->
+<rect x="497" y="308" width="6" height="110" fill="#1e293b"/>
+<circle cx="500" cy="306" r="4" fill="#1e293b"/>
+<!-- Short noon shadow — toward NORTH (shown going up on canvas) -->
+<!-- Show it as a very short line toward the left (viewer's north perspective) -->
+<line x1="500" y1="418" x2="460" y2="418" stroke="#475569" stroke-width="5" stroke-linecap="round" marker-end="url(#shadArr11)" transform="rotate(180 480 418)"/>
+<!-- Panel labels -->
+<text x="500" y="158" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0c4a6e">NOON</text>
+<text x="500" y="177" text-anchor="middle" font-family="Arial" font-size="14" fill="#0c4a6e">12 PM</text>
+<text x="500" y="198" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#0c4a6e">☀ Sun: HIGH in SOUTH</text>
+<text x="500" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e293b">Shadow points NORTH</text>
+<text x="500" y="236" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Shadow is SHORT</text>
+<text x="340" y="440" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">← NORTH</text>
+<text x="588" y="440" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">SOUTH →</text>
+
+<!-- ══ AFTERNOON PANEL  x=678–978 ══ -->
+<rect x="678" y="88" width="298" height="330" fill="#fed7aa"/>
+<rect x="678" y="418" width="298" height="32" fill="#92400e" rx="0"/>
+<!-- Sun (west = left of panel), low, orange -->
+<circle cx="700" cy="170" r="22" fill="#f97316"/>
+<line x1="700" y1="142" x2="700" y2="132" stroke="#ea580c" stroke-width="2.5"/>
+<line x1="700" y1="198" x2="700" y2="208" stroke="#ea580c" stroke-width="2.5"/>
+<line x1="728" y1="170" x2="738" y2="170" stroke="#ea580c" stroke-width="2.5"/>
+<line x1="720" y1="150" x2="727" y2="143" stroke="#ea580c" stroke-width="2.5"/>
+<line x1="720" y1="190" x2="727" y2="197" stroke="#ea580c" stroke-width="2.5"/>
+<!-- Dashed ray to pole top -->
+<line x1="720" y1="182" x2="836" y2="310" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5,4"/>
+<!-- Pole at x=836 -->
+<rect x="833" y="310" width="6" height="108" fill="#1e293b"/>
+<circle cx="836" cy="308" r="4" fill="#1e293b"/>
+<!-- Long afternoon shadow going EAST (right) -->
+<line x1="836" y1="418" x2="962" y2="418" stroke="#475569" stroke-width="5" stroke-linecap="round" marker-end="url(#shadArr11)"/>
+<!-- Panel labels -->
+<text x="836" y="108" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0c4a6e">AFTERNOON</text>
+<text x="836" y="127" text-anchor="middle" font-family="Arial" font-size="14" fill="#0c4a6e">3 – 6 PM</text>
+<text x="836" y="148" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c2d12">☀ Sun: LOW in WEST</text>
+<text x="836" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e293b">Shadow points EAST</text>
+<text x="836" y="186" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Shadow is LONG</text>
+<text x="688" y="440" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">W ←</text>
+<text x="930" y="440" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">→ E</text>
+
+<!-- ── BOTTOM INFO BAND  y=458–492 ── -->
+<rect x="22" y="458" width="956" height="36" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+<text x="500" y="474" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#0c4a6e">Earth's rotation makes the Sun appear to travel east → west across the sky each day.</text>
+<text x="500" y="490" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Sundials work on this principle. Jantar Mantar (Jaipur) has a 27m gnomon accurate to 2 seconds.</text>
+
+<!-- TAKEAWAY STRIP -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">Shadow always points away from the Sun: long in morning/evening, shortest at noon.</text>
 </svg>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 29 — The physics of nuclear energy | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 29</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>The physics of nuclear energy</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain mass defect and apply E = mc² to calculate nuclear energy, describe the fission chain reaction in a reactor, explain why some heavy nuclei release more energy than others, and connect nuclear physics to India's energy infrastructure.</p>
+</div><h2>1. The mystery</h2>
+<p>A lump of uranium-235 the size of a cricket ball contains the same energy as roughly 2 million tonnes of coal — enough to power all of Mumbai for several months. No chemical reaction comes close: burning coal releases about 30 kJ per gram; uranium fission releases about 80,000,000 kJ per gram — nearly three million times more. Where does this energy come from? The answer lies in four tiny letters: E = mc².</p>
+<h2>2. The science behind it</h2>
+<p><strong>Mass defect and Einstein's equation</strong></p>
+<p>Every nucleus is made of protons and neutrons (collectively called <strong>nucleons</strong>) held together by the <strong>strong nuclear force</strong>. Here is a striking fact: if you measure the mass of a helium-4 nucleus (2 protons + 2 neutrons) and compare it to the sum of the masses of 2 separate protons and 2 separate neutrons, the nucleus is lighter. The missing mass is called the <strong>mass defect</strong> (Δm).</p>
+<p>Where did the mass go? It was converted to energy — the energy that was released when the nucleus was assembled and that must be supplied to pull it apart again. Einstein's equation:</p>
+<p><strong>E = mc²</strong></p>
+<p>where c = 3 × 10⁸ m/s (speed of light) is the conversion factor. Even a tiny mass converts to enormous energy because c² = 9 × 10¹⁶ m²/s² is such a large number. A mass defect of just 1 atomic mass unit (1.66 × 10⁻²⁷ kg) releases approximately 931 MeV of energy (1 MeV = 1.6 × 10⁻¹³ J).</p>
+<p><strong>Binding energy per nucleon</strong> is the energy needed to remove one nucleon from the nucleus. Plotting this for all elements produces a peaked curve: iron-56 sits at the maximum (~8.8 MeV per nucleon), meaning iron nuclei are the most stable. Elements lighter than iron can release energy by <strong>fusion</strong> (combining). Elements heavier than iron can release energy by <strong>fission</strong> (splitting) — because splitting them produces fragments closer to iron on the curve, with higher binding energy per nucleon, and the mass difference becomes energy.</p>
+<p><strong>Nuclear fission — the reactor mechanism</strong></p>
+<p>When a slow (thermal) neutron is captured by a <strong>uranium-235</strong> nucleus, it becomes an excited U-236 nucleus that immediately splits into two medium-mass fragments plus 2–3 fast neutrons plus energy:</p>
+<p><strong>²³⁵U + n → ²³⁶U → ⁹²Kr + ¹⁴¹Ba + 3n + ~200 MeV</strong></p>
+<p>(exact fragments vary; this is one common split)</p>
+<p>The mass of the products is approximately 0.2 atomic mass units less than the reactants — this mass defect, multiplied by c², yields ~200 MeV per fission event. This is about 50 million times more energy per event than burning a carbon atom in coal (which releases ~4 eV).</p>
+<p><strong>Chain reaction and critical mass:</strong> Each fission releases 2–3 neutrons. If each of these neutrons triggers another fission, the reaction multiplies exponentially — a chain reaction. Whether this is controlled or explosive depends on the <strong>multiplication factor k</strong>:
+- k &lt; 1: sub-critical (reaction dies out)
+- k = 1: critical (steady, controlled chain reaction — a reactor)
+- k &gt; 1: super-critical (exponential growth — a bomb)</p>
+<p>In a nuclear reactor, <strong>control rods</strong> (made of boron or cadmium, which absorb neutrons) are inserted or withdrawn to keep k = 1. A <strong>moderator</strong> (usually water, or graphite in some designs) slows the fast neutrons from fission — slow neutrons are 1000× more effective at triggering U-235 fission than fast ones.</p>
+<p><strong>Why not all heavy nuclei are equally fissile:</strong> The mass defect — and hence energy released per fission — depends on the specific binding energies of the parent nucleus and its fission fragments. <strong>Uranium-235</strong> and <strong>plutonium-239</strong> are the primary fissile materials because they readily split with thermal (slow) neutrons. <strong>Uranium-238</strong> (which makes up 99.3% of natural uranium) is <strong>not</strong> fissile with thermal neutrons — it absorbs them without fissioning. This is why nuclear reactors must use <strong>enriched uranium</strong> (U-235 content raised from 0.7% to 3–5%) and why the energy released depends on which nucleus is split, not just on how heavy it is.</p>
+<p><strong>Nuclear fusion — the sun's power source</strong></p>
+<p>In the sun's core, hydrogen nuclei (protons) fuse at temperatures of ~15 million K to form helium-4. The mass of the helium-4 nucleus is slightly less than the four protons that combined to make it. This mass defect, via E = mc², releases about 26 MeV per fusion event. Fusion produces no long-lived radioactive waste and uses hydrogen (abundant in seawater) as fuel. The challenge is confining 100-million-degree plasma long enough for net energy gain — ITER in France (with Indian participation through the Institute for Plasma Research, Gandhinagar) is attempting this.</p>
+<p><strong>Radioactive decay and hazards:</strong> Fission products are typically unstable isotopes (like Sr-90, I-131, Cs-137) that emit alpha, beta, or gamma radiation as they decay toward stability. Gamma radiation is high-energy electromagnetic radiation that penetrates deeply into tissue, causing DNA damage and cancer risk. This is why reactor cores are surrounded by thick concrete and steel shielding, and why spent nuclear fuel remains radioactive for thousands of years.</p>
+<p><strong>India's nuclear programme:</strong> India has 22 operational nuclear reactors generating about 7,480 MW. Key plants: Tarapur (Maharashtra, India's oldest, 1969), Rawatbhata (Rajasthan), Kudankulam (Tamil Nadu, with Russian VVER reactors, each 1000 MW). India's three-stage programme aims to eventually use thorium (abundant in India's coastal sands) as the primary fuel via breeding in fast breeder reactors.</p>
+<h2>3. Build the mental model</h2>
+<p>The nuclear energy chain:</p>
+<ol>
+<li><strong>Mass defect</strong> exists because nucleons in a nucleus are lighter than free nucleons</li>
+<li><strong>E = mc²</strong> converts this tiny mass difference to enormous energy</li>
+<li>In <strong>fission</strong>, U-235 splits → products have higher binding energy per nucleon → mass defect → ~200 MeV released</li>
+<li><strong>Neutrons released</strong> trigger more fissions → <strong>chain reaction</strong></li>
+<li><strong>Control rods</strong> regulate k = 1 → steady power output</li>
+<li><strong>Energy released</strong> as heat → steam → turbine → generator → electricity</li>
+</ol>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows two diagrams. Left: a binding energy per nucleon curve peaking at iron-56, with arrows showing fusion (light nuclei moving right up the curve) and fission (heavy nuclei splitting left toward iron, down the curve). Right: a schematic of a nuclear reactor — fuel rods, control rods, moderator (water), heat exchanger producing steam, and a turbine-generator pair. Labels show: "U-235 fission releases 200 MeV," "control rods absorb neutrons to maintain k = 1," and "E = mc²: mass defect → energy."</p>
+<figure><img src="../../illustrations/class-10/day_29.svg" alt="Diagram for The physics of nuclear energy"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Kudankulam nuclear plant</strong>: Unit 1 and 2 produce 2000 MW combined — enough to supply electricity to about 2 million Indian homes. A single fuel loading of enriched uranium pellets lasts 12–18 months in the reactor before needing replacement.</li>
+<li><strong>Medical uses</strong>: Iodine-131, a fission product, is used to treat thyroid cancer. Technetium-99m, produced from nuclear reactors, is used in 40 million medical imaging scans globally each year. Understanding nuclear decay explains both the hazard and the utility of radioactive isotopes.</li>
+<li><strong>Nuclear weapons vs reactors</strong>: The difference is entirely about k. An uncontrolled super-critical chain reaction with weapons-grade uranium (&gt;90% U-235) releases all its energy in microseconds. A reactor holds k = 1 using enriched uranium (3–5% U-235) where an explosive chain reaction is physically impossible.</li>
+<li><strong>Radioactive waste storage</strong>: Spent fuel rods are stored underwater for 10 years (water absorbs radiation and cools the rods), then moved to dry cask storage. Some isotopes (Tc-99, half-life 211,000 years) require geological storage for stable disposal — a major unsolved challenge in nuclear energy.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>the physics of nuclear energy</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>The mass defect in a single U-235 fission event is approximately 0.2 atomic mass units (u), where 1 u = 1.66 × 10⁻²⁷ kg.</p>
+<p>Step 1: Calculate the mass defect in kg for one fission event.
+Step 2: Apply E = mc² to find the energy released in joules.
+Step 3: Convert to MeV (1 MeV = 1.6 × 10⁻¹³ J) — does your answer approximate 200 MeV?
+Step 4: Now calculate how many fission events occur per second in a 1000 MW reactor (assume all power comes from fission, and remember that much of the fission energy is converted to heat, then electricity at ~33% efficiency — so fission must produce ~3000 MJ/s of thermal power).
+Step 5: How many grams of U-235 are consumed per day in this reactor?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Where does the enormous energy released in nuclear reactions come from?</p>
+<ul>
+<li>a. Energy comes from mass converted to energy via Einstein's equation E = mc²</li>
+<li>b. Nuclear energy comes from electrons moving between energy levels in the nucleus</li>
+<li>c. The energy comes from chemical bonds in the nucleus being broken by heat</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding nuclear fission and fusion mechanisms more useful than just knowing they produce energy?</p>
+<ul>
+<li>a. The mechanism explains radiation hazards, reactor design and waste management needs</li>
+<li>b. Because fission and fusion produce identical amounts of energy by different routes</li>
+<li>c. Because nuclear energy is banned worldwide so understanding it serves no practical purpose</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen to the energy released if a heavier nucleus were split instead of uranium-235?</p>
+<ul>
+<li>a. Less energy would be released because heavier nuclei are more stable and hard to split</li>
+<li>b. Energy output depends on mass defect; some heavier nuclei can release more energy</li>
+<li>c. Energy released would be identical regardless of which nucleus undergoes fission</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The sun converts about 4.3 million tonnes of mass into pure energy every second via nuclear fusion — and has been doing so for 4.6 billion years. Despite this seemingly catastrophic rate of mass loss, the sun has lost less than 0.1% of its total mass since it formed. This is because c² is so enormous that the energy equivalent of even a tiny mass is staggering. The same equation that explains the sun's longevity also explains why the radioactive fallout from a nuclear weapon can contaminate an area for decades — the fission products carry their mass-energy as radiation long after the explosion.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Nuclear energy originates from mass defect: the products of fission are slightly lighter than the reactants, and this missing mass converts to energy via E = mc²; the energy released per fission depends on the specific mass defect of each nucleus, which is why U-235 and Pu-239 are fissile while U-238 is not — understanding this mechanism explains reactor design, radiation hazards, and radioactive waste management.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 29 of 30</footer>
+</div>
+</body>
+</html>

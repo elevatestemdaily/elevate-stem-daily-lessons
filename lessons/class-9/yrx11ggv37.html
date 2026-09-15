@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 15 — How do cells divide? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 15</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do cells divide?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to describe the stages of mitosis, distinguish mitosis from meiosis, and predict what happens when chromosomes fail to separate correctly.</p>
+</div><h2>1. The mystery</h2>
+<p>A fertilised egg — a single cell — divides to become a 37 trillion-cell human adult. Every time a cell divides, it must copy its entire 3-billion-base-pair genome with extreme accuracy. How does it do this so reliably? And when it goes wrong, what happens?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Mitosis:</strong> Cell division for growth and repair. Produces 2 genetically identical daughter cells.
+- <em>Interphase:</em> DNA replication — 46 chromosomes → 92 chromatids (joined pairs)
+- <em>Prophase:</em> Chromosomes condense and become visible. Nuclear envelope breaks down.
+- <em>Metaphase:</em> Chromosomes align at the cell's equator (spindle apparatus forms from centrioles).
+- <em>Anaphase:</em> Spindle fibres pull chromatids to opposite poles. Sister chromatids separate.
+- <em>Telophase:</em> Nuclear envelopes reform around each set. Chromosomes decondense.
+- <em>Cytokinesis:</em> Cytoplasm divides → 2 cells, each with 46 chromosomes.</p>
+<p><strong>Meiosis:</strong> Cell division for sexual reproduction. Produces 4 genetically unique gametes, each with 23 chromosomes (haploid).
+- Two rounds of division (Meiosis I and II)
+- Crossing over (prophase I): maternal and paternal chromosome segments exchange → genetic diversity</p>
+<p><strong>Cancer:</strong> Uncontrolled mitosis. Mutations in proto-oncogenes (promote division) or tumour suppressor genes (stop division) remove cell cycle checkpoints. Cells divide without regulation → tumour.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the cell cycle as a factory photocopier producing a single authorised copy before shipping:</p>
+<ul>
+<li><strong>Interphase</strong> is the factory receiving and scanning the original document — all 3 billion base pairs of DNA are copied once, and only once, with error-checking at every step.</li>
+<li><strong>Prophase</strong> is binding and labelling the copies — chromosomes coil tightly so they can be handled without tangling.</li>
+<li><strong>Metaphase</strong> is the quality-control conveyor belt — every chromosome is lined up in the exact centre before the machinery proceeds.</li>
+<li><strong>Anaphase</strong> is the separation step — one copy goes to each output tray, pulled by spindle fibres like a zip being unzipped.</li>
+<li><strong>Telophase and cytokinesis</strong> seal each package — the cell closes around each complete set and splits into two independent units.</li>
+</ul>
+<p>If the photocopier jams at metaphase (spindle checkpoint fails), the factory halts. If it ignores the jam and splits anyway, one daughter gets an extra chromosome and the other gets one fewer. In a living cell, that error can trigger cancer or produce a non-viable embryo.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a circular cell cycle diagram divided into six wedge-shaped sectors, each labelled with a phase name and a simplified cell illustration inside it.</p>
+<p>The largest wedge, coloured light grey, represents interphase — it takes up more than half the circle, reflecting that cells spend roughly 90 % of their cycle here; DNA strands are shown as loose threads being duplicated side by side.</p>
+<p>Prophase shows tightly coiled chromosomes coloured dark blue; a dotted circle represents the dissolving nuclear envelope.</p>
+<p>Metaphase shows a horizontal alignment of chromosome pairs at the centre of the cell, with red spindle fibres extending from two poles to each chromosome's centromere.</p>
+<p>Anaphase shows the chromosome pairs pulled apart — half moving left, half moving right — with spindle fibres shortened, indicating active pulling.</p>
+<p>Telophase and cytokinesis share the final wedge: two small nuclei reform (shown as circles) and a pinch line appears at the cell equator, giving way to two separate daughter cells at the diagram's edge.</p>
+<figure><img src="../../illustrations/class-9/day_15.svg" alt="Diagram for How do cells divide?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India has approximately 1.5 million new cancer cases per year. Chemotherapy drugs target rapidly dividing cells by disrupting mitosis: paclitaxel stabilises spindle fibres so chromosomes cannot separate; colchicine disrupts tubulin polymerisation so the spindle cannot form. India's generic drug industry produces these drugs at roughly one-tenth the price of branded versions, making cancer treatment accessible across income levels.</p>
+<p>Down syndrome (trisomy 21) — with around 23,000 affected births per year in India — results from non-disjunction in meiosis I: chromosome 21 fails to separate properly, leaving one gamete with two copies. When that gamete fuses with a normal gamete, the zygote has three copies of chromosome 21. Every step of that error maps directly onto the meiosis mechanism.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Observe onion root tips under a microscope or in a clear textbook micrograph. Onion root tips grow rapidly, meaning many cells are actively in mitosis at any given moment.</p>
+<p>Count the number of cells visible in each phase. The vast majority will be in interphase because the S-phase (DNA replication) alone takes about 8 hours of a roughly 24-hour cycle. Prophase, metaphase, anaphase, and telophase combined take only about 2 hours.</p>
+<p>The ratio of cells per stage directly reflects the time the cell spends there — a reliable way to measure the length of each phase without a clock. If you cannot access a microscope, draw and label a cell at each of the five stages from a textbook image and annotate which molecular event is happening inside.</p>
+</div><h2>7. Think deeper</h2>
+<p>Cell cycle checkpoints are molecular quality-control systems. The G1 checkpoint asks: is the cell large enough? Is DNA undamaged? The G2 checkpoint asks: was DNA replicated correctly? The spindle assembly checkpoint asks: is every chromosome properly attached to a spindle fibre before separation begins?</p>
+<p>The tumour suppressor protein p53 — called the "guardian of the genome" — halts the cycle when it detects DNA damage and triggers either repair or apoptosis (programmed cell death). p53 is mutated in roughly 50 % of all human cancers. AIIMS and Tata Memorial Centre in Mumbai run India's leading cancer research programmes, much of which focuses on restoring p53 function in tumour cells.</p>
+<p><strong>Predict:</strong> If a drug could reactivate p53 specifically inside cancer cells without affecting healthy cells, what would you expect to happen to the tumour? What would be the risk if p53 were accidentally activated in rapidly dividing healthy tissue — like intestinal lining?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What process allows body cells to divide and produce two identical daughter cells?</p>
+<ul>
+<li>A. Meiosis, in which the cell splits into four cells each with a completely unique genetic code</li>
+<li>B. Mitosis, in which the cell duplicates its chromosomes and then splits into two genetically identical cells</li>
+<li>C. Osmosis, in which the cell absorbs water until it is large enough to spontaneously divide in two</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is knowing the step-by-step mechanism of cell division more useful than just knowing cells divide?</p>
+<ul>
+<li>A. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>B. Cell division happens automatically so only medical doctors need to understand its mechanism</li>
+<li>C. Step-by-step knowledge is only needed for laboratory practicals, not written answers</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q3</h3>
+<p>If chromosomes failed to separate correctly during cell division, what would you predict?</p>
+<ul>
+<li>A. The cell would divide more quickly because fewer chromosomes are easier to separate</li>
+<li>B. Daughter cells could end up with the wrong number of chromosomes, possibly causing disease</li>
+<li>C. The cell would immediately enter meiosis instead to compensate for the error</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A scientist treats a culture of dividing cells with a drug that freezes the spindle assembly checkpoint — cells can no longer detect whether chromosomes are correctly attached before anaphase begins.</p>
+<p>Describe step by step what would happen to the chromosomes in the first division after the drug is applied. Predict the chromosome count in the resulting daughter cells. Then explain why this situation resembles what happens in cancer, and propose one measurable observation — using only a light microscope — that would confirm chromosomes were distributed incorrectly.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Meiosis produces four genetically unique gametes through crossing over — segments of maternal and paternal chromosomes physically swap during prophase I. The molecular machine that performs this swap, a protein complex called the synaptonemal complex, assembles a structure that runs along the entire length of each chromosome pair like a molecular zipper. This zipper holds homologous chromosomes close enough together for enzymes to cut both strands simultaneously and rejoin them in a switched arrangement. Evolution invented precise, programmable DNA cutting and stitching long before any human geneticist attempted gene editing — CRISPR-Cas9, the tool that won the 2020 Nobel Prize, is essentially the same concept borrowed from bacterial immune systems.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Every cell division is a full copy of 3 billion base pairs verified by multiple checkpoints — when those checkpoints fail, uncontrolled division begins, which is the root mechanism of cancer.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 15 of 30</footer>
+</div>
+</body>
+</html>

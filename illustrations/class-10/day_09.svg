@@ -1,26 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why can carbon form millions of compounds?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 9</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why Can Carbon Form Millions of Compounds?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Homologous series, functional groups, isomers — Day 9</text>
+
+<!-- LEFT: Catenation and homologous series -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Catenation and Series</text>
+
+<rect x="30" y="104" width="290" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="175" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Why So Many Compounds?</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Catenation: C-C bonds (chains, rings, branches)</text>
+<text x="40" y="160" font-family="Arial" font-size="14" fill="#555">Tetravalency: 4 bonds, many combinations</text>
+<text x="40" y="176" font-family="Arial" font-size="14" fill="#555">Single, double, triple bonds (C=C, C≡C)</text>
+
+<rect x="30" y="194" width="290" height="190" rx="4" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="175" y="212" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Alkane Homologous Series (+CH₂ each)</text>
+<rect x="30" y="218" width="290" height="24" fill="#d1fae5"/>
+<text x="40" y="234" font-family="Arial" font-size="14" fill="#333">CH₄ (methane): n=1, gas, natural gas</text>
+<rect x="30" y="242" width="290" height="24" fill="#a7f3d0"/>
+<text x="40" y="258" font-family="Arial" font-size="14" fill="#333">C₂H₆ (ethane): n=2, gas</text>
+<rect x="30" y="266" width="290" height="24" fill="#6ee7b7"/>
+<text x="40" y="282" font-family="Arial" font-size="14" fill="#333">C₃H₈ (propane): n=3, LPG gas</text>
+<rect x="30" y="290" width="290" height="24" fill="#34d399"/>
+<text x="40" y="306" font-family="Arial" font-size="14" fill="#333">C₄H₁₀ (butane): n=4, lighter fuel</text>
+<rect x="30" y="314" width="290" height="24" fill="#10b981"/>
+<text x="40" y="330" font-family="Arial" font-size="14" fill="#333">C₅–C₈: petrol</text>
+<rect x="30" y="338" width="290" height="24" fill="#059669"/>
+<text x="40" y="354" font-family="Arial" font-size="14" fill="white">C₁₆+: wax, lubricating oils</text>
+<text x="40" y="378" font-family="Arial" font-size="14" fill="#555">CₙH₂ₙ₊₂ general formula</text>
+<text x="40" y="396" font-family="Arial" font-size="14" fill="#555">Alkenes: CₙH₂ₙ (one C=C)</text>
+<text x="40" y="412" font-family="Arial" font-size="14" fill="#555">Alkynes: CₙH₂ₙ₋₂ (one C≡C)</text>
+
+<rect x="30" y="424" width="290" height="58" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="175" y="442" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Isomers</text>
+<text x="40" y="462" font-family="Arial" font-size="14" fill="#333">Same formula, different structure</text>
+<text x="40" y="478" font-family="Arial" font-size="14" fill="#555">C₄H₁₀: butane vs isobutane</text>
+
+<!-- CENTRE: Functional groups -->
+<rect x="344" y="74" width="302" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="495" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Functional Groups</text>
+
+<rect x="354" y="104" width="282" height="34" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="495" y="126" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">–OH (hydroxyl): alcohols (ethanol C₂H₅OH)</text>
+<rect x="354" y="142" width="282" height="34" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="495" y="164" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">–COOH (carboxyl): acids (acetic acid CH₃COOH)</text>
+<rect x="354" y="180" width="282" height="34" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="495" y="202" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">–CHO (aldehyde): glucose, formaldehyde</text>
+<rect x="354" y="218" width="282" height="34" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="495" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">C=O (ketone): acetone, sugars</text>
+<rect x="354" y="256" width="282" height="34" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="495" y="278" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">–NH₂ (amino): amino acids, nylon</text>
+<rect x="354" y="294" width="282" height="34" rx="4" fill="#f0f9ff" stroke="#0284c7" stroke-width="1"/>
+<text x="495" y="316" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">–X (halo): chloroform, PVC (C-Cl)</text>
+
+<rect x="354" y="338" width="282" height="80" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="495" y="356" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Addition and Substitution</text>
+<text x="364" y="378" font-family="Arial" font-size="14" fill="#333">Addition: alkene + H₂ → alkane (hydrogenation)</text>
+<text x="364" y="398" font-family="Arial" font-size="14" fill="#555">Substitution: CH₄ + Cl₂ → CH₃Cl + HCl (UV)</text>
+<text x="364" y="414" font-family="Arial" font-size="14" fill="#555">Combustion: CH₄ + 2O₂ → CO₂ + 2H₂O</text>
+
+<rect x="354" y="428" width="282" height="54" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="495" y="448" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Esterification: alcohol + acid → ester + H₂O</text>
+<text x="495" y="466" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Perfumes, flavours, biodiesel from esters</text>
+<text x="495" y="480" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CH₃COOH + C₂H₅OH → ester (fruity smell)</text>
+
+<!-- RIGHT: India context -->
+<rect x="660" y="74" width="320" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="820" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Carbon Compounds</text>
+
+<rect x="670" y="104" width="300" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="820" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">LPG (C₃H₈ + C₄H₁₀)</text>
+<text x="820" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">PMUY: 100M free LPG connections</text>
+<text x="820" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Replaced wood-burning in rural kitchens</text>
+<text x="820" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Saves 300,000 lives/year (indoor air)</text>
+
+<rect x="670" y="202" width="300" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="820" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Indian Petrochemicals</text>
+<text x="820" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Reliance Jamnagar: world's largest refinery</text>
+<text x="820" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Converts crude → petrol, plastic, fertiliser</text>
+<text x="820" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">1.24 million barrels/day capacity</text>
+
+<rect x="670" y="300" width="300" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="820" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Ethanol Blending (E20)</text>
+<text x="820" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">20% ethanol (C₂H₅OH) in petrol by 2025</text>
+<text x="820" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Made from sugarcane (fermentation)</text>
+<text x="820" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Reduces CO₂ + saves ₹30,000 crore forex</text>
+
+<rect x="670" y="398" width="300" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="820" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Plastics: Boon and Bane</text>
+<text x="820" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Polyethylene, PET: derived from alkenes</text>
+<text x="820" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India: single-use plastic ban 2022</text>
+<text x="820" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Bio-plastics from C-compounds: CSIR research</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Catenation + tetravalency = millions of compounds. Homologous series: same functional group, +CH₂ each.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Functional groups determine reactivity. India: E20 ethanol blending, world's largest refinery at Jamnagar.</text>
 </svg>

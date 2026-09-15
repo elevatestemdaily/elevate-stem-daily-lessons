@@ -1,26 +1,127 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr29" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+  <marker id="arr29r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Could we build a city underwater?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 29</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Could we build a city underwater?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Fluid pressure P = P₀ + ρgh increases with every metre of depth — Day 29</text>
+
+<!-- ── LEFT: Pressure depth chart ── -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Pressure vs Depth</text>
+
+<!-- Water column graphic -->
+<!-- Surface -->
+<rect x="60" y="106" width="220" height="16" rx="2" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="175" y="118" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a8a">Surface — 1 atm (101 kPa)</text>
+
+<!-- 10 m -->
+<rect x="60" y="122" width="220" height="42" fill="#93c5fd"/>
+<text x="38" y="148" text-anchor="end" font-family="Arial" font-size="14" fill="#1d4ed8">10 m</text>
+<text x="175" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a8a">2 atm — pressure doubles!</text>
+
+<!-- 30 m -->
+<rect x="60" y="164" width="220" height="42" fill="#60a5fa"/>
+<text x="38" y="190" text-anchor="end" font-family="Arial" font-size="14" fill="#1d4ed8">30 m</text>
+<text x="175" y="188" text-anchor="middle" font-family="Arial" font-size="14" fill="white">4 atm</text>
+
+<!-- 100 m -->
+<rect x="60" y="206" width="220" height="50" fill="#3b82f6"/>
+<text x="38" y="235" text-anchor="end" font-family="Arial" font-size="14" fill="#1d4ed8">100 m</text>
+<text x="175" y="235" text-anchor="middle" font-family="Arial" font-size="14" fill="white">11 atm</text>
+
+<!-- 300 m -->
+<rect x="60" y="256" width="220" height="50" fill="#2563eb"/>
+<text x="38" y="284" text-anchor="end" font-family="Arial" font-size="14" fill="#1d4ed8">300 m</text>
+<text x="175" y="284" text-anchor="middle" font-family="Arial" font-size="14" fill="white">31 atm</text>
+
+<!-- 1000 m -->
+<rect x="60" y="306" width="220" height="64" fill="#1d4ed8"/>
+<text x="38" y="342" text-anchor="end" font-family="Arial" font-size="14" fill="#1d4ed8">1,000 m</text>
+<text x="175" y="338" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">100 atm</text>
+<text x="175" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#bfdbfe">= elephant on thumbnail</text>
+
+<!-- Formula box -->
+<rect x="30" y="378" width="290" height="54" rx="4" fill="#172554" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="175" y="396" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#60a5fa">P = P₀ + ρgh</text>
+<text x="175" y="416" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">ρ = 1,025 kg/m³  g = 9.8 m/s²</text>
+
+<!-- Depth scale arrow -->
+<line x1="280" y1="106" x2="280" y2="370" stroke="#0369a1" stroke-width="2" marker-end="url(#arr29)"/>
+<text x="297" y="240" font-family="Arial" font-size="14" fill="#0369a1">depth</text>
+
+<!-- Diver note -->
+<rect x="30" y="440" width="290" height="42" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="175" y="458" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">The bends (decompression sickness)</text>
+<text x="175" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">N₂ bubbles in blood if ascent too fast</text>
+
+<!-- ── CENTRE: Engineering challenges ── -->
+<rect x="344" y="74" width="298" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="493" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Engineering Challenges</text>
+
+<rect x="354" y="104" width="278" height="58" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="493" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Structural Walls</text>
+<text x="493" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Stress = P × Area</text>
+<text x="493" y="156" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Thick steel or titanium needed</text>
+
+<rect x="354" y="170" width="278" height="58" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="493" y="188" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Breathing Air</text>
+<text x="493" y="206" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Pressurised — N₂ dissolves in blood</text>
+<text x="493" y="222" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Use helium-oxygen (heliox) instead</text>
+
+<rect x="354" y="236" width="278" height="58" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="493" y="254" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Energy &amp; Light</text>
+<text x="493" y="272" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">OTEC: warm–cold ocean temp diff</text>
+<text x="493" y="288" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Acrylic panels transmit sunlight</text>
+
+<rect x="354" y="302" width="278" height="58" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="493" y="320" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Food Production</text>
+<text x="493" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Aquaculture + algae farms inside</text>
+<text x="493" y="354" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Hydroponic growing chambers</text>
+
+<rect x="354" y="368" width="278" height="58" rx="4" fill="#f1f5f9" stroke="#475569" stroke-width="1.5"/>
+<text x="493" y="386" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Corrosion</text>
+<text x="493" y="404" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Seawater corrodes metals fast</text>
+<text x="493" y="420" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Titanium, cathodic protection</text>
+
+<rect x="354" y="434" width="278" height="48" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="493" y="452" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Real example: NEEMO station</text>
+<text x="493" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">20 m deep off Florida — NASA</text>
+
+<!-- ── RIGHT: India context ── -->
+<rect x="656" y="74" width="324" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="818" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">India &amp; Ocean Technology</text>
+
+<rect x="666" y="104" width="304" height="84" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="818" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Deep Ocean Mission</text>
+<text x="818" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Samudrayaan submersible</text>
+<text x="818" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Target depth: 6,000 m</text>
+<text x="818" y="176" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">₹4,077 crore mission (2023)</text>
+
+<rect x="666" y="198" width="304" height="84" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="818" y="216" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#0369a1">Deep-Sea Mining Rights</text>
+<text x="818" y="234" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Central Indian Ocean claim</text>
+<text x="818" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Polymetallic nodules (Mn, Ni, Cu)</text>
+<text x="818" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">NCPOR, Goa manages research</text>
+
+<rect x="666" y="292" width="304" height="84" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="818" y="310" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">India's Coastline</text>
+<text x="818" y="328" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">7,516 km — 7th longest world</text>
+<text x="818" y="346" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">600 km EEZ offshore rights</text>
+<text x="818" y="364" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Navy: submarine rescue 650 m</text>
+
+<rect x="666" y="386" width="304" height="96" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="818" y="404" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Pressure Calculation</text>
+<text x="818" y="422" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">At 6,000 m (Samudrayaan):</text>
+<text x="818" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P = 101,325 + 1,025×9.8×6000</text>
+<text x="818" y="458" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">P ≈ 60.4 MPa ≈ 596 atm</text>
+<text x="818" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Wall needs massive strength</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">P = P₀ + ρgh: every 10 m adds ~1 atm. At 100 m = 11 atm — walls must be enormously strong.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India's Samudrayaan submersible targets 6,000 m depth. NCPOR mines polymetallic nodules.</text>
 </svg>

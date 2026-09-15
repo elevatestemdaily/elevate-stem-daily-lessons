@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 06 — Why does corrosion happen? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 06</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does corrosion happen?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to write the chemical equation for iron rusting, explain the electrochemical steps that turn Fe into Fe³⁺ oxide, identify the roles of oxygen and water, and predict what happens to rusting if oxygen is completely removed.</p>
+</div><h2>1. The mystery</h2>
+<p>The Howrah Bridge in Kolkata is made of steel and has stood over the Hooghly River since 1943. But every few years, engineers repaint it — roughly 26,000 litres of paint each time — precisely to stop it from destroying itself. Leave any iron object outdoors in a monsoon and within days it shows a familiar reddish-brown crust. Yet the aluminium body of a pressure cooker or the chrome taps in your bathroom do not rust at all. Iron rusts, aluminium and chromium do not. Why? What happens at the surface of iron that does not happen at the surface of these other metals?</p>
+<h2>2. The science behind it</h2>
+<p>Rusting is not a single-step reaction. It is an <strong>electrochemical process</strong> — a set of coupled oxidation and reduction reactions that requires three ingredients: iron, oxygen, and water. Remove any one and the process stalls.</p>
+<p><strong>Step 1 — Oxidation of iron at the anode.</strong>
+At certain spots on the iron surface, iron atoms lose electrons and become iron(II) ions:</p>
+<p>Fe → Fe²⁺ + 2e⁻</p>
+<p>This is an oxidation reaction (loss of electrons). The spots where this happens act as tiny anodes in an electrochemical cell.</p>
+<p><strong>Step 2 — Reduction of oxygen at the cathode.</strong>
+The electrons released at the anode travel through the iron to other spots on the surface, where dissolved oxygen in the water film picks them up:</p>
+<p>O₂ + 2H₂O + 4e⁻ → 4OH⁻</p>
+<p>These spots act as tiny cathodes. Water is essential here because oxygen must dissolve into a thin film of water to gain access to the electrons. Without liquid water, this step cannot occur.</p>
+<p><strong>Step 3 — Formation of rust.</strong>
+The Fe²⁺ ions and OH⁻ ions migrate through the water film and meet:</p>
+<p>Fe²⁺ + 2OH⁻ → Fe(OH)₂ (iron(II) hydroxide)</p>
+<p>Iron(II) hydroxide is then further oxidised by more dissolved oxygen to iron(III) hydroxide, and this dehydrates to give <strong>iron(III) oxide</strong> — the familiar reddish-brown rust:</p>
+<p>4Fe(OH)₂ + O₂ → 2Fe₂O₃·H₂O (hydrated iron(III) oxide / rust)</p>
+<p>The overall result is: <strong>Iron + Oxygen + Water → Iron(III) Oxide (rust).</strong></p>
+<p><strong>Why does water act as an electrolyte?</strong> Rainwater and seawater contain dissolved salts and CO₂ (forming carbonic acid), which makes them slightly acidic and more conductive. This accelerates ion movement between anodic and cathodic sites, which is why iron corrodes far faster near the coast or in polluted urban air than in dry interiors.</p>
+<p><strong>Why does the reactivity series matter?</strong> Metals higher in the reactivity series (like zinc, magnesium) have a stronger tendency to lose electrons and oxidise. Iron sits in the middle — it corrodes, but more slowly than zinc. Aluminium is above iron in the reactivity series, yet aluminium objects don't corrode visibly. Why? Aluminium instantly forms a very thin, hard layer of aluminium oxide (Al₂O₃) on its surface. This oxide layer is impermeable — it seals off the metal beneath from further contact with oxygen and water. The corrosion stops after that first microscopic layer forms. Iron(III) oxide (rust), by contrast, is porous and flaky — it does not seal the surface. Rust flakes off, exposing fresh iron, which then corrodes again. This is why rust is self-perpetuating while aluminium corrosion is self-limiting.</p>
+<p><strong>Stainless steel</strong> (used in Indian kitchen utensils) resists corrosion because it contains 10–30% chromium. Chromium forms a thin, adherent Cr₂O₃ passivation layer — similar to aluminium — that stops oxygen and water from reaching the iron atoms beneath.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the rusting iron surface as a miniature battery with thousands of tiny cells operating simultaneously:</p>
+<ul>
+<li><strong>Anode spots</strong> (bare iron areas, often at grain boundaries or scratches): Fe → Fe²⁺ + 2e⁻</li>
+<li><strong>Cathode spots</strong> (areas with more oxygen): O₂ + H₂O + 4e⁻ → OH⁻</li>
+<li><strong>Electrolyte</strong> = the thin film of moisture on the surface, carrying ions between anode and cathode</li>
+</ul>
+<p>The overall result is the conversion of solid iron into crumbly iron(III) oxide. Remove the electrolyte (keep it bone dry) and the ion circuit breaks — corrosion halts. Remove oxygen and the cathodic reaction has no reactant — electrons cannot be passed on and the anodic oxidation stops too.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows the iron surface cross-section with:</p>
+<ul>
+<li><strong>Left zone (anode):</strong> Iron atoms labelled "Fe → Fe²⁺ + 2e⁻", with electrons shown flowing rightward through the metal</li>
+<li><strong>Right zone (cathode):</strong> O₂ and H₂O molecules in a water film, labelled "O₂ + 2H₂O + 4e⁻ → 4OH⁻"</li>
+<li><strong>Middle zone:</strong> Fe²⁺ and OH⁻ ions meeting in the water film, arrow pointing to a red-brown clump labelled "Fe₂O₃·H₂O (rust)"</li>
+<li>A dashed boundary at the top labelled "Water film (electrolyte)"</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_06.svg" alt="Diagram for Why does corrosion happen?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Monsoon season:</strong> During India's monsoon, iron gates and grilles corrode visibly within days. The continuous water film provides the electrolyte; warm temperatures accelerate ion migration.</li>
+<li><strong>Coastal cities (Mumbai, Chennai):</strong> Salt dissolved in sea air makes the electrolyte more conductive, accelerating the anodic and cathodic reactions. Bridge engineers in coastal cities must repaint or recoat steel structures more frequently.</li>
+<li><strong>Stainless steel in Indian kitchens:</strong> The Cr₂O₃ passivation layer on stainless steel prevents the anodic reaction from starting — no Fe²⁺ is produced because chromium sacrificially forms its own protective oxide first.</li>
+<li><strong>Old iron water pipes:</strong> When an iron pipe develops a crack that exposes fresh iron, the corrosion cell activates. The rust that forms is voluminous (rust occupies about 6–7 times the volume of the iron it replaces), which is why corroding pipes crack further from the inside out.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>why does corrosion happen</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>In a science experiment, four identical iron nails are placed in four test tubes:</p>
+<ul>
+<li>Tube A: open to air, with water</li>
+<li>Tube B: sealed with calcium chloride (a drying agent, no water vapour)</li>
+<li>Tube C: boiled water (oxygen removed), sealed</li>
+<li>Tube D: salt water, open to air</li>
+</ul>
+<p>Rank these nails from fastest to slowest corrosion after one week. Use the electrochemical mechanism — anode reaction, cathode reaction, electrolyte conductivity — to justify each ranking. Then predict: what would happen if you added a piece of zinc metal touching the nail in Tube A? Would the nail rust faster, slower, or not at all? Explain using the reactivity series.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes iron to corrode (rust) when exposed to air and moisture?</p>
+<ul>
+<li>a. Iron reacts with nitrogen in air to form a brittle iron nitride layer</li>
+<li>b. Iron reacts with oxygen and water to form iron oxide (rust)</li>
+<li>c. Iron loses carbon atoms to the atmosphere, weakening its structure</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the oxidation mechanism of corrosion more useful than noting it happens?</p>
+<ul>
+<li>a. Because all metals corrode identically so the mechanism is universal</li>
+<li>b. Knowing the mechanism explains which conditions accelerate or prevent corrosion</li>
+<li>c. Because the mechanism proves corrosion is beneficial and should not be stopped</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to iron corrosion if oxygen were completely removed from the environment?</p>
+<ul>
+<li>a. Corrosion would accelerate because iron reacts faster without oxygen competition</li>
+<li>b. The rate of rusting would stay the same as moisture is the only factor</li>
+<li>c. Corrosion would stop or greatly slow because oxygen is essential for rusting</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Rust is a far worse structural material than iron: it is porous, brittle, and about six to seven times the volume of the iron it replaces. This expansion is why brick walls crack when embedded iron reinforcement rods corrode — the expanding rust pushes the concrete apart from the inside. Engineers call this "concrete cancer." In cities like Mumbai, the combination of humidity, salt air, and carbonation of concrete makes this one of the most expensive maintenance problems in urban infrastructure — all because Fe²⁺ keeps losing electrons to dissolved oxygen.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Iron rusts because it undergoes an electrochemical reaction: iron atoms at anode spots lose electrons to form Fe²⁺, dissolved oxygen at cathode spots gains those electrons to form OH⁻, and these ions combine in the water film to produce hydrated iron(III) oxide — a process that stops immediately if either oxygen or water is removed.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 6 of 30</footer>
+</div>
+</body>
+</html>

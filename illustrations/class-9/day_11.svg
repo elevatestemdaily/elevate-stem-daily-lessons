@@ -1,26 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does your body obtain energy from food</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 11</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How does your body get energy from food?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Cellular respiration: glucose → ATP in three stages — Day 11</text>
+
+<!-- LEFT: Overall equation + overview -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Cellular Respiration</text>
+
+<rect x="30" y="104" width="280" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Overall Equation</text>
+<text x="40" y="144" font-family="Arial" font-size="14" fill="#333">C₆H₁₂O₆ + 6O₂</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">→ 6CO₂ + 6H₂O + 38 ATP</text>
+
+<rect x="30" y="194" width="280" height="56" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="212" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Glucose → ATP (energy currency)</text>
+<text x="40" y="234" font-family="Arial" font-size="14" fill="#333">ATP = adenosine triphosphate</text>
+
+<rect x="30" y="260" width="280" height="88" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="278" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Anaerobic Respiration</text>
+<text x="40" y="298" font-family="Arial" font-size="14" fill="#333">Without O₂: glucose → lactic acid</text>
+<text x="40" y="316" font-family="Arial" font-size="14" fill="#333">(in muscles during hard exercise)</text>
+<text x="40" y="334" font-family="Arial" font-size="14" fill="#555">Or → ethanol + CO₂ (in yeast)</text>
+
+<rect x="30" y="358" width="280" height="124" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="170" y="376" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">India: Food &amp; Energy</text>
+<text x="40" y="396" font-family="Arial" font-size="14" fill="#333">Rice: main glucose source for 600M</text>
+<text x="40" y="414" font-family="Arial" font-size="14" fill="#333">Roti (wheat): starch → glucose</text>
+<text x="40" y="432" font-family="Arial" font-size="14" fill="#555">Yeast (fermentation): idli, dosa</text>
+<text x="40" y="450" font-family="Arial" font-size="14" fill="#555">Sugarcane ethanol (biofuel): E20 policy</text>
+<text x="40" y="468" font-family="Arial" font-size="14" fill="#555">India blends 20% ethanol in petrol</text>
+
+<!-- CENTRE: Three stages -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Three Stages</text>
+
+<!-- Stage 1: Glycolysis -->
+<rect x="344" y="104" width="312" height="100" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Stage 1: Glycolysis</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Location: cytoplasm (no O₂ needed)</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">Glucose (6C) → 2 pyruvate (3C)</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">Produces: 2 ATP  (net)</text>
+
+<!-- Arrow -->
+<text x="500" y="212" text-anchor="middle" font-family="Arial" font-size="20" fill="#1f5f8b">↓</text>
+
+<!-- Stage 2: Krebs -->
+<rect x="344" y="218" width="312" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="236" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Stage 2: Krebs Cycle</text>
+<text x="354" y="258" font-family="Arial" font-size="14" fill="#333">Location: mitochondrial matrix</text>
+<text x="354" y="276" font-family="Arial" font-size="14" fill="#333">Pyruvate → CO₂ + H carriers</text>
+<text x="354" y="296" font-family="Arial" font-size="14" fill="#555">Produces: 2 ATP + NADH/FADH₂</text>
+
+<!-- Arrow -->
+<text x="500" y="326" text-anchor="middle" font-family="Arial" font-size="20" fill="#1f5f8b">↓</text>
+
+<!-- Stage 3: ETC -->
+<rect x="344" y="332" width="312" height="100" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="350" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Stage 3: Electron Transport Chain</text>
+<text x="354" y="370" font-family="Arial" font-size="14" fill="#333">Location: inner mitochondrial membrane</text>
+<text x="354" y="390" font-family="Arial" font-size="14" fill="#333">NADH/FADH₂ → H₂O + 34 ATP</text>
+<text x="354" y="410" font-family="Arial" font-size="14" fill="#555">O₂ is final electron acceptor</text>
+
+<rect x="344" y="444" width="312" height="38" rx="4" fill="#1f5f8b"/>
+<text x="500" y="468" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Total: 38 ATP per glucose molecule</text>
+
+<!-- RIGHT: ATP + India -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">ATP &amp; India's Energy</text>
+
+<rect x="690" y="104" width="280" height="96" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">ATP: Energy Currency</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ATP → ADP + Pi + energy</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Powers every cellular process</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Muscles, nerve signals, biosynthesis</text>
+<text x="830" y="196" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Humans make 40 kg ATP/day!</text>
+
+<rect x="690" y="210" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="228" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Indian Agriculture</text>
+<text x="830" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Photosynthesis (reverse of respiration)</text>
+<text x="830" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">stores energy in glucose → grains</text>
+<text x="830" y="284" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India: 120 million t rice harvest/year</text>
+
+<rect x="690" y="308" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="326" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Exercise Physiology</text>
+<text x="830" y="346" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sprinting: anaerobic (lactic acid)</text>
+<text x="830" y="364" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Long distance: aerobic (fat + glucose)</text>
+<text x="830" y="382" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Indian athletes: ABCD nutrition plan</text>
+
+<rect x="690" y="406" width="280" height="76" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="424" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Biofuel: E20 Policy</text>
+<text x="830" y="444" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ethanol from sugarcane respiration</text>
+<text x="830" y="462" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">20% blend target by 2025 saves</text>
+<text x="830" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">₹30,000 crore in oil imports</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38 ATP. Three stages: glycolysis, Krebs, ETC.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">ATP is the cell's energy currency. India: rice feeds 600M people; sugarcane ethanol in E20 petrol.</text>
 </svg>

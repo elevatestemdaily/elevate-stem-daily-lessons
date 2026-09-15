@@ -1,26 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr18b" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1d4ed8"/></marker>
+  <marker id="arr18r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+  <marker id="arr18g" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#16a34a"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">What exactly is force?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 18</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">What exactly is force?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Newton's 3 laws, F=ma, vectors, and types of forces — Day 18</text>
+
+<!-- LEFT: Newton's Laws -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Newton's 3 Laws</text>
+
+<rect x="30" y="104" width="280" height="96" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Law 1: Inertia</text>
+<text x="40" y="144" font-family="Arial" font-size="14" fill="#333">An object stays at rest OR moves at</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">constant velocity unless a net force acts.</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">No force needed to keep moving!</text>
+
+<rect x="30" y="208" width="280" height="96" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="226" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Law 2: F = ma</text>
+<text x="40" y="248" font-family="Arial" font-size="14" fill="#333">Net force = mass × acceleration</text>
+<text x="40" y="268" font-family="Arial" font-size="14" fill="#333">Units: Newton (N) = kg × m/s²</text>
+<text x="40" y="288" font-family="Arial" font-size="14" fill="#555">Double mass → half acceleration (same F)</text>
+
+<rect x="30" y="312" width="280" height="96" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="170" y="330" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Law 3: Action-Reaction</text>
+<text x="40" y="352" font-family="Arial" font-size="14" fill="#333">Every action has an equal and opposite</text>
+<text x="40" y="370" font-family="Arial" font-size="14" fill="#333">reaction force (on different bodies).</text>
+<text x="40" y="390" font-family="Arial" font-size="14" fill="#555">Rocket: gas pushed back → rocket forward</text>
+
+<rect x="30" y="418" width="280" height="64" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="436" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Newton (1687)</text>
+<text x="40" y="456" font-family="Arial" font-size="14" fill="#333">Principia Mathematica — unified</text>
+<text x="40" y="474" font-family="Arial" font-size="14" fill="#555">terrestrial + celestial mechanics</text>
+
+<!-- CENTRE: Forces + vectors -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Forces &amp; Vectors</text>
+
+<!-- Vector diagram -->
+<rect x="344" y="104" width="312" height="158" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Force is a Vector</text>
+<circle cx="460" cy="200" r="8" fill="#374151"/>
+<!-- Vectors -->
+<line x1="460" y1="200" x2="500" y2="148" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr18r)"/>
+<text x="508" y="152" font-family="Arial" font-size="14" fill="#dc2626">Normal (N)</text>
+<line x1="460" y1="200" x2="392" y2="240" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arr18b)"/>
+<text x="344" y="245" font-family="Arial" font-size="14" fill="#1d4ed8">Friction (f)</text>
+<line x1="460" y1="200" x2="528" y2="240" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arr18g)"/>
+<text x="532" y="245" font-family="Arial" font-size="14" fill="#16a34a">Applied (F)</text>
+<line x1="460" y1="200" x2="460" y2="248" stroke="#f97316" stroke-width="2.5" marker-end="url(#arr18r)"/>
+<text x="465" y="258" font-family="Arial" font-size="14" fill="#f97316">mg (Weight)</text>
+<text x="500" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Net force = vector sum of all forces</text>
+
+<rect x="344" y="272" width="312" height="108" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="290" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Types of Forces</text>
+<text x="354" y="312" font-family="Arial" font-size="14" fill="#333">Contact: normal, friction, tension, spring</text>
+<text x="354" y="332" font-family="Arial" font-size="14" fill="#333">Non-contact: gravity, magnetic, electric</text>
+<text x="354" y="352" font-family="Arial" font-size="14" fill="#555">Weight = mg (g = 9.8 m/s² on Earth)</text>
+<text x="354" y="370" font-family="Arial" font-size="14" fill="#555">Friction: opposes relative motion</text>
+
+<rect x="344" y="390" width="312" height="92" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="408" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">F = ma Examples</text>
+<text x="354" y="430" font-family="Arial" font-size="14" fill="#333">Car: 1000 kg, a = 3 m/s² → F = 3,000 N</text>
+<text x="354" y="450" font-family="Arial" font-size="14" fill="#333">Rocket: 700,000 kg, thrust 7 MN</text>
+<text x="354" y="468" font-family="Arial" font-size="14" fill="#555">a = 7×10⁶/700,000 = 10 m/s²</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Force in Action</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">ISRO Rockets</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">PSLV: 320,000 kg mass</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Thrust: 4.75 MN at liftoff</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">a = (F − mg)/m = ~4.8 m/s²</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Cricket</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ball: 0.16 kg, bowled at 150 km/h</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bat applies ~5,000 N in 1 ms</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Ball exits at up to 120 m/s (3rd law!)</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Earthquake Engineering</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Seismic force F = ma (ground accel.)</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Buildings designed for Zone IV forces</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">IS 1893 code: India seismic standards</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Tug of War</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Net force = vector sum of all pulls</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">If balanced: no acceleration (Law 1)</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Unbalanced: movement (Law 2)</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Law 1: inertia. Law 2: F=ma. Law 3: equal + opposite reaction. Force is a vector.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">PSLV thrust 4.75 MN lifts 320 t rocket. Cricket bat applies 5,000 N in 1 ms — Newton's 3rd law in action.</text>
 </svg>

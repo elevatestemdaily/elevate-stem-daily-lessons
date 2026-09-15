@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 16 — What makes electricity flow? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 16</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>What makes electricity flow?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover why electricity flows — and why a battery is actually a kind of pump for tiny particles called electrons.</p>
+</div><h2>1. The mystery</h2>
+<p>You press a switch and a bulb lights up instantly. But what actually travels through the wire? Is it heat? Is it light itself? And if we can't see it, how do we know anything is moving at all?</p>
+<h2>2. The science behind it</h2>
+<p>A metal wire is full of <strong>free electrons</strong> — tiny negative particles that are loosely attached and can drift from atom to atom. Normally they wander randomly in all directions, so no useful current results. A <strong>battery</strong> creates a <strong>potential difference</strong> (also called <strong>voltage</strong>) between its two terminals — one end is crowded with electrons (negative terminal, −), the other is electron-hungry (positive terminal, +). That imbalance is the push. Connect a wire between them and every free electron in the wire is shoved in the same direction at once — that coordinated drift is <strong>electric current</strong>.</p>
+<p><strong>Current</strong> is the number of electrons passing a point per second. <strong>Voltage</strong> is the strength of the push (like water pressure). <strong>Resistance</strong> is anything that slows the flow (like a narrow pipe). These three are linked: a higher voltage forces more current through the same resistance.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a circuit like a water system:</p>
+<table>
+<thead>
+<tr>
+<th>Water system</th>
+<th>Electrical circuit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pump</td>
+<td>Battery</td>
+</tr>
+<tr>
+<td>Water pressure</td>
+<td>Voltage</td>
+</tr>
+<tr>
+<td>Water flow rate</td>
+<td>Current</td>
+</tr>
+<tr>
+<td>Narrow pipe</td>
+<td>Resistance</td>
+</tr>
+<tr>
+<td>Taps &amp; pipes</td>
+<td>Wires, bulbs, switches</td>
+</tr>
+</tbody>
+</table>
+<p>The pump does not create water — it moves existing water around a loop. Similarly, the battery does not create electrons — it moves existing electrons around the circuit. No current can flow unless the loop is <strong>closed</strong> (unbroken).</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-7/day_16.svg" alt="Diagram for What makes electricity flow?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a battery (marked + and −) connected by wires to a light bulb. Electron flow arrows go from − terminal through the wire, through the bulb filament (where resistance converts electrical energy to light and heat), and back to + terminal. A broken wire (open switch) stops the flow — the bulb goes dark.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Short circuit:</strong> connecting + to − with a thick wire and no resistance — enormous current flows, wire gets red-hot, battery drains in seconds. House wiring has fuses or circuit breakers to prevent this.</li>
+<li><strong>Series and parallel:</strong> Christmas lights in series — one bulb breaks, all go out. Modern LED chains are in parallel — each bulb has its own path, so one failure doesn't darken the rest.</li>
+<li><strong>Your phone charger:</strong> converts AC mains voltage to the small DC voltage your battery needs, carefully controlling current to avoid overheating.</li>
+<li><strong>Lightning:</strong> nature's short circuit — a huge potential difference builds between cloud and ground; air itself breaks down and current surges through.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Make a simple circuit with a 1.5 V AA battery, a torch bulb (or LED + 100 Ω resistor), and two wires. Touch both wires to the battery terminals — bulb glows. Lift one wire — it goes dark. Wrap the bare wire end in a rubber band — dark again (rubber is an insulator, blocking electron flow). Use a coin between the wire ends — glows again (metal is a conductor).</p>
+</div><h2>7. Think deeper</h2>
+<p>A battery that has "run out" still contains the same chemicals and the same electrons. What has actually been used up? (Hint: think about the water-pump analogy — the pump doesn't lose water, it loses the energy needed to keep pumping.) What does recharging a battery actually restore?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes electric current to flow through a conductor?</p>
+<ul>
+<li>A. Electricity flows because atoms in a wire vibrate and bump into each other, passing energy along.</li>
+<li>B. Current flows because positive charges in the wire are attracted toward the negative terminal of a battery.</li>
+<li>C. A potential difference (voltage) pushes free electrons through a conductor, creating an electric current.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding voltage and electron flow more useful than knowing that electricity comes from a battery?</p>
+<ul>
+<li>A. Batteries produce magic energy that cannot be explained by electron movement.</li>
+<li>B. Electrons never actually move in a wire; only energy moves, so the mechanism is irrelevant.</li>
+<li>C. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+</ul>
+<h3>Q3</h3>
+<p>If you connected a wire between the two terminals of a battery without any bulb or resistor, what would you predict?</p>
+<ul>
+<li>A. A very large current would flow, heating the wire rapidly and quickly draining the battery.</li>
+<li>B. No current would flow because a bulb is required to complete the circuit.</li>
+<li>C. The battery would produce light instead of current because the circuit is incomplete.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A torch has two 1.5 V batteries. If you put them in <strong>series</strong> (+ of one touching − of the other), the combined voltage is 3 V. If you put them in <strong>parallel</strong> (both + ends together, both − ends together), the voltage stays at 1.5 V but the batteries last longer. Why does the arrangement change how bright the bulb is and how long it lasts?</p>
+</div><h2>10. One surprising idea</h2>
+<p>Electrons in a wire drift at only about 0.1 mm per second — slower than a snail. Yet your light switches on instantly. This seems impossible until you realise the wire is already packed with electrons end to end. When you push one in at the battery end, the pressure travels at close to the speed of light and a different electron pops out at the bulb end almost immediately — just like water coming out of a full hose the instant you turn the tap.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Voltage (potential difference) pushes free electrons through a closed circuit. More voltage = more current. Break the circuit = no flow. The battery moves electrons — it doesn't create them.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="dn11" markerWidth="8" markerHeight="6" refX="4" refY="6" orient="auto"><polygon points="0 0,8 0,4 6" fill="#dc2626"/></marker>
+  <marker id="up11" markerWidth="8" markerHeight="6" refX="4" refY="0" orient="auto"><polygon points="0 6,8 6,4 0" fill="#065f46"/></marker>
+  <marker id="rt11" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#0369a1"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does a hydraulic lift lift a car?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 11</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does a hydraulic lift lift a car?</text>
+<text x="500" y="62" text-anchor="middle" font-family="Arial" font-size="17" fill="#555">Pascal's Law: same pressure everywhere in a confined fluid — Day 11</text>
+
+<!-- ── LEFT: Hydraulic system diagram ── -->
+<!-- Small cylinder -->
+<rect x="40" y="90" width="70" height="200" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="75" y="108" text-anchor="middle" font-family="Arial" font-size="14" fill="#0369a1" font-weight="700">Small</text>
+<text x="75" y="124" text-anchor="middle" font-family="Arial" font-size="14" fill="#0369a1">piston</text>
+<!-- Small piston head -->
+<rect x="43" y="150" width="64" height="14" rx="2" fill="#0369a1"/>
+<!-- Force arrow down -->
+<line x1="75" y1="106" x2="75" y2="145" stroke="#dc2626" stroke-width="3" marker-end="url(#dn11)"/>
+
+<!-- Input labels -->
+<rect x="118" y="138" width="175" height="46" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="205" y="158" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#dc2626">F₁ = 100 N</text>
+<text x="205" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">A₁ = 10 cm²   P = 10 N/cm²</text>
+
+<!-- Fluid pipe -->
+<rect x="40" y="290" width="500" height="36" rx="4" fill="#bae6fd" stroke="#0369a1" stroke-width="2"/>
+<text x="290" y="313" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#0369a1">OIL — pressure = 10 N/cm² equally everywhere (Pascal's Law)</text>
+
+<!-- Large cylinder -->
+<rect x="370" y="100" width="170" height="190" rx="4" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<!-- Large piston head -->
+<rect x="373" y="160" width="164" height="14" rx="2" fill="#0369a1"/>
+<!-- Car on top -->
+<rect x="380" y="84" width="150" height="74" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="2"/>
+<rect x="400" y="68" width="110" height="26" rx="5" fill="#64748b" stroke="#475569" stroke-width="1.5"/>
+<text x="455" y="122" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="white">CAR 1,500 kg</text>
+<!-- Wheels -->
+<circle cx="400" cy="162" r="12" fill="#334155"/>
+<circle cx="540" cy="162" r="12" fill="#334155"/>
+<!-- Output force arrow up -->
+<line x1="455" y1="180" x2="455" y2="161" stroke="#065f46" stroke-width="3" marker-end="url(#up11)"/>
+
+<!-- Output labels -->
+<rect x="550" y="138" width="195" height="46" rx="4" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+<text x="647" y="158" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#065f46">F₂ = 10,000 N</text>
+<text x="647" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">A₂ = 1,000 cm²   (100× larger)</text>
+
+<!-- Equation box -->
+<rect x="40" y="340" width="360" height="110" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="220" y="363" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#7c3aed">Pascal's Law</text>
+<text x="220" y="390" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#4c1d95">F₁ / A₁ = F₂ / A₂</text>
+<text x="220" y="414" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">100 / 10 = 10,000 / 1,000 = 10 N/cm²</text>
+<text x="220" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Work in = Work out  (energy conserved)</text>
+
+<!-- Energy note -->
+<rect x="415" y="340" width="330" height="110" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+<text x="580" y="363" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#065f46">Energy conserved</text>
+<text x="580" y="387" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">F₁ × d₁ = F₂ × d₂</text>
+<text x="580" y="408" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">100× force → small piston travels 100×</text>
+<text x="580" y="428" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">farther than large piston</text>
+<text x="580" y="447" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Oil used: non-corrosive, high boiling pt</text>
+
+<!-- ── RIGHT: Applications ── -->
+<rect x="760" y="78" width="225" height="375" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="872" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Real Applications</text>
+
+<rect x="770" y="108" width="205" height="62" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="872" y="127" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Car service lift</text>
+<text x="872" y="146" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Maruti / Hyundai garages</text>
+<text x="872" y="162" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">150 bar — lifts 3,000 kg</text>
+
+<rect x="770" y="178" width="205" height="62" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="872" y="197" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">JCB Excavator</text>
+<text x="872" y="216" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Pune factory — 350 bar</text>
+<text x="872" y="232" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Digging force &gt; 50,000 N</text>
+
+<rect x="770" y="248" width="205" height="62" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="872" y="267" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Aircraft brakes</text>
+<text x="872" y="286" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mumbai airport — high pressure</text>
+<text x="872" y="302" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Pedal → calliper grips disc</text>
+
+<rect x="770" y="318" width="205" height="62" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="872" y="337" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Bicycle disc brakes</text>
+<text x="872" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Finger lever → small piston</text>
+<text x="872" y="372" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">→ calliper clamps rotor</text>
+
+<rect x="770" y="388" width="205" height="58" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="872" y="407" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Force ratio up to 1000:1</text>
+<text x="872" y="426" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Industrial hydraulic press</text>
+<text x="872" y="442" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Stamps car body panels</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="537" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="white">Pascal's Law: F₂ = F₁ × (A₂/A₁). Same pressure everywhere. Larger piston → greater force. Energy conserved.</text>
 </svg>

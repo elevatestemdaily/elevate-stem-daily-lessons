@@ -1,26 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does a roller coaster convert energy?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 23</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How does a roller coaster convert energy?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">GPE → KE, mgh = ½mv², and energy conservation in action — Day 23</text>
+
+<!-- LEFT: Roller coaster profile -->
+<rect x="20" y="74" width="330" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="185" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Energy on the Track</text>
+
+<!-- Track profile -->
+<rect x="30" y="104" width="310" height="200" rx="4" fill="white" stroke="#0284c7" stroke-width="1"/>
+<!-- Track line -->
+<polyline points="40,270 40,130 130,130 130,220 220,170 220,290 310,195 310,290 340,290"
+  fill="none" stroke="#374151" stroke-width="3"/>
+<!-- Ground -->
+<line x1="30" y1="290" x2="340" y2="290" stroke="#374151" stroke-width="2"/>
+<!-- Height markers -->
+<line x1="40" y1="130" x2="40" y2="290" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="46" y="214" font-family="Arial" font-size="14" fill="#dc2626">h=50m</text>
+<line x1="220" y1="170" x2="220" y2="290" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="224" y="238" font-family="Arial" font-size="14" fill="#1d4ed8">h=30m</text>
+<line x1="310" y1="195" x2="310" y2="290" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<text x="314" y="248" font-family="Arial" font-size="14" fill="#16a34a">h=20m</text>
+<!-- Cart at top -->
+<rect x="34" y="122" width="18" height="12" rx="2" fill="#f59e0b" stroke="#d97706" stroke-width="1.5"/>
+<!-- Labels -->
+<text x="65" y="125" font-family="Arial" font-size="14" fill="#dc2626">MAX GPE</text>
+<text x="65" y="141" font-family="Arial" font-size="14" fill="#dc2626">MIN KE</text>
+<text x="130" y="265" font-family="Arial" font-size="14" fill="#16a34a">MAX KE</text>
+<text x="130" y="281" font-family="Arial" font-size="14" fill="#16a34a">MIN GPE</text>
+
+<!-- Calculations -->
+<rect x="30" y="314" width="310" height="168" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="185" y="332" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Energy Calculations</text>
+<text x="40" y="352" font-family="Arial" font-size="14" fill="#333">GPE = mgh (top of hill)</text>
+<text x="40" y="372" font-family="Arial" font-size="14" fill="#333">= 1000 × 10 × 50 = 500,000 J</text>
+<text x="40" y="392" font-family="Arial" font-size="14" fill="#333">At bottom (no friction):</text>
+<text x="40" y="412" font-family="Arial" font-size="14" fill="#333">KE = GPE → ½mv² = mgh</text>
+<text x="40" y="432" font-family="Arial" font-size="14" fill="#1d4ed8">v = √(2gh) = √(2×10×50) ≈ 31.6 m/s</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#555">(114 km/h at bottom!)</text>
+<text x="40" y="472" font-family="Arial" font-size="14" fill="#555">Subsequent hills must be shorter (losses)</text>
+
+<!-- CENTRE: Interchange diagram + formula -->
+<rect x="364" y="74" width="272" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">GPE ↔ KE</text>
+
+<rect x="374" y="104" width="252" height="108" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Energy Exchange</text>
+<text x="384" y="144" font-family="Arial" font-size="14" fill="#333">Descending: GPE → KE</text>
+<text x="384" y="164" font-family="Arial" font-size="14" fill="#333">Ascending: KE → GPE</text>
+<text x="384" y="184" font-family="Arial" font-size="14" fill="#555">Total mechanical energy:</text>
+<text x="384" y="200" font-family="Arial" font-size="14" fill="#555">KE + GPE = constant (ideal)</text>
+
+<rect x="374" y="222" width="252" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="240" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Speed Formula</text>
+<text x="384" y="264" font-family="Arial" font-size="16" font-weight="700" fill="#1d4ed8">v = √(2gh)</text>
+<text x="384" y="286" font-family="Arial" font-size="14" fill="#555">Mass cancels: all objects fall same speed</text>
+<text x="384" y="304" font-family="Arial" font-size="14" fill="#555">h doubles → speed × √2 (not × 2)</text>
+
+<rect x="374" y="322" width="252" height="90" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Real World: Friction</text>
+<text x="384" y="362" font-family="Arial" font-size="14" fill="#333">Each conversion: some heat lost</text>
+<text x="384" y="380" font-family="Arial" font-size="14" fill="#333">Total energy decreases each hill</text>
+<text x="384" y="398" font-family="Arial" font-size="14" fill="#555">Final hill must be lower than first</text>
+<text x="384" y="406" font-family="Arial" font-size="14" fill="#555">Brakes add final energy removal</text>
+
+<rect x="374" y="422" width="252" height="60" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Loop: min speed at top</text>
+<text x="384" y="460" font-family="Arial" font-size="14" fill="#555">v_min = √(gr): centripetal ≥ gravity</text>
+<text x="384" y="476" font-family="Arial" font-size="14" fill="#555">GPE must supply this speed</text>
+
+<!-- RIGHT: India context -->
+<rect x="650" y="74" width="330" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="815" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: GPE to KE</text>
+
+<rect x="660" y="104" width="310" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="815" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Bhakra Dam (226 m)</text>
+<text x="815" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Water: v = √(2 × 10 × 226) ≈ 67 m/s</text>
+<text x="815" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Turbines extract KE → 1,325 MW</text>
+<text x="815" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Powers 7 million homes</text>
+
+<rect x="660" y="202" width="310" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="815" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">ISRO Launch</text>
+<text x="815" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chemical energy → KE + GPE</text>
+<text x="815" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">At orbit: satellite has both GPE and KE</text>
+<text x="815" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Total: ~30 GJ for PSLV</text>
+
+<rect x="660" y="300" width="310" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="815" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Atal Tunnel (Rohtang)</text>
+<text x="815" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Saves 46 km of climbing h = 2000 m</text>
+<text x="815" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Fuel saved per truck: mgh = 1500 MJ</text>
+<text x="815" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">₹500+ crore annual fuel saving</text>
+
+<rect x="660" y="398" width="310" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="815" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Marble Ramp Experiment</text>
+<text x="815" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Release from h₁ → rises to h₂ ≈ h₁</text>
+<text x="815" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Energy conserved (small friction loss)</text>
+<text x="815" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Do this at home with a ruler + marble</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">v = √(2gh): GPE converts to KE descending. Double height → √2 times speed, not double.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Friction causes each hill to be shorter. Bhakra Dam: water at 226 m → 67 m/s → 1,325 MW electricity.</text>
 </svg>

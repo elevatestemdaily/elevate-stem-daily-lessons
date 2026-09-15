@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 10 — How soap actually removes dirt | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 10</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How soap actually removes dirt</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to describe the amphiphilic structure of a soap molecule, explain micelle formation step by step, and predict why soap loses its cleaning ability in hard water containing calcium and magnesium ions.</p>
+</div><h2>1. The mystery</h2>
+<p>You are cooking in the kitchen and your hands are coated in mustard oil. You hold them under running water — nothing happens. Water runs right off the oil without picking it up. Then you pick up a bar of soap, rub it on your hands for 20 seconds, rinse — and the oil is gone. Water alone cannot do what water-plus-soap does in 20 seconds. But soap is also mostly carbon and hydrogen. It does not chemically react with the oil or oxidise it. How does rubbing a bar of soap on greasy hands remove the grease using nothing but water as the rinsing agent?</p>
+<h2>2. The science behind it</h2>
+<p>The answer is the <strong>amphiphilic</strong> (or <strong>amphipathic</strong>) molecular structure of soap — a structure that allows soap to act as a bridge between water and oil, two liquids that cannot ordinarily mix.</p>
+<p><strong>Structure of a soap molecule.</strong></p>
+<p>Soap is made by reacting a fat or oil with a strong base (sodium hydroxide, NaOH, for solid soap; potassium hydroxide, KOH, for liquid soap). This reaction is called <strong>saponification</strong>. A fat is a molecule with a long hydrocarbon chain (often 12–18 carbons) attached to a glycerol backbone via an ester linkage. Saponification breaks the ester bond, releasing the long-chain fatty acid as its sodium salt.</p>
+<p>The resulting soap molecule has two chemically distinct ends:</p>
+<ul>
+<li><strong>Hydrophilic (water-loving) head:</strong> A negatively charged carboxylate ion (–COO⁻Na⁺). This end is ionic and strongly attracted to water molecules through ion-dipole interactions. It dissolves readily in water.</li>
+<li><strong>Hydrophobic (water-fearing) tail:</strong> A long, non-polar hydrocarbon chain (typically –(CH₂)₁₁– or longer). This end has no charge and is repelled by water but attracted to oils, fats, and non-polar dirt by van der Waals forces.</li>
+</ul>
+<p>Common soaps include sodium stearate (18-carbon chain) and sodium palmitate (16 carbons). Coconut oil soap — prevalent in Kerala — is rich in sodium laurate (12 carbons), giving good lathering at shorter chain length.</p>
+<p><strong>Step 1 — Soap molecules enter the water.</strong>
+When soap is rubbed onto wet skin, the sodium or potassium ions dissociate (soap ionises in water). The carboxylate heads dissolve into the water. The hydrophobic tails are repelled by the water and would rather be in contact with oil or with each other.</p>
+<p><strong>Step 2 — Micelle formation.</strong>
+Above a concentration called the <strong>critical micelle concentration (CMC)</strong>, soap molecules spontaneously organise into <strong>micelles</strong> — roughly spherical aggregates of 50–100 soap molecules. In a micelle:</p>
+<ul>
+<li>All the <strong>hydrophobic tails point inward</strong> toward the centre of the sphere, away from water</li>
+<li>All the <strong>hydrophilic heads point outward</strong> into the surrounding water</li>
+</ul>
+<p>The interior of the micelle is now a small oil-like compartment.</p>
+<p><strong>Step 3 — Oil is captured inside the micelle.</strong>
+When a micelle encounters a droplet of oil or grease on the skin, the hydrophobic tails insert themselves into the oil. The oil droplet is engulfed inside the micelle's hydrophobic core. The oil is now completely surrounded by the hydrophilic heads on the exterior, making the entire oil-containing micelle soluble in water.</p>
+<p><strong>Step 4 — Rinsing.</strong>
+When water is poured over the skin, the micelles — with the oil trapped inside — are washed away. The oil has not been chemically decomposed; it has been physically enclosed in a water-soluble package. The skin is left clean.</p>
+<p><strong>Why water alone fails.</strong> Water is a polar molecule. Oil is non-polar. Polar and non-polar substances do not mix because the intermolecular attractions in water (hydrogen bonds) are far stronger than any attraction between water and oil molecules. Without soap, oil sits on the skin surface and water slides around it.</p>
+<p><strong>Hard water and soap scum.</strong></p>
+<p>Hard water contains dissolved calcium ions (Ca²⁺) and magnesium ions (Mg²⁺). These ions come from limestone and chalk rocks that rainwater passes through. In hard water, Ca²⁺ and Mg²⁺ react with the carboxylate head of soap:</p>
+<p>2 RCOO⁻ (soap) + Ca²⁺ → (RCOO)₂Ca (calcium soap, insoluble)</p>
+<p>Calcium soap and magnesium soap are insoluble in water. They precipitate as a sticky white solid — the familiar "scum" seen in hard-water areas. Once the soap has reacted with calcium and magnesium ions, its molecules can no longer form micelles properly (the charged heads are neutralised). The cleaning action stops until all the Ca²⁺ and Mg²⁺ ions are consumed — which is why you need much more soap in hard water areas.</p>
+<p><strong>Synthetic detergents</strong> were designed specifically to overcome this limitation. Detergents have a similar amphiphilic structure but their hydrophilic head is a sulfonate group (–SO₃⁻Na⁺) rather than a carboxylate (–COO⁻Na⁺). Calcium and magnesium sulfonates are soluble — they do not precipitate as scum. This is why washing powders (e.g. Surf Excel, Ariel) work equally well in the hard water found in many Indian cities, while soap bars are less efficient there.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of each soap molecule as a tiny tadpole:</p>
+<ul>
+<li><strong>Head (ionic, charged):</strong> loves water, dissolves in water</li>
+<li><strong>Tail (hydrocarbon, non-polar):</strong> hates water, loves oil</li>
+</ul>
+<p>When many tadpoles are in water with oil present, they crowd around each oil droplet with their tails pointing into the oil and their heads pointing into the water. The result is a water-soluble oil-package (micelle) that can be rinsed away.</p>
+<p>Key mechanism sequence:
+1. Soap ionises in water → amphiphilic molecules free to move
+2. Above CMC → spontaneous micelle formation
+3. Hydrophobic core of micelle engulfs oil droplet
+4. Micelle exterior (hydrophilic) makes whole package water-soluble
+5. Rinsing flushes micelles and trapped oil off the skin</p>
+<p>Disruption: Ca²⁺ or Mg²⁺ ions react with the carboxylate head → insoluble scum → heads no longer charged → micelles cannot form → cleaning fails.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows two panels:</p>
+<ul>
+<li><strong>Panel A (soft water, successful cleaning):</strong> Several soap molecules arranged in a circle with tails pointing inward around an orange oil droplet. Outside the circle: blue water molecules. Caption: "Micelle: hydrophobic tails trap the oil; hydrophilic heads face water — the whole package rinses away."</li>
+<li><strong>Panel B (hard water, failure):</strong> Ca²⁺ ions shown reacting with two soap heads, forming a solid grey precipitate labelled "(RCOO)₂Ca — insoluble scum." Remaining soap molecules unable to form a complete micelle. Oil droplet still on skin surface. Caption: "Hard water Ca²⁺ neutralises soap heads — no micelles, no cleaning."</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_10.svg" alt="Diagram for How soap actually removes dirt"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Coconut oil soap in Kerala:</strong> Traditional coconut oil soap contains sodium laurate and sodium myristate (12–14 carbon chains). These shorter chain lengths produce more water-soluble soaps that lather well — a direct consequence of the hydrophilic/hydrophobic balance. The Kerala coir and soap industries have used this chemistry for centuries.</li>
+<li><strong>Hard water in Delhi and Rajasthan:</strong> Delhi's municipal water supply has high hardness (often 300–500 mg/L as CaCO₃ — well above the WHO soft-water threshold of 60 mg/L). Residents in these cities often notice that bar soap produces little lather and leaves a scum on skin and basins. Synthetic detergents (shampoos, washing powders using sulfonate-based surfactants) work far better here.</li>
+<li><strong>Soap against viruses:</strong> The hydrophobic tail of soap inserts into the lipid membrane of enveloped viruses (including SARS-CoV-2), disrupting and dissolving the outer envelope. Twenty seconds of handwashing allows enough micelle formation to destroy viral particles — explaining the public health guidance during COVID-19.</li>
+<li><strong>Shampoo vs. soap:</strong> Shampoos use sodium lauryl sulfate (a sulfonate-head detergent) which does not react with Ca²⁺, so hair stays clean rather than coated in scum — a direct application of why synthetic detergents outperform soap in hard water.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how soap actually removes dirt</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Rank three washing scenarios from most to least effective: (A) soft water + soap, (B) hard water (300 mg/L Ca²⁺) + soap, (C) hard water + synthetic detergent. Explain each ranking using the micelle mechanism and what Ca²⁺ does (or does not do) to each type of cleaning molecule.</p>
+<p>Then predict: if washing soda (Na₂CO₃) is dissolved in the hard water before adding soap — precipitating Ca²⁺ as CaCO₃ and removing it from solution — would scenario B's cleaning effectiveness improve to match scenario A? Justify using the micelle formation requirement.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does soap remove oil-based dirt from skin?</p>
+<ul>
+<li>a. Soap molecules have a water-loving head and oil-loving tail that trap dirt</li>
+<li>b. Soap dissolves all oils by converting them into water-soluble acids</li>
+<li>c. Soap neutralises all dirt chemically, breaking it down into harmless gases</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the micelle mechanism of soap more useful than knowing it cleans?</p>
+<ul>
+<li>a. Because micelles are visible to the naked eye and easy to demonstrate</li>
+<li>b. Because the mechanism proves that any liquid can replace soap for cleaning</li>
+<li>c. The mechanism explains why soap works on oil but water alone cannot remove it</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q3</h3>
+<p>What would happen to soap's cleaning ability in hard water with high mineral content?</p>
+<ul>
+<li>a. Soap would clean more efficiently because minerals help break down grease</li>
+<li>b. Soap would lose effectiveness because minerals react with it to form scum</li>
+<li>c. Soap would clean identically because water hardness does not affect micelles</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Every cell membrane in your body is a <strong>phospholipid bilayer</strong> — the same amphiphilic physics as a micelle, but in a flat sheet. Each phospholipid has a hydrophilic phosphate head and a hydrophobic fatty-acid tail. Two sheets arrange themselves tail-to-tail (hiding from water), heads outward. This requires no energy — it self-assembles by the same water-loves-water, oil-loves-oil logic that makes micelles form. Your 37 trillion cells are enclosed by a structure built on exactly the same principle as a bar of soap.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Soap removes oil-based dirt because each soap molecule has a hydrophilic (ionic) head and a hydrophobic (hydrocarbon) tail; in water, many soap molecules arrange themselves into micelles with their tails enclosing the oil droplet and their heads facing outward, making the entire oil-packed micelle water-soluble and rinseable — a mechanism that fails in hard water because Ca²⁺ and Mg²⁺ ions react with the soap heads to form insoluble scum before micelles can form.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

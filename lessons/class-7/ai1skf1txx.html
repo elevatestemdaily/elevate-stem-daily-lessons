@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 30 — The Ultimate Challenge: Design a self-sustaining space habitat | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 30</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>The Ultimate Challenge: Design a self-sustaining space habitat</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Apply everything you have learned this month — from electricity to digestion, from magnets to photosynthesis — to solve the hardest engineering design challenge in human history: keeping people alive in space, indefinitely, without resupply from Earth.</p>
+</div><h2>1. The mystery</h2>
+<p>The International Space Station (ISS) orbits Earth at 400 km altitude. It needs resupply missions every 2–3 months. If those resupply missions stopped, the crew would run out of food within weeks. Yet life on Earth has sustained itself for 3.8 billion years — with no resupply. How does Earth do it? And can we replicate it in a small sealed habitat for a crew of six, somewhere between Earth and Mars?</p>
+<h2>2. The science behind it</h2>
+<p>Earth sustains life through <strong>closed-loop cycles</strong> where every waste product becomes a resource for something else. A self-sustaining space habitat must replicate these cycles artificially:</p>
+<p><strong>Oxygen cycle:</strong>
+- Plants (via photosynthesis) convert CO₂ + H₂O → O₂ + glucose
+- Humans breathe O₂ and exhale CO₂ — the cycle closes
+- Backup: Electrolysis of water (electricity → split H₂O into H₂ + O₂) is used on the ISS today</p>
+<p><strong>Water cycle:</strong>
+- Humans exhale water vapour, sweat, and produce urine
+- Advanced filtration systems can purify all water: urine → drinking water (NASA's USOS system on ISS achieves 93% recovery)
+- Plants transpire water vapour → condenses → collected as liquid (Day 23 biotic pump in miniature)</p>
+<p><strong>Food cycle:</strong>
+- Hydroponics (growing plants in water without soil) or aeroponics (roots in misted air) — LED-lit, nutrient-fed
+- NASA's VEGGIE system on ISS grows lettuce, kale, and radishes
+- To cover 2,000 calories/day per person, a crew of 6 would need ~200 m² of intensive growing area
+- Protein: insects (mealworms, crickets) and algae are highly efficient food sources in small space</p>
+<p><strong>Energy:</strong>
+- Solar panels (further from Sun = less effective; at Mars, solar panels produce only 43% of what they would at Earth)
+- Nuclear fission reactors (NASA's Kilopower project: 10 kW reactor, 1.5 m tall, for Mars surface)</p>
+<p><strong>Waste cycle:</strong>
+- Human waste + food scraps → composted → nutrients fed back to plants (closing the loop)
+- Every gramme of material must be reused</p>
+<h2>3. Build the mental model</h2>
+<p>Earth is a giant sealed biosphere with one external input: sunlight. Everything else — carbon, nitrogen, oxygen, water — cycles. A space habitat is a miniature Earth: same principle, engineered instead of evolved. The challenge is that Earth's biosphere has 4.5 billion years of redundancy and self-repair. A space habitat has no redundancy budget — one failed system and the crew dies. Every component must have a backup, and every backup must have a backup.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-7/day_30.svg" alt="Diagram for The Ultimate Challenge: Design a self-sustaining space habitat"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a habitat cross-section with 6 modules: (1) Living quarters; (2) Plant growth (hydroponics, LED lights); (3) Water recycling (filtration loop); (4) Oxygen generation (electrolysis unit + plant CO₂ absorption); (5) Power (solar panels + battery/nuclear); (6) Waste processing (compost → nutrients). Arrows show the closed loops connecting all 6 modules. A summary band shows the input (sunlight + initial resources) and zero outputs (everything is recycled).</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>ISS life support:</strong> The ISS uses ECLSS (Environmental Control and Life Support System) — a $1.5 billion system that recycles water, scrubs CO₂ with filters, and generates O₂ via electrolysis. It is not truly closed-loop — CO₂ is vented and food is resupplied. True closure remains a major unsolved engineering challenge.</li>
+<li><strong>Biosphere 2 (Arizona, 1991–93):</strong> A sealed 3.14-acre glass habitat housing 8 people for 2 years. Oxygen levels dropped unexpectedly (consumed by soil bacteria + concrete), CO₂ rose dangerously, food production failed to meet needs, and species went extinct. The experiment taught scientists how much harder closure is than expected.</li>
+<li><strong>ISRO and space habitats:</strong> India's Gaganyaan crewed mission (planned) will send astronauts to low Earth orbit — life support engineering for this mission is directly relevant to the challenge described here. Future Indian space station plans involve similar closed-loop problems.</li>
+<li><strong>Algae bioreactors:</strong> Spirulina algae can produce oxygen, absorb CO₂, and provide protein simultaneously. 1 m² of spirulina under good LED light can absorb the CO₂ of 1 person and produce 30g of protein per day. Space agencies are actively researching this as a combined life-support and food system.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Seal a small plant in a clear plastic bag with a few teaspoons of water. Leave it in bright light for 2 hours. Observe: the plant releases O₂ (bag may slightly inflate), water droplets appear on the bag walls (transpiration condensing), and CO₂ from the plant's dark respiration is used again in photosynthesis. This sealed-bag ecosystem is a micro-demonstration of the same principles needed for a space habitat — a tiny closed loop. Try adding a few live ants or small insects to see what happens to O₂ balance.</p>
+</div><h2>7. Think deeper</h2>
+<p>The biggest unsolved problem in space habitat design is psychological, not engineering: how do 6 people live together in a room the size of a large house for 2–3 years, with no option to leave, with communication delays of up to 44 minutes to Earth, with constant life-and-death responsibility for every system? Studies of Antarctic expeditions, submarine crews, and Biosphere 2 show that interpersonal conflict, depression, and loss of motivation can destroy a mission even when all the engineering works perfectly. How would you select and train 6 people for such a mission — and what would you need to know about their psychology beyond just their technical skills?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the central idea behind designing a self-sustaining space habitat?</p>
+<ul>
+<li>A. A self-sustaining habitat is one that is built from materials found in space without using any Earth-manufactured components.</li>
+<li>B. Self-sustainability in space means the habitat can operate for exactly one year before requiring a complete resupply mission.</li>
+<li>C. A self-sustaining habitat must recycle air, water, and waste while producing its own food and energy without resupply from Earth.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of closed-loop life support more useful than knowing a habitat needs air and food?</p>
+<ul>
+<li>A. Space habitats are supplied continuously from Earth, so closed-loop systems are unnecessary to study.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Oxygen in space can be captured directly from starlight, so understanding recycling is irrelevant.</li>
+</ul>
+<h3>Q3</h3>
+<p>If the plant-growing system in a space habitat failed, what would you predict would happen to the crew over time?</p>
+<ul>
+<li>A. The crew would be unaffected because space habitats store enough packaged food for decades.</li>
+<li>B. The habitat's recycling system would automatically convert carbon dioxide back into food for the crew.</li>
+<li>C. The crew would face food shortages and rising carbon dioxide levels, as plants provide both food and oxygen recycling.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>This is your final Class 7 design challenge. Propose a self-sustaining habitat for 6 people on a 3-year Mars mission. Your design must address: (a) oxygen source, (b) water source and recycling, (c) food production method (with a rough area calculation), (d) energy source, and (e) radiation protection. For each, name one real technology that exists or is in development. Then identify the single biggest risk in your design — the failure that would be most catastrophic — and explain how you would mitigate it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The first true closed ecological life support systems may not be built in space — they may be built underground on Earth, in response to climate change. Several projects are already researching sealed "arcologies" (self-sufficient cities) as a response to potential global catastrophes. The engineering challenges are identical to a space habitat: closed water loops, photosynthesis-based oxygen, recycled nutrients, long-term psychological sustainability for isolated communities. Space habitat research may ultimately be more important for Earth's future than for Mars colonisation.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A self-sustaining habitat closes every loop: O₂ from plants + electrolysis, water recycled from urine + transpiration, food from hydroponics, waste composted to nutrients, energy from solar or nuclear. Every gramme cycles — nothing is wasted.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 30 of 30</footer>
+</div>
+</body>
+</html>

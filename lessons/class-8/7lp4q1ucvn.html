@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 21 — How do crops get nitrogen? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 21</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do crops get nitrogen?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how crops obtain nitrogen from the soil, describe the role of nitrogen-fixing bacteria, and predict what would happen if those bacteria disappeared.</p>
+</div><h2>1. The mystery</h2>
+<p>Every plant cell contains proteins. Proteins are made of amino acids. Amino acids are built from nitrogen. But plants cannot use the nitrogen gas (N₂) that makes up 78 % of our atmosphere — the N≡N triple bond is one of the strongest bonds in chemistry, and plants have no way to break it. So where does all the nitrogen in a wheat or rice plant come from?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Step 1 — Nitrogen fixation.</strong> Certain bacteria, especially <em>Rhizobium</em> living in root nodules of legumes (peas, lentils, groundnuts), carry an enzyme called nitrogenase that breaks the N≡N bond. They convert atmospheric N₂ into ammonium (NH₄⁺) — a form roots can absorb. Lightning also fixes a small amount of nitrogen during storms.</p>
+<p><strong>Step 2 — Nitrification.</strong> Soil bacteria (<em>Nitrosomonas</em>, <em>Nitrobacter</em>) convert ammonium → nitrite (NO₂⁻) → nitrate (NO₃⁻). Roots absorb nitrates most efficiently via active transport.</p>
+<p><strong>Step 3 — Assimilation.</strong> Inside the plant, nitrates are converted back to ammonium, then used to build amino acids and proteins — the building blocks of every cell, enzyme, and chlorophyll molecule.</p>
+<p><strong>Step 4 — Decomposition and denitrification.</strong> Dead organic matter is broken down by decomposers → ammonium released. Denitrifying bacteria return some nitrogen to the atmosphere, completing the cycle.</p>
+<p><strong>Synthetic nitrogen (UREA).</strong> The Haber–Bosch process fixes nitrogen industrially at high temperature and pressure: N₂ + 3H₂ → 2NH₃. UREA fertiliser (CO(NH₂)₂) is derived from ammonia. Excess UREA causes eutrophication (algal blooms) in water bodies when nitrates run off into rivers and lakes.</p>
+<p><strong>Crop rotation</strong> — alternating nitrogen-hungry cereals (wheat, rice) with legumes (dal, chickpea) — naturally restores soil nitrogen, reducing fertiliser need.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the nitrogen cycle as a bank account where nitrogen is the currency:</p>
+<ul>
+<li><strong>The atmosphere</strong> (78 % N₂) is the vault — an enormous reserve, but locked. Plants cannot withdraw directly.</li>
+<li><strong>Nitrogen-fixing bacteria</strong> are the only key to the vault. They convert locked N₂ into spendable ammonium (NH₄⁺).</li>
+<li><strong>Nitrifying bacteria</strong> convert ammonium into nitrate (NO₃⁻) — the form plants prefer to withdraw via roots.</li>
+<li><strong>Plants</strong> spend the nitrogen building proteins, DNA, and chlorophyll.</li>
+<li><strong>Decomposers</strong> recover the currency when plants and animals die, releasing ammonium back to the soil.</li>
+<li><strong>Denitrifying bacteria</strong> return a fraction of the nitrogen back to the vault (atmosphere).</li>
+<li><strong>UREA fertiliser</strong> is a human-made shortcut: we manufacture nitrogen currency industrially and pour it directly into the soil, bypassing the bacteria entirely.</li>
+</ul>
+<p>Remove the bacteria and the vault stays locked. Crops starve for nitrogen even while surrounded by an atmosphere that is mostly nitrogen gas.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows the nitrogen cycle as a circular diagram with five zones:</p>
+<ul>
+<li><strong>Atmosphere (top, light blue):</strong> N₂ gas with arrows pointing down toward soil and up from denitrifying bacteria</li>
+<li><strong>Soil (centre, amber):</strong> Labelled zones for nitrogen-fixing bacteria (producing NH₄⁺), nitrifying bacteria (NH₄⁺ → NO₃⁻), and denitrifying bacteria (NO₃⁻ → N₂)</li>
+<li><strong>Plant roots (bottom left, green):</strong> Arrow from soil nitrate entering root; label "Assimilation → amino acids → proteins"</li>
+<li><strong>Decomposers (bottom right, brown):</strong> Arrow from dead organic matter back to ammonium</li>
+<li><strong>Haber–Bosch shortcut (right side, orange dashed arrow):</strong> From "Industrial factory" directly into soil, labelled "UREA fertiliser"</li>
+</ul>
+<figure><img src="../../illustrations/class-8/day_21.svg" alt="Diagram for How do crops get nitrogen?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India is the world's largest producer and consumer of urea fertiliser, with annual use exceeding 32 million tonnes. The government subsidises UREA heavily — ₹1.28 lakh crore per year — making it the backbone of India's food security. However, overuse in Punjab and Haryana has caused soil acidification, groundwater nitrate pollution, and the release of nitrous oxide (N₂O), a greenhouse gas 265× more potent than CO₂.</p>
+<p>Biological nitrogen fixation through legumes, <em>Rhizobium</em> inoculation of seeds, and nano-urea (IFFCO's liquid nano-urea can cut UREA use by 50 %) are emerging alternatives. Crop rotation — the ancient practice of alternating rice or wheat with dal or chickpea — is still one of the most effective and affordable ways to maintain soil fertility without synthetic input.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Root-nodule hunt:</strong> Pull a healthy dal (lentil) or chickpea plant from a pot or garden. Look at the roots under a magnifying glass. Tiny pink or cream-coloured nodules are colonies of <em>Rhizobium</em> bacteria. Cut one open — the pink colour is leghaemoglobin, which regulates oxygen supply to the nitrogen-fixing enzyme. No nodules = plant is not fixing nitrogen and relies entirely on soil nitrates.</p>
+<p>If you do not have a legume plant, compare two pots of soil: one with legume roots and one without. After two weeks of watering, test the soil with a nitrate test strip (available in aquarium shops). The legume-root soil will show measurably higher nitrate levels.</p>
+</div><h2>7. Think deeper</h2>
+<p>The nitrogenase enzyme requires an enormous amount of energy — around 16 ATP molecules to fix one N₂ molecule — and it is instantly destroyed by oxygen. <em>Rhizobium</em> inside root nodules is protected from oxygen by leghaemoglobin (a close relative of the haemoglobin in your blood).</p>
+<p>Scientists are trying to engineer non-legume crops like wheat and rice to harbour nitrogen-fixing bacteria — a breakthrough that could eliminate the need for synthetic fertiliser and transform global agriculture. Several research groups have already created cereals with modified root cells that allow <em>Rhizobium</em> to survive inside them, though commercial applications remain years away.</p>
+<p><strong>Predict:</strong> If such engineered wheat became widespread, what would happen to India's ₹1.28 lakh crore annual UREA subsidy bill? What new environmental problems might disappear, and what new risks might appear?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How do most crops obtain the nitrogen they need to grow?</p>
+<ul>
+<li>A. Nitrogen is absorbed from soil as nitrates via roots, often aided by bacteria</li>
+<li>B. Crops absorb nitrogen gas directly from the air through their leaves</li>
+<li>C. Nitrogen enters plants through photosynthesis when sunlight splits nitrogen gas</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the nitrogen cycle mechanism more useful than knowing plants need nitrogen?</p>
+<ul>
+<li>A. It explains why crop rotation and fertilisers improve agricultural yields</li>
+<li>B. Knowing plants need nitrogen is enough to manage all farmland effectively</li>
+<li>C. Nitrogen mechanisms only matter for legumes, not for grains like wheat</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q3</h3>
+<p>If nitrogen-fixing bacteria were removed from the soil, what would you predict?</p>
+<ul>
+<li>A. Soil nitrogen levels would drop and crops would suffer from nitrogen deficiency</li>
+<li>B. Plants would absorb more atmospheric nitrogen to compensate for the loss</li>
+<li>C. Soil nitrogen levels would stay constant as rainfall deposits enough nitrogen</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A farmer has two identical fields. In Field A she plants only wheat for three years. In Field B she alternates wheat with chickpea every other year. At the end of three years, she applies no fertiliser to either field.</p>
+<p>Predict which field will have higher soil nitrogen and higher wheat yield in year four. Use the nitrogen cycle to explain your reasoning step by step — mention at least three named bacteria or processes. Then suggest one measurement (using equipment found in a school lab) that could verify your prediction before the wheat harvest.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The same leghaemoglobin protein that makes root nodules pink is closely related to the haemoglobin in human red blood cells. Both proteins evolved to do the same job: carry oxygen without letting it destroy something nearby (a nitrogen-fixing enzyme in the nodule; iron-containing enzymes in mitochondria). This is one of the clearest examples of evolution reusing the same molecular toolkit in completely different organisms — a bacterium living in a plant root, and a blood cell in a human artery, solving the same oxygen-management problem with the same protein family.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Crops cannot use atmospheric nitrogen directly — bacteria in the soil convert it to nitrates that roots absorb, and without those bacteria, soil nitrogen falls and crops starve even in an atmosphere that is 78 % nitrogen.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 21 of 30</footer>
+</div>
+</body>
+</html>

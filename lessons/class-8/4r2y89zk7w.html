@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 18 — Why do metals conduct electricity? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 18</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do metals conduct electricity?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover why metals conduct electricity while most other materials do not — and understand the electron sea model that explains conductors, insulators, semiconductors, and superconductors.</p>
+</div><h2>1. The mystery</h2>
+<p>Copper wire carries electricity across India's entire power grid — from Bhakra dam to a light bulb in a Delhi home. Plastic around the wire does not conduct at all. Silicon — in between — conducts sometimes. Gold plating on circuit board contacts ensures reliable connections. Carbon in graphite conducts electricity yet diamond (also pure carbon!) does not. Why does the same element sometimes conduct and sometimes not? And what is happening inside copper wire when current flows?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Atomic structure of metals:</strong></p>
+<p>Metal atoms have 1–3 electrons in their outermost shell (valence electrons). In a solid metal:
+- Atoms are arranged in a regular crystal lattice (rows and columns of atoms)
+- <strong>Valence electrons are not bound to any specific atom</strong> — they are "delocalised" and free to move throughout the entire lattice
+- This creates the <strong>electron sea model</strong>: a lattice of positive metal ions (atoms that have given up their outer electrons) surrounded by a "sea" of free electrons</p>
+<p><strong>How current flows:</strong></p>
+<p>When a voltage (potential difference) is applied across a metal conductor:
+- The free electrons experience an electric force
+- They drift toward the positive terminal (conventional current flows in the opposite direction)
+- This drift of electrons is electric current: <strong>I = Q/t</strong> (charge per unit time)
+- Electrons don't all rush simultaneously — they drift slowly (~mm/s) but the electric field propagates at nearly the speed of light</p>
+<p><strong>Resistance and temperature:</strong></p>
+<ul>
+<li>At higher temperatures, metal atoms vibrate more violently</li>
+<li>Vibrating atoms interrupt the free electron drift → more "collisions" → higher resistance</li>
+<li>Formula for resistivity: ρ = ρ₀(1 + αT), where α is the temperature coefficient</li>
+<li>This is why resistance increases with temperature for metals</li>
+</ul>
+<p><strong>Insulators vs conductors vs semiconductors:</strong></p>
+<ul>
+<li><strong>Insulators (plastic, rubber, glass):</strong> electrons are tightly bound to atoms — no free electrons available for conduction</li>
+<li><strong>Conductors (copper, aluminium, gold):</strong> many free electrons — low resistance</li>
+<li><strong>Semiconductors (silicon, germanium):</strong> very few free electrons at room temperature, but more at higher temperature OR when impurities are added (doping). Used in transistors and solar cells.</li>
+</ul>
+<p><strong>Superconductors:</strong></p>
+<p>Below a critical temperature (~−269°C for aluminium), resistance drops to exactly zero — electrons flow without any collisions. Used in MRI machines and some particle accelerators.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a metal lattice as a busy train station (the lattice of positive ions) full of commuters (the free electrons) who move freely through the station. Normally they wander randomly — no net current. When a voltage is applied, it's like opening an exit at one end — all the commuters gradually drift toward it. The more commuters (free electrons), the more easily they flow (higher conductivity). Higher temperature is like adding noise and obstacles (vibrating atoms) that slow the commuters down — resistance increases. Insulators are like stations with all the exits locked — no commuter can leave.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_18.svg" alt="Diagram for Why do metals conduct electricity?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows three side-by-side panels: (1) CONDUCTOR (copper) — regular lattice of Cu⁺ ions (circles) with dots (free electrons) moving freely between them; voltage arrow on the left causes electron drift to the right. (2) INSULATOR (rubber) — atoms with tightly bound electrons, no free movement, large gap shown in energy band diagram. (3) SEMICONDUCTOR (silicon) — few free electrons at room T; more freed when doped with phosphorus (n-type) or boron (p-type). Below: a resistance vs temperature graph showing metals increasing, semiconductors decreasing with temperature.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Power transmission lines:</strong> India's national grid uses aluminium-cored steel-reinforced (ACSR) cables, not copper — aluminium is lighter and cheaper per unit conductance, despite having higher resistivity. The 765 kV HVDC lines carry current over 1,000 km from hydroelectric plants in northeast India to load centres in Delhi.</li>
+<li><strong>Printed circuit boards (PCBs):</strong> All electronics — from a ₹200 feature phone to ISRO's satellite boards — use copper tracks on PCBs. The copper is etched into precise patterns. Track width determines resistance and thus the current it can carry without overheating.</li>
+<li><strong>Semiconductor industry in India:</strong> The India Semiconductor Mission (ISM) aims to build semiconductor fabrication plants. Silicon is the base material — pure silicon at room temperature is a poor conductor, but doped with tiny amounts of phosphorus or boron, it becomes the foundation of every transistor, microchip, and solar cell.</li>
+<li><strong>Nichrome heating elements:</strong> Electric heaters, toasters, and the heating coils in school science labs use nichrome (nickel-chromium alloy) — a metal with relatively HIGH resistance compared to copper. High resistance → current converts more energy to heat (P = I²R).</li>
+<li><strong>Graphite in pencils:</strong> When you draw a pencil line, you're depositing graphite — a conductor. A long, thin graphite line has measurable resistance. Taller/shorter pencil lines, wider/narrower lines — and you have built a variable resistor you can measure with a multimeter.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Build a simple continuity tester: a 3 V battery, an LED, and two wires with exposed ends. Touch the wire ends together (short circuit the LED directly) — it lights. Now touch various objects: a coin (lights — metal conductor), a pencil lead (lights dimly — graphite conducts), plastic ruler (no light — insulator), paper (no light), aluminium foil (lights — conductor), eraser (no light — rubber insulator), water with salt dissolved (lights — ions conduct). Record your results in a table: material, conducts?, why?</p>
+</div><h2>7. Think deeper</h2>
+<p>Graphene — a single layer of carbon atoms arranged in a honeycomb lattice — has a conductivity 35× higher than copper at room temperature, yet is just one atom thick. Diamond (carbon in a different arrangement — tetrahedral) is an insulator. The same atoms, arranged differently, produce radically different electrical behaviour. This is because conductivity depends not on the elements but on the <strong>band structure</strong> — the quantum mechanical arrangement of energy levels that determines whether electrons can move freely. Understanding band structure is what allowed engineers to create the transistor in 1947 and sparked the entire semiconductor revolution. What does this imply about the relationship between atomic geometry and material properties?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What property of metals allows them to conduct electricity?</p>
+<ul>
+<li>A. Metals are dense, so charge squeezes through the material under pressure</li>
+<li>B. Metals have free electrons that move easily through the atomic lattice</li>
+<li>C. Metal atoms are positively charged and attract current from the source</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is knowing about free electrons more useful than just knowing metals conduct?</p>
+<ul>
+<li>A. Knowing metals conduct is sufficient to design all electrical circuits</li>
+<li>B. Free electron theory only explains conductivity in copper, not all metals</li>
+<li>C. It predicts how temperature and impurities affect conductivity in metals</li>
+</ul>
+<h3>Q3</h3>
+<p>If a metal were heated to very high temperature, what would you predict about its resistance?</p>
+<ul>
+<li>A. Resistance would decrease because heat gives electrons more energy to move</li>
+<li>B. Resistance would increase because atomic vibrations disrupt electron flow</li>
+<li>C. Resistance would stay the same as temperature does not affect electrons</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A copper wire (length = 10 m, cross-sectional area = 1 mm² = 10⁻⁶ m²) carries 5 A of current at 25°C. Resistivity of copper at 25°C: ρ₀ = 1.68 × 10⁻⁸ Ω·m, temperature coefficient: α = 0.00393 /°C. (a) Calculate the resistance of the wire at 25°C using R = ρL/A. (b) Calculate the voltage across the wire (V = IR). (c) Calculate the power dissipated as heat (P = I²R). (d) What is the resistance at 100°C? Use ρ = ρ₀(1 + α(T-25)). (e) By how much does power dissipation increase at 100°C?</p>
+</div><h2>10. One surprising idea</h2>
+<p>At −196°C (liquid nitrogen temperature), some materials become superconductors with zero electrical resistance. In a superconducting loop, current can flow indefinitely without any battery — no energy source needed. Once started, the current circulates forever (in theory). MRI machines in Indian hospitals (Apollo, AIIMS) use superconducting coils cooled with liquid helium (−269°C) to generate the powerful magnetic fields needed for imaging. The entire field that MRI depends on is maintained without any energy input to the coil — because resistance is exactly zero. In 2023, researchers announced a room-temperature superconductor claim (later retracted). If room-temperature superconductivity were achieved, electrical resistance in power grids would disappear — India would lose zero electricity in transmission losses (currently ~20% of all power generated).</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Metals conduct because valence electrons are free (delocalised) in the lattice — the 'electron sea.' Voltage → electrons drift → current. Higher temperature → more atomic vibration → higher resistance. Insulators have no free electrons; semiconductors have controllable conductivity.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 18 of 30</footer>
+</div>
+</body>
+</html>

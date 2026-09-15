@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 13 — How does a generator produce electricity? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 13</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a generator produce electricity?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover how mechanical motion becomes electricity — and understand why this single principle powers every hydroelectric dam, thermal plant, and wind turbine in India.</p>
+</div><h2>1. The mystery</h2>
+<p>India's electricity mostly comes from coal — burned to boil water, which makes steam, which spins a turbine, which spins a generator. But the generator is the final step and the most mysterious: a spinning thing produces electricity. No chemical reaction, no battery, no solar cells. Just rotation and magnets — and somehow, electricity flows. A Tata Power station in Mumbai can generate 1,000 MW from generators. How does spinning create current?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Faraday's Law of Electromagnetic Induction:</strong></p>
+<p>When a conductor moves through a magnetic field (or a magnetic field changes around a conductor), an electromotive force (EMF) is induced in the conductor:</p>
+<p><strong>EMF = −N × ΔΦ/Δt</strong></p>
+<p>Where N = number of turns in the coil, ΔΦ/Δt = rate of change of magnetic flux.</p>
+<p><strong>Key insight:</strong> It is the <em>change</em> in magnetic flux that matters — not the field itself. A stationary conductor in a steady field produces no current.</p>
+<p><strong>How a generator works:</strong></p>
+<ol>
+<li>A coil of wire is rotated mechanically (by steam turbine, water turbine, wind turbine, or diesel engine).</li>
+<li>As the coil rotates, the angle between the coil and the magnetic field changes.</li>
+<li>This changes the magnetic flux through the coil.</li>
+<li>By Faraday's Law, changing flux induces an EMF → current flows if a circuit is connected.</li>
+<li>The coil completes one rotation → the flux changes direction → the current reverses → <strong>alternating current (AC)</strong> is produced.</li>
+</ol>
+<p><strong>AC vs DC:</strong></p>
+<ul>
+<li>Generators naturally produce AC. India's grid runs at 50 Hz (50 complete cycles per second) → the coil spins at 3,000 rpm.</li>
+<li>DC can be obtained using a commutator (same as DC motor) or by rectifying the AC.</li>
+</ul>
+<p><strong>Factors affecting output voltage:</strong></p>
+<ul>
+<li><strong>More turns (N):</strong> Higher EMF (proportional to N).</li>
+<li><strong>Stronger magnet:</strong> Higher flux, higher EMF.</li>
+<li><strong>Faster rotation:</strong> Faster flux change → higher EMF and higher frequency.</li>
+<li><strong>Larger coil area:</strong> More flux per turn → higher EMF.</li>
+</ul>
+<p><strong>Fleming's Right-Hand Rule:</strong></p>
+<p>For generators: index finger = magnetic field direction, thumb = motion direction of conductor, middle finger = induced current direction.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine walking through a turnstile — as you push through, the gate sweeps through space and its edges cut through imaginary lines in space (magnetic field lines). Every time an edge cuts through a line, a tiny current is pushed along. The faster you spin the turnstile (coil), the more lines it cuts per second, the more current is produced. Stop spinning — no lines cut — no current. Spin backwards — current reverses. This is why generators produce AC: one half-spin cuts in one direction, the other half reverses.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_13.svg" alt="Diagram for How does a generator produce electricity?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a generator cross-section: a rectangular coil rotating between N and S poles of a magnet, connected via slip rings (for AC) to an external circuit. The coil is shown at four positions (0°, 90°, 180°, 270°) with the corresponding EMF shown on an AC waveform graph below. Labels show: maximum EMF at 90° and 270° (coil sides cutting most field lines), zero EMF at 0° and 180° (coil parallel to field). A sidebar compares: thermal plant turbine, hydro turbine, wind turbine — all spin the same type of generator.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Bhakra Nangal Dam (Punjab/Himachal Pradesh):</strong> India's largest hydroelectric project has 10 generators, each producing 120 MW. Water falling through penstocks spins turbines → turbines spin generators at 3,000 rpm → 50 Hz AC goes to the national grid.</li>
+<li><strong>Tata Power Trombay (Mumbai):</strong> A 1,580 MW thermal plant where coal-fired steam drives generators. The generators are housed in a building the size of a football field — each generator's rotor weighs hundreds of tonnes.</li>
+<li><strong>Suzlon wind turbines:</strong> India's Suzlon Energy manufactures wind turbines (generators mounted at the top of towers) across Tamil Nadu and Rajasthan. Each turbine's blades spin slowly but a gearbox accelerates the generator shaft to 1,500 rpm.</li>
+<li><strong>DG sets across India:</strong> Diesel generator (DG) sets power hospitals, data centres, and buildings during power cuts. A 100 kVA DG set uses a diesel engine turning a small generator — the same Faraday principle at 5 kW or 5,000 kW.</li>
+<li><strong>Bicycle dynamo (cycle light):</strong> The small generator on cycle wheels used in rural India for lighting uses the same principle — wheel spins, magnet rotates, coil produces current, LED lights up.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Hold a strong bar magnet and push it quickly into and out of a coil of wire (50–100 turns) connected to a sensitive galvanometer or LED. When you push the magnet IN, the LED lights up momentarily. Pull it OUT — LED lights in the opposite direction (or flickers if it's AC-sensitive). Push slowly — less brightness (lower EMF). Push fast — brighter (higher EMF). You are directly demonstrating Faraday's Law: changing flux = induced EMF.</p>
+</div><h2>7. Think deeper</h2>
+<p>India's grid frequency must be maintained at exactly 50 Hz. If too many appliances switch on simultaneously, the grid slows below 50 Hz. If too few loads are connected, it speeds above 50 Hz. Grid operators at POSOCO (Power System Operation Corporation) monitor frequency in real time and start or stop generators to maintain exactly 50 Hz — because every generator in India is physically spinning in synchrony. A 1 Hz deviation means every generator in the country has drifted from its designed 3,000 rpm. How does this constrain the design of power systems?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the basic mechanism by which a generator produces electricity?</p>
+<ul>
+<li>A. A generator stores static charge and releases it as a current when needed</li>
+<li>B. Chemical reactions inside the generator convert stored energy directly to current</li>
+<li>C. A coil rotating in a magnetic field induces an electric current by electromagnetic induction</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding electromagnetic induction more useful than knowing generators make electricity?</p>
+<ul>
+<li>A. Knowing generators make electricity is sufficient for all power engineering</li>
+<li>B. Induction mechanisms only apply to alternators, not to simple DC generators</li>
+<li>C. It allows engineers to predict output voltage and design efficient power systems</li>
+</ul>
+<h3>Q3</h3>
+<p>If a generator's coil spun twice as fast, what would you predict about the output?</p>
+<ul>
+<li>A. The output voltage would decrease because faster rotation weakens the field</li>
+<li>B. The output would stay constant because voltage depends only on coil size</li>
+<li>C. The output voltage and frequency would both increase</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A generator coil has 200 turns, area 0.05 m², rotating at 50 rev/s in a magnetic field of 0.4 T. (a) Calculate the maximum EMF using EMF_max = NBAω, where ω = 2π × frequency. (b) What is the RMS (effective) voltage? (RMS = max EMF / √2.) (c) What frequency does this generator produce? (d) How many rpm must the coil spin at to produce 60 Hz (US frequency) instead of 50 Hz (India frequency)?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The world's first practical generator was built by Michael Faraday in 1831 using a copper disc rotating between the poles of a horseshoe magnet. It produced a tiny DC current — but the principle was proved. Today, a single generator at the Sardar Sarovar Dam can produce 200 MW — enough to power 200,000 Indian homes — using the exact same physics Faraday discovered in a basement in London in 1831. The modern generator coil is a supercooled copper winding the size of a bus, rotating inside a magnetic field strong enough to lift a car.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Faraday's Law: a rotating coil in a magnetic field induces an EMF. More turns, stronger field, faster rotation → higher voltage. Generators produce AC naturally — one full rotation = one AC cycle. India's grid: 50 Hz = 3,000 rpm.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 13 of 30</footer>
+</div>
+</body>
+</html>

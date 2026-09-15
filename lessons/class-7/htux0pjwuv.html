@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 10 — How does a refrigerator actually cool things? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 10</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a refrigerator actually cool things?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to name the four main components of a refrigerator, describe the vapour compression cycle step by step, and explain why the back of a refrigerator is warm.</p>
+</div><h2>1. The mystery</h2>
+<p>Touch the back of your refrigerator — it is warm. Open the door — it is cold inside. The fridge is not plugged into a source of cold; it is plugged into electricity. Yet it chills your food continuously. Where does the coldness come from? And why is the back warm?</p>
+<h2>2. The science behind it</h2>
+<p>The refrigerator does not "make cold" — there is no such thing as cold energy. What it does is <strong>move heat from inside the fridge to outside the fridge</strong>. It uses a clever trick based on two principles:</p>
+<p><strong>Evaporation absorbs heat.</strong> When a liquid evaporates (changes to gas), it absorbs energy from its surroundings. This is why your hand feels cool when a drop of spirit (surgical spirit) or water evaporates from your skin — the evaporating liquid takes heat from your skin to fuel the change of state.</p>
+<p><strong>Condensation releases heat.</strong> When a gas condenses (changes back to liquid), it releases that energy to its surroundings.</p>
+<p>A refrigerator exploits both of these in a continuous cycle using a special fluid called a <strong>refrigerant</strong> — a substance with a very low boiling point that evaporates and condenses easily within the temperature range of the cycle.</p>
+<p><strong>The four components and the cycle:</strong></p>
+<ol>
+<li>
+<p><strong>Evaporator coils (inside the fridge cabinet):</strong> Liquid refrigerant flows into these coils at low pressure and evaporates. As it evaporates, it absorbs heat from the food and air inside the fridge. This is what makes the inside cold. The refrigerant leaves the evaporator as a cool, low-pressure gas.</p>
+</li>
+<li>
+<p><strong>Compressor (usually at the back-bottom):</strong> An electric pump compresses the refrigerant gas, raising its pressure and temperature significantly. The refrigerant is now a hot, high-pressure gas.</p>
+</li>
+<li>
+<p><strong>Condenser coils (outside the fridge, at the back):</strong> The hot, high-pressure gas flows through these coils and releases its heat to the room air. The gas condenses back into a liquid. This is why the back of your fridge is warm — it is releasing the heat removed from inside your food.</p>
+</li>
+<li>
+<p><strong>Expansion valve:</strong> The liquid refrigerant passes through a narrow opening (the expansion valve), which drops its pressure sharply. This prepares it to evaporate again in the evaporator, and the cycle repeats.</p>
+</li>
+</ol>
+<p>The electrical energy powers the compressor. The compressor's work drives heat from the cold interior to the warm exterior — moving heat against its natural direction (normally heat flows from hot to cold, not the other way). This is why a fridge requires energy to run.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the refrigerant as a heat courier making a continuous loop:</p>
+<p><strong>Inside the fridge:</strong> Evaporates → picks up heat → becomes a gas (cool interior)
+<strong>Compressor:</strong> Gets squeezed and heated
+<strong>Condenser coils at the back:</strong> Releases heat to room → becomes a liquid (warm back)
+<strong>Expansion valve:</strong> Pressure drops → ready to evaporate again</p>
+<p>The refrigerator is not creating coldness — it is a heat pump, constantly moving heat from inside to outside.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows the refrigerator as a cycle diagram:
+- A fridge outline (grey rectangle) with the four components labelled
+- <strong>Evaporator coils</strong> inside the fridge (blue, labelled "absorbs heat → food cools")
+- <strong>Compressor</strong> at the bottom right (labelled "raises pressure + temperature")
+- <strong>Condenser coils</strong> at the back (red/orange, labelled "releases heat to room")
+- <strong>Expansion valve</strong> as a narrow point in the circuit (labelled "pressure drops")
+- Arrows showing the direction of refrigerant flow around the cycle</p>
+<figure><img src="../../illustrations/class-7/day_10.svg" alt="Diagram for How does a refrigerator actually cool things?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Air conditioners</strong> work on the exact same principle — the evaporator is inside the room (cooling it) and the condenser is outside the building (releasing heat to the outside air). The outdoor unit of a split AC is the condenser.</li>
+<li><strong>Refrigerant choice matters:</strong> Older refrigerators used Freon (CFC compounds), which were found to damage the ozone layer. Modern refrigerators use HFC-134a or newer HFO compounds that are far safer for the environment.</li>
+<li><strong>Why doesn't an open fridge cool a room?</strong> The condenser coils are inside the room too — so the heat removed from the fridge interior is released right back into the room. The room would actually warm up slightly from the compressor's electrical energy.</li>
+<li><strong>Evaporative coolers (desert coolers, matka):</strong> A matka (clay pot) cools water because it is slightly porous — water seeps out and evaporates from the surface, absorbing heat from the water inside. Same principle, no electricity needed.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Pour a few drops of surgical spirit (or water) onto your forearm.</li>
+<li>Blow gently on the wet spot.</li>
+<li>What do you feel? (Answer: cool.) Why?</li>
+<li>Now touch the back of your refrigerator when it has been running for a while. What do you notice?</li>
+<li>Draw the heat flow: fridge interior → refrigerant → ??? → back of fridge → room. Fill in the blank with the correct component name.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>The refrigerator compressor is an electric motor. Like any motor, it converts electrical energy into mechanical energy (compressing the gas) — but not with 100% efficiency. Some electrical energy becomes heat in the motor itself.</p>
+<p>This means that a refrigerator running in a closed room will actually warm the room slightly over time — because the heat from inside the fridge (removed by the refrigerant) plus the heat generated by the compressor motor both end up in the room.</p>
+<p><strong>Predict:</strong> A student keeps a running refrigerator with its door open to "cool a room" in summer. Will this work? What will happen to the room temperature over an hour?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the basic mechanism by which a refrigerator cools food?</p>
+<ul>
+<li>A. A refrigerant fluid circulates through coils, evaporating inside the fridge to absorb heat and condensing outside to release it.</li>
+<li>B. The refrigerator generates cold air by spinning a fan through ice water stored in the back panel.</li>
+<li>C. Electric current flowing through metal coils directly absorbs heat from the food inside.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the refrigeration cycle more useful than knowing that a refrigerator keeps things cold?</p>
+<ul>
+<li>A. Refrigerators produce cold from nothing, so there is no mechanism to explain.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. All appliances work the same way, so understanding one mechanism explains nothing new.</li>
+</ul>
+<h3>Q3</h3>
+<p>If the refrigerant fluid in a refrigerator leaked out completely, what would you predict would happen?</p>
+<ul>
+<li>A. The fridge would cool more efficiently because air conducts cold better than refrigerant.</li>
+<li>B. The compressor would produce more electrical energy to compensate for the missing refrigerant.</li>
+<li>C. The refrigerator would stop cooling because there is no fluid to carry heat away from inside.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain to a Class 4 student why the back of the fridge is warm, using only the idea that "evaporation takes heat and condensation gives it back." Then give the full explanation using the terms refrigerant, evaporator, compressor, and condenser.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The first practical mechanical refrigerator was invented in the 1850s — before most people had running water in their homes. For most of human history, "keeping food cold" meant cutting blocks of ice from rivers in winter and storing them in insulated cellars (icehouses) for summer. In Mughal India, ice was carried on horses from the Himalayas to Delhi — a journey of several days — as a luxury item for the emperor's beverages.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Evaporation absorbs heat — refrigerant evaporates inside the fridge (cools food) and condenses at the back (releases heat). The fridge is a heat pump, not a cold maker.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

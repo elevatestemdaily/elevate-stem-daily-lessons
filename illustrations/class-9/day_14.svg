@@ -1,26 +1,98 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why is DNA so important?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 14</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why is DNA so important?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Double helix, central dogma, mutation, and CRISPR — Day 14</text>
+
+<!-- LEFT: DNA structure -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1d4ed8">DNA Structure</text>
+
+<!-- Double helix visual -->
+<rect x="30" y="104" width="280" height="190" rx="4" fill="white" stroke="#1d4ed8" stroke-width="1"/>
+<!-- Left backbone -->
+<path d="M 90 120 Q 70 150 90 180 Q 110 210 90 240 Q 70 270 90 290" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+<!-- Right backbone -->
+<path d="M 190 120 Q 210 150 190 180 Q 170 210 190 240 Q 210 270 190 290" fill="none" stroke="#dc2626" stroke-width="3"/>
+<!-- Base pairs -->
+<line x1="90" y1="136" x2="190" y2="136" stroke="#16a34a" stroke-width="2.5"/>
+<line x1="88" y1="156" x2="192" y2="156" stroke="#ca8a04" stroke-width="2.5"/>
+<line x1="90" y1="176" x2="190" y2="176" stroke="#16a34a" stroke-width="2.5"/>
+<line x1="90" y1="196" x2="190" y2="196" stroke="#ca8a04" stroke-width="2.5"/>
+<line x1="90" y1="216" x2="190" y2="216" stroke="#16a34a" stroke-width="2.5"/>
+<line x1="90" y1="240" x2="190" y2="240" stroke="#ca8a04" stroke-width="2.5"/>
+<line x1="90" y1="264" x2="190" y2="264" stroke="#16a34a" stroke-width="2.5"/>
+<line x1="90" y1="283" x2="190" y2="283" stroke="#ca8a04" stroke-width="2.5"/>
+<text x="140" y="300" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Sugar-phosphate backbones</text>
+<text x="250" y="175" font-family="Arial" font-size="14" fill="#16a34a">A-T</text>
+<text x="250" y="215" font-family="Arial" font-size="14" fill="#ca8a04">G-C</text>
+<text x="30" y="315" font-family="Arial" font-size="14" fill="#333">A pairs with T (2 bonds)</text>
+<text x="30" y="333" font-family="Arial" font-size="14" fill="#333">G pairs with C (3 bonds)</text>
+
+<rect x="30" y="348" width="280" height="134" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="366" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">DNA Facts</text>
+<text x="40" y="386" font-family="Arial" font-size="14" fill="#333">Human genome: 3 billion base pairs</text>
+<text x="40" y="404" font-family="Arial" font-size="14" fill="#333">~20,000–25,000 genes</text>
+<text x="40" y="422" font-family="Arial" font-size="14" fill="#555">Stretched out: ~2 metres/cell</text>
+<text x="40" y="440" font-family="Arial" font-size="14" fill="#555">Packed tightly in 6µm nucleus</text>
+<text x="40" y="458" font-family="Arial" font-size="14" fill="#555">Watson + Crick (1953): double helix</text>
+<text x="40" y="476" font-family="Arial" font-size="14" fill="#555">Rosalind Franklin's X-ray key insight</text>
+
+<!-- CENTRE: Central dogma -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Central Dogma</text>
+
+<rect x="344" y="104" width="312" height="52" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="128" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1d4ed8">DNA → RNA → Protein</text>
+<text x="500" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Molecular basis of heredity and life</text>
+
+<rect x="344" y="166" width="312" height="96" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="184" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Transcription (nucleus)</text>
+<text x="354" y="206" font-family="Arial" font-size="14" fill="#333">DNA "unzips" → mRNA copy made</text>
+<text x="354" y="226" font-family="Arial" font-size="14" fill="#555">mRNA exits nucleus to ribosome</text>
+<text x="354" y="246" font-family="Arial" font-size="14" fill="#555">RNA polymerase enzyme reads template</text>
+
+<rect x="344" y="272" width="312" height="96" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="500" y="290" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Translation (ribosome)</text>
+<text x="354" y="312" font-family="Arial" font-size="14" fill="#333">mRNA codons (3 bases) → amino acid</text>
+<text x="354" y="332" font-family="Arial" font-size="14" fill="#555">tRNA brings amino acids to ribosome</text>
+<text x="354" y="352" font-family="Arial" font-size="14" fill="#555">Chain of amino acids = protein</text>
+
+<rect x="344" y="378" width="312" height="104" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="396" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Mutation &amp; CRISPR</text>
+<text x="354" y="416" font-family="Arial" font-size="14" fill="#333">Mutation: change in DNA base sequence</text>
+<text x="354" y="436" font-family="Arial" font-size="14" fill="#333">May alter protein → disease or benefit</text>
+<text x="354" y="456" font-family="Arial" font-size="14" fill="#555">CRISPR-Cas9: molecular scissors</text>
+<text x="354" y="474" font-family="Arial" font-size="14" fill="#555">Edit any gene with precision</text>
+
+<!-- RIGHT: India -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; DNA Science</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">IndiGen Project (2020)</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Whole genome sequenced: 10,000</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Indians across 99 ethnic groups</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CSIR: personalised medicine database</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">CRISPR in India</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">IIT Delhi: CRISPR sickle-cell cure</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">3.5 million Indians with sickle-cell</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Tribal communities in Odisha, MP</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Forensic DNA</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: DNA Profiling Bill (2022)</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">National DNA database for crime</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">identification and missing persons</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Bt Cotton</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Gene from Bacillus → cotton DNA</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Pest-resistant: 90% of India's cotton</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Pesticide use reduced 40%</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">DNA → RNA → Protein: the central dogma. A pairs T; G pairs C. Mutation = base change.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">CRISPR edits genes precisely. India: IndiGen sequenced 10,000 Indians; Bt cotton covers 90% of crop.</text>
 </svg>

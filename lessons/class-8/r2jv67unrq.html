@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 26 — Why do cyclones rotate? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 26</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do cyclones rotate?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain the Coriolis effect, describe why cyclones rotate counter-clockwise in the Northern Hemisphere, and predict what happens when a cyclone crosses the equator.</p>
+</div><h2>1. The mystery</h2>
+<p>Cyclone Biparjoy (2023) killed over 14 people and displaced thousands when it hit Gujarat. All cyclones over India rotate counter-clockwise when viewed from above. But cyclones in Australia rotate clockwise. Why? And why does a cyclone spin at all — why doesn't air just rush straight into the low-pressure centre?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Step 1 — Low pressure forms.</strong> Warm ocean water (above 26°C) heats air, which rises rapidly. The rising air creates a region of low pressure at the ocean surface.</p>
+<p><strong>Step 2 — Pressure gradient force.</strong> Surrounding higher-pressure air is pushed toward the low-pressure centre, like air rushing into a vacuum. Without anything else, this air would move in a straight line toward the centre.</p>
+<p><strong>Step 3 — Coriolis effect.</strong> Earth rotates from west to east. This rotation causes moving fluids (air, water) to be <em>deflected</em> — to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. The Coriolis acceleration = 2Ω × v (where Ω is Earth's rotation rate and v is wind velocity). This deflection is zero at the equator and maximum at the poles. Because cyclonic spin is maintained by continuous Coriolis deflection of the inflowing air, a cyclone that crossed the equator would lose this organising force and rapidly weaken and dissipate.</p>
+<p><strong>Step 4 — Cyclonic rotation.</strong> In the Northern Hemisphere, air rushing toward a low-pressure centre is deflected to the right — it curves counter-clockwise around the centre. In the Southern Hemisphere, deflection is to the left — clockwise rotation. This is why the two hemispheres have opposite rotation.</p>
+<p><strong>Cyclone structure:</strong>
+- <strong>Eye:</strong> Calm centre, 20–60 km wide, clear skies, low pressure
+- <strong>Eyewall:</strong> Most intense winds (up to 300 km/h), rain, dangerous zone
+- <strong>Rainbands:</strong> Spiral arms of cloud extending hundreds of km</p>
+<p><strong>Why they weaken over land:</strong> Cyclones get energy from warm ocean evaporation. Over land, this supply stops, friction increases, and the cyclone rapidly weakens.</p>
+<h2>3. Build the mental model</h2>
+<p>Picture yourself standing at the centre of a merry-go-round spinning counter-clockwise. You throw a ball toward the edge. To an observer watching from above, the ball travels in a straight line. But to someone standing on the spinning platform, the ball curves to the right — because the platform rotates beneath it.</p>
+<p>Earth is the merry-go-round. Winds rushing toward a low-pressure centre are like that thrown ball. Earth's rotation beneath them causes the deflection we call the Coriolis effect. The faster the wind and the farther from the equator, the stronger the curve:</p>
+<ul>
+<li><strong>At the equator:</strong> the merry-go-round is not spinning relative to you (rotation is horizontal), so there is no deflection — cyclones cannot form here.</li>
+<li><strong>At 15°N (Bay of Bengal):</strong> the rotation effect is modest but real — enough to set air curving counter-clockwise over hours.</li>
+<li><strong>At 30°N (Gujarat coast):</strong> the Coriolis deflection is stronger, tightening the spiral.</li>
+</ul>
+<p>The low-pressure core is the drain at the centre of the sink. The Coriolis effect is what makes the water spiral rather than pour straight down. Remove Earth's rotation and cyclones would collapse into simple inward rushes of wind — no rotation, no eye, no spiral structure, far less destructive.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a top-down view of the Northern Hemisphere Bay of Bengal with a developing cyclone centred over the water. Concentric rings of isobars (pressure contours) shrink inward toward the eye, labelled with decreasing pressure values from 1010 hPa at the outer edge to 950 hPa at the centre. Curved white arrows trace the wind path spiralling counter-clockwise inward, with each arrow labelled to show the Coriolis deflection turning it rightward at each step. A second inset panel shows the Southern Hemisphere equivalent with arrows spiralling clockwise, illustrating the mirror-image deflection. A thin dashed line marks the equator between the two panels, with the annotation "Coriolis = 0 here — cyclones cannot cross." The eye is shown as a clear circular patch with calm skies and descending air, surrounded by the darker shaded eyewall region marking maximum wind speed.</p>
+<figure><img src="../../illustrations/class-8/day_26.svg" alt="Diagram for Why do cyclones rotate?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India is among the top five countries worst-affected by tropical cyclones. The Bay of Bengal is a particularly active cyclone zone because it is semi-enclosed, the water is warm year-round, and Bangladesh and Odisha are low-lying. The 1999 Odisha Super Cyclone killed ~10,000 people. After that, India built one of the world's best cyclone early-warning systems — the India Meteorological Department (IMD) now gives 5-day forecasts with landfall accuracy within 50 km. Cyclone Fani (2019) was predicted 5 days in advance; 1.2 million people were evacuated from Odisha, and deaths dropped from thousands (in 1999) to 64.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Coriolis in a bowl:</strong> Fill a large bowl with water and let it settle completely (15 minutes). Carefully pull the drain plug (or make a small hole). If the setup is ideal (no initial rotation from filling), water drains with a slight spin — though in practice, home experiments often show random rotation because the Coriolis effect is very small at household scales. Real cyclones span thousands of kilometres — Coriolis dominates at that scale.</p>
+</div><h2>7. Think deeper</h2>
+<p>The Coriolis effect is often taught using water drains (toilets drain counter-clockwise in the Northern Hemisphere). This is actually a myth — the Coriolis effect on a toilet is negligible; toilet spin is determined by the direction water entered the bowl. But the effect is very real and important on large scales (cyclones, ocean gyres, atmospheric circulation). Foucault's pendulum — a large pendulum left swinging for hours — slowly rotates its plane of swing due to Earth rotating beneath it, providing the first direct visual proof of Earth's rotation. A Foucault pendulum at the poles rotates 360° per day; at the equator, it would not rotate at all.</p>
+<p><strong>Predict:</strong> If global warming raises average ocean surface temperatures by 2°C, what would you expect to happen to the frequency, intensity, and geographic range of cyclones — and what does this imply for India's eastern and western coastlines over the next 50 years?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes a cyclone to rotate rather than move straight inward?</p>
+<ul>
+<li>A. Warm ocean water heats air unevenly, pushing it into a spinning column</li>
+<li>B. High-altitude jet streams catch rising air and force it into a circular path</li>
+<li>C. The Coriolis effect from Earth's rotation deflects winds, causing circular motion</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the Coriolis effect and pressure gradient more useful than knowing cyclones spin?</p>
+<ul>
+<li>A. Knowing cyclones spin is enough to issue storm warnings to coastal areas</li>
+<li>B. It enables accurate prediction of cyclone paths, intensity, and timing</li>
+<li>C. Rotation mechanisms only explain cyclones, not anticyclones or tornadoes</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If a cyclone crossed the equator, what would you predict about its rotation?</p>
+<ul>
+<li>A. It would accelerate because the equator has the strongest Coriolis effect</li>
+<li>B. It would weaken and dissipate because the Coriolis effect is zero at the equator</li>
+<li>C. It would maintain its original rotation direction as momentum is conserved</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Cyclone Fani (May 2019) formed in the Bay of Bengal at around 8°N latitude, intensified over water surface temperatures of 30–31°C, and made landfall near Puri, Odisha, with sustained winds of 175 km/h. The IMD issued a warning 72 hours before landfall.</p>
+<p>Using what you know about cyclone formation, rotation, and intensification: (a) explain why Fani intensified so rapidly over the Bay of Bengal rather than weakening; (b) predict whether a similar storm forming at 5°N (closer to the equator) would be weaker or stronger by the time it reached the same latitude as Fani — give your reasoning in terms of Coriolis effect and ocean heat; (c) calculate the pressure gradient force direction at the moment Fani's eye was 200 km offshore from Puri, given that pressure outside the system was 1010 hPa and inside the eye was 932 hPa.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The Coriolis effect is so weak at small scales that it has no measurable influence on bath drains or toilet flushes — despite what popular science articles claim. A carefully controlled experiment at MIT in 1962 required a 2-metre circular tank, water left to settle for 24 hours, and extremely sensitive instruments to detect Coriolis-induced rotation. In everyday sinks, the direction of the spiral is set entirely by the shape of the basin and how the tap filled it. Yet this same force — negligible in your bathroom — is strong enough to organise a cyclone 1,000 km wide and sustain winds of 300 km/h for two weeks across an ocean.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Cyclones rotate because Earth's rotation deflects winds sideways via the Coriolis effect — without this deflection, air would rush straight into a low-pressure centre and no spiral, no eye, and no sustained destructive storm would ever form.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Atoms: the tiny building blocks of everyth</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 5</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">What is inside an atom?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Protons, neutrons, electrons — and what makes elements different — Day 5</text>
+
+<!-- LEFT: Atom diagram -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Atomic Structure</text>
+
+<!-- Nucleus -->
+<circle cx="175" cy="230" r="42" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="175" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">NUCLEUS</text>
+<text x="175" y="238" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Protons (+)</text>
+<text x="175" y="254" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Neutrons (0)</text>
+
+<!-- Electron orbits -->
+<ellipse cx="175" cy="230" rx="118" ry="50" fill="none" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="6,4"/>
+<ellipse cx="175" cy="230" rx="85" ry="70" fill="none" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="6,4"/>
+<ellipse cx="175" cy="230" rx="140" ry="36" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,4"/>
+<!-- Electrons -->
+<circle cx="293" cy="230" r="7" fill="#1d4ed8"/>
+<text x="300" y="220" font-family="Arial" font-size="14" fill="#1d4ed8">e⁻</text>
+<circle cx="175" cy="160" r="7" fill="#1d4ed8"/>
+<text x="182" y="153" font-family="Arial" font-size="14" fill="#1d4ed8">e⁻</text>
+<circle cx="57" cy="230" r="7" fill="#1d4ed8"/>
+<text x="32" y="220" font-family="Arial" font-size="14" fill="#1d4ed8">e⁻</text>
+
+<rect x="30" y="310" width="290" height="168" rx="4" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="175" y="328" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Subatomic Particles</text>
+<!-- Table header -->
+<rect x="30" y="334" width="290" height="22" fill="#1f5f8b"/>
+<text x="90" y="349" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Particle</text>
+<text x="185" y="349" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Charge</text>
+<text x="275" y="349" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Mass</text>
+<rect x="30" y="356" width="290" height="22" fill="#fee2e2"/>
+<text x="90" y="371" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Proton</text>
+<text x="185" y="371" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">+1</text>
+<text x="275" y="371" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1 amu</text>
+<rect x="30" y="378" width="290" height="22" fill="#f8fafc"/>
+<text x="90" y="393" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Neutron</text>
+<text x="185" y="393" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">0</text>
+<text x="275" y="393" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1 amu</text>
+<rect x="30" y="400" width="290" height="22" fill="#dbeafe"/>
+<text x="90" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Electron</text>
+<text x="185" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">−1</text>
+<text x="275" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1/1836 amu</text>
+<text x="175" y="442" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Nucleus = 99.97% of atom's mass</text>
+<text x="175" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Atom is mostly empty space</text>
+<text x="175" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Nucleus : atom = 1 : 100,000</text>
+
+<!-- CENTRE: Atomic number + isotopes -->
+<rect x="344" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Atomic Number &amp; Isotopes</text>
+
+<rect x="354" y="104" width="292" height="118" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Atomic Number (Z)</text>
+<text x="364" y="144" font-family="Arial" font-size="14" fill="#333">Z = number of protons</text>
+<text x="364" y="164" font-family="Arial" font-size="14" fill="#333">Defines the element!</text>
+<text x="364" y="184" font-family="Arial" font-size="14" fill="#555">Hydrogen: Z=1 (1 proton)</text>
+<text x="364" y="204" font-family="Arial" font-size="14" fill="#555">Carbon: Z=6   Oxygen: Z=8</text>
+<text x="364" y="220" text-anchor="left" font-family="Arial" font-size="14" fill="#555">Iron: Z=26   Gold: Z=79</text>
+
+<rect x="354" y="232" width="292" height="118" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="500" y="250" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Mass Number (A)</text>
+<text x="364" y="270" font-family="Arial" font-size="14" fill="#333">A = protons + neutrons</text>
+<text x="364" y="290" font-family="Arial" font-size="14" fill="#333">Neutrons = A − Z</text>
+<text x="364" y="310" font-family="Arial" font-size="14" fill="#555">Carbon-12: Z=6, A=12 → 6 neutrons</text>
+<text x="364" y="330" font-family="Arial" font-size="14" fill="#555">Carbon-14: Z=6, A=14 → 8 neutrons</text>
+<text x="364" y="346" text-anchor="left" font-family="Arial" font-size="14" fill="#555">Electrons = protons (neutral atom)</text>
+
+<rect x="354" y="360" width="292" height="122" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="378" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Isotopes</text>
+<text x="364" y="398" font-family="Arial" font-size="14" fill="#333">Same element, different neutron count</text>
+<text x="364" y="418" font-family="Arial" font-size="14" fill="#333">Same chemical properties</text>
+<text x="364" y="438" font-family="Arial" font-size="14" fill="#555">H-1 (99.98%), H-2 (deuterium), H-3</text>
+<text x="364" y="458" font-family="Arial" font-size="14" fill="#555">U-235 (fissile) vs U-238 (stable)</text>
+<text x="364" y="476" font-family="Arial" font-size="14" fill="#555">C-14: used in radiocarbon dating</text>
+
+<!-- RIGHT: India context -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; Atomic Science</text>
+
+<rect x="680" y="104" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Homi Bhabha (1909–1966)</text>
+<text x="825" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Father of India's nuclear programme</text>
+<text x="825" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Founded TIFR Mumbai, BARC</text>
+<text x="825" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Predicted cascade showers in cosmic rays</text>
+
+<rect x="680" y="202" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Nuclear Power</text>
+<text x="825" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 22 nuclear reactors</text>
+<text x="825" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Uses U-235 and Th-232 (thorite)</text>
+<text x="825" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India has world's 5th largest Th reserves</text>
+
+<rect x="680" y="300" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Medical Isotopes</text>
+<text x="825" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Tc-99m: nuclear medicine scans</text>
+<text x="825" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">I-131: thyroid cancer treatment</text>
+<text x="825" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">BARC produces isotopes for hospitals</text>
+
+<rect x="680" y="398" width="290" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Kanada (6th c. BCE) to Bhabha</text>
+<text x="825" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">From ancient parmanu to modern</text>
+<text x="825" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">nuclear reactors: 2,600 year journey</text>
+<text x="825" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">of atomic understanding</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Atom = nucleus (protons + neutrons) + electrons. Z = atomic number; A = Z + neutrons.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Isotopes: same Z, different neutrons. India's Homi Bhabha built the nation's nuclear programme.</text>
 </svg>

@@ -1,26 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does the human nervous system work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 16</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Does the Human Nervous System Work?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">CNS, PNS, neurons, action potentials, reflex arc — Day 16</text>
+
+<!-- LEFT: Neuron structure -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#7c3aed">The Neuron</text>
+
+<rect x="30" y="104" width="280" height="108" rx="4" fill="#ddd6fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#5b21b6">Structure</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Dendrites: receive signals (multiple)</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">Cell body (soma): integrates signals</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">Axon: conducts impulse (up to 1 m long)</text>
+<text x="40" y="200" font-family="Arial" font-size="14" fill="#555">Myelin sheath: insulates; speeds up signal</text>
+
+<rect x="30" y="222" width="280" height="80" rx="4" fill="white" stroke="#7c3aed" stroke-width="1"/>
+<text x="170" y="240" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Action Potential</text>
+<text x="40" y="260" font-family="Arial" font-size="14" fill="#333">Resting: −70 mV (K⁺ in, Na⁺ out)</text>
+<text x="40" y="280" font-family="Arial" font-size="14" fill="#555">Depolarise: Na⁺ rush in → +40 mV spike</text>
+<text x="40" y="296" font-family="Arial" font-size="14" fill="#555">Repolarise: K⁺ out; Na/K pump restores</text>
+
+<rect x="30" y="312" width="280" height="80" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="330" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Synapse (Chemical)</text>
+<text x="40" y="350" font-family="Arial" font-size="14" fill="#333">Neurotransmitter released into synaptic cleft</text>
+<text x="40" y="370" font-family="Arial" font-size="14" fill="#555">Binds receptor on next neuron → new AP</text>
+<text x="40" y="386" font-family="Arial" font-size="14" fill="#555">Acetylcholine, dopamine, serotonin, GABA</text>
+
+<rect x="30" y="402" width="280" height="80" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="420" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Myelination Speed</text>
+<text x="40" y="440" font-family="Arial" font-size="14" fill="#333">Unmyelinated: 0.5–2 m/s (pain fibres)</text>
+<text x="40" y="460" font-family="Arial" font-size="14" fill="#555">Myelinated: 70–120 m/s (motor fibres)</text>
+<text x="40" y="476" font-family="Arial" font-size="14" fill="#555">Saltatory: AP jumps nodes of Ranvier</text>
+
+<!-- CENTRE: CNS/PNS + reflex arc -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">CNS, PNS and Reflex Arc</text>
+
+<rect x="344" y="104" width="312" height="100" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Central Nervous System (CNS)</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">Brain: ~86 billion neurons; 3 regions</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">Cerebrum: thought, language, memory</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">Cerebellum: balance; Medulla: heartbeat, breathing</text>
+<text x="354" y="198" font-family="Arial" font-size="14" fill="#555">Spinal cord: relay + reflex centre</text>
+
+<rect x="344" y="214" width="312" height="80" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="232" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Peripheral NS (PNS)</text>
+<text x="354" y="252" font-family="Arial" font-size="14" fill="#333">Somatic: voluntary (skeletal muscle)</text>
+<text x="354" y="272" font-family="Arial" font-size="14" fill="#555">Autonomic: involuntary (heart, gut)</text>
+<text x="354" y="288" font-family="Arial" font-size="14" fill="#555">Sympathetic (fight-or-flight) vs Parasympathetic</text>
+
+<rect x="344" y="304" width="312" height="108" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="322" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Reflex Arc</text>
+<text x="354" y="342" font-family="Arial" font-size="14" fill="#333">Receptor → Afferent nerve → Spinal cord</text>
+<text x="354" y="362" font-family="Arial" font-size="14" fill="#333">→ Efferent nerve → Effector (muscle)</text>
+<text x="354" y="382" font-family="Arial" font-size="14" fill="#555">Bypasses brain: 0.05 s reflex time</text>
+<text x="354" y="398" font-family="Arial" font-size="14" fill="#555">Knee jerk: 2 neurons; hot plate: 3 neurons</text>
+
+<rect x="344" y="422" width="312" height="60" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Brain plasticity: neurons form new connections</text>
+<text x="500" y="458" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Learning = strengthening synapses (LTP)</text>
+<text x="500" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">"Neurons that fire together, wire together"</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Neuroscience</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">NIMHANS Bangalore</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">National Institute of Mental Health</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Premier brain research institution in India</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">fMRI, EEG, neurosurgery training</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Meditation Research</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Yoga/meditation: alters brain waves (IIT Delhi)</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">S.N. Goenka: Vipassana neuroscience</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">WHO recognises yoga as mental health tool</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Mental Health Burden</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 150 million need mental health care</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Only 0.3 psychiatrists per 100,000 people</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">DMHP: District Mental Health Programme</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">BCI Research (IIT + AIIMS)</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Brain-Computer Interface: EEG wheelchair</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">IIT Bombay: spinal cord injury rehabilitation</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">AIIMS: deep brain stimulation (Parkinson's)</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Neuron: dendrites → soma → axon. Action potential: Na⁺ in (depolarise), K⁺ out (repolarise).</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Reflex bypasses brain: 0.05 s. India: NIMHANS; 150M needing mental health care; IIT BCI research.</text>
 </svg>

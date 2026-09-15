@@ -1,26 +1,156 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr16" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+  <marker id="ard16" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">What is actually happening inside a chemic</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 16</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">What is actually happening inside a chemical reaction?</text>
+<text x="500" y="62" text-anchor="middle" font-family="Arial" font-size="17" fill="#555">Old bonds break (energy in) → atoms rearrange → new bonds form (energy out) — Day 16</text>
+
+<!-- ── LEFT: Bond breaking / forming ── -->
+<rect x="20" y="78" width="300" height="410" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="170" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Bond Breaking &amp; Forming</text>
+<text x="170" y="116" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Example: H₂ + Cl₂ → 2 HCl</text>
+
+<!-- REACTANTS row -->
+<text x="170" y="140" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#333">Reactants</text>
+<!-- H2 -->
+<circle cx="68" cy="162" r="15" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="68" y="167" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">H</text>
+<line x1="83" y1="162" x2="98" y2="162" stroke="#1d4ed8" stroke-width="3"/>
+<circle cx="113" cy="162" r="15" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="113" y="167" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">H</text>
+<text x="145" y="167" text-anchor="middle" font-family="Arial" font-size="18" fill="#555">+</text>
+<!-- Cl2 -->
+<circle cx="182" cy="162" r="15" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="182" y="167" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Cl</text>
+<line x1="197" y1="162" x2="212" y2="162" stroke="#065f46" stroke-width="3"/>
+<circle cx="227" cy="162" r="15" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="227" y="167" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Cl</text>
+
+<!-- Bond energies -->
+<text x="170" y="192" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">H−H: 436 kJ   Cl−Cl: 243 kJ</text>
+<text x="170" y="210" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">Energy IN = 679 kJ/mol</text>
+
+<!-- Down arrow: bonds break -->
+<line x1="170" y1="217" x2="170" y2="236" stroke="#dc2626" stroke-width="2.5" marker-end="url(#ard16)"/>
+<text x="174" y="231" font-family="Arial" font-size="14" fill="#dc2626">bonds break</text>
+
+<!-- Transition state -->
+<rect x="60" y="244" width="220" height="38" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="170" y="259" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Transition State (Ea peak)</text>
+<text x="170" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">H··Cl  H··Cl  (partial bonds)</text>
+
+<!-- Down arrow: bonds form -->
+<line x1="170" y1="287" x2="170" y2="306" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arr16)"/>
+<text x="174" y="301" font-family="Arial" font-size="14" fill="#16a34a">bonds form</text>
+
+<!-- PRODUCTS row -->
+<text x="170" y="326" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#333">Products: 2 HCl</text>
+<!-- HCl #1 -->
+<circle cx="90" cy="350" r="15" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="90" y="355" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">H</text>
+<line x1="105" y1="350" x2="120" y2="350" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="135" cy="350" r="15" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="135" y="355" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Cl</text>
+<!-- HCl #2 -->
+<circle cx="175" cy="350" r="15" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="175" y="355" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">H</text>
+<line x1="190" y1="350" x2="205" y2="350" stroke="#7c3aed" stroke-width="3"/>
+<circle cx="220" cy="350" r="15" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="220" y="355" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Cl</text>
+
+<text x="170" y="384" text-anchor="middle" font-family="Arial" font-size="14" fill="#16a34a">H−Cl: 432 kJ × 2 = 864 kJ</text>
+<text x="170" y="402" text-anchor="middle" font-family="Arial" font-size="14" fill="#16a34a" font-weight="700">Energy OUT = 864 kJ/mol</text>
+<rect x="40" y="414" width="260" height="42" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="432" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">ΔH = 679 − 864 = −185 kJ/mol</text>
+<text x="170" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Exothermic — net heat released</text>
+<text x="170" y="468" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">More energy out than in</text>
+
+<!-- ── CENTRE: Energy profile ── -->
+<rect x="334" y="78" width="330" height="225" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="499" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Energy Profile</text>
+
+<!-- Axes -->
+<line x1="362" y1="275" x2="650" y2="275" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="366" y1="106" x2="366" y2="278" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="660" y="279" font-family="Arial" font-size="14" fill="#555">→</text>
+<text x="354" y="110" font-family="Arial" font-size="14" fill="#555">E</text>
+<text x="499" y="295" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Reaction progress</text>
+
+<!-- Exothermic curve (orange) -->
+<path d="M370,252 C400,252 430,128 500,128 C570,128 600,262 635,262"
+      fill="none" stroke="#f97316" stroke-width="2.5"/>
+<!-- Catalyst curve (blue dashed, lower peak) -->
+<path d="M370,252 C400,252 435,166 500,166 C565,166 600,262 635,262"
+      fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3"/>
+
+<!-- Reactants level marker -->
+<line x1="366" y1="252" x2="386" y2="252" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,2"/>
+<text x="370" y="249" font-family="Arial" font-size="14" fill="#f97316">Reactants</text>
+<!-- Products level marker -->
+<line x1="630" y1="262" x2="652" y2="262" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,2"/>
+<text x="587" y="260" font-family="Arial" font-size="14" fill="#16a34a">Products</text>
+
+<!-- Ea annotation -->
+<line x1="500" y1="128" x2="500" y2="252" stroke="#dc2626" stroke-width="1" stroke-dasharray="4,2"/>
+<text x="503" y="185" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">Ea</text>
+<!-- ΔH annotation -->
+<line x1="648" y1="252" x2="648" y2="262" stroke="#1f5f8b" stroke-width="2"/>
+<text x="652" y="259" font-family="Arial" font-size="14" fill="#1f5f8b">ΔH</text>
+
+<!-- Legend -->
+<line x1="373" y1="133" x2="394" y2="133" stroke="#f97316" stroke-width="2.5"/>
+<text x="397" y="137" font-family="Arial" font-size="14" fill="#f97316">no catalyst</text>
+<line x1="373" y1="151" x2="394" y2="151" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="397" y="155" font-family="Arial" font-size="14" fill="#3b82f6">with catalyst</text>
+
+<!-- Catalyst box -->
+<rect x="334" y="315" width="330" height="80" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="499" y="335" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#7c3aed">Catalyst</text>
+<text x="499" y="356" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">Lowers Ea — reaction goes faster</text>
+<text x="499" y="376" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Not consumed. Enzymes are bio-catalysts.</text>
+
+<!-- Exo / Endo summary -->
+<rect x="334" y="407" width="330" height="80" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="499" y="425" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#92400e">Exo vs Endo</text>
+<text x="499" y="445" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Exothermic: ΔH &lt; 0 → heat released</text>
+<text x="499" y="463" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Endothermic: ΔH &gt; 0 → heat absorbed</text>
+<text x="499" y="479" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Both need Ea to start the reaction</text>
+
+<!-- ── RIGHT: India examples ── -->
+<rect x="678" y="78" width="305" height="410" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Reactions in India</text>
+
+<rect x="688" y="108" width="285" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="127" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">LPG Combustion (Exothermic)</text>
+<text x="830" y="146" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CH₄ + 2O₂ → CO₂ + 2H₂O</text>
+<text x="830" y="166" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">ΔH = −890 kJ/mol — household cooking</text>
+
+<rect x="688" y="184" width="285" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="202" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Photosynthesis (Endothermic)</text>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">6CO₂ + 6H₂O → glucose + 6O₂</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">+2,803 kJ/mol — sunlight drives it</text>
+
+<rect x="688" y="260" width="285" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="278" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Iron Rusting (Slow Exothermic)</text>
+<text x="830" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">4Fe + 3O₂ + H₂O → Fe₂O₃·H₂O</text>
+<text x="830" y="316" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">₹50,000 crore/yr cost — Indian railways</text>
+
+<rect x="688" y="336" width="285" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="354" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Fermentation — Bioethanol</text>
+<text x="830" y="372" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂</text>
+<text x="830" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India blends 10% ethanol in petrol</text>
+
+<rect x="688" y="412" width="285" height="68" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="830" y="430" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Acid + Metal → Hydrogen gas</text>
+<text x="830" y="448" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Zn + H₂SO₄ → ZnSO₄ + H₂↑</text>
+<text x="830" y="467" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Car battery cycle — Pb + H₂SO₄</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Reactions break old bonds (energy in) and form new bonds (energy out). Net ΔH = out − in.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Catalyst lowers Ea, speeds up reaction. Exothermic ΔH &lt; 0; endothermic ΔH &gt; 0.</text>
 </svg>

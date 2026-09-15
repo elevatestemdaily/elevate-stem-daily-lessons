@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 05 — How do neurons carry information? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 05</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do neurons carry information?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover the electrical and chemical system your brain uses to send signals at nearly the speed of thought — and understand why the brain can send 120 signals per second along a single nerve fibre.</p>
+</div><h2>1. The mystery</h2>
+<p>You touch a hot surface. In under 0.1 seconds, your hand pulls away — before you even consciously feel pain. Your arm muscles received an instruction faster than conscious thought. Then the pain arrives. Then your brain registers what happened. The signal had to travel from fingertips to spine to brain to muscles — all within a fraction of a second. How?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Neuron structure:</strong></p>
+<p>A neuron has three main parts:
+- <strong>Dendrites:</strong> Short branched extensions that receive signals from other neurons or sensory receptors.
+- <strong>Cell body (soma):</strong> Contains the nucleus and processes incoming signals.
+- <strong>Axon:</strong> A long single extension (up to 1 metre in the human body) that carries the signal away from the cell body toward the next neuron or muscle.</p>
+<p><strong>The action potential — the nerve signal:</strong></p>
+<p>At rest, the inside of a neuron is more negatively charged than the outside (about −70 mV). This is maintained by ion pumps (sodium-potassium pump) that keep more Na⁺ ions outside and K⁺ ions inside.</p>
+<p>When a sufficient stimulus arrives:
+1. <strong>Depolarisation:</strong> Na⁺ channels open → Na⁺ rushes in → inside becomes positive (+30 mV). This is the <strong>action potential</strong> — the nerve impulse.
+2. This depolarisation triggers the next section of membrane to open its Na⁺ channels — creating a wave of electrical change that travels along the axon.
+3. <strong>Repolarisation:</strong> K⁺ channels open, K⁺ rushes out → inside becomes negative again. The original Na⁺/K⁺ balance is restored by the pump.
+4. <strong>Refractory period:</strong> A brief moment when the neuron cannot fire again — this ensures the signal travels in only one direction.</p>
+<p><strong>Myelin sheath — the speed booster:</strong></p>
+<p>Many axons are wrapped in a fatty insulating layer called the <strong>myelin sheath</strong> (made by Schwann cells in the peripheral nervous system). The myelin sheath is not continuous — it has small gaps called <strong>nodes of Ranvier</strong>. In a myelinated axon, the action potential "jumps" from node to node (<strong>saltatory conduction</strong>) instead of travelling continuously along the entire membrane. This dramatically increases speed:
+- Unmyelinated axon: ~0.5–2 m/s
+- Myelinated axon: ~70–120 m/s (as fast as a car on a motorway)</p>
+<p>Damaged myelin → slower or failed signal transmission. This is what happens in <strong>multiple sclerosis (MS)</strong> — an autoimmune disease where the immune system attacks myelin sheaths. Symptoms include muscle weakness, loss of coordination, and vision problems (the optic nerve is heavily myelinated). This directly explains Q3.</p>
+<p><strong>Synaptic transmission — crossing the gap:</strong></p>
+<p>At the end of an axon, the signal must cross a tiny gap (<strong>synapse</strong>) to the next neuron or muscle. Electrical signals cannot jump this gap directly. Instead:
+1. The action potential reaches the <strong>synaptic terminal</strong> (axon terminal).
+2. Vesicles containing chemical <strong>neurotransmitters</strong> (e.g., acetylcholine, dopamine, serotonin) fuse with the membrane and release their contents into the synapse.
+3. Neurotransmitters bind to receptors on the next neuron's dendrites.
+4. If enough neurotransmitters bind, an action potential is triggered in the next neuron.
+5. Neurotransmitters are then broken down by enzymes or reabsorbed.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a myelinated axon as a train on a high-speed rail line — but instead of running on continuous track, it jumps between stations (nodes of Ranvier). An unmyelinated axon is like a person walking the entire distance. The jumping signal is faster. The chemical synapse is like passing a baton between relay runners — the baton (neurotransmitter) must be thrown from one runner (neuron) and caught by the next before the race continues.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_05.svg" alt="Diagram for How do neurons carry information?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows one neuron in detail: dendrites on the left, cell body with nucleus, long axon, myelin sheath segments (in blue) with nodes of Ranvier (gaps) between them, synaptic terminals at the right end. An action potential wave is shown (wave of + and − charges) jumping from node to node. Inset at the synapse: vesicles releasing neurotransmitters into the gap → binding to receptors on the next neuron. Inset showing speed comparison: unmyelinated (slow arrow) vs myelinated (fast arrow).</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Multiple sclerosis:</strong> The immune system attacks myelin sheaths in the brain and spinal cord. Without myelin, signals slow or fail → muscle weakness, visual problems, numbness. India sees about 15 cases per 100,000 people, lower than Europe, possibly due to higher vitamin D levels from sun exposure (vitamin D appears to regulate immune activity in the brain).</li>
+<li><strong>Local anaesthetics:</strong> Lidocaine (used by dentists) blocks Na⁺ channels in sensory neurons → action potentials cannot travel → no pain signal reaches the brain. The area becomes "numb." When the drug wears off, Na⁺ channels reopen and sensation returns.</li>
+<li><strong>Reflex arcs:</strong> The quickest withdrawal reflexes (like from heat) use a short circuit: sensory neuron → spinal cord → motor neuron, all without going to the brain. The brain gets the signal a fraction of a second later — which is why you pull away <em>before</em> you consciously feel pain.</li>
+<li><strong>Neurotransmitters and medicine:</strong> Depression is partly associated with low serotonin levels. Antidepressants like SSRIs (selective serotonin reuptake inhibitors) block the reabsorption of serotonin, keeping more of it available at synapses. Parkinson's disease involves the death of dopamine-producing neurons.</li>
+<li><strong>ISRO and nerve conduction:</strong> Electromyography (EMG), which measures nerve signal speeds, is used to monitor astronauts after long missions — prolonged weightlessness can affect nerve function.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Test your reflex arc: sit in a chair, cross one leg over the other so the top leg hangs freely. Ask someone to gently tap just below the kneecap (patellar tendon) with the edge of their hand. The knee should kick forward automatically. This is a <strong>patellar reflex</strong> — the tap stretches a tendon, which sends an action potential to the spinal cord via a sensory neuron, which immediately triggers a motor neuron back to the quadriceps muscle. No brain involvement — it is entirely a spinal reflex. Time the delay: it is well under 0.1 seconds.</p>
+</div><h2>7. Think deeper</h2>
+<p>At rest, a typical neuron has Na⁺ pumped out and K⁺ pumped in, maintaining the −70 mV resting potential. This pumping requires ATP (energy). It is estimated that the brain uses about 20% of the body's total energy despite being only 2% of its weight — largely to maintain these ion gradients across billions of neurons. During an action potential, ions rush through without requiring energy — but after each potential, the pump must restore the balance using ATP. What do you think happens to signal quality in neurons when blood sugar drops? Predict what would happen to thinking and reflex speed.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How do neurons transmit signals along their length?</p>
+<ul>
+<li>A. An electrical impulse called an action potential travels along the axon</li>
+<li>B. Neurons pass solid chemical pellets along hollow tubes to the brain</li>
+<li>C. Light signals travel through transparent neuron fibres to receptors</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the neural mechanism more useful than memorising nerve names?</p>
+<ul>
+<li>A. It enables predictions about what happens when nerves are damaged</li>
+<li>B. Nerve names are sufficient for understanding all neurological conditions</li>
+<li>C. Mechanisms only matter for motor neurons, not sensory neurons</li>
+</ul>
+<h3>Q3</h3>
+<p>If the myelin sheath around a neuron were damaged, what would you predict?</p>
+<ul>
+<li>A. The neuron would generate stronger signals to overcome the damage</li>
+<li>B. The neuron would switch to chemical transmission instead of electrical</li>
+<li>C. Signal transmission would slow down or fail, causing nerve disorders</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A nerve in the arm is 0.8 metres long. Signal speed in a myelinated axon is 80 m/s; in an unmyelinated axon it is 1.5 m/s. (a) Calculate the time for a signal to travel the full 0.8 m in each case. (b) If the reflex must complete in under 0.04 seconds from touch to muscle response (including signal to spinal cord and back), is this possible with an unmyelinated axon? (c) A doctor tests nerve conduction velocity and finds it is only 12 m/s in a patient — what does this suggest about the myelin?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The human brain has approximately 86 billion neurons, and each neuron can form up to 10,000 synaptic connections. That gives about 860 trillion possible synaptic connections — more connections than there are stars in the Milky Way. Yet the brain weighs only 1.4 kg and consumes only about 20 watts of power (less than a standard light bulb). No computer on Earth can match this combination of density, flexibility, and energy efficiency. The most powerful AI systems require millions of watts to process tasks that your brain handles effortlessly on 20 watts.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Action potentials (Na⁺ rushing in) travel along axons. Myelin sheath allows saltatory conduction (jumping at nodes of Ranvier) → 70–120 m/s. Synapses use neurotransmitters to pass signals between neurons. Damaged myelin → slow or failed signals.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 5 of 30</footer>
+</div>
+</body>
+</html>

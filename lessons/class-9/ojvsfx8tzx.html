@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 10 — Why does mass stay conserved in a reaction? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 10</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does mass stay conserved in a reaction?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to state and explain the law of conservation of mass, balance chemical equations, and predict where mass goes when combustion appears to lose it.</p>
+</div><h2>1. The mystery</h2>
+<p>Burn a candle: wax disappears. Rust iron: it gets heavier. Dissolve salt: it vanishes into water. These seem to violate each other. Yet Lavoisier (1789) showed: weigh reactants carefully, weigh products carefully (including all gases), and total mass is always the same. Why?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Law of conservation of mass:</strong> In any chemical reaction, total mass of reactants = total mass of products. Atoms are neither created nor destroyed — they are rearranged.</p>
+<p><strong>Why it holds:</strong> Chemical reactions break and form chemical bonds but cannot change atomic nuclei. Same atoms before and after, just rearranged into different molecules.</p>
+<p><strong>Balancing equations:</strong> C + O₂ → CO₂ (already balanced, 1C and 2O each side)
+CH₄ + 2O₂ → CO₂ + 2H₂O (1C, 4H, 4O each side ✓)</p>
+<p><strong>Candle mystery explained:</strong> Wax (C₂₅H₅₂) + O₂ → CO₂ + H₂O. The CO₂ and water vapour escape into air — invisible gases. If you burned the candle in a sealed container and weighed everything, total mass would be unchanged.</p>
+<p><strong>Rust mystery:</strong> Fe + O₂ → Fe₂O₃. Iron absorbs oxygen from air — gains mass. Oxygen wasn't weighed before.</p>
+<p><strong>Mole concept:</strong> 1 mole = 6.022 × 10²³ particles (Avogadro's number). Molar mass = mass of 1 mole in grams (e.g., H₂O = 18 g/mol).</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a chemical reaction as a LEGO® set being rebuilt — no bricks are ever added or removed:</p>
+<ul>
+<li><strong>Atoms are the bricks.</strong> Each type of atom is a specific LEGO® piece with a fixed shape and size. You might start with a spaceship model built from 50 bricks.</li>
+<li><strong>A chemical reaction</strong> is tearing the spaceship apart and reassembling the same 50 bricks into a car. The model looks completely different, but count the bricks before and after — always 50.</li>
+<li><strong>Why the candle seems to lose mass:</strong> Some bricks were assembled into an invisible flat piece (CO₂ gas) that floated away. If you had caught every piece that floated away and put it on the scale, you would count exactly 50 again.</li>
+<li><strong>Why rust gains mass:</strong> You started with 30 iron bricks, but during the reassembly, you picked up 10 extra oxygen bricks from the air (which you did not count at the start). The final model (iron oxide) has 40 bricks — more than you started with on the scale, but only because you forgot to weigh the oxygen you used.</li>
+<li><strong>The mole</strong> is simply a very large counting unit — like using "a crore" instead of counting one by one. Avogadro's number (6.022 × 10²³) is the chemist's "crore" for atoms.</li>
+</ul>
+<p>Lavoisier's breakthrough was insisting on weighing all gases — before and after. Once you count every brick that enters or leaves the box, the total never changes.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows conservation of mass as a two-pan balance with three reaction examples, each demonstrating the law from a different angle.</p>
+<p>The first balance shows a burning candle on the left pan and its products — CO₂ and H₂O molecules — collected in a sealed dome on the right pan. Both pans remain level, with mass values labelled (e.g., 1 g wax + 2.9 g O₂ = 3.9 g products). An arrow points to the escaping gases with the label "invisible, but still there." The second balance shows iron powder before and after rusting, with the right pan (Fe₂O₃) visibly heavier, and an arrow indicating "oxygen from air added to iron — the missing mass." The third panel shows the balanced equation CH₄ + 2O₂ → CO₂ + 2H₂O as a brick-count diagram: 1C, 4H, 4O on the left; 1C, 2O (CO₂) + 4H, 2O (H₂O) = 1C, 4H, 4O on the right — atoms counted explicitly showing the balance.</p>
+<figure><img src="../../illustrations/class-9/day_10.svg" alt="Diagram for Why does mass stay conserved in a reaction?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India's chemical manufacturing sector uses stoichiometry (mass calculations) to optimise yield. ONGC's refineries calculate exact quantities of catalysts and feedstock for every batch. Pharmaceutical synthesis: manufacturing 1 kg of aspirin (C₉H₈O₄) requires exact masses of acetic anhydride and salicylic acid, calculated from the balanced equation and molar masses. India's fertiliser plants (IFFCO) produce urea by reacting exactly calculated quantities of ammonia and CO₂ based on conservation of mass: 2NH₃ + CO₂ → CO(NH₂)₂ + H₂O.</p>
+<p>India's steel industry (Tata Steel, JSW Steel — together producing ~120 million tonnes per year) relies on stoichiometric calculations to control the carbon content of steel. Too much carbon makes steel brittle; too little makes it soft. Blast furnace operators use the balanced equation for iron ore reduction (Fe₂O₃ + 3CO → 2Fe + 3CO₂) to calculate exactly how much coke to add per tonne of ore. Every bridge, rail track, and skyscraper built in India is a product of conservation of mass applied at industrial scale.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Weigh a full sealed bottle of fizzy water. Open it and let all CO₂ escape. Reweigh. The bottle is lighter by the mass of CO₂ that escaped. If you had caught the CO₂ and added it to the balance, total mass would equal original weight. This confirms conservation of mass — the CO₂ didn't disappear, it moved.</p>
+<p>Extend: calculate the approximate mass of CO₂ lost. A 500 mL bottle of carbonated water typically contains about 3 g of dissolved CO₂. After opening and shaking for 2 minutes, how much CO₂ do you predict escaped? Weigh the bottle before and after — does your measurement match the expected 3 g? What systematic error might cause a discrepancy (hint: some water may have evaporated during the experiment)?</p>
+</div><h2>7. Think deeper</h2>
+<p>Einstein's famous E = mc² shows that in nuclear reactions, mass IS converted to energy — the total of mass + energy (as mass-equivalent) is conserved, not mass alone. When uranium-235 undergoes fission, the products weigh slightly less than the original nucleus — the "mass defect" is converted to enormous energy (binding energy). In chemical reactions (like burning), E = mc² also applies — the reactants have very slightly more mass than products, but the difference is negligibly small (about 10⁻¹² g per mole). At the chemistry scale, mass conservation is an excellent approximation.</p>
+<p><strong>Predict:</strong> A student burns magnesium ribbon in a sealed glass jar. She weighs the jar + magnesium before burning and the jar + white ash (MgO) after burning. She finds the mass after is slightly higher than before. Is this possible, or has conservation of mass been violated? Explain step by step what has actually happened, naming any gas that was consumed during the reaction and where it came from.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does the law of conservation of mass state about a chemical reaction?</p>
+<ul>
+<li>A. Mass increases in every reaction because energy is converted into additional matter</li>
+<li>B. Mass is conserved only in physical changes but always changes in chemical reactions</li>
+<li>C. Total reactant mass equals total product mass; atoms are neither created nor destroyed</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the atomic mechanism of mass conservation more useful than just stating the law?</p>
+<ul>
+<li>A. The law is outdated, so the mechanism provides a more modern and accurate description</li>
+<li>B. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>C. Memorising the law is sufficient for all practical laboratory and industrial purposes</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If a metal burned completely in air and the ash seemed lighter, what prediction explains this correctly?</p>
+<ul>
+<li>A. Some atoms were destroyed in the intense heat of the combustion reaction</li>
+<li>B. Some product gases escaped into the air; total mass including gases is still conserved</li>
+<li>C. The metal released protons that escaped into the atmosphere, reducing its mass</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A pharmaceutical student is synthesising paracetamol (C₈H₉NO₂, molar mass = 151 g/mol) from para-aminophenol (C₆H₇NO, molar mass = 109 g/mol) and acetic anhydride (C₄H₆O₃, molar mass = 102 g/mol). The balanced reaction is:</p>
+<p>C₆H₇NO + C₄H₆O₃ → C₈H₉NO₂ + CH₃COOH</p>
+<p>She starts with 10.9 g of para-aminophenol and excess acetic anhydride. Using conservation of mass and molar ratios:
+1. Calculate the theoretical yield of paracetamol in grams.
+2. She recovers only 11.3 g of product. Calculate her percentage yield.
+3. What does conservation of mass tell you must have happened to the "missing" mass?</p>
+<p>Show all working. (Molar mass of CH₃COOH = 60 g/mol as a check.)</p>
+</div><h2>10. One surprising idea</h2>
+<p>Lavoisier, who established the law of conservation of mass in 1789, was executed by guillotine in 1794 during the French Revolution — not for his science, but because he had worked as a tax collector. The mathematician Joseph-Louis Lagrange reportedly said: "It took them only an instant to cut off that head, and a hundred years may not produce another like it." The law of conservation of mass — which underpins every chemical equation, every industrial process, and every pharmaceutical calculation — was established by a scientist killed for his day job. Science survived its founder by centuries.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>In every chemical reaction, atoms are only rearranged — never created or destroyed — so total mass of reactants always equals total mass of products, even when gases escape and make it look otherwise.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

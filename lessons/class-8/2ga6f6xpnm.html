@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 07 — The science of friction | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 07</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>The science of friction</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover what friction actually is at the microscopic level — why it exists, what controls it, and why lubricants make things slide so much more easily.</p>
+</div><h2>1. The mystery</h2>
+<p>You can slide a heavy steel block across polished steel with much less force than across rough wood. But here is the strange part: polished steel looks perfectly smooth, but under a microscope it is covered in tiny peaks and valleys — just smaller ones. Why does friction exist at all if both surfaces appear smooth? And why does adding a drop of oil reduce friction so dramatically?</p>
+<h2>2. The science behind it</h2>
+<p>Friction is a contact force that opposes the relative motion between two surfaces. It has two forms:
+- <strong>Static friction:</strong> opposes the start of movement. Always ≥ kinetic friction.
+- <strong>Kinetic (sliding) friction:</strong> opposes motion once sliding has started.</p>
+<p><strong>The microscopic reality of friction:</strong></p>
+<p>No surface is truly smooth. Even polished metal has microscopic peaks called <strong>asperities</strong> at the nanometre scale. When two surfaces are placed together, they do not contact each other across the entire apparent area — only the highest asperity peaks touch. At these contact points:
+1. <strong>Mechanical interlocking:</strong> Peaks from one surface fit into valleys of the other. Moving them requires breaking or climbing over these interlocking features.
+2. <strong>Adhesive bonding (cold welding):</strong> At the contact points, atoms of the two surfaces are so close that weak intermolecular forces (and sometimes stronger atomic bonds) form between them. At very high contact pressures, microscopic junctions can actually weld together ("cold welds"). Sliding requires shearing these junctions.</p>
+<p>The force needed to shear these interlocking and welded asperity contacts is the friction force.</p>
+<p><strong>The friction equation:</strong></p>
+<p>Friction force (F) = μ × Normal force (N)</p>
+<p>Where <strong>μ (mu)</strong> is the <strong>coefficient of friction</strong> — a dimensionless number that depends on the materials in contact, not on contact area. This counter-intuitive result (friction does NOT depend on the size of the contact area) is because:
+- A larger area has more contact points but each contact point carries less pressure → bonds are weaker
+- A smaller area has fewer contact points but each carries more pressure → bonds are stronger
+- The total shearing force remains the same</p>
+<p><strong>Why lubricants reduce friction:</strong></p>
+<p>A lubricant (oil, water, grease) fills the gaps between asperities and creates a thin film that separates the two surfaces. Instead of solid-solid contact (asperities interlocking and welding), the surfaces float on the liquid film. The resistance now comes from the <strong>viscosity</strong> of the liquid — how much it resists shearing — which is far less than solid-solid asperity shearing. The solid surfaces never actually touch. This directly explains Q3: lubricant separates the surfaces → friction decreases dramatically.</p>
+<p><strong>Factors that control friction:</strong>
+- Materials (μ rubber-concrete ≈ 0.7; μ ice-ice ≈ 0.03)
+- Surface roughness (but not in a simple way — very smooth surfaces can have MORE friction due to increased adhesion at atomic scale)
+- Temperature (affects viscosity of any lubricant present)
+- Relative sliding speed (kinetic friction is approximately constant with speed for dry friction)</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine two pieces of Velcro pressed together. Pulling them apart requires force to unzip thousands of tiny hooks. Even "smooth" metal surfaces are covered in microscopic Velcro-like asperity peaks that interlock and bond at their tips. A lubricant is like spreading a thin layer of water between the two Velcro surfaces — the hooks can no longer reach each other, and you are now pulling through a viscous liquid instead of shearing metal bonds.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_07.svg" alt="Diagram for The science of friction"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram has two main panels. Left: A cross-section showing two "smooth" metal surfaces under a microscope — both covered in asperity peaks and valleys. Zoom inset: Two asperity peaks touching, showing: (a) mechanical interlock arrows, (b) atomic bond lines at the contact point (cold weld). Right: Same surfaces with lubricant film between them — no asperity contact, only liquid layer. Resistance arrows show large force for solid-solid contact vs small force for lubricated contact. Bottom: Friction equation (F = μN) with a worked example: a 10 kg block on concrete (μ=0.6) → F = 0.6 × 98 N = 58.8 N.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Car brakes:</strong> Disc brakes use high-friction pads (μ ≈ 0.4–0.5) pressed against metal rotors to convert kinetic energy to heat. Anti-lock braking systems (ABS) prevent wheels from locking up — because sliding friction (locked wheel) is less than rolling static friction. Skidding wheels stop less effectively than rolling wheels with ABS.</li>
+<li><strong>Engine oil:</strong> A car engine has dozens of metal surfaces moving against each other at thousands of RPM. Without engine oil, the engine would seize within seconds from friction heating. Engine oil viscosity (expressed as SAE grades like 10W-40) must remain stable from cold Indian winters to hot summers.</li>
+<li><strong>Road surfaces:</strong> Rain creates a thin water film on roads that acts as a lubricant → friction decreases → accidents increase. Road surfaces are deliberately textured to allow water to drain away. Indian roads are made with different aggregate grades depending on expected rainfall.</li>
+<li><strong>Joints in the human body:</strong> Cartilage + synovial fluid in knee and hip joints provides lubrication (coefficient of friction ≈ 0.001 — more slippery than ice). When cartilage wears away (osteoarthritis), bone rubs on bone → pain and inflammation.</li>
+<li><strong>Space: no friction in vacuum?</strong> In vacuum (space), the oxide layer that prevents cold-welding on Earth is absent. Metal parts that touch in space can cold-weld permanently — a phenomenon called <strong>galling</strong>. This is why spacecraft mechanisms require special dry lubricants (MoS₂ — molybdenum disulphide) that work in vacuum.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Measure friction without instruments. Place a thick book on a table. Gradually tilt one end of the table (or hold the book and tilt it) until the book just starts sliding. The angle at which it starts sliding is related to the coefficient of static friction: μ = tan(angle). You can roughly estimate: if the book slides when tilted to about 30°, μ ≈ 0.58. Try the same book with a piece of polished plastic between the book and table — the angle changes. Now try a drop of water as lubricant. You can observe the effect of surface material and lubrication on friction directly.</p>
+</div><h2>7. Think deeper</h2>
+<p>Theoretically, a large block and a small block of the same material on the same surface should need the same force to move them (same μ), because friction does not depend on area. But in practice, if you push a very large flat foam pad and a small foam pad, they feel different. This is because foam deforms and the contact mechanics are different from rigid metal. The Amontons-Coulomb laws of friction (μ independent of area) apply to rigid bodies with dry contact. What might be different about soft materials (rubber, foam, human skin) that makes area matter more? What applications might require knowing this?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes friction between two surfaces?</p>
+<ul>
+<li>A. Friction is caused by static electricity attracting surfaces together</li>
+<li>B. Microscopic irregularities on surfaces interlock and resist sliding motion</li>
+<li>C. Air molecules trapped between surfaces push back against movement</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is knowing how friction works more useful than just knowing it slows things down?</p>
+<ul>
+<li>A. Understanding friction helps engineers design brakes, tyres, and lubricants</li>
+<li>B. Knowing friction slows things down is enough for all engineering problems</li>
+<li>C. Friction mechanisms are only relevant to physics, not everyday engineering</li>
+</ul>
+<h3>Q3</h3>
+<p>If a lubricant were applied between two sliding surfaces, what would you predict?</p>
+<ul>
+<li>A. Friction would decrease because the lubricant separates the surfaces</li>
+<li>B. Friction would increase because the lubricant adds extra mass to surfaces</li>
+<li>C. Surfaces would bond together as the lubricant hardens under pressure</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A 5 kg steel block rests on a steel surface (μ static = 0.74, μ kinetic = 0.57). g = 10 m/s². (a) What is the minimum force needed to START the block moving? (b) Once moving, what force is needed to KEEP it moving at constant velocity? (c) If the coefficient of kinetic friction were the same as static friction, what physical prediction would be different about how objects start and stop sliding? (d) Engine oil has viscosity 0.1 Pa·s. If it forms a 0.001 mm film between two surfaces each of area 0.01 m² moving at 1 m/s relative to each other, calculate the shear force (F = η × A × v/d). Compare this to the dry friction force above.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Friction is not always a hindrance. Without friction, you could not walk (your feet would slip), write (pen would slip on paper), or drive (tyres would skid). Screws and nails hold things together because of friction between the threads and material. Musical instruments like violins work because of friction — the bow (rosin-covered horsehair) sticks and releases the string hundreds of times per second, creating vibrations. A world with zero friction would be a world where nothing could be picked up, walked on, or built. Friction is not just a problem to be minimised — it is a fundamental enabler of most human technology.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Friction comes from microscopic asperities on surfaces that interlock and form tiny adhesive bonds. F = μN (not dependent on area). Lubricants separate surfaces with a liquid film → asperities cannot interlock → friction decreases dramatically.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

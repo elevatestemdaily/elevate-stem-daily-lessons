@@ -1,26 +1,91 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Ultimate Challenge: Solve a real-world sci</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 30</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Ultimate Challenge: Solve a Real-World Science Problem</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Interdisciplinary STEM, problem-solving framework, India's grand challenges — Day 30</text>
+
+<!-- LEFT: Problem-solving framework -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">STEM Problem-Solving Cycle</text>
+
+<rect x="30" y="104" width="280" height="170" rx="4" fill="white" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Six Steps</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">1. DEFINE: What exactly is the problem?</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">2. OBSERVE: Gather data; what do you see?</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#333">3. HYPOTHESISE: Form a testable explanation</text>
+<text x="40" y="202" font-family="Arial" font-size="14" fill="#555">4. DESIGN: Plan experiment; control variables</text>
+<text x="40" y="222" font-family="Arial" font-size="14" fill="#555">5. TEST: Collect data; measure accurately</text>
+<text x="40" y="242" font-family="Arial" font-size="14" fill="#555">6. REVISE: Does data support hypothesis?</text>
+<text x="40" y="262" font-family="Arial" font-size="14" fill="#555">   If not: back to step 3 (iterate!)</text>
+
+<rect x="30" y="284" width="280" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="302" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Why Iterate?</text>
+<text x="40" y="322" font-family="Arial" font-size="14" fill="#333">Most discoveries: many failed hypotheses first</text>
+<text x="40" y="342" font-family="Arial" font-size="14" fill="#555">Penicillin: accident → hypothesis → drug</text>
+<text x="40" y="358" font-family="Arial" font-size="14" fill="#555">Failure = data (not defeat)</text>
+
+<rect x="30" y="374" width="280" height="108" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="392" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Interdisciplinary Thinking</text>
+<text x="40" y="412" font-family="Arial" font-size="14" fill="#333">Air pollution: chemistry (reactions) +</text>
+<text x="40" y="432" font-family="Arial" font-size="14" fill="#333">  physics (particles) + biology (lungs) +</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#555">  maths (modelling) + engineering (sensors)</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">Real problems: never just one subject</text>
+
+<!-- CENTRE: India's grand challenges -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">India's Grand STEM Challenges</text>
+
+<rect x="344" y="104" width="312" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Clean Water (Jal Jeevan Mission)</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">160M homes: tap water by 2024</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#555">Science: filter design, sensor, pipe materials</text>
+
+<rect x="344" y="194" width="312" height="80" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="500" y="212" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Air Quality (AQI &gt;200 in Delhi)</text>
+<text x="354" y="232" font-family="Arial" font-size="14" fill="#333">PM2.5 particles: lung penetration biology</text>
+<text x="354" y="252" font-family="Arial" font-size="14" fill="#555">Source apportionment: chemistry + modelling</text>
+
+<rect x="344" y="284" width="312" height="80" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="302" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Food Security (3rd largest agricultural land)</text>
+<text x="354" y="322" font-family="Arial" font-size="14" fill="#333">Climate change: irregular monsoon → drought</text>
+<text x="354" y="342" font-family="Arial" font-size="14" fill="#555">GMO, precision irrigation, soil science</text>
+
+<rect x="344" y="374" width="312" height="80" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="392" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Renewable Energy (500 GW target 2030)</text>
+<text x="354" y="412" font-family="Arial" font-size="14" fill="#333">Solar: 40 GW → 500 GW in 7 years</text>
+<text x="354" y="432" font-family="Arial" font-size="14" fill="#555">Storage: battery chemistry, grid stability physics</text>
+
+<rect x="344" y="464" width="312" height="18" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="477" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Each challenge: YOUR generation will solve.</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Indian Scientists Who Led</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">CV Raman (Nobel 1930)</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Light scattering → molecular structure</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Everyday observation → Nobel Prize</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Raman spectroscopy: industrial quality control</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">S. Chandrasekhar (Nobel 1983)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chandrasekhar limit: stellar evolution</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Worked from India → built theory at 19</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Maths + physics + astronomy: interdisciplinary</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">APJ Abdul Kalam</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">PSLV, Agni: aerospace engineering</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Pokhran 1998: nuclear test team lead</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India's Missile Man and People's President</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Now: Your Turn!</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">30 days: chemistry, biology, physics mastered</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India 2047: Viksit Bharat needs STEM thinkers</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Every great scientist was a Class 10 student</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Define → Observe → Hypothesise → Test → Revise. Real problems cross all STEM subjects.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India's grand challenges: clean water, air, food, energy. Raman, Chandrasekhar, Kalam — your inspiration.</text>
 </svg>

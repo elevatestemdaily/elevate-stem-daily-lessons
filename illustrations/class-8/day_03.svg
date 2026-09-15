@@ -1,26 +1,126 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does your immune system recognize an e</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 3</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">How does your immune system recognize an enemy?</text>
+
+<!-- Stage 1: Pathogen enters -->
+<text x="30" y="90" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">STAGE 1: DETECTION</text>
+<rect x="20" y="100" width="220" height="130" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+
+<!-- Bacterium with spikes -->
+<circle cx="80" cy="148" r="28" fill="#ef9a9a"/>
+<line x1="80" y1="120" x2="80" y2="108" stroke="#c62828" stroke-width="2"/>
+<line x1="80" y1="176" x2="80" y2="188" stroke="#c62828" stroke-width="2"/>
+<line x1="52" y1="148" x2="40" y2="148" stroke="#c62828" stroke-width="2"/>
+<line x1="108" y1="148" x2="120" y2="148" stroke="#c62828" stroke-width="2"/>
+<line x1="60" y1="128" x2="51" y2="119" stroke="#c62828" stroke-width="2"/>
+<line x1="100" y1="128" x2="109" y2="119" stroke="#c62828" stroke-width="2"/>
+<text x="80" y="153" text-anchor="middle" font-family="Arial" font-size="14" fill="#c62828">PATHOGEN</text>
+<text x="155" y="118" font-family="Arial" font-size="14" fill="#333">Antigen spikes</text>
+<text x="155" y="133" font-family="Arial" font-size="14" fill="#333">(unique proteins</text>
+<text x="155" y="148" font-family="Arial" font-size="14" fill="#333">on surface)</text>
+
+<!-- Macrophage eating it -->
+<text x="130" y="178" font-family="Arial" font-size="14" fill="#880e4f">Macrophage engulfs</text>
+<text x="130" y="192" font-family="Arial" font-size="14" fill="#880e4f">→ displays antigen</text>
+<text x="130" y="206" font-family="Arial" font-size="14" fill="#880e4f">on MHC protein</text>
+<text x="130" y="220" font-family="Arial" font-size="14" fill="#880e4f">("Wanted Poster")</text>
+
+<!-- Arrow right -->
+<text x="248" y="165" font-family="Arial" font-size="18" fill="#1f5f8b">→</text>
+
+<!-- Stage 2: T-cell and B-cell activation -->
+<text x="280" y="90" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">STAGE 2: ACTIVATION</text>
+<rect x="270" y="100" width="225" height="130" rx="8" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+
+<!-- Helper T-cell -->
+<circle cx="340" cy="145" r="28" fill="#9fa8da"/>
+<text x="340" y="142" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">Helper</text>
+<text x="340" y="154" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">T-cell</text>
+<text x="295" y="118" font-family="Arial" font-size="14" fill="#333">Receptor fits</text>
+<text x="295" y="130" font-family="Arial" font-size="14" fill="#333">MHC-antigen</text>
+<text x="295" y="195" font-family="Arial" font-size="14" fill="#333">→ Activates</text>
+<text x="295" y="207" font-family="Arial" font-size="14" fill="#333">→ Divides into clone</text>
+
+<!-- B-cell -->
+<circle cx="430" cy="145" r="28" fill="#80cbc4"/>
+<text x="430" y="142" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">B-cell</text>
+<text x="430" y="154" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">Plasma</text>
+<text x="380" y="185" font-family="Arial" font-size="14" fill="#333">T-cell activates B-cell</text>
+<text x="380" y="197" font-family="Arial" font-size="14" fill="#333">Plasma cell produces</text>
+<text x="380" y="209" font-family="Arial" font-size="14" fill="#333">Y-shaped antibodies</text>
+<text x="380" y="221" font-family="Arial" font-size="14" fill="#333">→ tag pathogens</text>
+
+<!-- Y-shaped antibodies -->
+<text x="445" y="140" font-family="Arial" font-size="16" fill="#00695c">Y Y Y</text>
+<text x="440" y="160" font-family="Arial" font-size="14" fill="#00695c">antibodies</text>
+
+<!-- Arrow right -->
+<text x="500" y="165" font-family="Arial" font-size="18" fill="#1f5f8b">→</text>
+
+<!-- Stage 3: Memory -->
+<text x="530" y="90" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">STAGE 3: MEMORY</text>
+<rect x="520" y="100" width="210" height="130" rx="8" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+
+<rect x="535" y="115" width="180" height="35" rx="5" fill="#c8e6c9" stroke="#2a7a2a" stroke-width="1"/>
+<text x="625" y="130" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Memory B-cells</text>
+<text x="625" y="143" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">persist for years</text>
+
+<rect x="535" y="160" width="180" height="35" rx="5" fill="#c8e6c9" stroke="#2a7a2a" stroke-width="1"/>
+<text x="625" y="175" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Memory T-cells</text>
+<text x="625" y="188" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">persist for years</text>
+
+<text x="625" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">First response: 10–14 days</text>
+<text x="625" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Memory response: hours</text>
+
+<!-- Second exposure panel -->
+<text x="748" y="90" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">SECOND EXPOSURE (Q3)</text>
+<rect x="740" y="100" width="240" height="130" rx="8" fill="#fff8e1" stroke="#f0a000" stroke-width="1.5"/>
+
+<text x="860" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Same pathogen appears again</text>
+<text x="860" y="136" text-anchor="middle" font-family="Arial" font-size="18" fill="#c62828">↓</text>
+<text x="860" y="155" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Memory cells recognise</text>
+<text x="860" y="170" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">in HOURS (not 14 days)</text>
+<text x="860" y="188" text-anchor="middle" font-family="Arial" font-size="18" fill="#c62828">↓</text>
+<text x="860" y="208" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Pathogen destroyed before</text>
+<text x="860" y="222" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">symptoms develop = immunity</text>
+
+<!-- Bottom row: Real world connections -->
+<rect x="20" y="248" width="220" height="70" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+<text x="130" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">BCG Vaccine (TB)</text>
+<text x="130" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Weakened TB antigen injected</text>
+<text x="130" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ memory cells form → ready</text>
+<text x="130" y="311" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Scar = evidence on your arm</text>
+
+<rect x="260" y="248" width="225" height="70" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+<text x="373" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">HIV destroys helper T-cells</text>
+<text x="373" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Without T-cells: B-cells cannot</text>
+<text x="373" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">be activated → no antibodies</text>
+<text x="373" y="311" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Entire adaptive immune system fails</text>
+
+<rect x="505" y="248" width="225" height="70" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="618" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Flu vaccine — annual</text>
+<text x="618" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Influenza mutates surface antigens</text>
+<text x="618" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">each year → old memory cells</text>
+<text x="618" y="311" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">don't recognise new strain</text>
+
+<rect x="750" y="248" width="230" height="70" rx="6" fill="#fff8e1" stroke="#f0a000" stroke-width="1.5"/>
+<text x="865" y="265" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c07000">Autoimmune disease</text>
+<text x="865" y="281" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Self vs enemy recognition fails</text>
+<text x="865" y="296" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Attacks own cells: arthritis,</text>
+<text x="865" y="311" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Type 1 diabetes, lupus</text>
+
+<!-- Timeline comparison -->
+<rect x="20" y="335" width="960" height="60" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+<text x="500" y="356" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7b1fa2">RESPONSE TIME COMPARISON</text>
+<text x="250" y="377" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">First exposure: 10–14 days to form antibodies (feel sick)</text>
+<text x="750" y="377" text-anchor="middle" font-family="Arial" font-size="14" fill="#2a7a2a">Second exposure: hours — memory cells → antibodies fast</text>
+
+<!-- Killer T-cell note -->
+<rect x="20" y="412" width="960" height="40" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1"/>
+<text x="500" y="430" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Killer T-cells also form — destroy virus-infected cells, stopping the virus replicating</text>
+<text x="500" y="446" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Antibodies = extracellular; Killer T-cells = intracellular — the immune system attacks pathogens in both compartments</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="536" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Antigens trigger immune recognition. Memory B-cells store the pattern — second exposure → fast response in hours.</text>
 </svg>

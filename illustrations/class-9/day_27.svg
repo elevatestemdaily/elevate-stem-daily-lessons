@@ -1,26 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why are stars different colours?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 27</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why are stars different colours?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Blackbody radiation, Wien's law, stellar classification OBAFGKM — Day 27</text>
+
+<!-- LEFT: Colour-temperature scale -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Stellar Colour Scale</text>
+
+<circle cx="80" cy="130" r="28" fill="#93c5fd" opacity="0.95"/>
+<text x="80" y="135" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1e1b4b">O</text>
+<text x="120" y="125" font-family="Arial" font-size="14" fill="#374151">&gt;30,000 K</text>
+<text x="120" y="143" font-family="Arial" font-size="14" fill="#1d4ed8">Blue-white</text>
+
+<circle cx="80" cy="198" r="24" fill="#bfdbfe"/>
+<text x="80" y="204" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1e1b4b">B</text>
+<text x="116" y="193" font-family="Arial" font-size="14" fill="#374151">10,000–30,000 K</text>
+<text x="116" y="211" font-family="Arial" font-size="14" fill="#2563eb">Blue</text>
+
+<circle cx="80" cy="258" r="22" fill="#e0f2fe"/>
+<text x="80" y="264" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">A</text>
+<text x="114" y="253" font-family="Arial" font-size="14" fill="#374151">7,500–10,000 K</text>
+<text x="114" y="271" font-family="Arial" font-size="14" fill="#6b7280">White</text>
+
+<circle cx="80" cy="316" r="22" fill="#fef08a"/>
+<text x="80" y="322" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">G</text>
+<text x="114" y="311" font-family="Arial" font-size="14" fill="#374151">5,200–6,000 K</text>
+<text x="114" y="329" font-family="Arial" font-size="14" fill="#d97706">Yellow (Sun)</text>
+
+<circle cx="80" cy="374" r="22" fill="#fdba74"/>
+<text x="80" y="380" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">K</text>
+<text x="114" y="369" font-family="Arial" font-size="14" fill="#374151">3,700–5,200 K</text>
+<text x="114" y="387" font-family="Arial" font-size="14" fill="#c2410c">Orange</text>
+
+<circle cx="80" cy="432" r="22" fill="#fca5a5"/>
+<text x="80" y="438" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">M</text>
+<text x="114" y="427" font-family="Arial" font-size="14" fill="#374151">2,400–3,700 K</text>
+<text x="114" y="445" font-family="Arial" font-size="14" fill="#dc2626">Red (coolest)</text>
+
+<text x="170" y="480" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Hot = blue | Cool = red</text>
+
+<!-- CENTRE: Wien's law + blackbody -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Wien's Law and Blackbody</text>
+
+<rect x="344" y="104" width="312" height="120" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Blackbody Radiation</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Hot objects glow: hotter → shorter λ</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Star = near-perfect blackbody emitter</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">Spectrum peaks at λ_peak → temperature</text>
+<text x="354" y="204" font-family="Arial" font-size="14" fill="#555">No thermometer needed: just colour!</text>
+
+<rect x="344" y="234" width="312" height="108" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="252" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Wien's Displacement Law</text>
+<text x="354" y="276" font-family="Arial" font-size="16" font-weight="700" fill="#1d4ed8">λ_peak = 2.898×10⁻³ / T (metres)</text>
+<text x="354" y="298" font-family="Arial" font-size="14" fill="#333">Sun (5,778 K): λ_peak = 502 nm (green!)</text>
+<text x="354" y="318" font-family="Arial" font-size="14" fill="#555">Looks yellow: eye + atmosphere bias</text>
+<text x="354" y="334" font-family="Arial" font-size="14" fill="#555">T↑ → λ↓ (hotter → bluer peak)</text>
+
+<rect x="344" y="352" width="312" height="130" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="370" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Spectral Lines: Chemical Fingerprint</text>
+<text x="354" y="392" font-family="Arial" font-size="14" fill="#333">Each element absorbs unique wavelengths</text>
+<text x="354" y="412" font-family="Arial" font-size="14" fill="#333">Fraunhofer lines in solar spectrum</text>
+<text x="354" y="432" font-family="Arial" font-size="14" fill="#555">Helium: discovered in Sun before Earth!</text>
+<text x="354" y="452" font-family="Arial" font-size="14" fill="#555">OBAFGKM: temperature + composition</text>
+<text x="354" y="470" font-family="Arial" font-size="14" fill="#555">Mnemonic: Oh Be A Fine Girl Kiss Me</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Stellar Science</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">AstroSat (ISRO, 2015)</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India's first dedicated astronomy satellite</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">UV to X-ray multiwavelength view</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Studies stars, black holes, galaxies</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Meghnad Saha (1893–1956)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Saha ionisation equation</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Explained stellar spectral classes</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India's most impactful astrophysics work</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">IIA Bangalore</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Indian Institute of Astrophysics</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">VBO: 2.3 m telescope, Kavalur</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Spectroscopy of thousands of stars</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Aditya-L1 (ISRO, 2023)</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Studies Sun from Lagrange point L1</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Solar UV + X-ray + magnetic fields</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Real-time solar spectrum data</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Wien's law: λ_peak = 2.898×10⁻³/T — hotter stars are bluer. OBAFGKM = decreasing temperature.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Meghnad Saha's equation explained stellar spectra. AstroSat: India's space observatory since 2015.</text>
 </svg>

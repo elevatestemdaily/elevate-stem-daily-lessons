@@ -1,26 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Energy: where does it go?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 22</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Energy: where does it go?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Conservation of energy, energy forms, friction losses — Day 22</text>
+
+<!-- LEFT: Conservation law + energy forms -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Conservation of Energy</text>
+
+<rect x="30" y="104" width="280" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">The Law</text>
+<text x="40" y="144" font-family="Arial" font-size="14" fill="#333">Energy cannot be created or destroyed</text>
+<text x="40" y="164" font-family="Arial" font-size="14" fill="#555">— only transferred or converted</text>
+<text x="40" y="180" font-family="Arial" font-size="14" fill="#555">Total energy in closed system = constant</text>
+
+<rect x="30" y="194" width="280" height="196" rx="4" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="170" y="212" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Energy Forms</text>
+<rect x="30" y="218" width="280" height="24" fill="#dbeafe"/>
+<text x="50" y="234" font-family="Arial" font-size="14" fill="#333">Kinetic (KE = ½mv²)</text>
+<text x="270" y="234" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">motion</text>
+<rect x="30" y="242" width="280" height="24" fill="#f0fdf4"/>
+<text x="50" y="258" font-family="Arial" font-size="14" fill="#333">Gravitational potential (mgh)</text>
+<text x="270" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">height</text>
+<rect x="30" y="266" width="280" height="24" fill="#fef9c3"/>
+<text x="50" y="282" font-family="Arial" font-size="14" fill="#333">Elastic potential (½kx²)</text>
+<text x="270" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">spring</text>
+<rect x="30" y="290" width="280" height="24" fill="#fee2e2"/>
+<text x="50" y="306" font-family="Arial" font-size="14" fill="#333">Thermal (random molecular KE)</text>
+<text x="270" y="306" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">heat</text>
+<rect x="30" y="314" width="280" height="24" fill="#ede9fe"/>
+<text x="50" y="330" font-family="Arial" font-size="14" fill="#333">Chemical (stored in bonds)</text>
+<text x="270" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">food</text>
+<rect x="30" y="338" width="280" height="24" fill="#f0f9ff"/>
+<text x="50" y="354" font-family="Arial" font-size="14" fill="#333">Electrical, Nuclear, Radiant</text>
+<text x="270" y="354" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">light</text>
+<text x="30" y="382" font-family="Arial" font-size="14" fill="#555">Pendulum: GPE ↔ KE (ideal)</text>
+<text x="30" y="398" font-family="Arial" font-size="14" fill="#555">Slows → heat (air resistance + pivot)</text>
+
+<rect x="30" y="408" width="280" height="74" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="426" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">2nd Law of Thermodynamics</text>
+<text x="40" y="446" font-family="Arial" font-size="14" fill="#333">Every conversion → some energy → heat</text>
+<text x="40" y="464" font-family="Arial" font-size="14" fill="#555">Heat disperses → no longer useful work</text>
+<text x="40" y="480" font-family="Arial" font-size="14" fill="#555">Entropy always increases</text>
+
+<!-- CENTRE: Energy conversion chains + efficiency -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Energy Transformations</text>
+
+<rect x="344" y="104" width="312" height="128" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Conversion Chains</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Hydro: GPE(water)→KE→electrical→light</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Car: chemical→thermal→KE→heat(friction)</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#333">Solar panel: radiant→electrical→chemical</text>
+<text x="354" y="204" font-family="Arial" font-size="14" fill="#555">Body: chemical(food)→thermal+KE+ATP</text>
+<text x="354" y="220" font-family="Arial" font-size="14" fill="#555">At each step: heat loss to surroundings</text>
+
+<rect x="344" y="242" width="312" height="112" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="260" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Efficiency = Useful/Total × 100%</text>
+<text x="354" y="282" font-family="Arial" font-size="14" fill="#333">Car engine: ~25% (75% waste heat)</text>
+<text x="354" y="302" font-family="Arial" font-size="14" fill="#333">LED bulb: ~90%</text>
+<text x="354" y="322" font-family="Arial" font-size="14" fill="#555">Human body (movement): ~25%</text>
+<text x="354" y="342" font-family="Arial" font-size="14" fill="#555">Steam turbine: ~40%</text>
+
+<rect x="344" y="364" width="312" height="118" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Carnot Efficiency Limit</text>
+<text x="354" y="404" font-family="Arial" font-size="14" fill="#333">η_max = 1 − T_cold/T_hot (Kelvin)</text>
+<text x="354" y="424" font-family="Arial" font-size="14" fill="#333">Steam turbine: T_H=873K, T_C=303K</text>
+<text x="354" y="444" font-family="Arial" font-size="14" fill="#555">η_max = 1 − 303/873 = 65%</text>
+<text x="354" y="464" font-family="Arial" font-size="14" fill="#555">No engine can exceed Carnot limit</text>
+<text x="354" y="480" font-family="Arial" font-size="14" fill="#555">Fundamental law — not engineering limit</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Energy Efficiency</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">BEE Star Rating</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bureau of Energy Efficiency</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Saved 100 bn units since 2006</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">= 14 large power plants not needed</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">UJALA LED Programme</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">770 million LEDs distributed</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">60% less energy than incandescent</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Saves ₹19,000 crore/year</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Thermal Power Efficiency</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India's coal plants: 33–38% efficient</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">62–67% becomes waste heat</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">5% improvement = billions saved</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Bhakra Hydroelectric</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Water falls 226 m → KE → electricity</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Efficiency ~90% (turbine + generator)</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cleanest conversion: GPE → electrical</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Energy conserved but quality degrades: every conversion loses some to heat. Entropy increases.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Carnot limit: η = 1 − T_C/T_H. India's UJALA: 770M LEDs save ₹19,000 crore/year.</text>
 </svg>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 11 — Why do shadows change during the day? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 11</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do shadows change during the day?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why shadows change length and direction throughout the day, describe the Sun's apparent path across the sky, and predict the direction of a shadow at a given time in India.</p>
+</div><h2>1. The mystery</h2>
+<p>In the morning, your shadow stretches far to the west and could be several metres long. By noon, it shrinks to almost nothing and points north. By late afternoon, it stretches far to the east again. The object casting the shadow has not changed. What is causing this — and how did ancient people use shadows as clocks?</p>
+<h2>2. The science behind it</h2>
+<p><strong>The Earth rotates, not the Sun.</strong> The Earth spins on its axis from west to east, completing one full rotation every 24 hours. Because we are on the rotating Earth, the Sun appears to move across the sky from east to west — but it is we who are moving, not the Sun.</p>
+<p><strong>Shadows always point away from the light source.</strong> When sunlight strikes an opaque object (a tree, a building, a person), the object blocks the light and casts a shadow on the side opposite the Sun. So the shadow always points directly away from the Sun.</p>
+<p><strong>In the morning:</strong> The Sun is low in the east. Light arrives at a shallow angle — almost horizontally. Shadows therefore stretch far in the opposite direction: long, pointing west. The shallower the angle, the longer the shadow.</p>
+<p><strong>At noon:</strong> The Sun is at its highest point in the sky, roughly due south (in India and across the Northern Hemisphere). The light strikes from above at a steeper angle. Shadows are shortest and point due north. At certain latitudes near the equator on specific dates, the Sun passes directly overhead at noon and there are no shadows at all.</p>
+<p><strong>In the afternoon:</strong> The Sun is descending toward the west. Light again arrives at a shallow angle from the west, so shadows point east and lengthen as sunset approaches.</p>
+<p><strong>Why India's noon shadows point north:</strong> India lies north of the equator, between about 8° and 37° latitude. The Sun's apparent path across the sky is always somewhat to the south. So shadows at noon always point toward the north — away from the southward Sun.</p>
+<p><strong>Shadow length depends on the Sun's elevation angle.</strong> The higher the Sun in the sky, the shorter the shadow. A person 1.5 metres tall casts a very long shadow when the Sun is 10° above the horizon, but only a 0.35 m shadow when the Sun is 77° above the horizon.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the Sun as a torch held at different heights as you walk around a room:
+- <strong>Torch near the floor (low angle = morning/evening):</strong> Object blocks lots of floor space → long shadow
+- <strong>Torch above the object (high angle = noon):</strong> Object blocks only directly beneath → short shadow</p>
+<p>As the Earth rotates, the Sun's effective position in the sky (its elevation angle) changes continuously from sunrise to noon to sunset — and so shadow length and direction change correspondingly.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a single tree (vertical line) in the centre, with three Sun positions and their corresponding shadows:</p>
+<ul>
+<li><strong>Morning (left):</strong> Sun low in east (orange circle, x ≈ 150, y ≈ 200); long shadow stretching left (toward west); label "Morning — long shadow, pointing west"</li>
+<li><strong>Noon (top):</strong> Sun high in south (orange circle, x ≈ 500, y ≈ 105); short shadow pointing north; label "Noon — shortest shadow, pointing north"</li>
+<li><strong>Afternoon (right):</strong> Sun lowering in west (orange circle, x ≈ 850, y ≈ 200); long shadow pointing right (toward east); label "Afternoon — long shadow, pointing east"</li>
+</ul>
+<p>Ground line shown across the canvas. Arrows from Sun positions to the tree indicate light direction; shadow lines point opposite.</p>
+<figure><img src="../../illustrations/class-7/day_11.svg" alt="Diagram for Why do shadows change during the day?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Sundials:</strong> The gnomon (the upright part of a sundial) casts a shadow whose direction indicates the time. Sundials were the main way humans told time for thousands of years, including in the Mughal and ancient Indian traditions.</li>
+<li><strong>Navigation:</strong> On a clear day in India, if you cannot find a compass, stand straight at noon and your shadow points north. That is your north direction.</li>
+<li><strong>Architecture:</strong> Ancient builders designed windows, temples, and doorways so that sunlight would enter at specific angles on specific days — Konark Sun Temple in Odisha is a famous Indian example of shadow-based solar alignment.</li>
+<li><strong>Photography:</strong> Photographers speak of the "golden hour" just after sunrise and just before sunset when shadows are long and warm-coloured — this is simply the geometry of low-angle sunlight.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>On a sunny day, stand outside in the morning (8–9 AM) and ask a friend to trace your shadow on the ground with chalk.</li>
+<li>Return to the same spot at noon and again at 3–4 PM. Trace each shadow.</li>
+<li>Compare the three outlines: direction and length.</li>
+<li>Predict: which way will tomorrow's noon shadow point if you do this in Mumbai? In Delhi? Would the answer be the same for both?</li>
+<li>Write one sentence connecting Earth's rotation to the change in shadow direction you observed.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>On 21 June (summer solstice), the Sun is highest in the sky at noon for locations in the Northern Hemisphere. On 22 December (winter solstice), it is lowest. This means noon shadows are shortest on 21 June and longest on 22 December — even though it is midday on both occasions.</p>
+<p><strong>Predict:</strong> A student in Thiruvananthapuram (near the southern tip of India, latitude ≈ 8.5°N) goes outside at noon on 21 June. Would her shadow be shorter, longer, or similar in length compared to a student doing the same thing in Leh, Ladakh (latitude ≈ 34°N)? Explain using the concept of Sun elevation angle.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main reason shadows change length and direction during the day?</p>
+<ul>
+<li>A. The Moon's gravitational pull bends sunlight differently at different times of the day.</li>
+<li>B. As the Earth rotates, the Sun's apparent position in the sky changes, altering the angle of light and therefore the shadow's length and direction.</li>
+<li>C. Shadows change because the temperature of the air bends light rays by different amounts.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding Earth's rotation more useful than just observing that shadows move?</p>
+<ul>
+<li>A. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>B. Shadows are caused by clouds, so Earth's rotation plays no role in their movement.</li>
+<li>C. Shadow movement is random and cannot be predicted by any mechanism.</li>
+</ul>
+<h3>Q3</h3>
+<p>If you measured the length of your shadow at noon and again at 4 PM, what would you predict?</p>
+<ul>
+<li>A. The shadow would be longer at noon because the Sun is directly overhead and very hot.</li>
+<li>B. The shadow would be longer at 4 PM because the Sun is lower in the sky at that time.</li>
+<li>C. The shadow would be the same length because the Sun moves at a constant speed.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a simple sundial for your school playground. Describe where you would place the upright stick (gnomon), which direction it should face, and how you would mark the hour lines. Explain why the gnomon must be tilted to point toward the north celestial pole (aligned with Earth's axis) for accurate time-keeping, rather than simply standing vertically.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Ancient Indian astronomers (Aryabhata in the 5th century CE) correctly deduced that the Earth rotates on its axis — explaining the apparent movement of the Sun across the sky — over a thousand years before Copernicus made the same argument in Europe. This understanding was embedded in the design of astronomical observatories called <strong>Jantar Mantar</strong>, where enormous stone structures served as shadow-clocks accurate to within two seconds.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Earth's rotation shifts the Sun's angle across the sky — shadows always point away from the Sun, so they rotate direction and shorten at noon and lengthen near sunrise/sunset.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 11 of 30</footer>
+</div>
+</body>
+</html>

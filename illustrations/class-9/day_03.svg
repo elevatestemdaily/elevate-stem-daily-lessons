@@ -1,26 +1,120 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does diffusion work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 3</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How does diffusion work?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Concentration gradients, Fick's law, and osmosis — Day 3</text>
+
+<!-- LEFT: Diffusion diagram -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Diffusion</text>
+
+<rect x="30" y="104" width="280" height="146" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">High → Low concentration</text>
+<!-- Left half: concentrated -->
+<rect x="30" y="128" width="140" height="114" fill="#bbf7d0" rx="2"/>
+<circle cx="65" cy="152" r="6" fill="#16a34a"/>
+<circle cx="95" cy="148" r="6" fill="#16a34a"/>
+<circle cx="125" cy="155" r="6" fill="#16a34a"/>
+<circle cx="78" cy="180" r="6" fill="#16a34a"/>
+<circle cx="110" cy="175" r="6" fill="#16a34a"/>
+<circle cx="140" cy="185" r="6" fill="#16a34a"/>
+<circle cx="70" cy="205" r="6" fill="#16a34a"/>
+<circle cx="102" cy="210" r="6" fill="#16a34a"/>
+<circle cx="130" cy="208" r="6" fill="#16a34a"/>
+<text x="100" y="244" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">HIGH conc.</text>
+<!-- Right half: dilute -->
+<rect x="170" y="128" width="140" height="114" fill="#dcfce7" rx="2"/>
+<circle cx="195" cy="158" r="6" fill="#16a34a"/>
+<circle cx="240" cy="172" r="6" fill="#16a34a"/>
+<circle cx="270" cy="150" r="6" fill="#16a34a"/>
+<text x="240" y="244" text-anchor="middle" font-family="Arial" font-size="14" fill="#16a34a">LOW conc.</text>
+<!-- Arrow -->
+<text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="18" fill="#1f5f8b">→</text>
+
+<text x="170" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Particles spread from crowded to</text>
+<text x="170" y="294" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">empty regions — no energy needed!</text>
+
+<rect x="30" y="312" width="280" height="96" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="330" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Fick's Law</text>
+<text x="170" y="350" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rate ∝ (concentration difference)</text>
+<text x="170" y="368" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rate ∝ (surface area)</text>
+<text x="170" y="386" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rate ∝ 1/(thickness of barrier)</text>
+<text x="170" y="404" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rate ∝ temperature (faster KE)</text>
+
+<rect x="30" y="418" width="280" height="64" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="436" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Examples</text>
+<text x="40" y="454" font-family="Arial" font-size="14" fill="#333">O₂ into blood across lung alveoli</text>
+<text x="40" y="472" font-family="Arial" font-size="14" fill="#333">Perfume spreading across a room</text>
+
+<!-- CENTRE: Osmosis -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Osmosis</text>
+
+<rect x="344" y="104" width="312" height="194" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Diffusion of Water Molecules</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Osmosis: water moves through a</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">semipermeable membrane from</text>
+<text x="354" y="180" font-family="Arial" font-size="14" fill="#333">dilute → concentrated solution</text>
+<!-- Simple osmosis diagram -->
+<rect x="354" y="192" width="140" height="98" rx="2" fill="#bfdbfe"/>
+<text x="424" y="214" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">Pure water</text>
+<circle cx="380" cy="234" r="5" fill="#93c5fd"/>
+<circle cx="400" cy="246" r="5" fill="#93c5fd"/>
+<circle cx="420" cy="238" r="5" fill="#93c5fd"/>
+<circle cx="440" cy="250" r="5" fill="#93c5fd"/>
+<circle cx="462" cy="240" r="5" fill="#93c5fd"/>
+<text x="424" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">high water conc.</text>
+<rect x="496" y="192" width="150" height="98" rx="2" fill="#fde68a"/>
+<text x="571" y="214" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Salt solution</text>
+<circle cx="516" cy="234" r="5" fill="#93c5fd"/>
+<circle cx="548" cy="246" r="5" fill="#93c5fd"/>
+<rect cx="520" cy="248" width="8" height="8" fill="#d97706"/>
+<circle cx="580" cy="238" r="5" fill="#93c5fd"/>
+<circle cx="610" cy="252" r="5" fill="#93c5fd"/>
+<text x="571" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">low water conc.</text>
+<text x="354" y="290" font-family="Arial" font-size="14" fill="#555">Water flows: left → right</text>
+<text x="354" y="306" font-family="Arial" font-size="14" fill="#555">(until equilibrium)</text>
+
+<rect x="344" y="308" width="312" height="96" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="326" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Turgor vs Plasmolysis</text>
+<text x="354" y="346" font-family="Arial" font-size="14" fill="#333">In water: plant cells absorb → turgid</text>
+<text x="354" y="364" font-family="Arial" font-size="14" fill="#333">(firm stem, standing plant)</text>
+<text x="354" y="382" font-family="Arial" font-size="14" fill="#555">In salt: cells lose water → plasmolysis</text>
+<text x="354" y="400" font-family="Arial" font-size="14" fill="#555">(cell shrivels, plant wilts)</text>
+
+<rect x="344" y="414" width="312" height="68" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Active Transport</text>
+<text x="354" y="452" font-family="Arial" font-size="14" fill="#333">Against gradient — requires ATP energy</text>
+<text x="354" y="470" font-family="Arial" font-size="14" fill="#555">Root hair cells absorbing ions from soil</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Diffusion in Life</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Rice &amp; Dal</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cooking: water diffuses into grains</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Salt preserves food: osmosis draws</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">water out of bacteria → kills them</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Agriculture &amp; Irrigation</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Drip irrigation: water diffuses into</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">soil around plant roots</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Over-salting soil → plasmolysis</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Dialysis (Kidney)</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">150,000 Indians on kidney dialysis</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Waste urea diffuses from blood</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">through membrane into dialysate</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Lungs — Fick's Law</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Alveoli: 70 m² surface area</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">0.2 µm thin wall → rapid O₂/CO₂</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">exchange by Fick's law</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Diffusion: particles move high → low concentration without energy. Rate follows Fick's Law.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Osmosis = water diffusion through semipermeable membrane. Plants wilt in salty water (plasmolysis).</text>
 </svg>

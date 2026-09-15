@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 25 — How does rainwater become groundwater? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 25</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does rainwater become groundwater?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain the infiltration process, describe what an aquifer is, and predict what happens to groundwater recharge when forests are cleared.</p>
+</div><h2>1. The mystery</h2>
+<p>India's groundwater feeds 85 % of rural drinking water and 60 % of irrigation. Yet levels are falling in Punjab, Haryana, and parts of Rajasthan. Farmers drill deeper every year. But it rains every monsoon — so where is the water going, and why isn't it replenishing underground reserves?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Infiltration:</strong> When rain falls on permeable surfaces (soil, loose gravel), water soaks in. It percolates downward through the vadose zone (unsaturated soil) under gravity, filling pore spaces between soil and rock particles.</p>
+<p><strong>Aquifer:</strong> A layer of porous, permeable rock or sediment (sandstone, gravel, limestone) that holds groundwater and allows it to flow. Think of it as a giant underground sponge.</p>
+<p><strong>Water table:</strong> The upper surface of the zone of saturation — where all pores are full of water. Dig or drill down to the water table and water fills the hole (a well).</p>
+<p><strong>Confining layers:</strong> Impermeable rock (clay, granite) stops water from percolating further. Water trapped below a confining layer is in a confined (artesian) aquifer — it is under pressure and can rise up in a drilled borewell without pumping.</p>
+<p><strong>What affects recharge rate:</strong>
+- Surface cover: forests slow runoff, promote infiltration; concrete and roads are impermeable — water runs off into drains rather than into the ground
+- Soil type: sandy soils allow rapid infiltration; clay soils have tiny pores, slow flow
+- Rainfall intensity: slow, steady rain infiltrates more than a cloudburst (surface runoff increases with rate)
+- Evapotranspiration: trees take water from soil and release it to atmosphere</p>
+<p><strong>Where does runoff water go?</strong> → streams → rivers → sea. Water that runs off does NOT recharge groundwater. Dense tree cover breaks rainfall, slows runoff, allows soil to absorb water → more recharge.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the ground as a multi-layered coffee filter sitting above a glass jar (the aquifer).</p>
+<p>Step through the process:
+1. <strong>Rain falls</strong> — it hits the surface. If the surface is soil or leaf litter, it soaks in. If it is concrete, it bounces off and flows away.
+2. <strong>Vadose zone (the filter)</strong> — water moves downward through unsaturated soil. Gravity pulls it, but small pores slow it. Sandy soil is a coarse filter — fast. Clay is a fine filter — slow. Roots here take some water for the plant.
+3. <strong>Water table</strong> — the level at which all pores are saturated. Below this line everything is wet. In a well, the water surface sits at the water table.
+4. <strong>Aquifer (the jar)</strong> — porous rock holds water in its gaps the way a sponge holds water. Pump a borewell and you are drawing from this store. The store only refills when step 1 and 2 happen enough and fast enough.
+5. <strong>Confining layer</strong> — if an impermeable layer (granite, dense clay) sits below the aquifer, the water is trapped under pressure. Drill through the confining layer and water pushes up on its own — an artesian well.</p>
+<p>The critical insight: the refill rate (recharge) depends entirely on step 1 and 2. Cover the surface with concrete, remove trees, or compact soil with machinery, and the filter clogs. The jar empties faster than it fills.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a vertical cross-section of land and underground layers. At the surface, three zones are labeled left to right: "Forest (permeable)" with green tree symbols and downward blue arrows showing infiltration; "Farmland (partially permeable)" with crop symbols and mixed arrows; "City (impermeable)" with building symbols and horizontal arrows showing runoff into a stormwater drain. Below the surface, three horizontal bands are labeled: "Vadose zone (unsaturated soil)" in light brown with small pore gaps; "Water table" as a dashed blue line; "Aquifer (saturated gravel)" in blue-grey with water droplets filling pore spaces. Below the aquifer, a dark band labeled "Confining layer (granite)" has no pores. A borewell is shown piercing all layers, with a pump at the surface. An upward red arrow from the aquifer labeled "Extraction" is visibly wider than the downward blue arrows labeled "Recharge," illustrating over-extraction.</p>
+<figure><img src="../../illustrations/class-8/day_25.svg" alt="Diagram for How does rainwater become groundwater?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India is the world's largest user of groundwater (about 250 km³/year). Punjab and Haryana produce 50 % of India's wheat and rice — both water-intensive crops — by pumping groundwater faster than it recharges. NASA satellite data (GRACE mission) showed that groundwater in northwest India fell at 4 cm/year between 2002–2008. At this rate, some aquifers could be exhausted within 25 years. Tamil Nadu, Rajasthan, and Karnataka have implemented <strong>rainwater harvesting</strong> — diverting rooftop and surface water into artificial recharge wells, percolation ponds, and check dams — to actively replenish aquifers. Chennai made rooftop rainwater harvesting legally mandatory for all buildings (2001), dramatically improving water table levels.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Infiltration comparison:</strong> Prepare two identical jars. Fill one with dry sand and one with dry clay soil (or compacted garden soil). Pour the same amount of water into each simultaneously. Observe: in the sand jar, water percolates quickly; in the clay jar, water pools on top and is absorbed slowly. This directly demonstrates why sandy soils recharge aquifers faster than clay soils, and why clay-rich areas flood more easily.</p>
+<p>Now add a third comparison: place a handful of dry leaves and twigs on top of one of the jars before pouring. Does the leaf litter speed up or slow down infiltration? Explain your observation using what you know about how forest cover affects the water cycle. (Hint: leaf litter breaks the force of falling water droplets, preventing the surface soil from being compacted.)</p>
+</div><h2>7. Think deeper</h2>
+<p>Fossil aquifers (like the Great Artesian Basin in Australia or parts of the Thar Desert in India) contain water that fell as rain thousands to millions of years ago when the climate was wetter. Carbon-14 dating of groundwater can reveal its age. Once extracted, this water cannot be recharged on human timescales — it is a non-renewable resource like oil. India's deep bore wells in some parts of Rajasthan tap water that is 8,000–30,000 years old. When it is gone, it is gone.</p>
+<p><strong>Predict:</strong> A district in Rajasthan has 10,000 farmers each operating a borewell that extracts 0.5 litres/second for six hours per day during the four-month growing season. The district receives 300 mm of rain per year over 500 km² of mostly clay soil, with an estimated infiltration rate of 15 %. Calculate the approximate annual extraction volume and the approximate annual recharge volume. Is the aquifer in surplus or deficit? At the current rate of deficit (if any), estimate how many years before the water table drops by 10 metres, assuming the aquifer has 20 metres of saturated thickness across 500 km².</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does rainwater become groundwater stored underground?</p>
+<ul>
+<li>A. Rainwater is absorbed by tree roots and stored in underground hollow trunks</li>
+<li>B. Rainwater infiltrates through permeable soil and rock layers into aquifers</li>
+<li>C. Rainwater evaporates and then condenses in underground caves as groundwater</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the infiltration mechanism more useful than knowing groundwater exists?</p>
+<ul>
+<li>A. Knowing groundwater exists is sufficient for all water management decisions</li>
+<li>B. It helps predict aquifer recharge rates and sustainable water extraction limits</li>
+<li>C. Infiltration only matters in sandy soils, not in clay-rich or rocky terrain</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If forests covering a hillside were cleared, what would you predict about groundwater recharge?</p>
+<ul>
+<li>A. More rain would reach the soil directly, increasing groundwater recharge</li>
+<li>B. Groundwater levels would stay the same because rainfall amount is unchanged</li>
+<li>C. Surface runoff would increase and infiltration would decrease, reducing recharge</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A city of 500,000 people is planning two alternative futures for a 200-hectare vacant plot on its outskirts. Option A: pave it as a logistics park (impermeable surface, fast runoff). Option B: develop it as an urban forest and percolation park (permeable surface, slow runoff, recharge wells).</p>
+<p>The area receives 900 mm of rain per year. Research suggests that paved surfaces shed 85 % of rainfall as runoff, while forested surfaces with recharge infrastructure can convert 60 % into infiltration. The city's aquifer currently has a 15 % annual deficit between extraction and recharge.</p>
+<p>Calculate the difference in annual groundwater recharge (in cubic metres) between Options A and B. Then estimate how many years it would take Option B to eliminate the city's annual deficit if the deficit volume is 8 million cubic metres per year and the forested park contributes the recharge you calculated. Identify one practical limitation of your estimate that would make the real number different from the calculated one.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Trees do not just help water get into the ground — they actively pull it up and pump it back into the atmosphere. A single large banyan tree can transpire 400 litres of water per day. A forest of 10,000 trees releases roughly 4 million litres of water vapour per day, creating local humidity that triggers rain over the very land where the trees grew. This means that deforesting an area does not just reduce infiltration — it can also reduce the rainfall that falls there in the first place. Ecologists call this "biotic pump" theory: forests manufacture their own rain, and clearing them can permanently shift a region to a drier climate, even if global rainfall patterns are unchanged.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Rainwater becomes groundwater only when it infiltrates through permeable soil into an aquifer — a process that depends on surface cover, soil type, and rainfall intensity, and that can be permanently damaged by deforestation and urbanisation.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 25 of 30</footer>
+</div>
+</body>
+</html>

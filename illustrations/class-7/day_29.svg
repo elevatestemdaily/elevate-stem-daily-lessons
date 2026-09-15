@@ -1,26 +1,148 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="rotArr29" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#1f5f8b"/>
+  </marker>
+  <marker id="windArr29" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 7 2.5, 0 5" fill="#0369a1"/>
+  </marker>
+  <marker id="dangerArr29" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#dc2626"/>
+  </marker>
+</defs>
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">What would happen if Earth stopped rotatin</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 29</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">What would happen if Earth stopped rotating?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Day/night, Coriolis effect, ocean redistribution, inertia — Day 29</text>
+
+<!-- THREE PANELS SIDE BY SIDE -->
+
+<!-- Panel 1: Normal Rotating Earth (x=20-300) -->
+<rect x="20" y="68" width="280" height="420" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="160" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Earth Rotating Normally</text>
+
+<!-- Earth circle -->
+<circle cx="160" cy="210" r="90" fill="#3b82f6"/>
+<!-- Continents (simplified) -->
+<ellipse cx="145" cy="190" rx="22" ry="32" fill="#4ade80"/>
+<ellipse cx="178" cy="222" rx="16" ry="22" fill="#4ade80"/>
+<!-- Atmosphere thin ring -->
+<circle cx="160" cy="210" r="97" fill="none" stroke="#93c5fd" stroke-width="6" opacity="0.5"/>
+
+<!-- Day/night line (vertical, sun on right) -->
+<line x1="160" y1="120" x2="160" y2="300" stroke="white" stroke-width="2" stroke-dasharray="4,3"/>
+<!-- Sun (right) -->
+<circle cx="285" cy="210" r="22" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+<text x="285" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">SUN</text>
+
+<!-- Day label -->
+<text x="195" y="200" font-family="Arial" font-size="14" fill="#fbbf24" font-weight="700">DAY</text>
+<!-- Night label -->
+<text x="105" y="200" font-family="Arial" font-size="14" fill="#ddd" font-weight="700">NIGHT</text>
+
+<!-- Rotation arrow -->
+<path d="M160,115 Q220,95 245,140" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#rotArr29)"/>
+<text x="245" y="130" font-family="Arial" font-size="14" fill="#1d4ed8">rotates</text>
+<text x="245" y="141" font-family="Arial" font-size="14" fill="#1d4ed8">every 24 h</text>
+
+<!-- Coriolis arrows -->
+<line x1="115" y1="175" x2="95" y2="160" stroke="#0369a1" stroke-width="1.5" marker-end="url(#windArr29)"/>
+<text x="33" y="172" font-family="Arial" font-size="14" fill="#0369a1">trade winds</text>
+<line x1="115" y1="245" x2="95" y2="260" stroke="#0369a1" stroke-width="1.5" marker-end="url(#windArr29)"/>
+<text x="28" y="270" font-family="Arial" font-size="14" fill="#0369a1">S. hemisphere</text>
+
+<!-- Oblate shape label -->
+<text x="160" y="318" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">Oblate spheroid</text>
+<text x="160" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">(equatorial bulge</text>
+<text x="160" y="342" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">from spin)</text>
+
+<!-- Key facts list -->
+<rect x="30" y="356" width="260" height="122" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+<text x="160" y="373" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">What rotation gives us:</text>
+<text x="40" y="389" font-family="Arial" font-size="14" fill="#333">• 24-hour day/night cycle</text>
+<text x="40" y="403" font-family="Arial" font-size="14" fill="#333">• Coriolis effect → winds, monsoons</text>
+<text x="40" y="417" font-family="Arial" font-size="14" fill="#333">• Equatorial bulge + flattened poles</text>
+<text x="40" y="431" font-family="Arial" font-size="14" fill="#333">• 1,670 km/h surface speed at equator</text>
+<text x="40" y="445" font-family="Arial" font-size="14" fill="#555">• Rockets gain free speed launching east</text>
+<text x="40" y="459" font-family="Arial" font-size="14" fill="#555">  ISRO Sriharikota: ~440 m/s free velocity</text>
+<text x="40" y="471" font-family="Arial" font-size="14" fill="#555">  (saves fuel on every launch!)</text>
+
+<!-- Panel 2: Slow Stop — ocean redistribution (x=310-650) -->
+<rect x="310" y="68" width="340" height="420" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="480" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Slow Stop (over millennia)</text>
+<text x="480" y="103" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Equatorial bulge flattens → oceans flow toward poles</text>
+
+<!-- Earth with ocean shift -->
+<circle cx="480" cy="230" r="90" fill="#3b82f6"/>
+<!-- Arctic ocean growing (top) -->
+<ellipse cx="480" cy="145" rx="65" ry="30" fill="#60a5fa" opacity="0.9"/>
+<text x="480" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="700">ocean migrates</text>
+<text x="480" y="159" text-anchor="middle" font-family="Arial" font-size="14" fill="white">to poles</text>
+<!-- Antarctic ocean growing (bottom) -->
+<ellipse cx="480" cy="315" rx="65" ry="30" fill="#60a5fa" opacity="0.9"/>
+<text x="480" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="700">ocean migrates</text>
+<!-- Equatorial region dry -->
+<ellipse cx="480" cy="230" rx="55" ry="20" fill="#d97706" opacity="0.7"/>
+<text x="480" y="235" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="700">equator: land exposed!</text>
+
+<!-- Flow arrows -->
+<line x1="440" y1="200" x2="420" y2="160" stroke="#1d4ed8" stroke-width="2" marker-end="url(#windArr29)"/>
+<line x1="520" y1="200" x2="540" y2="160" stroke="#1d4ed8" stroke-width="2" marker-end="url(#windArr29)"/>
+<line x1="440" y1="260" x2="420" y2="300" stroke="#1d4ed8" stroke-width="2" marker-end="url(#windArr29)"/>
+<line x1="520" y1="260" x2="540" y2="300" stroke="#1d4ed8" stroke-width="2" marker-end="url(#windArr29)"/>
+
+<!-- India flooded note -->
+<rect x="320" y="355" width="320" height="50" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="480" y="374" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">India + Bangladesh flooded:</text>
+<text x="480" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ocean poleward migration would inundate</text>
+<text x="480" y="404" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">equatorial and low-latitude regions.</text>
+
+<!-- Day/night extreme -->
+<rect x="320" y="413" width="320" height="65" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+<text x="480" y="431" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Permanent day/night hemispheres:</text>
+<text x="480" y="447" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Day side: +60°C. Night side: −100°C.</text>
+<text x="480" y="462" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Habitable: only narrow twilight ring.</text>
+<text x="480" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">No Coriolis → monsoons disappear completely.</text>
+
+<!-- Panel 3: Sudden Stop — inertia (x=660-978) -->
+<rect x="660" y="68" width="318" height="420" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="819" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Sudden Stop — Inertia</text>
+<text x="819" y="103" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">(hypothetical physics only!)</text>
+
+<!-- Ground stopped, person still moving -->
+<!-- Ground line -->
+<rect x="670" y="280" width="298" height="20" rx="3" fill="#6b7280"/>
+<text x="819" y="293" text-anchor="middle" font-family="Arial" font-size="14" fill="white" font-weight="700">GROUND STOPS</text>
+
+<!-- Person still moving -->
+<circle cx="730" cy="248" r="18" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+<line x1="730" y1="266" x2="730" y2="278" stroke="#78350f" stroke-width="2"/>
+<!-- Person flying forward -->
+<circle cx="850" cy="200" r="18" fill="#fbbf24" stroke="#dc2626" stroke-width="2" opacity="0.7"/>
+<line x1="850" y1="218" x2="880" y2="240" stroke="#78350f" stroke-width="2" opacity="0.7"/>
+<!-- Motion arrow -->
+<line x1="748" y1="248" x2="828" y2="210" stroke="#dc2626" stroke-width="3" marker-end="url(#dangerArr29)"/>
+<text x="819" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">person continues</text>
+<text x="819" y="197" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">at 1,670 km/h!</text>
+
+<!-- Speed comparison box -->
+<rect x="670" y="310" width="298" height="100" rx="4" fill="white" stroke="#dc2626" stroke-width="1.5"/>
+<text x="819" y="329" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Speed comparison</text>
+<text x="680" y="348" font-family="Arial" font-size="14" fill="#333">Earth equator surface: 1,670 km/h</text>
+<text x="680" y="363" font-family="Arial" font-size="14" fill="#333">Speed of sound: 1,235 km/h</text>
+<text x="680" y="378" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">→ Faster than sound!</text>
+<text x="680" y="393" font-family="Arial" font-size="14" fill="#333">Rifle bullet: ~3,600 km/h</text>
+<text x="680" y="408" font-family="Arial" font-size="14" fill="#555">At poles: speed ≈ 0 (safe zone)</text>
+
+<!-- Tennis ball analogy -->
+<rect x="670" y="418" width="298" height="62" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+<text x="819" y="436" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Wet tennis ball analogy:</text>
+<text x="680" y="453" font-family="Arial" font-size="14" fill="#333">Water clings at equator while spinning.</text>
+<text x="680" y="465" font-family="Arial" font-size="14" fill="#333">Stop spinning → water flies outward.</text>
+<text x="680" y="478" font-family="Arial" font-size="14" fill="#555">Earth's oceans = same physics.</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Rotation creates day/night + Coriolis weather. Sudden stop → 1,670 km/h inertia. Slow stop → poles flood.</text>
 </svg>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 21 — Electricity: what is actually moving? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 21</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Electricity: what is actually moving?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to name what physically moves through a metal wire when current flows, explain why free electrons are responsible and not protons or ions, and predict what would happen to current if the number of free electrons in a conductor were reduced.</p>
+</div><h2>1. The mystery</h2>
+<p>You switch on a torch and the bulb lights up instantly — even if the wires are a metre long. Intuitively, you might picture something rushing through the wire at enormous speed. But here is the puzzle: the actual particles carrying the charge drift at barely a few millimetres per second — roughly the pace of a slow crawl. So what is actually moving, why does the effect travel so fast, and why can't just anything flow through a wire?</p>
+<h2>2. The science behind it</h2>
+<p>Electric current in a metal wire is the <strong>drift of free electrons</strong> — negatively charged subatomic particles — through the metal's crystal lattice.</p>
+<p><strong>Why metals have free electrons.</strong> In a solid metal such as copper or aluminium, each atom contributes one or two outer electrons to a shared "sea." These electrons are not bound to any single atom; they wander throughout the metal. At room temperature, these free electrons are already moving randomly at speeds of about 10⁶ m/s in all directions, but their net displacement is zero — they cancel out.</p>
+<p><strong>What a battery does.</strong> When a battery is connected, it creates an electric potential difference (voltage) between the two ends of the wire. This sets up an electric field inside the conductor. The field exerts a force on every free electron simultaneously — the force is in the direction from the negative terminal toward the positive terminal (since electrons are negative, they are pushed toward the positive terminal). This superimposes a small, consistent drift on top of the random motion. The drift speed is small — about 0.1 mm/s in a typical copper wire — but there are roughly 8.5 × 10²⁸ free electrons per cubic metre in copper, so even a slow drift of an enormous number of electrons constitutes a significant current.</p>
+<p><strong>Conventional current vs electron flow.</strong> By historical convention, current is defined as flowing from the positive terminal to the negative terminal — opposite to the actual electron drift. This is because Benjamin Franklin defined current direction before electrons were discovered. The convention is kept in all circuit diagrams; just remember that electrons physically move the other way.</p>
+<p><strong>Why the effect is instantaneous.</strong> The electric field propagates through the wire at close to the speed of light (3 × 10⁸ m/s). All free electrons in the wire begin to drift at almost the same moment the battery is connected, just as water in a full pipe begins to flow at the far tap the instant you open it — you don't wait for water molecules to travel from one end to the other.</p>
+<p><strong>Why insulators block current.</strong> In materials like rubber, glass, or wood, outer electrons are tightly bound to their atoms. There are almost no free electrons available to drift. No drift means no current, no matter how large the voltage.</p>
+<p><strong>The formula for current.</strong> Electric current I is defined as the charge Q passing through a cross-section per unit time t:</p>
+<p>I = Q / t</p>
+<p>One ampere = one coulomb of charge per second. Charge is carried by electrons, each with a charge of 1.6 × 10⁻¹⁹ coulombs. So a 1 A current means about 6.24 × 10¹⁸ electrons pass any cross-section every second.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a copper wire as a crowded corridor filled wall-to-wall with people (free electrons) who are all shuffling randomly. The corridor is already full — there is no empty space. When a voltage is applied, a gentle nudge pushes everyone in one direction. The person at the far end immediately feels the push because the nudge propagates through the crowd at the speed of sound in that crowd — not at the speed of any individual's walking.</p>
+<p>Key relationships:
+- <strong>More free electrons</strong> per unit volume → higher current-carrying capacity
+- <strong>Higher voltage</strong> → stronger electric field → faster drift → more current
+- <strong>No free electrons</strong> (insulator) → no drift → no current
+- <strong>Conventional current</strong> flows positive to negative; <strong>electrons</strong> drift negative to positive</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a horizontal copper wire connected to a battery:</p>
+<ul>
+<li><strong>Left side (negative terminal):</strong> Electrons labelled with a minus sign enter the wire.</li>
+<li><strong>Wire cross-section (centre):</strong> Arrows show the random thermal motion of electrons (short, scattered) overlaid by a net drift arrow pointing right (toward the positive terminal).</li>
+<li><strong>Right side (positive terminal):</strong> A conventional current arrow points left, labelled "I (conventional direction)."</li>
+<li><strong>Below the wire:</strong> A magnified lattice shows fixed copper ions (Cu²⁺) and free electrons between them, with a small drift arrow.</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_21.svg" alt="Diagram for Electricity: what is actually moving?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Choosing wire thickness:</strong> In Indian households, heavy appliances like geysers and air conditioners use thicker copper wires (larger cross-section = more free electrons available = can carry more current safely without overheating).</li>
+<li><strong>Why aluminium is used in power transmission lines:</strong> Aluminium has slightly fewer free electrons per unit volume than copper but is much lighter, making it practical for long overhead cables strung between pylons.</li>
+<li><strong>LED vs incandescent bulb:</strong> In both, electrons drift through a conductor. In an LED, the drift through a semiconductor junction releases energy as photons directly; in an incandescent bulb, the drift through a thin tungsten filament causes resistive heating until the filament glows.</li>
+<li><strong>Electrolytes (Class 10 chemistry link):</strong> In solutions like saltwater or acids, current is carried not by electrons but by ions — positive ions moving one way, negative ions the other. This is a key difference from metallic conduction.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Draw a simple circuit: battery, wire, bulb.</li>
+<li>Mark the direction of electron drift and the direction of conventional current with arrows of different colours.</li>
+<li>Label where free electrons exist (metal wire) and where they do not (rubber insulation).</li>
+<li>Predict: if you replace the copper wire with an iron wire of the same thickness, would the current increase, decrease or stay the same? (Iron has fewer free electrons per unit volume than copper.)</li>
+<li>Write one sentence explaining why a broken wire stops current even though the battery is still connected.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that halving the free electron density in a conductor would reduce its current-carrying capacity. Now push further: a semiconductor like silicon has far fewer free electrons than copper at room temperature, but its conductivity increases dramatically when the temperature rises (unlike metals, where conductivity decreases with temperature). Given what you now know about free electrons and current, propose a mechanism to explain why heating a semiconductor increases its ability to carry current, while heating a copper wire decreases it.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What actually moves through a metal wire when electric current flows?</p>
+<ul>
+<li>a) Free electrons drift through the metal lattice from the negative to positive terminal</li>
+<li>b) Protons jump between atoms in the direction of conventional current flow</li>
+<li>c) Positively charged ions flow through gaps in the crystal lattice structure</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding electron drift more useful than just knowing current flows?</p>
+<ul>
+<li>a) Electron drift explains resistance, heating effects and why insulators block current</li>
+<li>b) Because knowing current flows is enough to design any electrical circuit</li>
+<li>c) Because electron drift only applies in DC circuits and not in household AC supply</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen to current flow if the conductor's free electron density were halved?</p>
+<ul>
+<li>a) Current carrying capacity would reduce as fewer electrons are available to drift</li>
+<li>b) Current would double because fewer electrons move faster through the wire</li>
+<li>c) Current would remain unchanged because voltage, not electron count, determines current</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a student in Class 6 in 60 seconds without using the words "electron" or "current." Then explain it again using the correct scientific vocabulary, including the terms free electron, drift velocity, conventional current, and electric field. Both explanations should correctly describe what moves, in which direction, and why insulators don't work.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The actual drift speed of electrons in a household copper wire is astonishingly slow — about 0.1 mm per second, which means an electron would take roughly three hours to travel one metre. Yet your light switches on instantly. The explanation is that the electric field propagates at nearly the speed of light, setting all electrons in motion simultaneously — like how sound reaches every part of a steel rail at almost the same moment you tap one end, not because atoms travel that fast, but because the compression wave does.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Electric current in a metal wire is the slow, coordinated drift of free electrons — each carrying a charge of 1.6 × 10⁻¹⁹ C — driven by an electric field that propagates near the speed of light, which is why the effect is instant even though individual electrons barely move.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 21 of 30</footer>
+</div>
+</body>
+</html>

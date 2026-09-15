@@ -1,26 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Could humans evolve into a new species?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 15</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Could Humans Evolve Into a New Species?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Speciation, reproductive isolation, Homo sapiens future — Day 15</text>
+
+<!-- LEFT: What is a species + speciation -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1d4ed8">What Makes a Species?</text>
+
+<rect x="30" y="104" width="280" height="96" rx="4" fill="white" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Biological Species Concept</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Interbreeding group: produces fertile offspring</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#555">Horse + donkey → mule (sterile): diff. species</text>
+<text x="40" y="180" font-family="Arial" font-size="14" fill="#555">Lion + tiger → liger (sterile): diff. species</text>
+
+<rect x="30" y="210" width="280" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="228" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Allopatric Speciation</text>
+<text x="40" y="248" font-family="Arial" font-size="14" fill="#333">Geographic barrier splits population</text>
+<text x="40" y="268" font-family="Arial" font-size="14" fill="#333">Each evolves independently</text>
+<text x="40" y="288" font-family="Arial" font-size="14" fill="#555">After long isolation: can no longer interbreed</text>
+<text x="40" y="306" font-family="Arial" font-size="14" fill="#555">Galapagos finches: 13 species from 1 ancestor</text>
+
+<rect x="30" y="320" width="280" height="80" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="170" y="338" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Sympatric Speciation</text>
+<text x="40" y="358" font-family="Arial" font-size="14" fill="#333">Same location; reproductive isolation occurs</text>
+<text x="40" y="378" font-family="Arial" font-size="14" fill="#555">Polyploidy in plants (wheat: 6 × genome sets)</text>
+<text x="40" y="394" font-family="Arial" font-size="14" fill="#555">East Africa cichlids: 500 species in one lake</text>
+
+<rect x="30" y="410" width="280" height="72" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="428" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Reproductive Isolation Types</text>
+<text x="40" y="448" font-family="Arial" font-size="14" fill="#333">Prezygotic: behaviour, timing, anatomy barrier</text>
+<text x="40" y="466" font-family="Arial" font-size="14" fill="#555">Postzygotic: hybrid inviability or sterility</text>
+
+<!-- CENTRE: Human evolution + future -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Human Evolution</text>
+
+<rect x="344" y="104" width="312" height="130" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Key Steps (Million Years Ago)</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">6 Mya: chimp–human common ancestor</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">4 Mya: Australopithecus — bipedal, small brain</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">2 Mya: Homo habilis — stone tools</text>
+<text x="354" y="202" font-family="Arial" font-size="14" fill="#555">300 kya: H. sapiens emerges (Africa)</text>
+<text x="354" y="218" font-family="Arial" font-size="14" fill="#555">70 kya: Out of Africa — India, Europe, Americas</text>
+
+<rect x="344" y="244" width="312" height="88" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="262" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Are Humans Still Evolving?</text>
+<text x="354" y="282" font-family="Arial" font-size="14" fill="#333">Yes — selection pressures have changed</text>
+<text x="354" y="302" font-family="Arial" font-size="14" fill="#555">Lactase persistence: recent selection (8,000 yr)</text>
+<text x="354" y="318" font-family="Arial" font-size="14" fill="#555">Medicine weakens selection on disease alleles</text>
+
+<rect x="344" y="342" width="312" height="88" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="360" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Could New Species Arise?</text>
+<text x="354" y="380" font-family="Arial" font-size="14" fill="#333">Needs isolation + strong selection for 10,000+ yr</text>
+<text x="354" y="400" font-family="Arial" font-size="14" fill="#555">Global travel + gene flow prevents divergence now</text>
+<text x="354" y="416" font-family="Arial" font-size="14" fill="#555">Space colony scenario: theoretically possible</text>
+
+<rect x="344" y="440" width="312" height="42" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="500" y="458" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Neanderthals: separate species, interbred with sapiens</text>
+<text x="500" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Modern humans: 1–4% Neanderthal DNA</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Human Origins</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">India in Human Migration</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">65–70 kya: H. sapiens enters India</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Southern coastal route: Arabia → India</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Onge of Andamans: one of oldest lineages</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Indian Genetic Diversity</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ANI + ASI ancestry: mixed 2,000–4,000 yr ago</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CCMB / David Reich studies (2009)</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">4,693 communities; exceptional genetic diversity</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Denisovan Traces</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">South Asians: ~5% Denisovan DNA</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Denisovans: contemporary with H. sapiens in Asia</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">TGFB1 gene: altitude adaptation (Tibetan, Nepali)</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Western Ghats: Speciation Lab</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">5,000+ endemic plant species</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Purple frog: 65 Mya isolated lineage (relict)</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Isolation by rivers + hills → rapid speciation</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Speciation: geographic isolation → divergent evolution → reproductive barriers → new species.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Humans evolving slowly; global gene flow prevents divergence. India entered 65 kya; 5% Denisovan DNA.</text>
 </svg>

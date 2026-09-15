@@ -1,26 +1,109 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do cells divide?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 15</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How do cells divide?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Mitosis phases, meiosis, and what goes wrong in cancer — Day 15</text>
+
+<!-- LEFT: Mitosis phases -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Mitosis — 4 Phases</text>
+
+<!-- Prophase -->
+<rect x="30" y="104" width="280" height="76" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="175" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">PROPHASE</text>
+<text x="40" y="140" font-family="Arial" font-size="14" fill="#333">DNA condenses into visible chromosomes</text>
+<text x="40" y="158" font-family="Arial" font-size="14" fill="#555">Nuclear envelope breaks down</text>
+<text x="40" y="172" font-family="Arial" font-size="14" fill="#555">Spindle fibres form</text>
+
+<!-- Metaphase -->
+<rect x="30" y="188" width="280" height="76" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="175" y="204" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">METAPHASE</text>
+<text x="40" y="224" font-family="Arial" font-size="14" fill="#333">Chromosomes align at cell centre</text>
+<text x="40" y="242" font-family="Arial" font-size="14" fill="#555">Spindle fibres attach to centromere</text>
+<text x="40" y="256" font-family="Arial" font-size="14" fill="#555">"Meta" = middle; easiest to count</text>
+
+<!-- Anaphase -->
+<rect x="30" y="272" width="280" height="76" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="175" y="288" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">ANAPHASE</text>
+<text x="40" y="308" font-family="Arial" font-size="14" fill="#333">Sister chromatids pulled to opposite poles</text>
+<text x="40" y="326" font-family="Arial" font-size="14" fill="#555">Spindle shortens; cell elongates</text>
+<text x="40" y="340" font-family="Arial" font-size="14" fill="#555">"Ana" = away (moving apart)</text>
+
+<!-- Telophase -->
+<rect x="30" y="356" width="280" height="76" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="175" y="372" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">TELOPHASE + CYTOKINESIS</text>
+<text x="40" y="392" font-family="Arial" font-size="14" fill="#333">Nuclear envelopes re-form</text>
+<text x="40" y="410" font-family="Arial" font-size="14" fill="#555">Cytoplasm divides → 2 daughter cells</text>
+<text x="40" y="424" font-family="Arial" font-size="14" fill="#555">Each cell: identical 46 chromosomes</text>
+
+<!-- PMAT memory aid -->
+<rect x="30" y="442" width="280" height="40" rx="4" fill="#1f5f8b"/>
+<text x="175" y="467" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">PMAT (Prophase, Meta, Anaphase, Telo)</text>
+
+<!-- CENTRE: Meiosis vs mitosis + cancer -->
+<rect x="344" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Meiosis vs Mitosis</text>
+
+<rect x="354" y="104" width="312" height="136" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<rect x="354" y="110" width="312" height="22" fill="#1f5f8b"/>
+<text x="430" y="125" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Mitosis</text>
+<text x="610" y="125" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Meiosis</text>
+<rect x="354" y="132" width="312" height="26" fill="#f0fdf4"/>
+<text x="430" y="149" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">2 cells</text>
+<text x="610" y="149" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">4 cells</text>
+<rect x="354" y="158" width="312" height="26" fill="white"/>
+<text x="430" y="175" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">46 chr each</text>
+<text x="610" y="175" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">23 chr each</text>
+<rect x="354" y="184" width="312" height="26" fill="#f0fdf4"/>
+<text x="430" y="201" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Body cells</text>
+<text x="610" y="201" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sex cells (gametes)</text>
+<rect x="354" y="210" width="312" height="26" fill="white"/>
+<text x="430" y="227" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">No variation</text>
+<text x="610" y="227" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Genetic variation!</text>
+
+<rect x="354" y="252" width="312" height="100" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="510" y="270" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Cancer: Uncontrolled Division</text>
+<text x="364" y="290" font-family="Arial" font-size="14" fill="#333">Mutation in cell cycle genes</text>
+<text x="364" y="310" font-family="Arial" font-size="14" fill="#333">Proto-oncogenes mutate → oncogenes</text>
+<text x="364" y="330" font-family="Arial" font-size="14" fill="#555">Tumour suppressors (p53) fail to stop</text>
+<text x="364" y="346" font-family="Arial" font-size="14" fill="#555">Result: tumour (mass of dividing cells)</text>
+
+<rect x="354" y="362" width="312" height="120" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="510" y="380" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Non-disjunction in Meiosis</text>
+<text x="364" y="400" font-family="Arial" font-size="14" fill="#333">Chromosomes fail to separate properly</text>
+<text x="364" y="420" font-family="Arial" font-size="14" fill="#333">→ gamete with wrong chromosome count</text>
+<text x="364" y="440" font-family="Arial" font-size="14" fill="#555">Trisomy 21: Down syndrome (3 chr. 21)</text>
+<text x="364" y="460" font-family="Arial" font-size="14" fill="#555">Turner syndrome: 45 chromosomes</text>
+<text x="364" y="478" font-family="Arial" font-size="14" fill="#555">Klinefelter: 47 chromosomes (XXY)</text>
+
+<!-- RIGHT: India context -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; Cell Division</text>
+
+<rect x="680" y="104" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Cancer in India</text>
+<text x="825" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1.4 million new cases/year</text>
+<text x="825" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mouth cancer: highest globally (tobacco)</text>
+<text x="825" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Tata Memorial: largest cancer centre</text>
+
+<rect x="680" y="202" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Chemotherapy</text>
+<text x="825" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Drugs block mitosis in cancer cells</text>
+<text x="825" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Colchicine: stops spindle formation</text>
+<text x="825" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India produces generic chemo drugs</text>
+
+<rect x="680" y="300" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Stem Cell Research</text>
+<text x="825" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mitosis creates all body's cells</text>
+<text x="825" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">NCBS: stem cell → organ replacement</text>
+<text x="825" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cord blood banking: NCR, Mumbai</text>
+
+<rect x="680" y="398" width="290" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Prenatal Diagnosis</text>
+<text x="825" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Amniocentesis: fetal chromosomes</text>
+<text x="825" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Detects trisomy 21, Turner, Klinefelter</text>
+<text x="825" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Regulated under PCPNDT Act</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Mitosis: PMAT → 2 identical cells. Meiosis → 4 gametes with half chromosomes.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Cancer = uncontrolled mitosis. India: 1.4M cases/year; Tata Memorial is Asia's largest cancer centre.</text>
 </svg>

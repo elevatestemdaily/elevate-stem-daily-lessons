@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 15 — Why does a bicycle stay upright? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 15</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a bicycle stay upright?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to name the two main physical effects that keep a moving bicycle balanced, explain why a stationary bicycle falls over, and predict whether a slow or fast bicycle is more stable.</p>
+</div><h2>1. The mystery</h2>
+<p>A bicycle with two thin wheels in a straight line seems impossibly unstable — yet millions of people ride them safely. A parked bicycle falls over in seconds without a stand. But a moving bicycle stays upright with no difficulty. What changes when the wheels start spinning? And why is it harder to balance when cycling very slowly?</p>
+<h2>2. The science behind it</h2>
+<p>Keeping a moving bicycle upright involves two physical effects working together.</p>
+<p><strong>Effect 1 — The gyroscopic effect.</strong>
+When a bicycle wheel spins, it behaves like a gyroscope. A spinning mass has <strong>angular momentum</strong> — a rotational equivalent of ordinary momentum. Angular momentum resists change in the direction of the spin axis. This means a spinning wheel strongly resists being tilted — when the bicycle starts to lean to the right, the gyroscopic force from the spinning front wheel tends to steer the front wheel to the right. This brings the base of support back underneath the leaning mass, correcting the tilt.</p>
+<p>The gyroscopic effect is strongest when the wheels are spinning fast. At high speeds, you can almost let go of the handlebars and the bicycle maintains itself. At very low speeds, the gyroscopic effect is weak — the wheels spin too slowly to resist tilting — and the bicycle feels wobbly and hard to balance.</p>
+<p><strong>Effect 2 — The trail (caster) effect.</strong>
+Look at the front fork of a bicycle from the side — it is not vertical. The fork is angled (raked) so that the point where the front wheel touches the ground is slightly <strong>behind</strong> the steering axis (an imaginary line through the middle of the fork). This distance is called the <strong>trail</strong>.</p>
+<p>This geometry creates self-correcting steering. When the bicycle begins to lean right, the wheel automatically turns slightly to the right (because the ground contact point trails behind the steering pivot). This brings the wheel back under the falling bicycle — like a shopping trolley wheel that swivels to follow the direction of movement rather than resisting it.</p>
+<p><strong>Effect 3 — Rider corrections.</strong>
+Even with the gyroscope and trail effects working, a skilled rider makes constant tiny steering adjustments — imperceptible to an observer but essential, especially at low speeds when the other two effects are weak. This is the learnable part: your brain and hands make thousands of micro-corrections every minute.</p>
+<p><strong>Why does a stationary bicycle fall?</strong>
+All three effects require motion. At rest, the wheels have no angular momentum (no gyroscopic effect), the trail effect produces no self-correcting force, and a rider without movement cannot easily steer to correct a lean. Gravity wins.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of balance as a constant battle against gravity. Three things help you win:
+- <strong>Gyroscopic effect:</strong> Spinning wheel resists being tilted (strongest at high speed)
+- <strong>Trail geometry:</strong> Bicycle fork steers itself back under a leaning bicycle (works at any speed)
+- <strong>Rider steering:</strong> Manual corrections via the handlebars</p>
+<p>At high speeds, the first two do most of the work. At low speeds, the rider must do more. At zero speed, all three fail — the bicycle topples.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a bicycle diagram with three labelled annotation boxes:</p>
+<ul>
+<li><strong>Left box (Gyroscopic Effect):</strong> Shows a wheel with a circular spin arrow; label "Spinning wheel resists tilting — angular momentum"; note "Stronger at higher speed"</li>
+<li><strong>Centre (Bicycle diagram):</strong> Side-view of bicycle with front fork angle highlighted, trail distance marked as the gap between steering axis and wheel contact point</li>
+<li><strong>Right box (Trail / Caster Effect):</strong> Shows the fork angle with the trail labelled; label "Fork angle makes wheel self-steer under a leaning bike"</li>
+<li><strong>Bottom bar:</strong> Stability comparison: "Slow speed — low gyroscope, low trail correction → wobbly" vs "High speed — strong gyroscope, good trail correction → stable"</li>
+</ul>
+<figure><img src="../../illustrations/class-7/day_15.svg" alt="Diagram for Why does a bicycle stay upright?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Learning to ride:</strong> Children learning to cycle on training wheels are removing the need for balance entirely — the extra wheels do the stabilising. When training wheels come off, the child must learn (consciously at first, then automatically) to make steering corrections.</li>
+<li><strong>Motorcycles and scooters:</strong> Work on the same two effects but at higher speed — gyroscopic effects are very pronounced in motorcycles, which is why they feel very stable at highway speeds.</li>
+<li><strong>Tight-rope walkers:</strong> Use a long balancing pole to increase their rotational inertia — making it harder for gravity to quickly tip them, giving more time for conscious corrections. Similar idea to the gyroscopic effect, just without spinning.</li>
+<li><strong>Gyroscopes in satellites and spacecraft:</strong> Spinning gyroscopes are used to stabilise the orientation of satellites and telescopes — the same angular momentum principle that keeps a bicycle upright keeps the Hubble Space Telescope pointed at distant galaxies.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Hold a bicycle wheel (or any round plate) by its axle and spin it fast.</li>
+<li>Try to tilt the axle to the left or right — notice the resistance. This is angular momentum opposing the change.</li>
+<li>Now spin the same wheel slowly — the resistance is much less.</li>
+<li>Observe: when you ride a bicycle very slowly (barely moving), is it harder or easier to balance? Is this consistent with the gyroscopic effect being weaker at low speeds?</li>
+<li>Predict: would a bicycle with much heavier, denser wheels be easier or harder to balance at high speed? Why?</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>In 2011, a team of engineers at TU Delft (Netherlands) and Cornell University (USA) built a specially designed bicycle with counter-rotating wheels that completely cancelled out the gyroscopic effect. They also changed the fork angle to eliminate the trail effect. The bicycle could still balance itself when pushed forward — but only because of very subtle mass distribution effects. This experiment showed that gyroscope and trail are NOT the only forces at work — the full physics of bicycle balance is more complex than scientists expected and is still an active area of research.</p>
+<p><strong>Predict:</strong> An engineer designs a bicycle with vertical (not angled) forks, eliminating the trail effect. A rider rides it at high speed. Would this bicycle be completely impossible to ride, harder to ride, or about the same as a normal bicycle? Explain using the remaining balance mechanisms.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main mechanism that keeps a moving bicycle balanced upright?</p>
+<ul>
+<li>A. Bicycles stay upright because the weight of the rider presses evenly on both sides of the frame.</li>
+<li>B. A moving bicycle stays upright through gyroscopic effects of spinning wheels and the rider making small steering corrections.</li>
+<li>C. The rubber tyres create a magnetic interaction with the road that prevents the bicycle from falling.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the physics of bicycle balance more useful than knowing a bicycle stays upright?</p>
+<ul>
+<li>A. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>B. Bicycles always fall over when stationary, so the mechanism only works when moving.</li>
+<li>C. Balance is a skill only humans have, so the mechanism cannot be described scientifically.</li>
+</ul>
+<h3>Q3</h3>
+<p>If a bicycle were moving very slowly, what would you predict about its stability compared to a fast-moving bicycle?</p>
+<ul>
+<li>A. A slow bicycle would be more stable because lower speed reduces vibrations in the wheels.</li>
+<li>B. Speed has no effect on bicycle stability because the frame provides all the balance.</li>
+<li>C. A slow bicycle would be less stable because the gyroscopic effect of spinning wheels is weaker at low speed.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A design engineer proposes a three-wheeled electric vehicle to replace bicycles in cities — arguing that three wheels are inherently more stable. What physics does this engineer rely on? What would the engineer sacrifice compared to a two-wheeled bicycle? Consider both cornering (turning) and stability in your answer.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A riderless bicycle — given a push with no one on it — can balance itself for several seconds at the right speed. Scientists filmed this repeatedly to study the gyroscope and trail effects without human interference. In slow motion, you can see the front wheel making tiny steering corrections all on its own — the physics of balance happening without any brain or rider. The bicycle is, in a sense, a self-correcting machine.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Moving bicycle stays upright: spinning wheels resist tilting (gyroscope effect) + angled fork self-steers under a lean (trail effect). At low speed both weaken — rider must work harder.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 15 of 30</footer>
+</div>
+</body>
+</html>

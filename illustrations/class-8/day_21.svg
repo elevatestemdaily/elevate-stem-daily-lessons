@@ -1,26 +1,152 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr21" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+  <marker id="arr21g" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#16a34a"/></marker>
+  <marker id="arr21r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do crops get nitrogen?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 21</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How do crops get nitrogen?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">N₂ is 78% of air — but plants cannot use it directly. Bacteria do the work. — Day 21</text>
+
+<!-- ── LEFT: Nitrogen Cycle diagram ── -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Nitrogen Cycle</text>
+
+<!-- Cloud / atmosphere -->
+<ellipse cx="170" cy="124" rx="70" ry="26" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="170" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Atmosphere</text>
+<text x="170" y="136" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">N₂ (78%)</text>
+
+<!-- Arrow: fixation down -->
+<line x1="110" y1="150" x2="80" y2="192" stroke="#16a34a" stroke-width="2" marker-end="url(#arr21g)"/>
+<text x="60" y="175" text-anchor="middle" font-family="Arial" font-size="14" fill="#16a34a">Fix</text>
+
+<!-- Rhizobium box -->
+<rect x="28" y="194" width="130" height="50" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="93" y="212" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Rhizobium</text>
+<text x="93" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">N₂ → NH₄⁺</text>
+<text x="93" y="245" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">(root nodules)</text>
+
+<!-- Arrow: to plant -->
+<line x1="158" y1="222" x2="185" y2="222" stroke="#16a34a" stroke-width="2" marker-end="url(#arr21g)"/>
+
+<!-- Plant box -->
+<rect x="188" y="200" width="108" height="60" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+<text x="242" y="218" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Plant</text>
+<text x="242" y="236" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Absorbs NO₃⁻</text>
+<text x="242" y="253" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Amino acids</text>
+
+<!-- Arrow down: plant to soil / decomposer -->
+<line x1="242" y1="260" x2="242" y2="290" stroke="#92400e" stroke-width="2" marker-end="url(#arr21r)"/>
+
+<!-- Decomposer box -->
+<rect x="175" y="292" width="130" height="48" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="240" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Decomposers</text>
+<text x="240" y="328" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Organic N → NH₄⁺</text>
+
+<!-- Arrow: nitrification -->
+<line x1="175" y1="316" x2="140" y2="316" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arr21)"/>
+
+<!-- Nitrification box -->
+<rect x="28" y="294" width="112" height="58" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="84" y="310" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Nitrify</text>
+<text x="84" y="327" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">NH₄⁺ → NO₂⁻</text>
+<text x="84" y="344" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ NO₃⁻</text>
+
+<!-- Denitrification arrow back to atmosphere -->
+<line x1="84" y1="352" x2="84" y2="375" stroke="#dc2626" stroke-width="2"/>
+<line x1="84" y1="375" x2="170" y2="375" stroke="#dc2626" stroke-width="2"/>
+<line x1="170" y1="375" x2="170" y2="150" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr21r)"/>
+<text x="40" y="393" font-family="Arial" font-size="14" fill="#dc2626">Denitrify</text>
+<text x="40" y="409" font-family="Arial" font-size="14" fill="#dc2626">N₂ back</text>
+<text x="40" y="425" font-family="Arial" font-size="14" fill="#dc2626">to air</text>
+
+<!-- Lightning fixation label -->
+<line x1="230" y1="150" x2="200" y2="190" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr21)"/>
+<text x="238" y="170" font-family="Arial" font-size="14" fill="#7c3aed">⚡ lightning</text>
+
+<!-- UREA label -->
+<rect x="120" y="420" width="148" height="56" rx="4" fill="white" stroke="#d97706" stroke-width="1.5"/>
+<text x="194" y="438" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">UREA fertiliser</text>
+<text x="194" y="455" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CO(NH₂)₂ applied</text>
+<text x="194" y="471" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">to soil → NH₄⁺</text>
+
+<!-- ── CENTRE: Root nodule + steps ── -->
+<rect x="334" y="74" width="318" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="493" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">How Rhizobium Works</text>
+
+<!-- Root nodule cross section -->
+<ellipse cx="493" cy="160" rx="60" ry="46" fill="#d1fae5" stroke="#16a34a" stroke-width="2.5"/>
+<text x="493" y="146" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Root</text>
+<text x="493" y="162" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Nodule</text>
+<!-- tiny bacteria dots inside nodule -->
+<circle cx="475" cy="168" r="5" fill="#16a34a"/>
+<circle cx="490" cy="174" r="5" fill="#16a34a"/>
+<circle cx="505" cy="168" r="5" fill="#16a34a"/>
+<circle cx="483" cy="178" r="4" fill="#16a34a"/>
+<circle cx="498" cy="178" r="4" fill="#16a34a"/>
+<text x="493" y="198" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rhizobium inside</text>
+
+<!-- Root line -->
+<line x1="493" y1="206" x2="493" y2="222" stroke="#16a34a" stroke-width="3"/>
+<text x="493" y="235" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Root hair</text>
+
+<!-- Steps numbered -->
+<rect x="344" y="248" width="298" height="228" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+
+<rect x="352" y="256" width="282" height="42" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="370" y="272" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">1. Fixation</text>
+<text x="370" y="290" font-family="Arial" font-size="14" fill="#333">Nitrogenase enzyme: N₂ → NH₄⁺</text>
+
+<rect x="352" y="304" width="282" height="42" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="370" y="320" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">2. Nitrification</text>
+<text x="370" y="338" font-family="Arial" font-size="14" fill="#333">NH₄⁺ → NO₂⁻ → NO₃⁻ in soil</text>
+
+<rect x="352" y="352" width="282" height="42" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="370" y="368" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">3. Assimilation</text>
+<text x="370" y="386" font-family="Arial" font-size="14" fill="#333">Roots absorb NO₃⁻ → amino acids</text>
+
+<rect x="352" y="400" width="282" height="42" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="370" y="416" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">4. Denitrification</text>
+<text x="370" y="434" font-family="Arial" font-size="14" fill="#333">Bacteria return N₂ to atmosphere</text>
+
+<!-- Crop rotation note -->
+<rect x="344" y="452" width="298" height="32" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="493" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Crop rotation: legume after cereal restores N</text>
+
+<!-- ── RIGHT: India context ── -->
+<rect x="666" y="74" width="314" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="823" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; Nitrogen</text>
+
+<rect x="676" y="104" width="294" height="82" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">UREA — the backbone</text>
+<text x="823" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India uses 32 million tonnes/year</text>
+<text x="823" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Subsidy: ₹1.28 lakh crore/year</text>
+<text x="823" y="176" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Haber–Bosch: N₂ + 3H₂ → 2NH₃</text>
+
+<rect x="676" y="196" width="294" height="80" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="214" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Overuse Damage</text>
+<text x="823" y="232" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Punjab: soil acidification</text>
+<text x="823" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Groundwater nitrate pollution</text>
+<text x="823" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">N₂O: 265× more than CO₂</text>
+
+<rect x="676" y="286" width="294" height="80" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="304" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Solutions</text>
+<text x="823" y="322" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Nano-urea (IFFCO): −50% UREA</text>
+<text x="823" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rhizobium seed inoculation</text>
+<text x="823" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Legume intercropping</text>
+
+<rect x="676" y="376" width="294" height="104" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="823" y="396" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">India's Legumes</text>
+<text x="823" y="414" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Lentils, chickpea, groundnut,</text>
+<text x="823" y="432" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">moong, urad — all fix nitrogen</text>
+<text x="823" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">#1 pulse producer globally</text>
+<text x="823" y="468" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Soil health + protein source</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Rhizobium in root nodules converts N₂ → NH₄⁺. Soil bacteria nitrify to NO₃⁻, absorbed by roots.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Crop rotation with legumes restores soil nitrogen naturally. India uses 32 MT UREA/year.</text>
 </svg>

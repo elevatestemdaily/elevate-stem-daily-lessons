@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 21 — Why does the Moon orbit Earth? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 21</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does the Moon orbit Earth?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how centripetal force maintains an orbit, describe what would happen if the Moon's speed increased, and connect orbital mechanics to ISRO missions.</p>
+</div><h2>1. The mystery</h2>
+<p>The Moon is falling toward Earth right now — pulled by gravity. Yet it's been "falling" for 4.5 billion years without getting any closer. How? And what determines the exact speed needed to maintain any orbit?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Centripetal force:</strong> For any object in circular motion, a force must act toward the centre: F_c = mv²/r</p>
+<p><strong>Gravity as centripetal force for orbits:</strong>
+F_gravity = F_centripetal
+GMm/r² = mv²/r
+Solving for orbital speed: v = √(GM/r)</p>
+<p>At Moon's distance (r = 384,400 km = 3.84 × 10⁸ m):
+v = √(6.674×10⁻¹¹ × 5.97×10²⁴ / 3.84×10⁸) ≈ 1,022 m/s (1.02 km/s)</p>
+<p><strong>The Moon is continuously falling:</strong> Its tangential velocity carries it forward while gravity curves its path. At 1.02 km/s, the Moon falls exactly as fast as Earth's surface curves away — stable orbit.</p>
+<p><strong>Orbital period:</strong> T = 2πr/v = 2π × 3.84×10⁸ / 1022 ≈ 2.36×10⁶ s ≈ 27.3 days</p>
+<p><strong>Escape velocity:</strong> If v increases to √(2GM/r) = √2 × orbital velocity, the object escapes gravity entirely.</p>
+<p><strong>Geostationary orbit (for satellites):</strong> T = 24 hours → r = 42,164 km from Earth's centre (35,786 km above surface).</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the Moon's orbit as a cannonball fired horizontally from the top of an impossibly tall mountain. At low speed, the cannonball curves down and hits the ground. Fire it faster, and it travels further before curving down. Fire it at exactly the right speed, and the ground curves away beneath it at the same rate it falls — the cannonball never lands. That is an orbit.</p>
+<ul>
+<li><strong>Gravity</strong> is the force that continuously pulls the Moon toward Earth's centre — it is always acting.</li>
+<li><strong>Tangential velocity</strong> is the sideways speed that keeps moving the Moon forward so it perpetually "misses" Earth.</li>
+<li><strong>Too slow:</strong> gravity wins, Moon spirals in.</li>
+<li><strong>Too fast:</strong> the Moon outruns gravity and escapes — escape velocity is only √2 times orbital speed.</li>
+<li><strong>Just right:</strong> the curved path exactly matches Earth's curvature at that distance — stable circular orbit.</li>
+</ul>
+<p>The Moon doesn't need an engine or any push to stay in orbit. The perfect balance of forward speed and gravitational pull has been maintained since the Moon formed 4.5 billion years ago.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows Earth at the centre as a blue sphere, with the Moon as a smaller grey sphere on its circular orbit path. A dashed circle represents the orbital path, with arrows at four points showing the Moon's tangential velocity (always pointing sideways, tangent to the circle). Red arrows at each position point inward toward Earth's centre, labelled "gravity = centripetal force." A separate inset diagram shows the cannonball-from-mountain analogy: three projectile paths, the slowest landing nearby, the medium-speed one landing farther, and the fastest curving parallel to Earth's surface in orbit. Numbers label the Moon's orbital distance (3.84 × 10⁸ m), orbital speed (1.02 km/s), and orbital period (27.3 days).</p>
+<figure><img src="../../illustrations/class-9/day_21.svg" alt="Diagram for Why does the Moon orbit Earth?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Every ISRO satellite must achieve the correct orbital speed for its target altitude. PSLV inserts satellites into low-Earth orbit (LEO) at ~7.8 km/s. Chandrayaan-3 used a series of orbit-raising manoeuvres from 170 km LEO to lunar transfer orbit — each engine burn precisely timed using the orbital mechanics equations above. NavIC (India's GPS) uses satellites in geostationary and geosynchronous inclined orbits at ~36,000 km, requiring v ≈ 3.1 km/s. Getting this wrong by even 1 m/s would cause the satellite to slowly drift from its assigned slot, making it useless for navigation.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Tie a stone to a string (60 cm). Swing it in a horizontal circle. The string tension is centripetal force. Swing faster — feel greater centripetal force needed and the string become more taut. Release the string — the stone flies off tangentially (inertia, not outward). This is exactly what would happen if gravity "switched off": the Moon would fly off tangentially into space, not radially outward. The string represents gravity in the orbit analogy. Notice also that the faster you swing, the harder it is to maintain the circular path — matching the equation F_c = mv²/r, where increasing v demands more centripetal force.</p>
+</div><h2>7. Think deeper</h2>
+<p>The Lagrange points are 5 positions where the gravitational forces of two large bodies (like Earth and Sun) exactly balance, allowing a small object to be stationary relative to both. L1 (between Earth and Sun, 1.5 million km from Earth) hosts the DSCOVR and Aditya-L1 solar observation satellites. India's Aditya-L1 mission (2023) placed India's first solar observatory at L1 to study the Sun's corona — the origin of solar wind that affects Earth's magnetosphere and satellite operations. Getting to L1 required careful use of Earth's and Sun's gravity — orbital mechanics at its finest.</p>
+<p><strong>Predict:</strong> If ISRO engineers accidentally programmed a satellite to orbit at 7.9 km/s instead of the correct 7.8 km/s at LEO altitude, what would happen to its orbit over the following hours? Would it rise, fall, or stay the same? Explain your reasoning using the relationship between orbital speed and altitude.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What keeps the Moon in its orbit around Earth rather than flying off into space?</p>
+<ul>
+<li>A. The Moon is held in orbit by the magnetic field generated by Earth's molten iron core</li>
+<li>B. The Moon stays in orbit because it moves at exactly the speed where friction from space balances its motion</li>
+<li>C. Earth's gravity continuously pulls the Moon inward, acting as the centripetal force that maintains its orbit</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the gravitational mechanism of orbit more useful than just knowing the Moon circles Earth?</p>
+<ul>
+<li>A. Orbital facts are static knowledge that never changes, so no mechanism is needed</li>
+<li>B. The Moon's orbit was calculated by computers and cannot be understood through basic mechanisms</li>
+<li>C. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If the Moon's orbital speed were suddenly increased significantly, what would you predict?</p>
+<ul>
+<li>A. The Moon would move into a higher orbit or escape Earth's gravity entirely</li>
+<li>B. The Moon would move into a lower orbit closer to Earth because faster speed creates more drag</li>
+<li>C. The Moon would remain in exactly the same orbit because orbital paths are fixed by distance</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A new communications satellite is placed in a circular orbit at an altitude of 500 km above Earth's surface (Earth's radius = 6,400 km, G = 6.67 × 10⁻¹¹ N m² kg⁻², Earth's mass = 5.97 × 10²⁴ kg).</p>
+<p>(a) Calculate the orbital radius r and then the required orbital speed v using v = √(GM/r).
+(b) The satellite's thrusters fire briefly and increase its speed by 200 m/s. Predict qualitatively what happens to its orbit — does it stay circular, rise to a higher orbit, or fall to a lower orbit?
+(c) ISRO wants this satellite in geostationary orbit instead (altitude ≈ 35,786 km). Without calculating, explain why the orbital speed at geostationary altitude must be lower than at 500 km, using the relationship v = √(GM/r).</p>
+</div><h2>10. One surprising idea</h2>
+<p>The Moon is gradually spiralling away from Earth — at about 3.8 cm per year. This happens because tidal friction from the Moon's gravity slows Earth's rotation very slightly. By conservation of angular momentum, the energy lost from Earth's spin is transferred to the Moon, pushing it into a slightly higher orbit. When the Moon first formed around 4.5 billion years ago, it was only about 24,000 km away — ten times closer than today — and would have filled a much larger portion of the sky, causing enormous tides hundreds of metres high.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>The Moon does not float in place — it is perpetually falling toward Earth, but moving sideways so fast that it continuously misses, and this balance of gravitational pull and tangential velocity defines every orbit from artificial satellites to planets around the Sun.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 21 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,126 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does a balloon expand at high altitude</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 10</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">Why does a balloon expand at high altitude?</text>
+
+<!-- Three balloon scenarios -->
+<text x="30" y="88" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">THREE SCENARIOS (same gas, same amount)</text>
+
+<!-- Scenario 1: Sea level -->
+<rect x="20" y="100" width="195" height="210" rx="8" fill="#e8eaf6" stroke="#3949ab" stroke-width="2"/>
+<text x="118" y="118" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">SEA LEVEL</text>
+<text x="118" y="132" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P = 101,000 Pa (1 atm)</text>
+
+<!-- Balloon outline -->
+<ellipse cx="118" cy="185" rx="52" ry="55" fill="#bbdefb" stroke="#3949ab" stroke-width="2"/>
+<!-- Gas molecules inside -->
+<text x="95" y="165" font-family="Arial" font-size="14" fill="#1565c0">● ● ●</text>
+<text x="90" y="183" font-family="Arial" font-size="14" fill="#1565c0">● ● ● ●</text>
+<text x="95" y="200" font-family="Arial" font-size="14" fill="#1565c0">● ● ●</text>
+
+<!-- Inward pressure arrows (many = high external pressure) -->
+<text x="52" y="185" font-family="Arial" font-size="14" fill="#3949ab">→</text>
+<text x="170" y="185" font-family="Arial" font-size="14" fill="#3949ab">←</text>
+<text x="118" y="118" text-anchor="middle" font-family="Arial" font-size="14" fill="#3949ab">↓</text>
+<text x="118" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#3949ab">↑</text>
+<text x="35" y="163" font-family="Arial" font-size="14" fill="#3949ab">HIGH</text>
+<text x="35" y="173" font-family="Arial" font-size="14" fill="#3949ab">EXTERNAL</text>
+<text x="35" y="183" font-family="Arial" font-size="14" fill="#3949ab">PRESSURE</text>
+
+<text x="118" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Normal size</text>
+<text x="118" y="295" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P₁V₁ = constant</text>
+
+<!-- Scenario 2: High altitude - BIGGER balloon -->
+<rect x="230" y="100" width="205" height="210" rx="8" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="2"/>
+<text x="333" y="118" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">HIGH ALTITUDE (3,000 m)</text>
+
+<!-- Bigger balloon -->
+<ellipse cx="333" cy="183" rx="72" ry="68" fill="#c8e6c9" stroke="#2a7a2a" stroke-width="2"/>
+<!-- Same number of molecules but spread out -->
+<text x="303" y="162" font-family="Arial" font-size="14" fill="#1b5e20">● ●</text>
+<text x="293" y="180" font-family="Arial" font-size="14" fill="#1b5e20">● ● ●</text>
+<text x="303" y="198" font-family="Arial" font-size="14" fill="#1b5e20">● ●</text>
+
+<!-- Fewer/smaller inward arrows -->
+<text x="255" y="183" font-family="Arial" font-size="14" fill="#2a7a2a">→</text>
+<text x="405" y="183" font-family="Arial" font-size="14" fill="#2a7a2a">←</text>
+<text x="25" y="183" font-family="Arial" font-size="14" fill="#2a7a2a">LOW</text>
+<text x="22" y="193" font-family="Arial" font-size="14" fill="#2a7a2a">PRESS.</text>
+
+<text x="333" y="268" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P ≈ 70,000 Pa (0.7 atm)</text>
+<text x="333" y="285" text-anchor="middle" font-family="Arial" font-size="14" fill="#2a7a2a">EXPANDED</text>
+<text x="333" y="300" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Same molecules, bigger volume</text>
+
+<!-- Scenario 3: Underwater - SMALLER balloon -->
+<rect x="450" y="100" width="195" height="210" rx="8" fill="#fce4ec" stroke="#c62828" stroke-width="2"/>
+<text x="548" y="118" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">UNDERWATER (10 m)</text>
+<text x="548" y="132" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">P = 202,000 Pa (2 atm)</text>
+
+<!-- Smaller balloon -->
+<ellipse cx="548" cy="188" rx="34" ry="36" fill="#ef9a9a" stroke="#c62828" stroke-width="2"/>
+<!-- Same molecules, compressed -->
+<text x="530" y="183" font-family="Arial" font-size="14" fill="#880e4f">●●</text>
+<text x="526" y="196" font-family="Arial" font-size="14" fill="#880e4f">●●●</text>
+<text x="530" y="209" font-family="Arial" font-size="14" fill="#880e4f">●●</text>
+
+<!-- Many inward arrows -->
+<text x="500" y="188" font-family="Arial" font-size="14" fill="#c62828">→</text>
+<text x="590" y="188" font-family="Arial" font-size="14" fill="#c62828">←</text>
+<text x="548" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#c62828">↓</text>
+<text x="548" y="238" text-anchor="middle" font-family="Arial" font-size="14" fill="#c62828">↑</text>
+
+<text x="548" y="285" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">COMPRESSED (Q3)</text>
+<text x="548" y="300" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Water pressure compresses gas</text>
+
+<!-- Centre: Gas laws -->
+<text x="30" y="330" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">THE GAS LAWS</text>
+
+<rect x="20" y="343" width="300" height="115" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+<text x="170" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">Boyle's Law (constant T)</text>
+<text x="170" y="380" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">P₁V₁ = P₂V₂</text>
+<text x="170" y="400" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Example: 1 atm, 2 L → 0.5 atm, 4 L</text>
+<text x="170" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Altitude: P drops → V increases</text>
+<text x="170" y="430" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Underwater: P rises → V decreases</text>
+<text x="170" y="448" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Charles's Law: V/T = constant (constant P)</text>
+
+<!-- Combined gas law -->
+<rect x="335" y="343" width="300" height="115" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="485" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Combined Gas Law</text>
+<text x="485" y="380" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">P₁V₁/T₁ = P₂V₂/T₂</text>
+<text x="485" y="400" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">T must be in Kelvin (K = °C + 273)</text>
+<text x="485" y="415" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Weather balloon: 101,000 Pa, 1.5 m³, 293 K</text>
+<text x="485" y="430" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">At 20 km: 5,500 Pa, 217 K → V = ?</text>
+<text x="485" y="448" text-anchor="middle" font-family="Arial" font-size="14" fill="#2a7a2a">V₂ = P₁V₁T₂/(T₁P₂) = 23.5 m³ (balloon survives!)</text>
+
+<!-- Molecule explanation -->
+<rect x="650" y="343" width="330" height="115" rx="6" fill="#fff8e1" stroke="#f0a000" stroke-width="1.5"/>
+<text x="815" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c07000">Why molecules determine pressure</text>
+<text x="815" y="378" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Gas pressure = molecules hitting walls</text>
+<text x="815" y="393" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Fewer molecules per m³ at altitude</text>
+<text x="815" y="408" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ less pressure pushing inward</text>
+<text x="815" y="423" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ balloon expands to equalise</text>
+<text x="815" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Hotter gas → faster molecules → expand</text>
+
+<!-- Right column: Applications -->
+<rect x="660" y="100" width="320" height="60" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+<text x="820" y="118" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">IMD Weather Balloons (India)</text>
+<text x="820" y="134" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">52 stations, twice daily; 30–40 km reach</text>
+<text x="820" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Expands 100× → bursts; feeds monsoon data</text>
+
+<rect x="660" y="175" width="320" height="55" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="820" y="193" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Breathing uses Boyle's Law</text>
+<text x="820" y="210" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chest ↑ → lung pressure ↓ → air in</text>
+<text x="820" y="224" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chest ↓ → lung pressure ↑ → air out</text>
+
+<rect x="660" y="245" width="320" height="55" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+<text x="820" y="263" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">Aircraft cabin pressure</text>
+<text x="820" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">At 10,000 m: P ≈ 26,000 Pa (too low)</text>
+<text x="820" y="294" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cabin pressurised to 2,400 m equivalent</text>
+
+<!-- Activity note -->
+<rect x="20" y="467" width="615" height="25" rx="4" fill="#ddeeff" stroke="#1f5f8b" stroke-width="1"/>
+<text x="327" y="483" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Squeeze bottle: pressure rises; hot water → bottle tightens</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="536" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Less pressure at altitude → balloon expands (Boyle's Law P₁V₁=P₂V₂). Underwater: pressure rises → gas shrinks.</text>
 </svg>

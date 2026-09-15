@@ -1,26 +1,143 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does your ear turn sound into signals?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 14</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<defs>
+  <marker id="sigArr14" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+  </marker>
+</defs>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does your ear turn sound into signals?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Pinna → canal → eardrum → ossicles (~20×) → cochlea → hair cells → auditory nerve</text>
+
+<!-- ── ANATOMY ZONES (4 colour-coded sections) y=88–250 ── -->
+
+<!-- Zone 1: OUTER EAR  x=20–230 -->
+<rect x="20" y="88" width="210" height="162" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="125" y="108" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">① OUTER EAR</text>
+<!-- Pinna (C-shape ear outline) -->
+<ellipse cx="50" cy="178" rx="18" ry="42" fill="none" stroke="#d97706" stroke-width="3"/>
+<ellipse cx="56" cy="178" rx="9" ry="26" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+<!-- Ear canal tube from pinna to eardrum -->
+<rect x="65" y="170" width="120" height="16" fill="#fed7aa" stroke="#d97706" stroke-width="1.5" rx="3"/>
+<!-- Eardrum (vertical membrane) -->
+<rect x="185" y="158" width="5" height="40" fill="#ef4444" rx="2"/>
+<!-- Component labels -->
+<text x="50" y="234" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Pinna</text>
+<text x="125" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Ear canal</text>
+<text x="196" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Eardrum</text>
+<!-- Function note -->
+<text x="125" y="222" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">Collects sound → canal</text>
+<text x="125" y="238" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">→ vibrates eardrum</text>
+
+<!-- Zone 2: MIDDLE EAR  x=240–490 -->
+<rect x="240" y="88" width="250" height="162" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="365" y="108" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#4c1d95">② MIDDLE EAR</text>
+<!-- Ossicles: Malleus → Incus → Stapes (simplified schematic) -->
+<!-- Malleus (handle attached to eardrum at x=240 zone start) -->
+<line x1="244" y1="178" x2="300" y2="158" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+<circle cx="244" cy="178" r="8" fill="#7c3aed"/>
+<!-- Incus (connecting bone) -->
+<line x1="300" y1="158" x2="358" y2="162" stroke="#7c3aed" stroke-width="4" stroke-linecap="round"/>
+<!-- Stapes (stirrup shape, U at oval window) -->
+<path d="M 358,162 L 400,155 L 400,185 L 358,185" fill="none" stroke="#7c3aed" stroke-width="3.5" stroke-linecap="round"/>
+<!-- Oval window at x=400 -->
+<rect x="400" y="153" width="5" height="35" fill="#a78bfa" rx="2"/>
+<!-- Labels for ossicles -->
+<text x="270" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">Malleus</text>
+<text x="330" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">Incus</text>
+<text x="383" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">Stapes</text>
+<text x="408" y="148" font-family="Arial" font-size="14" fill="#7c3aed">Oval</text>
+<text x="408" y="162" font-family="Arial" font-size="14" fill="#7c3aed">window</text>
+<!-- Amplification label -->
+<rect x="248" y="200" width="232" height="40" rx="4" fill="white" opacity="0.7"/>
+<text x="364" y="218" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#4c1d95">Amplify ~20×</text>
+<text x="364" y="234" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">lever + area ratio (55 mm² → 3.2 mm²)</text>
+
+<!-- Zone 3: INNER EAR / COCHLEA  x=510–760 -->
+<rect x="510" y="88" width="250" height="162" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+<text x="635" y="108" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">③ COCHLEA</text>
+<!-- Cochlea snail shape: 3 concentric ellipses -->
+<ellipse cx="635" cy="185" rx="95" ry="55" fill="none" stroke="#10b981" stroke-width="2.5"/>
+<ellipse cx="645" cy="185" rx="58" ry="33" fill="none" stroke="#10b981" stroke-width="2"/>
+<ellipse cx="650" cy="185" rx="25" ry="14" fill="#bbf7d0" stroke="#10b981" stroke-width="1.5"/>
+<!-- Fluid wave annotation -->
+<text x="635" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">fluid</text>
+<!-- Hair cell dots on basilar membrane (along lower edge of outer ellipse) -->
+<circle cx="575" cy="215" r="3" fill="#10b981"/>
+<circle cx="595" cy="225" r="3" fill="#10b981"/>
+<circle cx="617" cy="232" r="3" fill="#10b981"/>
+<circle cx="640" cy="234" r="3" fill="#10b981"/>
+<circle cx="663" cy="232" r="3" fill="#10b981"/>
+<circle cx="685" cy="225" r="3" fill="#10b981"/>
+<circle cx="700" cy="215" r="3" fill="#10b981"/>
+<!-- Labels -->
+<text x="635" y="225" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">hair cells</text>
+<text x="635" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Snail-shaped, fluid-filled</text>
+<text x="635" y="253" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">16,000 hair cells detect freq.</text>
+
+<!-- Zone 4: AUDITORY NERVE → BRAIN  x=780–978 -->
+<rect x="780" y="88" width="198" height="162" rx="6" fill="#fee2e2" stroke="#f87171" stroke-width="2"/>
+<text x="879" y="108" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#991b1b">④ BRAIN</text>
+<!-- Nerve line with arrow -->
+<line x1="785" y1="185" x2="850" y2="185" stroke="#7c3aed" stroke-width="3" marker-end="url(#sigArr14)"/>
+<!-- Zig-zag electrical signal -->
+<path d="M 790,178 L 800,170 L 810,186 L 820,170 L 830,186 L 840,172" fill="none" stroke="#fbbf24" stroke-width="2"/>
+<!-- Brain shape -->
+<ellipse cx="920" cy="185" rx="42" ry="55" fill="#fecaca" stroke="#f87171" stroke-width="2"/>
+<text x="920" y="182" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#991b1b">BRAIN</text>
+<text x="920" y="200" text-anchor="middle" font-family="Arial" font-size="14" fill="#7f1d1d">decodes</text>
+<text x="879" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c3aed">auditory</text>
+<text x="879" y="156" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c3aed">nerve →</text>
+<text x="879" y="232" text-anchor="middle" font-family="Arial" font-size="14" fill="#991b1b">Electrical signal</text>
+<text x="879" y="247" text-anchor="middle" font-family="Arial" font-size="14" fill="#991b1b">= HEARING</text>
+
+<!-- ── THREE DETAIL BOXES  y=265–478 ── -->
+
+<!-- Left: Outer ear mechanics  x=20–318 -->
+<rect x="20" y="265" width="298" height="213" rx="7" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<text x="169" y="285" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Outer Ear Mechanics</text>
+<text x="35" y="305" font-family="Arial" font-size="14" fill="#78350f">Sound waves hit pinna → collected</text>
+<text x="35" y="323" font-family="Arial" font-size="14" fill="#78350f">→ travel down ear canal (2.5 cm)</text>
+<text x="35" y="341" font-family="Arial" font-size="14" fill="#78350f">→ strike eardrum membrane</text>
+<text x="35" y="359" font-family="Arial" font-size="14" fill="#78350f">→ eardrum vibrates at exactly the</text>
+<text x="35" y="377" font-family="Arial" font-size="14" fill="#78350f">same frequency as the sound.</text>
+<text x="35" y="400" font-family="Arial" font-size="14" fill="#92400e" font-weight="700">Eardrum area: ≈ 55 mm²</text>
+<text x="35" y="418" font-family="Arial" font-size="14" fill="#78350f">Eustachian tube connects middle ear</text>
+<text x="35" y="436" font-family="Arial" font-size="14" fill="#78350f">to throat → equalizes air pressure.</text>
+<text x="35" y="454" font-family="Arial" font-size="14" fill="#78350f">→ Unequal pressure = muffled hearing</text>
+<text x="35" y="472" font-family="Arial" font-size="14" fill="#78350f">(yawn or swallow to equalize)</text>
+
+<!-- Middle: Ossicle amplification  x=338–658 -->
+<rect x="338" y="265" width="320" height="213" rx="7" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="498" y="285" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#4c1d95">Ossicle Amplification (~20×)</text>
+<text x="353" y="305" font-family="Arial" font-size="14" fill="#3b0764">Malleus: handle touches eardrum,</text>
+<text x="353" y="323" font-family="Arial" font-size="14" fill="#3b0764">head connects to incus.</text>
+<text x="353" y="341" font-family="Arial" font-size="14" fill="#3b0764">Incus: anvil-shaped, transfers force.</text>
+<text x="353" y="359" font-family="Arial" font-size="14" fill="#3b0764">Stapes: stirrup, foot-plate at oval</text>
+<text x="353" y="377" font-family="Arial" font-size="14" fill="#3b0764">window (oval window area: 3.2 mm²).</text>
+<text x="353" y="400" font-family="Arial" font-size="14" fill="#4c1d95" font-weight="700">Two amplification sources:</text>
+<text x="353" y="418" font-family="Arial" font-size="14" fill="#3b0764">1. Lever action of ossicles (~1.3×)</text>
+<text x="353" y="436" font-family="Arial" font-size="14" fill="#3b0764">2. Area ratio 55/3.2 = 17× (pressure</text>
+<text x="353" y="454" font-family="Arial" font-size="14" fill="#3b0764">concentrated onto smaller window)</text>
+<text x="353" y="472" font-family="Arial" font-size="14" fill="#4c1d95" font-weight="700">Total: ≈ 22× amplification</text>
+
+<!-- Right: Cochlea + signal  x=678–978 -->
+<rect x="678" y="265" width="300" height="213" rx="7" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+<text x="828" y="285" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Cochlea → Hearing</text>
+<text x="693" y="305" font-family="Arial" font-size="14" fill="#064e3b">Stapes pushes oval window → sends</text>
+<text x="693" y="323" font-family="Arial" font-size="14" fill="#064e3b">pressure wave into cochlear fluid.</text>
+<text x="693" y="341" font-family="Arial" font-size="14" fill="#064e3b">Basilar membrane vibrates — narrow</text>
+<text x="693" y="359" font-family="Arial" font-size="14" fill="#064e3b">at base (high freq), wide at apex.</text>
+<text x="693" y="377" font-family="Arial" font-size="14" fill="#064e3b">→ TONOTOPIC: different parts</text>
+<text x="693" y="395" font-family="Arial" font-size="14" fill="#064e3b">respond to different frequencies.</text>
+<text x="693" y="418" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">16,000 hair cells bend → open</text>
+<text x="693" y="436" font-family="Arial" font-size="14" fill="#064e3b">ion channels → electrical signal</text>
+<text x="693" y="454" font-family="Arial" font-size="14" fill="#064e3b">→ auditory nerve → brain → HEARING</text>
+<text x="693" y="472" font-family="Arial" font-size="14" fill="#064e3b">Loud noise → permanent hair damage</text>
+
+<!-- TAKEAWAY STRIP -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">Eardrum vibrates → ossicles amplify ~20× → cochlea converts to electrical signal → brain hears.</text>
 </svg>

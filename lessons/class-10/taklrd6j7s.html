@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 27 — How does the human eye see? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 27</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does the human eye see?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain accommodation by naming the ciliary muscles and their action, describe how myopia and hypermetropia arise from lens or eyeball shape, state the corrective lens type for each defect, and predict what happens to focus when the lens becomes too stiff to change shape.</p>
+</div><h2>1. The mystery</h2>
+<p>You look up from a book and immediately see a distant bird clearly, without any conscious effort. A fraction of a second later you look back at the text and the letters are sharp again. No button was pressed, no dial was turned. How does your eye shift focus instantly between centimetres and kilometres — and why do millions of Indians need spectacles to do what used to happen automatically?</p>
+<h2>2. The science behind it</h2>
+<p>The human eye is an optical instrument built around a <strong>biconvex lens</strong> that focuses light onto a light-sensitive surface. But unlike a camera, where the sensor moves to adjust focus, the eye achieves focus by <strong>changing the curvature of its lens</strong> — a process called <strong>accommodation</strong>.</p>
+<p><strong>The optical path through the eye</strong></p>
+<p>Light enters the eye through the <strong>cornea</strong> — a transparent, fixed dome that provides about two-thirds of the eye's total refracting power (approximately 43 dioptres out of ~60 total). The cornea is fixed and cannot change shape. Light then passes through the <strong>aqueous humour</strong>, through the <strong>pupil</strong> (the opening in the coloured <strong>iris</strong>), and reaches the <strong>crystalline lens</strong> behind the pupil. The lens provides the remaining one-third of refracting power and, crucially, is the adjustable component. After the lens, light travels through the <strong>vitreous humour</strong> (a clear gel filling the eyeball) and strikes the <strong>retina</strong> at the back.</p>
+<p><strong>The retina</strong> is a layer of photoreceptor cells:
+- <strong>Rods</strong> (~120 million): sensitive to low light intensity, not colour; used for peripheral and night vision.
+- <strong>Cones</strong> (~6 million): concentrated in the central <strong>fovea</strong>, sensitive to colour (three types: red, green, blue). Cones require bright light and give fine detail and colour vision.</p>
+<p>Signals from rods and cones travel along the <strong>optic nerve</strong> to the visual cortex in the brain, which interprets them as an upright, coloured image (the image on the retina is inverted, just as in a camera).</p>
+<p><strong>Accommodation — how the lens changes focus</strong></p>
+<p>The crystalline lens is held in place by <strong>suspensory ligaments</strong> (zonule fibres) attached to a ring of muscle called the <strong>ciliary muscle</strong>. When the ciliary muscle is <strong>relaxed</strong>, it pulls the suspensory ligaments taut, which stretches the lens and makes it <strong>thinner and flatter</strong> — lower curvature, longer focal length, suited for viewing distant objects. When the ciliary muscle <strong>contracts</strong>, it moves inward, slackening the suspensory ligaments. Without the outward pull, the lens's own elasticity causes it to <strong>bulge, becoming thicker and more curved</strong> — shorter focal length, suited for viewing close objects. This change in lens shape to adjust focal length is accommodation.</p>
+<p>The <strong>near point</strong> of a healthy young eye is about 25 cm — the closest distance at which the lens can accommodate enough to focus. The <strong>far point</strong> is infinity — a relaxed eye focuses parallel rays from distant objects sharply on the retina.</p>
+<p><strong>Defects of vision and their correction</strong></p>
+<p><strong>Myopia (short-sightedness):</strong> The eyeball is slightly too long, or the cornea/lens is too curved. Parallel rays from a distant object converge to a focus in front of the retina rather than on it. The far point is closer than infinity — a myopic person cannot see clearly beyond a certain distance. Correction: a <strong>concave (diverging) lens</strong> spreads the rays slightly before they enter the eye, so they converge on the retina. India has one of the highest rates of childhood myopia in the world, partly linked to reduced outdoor time.</p>
+<p><strong>Hypermetropia (long-sightedness):</strong> The eyeball is slightly too short, or the lens is too flat. Rays from a close object would converge behind the retina. The near point is farther than 25 cm — the person can see distant objects clearly but cannot focus on close ones without strain. Correction: a <strong>convex (converging) lens</strong> adds extra convergence before the eye, reducing the required accommodation.</p>
+<p><strong>Astigmatism:</strong> The cornea is not perfectly spherical but slightly oval, like a rugby ball. Rays in one plane (e.g., vertical) focus at a different distance from rays in the perpendicular plane (horizontal). This produces blurred or distorted vision at all distances. Correction: a <strong>cylindrical lens</strong> that refracts in only one plane, compensating for the unequal curvature.</p>
+<p><strong>Presbyopia (age-related stiffening):</strong> After about age 40, the crystalline lens loses elasticity and hardens. The ciliary muscle can still contract, but the stiff lens no longer changes shape in response. The near point recedes — close objects become blurred. This is why many people in their 40s hold their phones at arm's length. Correction: reading glasses (convex lenses) or bifocals.</p>
+<h2>3. Build the mental model</h2>
+<p>The eye as an optical system:</p>
+<ul>
+<li><strong>Cornea</strong>: fixed converging surface (majority of bending)</li>
+<li><strong>Lens</strong>: adjustable converging surface (fine-tunes focus via accommodation)</li>
+<li><strong>Retina</strong>: detector (rods for low light/motion, cones for colour/detail)</li>
+<li><strong>Ciliary muscle contract → lens bulges → shorter focal length → near objects in focus</strong></li>
+<li><strong>Ciliary muscle relax → lens flattens → longer focal length → far objects in focus</strong></li>
+</ul>
+<p>Defect = focal length mismatch with eyeball length → corrective lens restores match:
+- Too long eyeball / too curved lens → myopia → concave lens correction
+- Too short eyeball / too flat lens → hypermetropia → convex lens correction
+- Stiff lens / cannot change curvature → presbyopia → reading glasses</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a horizontal cross-section of the eye. Labels point to: cornea, iris, pupil, crystalline lens, ciliary muscle, suspensory ligaments, vitreous humour, retina, fovea, and optic nerve. Two inset diagrams show the lens in relaxed state (flat, viewing distance) and contracted state (bulging, viewing near). A third inset compares normal eye, myopic eye (focus in front of retina, corrected by concave lens), and hypermetropic eye (focus behind retina, corrected by convex lens).</p>
+<figure><img src="../../illustrations/class-10/day_27.svg" alt="Diagram for How does the human eye see?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Spectacles in India</strong>: India has approximately 550 million people who need some form of vision correction, yet only about 250 million have access to glasses. Understanding the optics of myopia correction helps eye-care workers explain to patients why their lens power is prescribed as a negative dioptre (concave) value.</li>
+<li><strong>LASIK surgery</strong>: A laser ablates (removes) corneal tissue to reshape its curvature permanently. For myopia, the central cornea is flattened — reducing its converging power so distant objects focus correctly on the retina. Understanding accommodation explains why LASIK corrects distance vision but does not prevent presbyopia (the lens, not the cornea, loses flexibility with age).</li>
+<li><strong>Night driving difficulty</strong>: Rods do not detect colour, and the fovea (cone-rich centre) has few rods. In near-darkness, fixating directly on a dim star makes it disappear — peripheral rods are more sensitive than the central fovea. Airline pilots are taught to use off-centre vision at night for exactly this reason.</li>
+<li><strong>3D cinema</strong>: Each eye receives a slightly different angle of the same image (via polarised glasses). The brain combines these two offset images to reconstruct depth — a process called stereopsis that depends on the eye's spatial resolution at the fovea.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does the human eye see</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A 45-year-old teacher finds that she can read a whiteboard clearly at 5 m but cannot read a textbook held closer than 50 cm without discomfort. A student in the same class can read text at 15 cm comfortably.</p>
+<p>Using the terms ciliary muscle, suspensory ligaments, lens curvature, and near point: explain why the teacher has difficulty reading close text but not the distant board. What type of defect is this, and what type of corrective lens would help? Why would LASIK surgery on her cornea not solve this problem?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does the human eye form a clear image on the retina?</p>
+<ul>
+<li>a. The retina emits signals that travel outward and reflect back from objects to form images</li>
+<li>b. The pupil focuses light by expanding and contracting to bend rays onto the cornea</li>
+<li>c. The lens changes shape to focus light onto the retina, a process called accommodation</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding accommodation and refraction more useful than just knowing eyes see?</p>
+<ul>
+<li>a. Because accommodation is only relevant for children and does not apply to adults</li>
+<li>b. The mechanism explains short-sightedness, long-sightedness and how spectacles correct them</li>
+<li>c. Because the eye's mechanism is identical to a camera and no extra explanation is needed</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to vision if the eye's lens became too stiff to change shape?</p>
+<ul>
+<li>a. Vision would improve because a rigid lens provides a more stable focus</li>
+<li>b. Vision would be unaffected because the cornea alone handles all focusing</li>
+<li>c. The eye could not focus at different distances, causing blurred near or far vision</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The human eye can detect a single photon under ideal dark-adapted conditions — a sensitivity that exceeds most commercial light sensors. Yet in bright sunlight, pupils contract to about 2 mm diameter to protect the retina from saturation. The pupil adjustment (mediated by the iris muscles) changes the light entering the eye by a factor of up to 16×, but the retina's sensitivity adjusts by a further factor of 100,000× through chemical changes in the rod pigment (rhodopsin). This is why, after walking from bright sunlight into a dark cinema, you are effectively blind for a minute — your rhodopsin was bleached by the sunlight and needs time to regenerate.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>The human eye focuses by changing the curvature of its lens through ciliary muscle contraction (accommodation); when the lens becomes too stiff to change shape — as in presbyopia — the eye can no longer adjust focal length and close objects appear blurred, which is why understanding this mechanism directly explains short-sightedness, long-sightedness, and the need for corrective lenses.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 27 of 30</footer>
+</div>
+</body>
+</html>

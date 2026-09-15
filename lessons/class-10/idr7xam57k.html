@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 07 — How can corrosion be prevented? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 07</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can corrosion be prevented?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how galvanisation protects iron using sacrificial protection, describe why zinc continues to protect iron even after the coating is scratched, and distinguish between barrier methods (paint, oil) and electrochemical methods (galvanisation, cathodic protection).</p>
+</div><h2>1. The mystery</h2>
+<p>Railway tracks in India are made of steel — an iron alloy. They sit outdoors, exposed to monsoon rains, humidity, and oxygen for decades. Yet they do not crumble to rust while bridges and highway barriers do require repainting every few years. The difference comes down to how the steel is protected. Some protection methods merely cover the iron surface. Others do something far more clever: they turn the chemistry of corrosion against itself, making a different metal corrode instead of the iron. How does that work?</p>
+<h2>2. The science behind it</h2>
+<p>Corrosion prevention strategies fall into two categories: <strong>barrier methods</strong> (physically blocking oxygen and water from reaching the iron surface) and <strong>electrochemical methods</strong> (manipulating the anodic and cathodic reactions so that iron is never the metal being oxidised).</p>
+<p><strong>Barrier methods.</strong></p>
+<p><em>Painting and oiling.</em> A coat of paint, lacquer, or oil on iron blocks the electrolyte film that the corrosion cell requires. The electrochemical cell cannot operate without its electrolyte. This is why oiling iron tools before storage prevents rust. The limitation: once the barrier is scratched or chipped, bare iron is exposed and corrosion begins immediately at that spot.</p>
+<p><em>Electroplating.</em> Iron can be coated with chromium (decorative taps, car trims) or tin (tin cans for food packaging). Chromium forms a Cr₂O₃ passivation layer that self-repairs; tin simply acts as a barrier. However, tin is below iron in the reactivity series. If the tin coating on a food can is scratched and both tin and iron are exposed to the electrolyte inside, the iron becomes the anode — it corrodes faster than uncoated iron would. This is why damaged tin cans corrode quickly from the inside.</p>
+<p><strong>Electrochemical method 1 — Galvanisation (sacrificial protection).</strong></p>
+<p>Galvanisation is the process of coating iron or steel with a thin layer of zinc, typically by dipping the iron into molten zinc (hot-dip galvanisation) or by electrodeposition. Corrugated iron sheets on Indian rooftops and chain-link fencing are almost always galvanised.</p>
+<p>Zinc is higher in the reactivity series than iron. When both zinc and iron are in contact in the presence of an electrolyte, zinc has a greater tendency to lose electrons. Zinc therefore acts as the anode and iron acts as the cathode in any corrosion cell that forms. Iron receives electrons rather than losing them — it cannot be oxidised and cannot rust.</p>
+<p>The equation at the zinc anode: Zn → Zn²⁺ + 2e⁻</p>
+<p>The electrons flow to the iron, which remains protected as the cathode.</p>
+<p><strong>The critical property: the scratch test.</strong> Suppose you scratch a galvanised sheet deeply, exposing the bare iron. With a tin coating, exposed iron would become the anode and rust quickly. With a zinc coating, the surrounding zinc still preferentially oxidises. Even though the iron surface is physically exposed, zinc continues to corrode in place of iron until all the zinc in the vicinity is consumed. This is electrochemical protection, not merely physical covering.</p>
+<p><strong>Electrochemical method 2 — Cathodic protection.</strong></p>
+<p>Large iron structures that cannot easily be coated — underground oil pipelines, ship hulls, the iron framework of concrete bridge pillars — are protected by connecting them electrically to a block of a more reactive metal such as magnesium or zinc. The reactive metal (called a <strong>sacrificial anode</strong>) corrodes; the iron structure is forced to act as a cathode and cannot corrode. The sacrificial anode is replaced periodically when it is consumed.</p>
+<p>Indian Oil Corporation uses magnesium sacrificial anodes on buried petroleum pipelines across the country. Ships in Mumbai Harbour use zinc sacrificial anodes bolted to their hulls below the waterline.</p>
+<p><strong>Passivation — aluminium's self-protection.</strong></p>
+<p>Aluminium immediately forms Al₂O₃ when exposed to air. This thin oxide layer is dense, adherent, and impermeable — it does not flake off the way rust does. The same principle is used deliberately in <strong>anodisation</strong>: an aluminium object is made the anode in an electrolytic cell, thickening its oxide layer intentionally. Anodised aluminium is used in window frames and cookware across India because it resists corrosion without any additional coating.</p>
+<h2>3. Build the mental model</h2>
+<p>Three categories of protection and their logic:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>How it works</th>
+<th>Weakness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paint / oil</td>
+<td>Blocks electrolyte (barrier)</td>
+<td>Fails when scratched</td>
+</tr>
+<tr>
+<td>Tin plating</td>
+<td>Barrier only; tin below iron in reactivity</td>
+<td>Scratch exposes iron as anode — corrodes fast</td>
+</tr>
+<tr>
+<td>Galvanisation (zinc)</td>
+<td>Zinc above iron; corrodes sacrificially; protects even when scratched</td>
+<td>Zinc eventually consumed</td>
+</tr>
+<tr>
+<td>Cathodic protection</td>
+<td>Sacrificial anode (Mg/Zn) forces iron to be cathode</td>
+<td>Anode must be replaced</td>
+</tr>
+<tr>
+<td>Passivation (Al, Cr)</td>
+<td>Impermeable oxide layer self-seals surface</td>
+<td>Only works for certain metals</td>
+</tr>
+</tbody>
+</table>
+<p>Key principle: <strong>the more reactive metal always corrodes preferentially.</strong> Knowing where each metal sits in the reactivity series tells you immediately which metal will be the anode (corrod) and which will be the cathode (protected).</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows two side-by-side panels:</p>
+<ul>
+<li><strong>Panel A (bare iron, scratched tin coating):</strong> Tin and iron both exposed to a water droplet. Arrow labelled "Fe → Fe²⁺ + 2e⁻" at the iron surface (anode). Rust forming at the scratch. Caption: "Tin is below iron in reactivity — iron corrodes at the scratch."</li>
+<li><strong>Panel B (galvanised iron, scratched):</strong> Zinc and iron both exposed to a water droplet. Arrow labelled "Zn → Zn²⁺ + 2e⁻" at the zinc surface (anode). Iron surface labelled "Cathode — no rusting." Caption: "Zinc is above iron in reactivity — zinc corrodes, iron stays safe."</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_07.svg" alt="Diagram for How can corrosion be prevented?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Galvanised iron roofing sheets (GI sheets):</strong> The corrugated sheets on rooftops across rural and urban India are hot-dip galvanised steel. Even after years of monsoon rain, the zinc coating corrodes slowly, protecting the steel beneath for 20–30 years.</li>
+<li><strong>Railway tracks:</strong> Major railway lines in India are made of high-carbon steel without zinc coating; instead, they are kept rust-free by the constant mechanical abrasion of train wheels (which removes any surface oxide) and periodic oiling at joints. The heavy cross-section also means a small amount of surface rust does not compromise structural integrity.</li>
+<li><strong>Ship hulls at Mumbai Port:</strong> Zinc and aluminium sacrificial anodes are bolted to the underwater hull. Divers inspect and replace them during dry-dock maintenance.</li>
+<li><strong>Chromium-plated taps:</strong> Chromium forms a thin Cr₂O₃ passivation layer that self-heals when scratched in air — the exposed chromium immediately oxidises to reform the protective layer. This is why chromium-plated taps look shiny for years without rusting.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how can corrosion be prevented</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A rooftop steel water tank is painted outside but not inside, where water contacts iron continuously. An engineer proposes: (A) epoxy coating on the interior, or (B) a magnesium block attached to the inside wall.</p>
+<p>Explain which solution keeps protecting iron when a small crack exposes bare metal. Use the electrochemical mechanism — what is the anode in each case, and what happens to the iron surface? Then predict: if magnesium is used, what happens to the block over five years and what periodic maintenance is required?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which method prevents corrosion by coating iron with a sacrificial metal?</p>
+<ul>
+<li>a. Anodisation coats iron with copper to create a decorative barrier</li>
+<li>b. Electroplating coats iron with carbon to block all chemical reactions</li>
+<li>c. Galvanisation coats iron with zinc, which corrodes preferentially instead</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the protective mechanism more important than just listing prevention methods?</p>
+<ul>
+<li>a. The mechanism reveals why some coatings fail over time while others succeed</li>
+<li>b. Because prevention methods never work and understanding explains why</li>
+<li>c. Because all prevention methods use identical chemical principles anyway</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen if a zinc coating on galvanised steel got scratched deeply?</p>
+<ul>
+<li>a. The iron would rust immediately because scratching removes all protection</li>
+<li>b. The iron would become more resistant because scratching hardens the surface</li>
+<li>c. Zinc would still corrode preferentially, protecting the exposed iron nearby</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The Statue of Liberty in New York is copper — and it turned green not because of rust but because of <strong>patination</strong>: copper reacts with oxygen, water, and carbon dioxide to form a green-blue layer of copper carbonate (Cu₂(CO₃)(OH)₂). Unlike iron rust, this patina is dense, adherent, and actually protective — it prevents further corrosion of the copper beneath. The same chemistry happens to the copper roofing on old Indian temples; the green layer is not decay but armour. This is exactly what passivation is: the metal's first corrosion product sealing itself from further attack.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Galvanisation protects iron by coating it with zinc, which is higher in the reactivity series and therefore corrodes preferentially as the anode — and crucially, zinc continues this sacrificial protection even after the coating is scratched, because electrochemical protection does not require a continuous physical barrier.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

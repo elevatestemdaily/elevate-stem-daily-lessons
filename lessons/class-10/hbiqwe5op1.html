@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 24 — How does an electric motor work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 24</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does an electric motor work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why a current-carrying coil rotates inside a magnetic field, name the role of the commutator, state the formula F = BIL, and predict what happens when the magnetic field strength is increased.</p>
+</div><h2>1. The mystery</h2>
+<p>Inside every electric fan, washing machine, and metro train is a device that converts electrical energy into mechanical rotation. No burning fuel, no moving pistons — just a coil of wire, a magnet, and electric current. How does a wire carrying current manage to spin a shaft and move a machine weighing hundreds of kilograms?</p>
+<h2>2. The science behind it</h2>
+<p>The key is the <strong>Lorentz force</strong>: a current-carrying conductor placed inside a magnetic field experiences a mechanical force. The magnitude of this force is given by:</p>
+<p><strong>F = BIL</strong></p>
+<p>where <strong>B</strong> is the magnetic field strength (in tesla), <strong>I</strong> is the current (in amperes), and <strong>L</strong> is the length of the conductor inside the field (in metres). Double the current and the force doubles. Double the field strength and the force doubles again. This is not a curiosity — it is the entire engine of the modern world.</p>
+<p><strong>Fleming's left-hand rule</strong> gives the direction: hold the left hand with the forefinger pointing in the direction of the magnetic field (N to S), the middle finger pointing in the direction of conventional current, and the thumb points in the direction of the force on the conductor.</p>
+<p><strong>The DC motor — named parts and how they interact</strong></p>
+<p>A simple DC motor has four main components:</p>
+<ol>
+<li>
+<p><strong>Armature coil</strong> — a rectangular loop of conducting wire wound on an iron core. When current flows through it, the two sides of the coil that lie inside the magnetic field each experience a force via F = BIL. Because the current flows in opposite directions in the two sides, the forces on them are opposite in direction (one pushes up, one pushes down). This creates a <strong>torque</strong> that rotates the coil.</p>
+</li>
+<li>
+<p><strong>Permanent magnets (or field magnets)</strong> — provide the external magnetic field B in which the coil sits.</p>
+</li>
+<li>
+<p><strong>Commutator</strong> — a split metal ring attached to the rotating coil. This is the clever part. Without it, once the coil rotates 180° the current direction in each side would reverse relative to the field, and the torque would reverse — the coil would just oscillate back and forth. The commutator swaps the electrical connections every half turn so that the force on each side always points in the same rotational direction. The coil therefore keeps spinning continuously.</p>
+</li>
+<li>
+<p><strong>Brushes</strong> — stationary carbon contacts that press against the commutator and carry current from the external circuit into the rotating coil.</p>
+</li>
+</ol>
+<p><strong>Back-EMF:</strong> As the motor spins, the rotating coil cuts through magnetic field lines and by Faraday's law generates its own EMF in the opposite direction to the supply voltage. This <strong>back-EMF</strong> increases with speed and limits how fast the motor accelerates. At top speed, back-EMF nearly equals supply voltage and current drops to just enough to overcome friction.</p>
+<p><strong>AC motors</strong> work on a different principle: the alternating supply current itself reverses at 50 Hz (in India), so no commutator is needed — the field itself rotates (induction motor principle used in industrial fans, pumps, and trains).</p>
+<p><strong>Efficiency and torque:</strong> Motors are typically 85–95% efficient. The torque produced (τ = BILAN, where N is number of turns and A is coil area) can be increased by using a stronger magnet, more turns, larger coil area, or higher current. Engineers choose these parameters based on the required torque and speed for each application.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the motor as a three-step force chain:</p>
+<ul>
+<li><strong>Electric current (I)</strong> flows through the coil inside field <strong>B</strong></li>
+<li><strong>Lorentz force F = BIL</strong> acts on each side of the coil in opposite directions → torque is produced</li>
+<li><strong>Commutator</strong> ensures torque always points the same way → continuous rotation</li>
+</ul>
+<p>Remove any one element and the motor stops: no current → no force; no magnetic field → no force; no commutator (in a DC motor) → oscillation, not rotation.</p>
+<p>Key quantities:
+- Stronger B → larger F → faster rotation / higher torque
+- More turns N → more total force → higher torque
+- Higher current → larger F (but also more heat via P = I²R)</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a rectangular coil between two magnet poles (N and S). Arrows on the two vertical sides of the coil show the current direction. Force arrows (using Fleming's left-hand rule) show one side pushed up and the other pushed down, creating clockwise torque. The commutator is shown as a split ring at the bottom with two brushes pressing against it. A label on the commutator reads "reverses current every half-turn to sustain rotation."</p>
+<figure><img src="../../illustrations/class-10/day_24.svg" alt="Diagram for How does an electric motor work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Electric motors are everywhere in India:</p>
+<ul>
+<li><strong>Ceiling fans</strong>: a single-phase AC induction motor — no commutator. The capacitor creates a phase difference that makes the field appear to rotate, dragging the rotor with it.</li>
+<li><strong>Electric rickshaws (e-rickshaws)</strong>: DC motors rated 850–1200 W powered by lead-acid or lithium batteries. Torque is controlled by varying the current via a controller.</li>
+<li><strong>Vande Bharat Express</strong>: uses three-phase AC traction motors — multiple coils around the circumference produce smooth, high torque without a commutator.</li>
+<li><strong>Phone vibration motor</strong>: a tiny off-centre mass on a DC motor shaft — the unbalanced rotation produces vibration.</li>
+</ul>
+<p>Understanding F = BIL lets engineers precisely calculate how much current is needed for a motor to lift a specific load, or how many turns to wind to achieve a target torque without overheating.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does an electric motor work</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A DC motor is running at full speed when the supply voltage is suddenly halved. Use the relationship between back-EMF, supply voltage, and current to predict what happens to the motor's speed and current in the first few seconds after the change.</p>
+<p><strong>Hint:</strong> At full speed, back-EMF ≈ supply voltage and current is low. When supply voltage drops suddenly, how does the balance between back-EMF and supply voltage change? Does the motor slow down or speed up first? What happens to current and therefore force during that transition?</p>
+<p>Write a step-by-step prediction before looking up the answer.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the core principle that makes an electric motor rotate?</p>
+<ul>
+<li>a. An electric motor rotates because alternating current creates a spinning voltage</li>
+<li>b. A current-carrying conductor in a magnetic field experiences a force, causing rotation</li>
+<li>c. The motor rotates because electrical charge accumulates on one side of the coil</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the force on a current-carrying conductor more useful than just knowing motors turn?</p>
+<ul>
+<li>a. Because motors are now obsolete and have been replaced by digital actuators</li>
+<li>b. The mechanism explains motor speed control, direction reversal and torque production</li>
+<li>c. Because the principle only applies to toy motors, not industrial electric motors</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to a motor's speed if the strength of the magnetic field were increased?</p>
+<ul>
+<li>a. Speed would decrease because a stronger field creates more opposition to rotation</li>
+<li>b. Speed would increase because a stronger field exerts a greater force on the coil</li>
+<li>c. Speed would be unaffected because only voltage determines how fast a motor turns</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>When you plug in an electric kettle and a motor simultaneously, the kettle (a resistor) simply converts electricity to heat — wasteful if unused. The motor, by contrast, develops back-EMF as it speeds up, which automatically reduces the current it draws. A motor running at full speed actually draws far less current than the same motor at the moment it starts from rest. This is why heavy motors need a "starter" circuit to limit the huge starting current — without one, the initial surge can trip a fuse or damage the winding insulation.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>An electric motor rotates because the Lorentz force F = BIL acts on a current-carrying coil inside a magnetic field, and the commutator reverses current every half-turn to keep the torque pointing in the same direction — a stronger magnetic field exerts a greater force, producing faster rotation and higher torque.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 24 of 30</footer>
+</div>
+</body>
+</html>

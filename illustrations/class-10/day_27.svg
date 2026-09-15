@@ -1,26 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does the human eye see?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 27</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Does the Human Eye See?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Cornea, lens, retina, accommodation, defects and correction — Day 27</text>
+
+<!-- LEFT: Eye structure -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Eye Anatomy</text>
+
+<rect x="30" y="104" width="280" height="130" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Key Structures</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Cornea: 70% of refractive power; fixed</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">Iris + pupil: aperture control (light regulation)</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#333">Crystalline lens: adjustable (accommodation)</text>
+<text x="40" y="202" font-family="Arial" font-size="14" fill="#555">Retina: rods (low light) + cones (colour)</text>
+<text x="40" y="218" font-family="Arial" font-size="14" fill="#555">Fovea: 6 million cones; sharpest vision (0°)</text>
+
+<rect x="30" y="244" width="280" height="88" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="262" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Accommodation</text>
+<text x="40" y="282" font-family="Arial" font-size="14" fill="#333">Ciliary muscles relax: lens flattens (far objects)</text>
+<text x="40" y="302" font-family="Arial" font-size="14" fill="#333">Ciliary muscles contract: lens bulges (near)</text>
+<text x="40" y="320" font-family="Arial" font-size="14" fill="#555">Near point: ~25 cm (young adult)</text>
+
+<rect x="30" y="342" width="280" height="80" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="170" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Blind Spot</text>
+<text x="40" y="380" font-family="Arial" font-size="14" fill="#333">Optic disc: no rods/cones (nerve exit)</text>
+<text x="40" y="400" font-family="Arial" font-size="14" fill="#555">Brain fills in: you never see the gap</text>
+<text x="40" y="416" font-family="Arial" font-size="14" fill="#555">Glaucoma: optic nerve damage</text>
+
+<rect x="30" y="432" width="280" height="50" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">Vitreous humor: gel fills eyeball (shape)</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">Aqueous humor: front; excess → glaucoma</text>
+
+<!-- CENTRE: Defects and correction -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Defects and Correction</text>
+
+<rect x="344" y="104" width="312" height="90" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Myopia (Short-sightedness)</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">Image falls in front of retina: eyeball too long</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#555">Cannot see distant objects clearly</text>
+<text x="354" y="178" font-family="Arial" font-size="14" fill="#555">Correction: diverging (concave) lens, −ve power</text>
+
+<rect x="344" y="204" width="312" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="222" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Hypermetropia (Long-sightedness)</text>
+<text x="354" y="242" font-family="Arial" font-size="14" fill="#333">Image falls behind retina: eyeball too short</text>
+<text x="354" y="262" font-family="Arial" font-size="14" fill="#555">Cannot see close objects clearly</text>
+<text x="354" y="278" font-family="Arial" font-size="14" fill="#555">Correction: converging (convex) lens, +ve power</text>
+
+<rect x="344" y="304" width="312" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="322" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Presbyopia and Astigmatism</text>
+<text x="354" y="342" font-family="Arial" font-size="14" fill="#333">Presbyopia: ageing lens stiffens (near focus lost)</text>
+<text x="354" y="362" font-family="Arial" font-size="14" fill="#555">Bifocal glasses: top for far; bottom for near</text>
+<text x="354" y="378" font-family="Arial" font-size="14" fill="#555">Astigmatism: uneven cornea → cylindrical lens</text>
+
+<rect x="344" y="394" width="312" height="88" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="412" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">LASIK Surgery</text>
+<text x="354" y="432" font-family="Arial" font-size="14" fill="#333">Excimer laser reshapes cornea curvature</text>
+<text x="354" y="452" font-family="Arial" font-size="14" fill="#555">Corrects myopia up to −10D permanently</text>
+<text x="354" y="468" font-family="Arial" font-size="14" fill="#555">India: 5 lakh LASIK procedures/year</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Eye Health</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Blindness Burden</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 4.95 million blind people (2nd globally)</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">66% preventable (cataract, refractive error)</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">NPCB: National programme for blindness control</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Cataract: #1 Cause of Blindness</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Lens protein clumps → opaque lens</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 6.8 million cataract surgeries/year</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Aravind Eye Hospitals: 400,000+ surgeries/yr</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Diabetic Retinopathy</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Blood vessel damage in retina: diabetics</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 2.5 million at risk (101M diabetics)</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">AI screening: Google + AIIMS collaboration</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Sankara Nethralaya + Aravind</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">World's largest eye care organisations</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Aravind: 50% patients treated free of charge</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cross-subsidy: inspires global healthcare</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Cornea + lens focus on retina. Myopia: concave lens (−D). Hypermetropia: convex lens (+D).</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India: 4.95M blind; 66% preventable. Aravind: 400,000+ free surgeries/yr. AI retinopathy screening.</text>
 </svg>

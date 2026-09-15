@@ -1,26 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How soap actually removes dirt</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 10</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Soap Actually Removes Dirt</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Micelles, hydrophilic/hydrophobic chemistry, saponification — Day 10</text>
+
+<!-- LEFT: Soap structure -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Soap Molecule Structure</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="white" stroke="#0284c7" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Amphiphilic Molecule</text>
+<!-- Soap molecule diagram -->
+<rect x="50" y="130" width="30" height="52" rx="3" fill="#3b82f6"/>
+<text x="65" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Head</text>
+<rect x="82" y="138" width="180" height="36" rx="3" fill="#94a3b8"/>
+<text x="172" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Tail (long carbon chain)</text>
+<text x="65" y="194" text-anchor="middle" font-family="Arial" font-size="14" fill="#3b82f6">Hydrophilic</text>
+<text x="172" y="194" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Hydrophobic</text>
+<text x="40" y="200" font-family="Arial" font-size="14" fill="#555">(loves water)</text>
+
+<rect x="30" y="214" width="280" height="96" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">How the Micelle Works</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">Tails surround grease/oil (like it)</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#333">Heads face outward (into water)</text>
+<text x="40" y="292" font-family="Arial" font-size="14" fill="#555">Micelle traps grease, water-soluble</text>
+<text x="40" y="308" font-family="Arial" font-size="14" fill="#555">sphere → rinsed away by water</text>
+
+<rect x="30" y="320" width="280" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="338" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Saponification</text>
+<text x="40" y="358" font-family="Arial" font-size="14" fill="#333">Fat+NaOH → sodium soap + glycerol</text>
+<text x="40" y="378" font-family="Arial" font-size="14" fill="#555">Fat = glycerol ester of fatty acid</text>
+<text x="40" y="394" font-family="Arial" font-size="14" fill="#555">NaOH: hard soap; KOH: soft/liquid soap</text>
+
+<rect x="30" y="410" width="280" height="72" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="428" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Soap vs Detergent</text>
+<text x="40" y="448" font-family="Arial" font-size="14" fill="#333">Soap: natural, fails in hard water</text>
+<text x="40" y="466" font-family="Arial" font-size="14" fill="#555">Detergent: synthetic, works in hard water</text>
+<text x="40" y="480" font-family="Arial" font-size="14" fill="#555">Hard water: Ca²⁺ + soap → insoluble scum</text>
+
+<!-- CENTRE: Surface tension + cleaning -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Surface Chemistry</text>
+
+<rect x="344" y="104" width="312" height="108" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Surface Tension Reduction</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Water: high surface tension (H-bonds)</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Soap lowers surface tension (surfactant)</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">Water spreads further → wets fabric better</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">Soap molecules sit at water-air interface</text>
+
+<rect x="344" y="222" width="312" height="100" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="240" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Emulsification</text>
+<text x="354" y="262" font-family="Arial" font-size="14" fill="#333">Oil + water normally don't mix (immiscible)</text>
+<text x="354" y="282" font-family="Arial" font-size="14" fill="#333">Soap bridges both: stabilises oil droplets</text>
+<text x="354" y="302" font-family="Arial" font-size="14" fill="#555">Milk: natural emulsion (casein protein)</text>
+<text x="354" y="318" font-family="Arial" font-size="14" fill="#555">Mayonnaise: egg lecithin as emulsifier</text>
+
+<rect x="344" y="332" width="312" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="350" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Why Soap Kills Bacteria</text>
+<text x="354" y="372" font-family="Arial" font-size="14" fill="#333">Bacteria: lipid (fat) membrane</text>
+<text x="354" y="392" font-family="Arial" font-size="14" fill="#333">Soap tails insert into membrane → disrupt it</text>
+<text x="354" y="412" font-family="Arial" font-size="14" fill="#555">Bacteria and viruses (COVID!) destroyed</text>
+<text x="354" y="428" font-family="Arial" font-size="14" fill="#555">Mechanical scrubbing removes organisms</text>
+
+<rect x="344" y="442" width="312" height="40" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">pH of soap: 9–10 (slightly basic)</text>
+<text x="500" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Skin pH: 4.5–5.5; soaps alter skin microbiome</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Soap and Hygiene</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Traditional Indian Soaps</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Reetha (soapnut): saponin surfactants</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Shikakai: low pH (4.5) hair cleanser</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">1000+ years before synthetic surfactants</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Handwashing (COVID Impact)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">COVID-19: soap use tripled in India</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">FMCG sector: ₹25,000 crore soap market</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rural India: handwashing uptake rose 40%</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Swachh Bharat Mission</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">900 million Indians access to toilets</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Soap + water: 47% diarrhoea reduction</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">ODF villages: zero open defecation by 2024</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Coconut Oil Soap (Kerala)</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Coconut: high lauric → ideal for soap</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Kerala: artisanal + commercial soap makers</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Also: neem soap (antibacterial addition)</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Soap: hydrophilic head + hydrophobic tail. Micelle traps grease inside, rinsed away by water.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Saponification: fat + NaOH → soap + glycerol. India: ₹25,000 crore market; reetha used 1000+ years.</text>
 </svg>

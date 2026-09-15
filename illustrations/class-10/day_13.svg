@@ -1,26 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why are offspring similar but not identica</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 13</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why Are Offspring Similar but Not Identical?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Mendelian genetics, meiosis, independent assortment — Day 13</text>
+
+<!-- LEFT: Mendel's laws -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Mendel's Laws</text>
+
+<rect x="30" y="104" width="280" height="96" rx="4" fill="white" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Law of Segregation</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Each organism has 2 alleles per trait</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">Gametes receive only 1 allele (meiosis)</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">Fertilisation: offspring gets 1 from each parent</text>
+
+<rect x="30" y="210" width="280" height="96" rx="4" fill="white" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="228" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Law of Independent Assortment</text>
+<text x="40" y="248" font-family="Arial" font-size="14" fill="#333">Genes on different chromosomes: independent</text>
+<text x="40" y="268" font-family="Arial" font-size="14" fill="#555">2 traits: 9:3:3:1 ratio in F₂ generation</text>
+<text x="40" y="288" font-family="Arial" font-size="14" fill="#555">Linked genes (same chromosome): exception</text>
+
+<rect x="30" y="316" width="280" height="100" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="334" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Punnett Square (Tt × Tt)</text>
+<rect x="100" y="344" width="40" height="40" rx="2" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="120" y="369" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">TT</text>
+<rect x="142" y="344" width="40" height="40" rx="2" fill="#a7f3d0" stroke="#16a34a" stroke-width="1"/>
+<text x="162" y="369" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Tt</text>
+<rect x="100" y="386" width="40" height="40" rx="2" fill="#a7f3d0" stroke="#16a34a" stroke-width="1"/>
+<text x="120" y="411" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Tt</text>
+<rect x="142" y="386" width="40" height="40" rx="2" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="162" y="411" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">tt</text>
+<text x="40" y="444" font-family="Arial" font-size="14" fill="#333">3 tall : 1 short (phenotype)</text>
+<text x="40" y="462" font-family="Arial" font-size="14" fill="#555">TT + 2Tt + tt (genotype)</text>
+
+<rect x="30" y="426" width="280" height="56" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="40" y="446" font-family="Arial" font-size="14" fill="#333">Dominant: T expressed when 1 or 2 copies</text>
+<text x="40" y="466" font-family="Arial" font-size="14" fill="#333">Recessive: tt needed to show (short)</text>
+
+<!-- CENTRE: Sources of variation -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Sources of Genetic Variation</text>
+
+<rect x="344" y="104" width="312" height="100" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Crossing Over (Meiosis I)</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Homologous chromosomes exchange segments</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Creates new allele combinations (recombination)</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">Source of enormous genetic diversity</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">Frequency ∝ distance between genes</text>
+
+<rect x="344" y="214" width="312" height="80" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="232" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Independent Assortment</text>
+<text x="354" y="254" font-family="Arial" font-size="14" fill="#333">23 human pairs → 2²³ = 8M gamete types</text>
+<text x="354" y="274" font-family="Arial" font-size="14" fill="#555">Two parents: 64 trillion unique offspring possible</text>
+<text x="354" y="290" font-family="Arial" font-size="14" fill="#555">Explains why siblings differ (non-twins)</text>
+
+<rect x="344" y="304" width="312" height="80" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="322" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Random Mutation</text>
+<text x="354" y="344" font-family="Arial" font-size="14" fill="#333">DNA replication errors: rare (~1 in 10¹⁰)</text>
+<text x="354" y="364" font-family="Arial" font-size="14" fill="#555">Radiation, chemicals: increase mutation rate</text>
+<text x="354" y="380" font-family="Arial" font-size="14" fill="#555">Most neutral; some beneficial or harmful</text>
+
+<rect x="344" y="394" width="312" height="88" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="412" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Sexual vs Asexual Reproduction</text>
+<text x="354" y="434" font-family="Arial" font-size="14" fill="#333">Sexual: high variation (2 parents, meiosis)</text>
+<text x="354" y="454" font-family="Arial" font-size="14" fill="#555">Asexual (bacteria, Planaria): identical clones</text>
+<text x="354" y="470" font-family="Arial" font-size="14" fill="#555">Variation: raw material for natural selection</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Genetics</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Blood Groups in India</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ABO: autosomal co-dominant inheritance</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: B+ most common (38%)</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rh: dominant; Rh⁻ rare in India</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Plant Breeding (IARI)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">IARI Delhi: Mendelian breeding programs</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Dwarf wheat: Green Revolution (1960s)</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">MS Swaminathan: father of Green Revolution</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Genetic Diseases in India</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Beta-thalassaemia: 30 million carriers</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Recessive: both parents must be carriers</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Prenatal testing: chorionic villus sampling</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Bt Cotton (Monsanto/MAHYCO)</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bacillus thuringiensis gene: insect resistance</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India: 95% cotton is Bt (approved 2002)</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">90% reduction in pesticide use</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Mendel: 2 alleles per trait; gametes get 1 each. Tt × Tt → 3:1 ratio. Crossing over creates variation.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">23 pairs → 8M gamete types; crossing over → 64 trillion unique people. India: Bt cotton, thalassaemia screening.</text>
 </svg>

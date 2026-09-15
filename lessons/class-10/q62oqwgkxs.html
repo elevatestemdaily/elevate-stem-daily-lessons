@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 28 — Why can't we see atoms with ordinary microscopes? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 28</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can't we see atoms with ordinary microscopes?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain the diffraction limit of resolution, state why visible light cannot image atoms, describe how electron microscopes exploit de Broglie's wave-nature of electrons, and predict whether ultraviolet light would improve resolution compared to visible light.</p>
+</div><h2>1. The mystery</h2>
+<p>The best optical microscope in the world — regardless of how many lenses it uses or how powerful its objective — cannot show you a single atom. You can see bacteria, you can see viruses with difficulty, but an atom is simply invisible to light. Meanwhile, scientists can now photograph individual atoms routinely. They use instruments that have nothing to do with light. Why is there a hard wall on what light can show us — and how did physicists break through it?</p>
+<h2>2. The science behind it</h2>
+<p>The answer comes from a fundamental property of waves: <strong>diffraction</strong>.</p>
+<p><strong>The diffraction limit of resolution</strong></p>
+<p>When light passes through a small opening or around an obstacle, it bends and spreads — this is diffraction. If two object points are very close together, the diffracted light from each point overlaps and the two points cannot be distinguished as separate. The minimum separation that a microscope can resolve is set by the <strong>Abbe diffraction limit</strong>:</p>
+<p><strong>Resolution ≈ 0.5λ / NA</strong></p>
+<p>where <strong>λ</strong> is the wavelength of light used and <strong>NA</strong> is the numerical aperture of the objective lens (a measure of the lens's ability to gather light). For the best oil-immersion objectives, NA ≈ 1.4. Visible light has wavelengths ranging from about <strong>400 nm</strong> (violet) to <strong>700 nm</strong> (red). Plugging in:</p>
+<p>Resolution ≈ 0.5 × 400 nm / 1.4 ≈ <strong>~140 nm</strong> at best.</p>
+<p>This means the finest detail a light microscope can ever resolve is about 140–200 nm, even in principle. You cannot improve it by adding more lenses or higher magnification — magnifying beyond this limit just gives a bigger blur, not more detail. This is called <strong>empty magnification</strong>.</p>
+<p><strong>How big is an atom?</strong> A hydrogen atom has a diameter of about <strong>0.1 nm</strong> (= 1 Angstrom = 10⁻¹⁰ m). A typical atom is 0.1–0.5 nm in diameter. Compare: the wavelength of visible light (400–700 nm) is <strong>4000 to 7000 times larger</strong> than an atom. Light simply cannot "see" anything smaller than roughly half its own wavelength — diffraction spreads the image before it can form. Atoms are smaller than the diffraction limit by a factor of over 1000.</p>
+<p><strong>Ultraviolet microscopy — better, but not enough:</strong> Ultraviolet (UV) light has wavelengths from about 10 to 400 nm, shorter than visible light. A UV microscope using 200 nm light achieves a resolution of roughly 0.5 × 200 / 1.4 ≈ <strong>70 nm</strong> — better than visible light, but still 700 times larger than an atom. UV microscopy is used to image viruses (50–300 nm) and chromosome structure, but cannot reach atomic scale.</p>
+<p><strong>Electron microscopes — breaking the light barrier</strong></p>
+<p>In 1924, Louis de Broglie proposed that particles with momentum also behave as waves, with a <strong>de Broglie wavelength</strong>: λ = h/p, where h is Planck's constant (6.626 × 10⁻³⁴ J·s) and p = mv is the momentum. An electron accelerated through 100,000 volts acquires enough kinetic energy to give it a de Broglie wavelength of about <strong>0.004 nm</strong> — 100,000 times shorter than visible light. The theoretical resolution limit for such electrons is well below 0.1 nm, i.e., sub-atomic.</p>
+<p>The <strong>Transmission Electron Microscope (TEM)</strong> fires a beam of electrons through a very thin specimen. Electrons are scattered differently by different atoms. Magnetic coils act as lenses (since electrons are charged particles deflected by magnetic fields). The electron pattern is recorded on a fluorescent screen or digital detector. Modern TEMs achieve resolution of <strong>0.05 nm</strong>, well below atomic diameters. Researchers now routinely image individual atoms in crystal lattices using TEM.</p>
+<p>The <strong>Scanning Electron Microscope (SEM)</strong> scans a focused electron beam across the specimen surface and detects secondary electrons emitted from the surface. It produces detailed 3D-like surface images (resolution ~1–20 nm) — perfect for imaging bacteria, blood cells, and integrated circuit surfaces.</p>
+<p><strong>Scanning Tunnelling Microscope (STM) — feeling atoms one by one</strong></p>
+<p>Invented in 1981 by Binnig and Rohrer (Nobel Prize 1986), the STM uses no lenses at all. A sharp metal tip is brought so close to a conducting surface (within ~1 nm) that electrons tunnel quantum-mechanically across the gap. This tunnelling current is extremely sensitive to distance — a change of just 0.01 nm changes the current by a factor of ~10. By scanning the tip across the surface and keeping the tunnelling current constant (via piezoelectric feedback), the tip traces the exact shape of the surface, atom by atom. STM images have resolution below <strong>0.01 nm</strong> — imaging not just atoms but the electron clouds around them.</p>
+<p>In 1989, IBM scientists used an STM to spell "IBM" by individually repositioning 35 xenon atoms on a nickel surface — the first time human beings had deliberately moved individual atoms.</p>
+<h2>3. Build the mental model</h2>
+<p>Resolution is wavelength-limited:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Probe wavelength</th>
+<th>Best resolution</th>
+<th>What you can image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Optical microscope (visible)</td>
+<td>400–700 nm</td>
+<td>~200 nm</td>
+<td>Cells, large bacteria</td>
+</tr>
+<tr>
+<td>UV microscope</td>
+<td>200–400 nm</td>
+<td>~70 nm</td>
+<td>Viruses, chromosomes</td>
+</tr>
+<tr>
+<td>Electron microscope</td>
+<td>0.004–0.01 nm</td>
+<td>0.05–0.1 nm</td>
+<td>Individual atoms</td>
+</tr>
+<tr>
+<td>STM</td>
+<td>No wave used (tunnelling)</td>
+<td>&lt; 0.01 nm</td>
+<td>Electron clouds around atoms</td>
+</tr>
+</tbody>
+</table>
+<p>The rule: to image something, your probe must have a wavelength shorter than (or comparable to) the object's size.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a scale bar from 0.1 nm to 1000 nm with labelled objects: hydrogen atom (0.1 nm), DNA double helix width (2 nm), ribosome (25 nm), small virus (50 nm), large bacterium (1000 nm). Above the scale, colour bands show the resolution limit of each microscope type: visible light (resolves ≥ 200 nm), UV (resolves ≥ 70 nm), electron microscope (resolves ≥ 0.05 nm). An arrow labels atoms as below visible light's reach.</p>
+<figure><img src="../../illustrations/class-10/day_28.svg" alt="Diagram for Why can't we see atoms with ordinary microscopes?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Diagnosing viral diseases</strong>: The SARS-CoV-2 virus is about 100 nm in diameter — below the limit of visible light. Electron microscopes were essential for the first published images of the coronavirus in January 2020, which confirmed its shape and helped researchers design vaccines.</li>
+<li><strong>Semiconductor manufacturing</strong>: Microchip transistors in modern processors are smaller than 5 nm — far below visible light's resolution. Chip manufacturers use extreme ultraviolet (EUV) light at 13.5 nm wavelength to etch these patterns. This is why EUV lithography machines cost over ₹1,500 crore each.</li>
+<li><strong>Protein structure in medicine</strong>: Electron microscopy (specifically cryo-EM, which freezes proteins in ice) is now used to determine the 3D structure of protein molecules at near-atomic resolution, guiding drug design. The 2017 Nobel Prize in Chemistry was awarded for developing cryo-EM.</li>
+<li><strong>IISER and IIT research</strong>: Indian research institutes use TEM and SEM extensively to characterise nanomaterials for solar cells, batteries, and catalysts.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>why can't we see atoms with ordinary microscopes</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>The de Broglie wavelength of a particle is λ = h/mv, where h = 6.626 × 10⁻³⁴ J·s.</p>
+<p>A cricket ball has mass 0.156 kg and travels at 40 m/s. Calculate its de Broglie wavelength. Compare this to the diameter of an atom (~10⁻¹⁰ m). Why don't we observe wave behaviour (diffraction, interference) for a cricket ball?</p>
+<p>Now calculate the de Broglie wavelength of an electron (mass 9.11 × 10⁻³¹ kg) moving at 10% of the speed of light (3 × 10⁷ m/s). How does this compare to the size of an atom? This number shows exactly why electrons can resolve atoms.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Why do ordinary light microscopes fail to image individual atoms?</p>
+<ul>
+<li>a. Atoms are smaller than the wavelength of visible light, so light cannot resolve them</li>
+<li>b. Atoms are transparent to all light, so they cannot reflect any photons to the lens</li>
+<li>c. Ordinary lenses overheat at high magnification before atoms become visible</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the resolution limit of light microscopes more useful than just knowing they exist?</p>
+<ul>
+<li>a. Because all microscopes have exactly the same resolution limit regardless of type</li>
+<li>b. The mechanism explains why electron microscopes and STMs were developed to image atoms</li>
+<li>c. Because light microscopes are outdated and no longer used in any scientific laboratory</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to microscope resolution if you used ultraviolet light instead of visible light?</p>
+<ul>
+<li>a. Resolution would worsen because UV light has longer wavelength than visible light</li>
+<li>b. Resolution would improve because UV light has a shorter wavelength than visible light</li>
+<li>c. Resolution would be the same because wavelength has no effect on microscope quality</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>In 2013, IBM researchers published a photograph of a single pentacene molecule showing its internal bond structure — individual carbon-carbon bonds visible as bright lines connecting atoms. This was achieved using an atomic force microscope with a CO molecule on the tip, which senses forces at sub-angstrom distances. The image looks strikingly like the textbook structural formula you draw in chemistry — straight lines between atoms. Scientists had been drawing chemical bond diagrams for 150 years before they could finally photograph one.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Ordinary light microscopes cannot image atoms because a hydrogen atom (diameter ~0.1 nm) is over 1000 times smaller than the wavelength of visible light (~400–700 nm), and diffraction prevents resolving anything smaller than roughly half the probe wavelength; electron microscopes exploit the de Broglie wave nature of electrons (λ ~0.004 nm) to achieve atomic resolution, and STMs resolve individual atoms by measuring quantum tunnelling currents.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 28 of 30</footer>
+</div>
+</body>
+</html>

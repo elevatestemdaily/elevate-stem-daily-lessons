@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 22 — Why do we get fever? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 22</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do we get fever?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover why your body deliberately heats itself up when you're sick — and why fever is usually your immune system working, not failing.</p>
+</div><h2>1. The mystery</h2>
+<p>You have a cold. Your temperature goes from the normal 37°C to 39°C. You feel terrible. Your mother says "break the fever." But why does a healthy body make itself hotter when it is already fighting something? What is the point of feeling so awful?</p>
+<h2>2. The science behind it</h2>
+<p>Fever is a <strong>deliberate, controlled response</strong> orchestrated by your immune system — not an accident. Here is the sequence:</p>
+<ol>
+<li>
+<p><strong>Pathogen detected.</strong> When your immune cells (macrophages, monocytes) detect bacteria or viruses, they release signalling proteins called <strong>pyrogens</strong> (Greek: <em>pyr</em> = fire).</p>
+</li>
+<li>
+<p><strong>Hypothalamus resets the thermostat.</strong> Pyrogens travel to the <strong>hypothalamus</strong> — the part of the brain that controls body temperature. The hypothalamus raises the body's set-point from 37°C to, say, 39°C.</p>
+</li>
+<li>
+<p><strong>Body heats up.</strong> To reach the new set-point, you shiver (muscle contractions generate heat), blood vessels near the skin constrict (reduce heat loss), and you feel cold even though you are getting hotter.</p>
+</li>
+<li>
+<p><strong>Why fever helps:</strong></p>
+</li>
+<li>Many bacteria and viruses reproduce much more slowly above 38°C — higher temperature slows the enemy.</li>
+<li><strong>Immune cells (white blood cells) work faster</strong> — chemical reactions including antibody production speed up with temperature.</li>
+<li>
+<p>Proteins that viruses need (replication enzymes) are more likely to malfunction at elevated temperatures.</p>
+</li>
+<li>
+<p><strong>Fever breaks.</strong> Once the infection is cleared, the hypothalamus resets back to 37°C. The body now sweats heavily to cool down — which is why a "broken" fever soaks your clothes.</p>
+</li>
+</ol>
+<h2>3. Build the mental model</h2>
+<p>Imagine a city attacked by thieves (bacteria). The mayor (hypothalamus) turns up the city's heating — it's uncomfortable for residents but the thieves are cold-blooded (their enzymes work poorly in heat) and they slow down. Meanwhile, the police (white blood cells) run faster in the warm. The discomfort is the cost of making the city a difficult environment for the thieves.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-7/day_22.svg" alt="Diagram for Why do we get fever?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows the fever pathway in four steps: (1) macrophage detects pathogen → releases pyrogens; (2) pyrogens reach hypothalamus → set-point rises; (3) body responses (shivering, vasoconstriction); (4) outcome — bacteria slow, white blood cells faster. A graph shows bacterial growth rate vs temperature: bacteria grow fastest at 37°C, grow more slowly at 39°C, and enzyme denaturation begins above 41°C (danger zone for host).</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Safe fever range:</strong> Up to 38.9°C is generally beneficial and should not be suppressed with medication unless the person is very uncomfortable. Above 40°C begins to risk dehydration and seizures. Above 41°C, host enzymes also start to denature — this is the danger zone.</li>
+<li><strong>Febrile seizures in children:</strong> Young children's brains are more sensitive to rapid temperature changes — some children convulse during a sudden fever. This is not brain damage; it is a reflex, but it needs medical attention.</li>
+<li><strong>Paracetamol (acetaminophen):</strong> Blocks the pyrogen signal — it lowers the set-point back to 37°C, stopping shivering. It does not fight infection; it just makes you feel better. Overuse can mask a serious infection.</li>
+<li><strong>Hypothermia vs fever:</strong> Hypothermia (body temperature falling below 35°C) is also dangerous — immune cells slow down even faster than bacteria, and the body cannot fight anything. Cold exposure + infection is a dangerous combination.</li>
+<li><strong>COVID-19:</strong> One of the first symptoms doctors watch for is fever above 38°C, because it signals the immune system has detected the virus and begun responding.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Check your temperature with a digital thermometer now — you should be close to 37°C (37.2°C ± 0.5°C is normal). Note the time. Do 20 jumping jacks and measure again immediately. Does it rise? (It may rise slightly — exercise generates heat, but the hypothalamus should correct it quickly.) Check again 5 minutes after stopping exercise. This shows the hypothalamus actively maintaining the set-point through feedback control.</p>
+</div><h2>7. Think deeper</h2>
+<p>Some animals — fish, reptiles, frogs — are cold-blooded. When they get a bacterial infection, they behaviorally seek out warmer spots (basking in sunlight) to raise their own body temperature — a "behavioral fever." This suggests fever is an ancient immune strategy, predating warm-blooded animals by hundreds of millions of years. If you removed all the warm rocks from a lizard's enclosure while it was infected, what would you predict about its recovery compared to a lizard with access to warm spots?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main biological reason the body produces a fever when infected?</p>
+<ul>
+<li>A. Fever is caused by the body burning extra calories to produce antibodies, releasing heat as a by-product.</li>
+<li>B. White blood cells generate fever to signal the brain to stop all normal body functions temporarily.</li>
+<li>C. The immune system raises body temperature to slow the growth of pathogens and speed up immune cell activity.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the purpose of fever more useful than knowing that body temperature rises during illness?</p>
+<ul>
+<li>A. Fever is always harmful and has no useful purpose, so there is no beneficial mechanism.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Fever is caused only by environmental heat and has nothing to do with the immune system.</li>
+</ul>
+<h3>Q3</h3>
+<p>If a patient's fever became dangerously high (above 41°C), what would you predict about the risk to the body?</p>
+<ul>
+<li>A. An extremely high fever would kill all pathogens instantly, curing the infection permanently.</li>
+<li>B. An extremely high fever could damage brain cells and other tissues because proteins start to denature above safe temperatures.</li>
+<li>C. A very high fever would boost the immune response so strongly that the body heals in hours.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A doctor sees two patients with bacterial throat infections. Patient A has a fever of 39.2°C and feels miserable but is otherwise healthy. Patient B has a fever of 40.8°C and is becoming confused. The doctor considers giving paracetamol to both, one, or neither. Using what you know about fever's purpose and risks, advise the doctor with a clear rationale. What would you suggest — and why?</p>
+</div><h2>10. One surprising idea</h2>
+<p>Human body temperature of 37°C is not arbitrary. Scientists have calculated that at lower temperatures (say 35°C), dangerous fungi could infect us (most fungi cannot survive above 37°C). At higher temperatures (39°C constantly), we would need to eat so much food to generate that heat that it would be impractical. The 37°C set-point is precisely calibrated — warm enough to keep most fungal pathogens out, cool enough to be energetically affordable. Birds, with body temperatures of 40–42°C, have almost no fungal infections.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Fever is deliberate: pyrogens reset the hypothalamus set-point upward. Higher temperature slows bacteria and speeds up white blood cells. Up to 39°C it is helpful; above 41°C it becomes dangerous to host cells.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 22 of 30</footer>
+</div>
+</body>
+</html>

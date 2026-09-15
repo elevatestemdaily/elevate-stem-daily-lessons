@@ -1,26 +1,92 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do hormones control the body?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 17</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Do Hormones Control the Body?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Endocrine glands, feedback loops, insulin, thyroid — Day 17</text>
+
+<!-- LEFT: Endocrine system -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Endocrine Glands</text>
+
+<rect x="30" y="104" width="280" height="170" rx="4" fill="white" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Major Glands and Hormones</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Hypothalamus: controls pituitary (master)</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">Pituitary: GH, TSH, FSH, LH, ADH</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#333">Thyroid: T3/T4 (metabolism), Calcitonin (Ca²⁺)</text>
+<text x="40" y="202" font-family="Arial" font-size="14" fill="#555">Adrenal: Adrenaline (fight-or-flight), Cortisol</text>
+<text x="40" y="222" font-family="Arial" font-size="14" fill="#555">Pancreas: Insulin (↓ glucose), Glucagon (↑)</text>
+<text x="40" y="242" font-family="Arial" font-size="14" fill="#555">Gonads: Estrogen/Testosterone (development)</text>
+<text x="40" y="258" font-family="Arial" font-size="14" fill="#555">Pineal: Melatonin (sleep–wake cycle)</text>
+
+<rect x="30" y="284" width="280" height="80" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="302" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Hormones vs Nerves</text>
+<text x="40" y="322" font-family="Arial" font-size="14" fill="#333">Hormone: slow (seconds–hours), long-lasting</text>
+<text x="40" y="342" font-family="Arial" font-size="14" fill="#333">Nerve: fast (milliseconds), short-lived</text>
+<text x="40" y="358" font-family="Arial" font-size="14" fill="#555">Both work together (neuroendocrine system)</text>
+
+<rect x="30" y="374" width="280" height="78" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="392" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">How Hormones Work</text>
+<text x="40" y="412" font-family="Arial" font-size="14" fill="#333">Blood-borne chemical messengers</text>
+<text x="40" y="430" font-family="Arial" font-size="14" fill="#555">Lock-and-key: receptor binds only its hormone</text>
+<text x="40" y="446" font-family="Arial" font-size="14" fill="#555">Steroid: enters nucleus; peptide: surface rec.</text>
+
+<!-- CENTRE: Feedback loops -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Feedback Loops</text>
+
+<rect x="344" y="104" width="312" height="110" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Negative Feedback (Most Common)</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Effect opposes change: maintains homeostasis</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Blood glucose rises → pancreas releases insulin</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">Glucose falls → insulin stops; glucagon released</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">Thermostat analogy: detects + corrects deviation</text>
+
+<rect x="344" y="224" width="312" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="242" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Insulin-Glucagon Loop</text>
+<text x="354" y="264" font-family="Arial" font-size="14" fill="#333">After meal: blood glucose rises → β cells → insulin</text>
+<text x="354" y="284" font-family="Arial" font-size="14" fill="#333">Insulin: cells take glucose; liver stores glycogen</text>
+<text x="354" y="304" font-family="Arial" font-size="14" fill="#555">Fasting: glucose falls → α cells → glucagon</text>
+<text x="354" y="320" font-family="Arial" font-size="14" fill="#555">Glucagon: liver breaks glycogen → glucose</text>
+
+<rect x="344" y="324" width="312" height="88" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="342" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Thyroid Feedback Axis</text>
+<text x="354" y="362" font-family="Arial" font-size="14" fill="#333">Hypothalamus → TRH → Pituitary → TSH</text>
+<text x="354" y="382" font-family="Arial" font-size="14" fill="#333">TSH → Thyroid → T3/T4 (metabolism ↑)</text>
+<text x="354" y="402" font-family="Arial" font-size="14" fill="#555">High T3/T4 → suppresses TRH and TSH (neg. FB)</text>
+
+<rect x="344" y="422" width="312" height="60" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Positive feedback (rare): childbirth oxytocin surge</text>
+<text x="500" y="458" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Each contraction triggers more oxytocin → stronger</text>
+<text x="500" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">until baby is born (event ends the loop)</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Hormone Disorders</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Diabetes Epidemic</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">101 million diabetics in India (2023) — highest</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Type 2: insulin resistance (lifestyle linked)</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">South Asians: higher risk at lower BMI</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Thyroid in India</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">42 million thyroid patients (2nd largest global)</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Iodine deficiency → goitre (iodised salt fixed this)</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Himalayan belt: historically iodine-deficient</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Biocon Insulin</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Recombinant insulin at world scale</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Affordable insulin: 1/10 cost of imports</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Exports to 90+ countries</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">ICMR Research</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ICMR-INDIAB study: first national diabetes survey</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Revealed true scale: 101M diabetics (2023)</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">National Programme for NCD Control</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Insulin ↓ glucose; glucagon ↑ glucose. Negative feedback: deviation sensed → hormone corrects it.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India: 101 million diabetics (world's highest). Biocon makes affordable insulin; 42M thyroid patients.</text>
 </svg>

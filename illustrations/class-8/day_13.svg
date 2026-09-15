@@ -1,26 +1,112 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr13" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does a generator produce electricity?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 13</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does a generator produce electricity?</text>
+<text x="500" y="62" text-anchor="middle" font-family="Arial" font-size="17" fill="#555">Faraday's Law: rotating coil in magnetic field induces EMF — Day 13</text>
+
+<!-- ── LEFT: Generator structure ── -->
+<rect x="20" y="78" width="310" height="365" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="175" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">AC Generator</text>
+
+<!-- N magnet -->
+<rect x="30" y="108" width="65" height="230" rx="6" fill="#ef4444" stroke="#b91c1c" stroke-width="2"/>
+<text x="62" y="228" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">N</text>
+<!-- S magnet -->
+<rect x="235" y="108" width="65" height="230" rx="6" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2"/>
+<text x="267" y="228" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">S</text>
+
+<!-- Field lines -->
+<line x1="96" y1="185" x2="234" y2="185" stroke="#fca5a5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="96" y1="223" x2="234" y2="223" stroke="#fca5a5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="165" y="173" text-anchor="middle" font-family="Arial" font-size="14" fill="#ef4444">B  (N→S)</text>
+
+<!-- Rotating coil (orange outline) -->
+<rect x="126" y="118" width="80" height="210" rx="4" fill="none" stroke="#f97316" stroke-width="3"/>
+<!-- Spin arrow -->
+<path d="M166,112 Q192,96 192,116" fill="none" stroke="#c62828" stroke-width="2.5" marker-end="url(#arr13)"/>
+<text x="200" y="108" font-family="Arial" font-size="14" fill="#c62828" font-weight="700">Spin</text>
+
+<!-- Axle -->
+<line x1="166" y1="78" x2="166" y2="350" stroke="#78350f" stroke-width="3"/>
+<circle cx="166" cy="223" r="5" fill="#334155"/>
+
+<!-- Slip rings -->
+<ellipse cx="166" cy="330" rx="20" ry="7" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+<ellipse cx="166" cy="344" rx="20" ry="7" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+<text x="194" y="334" font-family="Arial" font-size="14" fill="#92400e">Slip rings</text>
+<text x="194" y="349" font-family="Arial" font-size="14" fill="#555">(AC output)</text>
+
+<!-- Input arrow (mechanical) -->
+<line x1="166" y1="385" x2="166" y2="358" stroke="#1f5f8b" stroke-width="2.5" marker-end="url(#arr13)"/>
+<text x="175" y="405" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Steam / water / wind</text>
+<text x="175" y="422" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">turbine spins the coil</text>
+<text x="175" y="438" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India grid: 3,000 rpm → 50 Hz</text>
+
+<!-- ── CENTRE: Waveform + Faraday ── -->
+<rect x="344" y="78" width="330" height="200" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="509" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Output EMF — AC Waveform</text>
+<!-- Axes -->
+<line x1="360" y1="195" x2="665" y2="195" stroke="#cbd5e1" stroke-width="1.5"/>
+<line x1="368" y1="100" x2="368" y2="260" stroke="#cbd5e1" stroke-width="1.5"/>
+<!-- Sine wave -->
+<path d="M368,195 Q393,142 418,195 Q443,248 468,195 Q493,142 518,195 Q543,248 568,195 Q593,142 618,195 Q643,248 660,195"
+      fill="none" stroke="#f97316" stroke-width="3"/>
+<text x="393" y="138" text-anchor="middle" font-family="Arial" font-size="14" fill="#f97316">max EMF</text>
+<text x="443" y="264" text-anchor="middle" font-family="Arial" font-size="14" fill="#f97316">min EMF</text>
+<text x="670" y="198" text-anchor="end" font-family="Arial" font-size="14" fill="#555">t →</text>
+<text x="418" y="192" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">0°</text>
+<text x="468" y="192" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">180°</text>
+<text x="518" y="192" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">360°</text>
+
+<!-- Faraday box -->
+<rect x="344" y="290" width="330" height="100" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="509" y="312" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#7c3aed">Faraday's Law</text>
+<text x="509" y="342" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#4c1d95">EMF = N × ΔΦ/Δt</text>
+<text x="509" y="368" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">N = turns   ΔΦ/Δt = rate of flux change</text>
+<text x="509" y="385" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">More turns / faster spin / stronger magnet → higher EMF</text>
+
+<!-- Factors box -->
+<rect x="344" y="403" width="330" height="90" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+<text x="509" y="422" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#065f46">Increase EMF by:</text>
+<text x="354" y="441" font-family="Arial" font-size="14" fill="#333">↑ More coil turns (N)   ↑ Stronger magnet</text>
+<text x="354" y="460" font-family="Arial" font-size="14" fill="#333">↑ Faster rotation        ↑ Larger coil area</text>
+<text x="354" y="479" font-family="Arial" font-size="14" fill="#555">India 50 Hz = 230 V (RMS) at 3,000 rpm</text>
+
+<!-- ── RIGHT: Power stations ── -->
+<rect x="688" y="78" width="295" height="375" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="835" y="100" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India's Generators</text>
+
+<rect x="698" y="110" width="275" height="72" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="835" y="130" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Bhakra Nangal Dam</text>
+<text x="835" y="150" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Punjab / Himachal — 10 × 120 MW</text>
+<text x="835" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Water → turbine → 3,000 rpm → 50 Hz</text>
+<text x="835" y="179" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Rotor weighs hundreds of tonnes</text>
+
+<rect x="698" y="190" width="275" height="72" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="835" y="210" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Tata Power Trombay, Mumbai</text>
+<text x="835" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1,580 MW thermal plant</text>
+<text x="835" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Coal → steam → turbine → generator</text>
+<text x="835" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Building the size of a football field</text>
+
+<rect x="698" y="270" width="275" height="60" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="835" y="290" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Suzlon Wind Turbines</text>
+<text x="835" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Tamil Nadu / Rajasthan</text>
+<text x="835" y="326" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Blades → gearbox → 1,500 rpm generator</text>
+
+<rect x="698" y="338" width="275" height="60" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="835" y="358" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Bicycle dynamo</text>
+<text x="835" y="378" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Wheel spins magnet beside coil</text>
+<text x="835" y="394" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">→ AC current → LED headlight</text>
+
+<rect x="698" y="406" width="275" height="45" rx="4" fill="#fce4ec" stroke="#c62828" stroke-width="1"/>
+<text x="835" y="424" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#c62828">Grid frequency = exactly 50 Hz</text>
+<text x="835" y="442" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">All generators synchronised — POSOCO monitors</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="537" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="white">Faraday: rotating coil changes flux → induces EMF. More turns / speed / field = higher voltage. India: 50 Hz = 3,000 rpm.</text>
 </svg>

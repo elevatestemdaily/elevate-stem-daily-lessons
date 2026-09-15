@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 04 — Why does antacid work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 04</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does antacid work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to write the neutralisation equation for a common antacid, explain why the correct dose matters, and predict what happens to stomach pH and digestion if too much antacid is taken.</p>
+</div><h2>1. The mystery</h2>
+<p>After a heavy meal — perhaps too much biryani or fried puri — a burning sensation rises from your stomach into your chest. You reach for a Digene tablet or Eno sachet, dissolve it in water, drink it, and within minutes the burning is gone. How does a small tablet neutralise the powerful hydrochloric acid in your stomach? And why does the packet warn you not to take too much?</p>
+<h2>2. The science behind it</h2>
+<p>Your stomach produces <strong>hydrochloric acid (HCl)</strong> — secreted by specialised <strong>parietal cells</strong> (also called oxyntic cells) in the stomach lining. Normal gastric pH sits between 1.5 and 3.5. This acid is essential: it activates the enzyme <strong>pepsinogen</strong> into its active form <strong>pepsin</strong>, which digests proteins; it kills most bacteria you swallow with food; and it creates the right environment for other digestive enzymes.</p>
+<p><strong>Why does excess acid cause burning?</strong> When too much HCl is produced — triggered by spicy food, caffeine, stress, or irregular meal times — or when the lower oesophageal sphincter (the valve between the oesophagus and stomach) doesn't close properly, acid enters the oesophagus. The oesophageal lining has no mucus protection against acid, so HCl begins to irritate and inflame the tissue — producing the sensation called <strong>acid reflux</strong> or heartburn.</p>
+<p><strong>How do antacids work?</strong> Antacids are <strong>weak bases</strong> — substances that react with HCl through a neutralisation reaction, consuming excess H⁺ ions and raising the stomach pH. The key chemical agents in common Indian antacids are:</p>
+<p><strong>1. Magnesium hydroxide — Mg(OH)₂</strong> (present in Milk of Magnesia, Digene):
+<strong>Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O</strong>
+Magnesium hydroxide is a weak, slow-acting base. It raises pH gently and also acts as a mild laxative because Mg²⁺ ions draw water into the intestine.</p>
+<p><strong>2. Aluminium hydroxide — Al(OH)₃</strong> (present in Gelusil, Digene):
+<strong>Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</strong>
+Aluminium hydroxide is slower-acting, provides longer relief, and tends to cause constipation — which is why it is often combined with magnesium hydroxide, whose laxative effect counterbalances this.</p>
+<p><strong>3. Sodium bicarbonate — NaHCO₃</strong> (present in Eno, plain baking soda):
+<strong>NaHCO₃ + HCl → NaCl + H₂O + CO₂↑</strong>
+Sodium bicarbonate is the fastest-acting antacid. It reacts immediately, producing CO₂ gas — which is why you burp after taking Eno. The CO₂ production also means the relief is shorter-lived, as a burst of gas carries some acid upward and the reaction is less sustained.</p>
+<p><strong>4. Calcium carbonate — CaCO₃</strong> (present in Tums, some Digene formulations):
+<strong>CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</strong>
+Calcium carbonate also reacts quickly and provides calcium — but overuse can cause the stomach to rebound with even more acid production (acid rebound effect).</p>
+<p>In every case, the mechanism is the same: <strong>H⁺ (from HCl) + OH⁻ or basic ion (from antacid) → water + salt</strong>. The antacid base consumes H⁺ ions, reducing their concentration and raising pH. As pH rises from ~2 toward ~4–5, the burning sensation disappears — because even pH 4 is much less damaging to the oesophageal tissue than pH 2.</p>
+<p><strong>Why does dose matter?</strong> The goal is to raise stomach pH from ~2 to approximately 3.5–5 — enough to relieve symptoms while still allowing digestion to continue. Pepsin works between pH 1.5 and 3.5; a slightly higher pH still permits some protein digestion. If too much antacid is taken, pH rises above 7 — the stomach becomes <strong>alkaline</strong>.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the stomach as a container with a target pH range:</p>
+<ul>
+<li><strong>Too acidic (pH &lt; 2):</strong> Acid reflux, tissue damage</li>
+<li><strong>Normal digestion (pH 1.5–3.5):</strong> Pepsin active, bacteria killed, digestion proceeding</li>
+<li><strong>Ideal post-antacid (pH 3.5–5):</strong> Symptoms relieved, some digestion still possible</li>
+<li><strong>Over-alkaline (pH &gt; 7):</strong> Pepsin inactive, bacteria survive, digestion disrupted, body may overproduce acid to compensate</li>
+</ul>
+<p>Each antacid compound contributes OH⁻ or carbonate (CO₃²⁻) ions that neutralise H⁺ ion by ion. The more antacid, the more H⁺ consumed, the higher the pH climbs. Understanding this lets you predict: the right dose raises pH to the symptom-free zone; too much pushes it into the over-alkaline zone.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a cross-section of the stomach and lower oesophagus:</p>
+<ul>
+<li><strong>Left (pH 1.5, red zone):</strong> Excess HCl in stomach, acid rising into oesophagus</li>
+<li><strong>Centre (reaction zone):</strong> Antacid tablet dissolving — equation Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O shown with arrows</li>
+<li><strong>Right (pH 4, green zone):</strong> Post-antacid stomach — pH meter reads 4, oesophagus clear</li>
+<li>A pH bar at the bottom shows the target zone (pH 3.5–5) highlighted in green, with a red warning zone above pH 7 labelled "Too much antacid"</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_04.svg" alt="Diagram for Why does antacid work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Antacid chemistry appears across several everyday situations in India:</p>
+<ul>
+<li><strong>Eno vs. Digene:</strong> Eno (NaHCO₃) acts within 30 seconds but lasts only 30–60 minutes. Digene (Mg(OH)₂ + Al(OH)₃) acts within 2–5 minutes and lasts 2–3 hours. The choice depends on whether you need fast or sustained relief — explained entirely by reaction speed and the strength of the base used.</li>
+<li><strong>Home remedy — jal jeera:</strong> Cumin water is mildly basic and was traditionally used as a mild antacid. It works on the same neutralisation principle, just with weaker bases from natural salts.</li>
+<li><strong>Dental context:</strong> Fluoride toothpaste often contains a mild base. After eating acidic food (tamarind, orange), mouth pH drops to ~4.5 — enough to dissolve tooth enamel. Toothpaste base neutralises this acid, protecting enamel.</li>
+<li><strong>Agricultural lime vs. antacid:</strong> Calcium carbonate (CaCO₃) added to acidic soil works exactly like an antacid — neutralising H⁺ ions in the soil water, raising pH. Farmers and patients are both using acid-base chemistry.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>why does antacid work</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 predicted that taking too much antacid raises stomach pH above 7, causing the stomach to become too alkaline and disrupting digestion. Now extend that further:</p>
+<p>When stomach pH rises significantly above 5, the stomach's <strong>parietal cells detect the lower acidity</strong> and receive a hormonal signal (via <strong>gastrin</strong>, a hormone released by G cells in the stomach wall) to produce more HCl. This is called <strong>acid rebound</strong> — the stomach fights back against the antacid by secreting more acid. This is why calcium carbonate antacids, despite being fast-acting, can cause worsening symptoms hours later.</p>
+<p><strong>Predict:</strong> If a person takes antacid every day for a month — keeping their stomach pH consistently high — what would happen to their body's natural acid production mechanism over time? Would they need more or less antacid over time, and why? Use the gastrin feedback loop to reason your answer.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does antacid relieve acidity in the stomach?</p>
+<ul>
+<li>a. Antacid absorbs all food in the stomach to prevent acid production</li>
+<li>b. Antacid lowers body temperature so stomach cells stop producing acid</li>
+<li>c. Antacid neutralises excess stomach acid through an acid-base reaction</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q2</h3>
+<p>Why is knowing the neutralisation mechanism more useful than just knowing antacids help?</p>
+<ul>
+<li>a. The mechanism explains which bases work and predicts how much to take</li>
+<li>b. Because all antacids have identical chemical formulas and work identically</li>
+<li>c. Because the mechanism is printed on packaging and removes guesswork</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen if too much antacid were taken?</p>
+<ul>
+<li>a. The stomach pH would remain at 2 because the body regulates acidity strictly</li>
+<li>b. The stomach would become too alkaline, causing discomfort and digestive problems</li>
+<li>c. More acid would be produced to compensate for the neutralised acid</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The stomach produces approximately 1.5–2 litres of hydrochloric acid per day. The concentration of HCl in gastric juice is about 0.5% by mass — which corresponds to a pH of 1.5 to 2. If you collected all the acid your stomach makes in a day and poured it on a piece of zinc metal, it would dissolve the zinc vigorously: Zn + 2HCl → ZnCl₂ + H₂↑. Your stomach produces this acid continuously and silently, and the mucus lining resists it without a single symptom — unless the balance tips.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Antacids work by supplying weak bases — Mg(OH)₂, Al(OH)₃, NaHCO₃, or CaCO₃ — that neutralise excess HCl through an acid-base reaction, raising stomach pH from around 2 to around 4, which relieves symptoms while still permitting digestion; taking too much pushes pH above 7 and disrupts all acid-dependent digestive processes.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

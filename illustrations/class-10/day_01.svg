@@ -1,26 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Chemical reactions happening inside your b</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 1</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Chemical Reactions Inside Your Body</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Metabolism, ATP synthesis, enzymes, and the chemistry of life — Day 1</text>
+
+<!-- LEFT: What is a chemical reaction? -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Chemical Reactions</text>
+
+<rect x="30" y="104" width="280" height="78" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">What is a reaction?</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Bonds break and form: new substances made</text>
+<text x="40" y="160" font-family="Arial" font-size="14" fill="#555">Reactants → Products + energy change</text>
+<text x="40" y="176" font-family="Arial" font-size="14" fill="#555">Always conserves mass (Lavoisier)</text>
+
+<rect x="30" y="192" width="280" height="106" rx="4" fill="white" stroke="#94a3b8" stroke-width="1"/>
+<text x="170" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Key Body Reactions</text>
+<text x="40" y="230" font-family="Arial" font-size="14" fill="#333">Cellular respiration: C₆H₁₂O₆ + 6O₂</text>
+<text x="40" y="248" font-family="Arial" font-size="14" fill="#333">→ 6CO₂ + 6H₂O + ATP (energy)</text>
+<text x="40" y="268" font-family="Arial" font-size="14" fill="#555">Photosynthesis (plants): reverse reaction</text>
+<text x="40" y="286" font-family="Arial" font-size="14" fill="#555">Digestion: large molecules → small</text>
+<text x="40" y="294" font-family="Arial" font-size="14" fill="#555">Protein synthesis: amino acids → proteins</text>
+
+<rect x="30" y="308" width="280" height="96" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="326" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Exothermic vs Endothermic</text>
+<text x="40" y="346" font-family="Arial" font-size="14" fill="#333">Exothermic: energy released → heat</text>
+<text x="40" y="364" font-family="Arial" font-size="14" fill="#333">Combustion, respiration, rusting</text>
+<text x="40" y="382" font-family="Arial" font-size="14" fill="#555">Endothermic: energy absorbed from surrounds</text>
+<text x="40" y="398" font-family="Arial" font-size="14" fill="#555">Photosynthesis, cooking, dissolving salts</text>
+
+<rect x="30" y="414" width="280" height="68" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Enzymes: biological catalysts</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">Lower activation energy, speed reaction</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">Specific: amylase only digests starch</text>
+
+<!-- CENTRE: Metabolism + ATP -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Metabolism and ATP</text>
+
+<rect x="344" y="104" width="312" height="110" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">ATP: Energy Currency</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Adenosine Triphosphate: stores energy</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">ATP → ADP + Pi + energy (usable)</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">Body makes ~40 kg ATP/day!</text>
+<text x="354" y="204" font-family="Arial" font-size="14" fill="#555">Used for muscle, nerve, synthesis</text>
+
+<rect x="344" y="224" width="312" height="100" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="242" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Respiration Stages</text>
+<text x="354" y="264" font-family="Arial" font-size="14" fill="#333">1. Glycolysis (cytoplasm): 2 ATP</text>
+<text x="354" y="284" font-family="Arial" font-size="14" fill="#333">2. Krebs cycle (mitochondria): 2 ATP</text>
+<text x="354" y="304" font-family="Arial" font-size="14" fill="#555">3. Electron transport: 34 ATP</text>
+<text x="354" y="320" font-family="Arial" font-size="14" fill="#555">Total: ~38 ATP per glucose molecule</text>
+
+<rect x="344" y="334" width="312" height="98" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="352" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Anabolism vs Catabolism</text>
+<text x="354" y="374" font-family="Arial" font-size="14" fill="#333">Catabolism: breakdown → energy release</text>
+<text x="354" y="394" font-family="Arial" font-size="14" fill="#333">Anabolism: build-up → uses energy</text>
+<text x="354" y="414" font-family="Arial" font-size="14" fill="#555">Together = metabolism (all reactions)</text>
+<text x="354" y="430" font-family="Arial" font-size="14" fill="#555">BMR: energy at rest (~1500 kcal/day)</text>
+
+<rect x="344" y="442" width="312" height="40" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="500" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rate of reaction: temperature, concentration,</text>
+<text x="500" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">surface area, catalyst all affect speed</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Body Chemistry</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Ayurveda and Biochemistry</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">3,000-year tradition of metabolic herbs</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Turmeric: curcumin inhibits inflammation</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CSIR research: validated 200+ Ayurvedic</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Fermentation: Idli and Dosa</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Lactobacillus: anaerobic respiration</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rice + lentils → lactic acid → sour batter</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Chemical reaction makes batter rise</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Diabetes: Glucose Chemistry</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">77 million diabetics in India (world #2)</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Insulin: controls cellular glucose uptake</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Low insulin → glucose stays in blood</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Pharma Industry</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: pharmacy of the world</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">20% global generic medicine supply</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Chemical reactions scaled to save lives</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Respiration: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + 38 ATP. Enzymes speed reactions without being used up.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Body makes 40 kg ATP/day. India: world's 2nd largest diabetic population; 20% global generic pharma.</text>
 </svg>

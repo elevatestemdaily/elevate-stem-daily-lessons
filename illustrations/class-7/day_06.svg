@@ -1,26 +1,107 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does a seed know which way to grow?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 6</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<defs>
+  <marker id="grnArr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#22c55e"/>
+  </marker>
+  <marker id="brnArr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#78350f"/>
+  </marker>
+  <marker id="gryArr6" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#374151"/>
+  </marker>
+</defs>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does a seed know which way to grow?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Gravitropism — statoliths sense gravity, auxin drives the curve</text>
+
+<!-- ── LEFT: Annotated seedling  x=20–430 ── -->
+
+<!-- Shoot (green) -->
+<rect x="193" y="100" width="44" height="170" fill="#bbf7d0" stroke="#22c55e" stroke-width="2" rx="4"/>
+<text x="50" y="128" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">SHOOT</text>
+<text x="50" y="148" font-family="Arial" font-size="14" fill="#065f46">↑ away from gravity</text>
+<!-- up growth arrow inside shoot -->
+<line x1="215" y1="258" x2="215" y2="118" stroke="#22c55e" stroke-width="2.5" marker-end="url(#grnArr)"/>
+
+<!-- Soil -->
+<rect x="20" y="270" width="410" height="35" fill="#92400e" rx="4"/>
+<text x="225" y="293" text-anchor="middle" font-family="Arial" font-size="14" fill="#fef9c3" font-weight="700">SOIL</text>
+
+<!-- Root (amber/brown) -->
+<rect x="198" y="305" width="34" height="120" fill="#fef3c7" stroke="#b45309" stroke-width="2" rx="4"/>
+<!-- Root cap -->
+<ellipse cx="215" cy="438" rx="24" ry="14" fill="#78350f"/>
+<!-- down growth arrow inside root -->
+<line x1="215" y1="308" x2="215" y2="424" stroke="#b45309" stroke-width="2.5" marker-end="url(#brnArr)"/>
+
+<!-- Root labels -->
+<text x="255" y="368" font-family="Arial" font-size="14" font-weight="700" fill="#78350f">ROOT</text>
+<text x="255" y="388" font-family="Arial" font-size="14" fill="#78350f">↓ toward gravity</text>
+
+<!-- Statolith dots in root cap -->
+<circle cx="204" cy="440" r="5" fill="#fbbf24"/>
+<circle cx="215" cy="443" r="5" fill="#fbbf24"/>
+<circle cx="226" cy="440" r="5" fill="#fbbf24"/>
+<text x="70" y="450" font-family="Arial" font-size="14" fill="#78350f" font-style="italic">statoliths</text>
+<line x1="172" y1="448" x2="196" y2="441" stroke="#78350f" stroke-width="1.5"/>
+
+<!-- Gravity label -->
+<text x="373" y="192" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Gravity ↓</text>
+<line x1="390" y1="202" x2="390" y2="252" stroke="#374151" stroke-width="2" marker-end="url(#gryArr6)"/>
+
+<!-- ── RIGHT: Three mechanism boxes  x=450–975 ── -->
+
+<!-- Box 1: Step 1 — Statolith Detection  y=95–195 -->
+<rect x="450" y="95" width="520" height="100" rx="8" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<!-- text zone x=465–758 -->
+<text x="465" y="118" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Step 1 — Statoliths Sense Gravity</text>
+<text x="465" y="138" font-family="Arial" font-size="14" fill="#78350f">Root cap statocyte cells hold dense</text>
+<text x="465" y="156" font-family="Arial" font-size="14" fill="#78350f">starch-filled statoliths. Gravity pulls</text>
+<text x="465" y="174" font-family="Arial" font-size="14" fill="#78350f">them to the lowest side of the cell.</text>
+<!-- shapes zone x=770–965: cell with statoliths settled at bottom -->
+<rect x="772" y="105" width="188" height="80" rx="5" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<text x="866" y="122" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e" font-style="italic">statocyte cell</text>
+<circle cx="800" cy="170" r="7" fill="#fbbf24"/>
+<circle cx="826" cy="172" r="7" fill="#fbbf24"/>
+<circle cx="852" cy="170" r="7" fill="#fbbf24"/>
+<circle cx="878" cy="172" r="7" fill="#fbbf24"/>
+<circle cx="904" cy="170" r="7" fill="#fbbf24"/>
+<text x="866" y="186" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">settled at bottom ↓</text>
+
+<!-- Box 2: Step 2 — Auxin  y=210–305 -->
+<rect x="450" y="210" width="520" height="95" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+<!-- text zone x=465–758 -->
+<text x="465" y="233" font-family="Arial" font-size="15" font-weight="700" fill="#1e3a5f">Step 2 — Auxin Moves to Lower Side</text>
+<text x="465" y="252" font-family="Arial" font-size="14" fill="#1e3a5f">Auxin hormone redistributes toward</text>
+<text x="465" y="270" font-family="Arial" font-size="14" fill="#1e3a5f">the side where statoliths settled.</text>
+<text x="465" y="288" font-family="Arial" font-size="14" fill="#1e3a5f">Roots: more auxin = less elongation.</text>
+<!-- shapes zone x=770–965: auxin dots on lower half of cell -->
+<rect x="772" y="220" width="188" height="80" rx="5" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="866" y="237" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a5f" font-style="italic">auxin (blue dots)</text>
+<circle cx="798" cy="275" r="7" fill="#3b82f6" opacity="0.8"/>
+<circle cx="822" cy="272" r="7" fill="#3b82f6" opacity="0.8"/>
+<circle cx="846" cy="276" r="7" fill="#3b82f6" opacity="0.8"/>
+<circle cx="870" cy="273" r="7" fill="#3b82f6" opacity="0.8"/>
+<circle cx="894" cy="275" r="7" fill="#3b82f6" opacity="0.8"/>
+<text x="866" y="293" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a5f">concentrated low</text>
+
+<!-- Box 3: Step 3 — Differential Growth  y=320–420 (text only) -->
+<rect x="450" y="320" width="520" height="100" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+<text x="465" y="343" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Step 3 — Differential Growth Bends</text>
+<text x="465" y="363" font-family="Arial" font-size="14" fill="#065f46">Root: lower side grows SLOWER</text>
+<text x="465" y="381" font-family="Arial" font-size="14" fill="#065f46">→ root tip bends DOWNWARD ↓</text>
+<text x="465" y="399" font-family="Arial" font-size="14" fill="#065f46">Shoot: lower side grows FASTER</text>
+<text x="465" y="417" font-family="Arial" font-size="14" fill="#065f46">→ shoot tip bends UPWARD ↑</text>
+
+<!-- Key fact band  y=435–482 -->
+<rect x="450" y="435" width="520" height="47" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1"/>
+<text x="710" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Same auxin — opposite effects in root vs shoot</text>
+<text x="710" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Upside-down seeds self-correct within 24–48 hours</text>
+
+<!-- TAKEAWAY STRIP (y=505–545) -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">Statoliths detect gravity → auxin shifts → roots curve down, shoots curve up</text>
 </svg>

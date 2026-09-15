@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 11 — How does DNA store information? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 11</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does DNA store information?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how DNA encodes genetic information using base sequences, name the four nitrogenous bases and their pairing rules, and predict what a single base mutation does to a protein.</p>
+</div><h2>1. The mystery</h2>
+<p>Inside almost every cell in your body sits a molecule so thin it is invisible even under a normal microscope, yet it contains the complete set of instructions to build and run an entire human being. If you stretched the DNA from a single human cell into a straight line, it would measure roughly 2 metres. Coiled and packed into a nucleus just 6 micrometres wide. The real puzzle is not the size — it is: how can a single molecule encode billions of specific instructions without getting them mixed up?</p>
+<h2>2. The science behind it</h2>
+<p>DNA stands for <strong>deoxyribonucleic acid</strong>. It is a double-stranded polymer made of repeating units called <strong>nucleotides</strong>. Each nucleotide has three parts: a deoxyribose sugar, a phosphate group, and one of four nitrogenous bases — <strong>adenine (A), thymine (T), guanine (G),</strong> and <strong>cytosine (C)</strong>. The two strands twist around each other to form the famous <strong>double helix</strong>, first described by Watson and Crick in 1953 using X-ray data from Rosalind Franklin.</p>
+<p>The information is stored entirely in the <strong>sequence of bases</strong> along one strand. Think of it as a four-letter alphabet used to write a very long sentence. Just as 26 English letters can encode every word in a dictionary, four bases — arranged in different orders — can encode every gene in every living organism.</p>
+<p>The specific rule governing which bases pair across the two strands is called <strong>complementary base pairing</strong>: A always pairs with T (held by two hydrogen bonds), and G always pairs with C (held by three hydrogen bonds). This rule is why both strands carry equivalent information — if you know the sequence of one strand, you can reconstruct the other exactly.</p>
+<p>A <strong>gene</strong> is a specific stretch of this base sequence — typically hundreds to thousands of base pairs long — that encodes the instructions for making one functional molecule, usually a protein. The human genome contains approximately 3.2 billion base pairs arranged across 23 pairs of chromosomes, encoding around 20,000–25,000 genes.</p>
+<p>Information is read in groups of three consecutive bases called <strong>codons</strong>. Each codon specifies one amino acid (or a stop signal). Since there are 4 × 4 × 4 = 64 possible codons but only 20 amino acids, the code is <strong>degenerate</strong> — multiple codons can specify the same amino acid, giving DNA a built-in error-buffering capacity.</p>
+<p>When a cell needs to use the information in a gene, a molecular machine called <strong>RNA polymerase</strong> reads the base sequence and transcribes it into messenger RNA (mRNA). The mRNA carries the codon sequence to the ribosomes where proteins are assembled — but that is the story of the next lesson.</p>
+<p>The critical point for today: <strong>information in DNA is chemical, not electrical, not shape-based.</strong> It is the precise linear sequence of A, T, G, C bases along the sugar-phosphate backbone that encodes every inherited characteristic, from blood group to eye colour to susceptibility to certain diseases.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of DNA as a message written in a four-letter alphabet, packed into a two-stranded zip:</p>
+<ul>
+<li><strong>Sugar-phosphate backbone</strong> = the paper the message is written on (structural, carries no information)</li>
+<li><strong>Base sequence (A, T, G, C)</strong> = the actual letters of the message</li>
+<li><strong>Complementary pairing (A-T, G-C)</strong> = the zip teeth that lock both strands together and allow faithful copying</li>
+<li><strong>Codon (triplet of bases)</strong> = one word, specifying one amino acid</li>
+<li><strong>Gene</strong> = one sentence, encoding one protein's instructions</li>
+<li><strong>Chromosome</strong> = one chapter, containing thousands of genes</li>
+<li><strong>Genome</strong> = the complete book, 23 chapters in humans</li>
+</ul>
+<p>Remove any base or change its identity and you alter the message — sometimes harmlessly, sometimes catastrophically.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a short stretch of the double helix unwound flat for clarity:</p>
+<ul>
+<li><strong>Left strand (blue):</strong> 5'–A–T–G–C–C–T–3' labelled "template strand"</li>
+<li><strong>Right strand (orange):</strong> 3'–T–A–C–G–G–A–5' labelled "complementary strand"</li>
+<li>Dashed lines between A-T and G-C pairs labelled "hydrogen bonds"</li>
+<li>A bracket grouping three consecutive bases on the left strand labelled "codon → specifies one amino acid"</li>
+<li>A magnified inset showing a single nucleotide with its three components: deoxyribose sugar, phosphate, and base</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_11.svg" alt="Diagram for How does DNA store information?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>The base-sequence mechanism of DNA storage has direct medical and technological consequences:</p>
+<ul>
+<li><strong>Sickle-cell anaemia</strong> is caused by a single base change in the gene for haemoglobin: adenine replaces thymine at one position, changing the sixth amino acid from glutamic acid to valine. This single-letter swap makes red blood cells collapse into a sickle shape and block blood vessels — a devastating disease from one changed base out of 3.2 billion.</li>
+<li><strong>DNA fingerprinting</strong>, used by Indian forensic labs under the DNA Profiling Bill framework, compares specific short repeated sequences (STRs) at multiple positions across the genome. Because each person's base sequence combination is unique, a blood sample at a crime scene can match a suspect with very high certainty.</li>
+<li><strong>PCR (Polymerase Chain Reaction)</strong> — used in COVID-19 testing across India — works by exploiting complementary base pairing: synthetic primer sequences bind to a specific target region of viral DNA/RNA and allow billions of copies to be made for detection.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does dna store information</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that a single base change can alter one amino acid in a protein. Now push further: the genetic code is <strong>degenerate</strong> — multiple codons specify the same amino acid. For example, both GGU and GGC code for glycine.</p>
+<p><strong>Predict:</strong> If a mutation changes the third base of a codon from U to C, but the amino acid specified remains the same (a so-called "silent" or synonymous mutation), would this always have no effect on the organism? Consider whether there are any cellular processes — beyond which amino acid is inserted — that depend on the exact base sequence of codons. Give a reasoned answer.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does DNA store genetic information?</p>
+<ul>
+<li>a. DNA stores information as electrical charges along its sugar-phosphate backbone</li>
+<li>b. DNA stores information through its double-helix shape and overall length</li>
+<li>c. DNA stores information as sequences of four chemical bases: A, T, G, and C</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the base-sequence mechanism of DNA storage more useful than just knowing DNA exists?</p>
+<ul>
+<li>a. Because knowing DNA exists is sufficient for understanding all genetic diseases</li>
+<li>b. Because the mechanism proves DNA is the same in all living organisms always</li>
+<li>c. The mechanism explains how mutations cause disease and how genes are read</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q3</h3>
+<p>What would happen if a single base in a critical gene were changed by mutation?</p>
+<ul>
+<li>a. Nothing would change because single base changes are always self-correcting</li>
+<li>b. A different amino acid could be incorporated, potentially altering protein function</li>
+<li>c. The entire chromosome would be destroyed by the cell's repair mechanisms</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The four-base DNA code is shared by every living thing on Earth — from the bacterium in your gut to a banyan tree in Bengaluru to the blue whale. The codon GUG specifies the amino acid valine in a bacterium and in a human brain cell. This universal code is one of the strongest pieces of evidence that all life on Earth descended from a common ancestor roughly 3.5–4 billion years ago. The same molecule, the same four letters, the same dictionary.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>DNA stores all genetic information as a precise linear sequence of four chemical bases — A, T, G, and C — where every triplet of bases (codon) specifies one amino acid, so even a single base change can alter a protein and cause disease.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 11 of 30</footer>
+</div>
+</body>
+</html>

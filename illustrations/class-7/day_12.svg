@@ -1,26 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does a mirror produce your image?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 12</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<defs>
+  <marker id="incArr12" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+  </marker>
+  <marker id="refArr12" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+  </marker>
+</defs>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does a mirror produce your image?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Law of reflection: angle of incidence = angle of reflection (from normal)</text>
+
+<!-- ── TOP INFO BOXES  y=88–205 ── -->
+<!-- Left box: Law of Reflection -->
+<rect x="20" y="88" width="455" height="117" rx="7" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="247" y="110" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1e3a5f">Law of Reflection</text>
+<text x="35" y="130" font-family="Arial" font-size="14" fill="#1e3a5f">• ∠i = ∠r (both measured from the NORMAL ⊥ to mirror)</text>
+<text x="35" y="148" font-family="Arial" font-size="14" fill="#1e3a5f">• Virtual image: behind mirror, same size, same distance</text>
+<text x="35" y="166" font-family="Arial" font-size="14" fill="#1e3a5f">• Laterally inverted: your right hand looks like left in mirror</text>
+<text x="35" y="184" font-family="Arial" font-size="14" fill="#1e3a5f">• Image is virtual — reflected rays appear to come from behind</text>
+<text x="35" y="200" font-family="Arial" font-size="14" fill="#1e3a5f">• Specular (smooth) vs diffuse (rough) reflection</text>
+
+<!-- Right box: Applications -->
+<rect x="493" y="88" width="485" height="117" rx="7" fill="#f0fdf4" stroke="#10b981" stroke-width="1.5"/>
+<text x="735" y="110" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Real-World Applications</text>
+<text x="508" y="130" font-family="Arial" font-size="14" fill="#064e3b">• AMBULANCE written backwards: readable in rear-view mirror</text>
+<text x="508" y="148" font-family="Arial" font-size="14" fill="#064e3b">• Periscopes: 2 mirrors at 45° (submarines, see over walls)</text>
+<text x="508" y="166" font-family="Arial" font-size="14" fill="#064e3b">• Kaleidoscope: multiple reflections create patterns</text>
+<text x="508" y="184" font-family="Arial" font-size="14" fill="#064e3b">• Rear-view mirrors: plane + convex for wide view</text>
+<text x="508" y="200" font-family="Arial" font-size="14" fill="#064e3b">• Reflecting telescope: curved mirror collects starlight</text>
+
+<!-- ── REFLECTION DIAGRAM  y=218–478 ── -->
+
+<!-- MIRROR (vertical rect) at x=487–497 -->
+<rect x="487" y="218" width="10" height="260" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+<text x="492" y="213" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#475569">MIRROR</text>
+<!-- Shine marks on mirror -->
+<line x1="492" y1="232" x2="492" y2="246" stroke="white" stroke-width="3" opacity="0.7"/>
+<line x1="492" y1="258" x2="492" y2="272" stroke="white" stroke-width="3" opacity="0.7"/>
+<line x1="492" y1="284" x2="492" y2="298" stroke="white" stroke-width="3" opacity="0.7"/>
+<line x1="492" y1="310" x2="492" y2="324" stroke="white" stroke-width="3" opacity="0.7"/>
+
+<!-- OBJECT face at (250, 355): d₁ = 492−250 = 242 -->
+<circle cx="250" cy="355" r="32" fill="#fbbf24" stroke="#d97706" stroke-width="2.5"/>
+<circle cx="240" cy="348" r="4" fill="#374151"/>
+<circle cx="260" cy="348" r="4" fill="#374151"/>
+<path d="M 240,360 Q 250,369 260,360" stroke="#374151" stroke-width="2.5" fill="none"/>
+<text x="250" y="316" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">OBJECT</text>
+
+<!-- VIRTUAL IMAGE at (734, 355): 492+(492−250)=734 → d₂=242 ✓ -->
+<circle cx="734" cy="355" r="32" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4"/>
+<circle cx="724" cy="348" r="4" fill="#94a3b8" opacity="0.7"/>
+<circle cx="744" cy="348" r="4" fill="#94a3b8" opacity="0.7"/>
+<text x="734" y="316" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#64748b">VIRTUAL IMAGE</text>
+<text x="734" y="332" text-anchor="middle" font-family="Arial" font-size="14" fill="#64748b" font-style="italic">(behind mirror)</text>
+<text x="734" y="402" text-anchor="middle" font-family="Arial" font-size="14" fill="#64748b">laterally inverted</text>
+
+<!-- d₁ = d₂ markers at y=462 -->
+<line x1="250" y1="462" x2="487" y2="462" stroke="#374151" stroke-width="1.5"/>
+<line x1="250" y1="457" x2="250" y2="467" stroke="#374151" stroke-width="1.5"/>
+<line x1="487" y1="457" x2="487" y2="467" stroke="#374151" stroke-width="1.5"/>
+<text x="368" y="458" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">d₁ = 242</text>
+<line x1="497" y1="462" x2="734" y2="462" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="734" y1="457" x2="734" y2="467" stroke="#64748b" stroke-width="1.5"/>
+<text x="616" y="458" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#64748b">d₂ = 242</text>
+<text x="492" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">d₁ = d₂ always true for plane mirror</text>
+
+<!-- ── RAY DIAGRAM ── -->
+<!-- Ray 1: object(250,355)→mirror(492,298)→observer(900,392) -->
+<!-- Incident ray 1 (red) -->
+<line x1="282" y1="352" x2="487" y2="300" stroke="#dc2626" stroke-width="2" marker-end="url(#incArr12)"/>
+<!-- Normal 1 (dashed horizontal) at y=300 -->
+<line x1="450" y1="300" x2="542" y2="300" stroke="#374151" stroke-width="1.5" stroke-dasharray="5,4"/>
+<!-- Reflected ray 1 (blue) -->
+<line x1="497" y1="300" x2="882" y2="393" stroke="#2563eb" stroke-width="2" marker-end="url(#refArr12)"/>
+<!-- Angle labels -->
+<text x="466" y="294" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">∠i</text>
+<text x="507" y="294" font-family="Arial" font-size="14" fill="#2563eb" font-weight="700">∠r</text>
+
+<!-- Ray 2: object(250,355)→mirror(492,420)→observer(900,307) -->
+<!-- Incident ray 2 (red) -->
+<line x1="282" y1="358" x2="487" y2="420" stroke="#dc2626" stroke-width="2" marker-end="url(#incArr12)"/>
+<!-- Normal 2 (dashed horizontal) at y=420 -->
+<line x1="450" y1="420" x2="542" y2="420" stroke="#374151" stroke-width="1.5" stroke-dasharray="5,4"/>
+<!-- Reflected ray 2 (blue) -->
+<line x1="497" y1="420" x2="882" y2="307" stroke="#2563eb" stroke-width="2" marker-end="url(#refArr12)"/>
+
+<!-- Virtual (dashed) rays behind mirror converging at image -->
+<line x1="492" y1="300" x2="734" y2="355" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+<line x1="492" y1="420" x2="734" y2="355" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+<!-- Observer eye at (900, 350) -->
+<ellipse cx="900" cy="350" rx="20" ry="13" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<circle cx="900" cy="350" r="6" fill="#374151"/>
+<circle cx="900" cy="350" r="2.5" fill="white"/>
+<text x="900" y="333" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">Observer</text>
+
+<!-- ∠i = ∠r annotation box -->
+<rect x="310" y="232" width="145" height="45" rx="5" fill="#fef9c3" stroke="#d97706" stroke-width="1.5"/>
+<text x="382" y="252" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">∠i = ∠r</text>
+<text x="382" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">Law of Reflection</text>
+
+<!-- TAKEAWAY STRIP -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">∠i = ∠r from normal. Virtual image: same distance behind mirror, same size, laterally inverted.</text>
 </svg>

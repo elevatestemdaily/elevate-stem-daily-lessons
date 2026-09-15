@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 26 — Why does sound change pitch? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 26</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does sound change pitch?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how frequency determines pitch, describe the Doppler effect, and predict pitch change when frequency doubles.</p>
+</div><h2>1. The mystery</h2>
+<p>A train's horn sounds higher-pitched as it approaches and lower-pitched as it passes and moves away — even though the train's horn is making the same sound the whole time. Why? And why do different instruments playing the same note sound different?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Frequency and pitch:</strong> Frequency (f, measured in Hz) = number of compressions passing a point per second. Human hearing: 20 Hz to 20,000 Hz.
+- Higher frequency → higher pitch (perceived note)
+- Lower frequency → lower pitch</p>
+<p>Musical notes: A4 = 440 Hz. One octave higher: 880 Hz (double frequency). One octave lower: 220 Hz.</p>
+<p><strong>Wavelength and frequency:</strong> v = fλ. At v = 343 m/s:
+- 440 Hz: λ = 343/440 ≈ 0.78 m
+- 880 Hz: λ = 343/880 ≈ 0.39 m</p>
+<p><strong>Amplitude and loudness:</strong> Larger amplitude → louder sound. Measured in decibels (dB). 0 dB: threshold of hearing. 60 dB: conversation. 120 dB: threshold of pain. 130+ dB: hearing damage.</p>
+<p><strong>Timbre:</strong> Why a sitar and a violin sound different playing the same note — the mix of harmonics (overtones at 2f, 3f, 4f...) differs. The waveform shape differs.</p>
+<p><strong>Doppler effect:</strong> When a sound source moves toward you, compressions arrive more frequently (shorter apparent wavelength → higher apparent frequency → higher pitch). When moving away: lower apparent frequency → lower pitch. Formula: f_observed = f_source × (v_sound ± v_observer) / (v_sound ∓ v_source).</p>
+<p><strong>Ultrasound (&gt;20,000 Hz):</strong> Used in medical imaging, sonar, industrial testing. Too high-pitched for humans to hear.</p>
+<p><strong>Infrasound (&lt;20 Hz):</strong> Elephants communicate with infrasound over 10+ km. Earthquakes produce infrasound.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine you are standing at a bus stop and someone is throwing balls toward you at a steady rate — one ball per second. If the thrower stands still, one ball arrives every second: the "frequency" is 1 Hz.</p>
+<p>Now the thrower walks toward you while throwing. Because they close the gap between each throw, balls bunch up and arrive more than once per second — higher "frequency." Turn it around: the thrower walks away while throwing. Each ball has farther to travel before the next one is released; they spread out and arrive less than once per second — lower "frequency."</p>
+<p>This is the Doppler effect in physical terms. Replace "balls" with compressions in a sound wave and "thrower" with the train's horn, and you have the exact mechanism behind the pitch shift. The horn's actual vibration rate never changes — only the arrival rate at your ears changes because of relative motion. For pitch in general: the faster an object vibrates, the more compressions it produces per second, the higher the perceived pitch. Halve the vibration rate; halve the frequency; drop one octave.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two side-by-side panels. The left panel depicts a stationary speaker emitting concentric semicircular wavefronts at equal spacing in all directions — a listener on the right and a listener on the left both see identical spacing, indicating identical frequency and pitch for both.</p>
+<p>The right panel shows the same speaker moving rightward. The wavefronts are compressed (closer together) ahead of the speaker — toward the listener on the right — and stretched (farther apart) behind it, toward the listener on the left. Colour-coded labels identify "higher pitch heard here" (right listener, red label) and "lower pitch heard here" (left listener, blue label). A velocity arrow labelled v_source points right. Below both panels, two sine waves are drawn: one with shorter wavelength (labelled "high f — high pitch") and one with longer wavelength (labelled "low f — low pitch"), mapping the visual to the auditory experience.</p>
+<h2>5. Real-world connection</h2>
+<p>Indian classical music (Raga) is built on precise frequency relationships — the 12 semitones of the octave and the specific notes that define each raga. Carnatic and Hindustani traditions have preserved these frequency ratios for 3,000 years, and today digital tuning meters confirm that a properly tuned tanpura produces exactly 110 Hz (Sa in that octave) against which vocalists calibrate.</p>
+<p>Medical application: Doppler ultrasound measures blood flow velocity. When blood moves toward the ultrasound probe, the reflected frequency is higher; moving away, lower. The frequency shift tells cardiologists exactly how fast blood is moving through heart valves — diagnosing valve disorders in roughly 2 million Indians per year. Speed cameras used by traffic police on Indian highways use the Doppler effect with radar (not sound, but identical mathematics) to calculate vehicle speed from the frequency shift of the reflected wave.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Bottle pitch experiment:</strong> Collect five identical glass bottles. Leave one empty; fill the others with increasing amounts of water (1/5, 2/5, 3/5, 4/5 full). Blow steadily across the mouth of each bottle — do not blow into it, blow across the top edge at a low angle.</p>
+<p>The air column above the water vibrates. A deeper air column (less water) vibrates more slowly → lower frequency → lower pitch. A shallower column (more water) vibrates faster → higher frequency → higher pitch. You are controlling standing-wave resonance by changing air column length. Indian classical musicians tune the sitar's resonating gourd and wind players adjust bansuri (bamboo flute) and shehnai pitch using exactly the same physical principle.</p>
+</div><h2>7. Think deeper</h2>
+<p>The Doppler effect works for light too — called redshift. When a star moves away from us, its light is stretched to longer (redder) wavelengths. Hubble's discovery that distant galaxies are redshifted — all moving away — proved the universe is expanding (1929). The amount of redshift gives the recession velocity. The cosmic microwave background (CMB) radiation — the afterglow of the Big Bang — is highly redshifted microwave radiation, originally intense gamma radiation stretched by 13.8 billion years of universal expansion.</p>
+<p>The same physics that explains a train's horn pitch change also reveals the fate of the universe. Every time a cardiologist reads a Doppler echocardiogram, a police officer reads a radar speed gun, or a cosmologist measures galactic recession velocity, they are using the same equation.</p>
+<p><strong>Predict:</strong> A bat emits sonar pulses at 80,000 Hz and flies toward a stationary moth at 10 m/s. Using the Doppler formula with v_sound = 340 m/s, estimate the frequency of the pulse that reflects off the moth and returns to the bat. Would the bat perceive the moth as moving or stationary based on this reflected frequency? What would change if the moth were flying away from the bat?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What determines the pitch of a sound?</p>
+<ul>
+<li>A. Pitch is determined by the amplitude of the sound wave; larger amplitude means higher pitch</li>
+<li>B. Pitch is determined by the speed of sound in the medium; faster sound produces higher pitch</li>
+<li>C. Pitch is determined by the frequency of the sound wave; higher frequency produces a higher pitch</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding how frequency relates to pitch more useful than just memorising pitch exists?</p>
+<ul>
+<li>A. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>B. Pitch is a subjective experience so no objective mechanism can fully explain it scientifically</li>
+<li>C. Frequency-pitch relationships only matter for professional musicians and recording engineers</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q3</h3>
+<p>If the frequency of a sound wave were doubled, what would you predict about its pitch?</p>
+<ul>
+<li>A. The pitch would become higher because more compressions per second reach the ear per unit time</li>
+<li>B. The pitch would become lower because doubling frequency causes wavelength to increase proportionally</li>
+<li>C. The pitch would remain unchanged because only amplitude determines how high a sound sounds</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A Rajdhani Express horn emits sound at 500 Hz. The train approaches a station at 72 km/h (20 m/s). A passenger standing on the platform measures the pitch of the approaching horn using a smartphone frequency analyser app.</p>
+<p>Using the Doppler formula, calculate the frequency the passenger hears as the train approaches. Then calculate the frequency heard as the train recedes at the same speed. What is the total pitch drop (in Hz) experienced as the train passes? Now explain: if the passenger were moving toward the stationary train instead, would the perceived pitch change be the same, more, or less — and why?</p>
+</div><h2>10. One surprising idea</h2>
+<p>Infrasound — frequencies below 20 Hz — is inaudible to humans but felt as physical pressure by the body. Elephants use infrasound at 14–35 Hz to communicate across 10 km of savanna or jungle; their large feet and trunks detect ground vibrations from other elephants. Tigers produce infrasound overlaid on their roars — the sub-20 Hz component causes prey animals to freeze rather than flee, a predatory exploit of a sensory limitation. Some researchers believe humans experience infrasound from large organs in cathedrals as a mysterious, awe-inspiring sensation — possibly contributing to the perception of the "sacred" in certain architectural spaces. Sound physics at the edge of human perception shapes both ecology and culture.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Pitch is determined by frequency — the number of compressions reaching your ear per second — and the Doppler effect explains why a moving source shifts that count up or down even when the source itself is vibrating at a constant rate.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 20 — How does gravity actually work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 20</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does gravity actually work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to state Newton's law of universal gravitation, explain how gravity varies with mass and distance, and predict how force changes when distance triples.</p>
+</div><h2>1. The mystery</h2>
+<p>An apple falls from a tree at the same instant the Moon "falls" toward Earth. Newton noticed: both are accelerating toward Earth. What if they're the same force? What if gravity from Earth reaches all the way to the Moon — and to every object in the universe?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Newton's Law of Universal Gravitation:</strong>
+F = G × m₁ × m₂ / r²</p>
+<p>Where:
+- F = gravitational force (N)
+- G = 6.674 × 10⁻¹¹ N·m²/kg² (universal gravitational constant)
+- m₁, m₂ = masses of the two objects (kg)
+- r = distance between their centres (m)</p>
+<p><strong>Key relationships:</strong>
+- Force is proportional to EACH mass: double m₁ → double F
+- Force is inversely proportional to DISTANCE SQUARED: triple r → F decreases to 1/9</p>
+<p><strong>Weight vs mass:</strong>
+- Mass: amount of matter (kg). Same everywhere.
+- Weight: gravitational force (N) = mg. Changes with location (g on Moon = 1.62 m/s², g on Earth = 9.8 m/s², g on ISS = 8.7 m/s²).</p>
+<p><strong>Gravitational field:</strong> Every mass creates a field extending outward to infinity (weakening as 1/r²). The field at Earth's surface: g = 9.8 N/kg.</p>
+<p><strong>Free fall:</strong> When only gravity acts, all objects fall with the same acceleration regardless of mass. Galileo showed this; Einstein explained it (equivalence principle).</p>
+<h2>3. Build the mental model</h2>
+<p>Think of gravity as ripples spreading out from every mass in the universe — like a stone dropped in water:</p>
+<ul>
+<li><strong>Every mass creates a gravitational field</strong> extending in all directions to infinity — weaker with distance but never zero.</li>
+<li><strong>The inverse-square law</strong> mirrors ripple geometry: double the radius, spread force over 4× the area → force drops to 1/4. Triple the distance → 1/9 of the force.</li>
+<li><strong>Mass amplifies the field.</strong> Double Earth's mass and every object on its surface feels twice the gravitational pull.</li>
+<li><strong>Weight vs mass:</strong> your mass (60 kg) is the same on Earth, Moon, and in deep space. Your weight (force) is 588 N on Earth, 97 N on the Moon, and effectively 0 N far from any massive body.</li>
+<li><strong>Free fall removes the sensation of weight.</strong> An astronaut on the ISS is not in zero gravity (g = 8.7 m/s² there) — they are in continuous free fall around Earth, feeling no floor reaction force.</li>
+</ul>
+<p>The apple and the Moon are both falling toward Earth. The Moon has enough sideways velocity that by the time it falls, Earth's surface curves away — it keeps missing. That is an orbit.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two panels arranged side by side.</p>
+<p>The left panel shows the inverse-square law: a point mass M at centre with concentric shells at r, 2r, and 3r. Labels show "F at r," "F/4 at 2r," "F/9 at 3r" — shaded patches on each shell illustrate that the same force is spread over 4× and 9× the area.</p>
+<p>The right panel shows Earth, the Moon in its dashed circular orbit, and an apple falling from a tree. Both apple and Moon carry arrows pointing toward Earth, labelled "falling toward Earth — same force, different velocities."</p>
+<p>A formula bar at the bottom shows F = Gm₁m₂/r² with each variable briefly annotated.</p>
+<figure><img src="../../illustrations/class-9/day_20.svg" alt="Diagram for How does gravity actually work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>ISRO uses F = Gm₁m₂/r² for every orbital burn. Chandrayaan-3's Earth-to-Moon trajectory required continuous updating of gravitational forces from Earth, Moon, and Sun — a three-body numerical problem solved in flight. One second of error in the lunar orbit insertion burn would have sent the spacecraft off course.</p>
+<p>India's geoid model — the precise shape of Earth's gravitational field — underpins GPS coordinates on 800 million smartphones. The GRACE satellite detects groundwater depletion in Punjab by measuring tiny changes in local gravitational pull: every 1 cm drop in water table is detectable from space.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Calculate your weight in three locations using W = mg:</p>
+<ol>
+<li>On Earth (g = 9.8 m/s²): take your mass in kg and multiply by 9.8.</li>
+<li>On the Moon (g = 1.62 m/s²): multiply your mass by 1.62. You could jump approximately 6× higher.</li>
+<li>On Mars (g = 3.72 m/s²): multiply your mass by 3.72.</li>
+</ol>
+<p>Now predict: if Earth's radius doubled but its mass stayed the same, what would happen to your weight? The formula F = Gm₁m₂/r² shows that doubling r means r² becomes 4× larger, so F drops to 1/4 of its current value. Check your prediction: if you weigh 600 N now, you would weigh 150 N on a doubled-radius Earth.</p>
+<p>This calculation shows why astronauts weigh less at high altitude — they are slightly farther from Earth's centre — even though their mass is unchanged.</p>
+</div><h2>7. Think deeper</h2>
+<p>Einstein's General Theory of Relativity (1915) replaced Newton's gravitational force with curved spacetime: mass curves space and time around it, and other objects follow curved paths (geodesics) through it. Two consequences Newton's equation cannot predict:</p>
+<p>Gravitational time dilation: clocks at lower altitude (stronger gravity) run slower. Without correcting for this, GPS coordinates would drift by ~10 km per day — the correction uses Einstein's equations, not Newton's.</p>
+<p>Gravitational waves — spacetime ripples from accelerating masses — were detected by LIGO in 2015 from merging black holes 1.3 billion light-years away (Nobel 2017). Newton's law remains accurate to 1 part in 10⁷ for most engineering calculations.</p>
+<p><strong>Predict:</strong> Two identical satellites orbit Earth. Satellite A orbits at 400 km altitude (like the ISS) and Satellite B orbits at 36,000 km altitude (geostationary orbit). Using the inverse-square law, compare the gravitational force on each. Then predict which satellite's onboard clock runs faster, and explain why getting this wrong would affect GPS accuracy.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What correctly describes Newton's law of universal gravitation?</p>
+<ul>
+<li>A. Gravity only acts between planets and stars, not between smaller everyday objects around us</li>
+<li>B. Gravity is a magnetic force produced by the iron core of large objects like Earth</li>
+<li>C. Every object with mass attracts every other mass; force increases with mass and decreases with distance squared</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of gravity more useful than just knowing objects fall?</p>
+<ul>
+<li>A. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>B. Falling is an obvious observation so no further explanation is needed beyond daily experience</li>
+<li>C. Gravity mechanism is only needed by astronauts and satellite engineers, not students</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q3</h3>
+<p>If the distance between two objects were tripled, what would happen to the gravitational force between them?</p>
+<ul>
+<li>A. The gravitational force would decrease to one-ninth of its original value</li>
+<li>B. The gravitational force would decrease to one-third of its original value</li>
+<li>C. The gravitational force would increase because larger distances allow gravity to build up</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A space agency wants to put a satellite into orbit at two different altitudes above Earth. At 400 km altitude, the gravitational acceleration is approximately 8.7 m/s². At 36,000 km altitude (geostationary), it is approximately 0.22 m/s².</p>
+<p>Using F = Gm₁m₂/r² and the ratio of distances from Earth's centre (Earth's radius = 6,400 km), verify whether the ratio of gravitational accelerations matches the inverse-square prediction. Then explain why a satellite at 36,000 km takes exactly 24 hours to orbit (appearing stationary above India for communications satellites) while the ISS at 400 km takes only 90 minutes. Use the relationship between gravitational force and orbital speed in your explanation.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Gravity is simultaneously the weakest and the most dominant force in the universe. The electromagnetic force is 10³⁶ times stronger than gravity — a small magnet can lift a paperclip against the entire gravitational pull of Earth. Yet gravity dominates the universe at large scales because it has infinite range, always attracts (never repels), and cannot be shielded. Every atom in Jupiter attracts every atom in the Sun, and those forces add up. Electromagnetism cancels out at large scales because matter is electrically neutral on average. This asymmetry — weak locally, dominant cosmically — means gravity shaped every galaxy, star, and planet in the observable universe while electromagnetic force shaped every molecule in your body.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Gravity is a universal attractive force between all masses — it weakens with the square of distance, which means tripling the distance reduces the force to one-ninth, and this single equation governs everything from a falling apple to the Moon's orbit.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 20 of 30</footer>
+</div>
+</body>
+</html>

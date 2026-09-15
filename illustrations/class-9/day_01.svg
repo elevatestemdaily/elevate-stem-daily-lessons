@@ -1,26 +1,117 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr01" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">What is matter really made of?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 1</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">What is matter really made of?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Kinetic particle theory: all matter = particles in constant motion — Day 1</text>
+
+<!-- LEFT: Three states of matter -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Three States of Matter</text>
+
+<!-- Solid box -->
+<rect x="30" y="104" width="280" height="118" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">SOLID</text>
+<!-- Grid of particles -->
+<circle cx="90" cy="148" r="8" fill="#1d4ed8"/>
+<circle cx="116" cy="148" r="8" fill="#1d4ed8"/>
+<circle cx="142" cy="148" r="8" fill="#1d4ed8"/>
+<circle cx="90" cy="172" r="8" fill="#1d4ed8"/>
+<circle cx="116" cy="172" r="8" fill="#1d4ed8"/>
+<circle cx="142" cy="172" r="8" fill="#1d4ed8"/>
+<text x="200" y="148" font-family="Arial" font-size="14" fill="#333">Fixed positions</text>
+<text x="200" y="166" font-family="Arial" font-size="14" fill="#333">Strong bonds</text>
+<text x="200" y="184" font-family="Arial" font-size="14" fill="#555">Vibrate in place</text>
+<text x="200" y="202" font-family="Arial" font-size="14" fill="#555">Definite shape</text>
+
+<!-- Liquid box -->
+<rect x="30" y="232" width="280" height="118" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="170" y="250" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">LIQUID</text>
+<!-- Scattered particles -->
+<circle cx="82" cy="272" r="8" fill="#3b82f6"/>
+<circle cx="112" cy="284" r="8" fill="#3b82f6"/>
+<circle cx="138" cy="266" r="8" fill="#3b82f6"/>
+<circle cx="96" cy="300" r="8" fill="#3b82f6"/>
+<circle cx="126" cy="310" r="8" fill="#3b82f6"/>
+<text x="200" y="272" font-family="Arial" font-size="14" fill="#333">Touching but</text>
+<text x="200" y="288" font-family="Arial" font-size="14" fill="#333">moving past</text>
+<text x="200" y="306" font-family="Arial" font-size="14" fill="#555">No fixed shape</text>
+<text x="200" y="322" font-family="Arial" font-size="14" fill="#555">Fixed volume</text>
+
+<!-- Gas box -->
+<rect x="30" y="360" width="280" height="118" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+<text x="170" y="378" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#0284c7">GAS</text>
+<!-- Spread out particles -->
+<circle cx="70" cy="400" r="8" fill="#0284c7"/>
+<circle cx="140" cy="392" r="8" fill="#0284c7"/>
+<circle cx="100" cy="430" r="8" fill="#0284c7"/>
+<circle cx="160" cy="426" r="8" fill="#0284c7"/>
+<text x="200" y="400" font-family="Arial" font-size="14" fill="#333">Far apart</text>
+<text x="200" y="416" font-family="Arial" font-size="14" fill="#333">Fast motion</text>
+<text x="200" y="434" font-family="Arial" font-size="14" fill="#555">Fill any shape</text>
+<text x="200" y="450" font-family="Arial" font-size="14" fill="#555">Compressible</text>
+
+<!-- CENTRE: Kinetic theory + density -->
+<rect x="334" y="74" width="330" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="499" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Kinetic Particle Theory</text>
+
+<rect x="344" y="104" width="310" height="134" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="499" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Core Principles</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">1. All matter is made of tiny particles</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">2. Particles are in constant motion</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#333">3. Higher temperature = faster motion</text>
+<text x="354" y="204" font-family="Arial" font-size="14" fill="#555">4. Particles attract each other</text>
+<text x="354" y="224" font-family="Arial" font-size="14" fill="#555">5. Particle size ≪ distance between them</text>
+
+<!-- Density -->
+<rect x="344" y="248" width="310" height="100" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="499" y="266" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Density = Mass / Volume</text>
+<text x="499" y="286" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ρ = m/V  (kg/m³ or g/cm³)</text>
+<text x="499" y="306" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Solid iron: 7,874 kg/m³</text>
+<text x="499" y="324" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Water: 1,000 kg/m³   Air: 1.2 kg/m³</text>
+
+<!-- State changes -->
+<rect x="344" y="358" width="310" height="124" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="499" y="376" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">State Changes</text>
+<text x="354" y="396" font-family="Arial" font-size="14" fill="#333">Solid → Liquid: melting (heat added)</text>
+<text x="354" y="414" font-family="Arial" font-size="14" fill="#333">Liquid → Gas: evaporation/boiling</text>
+<text x="354" y="432" font-family="Arial" font-size="14" fill="#555">Gas → Liquid: condensation</text>
+<text x="354" y="450" font-family="Arial" font-size="14" fill="#555">Liquid → Solid: freezing</text>
+<text x="354" y="470" font-family="Arial" font-size="14" fill="#555">Solid → Gas: sublimation (dry ice)</text>
+
+<!-- RIGHT: India context -->
+<rect x="678" y="74" width="302" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="829" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; Particle Theory</text>
+
+<rect x="688" y="104" width="282" height="90" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="829" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Ancient India</text>
+<text x="829" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Acharya Kanada (6th c. BCE)</text>
+<text x="829" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">proposed "parmanu" (atoms) —</text>
+<text x="829" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">smallest indivisible units of matter</text>
+
+<rect x="688" y="204" width="282" height="90" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="829" y="222" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Steel Industry</text>
+<text x="829" y="242" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 3rd largest steel producer</text>
+<text x="829" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Steel density: 7,850 kg/m³</text>
+<text x="829" y="278" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Particle bonding = strength</text>
+
+<rect x="688" y="304" width="282" height="90" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="829" y="322" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Liquid Crystals (LCD)</text>
+<text x="829" y="342" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">State between liquid and solid</text>
+<text x="829" y="360" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India's TV/phone screens use LCDs</text>
+<text x="829" y="378" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">₹80,000 crore electronics sector</text>
+
+<rect x="688" y="404" width="282" height="78" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="829" y="422" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Indian Space (ISRO)</text>
+<text x="829" y="442" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cryogenic engines use liquid H₂</text>
+<text x="829" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Density controls fuel tank design</text>
+<text x="829" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">LH₂: 71 kg/m³ — very low density</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">All matter = particles in constant motion. Solid/liquid/gas differ in spacing and speed.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">ρ = m/V. Kanada proposed atoms 2,600 years ago. State changes = energy changing particle motion.</text>
 </svg>

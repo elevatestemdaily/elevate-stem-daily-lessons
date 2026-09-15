@@ -1,26 +1,103 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does lightning happen?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 14</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">Why does lightning happen?</text>
+<text x="500" y="62" text-anchor="middle" font-family="Arial" font-size="17" fill="#555">Charge separation → 300 MV → air ionises → discharge — Day 14</text>
+
+<!-- ── LEFT: Storm cloud diagram ── -->
+<rect x="20" y="78" width="430" height="410" rx="6" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+
+<!-- Cloud body -->
+<ellipse cx="215" cy="175" rx="120" ry="52" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+<ellipse cx="160" cy="188" rx="72" ry="42" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+<ellipse cx="270" cy="185" rx="82" ry="44" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+<text x="215" y="170" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Cumulonimbus</text>
+<text x="215" y="188" text-anchor="middle" font-family="Arial" font-size="14" fill="#e2e8f0">1 km – 12 km altitude</text>
+
+<!-- Positive charge at top -->
+<text x="215" y="130" text-anchor="middle" font-family="Arial" font-size="17" fill="#f59e0b" font-weight="700">+ + + + + + + + +</text>
+<text x="430" y="130" text-anchor="end" font-family="Arial" font-size="14" fill="#f59e0b">Ice crystals (positive)</text>
+
+<!-- Negative charge at bottom of cloud -->
+<text x="215" y="245" text-anchor="middle" font-family="Arial" font-size="17" fill="#3b82f6" font-weight="700">− − − − − − − − −</text>
+<text x="430" y="245" text-anchor="end" font-family="Arial" font-size="14" fill="#3b82f6">Graupel (negative)</text>
+
+<!-- Stepped leader (dashed, zig-zag) -->
+<polyline points="230,248 225,275 240,305 220,335 235,365" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4"/>
+<text x="258" y="295" font-family="Arial" font-size="14" fill="#92400e" font-weight="700">Stepped leader</text>
+<text x="258" y="312" font-family="Arial" font-size="14" fill="#555">(invisible ionised air)</text>
+
+<!-- Return stroke (bright bolt) -->
+<polyline points="145,365 148,338 132,308 148,278 135,248" fill="none" stroke="#fbbf24" stroke-width="5"/>
+<polyline points="145,365 148,338 132,308 148,278 135,248" fill="none" stroke="white" stroke-width="2"/>
+<text x="30" y="294" font-family="Arial" font-size="14" fill="#fbbf24" font-weight="700">Return stroke</text>
+<text x="30" y="311" font-family="Arial" font-size="14" fill="#fbbf24">30,000°C — 5× Sun</text>
+<text x="30" y="328" font-family="Arial" font-size="14" fill="#555">100,000 km/s</text>
+
+<!-- Ground bar -->
+<rect x="30" y="378" width="410" height="28" rx="0" fill="#92400e"/>
+<text x="235" y="397" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">Ground — induced positive charge below cloud</text>
+
+<!-- Voltage label -->
+<rect x="30" y="414" width="195" height="44" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="127" y="432" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e" font-weight="700">Voltage: up to 300 MV</text>
+<text x="127" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Air breaks down at 3 MV/m</text>
+
+<!-- Charge separation mechanism -->
+<rect x="235" y="414" width="205" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="337" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Charge Separation</text>
+<text x="337" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ice crystals → updraft → positive</text>
+<text x="337" y="466" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Graupel falls → negative base</text>
+<text x="337" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Collision charge transfer</text>
+
+<!-- ── RIGHT: Rod + Safety + Facts ── -->
+<rect x="464" y="78" width="516" height="410" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="722" y="100" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Lightning Rod and Safety</text>
+
+<!-- Building with rod (simplified) -->
+<rect x="474" y="108" width="140" height="200" rx="4" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+<polygon points="464,108 624,108 544,90" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1.5"/>
+<!-- Rod -->
+<line x1="544" y1="90" x2="544" y2="80" stroke="#374151" stroke-width="3"/>
+<circle cx="544" cy="77" r="4" fill="#374151"/>
+<text x="556" y="88" font-family="Arial" font-size="14" fill="#374151" font-weight="700">Rod</text>
+<!-- Copper cable down side -->
+<line x1="624" y1="108" x2="624" y2="308" stroke="#d97706" stroke-width="3"/>
+<!-- Earth stake -->
+<rect x="610" y="308" width="28" height="38" rx="3" fill="#78350f"/>
+<text x="624" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Earth</text>
+<!-- Lightning bolt hitting rod -->
+<polyline points="544,50 548,66 540,82 548,98 544,110" fill="none" stroke="#fbbf24" stroke-width="4"/>
+<polyline points="544,50 548,66 540,82 548,98 544,110" fill="none" stroke="white" stroke-width="2"/>
+<text x="634" y="190" font-family="Arial" font-size="14" fill="#1f5f8b">Current flows</text>
+<text x="634" y="207" font-family="Arial" font-size="14" fill="#1f5f8b">safely to earth</text>
+<text x="474" y="222" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Building</text>
+
+<!-- Safety rules -->
+<rect x="630" y="108" width="340" height="208" rx="4" fill="white" stroke="#dc2626" stroke-width="1.5"/>
+<text x="800" y="128" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#dc2626">Lightning Safety Rules</text>
+<text x="642" y="150" font-family="Arial" font-size="15" fill="#333">✓ Stay inside a building or car</text>
+<text x="642" y="172" font-family="Arial" font-size="15" fill="#333">✓ Car = Faraday cage — safe</text>
+<text x="642" y="194" font-family="Arial" font-size="15" fill="#333">✓ Crouch low if caught outside</text>
+<text x="642" y="216" font-family="Arial" font-size="15" fill="#dc2626">✗ Not under trees / hilltops</text>
+<text x="642" y="238" font-family="Arial" font-size="15" fill="#dc2626">✗ Not near water / metal</text>
+<text x="642" y="264" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">Damini App (IMD): 30–40 min warning</text>
+<text x="642" y="282" font-family="Arial" font-size="14" fill="#555">Real-time alerts — used in Bihar, Odisha</text>
+<text x="642" y="300" font-family="Arial" font-size="14" fill="#555">~2,000 deaths/year in India</text>
+<text x="642" y="312" font-family="Arial" font-size="14" fill="#555">Protected: Qutb Minar, Rashtrapati Bhavan</text>
+
+<!-- Facts box -->
+<rect x="474" y="322" width="496" height="160" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="722" y="342" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#92400e">Lightning Facts</text>
+<text x="484" y="362" font-family="Arial" font-size="15" fill="#333">• Energy released: ~1–5 × 10⁹ J per bolt (1–5 GJ)</text>
+<text x="484" y="384" font-family="Arial" font-size="15" fill="#333">• Temperature: 30,000°C — five times the Sun's surface</text>
+<text x="484" y="406" font-family="Arial" font-size="15" fill="#333">• Return stroke travels at ~100,000 km/s</text>
+<text x="484" y="428" font-family="Arial" font-size="15" fill="#333">• Thunder: shock wave from explosive air expansion</text>
+<text x="484" y="450" font-family="Arial" font-size="14" fill="#555">• 75% of lightning is cloud-to-cloud (not ground-striking)</text>
+<text x="484" y="470" font-family="Arial" font-size="14" fill="#555">• Count seconds flash→thunder, divide by 3 = km away</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="537" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="white">Charge separation (ice collisions) → 300 MV → air ionises → stepped leader + streamer → return stroke. Rod safely earths it.</text>
 </svg>

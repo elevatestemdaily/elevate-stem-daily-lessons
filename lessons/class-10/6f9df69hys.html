@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 02 — How do we know a chemical reaction occurred? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 02</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do we know a chemical reaction occurred?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to identify the five observable signs of a chemical reaction, explain why each sign indicates a new substance has formed, and predict how removing heat affects the signs produced by an exothermic reaction.</p>
+</div><h2>1. The mystery</h2>
+<p>You squeeze lemon juice onto a piece of cut apple and the flesh stays white for longer. You mix baking soda and vinegar and the mixture fizzes violently. You leave an iron nail in a wet cloth overnight and it turns red-brown. In each case something clearly changed — but how do you know it was actually a new substance that formed, rather than just the same substances rearranging? What tells a scientist that a chemical reaction has occurred, and not just a physical change?</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>chemical reaction</strong> is a process in which one or more substances (the <strong>reactants</strong>) are converted into one or more different substances (the <strong>products</strong>) with different chemical properties. The key word is <em>different</em> — the products have a different arrangement of atoms, different bonds, and therefore different properties from the reactants.</p>
+<p>A <strong>physical change</strong> — like dissolving sugar in water or melting ice — does not produce a new substance. The sugar molecules are still sugar; they are simply dispersed. You can recover the original substance by reversing the process.</p>
+<p>Scientists use five observable signs to indicate that a chemical reaction has likely occurred. Each sign points to the formation of a new substance:</p>
+<p><strong>Sign 1 — Evolution of a gas (effervescence).</strong> When vinegar (acetic acid, CH₃COOH) reacts with baking soda (sodium bicarbonate, NaHCO₃), carbon dioxide gas is produced: CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂↑. The fizzing (effervescence) signals a new gaseous product that was not present before. Gas evolution is strong evidence of a reaction because gases are distinct chemical entities that escape from the system.</p>
+<p><strong>Sign 2 — Change in colour.</strong> When iron (Fe) reacts with oxygen and water, <strong>iron(III) oxide</strong> (Fe₂O₃·xH₂O) — commonly called rust — forms. Its reddish-brown colour is fundamentally different from silvery iron metal. The colour change is not cosmetic; it reflects a completely different set of chemical bonds and electronic structure in the product.</p>
+<p><strong>Sign 3 — Formation of a precipitate.</strong> When solutions of lead(II) nitrate (Pb(NO₃)₂) and potassium iodide (KI) are mixed, a bright yellow solid — <strong>lead(II) iodide</strong> (PbI₂) — immediately forms and sinks: Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃. The solid precipitate cannot be explained by either starting solution — it is a new, insoluble substance.</p>
+<p><strong>Sign 4 — Change in temperature (exothermic or endothermic).</strong> An <strong>exothermic reaction</strong> releases heat energy — for example, burning magnesium in oxygen (2Mg + O₂ → 2MgO) releases so much energy that it produces a blinding white flame. An <strong>endothermic reaction</strong> absorbs heat — dissolving ammonium nitrate (NH₄NO₃) in water cools the solution measurably. Temperature change indicates that bonds in the reactants have broken and new, more (or less) stable bonds have formed in the products, releasing or absorbing the energy difference.</p>
+<p><strong>Sign 5 — Change in smell (production of a new odour).</strong> When ethanol reacts with acetic acid in the presence of an acid catalyst, <strong>ethyl acetate</strong> (an ester) is produced — recognisable by its sweet, fruity smell that neither ethanol nor acetic acid alone possesses. New odour = new volatile compound = new substance formed.</p>
+<p>Critically, a single sign alone can sometimes be misleading — water boiling produces gas (steam) but is purely physical. Scientists therefore look for multiple signs together, or use confirmatory tests: a glowing splint reigniting confirms O₂; a burning splint extinguishing with a pop confirms H₂; a lime water turning milky confirms CO₂.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of it as a checklist for detective work:</p>
+<ul>
+<li><strong>Gas evolved?</strong> → Bonds broke and a new gaseous compound formed</li>
+<li><strong>Colour changed?</strong> → New substance with different electron arrangement</li>
+<li><strong>Precipitate formed?</strong> → New insoluble compound appeared from soluble reactants</li>
+<li><strong>Temperature changed?</strong> → Bond energy released or absorbed as heat</li>
+<li><strong>New smell?</strong> → New volatile organic compound produced</li>
+</ul>
+<p>The more signs you observe simultaneously, the more certain you are that a new substance — not just a physical rearrangement — has formed. The underlying principle: <strong>a reaction occurs when atoms rearrange into lower-energy or more stable configurations, always conserving mass</strong> (Law of Conservation of Mass).</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows five parallel columns, each representing one observable sign:</p>
+<ul>
+<li><strong>Column 1 (blue):</strong> Fizzing beaker — labelled "Gas evolved (CO₂ from vinegar + baking soda)"</li>
+<li><strong>Column 2 (brown):</strong> Iron nail before (grey) and after (red-brown) — labelled "Colour change (Fe → Fe₂O₃)"</li>
+<li><strong>Column 3 (yellow):</strong> Two clear solutions mixing to form yellow precipitate — labelled "Precipitate (PbI₂)"</li>
+<li><strong>Column 4 (orange/blue split):</strong> Thermometer rising (exothermic) and falling (endothermic) — labelled "Temperature change"</li>
+<li><strong>Column 5 (green wavy lines):</strong> Ester molecule — labelled "New smell (ethyl acetate)"</li>
+<li>A banner at the bottom: "New substance formed = chemical reaction"</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_02.svg" alt="Diagram for How do we know a chemical reaction occurred?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>These five signs appear constantly in Indian daily life:</p>
+<ul>
+<li><strong>Cooking on a tawa:</strong> When atta (wheat dough) is heated, the Maillard reaction between amino acids and sugars produces hundreds of new compounds — new colour (brown), new smell (toasty), and heat absorbed from the flame. All three signs confirm a chemical reaction.</li>
+<li><strong>Curd formation (dahi):</strong> Lactic acid bacteria convert lactose (milk sugar) into lactic acid — the milk coagulates (precipitate-like curdling) and the temperature slightly rises. A chemical reaction has occurred inside your bowl.</li>
+<li><strong>Lime paint on walls (whitewash):</strong> Ca(OH)₂ (slaked lime) reacts with CO₂ from air over days: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O. The wall hardens (new solid forms) and absorbs CO₂ from the air — a slow, ongoing chemical reaction.</li>
+<li><strong>Matchstick igniting:</strong> Potassium chlorate on the matchhead reacts with red phosphorus on the matchbox surface — producing a flame (heat + light), white smoke (new solid particles), and a burning smell. Four signs simultaneously.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how do we know a chemical reaction occurred</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 asked what happens to observable signs when heat is removed from an exothermic reaction — the rate slows and the temperature rise becomes smaller. Now extend further:</p>
+<p>Some reactions are <strong>reversible</strong>. In the reaction: N₂ + 3H₂ ⇌ 2NH₃ + heat (the Haber process for making ammonia fertiliser used across India), the forward reaction is exothermic. If you start the reaction and then suddenly absorb all the heat produced (cooling the system), the forward rate slows — consistent with Q3's prediction. But cooling also shifts the equilibrium: Le Chatelier's principle states the system adjusts to counteract the change. A lower temperature favours the exothermic (forward) direction, increasing NH₃ yield — but it also slows the rate.</p>
+<p><strong>Predict:</strong> At very low temperatures, which sign of reaction would disappear first — the temperature change or the colour change of any indicator present? Use the rate argument to reason why one sign fades before the other.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which observation is a reliable sign that a chemical reaction has occurred?</p>
+<ul>
+<li>a. The mixture changes its container shape but stays the same substance</li>
+<li>b. A new substance is formed with different properties than the reactants</li>
+<li>c. The colour of the container changes but the chemicals remain the same</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why does identifying the mechanism of a reaction matter more than memorising the result?</p>
+<ul>
+<li>a. Because results are impossible to verify without laboratory equipment</li>
+<li>b. Understanding mechanism lets you predict outcomes in unfamiliar situations</li>
+<li>c. Because the mechanism is always more colourful and easy to observe</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to observable signs of reaction if you removed heat from an exothermic reaction?</p>
+<ul>
+<li>a. The reaction rate would slow and temperature rise would be smaller</li>
+<li>b. The reaction would speed up because less energy is wasted</li>
+<li>c. The reaction signs would remain unchanged as heat is not a reactant</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The Law of Conservation of Mass was established by Antoine Lavoisier in 1789 by carefully weighing reactants and products in sealed containers. He showed that in any chemical reaction, the total mass of products exactly equals the total mass of reactants — not one atom is created or destroyed. This seems obvious now, but before Lavoisier, scientists genuinely believed burning wood "lost" mass because phlogiston (a fictional substance) escaped. The five observable signs tell you a reaction happened; conservation of mass tells you the atoms simply rearranged.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A chemical reaction is confirmed when one or more of five observable signs appear — gas evolution, colour change, precipitate formation, temperature change, or new odour — because each sign indicates a new substance with different properties has formed from the original reactants.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 2 of 30</footer>
+</div>
+</body>
+</html>

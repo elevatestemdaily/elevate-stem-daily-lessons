@@ -1,26 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Ultimate Challenge: Build a physics model </text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 30</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Build a Physics Model Explaining Reality</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Scientific modelling cycle, falsifiability, Standard Model — Day 30</text>
+
+<!-- LEFT: Modelling cycle -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Scientific Modelling Cycle</text>
+
+<!-- Six-step cycle boxes in a circular layout -->
+<rect x="106" y="100" width="128" height="30" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">1. OBSERVE</text>
+
+<rect x="230" y="148" width="82" height="30" rx="4" fill="#a7f3d0" stroke="#16a34a" stroke-width="1.5"/>
+<text x="271" y="168" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">2. QUESTION</text>
+
+<rect x="230" y="230" width="82" height="30" rx="4" fill="#6ee7b7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="271" y="250" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">3. HYPOTHESISE</text>
+
+<rect x="108" y="298" width="124" height="30" rx="4" fill="#34d399" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="318" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">4. MODEL + PREDICT</text>
+
+<rect x="28" y="230" width="80" height="30" rx="4" fill="#10b981" stroke="#16a34a" stroke-width="1.5"/>
+<text x="68" y="250" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">5. TEST</text>
+
+<rect x="28" y="148" width="80" height="30" rx="4" fill="#059669" stroke="#16a34a" stroke-width="1.5"/>
+<text x="68" y="168" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">6. REVISE</text>
+
+<!-- Arrows hinting cycle -->
+<text x="170" y="210" text-anchor="middle" font-family="Arial" font-size="30" fill="#059669">↻</text>
+<text x="170" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#059669">repeat</text>
+
+<rect x="30" y="344" width="280" height="138" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="362" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">What Makes a Good Model?</text>
+<text x="40" y="382" font-family="Arial" font-size="14" fill="#333">Falsifiable: can be proven wrong</text>
+<text x="40" y="400" font-family="Arial" font-size="14" fill="#333">Predictive: makes testable predictions</text>
+<text x="40" y="418" font-family="Arial" font-size="14" fill="#555">Parsimonious: simplest explanation</text>
+<text x="40" y="436" font-family="Arial" font-size="14" fill="#555">Consistent: no internal contradictions</text>
+<text x="40" y="454" font-family="Arial" font-size="14" fill="#555">Quantitative: uses maths to predict</text>
+<text x="40" y="472" font-family="Arial" font-size="14" fill="#555">Newton gravity: correct for 300 years!</text>
+
+<!-- CENTRE: Standard Model + examples -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Great Models of Physics</text>
+
+<rect x="344" y="104" width="312" height="108" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">The Standard Model</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Particles: 6 quarks, 6 leptons, bosons</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Higgs boson: discovered 2012, CERN</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">Predicted with 1 ppb precision</text>
+<text x="354" y="204" font-family="Arial" font-size="14" fill="#555">Missing: gravity, dark matter, dark energy</text>
+
+<rect x="344" y="222" width="312" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="240" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Newton to Einstein GR</text>
+<text x="354" y="262" font-family="Arial" font-size="14" fill="#333">Newton: worked perfectly for 200 years</text>
+<text x="354" y="282" font-family="Arial" font-size="14" fill="#333">Mercury orbit: Newton wrong by 43"</text>
+<text x="354" y="302" font-family="Arial" font-size="14" fill="#555">GR: better model, much harder to use</text>
+
+<rect x="344" y="322" width="312" height="90" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Bohr Model to Quantum Mechanics</text>
+<text x="354" y="362" font-family="Arial" font-size="14" fill="#333">Bohr: electrons in fixed orbits (wrong)</text>
+<text x="354" y="382" font-family="Arial" font-size="14" fill="#333">QM: probability clouds (correct)</text>
+<text x="354" y="402" font-family="Arial" font-size="14" fill="#555">Better model → better predictions</text>
+
+<rect x="344" y="422" width="312" height="60" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Science: Always provisional</text>
+<text x="354" y="462" font-family="Arial" font-size="14" fill="#555">Models improve as data improves</text>
+<text x="354" y="478" font-family="Arial" font-size="14" fill="#555">Wrong models still teach us something</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Model Builders</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">S.N. Bose (1894–1974)</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bose-Einstein statistics model</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bosons named after him</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Predicted Bose-Einstein Condensate</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">C.V. Raman (1888–1970)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Raman scattering: light-matter model</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Nobel Prize 1930</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Predicted before quantum QED theory</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">ISRO: Orbit Modelling</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chandrayaan-3: model predicted lunar</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">orbit insertion with ~1 m accuracy</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Physics model → engineering reality</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">CERN Indian Participation</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">300+ Indian scientists at CERN LHC</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Testing Standard Model predictions</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CMS detector: India built calorimeters</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Models must be falsifiable, predictive, parsimonious. Better data = better models. Science is never final.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Standard Model: most precise in physics. Bose, Raman, Saha built foundations. 300+ Indians at CERN.</text>
 </svg>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 16 — How does the human nervous system work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 16</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does the human nervous system work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to trace the path of a nerve impulse from stimulus to response, name the key structural parts of a neuron, explain how signals cross a synapse, and predict what happens to nerve signal speed when myelin is damaged.</p>
+</div><h2>1. The mystery</h2>
+<p>You touch a hot tawa in the kitchen. Before you have even consciously registered the heat, your hand has already pulled away. The entire sequence — detecting heat, sending a signal, contracting muscles — takes less than 0.1 seconds. Yet the distance from your fingertip to your spinal cord and back is roughly 1.5 metres in an adult. How does a signal travel that fast? And why is the response faster than your conscious thought?</p>
+<h2>2. The science behind it</h2>
+<p>The human nervous system is divided into two main parts: the <strong>central nervous system (CNS)</strong> — comprising the brain and spinal cord — and the <strong>peripheral nervous system (PNS)</strong> — all the nerves branching out to the rest of the body.</p>
+<p><strong>The neuron — basic unit of the nervous system</strong></p>
+<p>The functional unit is the <strong>neuron</strong>, a specialised cell with three main regions:</p>
+<ul>
+<li><strong>Cell body (soma):</strong> Contains the nucleus and most cellular machinery. Metabolic centre of the neuron.</li>
+<li><strong>Dendrites:</strong> Short, branching extensions that receive incoming signals from other neurons or sensory receptors and carry them toward the cell body.</li>
+<li><strong>Axon:</strong> A single, long projection that carries the electrical signal (nerve impulse) away from the cell body toward the next neuron or target organ. Axons can be extremely long — the sciatic nerve axons running from the spinal cord to the toes can exceed one metre in length.</li>
+</ul>
+<p>Many axons are wrapped in a fatty insulating layer called the <strong>myelin sheath</strong>, produced by Schwann cells in the PNS. The myelin does not cover the axon continuously — it leaves regular gaps called <strong>nodes of Ranvier</strong>. Instead of travelling the full length of the axon continuously, the electrical impulse jumps from node to node in a process called <strong>saltatory conduction</strong> (from the Latin saltare, to jump). This dramatically increases signal speed: unmyelinated nerve fibres conduct at 0.5–2 m/s, while heavily myelinated fibres conduct at 70–120 m/s.</p>
+<p><strong>The nerve impulse — action potential</strong></p>
+<p>A resting neuron maintains a <strong>resting membrane potential</strong> of approximately −70 millivolts (mV) inside relative to outside. This negative charge is maintained by the sodium-potassium pump, which actively moves 3 Na⁺ ions out of the cell and 2 K⁺ ions in for every ATP molecule used.</p>
+<p>When a stimulus is strong enough, sodium channels in the axon membrane open, and Na⁺ ions rush into the cell, rapidly reversing the membrane potential to approximately +40 mV. This is <strong>depolarisation</strong>, and it constitutes the electrical nerve impulse — called an <strong>action potential</strong>. The depolarisation wave travels down the axon as each section's sodium channels open in sequence, triggered by the electrical change in the adjacent section. After depolarisation, potassium channels open, K⁺ ions flow out, and the membrane repolarises back toward −70 mV (repolarisation), ready for the next impulse.</p>
+<p><strong>The synapse — chemical handoff between neurons</strong></p>
+<p>Neurons do not touch each other directly. Between any two neurons lies a tiny gap of 20–40 nanometres called a <strong>synapse</strong> (specifically, the synaptic cleft). The neuron sending the signal is the <strong>presynaptic neuron</strong>; the one receiving is the <strong>postsynaptic neuron</strong>.</p>
+<p>When the action potential reaches the axon terminal, it triggers the release of chemical messengers called <strong>neurotransmitters</strong> from small membrane pouches called <strong>synaptic vesicles</strong>. The neurotransmitter molecules diffuse across the synaptic cleft and bind to specific protein receptors on the membrane of the postsynaptic neuron. Binding opens ion channels in the postsynaptic membrane, either triggering a new action potential (if the neurotransmitter is excitatory, like acetylcholine or glutamate) or preventing one (if it is inhibitory, like GABA). Common neurotransmitters include acetylcholine (at neuromuscular junctions), dopamine, serotonin, and adrenaline.</p>
+<p><strong>Reflex arc</strong> — the fastest responses bypass the brain entirely. A reflex arc routes the signal from a sensory receptor → sensory neuron → relay neuron in the spinal cord → motor neuron → effector (muscle or gland). The conscious brain receives a copy of the signal afterward, which is why you are aware of the pain a moment after your hand has already moved.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the nervous system as a telephone network:</p>
+<ul>
+<li><strong>Neurons</strong> = telephone cables</li>
+<li><strong>Cell body</strong> = telephone exchange (decision-making node)</li>
+<li><strong>Axon</strong> = the wire carrying the signal along a line</li>
+<li><strong>Myelin sheath</strong> = insulation around the wire (speeds up signal, prevents leakage)</li>
+<li><strong>Synapse</strong> = the gap between two cables (bridged by chemical courier, not direct wire contact)</li>
+<li><strong>Neurotransmitter</strong> = the courier that carries the signal across the gap</li>
+<li><strong>Reflex arc</strong> = an automatic local routing that doesn't need to go to the main office (brain)</li>
+</ul>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows two diagrams:</p>
+<ul>
+<li><strong>Left diagram — Neuron structure:</strong> A labelled neuron with dendrites, cell body, axon, myelin sheath segments, nodes of Ranvier, and axon terminal. Arrows show signal direction (dendrite → cell body → axon → terminal).</li>
+<li><strong>Right diagram — Synapse detail:</strong> Presynaptic axon terminal showing synaptic vesicles releasing neurotransmitter molecules across the synaptic cleft, binding to receptor proteins on the postsynaptic membrane. Labels: "synaptic vesicle", "neurotransmitter", "synaptic cleft (20–40 nm)", "receptor".</li>
+<li>A small inset graph shows the action potential: membrane potential (mV) on y-axis, time on x-axis, with resting (−70 mV), depolarisation peak (+40 mV), and repolarisation labelled.</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_16.svg" alt="Diagram for How does the human nervous system work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Understanding nerve signal transmission explains several medical realities:</p>
+<ul>
+<li><strong>Multiple sclerosis (MS):</strong> An autoimmune disease in which the body's immune system attacks the myelin sheath. As myelin is destroyed, saltatory conduction is disrupted — nerve signals slow, become erratic, or fail to reach their targets. Symptoms include muscle weakness, loss of coordination, and impaired vision, depending on which nerves are affected. The mechanism directly predicts the symptoms.</li>
+<li><strong>Local anaesthetics:</strong> Drugs like lidocaine (used in dental procedures across India) work by blocking the sodium channels in the axon membrane, preventing the Na⁺ influx that initiates an action potential. No action potential means no pain signal reaches the brain. The patient feels no pain because the signal is physically blocked, not suppressed in the brain.</li>
+<li><strong>Organophosphate poisoning:</strong> Certain pesticides used in Indian agriculture and, historically, nerve agents, inhibit the enzyme acetylcholinesterase — the enzyme that breaks down acetylcholine at synapses. Without breakdown, acetylcholine accumulates and continuously stimulates muscles, causing uncontrolled muscle contraction, convulsions, and respiratory failure.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does the human nervous system work</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that damaging myelin sheaths slows or disrupts nerve signal transmission, as seen in multiple sclerosis. Now extend the prediction: the degree of demyelination in MS varies — some patches of myelin are only partially damaged, not fully destroyed.</p>
+<p><strong>Predict:</strong> In a neuron with partially damaged myelin, would the signal be completely absent, or would you expect a partial, degraded signal? Consider that saltatory conduction depends on the impulse jumping reliably from one node of Ranvier to the next. If a section of myelin is thinned rather than removed entirely, would the action potential still jump correctly across that region, or would signal leakage slow or distort it? Relate your prediction to why MS symptoms often fluctuate — getting worse in heat and temporarily improving in cold — given that ion channel conductance changes with temperature.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the basic unit of the nervous system that transmits signals?</p>
+<ul>
+<li>a. The synapse is the cell that generates and carries all nerve impulses</li>
+<li>b. The neuron transmits electrical impulses along its axon to other cells</li>
+<li>c. The myelin sheath is the cell responsible for sending nervous system signals</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding nerve signal transmission more useful than knowing the nervous system exists?</p>
+<ul>
+<li>a. The mechanism explains reflex arcs, drug effects and neurological disease origins</li>
+<li>b. Because the nervous system is only relevant in medical emergencies and surgery</li>
+<li>c. Because the transmission mechanism is identical in all animals including insects</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen to nerve signal speed if myelin sheaths were damaged?</p>
+<ul>
+<li>a. Signal speed would increase because less insulation means faster ion flow</li>
+<li>b. Signal transmission would slow down or fail, as seen in multiple sclerosis</li>
+<li>c. Signal speed would remain the same since myelin only provides structural support</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Your brain contains approximately 86 billion neurons, and each neuron can form connections (synapses) with up to 10,000 other neurons. This gives the human brain an estimated 100 trillion synaptic connections. The total number of possible signal pathways is astronomically larger than the number of atoms in the observable universe. Yet this entire network runs on electrical signals that use the same basic mechanism — sodium and potassium ions moving across a membrane — that was first described in squid giant axons in 1952 by Hodgkin and Huxley.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A nerve impulse is an electrochemical action potential that travels along a neuron's axon — sped by saltatory conduction through myelin sheaths — and crosses synapses via neurotransmitter chemicals, so damaged myelin slows signals and causes neurological symptoms like those seen in multiple sclerosis.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

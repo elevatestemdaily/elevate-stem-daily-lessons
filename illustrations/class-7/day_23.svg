@@ -1,26 +1,146 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="vapArr23" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#0369a1"/>
+  </marker>
+  <marker id="rainArr23" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#1d4ed8"/>
+  </marker>
+</defs>
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do forests create rain?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 23</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">How do forests create rain?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Transpiration → condensation → precipitation — Day 23</text>
+
+<!-- Vertical divider -->
+<line x1="500" y1="68" x2="500" y2="495" stroke="#ccc" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+<!-- LEFT PANEL: Forest transpiration cycle (x=20-490) -->
+
+<!-- Sky zone -->
+<rect x="20" y="68" width="470" height="100" rx="0" fill="#bfdbfe"/>
+
+<!-- Cloud at top -->
+<ellipse cx="180" cy="95" rx="55" ry="28" fill="white" stroke="#93c5fd" stroke-width="2"/>
+<ellipse cx="145" cy="103" rx="35" ry="22" fill="white" stroke="#93c5fd" stroke-width="2"/>
+<ellipse cx="220" cy="102" rx="40" ry="24" fill="white" stroke="#93c5fd" stroke-width="2"/>
+<text x="180" y="100" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af" font-weight="700">cloud forms</text>
+
+<!-- Rain drops from cloud -->
+<line x1="155" y1="127" x2="148" y2="148" stroke="#1d4ed8" stroke-width="2" marker-end="url(#rainArr23)"/>
+<line x1="172" y1="128" x2="165" y2="149" stroke="#1d4ed8" stroke-width="2" marker-end="url(#rainArr23)"/>
+<line x1="189" y1="127" x2="182" y2="148" stroke="#1d4ed8" stroke-width="2" marker-end="url(#rainArr23)"/>
+<line x1="206" y1="128" x2="199" y2="149" stroke="#1d4ed8" stroke-width="2" marker-end="url(#rainArr23)"/>
+<text x="235" y="145" font-family="Arial" font-size="14" fill="#1d4ed8">rain ↓</text>
+
+<!-- Condensation label -->
+<text x="300" y="88" font-family="Arial" font-size="14" fill="#1e40af" font-weight="700">Step 3: vapour cools</text>
+<text x="300" y="101" font-family="Arial" font-size="14" fill="#1e40af">→ condenses on pollen/dust</text>
+<text x="300" y="114" font-family="Arial" font-size="14" fill="#1e40af">→ cloud droplets → rain</text>
+
+<!-- Wavy vapour rising arrows -->
+<path d="M100,167 Q107,157 115,167 Q122,177 130,167" fill="none" stroke="#0369a1" stroke-width="2" marker-end="url(#vapArr23)"/>
+<path d="M100,145 Q107,135 115,145" fill="none" stroke="#0369a1" stroke-width="1.5"/>
+<path d="M155,162 Q162,152 170,162 Q177,172 185,162" fill="none" stroke="#0369a1" stroke-width="2" marker-end="url(#vapArr23)"/>
+<path d="M155,140 Q162,130 170,140" fill="none" stroke="#0369a1" stroke-width="1.5"/>
+<path d="M220,165 Q227,155 235,165 Q242,175 250,165" fill="none" stroke="#0369a1" stroke-width="2" marker-end="url(#vapArr23)"/>
+<text x="270" y="165" font-family="Arial" font-size="14" fill="#0369a1">water vapour rising</text>
+
+<!-- Step 2 label -->
+<text x="300" y="190" font-family="Arial" font-size="14" fill="#0369a1" font-weight="700">Step 2: warm moist air</text>
+<text x="300" y="203" font-family="Arial" font-size="14" fill="#0369a1">rises (less dense than</text>
+<text x="300" y="216" font-family="Arial" font-size="14" fill="#0369a1">cool dry air)</text>
+
+<!-- Canopy zone -->
+<rect x="20" y="168" width="470" height="30" rx="0" fill="#15803d" opacity="0.8"/>
+<text x="255" y="187" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">CANOPY — stomata release water vapour</text>
+
+<!-- Tree trunks -->
+<rect x="60" y="198" width="22" height="185" rx="4" fill="#92400e"/>
+<rect x="120" y="208" width="20" height="175" rx="4" fill="#78350f"/>
+<rect x="175" y="202" width="24" height="181" rx="4" fill="#92400e"/>
+<rect x="235" y="210" width="20" height="173" rx="4" fill="#78350f"/>
+
+<!-- Stomata label — drawn after trunks so text renders on top -->
+<text x="30" y="215" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Step 1: Transpiration</text>
+<text x="30" y="226" font-family="Arial" font-size="14" fill="#333">Stomata on leaves release</text>
+<text x="30" y="237" font-family="Arial" font-size="14" fill="#333">water vapour (1,000 L/day</text>
+<text x="30" y="248" font-family="Arial" font-size="14" fill="#333">per large tree)</text>
+
+<!-- Ground zone (brown) -->
+<rect x="20" y="383" width="470" height="30" fill="#a16207"/>
+<text x="255" y="402" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">GROUND — soil absorbs rain</text>
+
+<!-- Underground roots zone -->
+<rect x="20" y="413" width="470" height="72" rx="0" fill="#d97706" opacity="0.3"/>
+
+<!-- Root systems -->
+<path d="M71,383 Q55,400 40,415 M71,383 Q65,405 62,420 M71,383 Q80,405 88,418" fill="none" stroke="#6b3a0e" stroke-width="2"/>
+<path d="M130,383 Q114,400 100,415 M130,383 Q125,406 122,420 M130,383 Q140,405 148,418" fill="none" stroke="#6b3a0e" stroke-width="2"/>
+<path d="M187,383 Q171,400 156,415 M187,383 Q182,406 179,420 M187,383 Q197,405 205,418" fill="none" stroke="#6b3a0e" stroke-width="2"/>
+<path d="M245,383 Q229,400 214,415 M245,383 Q240,406 237,420 M245,383 Q255,405 263,418" fill="none" stroke="#6b3a0e" stroke-width="2"/>
+
+<!-- Groundwater arrows up the trunks -->
+<line x1="71" y1="370" x2="71" y2="330" stroke="#0369a1" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#vapArr23)"/>
+<line x1="187" y1="360" x2="187" y2="320" stroke="#0369a1" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#vapArr23)"/>
+
+<!-- Step labels along trunk -->
+<text x="30" y="330" font-family="Arial" font-size="14" fill="#1f5f8b">Xylem carries</text>
+<text x="30" y="341" font-family="Arial" font-size="14" fill="#1f5f8b">water upward</text>
+<text x="30" y="360" font-family="Arial" font-size="14" fill="#555">(like a pipe)</text>
+
+<!-- Underground caption -->
+<text x="255" y="435" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Roots absorb groundwater →</text>
+<text x="255" y="447" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">travels up trunk (xylem) → exits leaves</text>
+<text x="255" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cycle repeats — same water molecule</text>
+<text x="255" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">can cycle dozens of times before leaving region</text>
+<text x="255" y="484" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">Researchers call this: "biotic pump"</text>
+
+<!-- RIGHT PANEL: Deforested comparison (x=510-978) -->
+<!-- Sky zone - hazy/dry -->
+<rect x="510" y="68" width="468" height="100" rx="0" fill="#fef9c3"/>
+<text x="744" y="108" text-anchor="middle" font-family="Arial" font-size="22" fill="#ca8a04">☀</text>
+<text x="744" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">No clouds form —</text>
+<text x="744" y="154" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">air too dry for condensation</text>
+
+<!-- Canopy gone -->
+<rect x="510" y="168" width="468" height="30" fill="#d4d4d4"/>
+<text x="744" y="187" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#6b7280">DEFORESTED — no transpiration</text>
+
+<!-- Bare land zone -->
+<rect x="510" y="198" width="468" height="185" rx="0" fill="#fef3c7"/>
+<!-- Cracked soil pattern -->
+<line x1="560" y1="230" x2="590" y2="270" stroke="#d97706" stroke-width="1.5"/>
+<line x1="590" y1="270" x2="640" y2="240" stroke="#d97706" stroke-width="1.5"/>
+<line x1="640" y1="240" x2="670" y2="290" stroke="#d97706" stroke-width="1.5"/>
+<line x1="670" y1="290" x2="720" y2="255" stroke="#d97706" stroke-width="1.5"/>
+<line x1="720" y1="255" x2="760" y2="300" stroke="#d97706" stroke-width="1.5"/>
+<line x1="760" y1="300" x2="810" y2="265" stroke="#d97706" stroke-width="1.5"/>
+<line x1="810" y1="265" x2="840" y2="310" stroke="#d97706" stroke-width="1.5"/>
+<line x1="545" y1="260" x2="575" y2="295" stroke="#d97706" stroke-width="1.5"/>
+<line x1="855" y1="230" x2="895" y2="270" stroke="#d97706" stroke-width="1.5"/>
+<!-- Cracked soil label -->
+<text x="744" y="340" text-anchor="middle" font-family="Arial" font-size="14" fill="#ca8a04">Cracked, dry soil</text>
+<text x="744" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">No root systems to</text>
+<text x="744" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">absorb water or pump</text>
+<text x="744" y="384" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">vapour into atmosphere</text>
+
+<!-- Ground (dry) -->
+<rect x="510" y="383" width="468" height="30" fill="#b45309"/>
+<text x="744" y="402" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">DRY GROUND — rain runs off, not absorbed</text>
+
+<!-- Underground dry -->
+<rect x="510" y="413" width="468" height="72" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+<text x="744" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">No roots → water not stored</text>
+<text x="744" y="456" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">underground → flash floods</text>
+<text x="744" y="471" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">then drought alternating</text>
+
+<!-- Comparison labels -->
+<text x="280" y="493" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">FORESTED: self-watering cycle</text>
+<text x="744" y="493" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">DEFORESTED: drying spiral</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Forests are water pumps: stomata release vapour → vapour rises → cools → condenses → rain. Deforest = less rain.</text>
 </svg>

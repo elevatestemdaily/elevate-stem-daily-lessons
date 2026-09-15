@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 13 — Mitochondria: the cell's power plants | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 13</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Mitochondria: the cell's power plants</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how mitochondria produce ATP, describe the electron transport chain, and predict what a cell without mitochondria would experience.</p>
+</div><h2>1. The mystery</h2>
+<p>A marathon runner burns roughly 2,500 kcal over 42 km. Every joule of that energy was released inside mitochondria, in reactions happening billions of times per second in trillions of cells simultaneously. How does this tiny organelle produce so much energy?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Mitochondria structure:</strong> Double membrane. Outer membrane: smooth, permeable. Inner membrane: highly folded into <em>cristae</em> (increases surface area), contains ATP synthase and electron transport proteins. Matrix: fluid inside, contains Krebs cycle enzymes and mitochondrial DNA.</p>
+<p><strong>Krebs Cycle (matrix):</strong>
+- Pyruvate (from glycolysis) enters → Acetyl-CoA (2C)
+- 2-carbon fragment joins 4-carbon molecule → 6-carbon citric acid
+- Through 8 reactions: 3 CO₂ released, electron carriers NADH + FADH₂ loaded
+- Net per glucose: 6 NADH, 2 FADH₂, 2 ATP</p>
+<p><strong>Electron Transport Chain (inner membrane):</strong>
+- NADH and FADH₂ donate electrons to protein complexes (I, II, III, IV)
+- Electrons passed down the chain release energy → pump protons (H⁺) from matrix to intermembrane space
+- Proton gradient drives ATP synthase (F₀F₁-ATP synthase) → 34 ATP per glucose
+- O₂ is the final electron acceptor → combines with electrons + H⁺ → H₂O</p>
+<p><strong>Total yield:</strong> 38 ATP per glucose (theoretical max; real value ~30–32 due to membrane leakage).</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the mitochondrion as a hydroelectric dam:</p>
+<ul>
+<li><strong>Glucose (via pyruvate)</strong> is the river flowing in — the raw fuel.</li>
+<li><strong>The Krebs cycle</strong> is the process of routing the river into a reservoir. It doesn't generate much electricity directly; it builds up the "water" (electron carriers NADH and FADH₂) in the reservoir.</li>
+<li><strong>The electron transport chain</strong> is the dam wall. Protons are pumped from the matrix to the intermembrane space, building up a concentration difference — like water piling up behind a dam.</li>
+<li><strong>ATP synthase</strong> is the turbine at the base of the dam. Protons rush back through it down the gradient, and the spinning motion drives the attachment of phosphate to ADP, making ATP — just as water rushing through a turbine generates electricity.</li>
+<li><strong>Oxygen</strong> is the drain at the bottom of the system. Without it, the protons have nowhere to go, the gradient collapses, the turbine stops, and the dam produces no electricity despite still having its reservoir full of NADH and FADH₂.</li>
+<li><strong>The cristae</strong> (folds of the inner membrane) are like adding extra turbine gates — more surface area means more ATP synthase molecules and greater output.</li>
+</ul>
+<p>A cell without mitochondria is like a city without its power plant. It can run on emergency batteries (anaerobic glycolysis) for a short time, but complex work — muscle contraction, nerve signalling, protein synthesis — shuts down quickly.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a single mitochondrion in cut-away cross-section. The outer membrane is a smooth oval boundary (grey). Inside, the inner membrane is shown as a heavily folded structure in dark blue, with the folds (cristae) labelled and extending into the matrix. The matrix (pale blue interior) contains a circular arrow labelled "Krebs cycle" with CO₂ bubbles exiting and NADH/FADH₂ packets pointing rightward. Along the inner membrane, four vertical protein blocks labelled "Complex I–IV" are shown in sequence, with a horizontal electron arrow (e⁻) flowing left to right across them; vertical H⁺ arrows show protons being pumped upward into the intermembrane space (the gap between inner and outer membranes, coloured amber). At the far right of the inner membrane, a mushroom-shaped structure labelled "ATP synthase" has H⁺ flowing back down through it and an ATP coin emerging on the matrix side. An O₂ molecule enters at Complex IV and exits as H₂O.</p>
+<figure><img src="../../illustrations/class-9/day_13.svg" alt="Diagram for Mitochondria: the cell's power plants"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Mitochondrial diseases affect ~1 in 5,000 Indians — causing muscle weakness, neurological disorders, diabetes, and heart disease. LHON (Leber's hereditary optic neuropathy) causes blindness in young Indian men due to mitochondrial DNA mutations. AIIMS and NIMHANS research mitochondrial dysfunction. Diabetes (80 million Indians): insulin resistance impairs glucose entry into cells, starving mitochondria. Metformin (most prescribed diabetes drug globally) works partly by inhibiting mitochondrial Complex I — reducing glucose output from the liver. Understanding exactly where in the electron transport chain metformin acts is what allows pharmacologists to predict its side effects and safe dosing range.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Exercise physiology: Count your resting heart rate (beats/min) then do 2 minutes of star jumps. Immediately recount. Your heart rate increased to deliver more oxygen to mitochondria for increased ATP production. Your breathing rate also increased (to supply O₂ and expel CO₂ from the Krebs cycle). Count breaths per minute at rest, then immediately after exercise. Record both numbers. You are measuring your mitochondrial demand in real time — a higher heart and breathing rate directly reflects higher electron transport chain activity in your muscle cells.</p>
+</div><h2>7. Think deeper</h2>
+<p>Peter Mitchell won the Nobel Prize (1978) for the chemiosmotic theory: ATP is made not by direct chemistry but by the flow of protons through ATP synthase, driven by a proton gradient across the inner mitochondrial membrane — like water flowing through a turbine. ATP synthase is a nanoscale rotary motor — its gamma subunit physically rotates 120° per ATP molecule made, completing a full rotation per 3 ATP. Paul Boyer and John Walker confirmed this with elegant biochemistry (Nobel 1997). This same principle (proton gradients) is used in a different way by the bacteria that were the ancestors of mitochondria — and is still the fundamental energy mechanism of virtually all life on Earth.</p>
+<p><strong>Predict:</strong> Cyanide is a poison that blocks Complex IV of the electron transport chain. Using the dam analogy, explain step by step what would happen to ATP production in a cell exposed to cyanide. Why would nerve cells and heart muscle cells be the first to fail, and what molecule would accumulate in the matrix?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the primary function of mitochondria in a cell?</p>
+<ul>
+<li>A. Mitochondria store genetic instructions and direct the production of new proteins in the cell</li>
+<li>B. Mitochondria carry out aerobic respiration to produce ATP, the cell's main energy currency</li>
+<li>C. Mitochondria produce glucose from carbon dioxide through a process similar to photosynthesis</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of ATP production more valuable than just knowing mitochondria make energy?</p>
+<ul>
+<li>A. Energy production is obvious from eating food, so the mechanism adds no extra information</li>
+<li>B. ATP production mechanisms are only relevant to professional biochemists in research labs</li>
+<li>C. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If a cell had no mitochondria, what would you predict about its energy production?</p>
+<ul>
+<li>A. The cell would produce more energy by absorbing sunlight directly through the membrane</li>
+<li>B. The cell could not perform aerobic respiration and would have greatly reduced energy supply</li>
+<li>C. The cell would produce energy normally using the nucleus as an alternative power centre</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A researcher discovers a drug that makes the inner mitochondrial membrane slightly "leaky" — protons can seep back from the intermembrane space into the matrix without passing through ATP synthase.</p>
+<p>Predict: (a) what happens to the proton gradient; (b) what happens to ATP production; (c) what happens to the rate of the electron transport chain (does it speed up or slow down, and why?); (d) what happens to heat production in the cell; and (e) which tissue in the human body naturally uses a similar leaky-membrane mechanism for a specific purpose — name it and explain why it is beneficial in that context.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Mitochondria have their own DNA — a circular genome of just 37 genes — and they reproduce by splitting in two, exactly like bacteria. You inherited every mitochondrion in your body from your mother's egg cell, not from your father's sperm (which loses its mitochondria after fertilisation). This means mitochondrial DNA passes unchanged through the female line, and scientists have used it to trace all living humans back to a single woman who lived in Africa approximately 150,000 years ago — sometimes called "Mitochondrial Eve."</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Mitochondria are nanoscale hydroelectric dams: they use a proton gradient across the inner membrane to spin ATP synthase, and without oxygen to drain that gradient, the entire system halts and the cell loses 95 % of its energy supply.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 13 of 30</footer>
+</div>
+</body>
+</html>

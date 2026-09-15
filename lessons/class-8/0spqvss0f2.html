@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 04 — Why does your heart beat continuously? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 04</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does your heart beat continuously?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover how your heart generates its own electrical signal from birth to death — without any instruction from your brain — and understand exactly what happens during each heartbeat.</p>
+</div><h2>1. The mystery</h2>
+<p>You never decide to make your heart beat. You cannot stop it by thinking. If you are anaesthetised for surgery, your heart continues beating without your brain giving any conscious instructions. Even a heart removed from the body continues beating in a saline solution for hours if kept at body temperature. How does the heart keep beating without a brain?</p>
+<h2>2. The science behind it</h2>
+<p>The heart has its own built-in electrical generator.</p>
+<p><strong>The sinoatrial node (SA node): the heart's pacemaker</strong></p>
+<p>A small cluster of specialised cells in the upper-right wall of the heart (right atrium) called the <strong>sinoatrial node</strong> or <strong>SA node</strong> spontaneously generates electrical impulses. This happens through rhythmic changes in ion concentrations across the cell membrane — no external trigger required.</p>
+<p>This electrical signal does two things:
+1. It travels through the muscle of both atria, causing them to contract (squeeze) and push blood downward into the ventricles.
+2. It reaches the <strong>atrioventricular node (AV node)</strong> — a second cluster of cells between the atria and ventricles. The AV node delays the signal by about 0.1 seconds (allowing the ventricles to fill with blood) and then passes it to the <strong>Bundle of His</strong> and <strong>Purkinje fibres</strong> — a network of conducting fibres that spread the signal rapidly through the ventricle walls.</p>
+<p><strong>The result: one heartbeat (approximately):</strong>
+- <strong>Atrial systole (0.1 s):</strong> Atria contract → blood pushed into ventricles
+- <strong>Ventricular systole (0.3 s):</strong> Ventricles contract powerfully → blood pushed to lungs (right) and body (left)
+- <strong>Diastole (0.4 s):</strong> Heart relaxes, fills with blood again</p>
+<p>Normal resting rate: 60–100 beats per minute.</p>
+<p><strong>Why the brain is not in charge of the beat:</strong></p>
+<p>The brain's autonomic nervous system (specifically the vagus nerve and sympathetic nerves) can speed up or slow down the SA node, but it does not initiate the beat. The SA node fires on its own. This is why:
+- People in a coma still have a heartbeat
+- A transplanted heart (with nerves cut) still beats — the SA node runs independently
+- If the SA node is damaged (as in Q3), the AV node or Purkinje fibres can take over as backup pacemakers — but at slower rates, causing irregular rhythm</p>
+<p><strong>The ECG (electrocardiogram):</strong> Measures the electrical signals of each heartbeat. Each peak and valley corresponds to a different phase: P wave = atrial contraction; QRS complex = ventricular contraction; T wave = ventricular recovery.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the SA node as a drummer in a band. The drummer sets the tempo — all the musicians (heart muscle cells) follow. The band leader (brain) can ask the drummer to speed up (during exercise: epinephrine stimulates the SA node) or slow down (during sleep: vagus nerve activity). But if the band leader is unconscious (anaesthesia, coma), the drummer keeps the rhythm going independently. If the drummer is injured (SA node damage), a backup drummer (AV node) takes over but plays more slowly.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_04.svg" alt="Diagram for Why does your heart beat continuously?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a cross-section of the heart with four chambers labelled: right atrium, right ventricle, left atrium, left ventricle. The SA node is shown as a yellow star in the upper right atrium. Electrical signal lines radiate from it through the atria, converge at the AV node, then branch through the Bundle of His and Purkinje fibres (shown as a branching tree through ventricular walls). An ECG trace (P, QRS, T) is shown below with labels. Blood flow arrows show: body → right atrium → right ventricle → lungs → left atrium → left ventricle → body.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Artificial pacemakers:</strong> If the SA node or AV node is damaged (heart block), doctors implant an electronic pacemaker under the skin — a small device with electrodes touching the heart that generates electrical pulses at the correct rate. India performs about 20,000 pacemaker implantations per year.</li>
+<li><strong>Defibrillators (AEDs):</strong> In cardiac arrest, the heart's electrical system falls into chaotic activity (ventricular fibrillation) — all muscle cells firing randomly, producing no organised pump. A defibrillator delivers a strong electric shock to reset all cells simultaneously, allowing the SA node to take over again. AEDs are now found in airports, malls, and some schools.</li>
+<li><strong>Caffeine and the heart rate:</strong> Caffeine blocks adenosine receptors. Adenosine is a molecule that slows the SA node (it's why you feel sleepy before coffee). Blocking adenosine → SA node speeds up → heart rate increases.</li>
+<li><strong>ECG in diagnosis:</strong> An ECG can detect: heart attacks (damaged tissue changes electrical patterns), atrial fibrillation (irregular signal from the SA node), valve problems, and enlarged heart chambers.</li>
+<li><strong>Heart rate during exercise:</strong> The sympathetic nervous system releases <strong>adrenaline (epinephrine)</strong> during exercise, which directly stimulates the SA node to fire faster — heart rate can reach 200 beats/minute during intense exercise.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Measure your resting heart rate: place two fingers on your wrist (radial pulse, thumb side) or your neck (carotid pulse). Count beats for 15 seconds and multiply by 4 (gives beats per minute). Then do 30 jumping jacks as fast as possible. Immediately measure again. Finally, wait 2 minutes and measure a third time. Record all three. The change is your SA node responding to adrenaline during exercise, and then the vagus nerve slowing it back down during recovery.</p>
+</div><h2>7. Think deeper</h2>
+<p>Atrial fibrillation (AF) is a condition where the SA node's signal is overridden by random electrical impulses from multiple points in the atria — the atria quiver rather than contract (up to 300–600 random contractions per minute). The AV node filters most of these, so the ventricles beat fast and irregularly. AF increases stroke risk by 5× because blood pools in the quivering atria and forms clots. Doctors can treat AF by (a) cardioversion (electric shock to reset), (b) ablation (burning the tissue causing the rogue signals), or (c) anticoagulant drugs to prevent clots. Which approach addresses the underlying electrical cause rather than just the side effect, and why?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What keeps the heart beating without conscious effort?</p>
+<ul>
+<li>A. Muscles in the chest wall compress the heart rhythmically</li>
+<li>B. The sinoatrial node generates electrical impulses that trigger contractions</li>
+<li>C. Blood pressure forces the heart valves to open and close repeatedly</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is knowing the mechanism of the heartbeat more useful than just knowing it beats?</p>
+<ul>
+<li>A. The heartbeat mechanism helps athletes run faster during exercise</li>
+<li>B. Knowing the mechanism allows us to understand heart disease and treatments</li>
+<li>C. Memorising the heartbeat rate is sufficient for all medical purposes</li>
+</ul>
+<h3>Q3</h3>
+<p>If the sinoatrial node were damaged, what would you predict?</p>
+<ul>
+<li>A. The heart's rhythm would become irregular or stop</li>
+<li>B. The heart would beat faster to compensate for reduced signal strength</li>
+<li>C. Blood would circulate in the opposite direction through the veins</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>An athlete's resting heart rate is 48 beats per minute (lower than the normal 60–80). A sedentary person has a resting heart rate of 82. Both do the same exercise: running for 5 minutes at the same speed. Their maximum heart rates are similar (~190). Predict: (a) How much more cardiac output per minute does the athlete's heart produce at rest (if stroke volume = volume per beat)? (b) Why does regular endurance training lower resting heart rate? (c) If both have a maximum heart rate of 190, which has a larger "heart rate reserve" (difference between max and resting), and why does this matter for performance?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The heart starts beating in a human embryo about 22 days after conception — before the brain forms, before the nervous system connects to it, before the lungs develop. At this point the embryo is only about 3 mm long. The SA node begins firing spontaneously from the very first heartbeats. The electrical system is completely self-contained and does not depend on the brain for its fundamental rhythm. In a sense, your heart "woke up" and started beating before you were ever aware of being alive.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>The SA node in the right atrium spontaneously generates electrical impulses. Signal travels: SA node → atria contract → AV node → Bundle of His → Purkinje fibres → ventricles contract. No brain needed. SA node damaged → rhythm fails or slows.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

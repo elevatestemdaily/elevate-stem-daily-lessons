@@ -1,26 +1,116 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr28r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+  <marker id="arr28p" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#7c3aed"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why doesn&#x27;t the Moon fall onto Earth?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 28</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why doesn't the Moon fall onto Earth?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Gravity + inertia balance = stable orbit — Day 28</text>
+
+<!-- LEFT: Earth-Moon system -->
+<rect x="20" y="74" width="440" height="416" rx="6" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+<text x="240" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Earth–Moon Orbital Balance</text>
+
+<!-- Stars (indigo dots on light bg) -->
+<circle cx="40" cy="120" r="1.5" fill="#93c5fd"/>
+<circle cx="80" cy="105" r="1" fill="#93c5fd"/>
+<circle cx="110" cy="130" r="1.5" fill="#93c5fd"/>
+<circle cx="55" cy="180" r="1" fill="#93c5fd"/>
+<circle cx="420" cy="118" r="1.5" fill="#93c5fd"/>
+<circle cx="390" cy="145" r="1" fill="#93c5fd"/>
+<circle cx="435" cy="175" r="1" fill="#93c5fd"/>
+<circle cx="400" cy="420" r="1" fill="#93c5fd"/>
+<circle cx="50" cy="430" r="1.5" fill="#93c5fd"/>
+<circle cx="75" cy="460" r="1" fill="#93c5fd"/>
+
+<!-- Orbit ellipse -->
+<ellipse cx="210" cy="310" rx="170" ry="155" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="8,5"/>
+
+<!-- Earth -->
+<circle cx="210" cy="310" r="52" fill="#3b82f6"/>
+<circle cx="210" cy="310" r="52" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+<text x="210" y="306" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">Earth</text>
+<text x="210" y="322" text-anchor="middle" font-family="Arial" font-size="14" fill="#dbeafe">M = 6×10²⁴kg</text>
+
+<!-- Moon -->
+<circle cx="370" cy="165" r="24" fill="#e2e8f0"/>
+<circle cx="370" cy="165" r="24" fill="none" stroke="#64748b" stroke-width="1.5"/>
+<text x="370" y="161" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#334155">Moon</text>
+<text x="370" y="177" text-anchor="middle" font-family="Arial" font-size="14" fill="#475569">384,400 km</text>
+
+<!-- Gravity arrow: Moon toward Earth -->
+<line x1="347" y1="181" x2="274" y2="256" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr28r)"/>
+<text x="284" y="212" font-family="Arial" font-size="14" fill="#dc2626">gravity</text>
+<text x="284" y="228" font-family="Arial" font-size="14" fill="#dc2626">pulls here</text>
+
+<!-- Velocity arrow: tangential -->
+<line x1="370" y1="141" x2="400" y2="112" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr28p)"/>
+<text x="330" y="108" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c3aed">v=1.02 km/s</text>
+<text x="330" y="124" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c3aed">inertia here</text>
+
+<!-- Balance label -->
+<text x="128" y="200" font-family="Arial" font-size="14" fill="#374151">Gravity curves inertia</text>
+<text x="128" y="218" font-family="Arial" font-size="14" fill="#374151">→ stable orbit</text>
+
+<!-- Formula box -->
+<rect x="30" y="408" width="420" height="74" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="240" y="426" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">F_gravity = F_centripetal</text>
+<text x="240" y="446" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">GMm/r² = mv²/r   →   v = √(GM/r)</text>
+<text x="240" y="466" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">At r = 384,400 km: v ≈ 1.022 km/s</text>
+
+<!-- RIGHT: Concepts + orbital mechanics -->
+<rect x="474" y="74" width="506" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="727" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Orbital Balance &amp; Applications</text>
+
+<!-- Key concepts -->
+<rect x="484" y="104" width="486" height="122" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="727" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Why Moon doesn't fall — or fly away</text>
+<text x="494" y="142" font-family="Arial" font-size="14" fill="#333">FALL: if Moon's v decreased → gravity wins → spiral inward</text>
+<text x="494" y="162" font-family="Arial" font-size="14" fill="#333">FLY: if Moon's v increased → inertia wins → escape orbit</text>
+<text x="494" y="182" font-family="Arial" font-size="14" fill="#555">ORBIT: balanced — gravity curves path; inertia keeps speed</text>
+<text x="494" y="202" font-family="Arial" font-size="14" fill="#555">No fuel needed — conservation of angular momentum</text>
+<text x="494" y="220" font-family="Arial" font-size="14" fill="#555">Moon has stayed in orbit for 4.5 billion years</text>
+
+<!-- Tidal interaction -->
+<rect x="484" y="234" width="234" height="90" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="601" y="252" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Tidal Interaction</text>
+<text x="601" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Earth's tides transfer</text>
+<text x="601" y="288" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">angular momentum</text>
+<text x="601" y="306" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Moon recedes 3.8 cm/yr</text>
+<text x="601" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Measured by laser ranging</text>
+
+<!-- Tidal locking -->
+<rect x="726" y="234" width="244" height="90" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="848" y="252" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#6d28d9">Tidal Locking</text>
+<text x="848" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Moon rotation = orbit period</text>
+<text x="848" y="288" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Same face always toward Earth</text>
+<text x="848" y="306" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Far side = unseen from Earth</text>
+<text x="848" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Caused by tidal friction over eons</text>
+
+<!-- Changing Orbits (replaces Chandrayaan mineral boxes) -->
+<rect x="484" y="332" width="234" height="148" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="601" y="350" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Changing Orbits</text>
+<text x="494" y="370" font-family="Arial" font-size="14" fill="#333">Prograde burn → v↑ → r↑</text>
+<text x="494" y="390" font-family="Arial" font-size="14" fill="#333">Retrograde burn → v↓ → r↓</text>
+<text x="494" y="410" font-family="Arial" font-size="14" fill="#555">Hohmann: 2 burns, 2 circles</text>
+<text x="494" y="428" font-family="Arial" font-size="14" fill="#555">links 2 orbital heights</text>
+<text x="494" y="448" font-family="Arial" font-size="14" fill="#555">Higher orbit = lower speed</text>
+<text x="494" y="466" font-family="Arial" font-size="14" fill="#555">v = √(GM/r): r↑ → v↓</text>
+
+<!-- India's Orbital Mastery (replaces second Chandrayaan box) -->
+<rect x="726" y="332" width="244" height="148" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="848" y="350" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">India's Orbital Mastery</text>
+<text x="736" y="370" font-family="Arial" font-size="14" fill="#333">ISRO GSLV → GEO orbit</text>
+<text x="736" y="390" font-family="Arial" font-size="14" fill="#333">GEO = 36,000 km, period 24 h</text>
+<text x="736" y="410" font-family="Arial" font-size="14" fill="#555">Mangalyaan: Mars orbit 2013</text>
+<text x="736" y="428" font-family="Arial" font-size="14" fill="#555">via gravity assist at Earth</text>
+<text x="736" y="448" font-family="Arial" font-size="14" fill="#555">Chandrayaan: orbit insertion</text>
+<text x="736" y="466" font-family="Arial" font-size="14" fill="#555">then descent burn to land</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Moon orbits because gravity curves its inertia into a circle. No fuel; 4.5 billion year balance.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">v = √(GM/r): higher orbit = lower speed. ISRO uses this to place satellites in GEO at 36,000 km.</text>
 </svg>

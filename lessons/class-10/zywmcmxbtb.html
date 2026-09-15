@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 22 — Why does resistance occur? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 22</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does resistance occur?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why metals resist the flow of electric current at the atomic level, state how length, cross-sectional area, and temperature each affect resistance, and predict what happens to resistance when a wire is heated significantly.</p>
+</div><h2>1. The mystery</h2>
+<p>Two wires connect the same battery to identical bulbs. One wire is thin and one is thick; one is short and one is long. The bulbs glow at different brightnesses. Ohm's Law tells you V = IR, but that formula just describes the relationship — it does not tell you why resistance exists in the first place. Why does a wire resist current at all? Why does a longer, thinner, or hotter wire resist more?</p>
+<h2>2. The science behind it</h2>
+<p>Electrical resistance is fundamentally caused by <strong>collisions between drifting electrons and the vibrating ions of the metal lattice.</strong></p>
+<p><strong>The atomic picture.</strong> A metal consists of a regular crystal lattice of positively charged ions (for example, copper ions Cu²⁺) surrounded by a sea of free electrons. When a voltage is applied, electrons drift toward the positive terminal. They do not travel in a straight line — they repeatedly collide with the lattice ions. Each collision transfers kinetic energy from the electron to the ion, which is why a resistor gets warm (or a filament gets hot enough to glow). After each collision, the electron is deflected and must be re-accelerated by the electric field before it collides again. Resistance is the macroscopic result of all these microscopic collisions.</p>
+<p><strong>Why length increases resistance.</strong> A longer wire means electrons must travel further and therefore undergo more collisions before reaching the positive terminal. Doubling the length doubles the number of collisions and doubles the resistance. Mathematically, R ∝ l (resistance is directly proportional to length).</p>
+<p><strong>Why narrower cross-section increases resistance.</strong> A thinner wire has fewer free electrons available in any cross-section for current to flow through. It is like narrowing a corridor — the same crowd (electron density) is squeezed through a smaller space, colliding more frequently with the walls (lattice). Resistance is inversely proportional to the cross-sectional area A: R ∝ 1/A.</p>
+<p><strong>Combining both:</strong> The resistance of a uniform wire is given by:</p>
+<p>R = ρl / A</p>
+<p>where ρ (rho) is the <strong>resistivity</strong> of the material — a constant that depends on the material's nature and temperature. Copper has ρ ≈ 1.7 × 10⁻⁸ Ω·m; nichrome (used in heating elements) has ρ ≈ 1.1 × 10⁻⁶ Ω·m, about 60 times higher.</p>
+<p><strong>Why temperature increases resistance in metals.</strong> At higher temperatures, the lattice ions vibrate with greater amplitude. This means electrons encounter a larger effective "target" at each ion site and collide more frequently. More collisions per unit length → more energy lost per unit distance → higher resistance. For most metals, resistance increases roughly linearly with temperature. This is described by:</p>
+<p>R_T = R₀ (1 + αΔT)</p>
+<p>where α is the <strong>temperature coefficient of resistance</strong> (positive for metals), R₀ is the resistance at a reference temperature, and ΔT is the temperature rise.</p>
+<p><strong>Ohm's Law in context.</strong> V = IR holds for conductors called <strong>ohmic conductors</strong> — those whose resistance stays constant as current and voltage change (at constant temperature). When we say "the resistance of a wire is 5 Ω," we mean the ratio V/I stays at 5 Ω across a range of voltages — which is only true if temperature is controlled. A filament bulb is not ohmic because as it heats up, its tungsten resistance climbs steeply, making the V–I graph a curve rather than a straight line.</p>
+<h2>3. Build the mental model</h2>
+<p>Picture electrons as commuters in a crowded railway station (the metal lattice):</p>
+<ul>
+<li><strong>More platforms (larger cross-section):</strong> commuters spread out, fewer collisions, lower resistance.</li>
+<li><strong>Longer journey (longer wire):</strong> more obstacles to pass through, more delays, higher resistance.</li>
+<li><strong>Summer heat (higher temperature):</strong> people (ions) wave their arms more, blocking the path more effectively, higher resistance.</li>
+<li><strong>Resistivity:</strong> the inherent "crowdedness" of the station itself — a nichrome station is always more congested than a copper station, regardless of its size.</li>
+</ul>
+<p>The unit of resistance is the <strong>ohm (Ω)</strong>: one ohm means one volt drives one ampere. The unit of resistivity is Ω·m.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a rectangular wire cross-section with:</p>
+<ul>
+<li><strong>Left panel:</strong> a short, wide wire — few labelled collision events between electrons (dots with arrows) and lattice ions (circles); labelled "Low resistance."</li>
+<li><strong>Right panel:</strong> a long, narrow wire at high temperature — many more collision events; lattice ions drawn with larger vibration circles; labelled "High resistance."</li>
+<li><strong>Formula box below:</strong> R = ρl / A with each variable labelled.</li>
+<li><strong>Temperature graph inset:</strong> a rising straight line showing R vs temperature for a metal, labelled with slope α.</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_22.svg" alt="Diagram for Why does resistance occur?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Nichrome wire in electric heaters and toasters:</strong> Nichrome has high resistivity, so it converts electrical energy to heat efficiently without melting at the high operating temperature. That is why your Bajaj room heater uses nichrome coils, not copper.</li>
+<li><strong>Thick cables for high-current appliances:</strong> An air conditioner or electric geyser uses 2.5 mm² or 4 mm² copper wire rather than the thin 1 mm² wire used for lighting circuits. Thicker wire means lower resistance and less heating of the wire itself.</li>
+<li><strong>Tungsten filament in incandescent bulbs:</strong> Tungsten has very high resistivity and melts only above 3422 °C, making it ideal. When cold, a 100 W bulb's filament has a resistance of about 10 Ω; once glowing at ~2500 °C, resistance rises to about 144 Ω — that is why there is a current surge at switch-on.</li>
+<li><strong>Fuse wires:</strong> A fuse is made of a thin wire with a low melting point. When current is too high (resistance of the fuse causes excessive heating by P = I²R), the fuse wire melts and breaks the circuit — it sacrifices itself to protect appliances.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>List three appliances in your home that use resistance heating (appliances that get hot on purpose).</li>
+<li>For each, decide whether you want high resistivity or low resistivity wire in the heating element, and explain why.</li>
+<li>Predict: a 1 m copper wire has resistance R. What would be the resistance of a 3 m wire of the same copper with half the cross-sectional area?</li>
+<li>Draw a V–I graph for an ohmic resistor (straight line) and an incandescent bulb (curve). Explain why they differ using the temperature effect on resistance.</li>
+<li>Write one sentence explaining why power lines are made thick even though the transmission distance is long.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that increasing temperature increases resistance in a metal wire because ions vibrate more and obstruct electron drift more. Now extend this further: carbon (graphite) and semiconductors such as silicon behave oppositely — their resistance decreases when temperature rises. Given the collision model of resistance, propose two possible mechanisms that could explain why these materials behave differently from metals when heated. (Hint: think about what determines the number of free charge carriers available, not just the collision frequency.)</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes electrical resistance in a conductor?</p>
+<ul>
+<li>a) Resistance is caused by electrons repelling each other and slowing each other down</li>
+<li>b) Resistance occurs because positive current flows opposite to electron movement</li>
+<li>c) Electrons collide with metal ions in the lattice, losing energy with each collision</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding resistance mechanism more useful than just applying Ohm's Law?</p>
+<ul>
+<li>a) Because Ohm's Law only works for resistors and never for real-world conductors</li>
+<li>b) Because Ohm's Law requires no mechanism since it is purely mathematical</li>
+<li>c) The mechanism explains why resistance increases with temperature and length of wire</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q3</h3>
+<p>What would happen to a wire's resistance if its temperature increased significantly?</p>
+<ul>
+<li>a) Resistance would decrease because hot metals become better electrical conductors</li>
+<li>b) Resistance would remain the same because temperature only affects mechanical properties</li>
+<li>c) Resistance would increase because ions vibrate more and block electron flow more</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Without using any formula, explain to a Class 7 student in 60 seconds why a longer, thinner wire gives more resistance than a short, thick one. Use a physical analogy (not the formula). Then explain the same idea using R = ρl / A and calculate: if a 2 m copper wire has resistance 0.034 Ω, what would be the resistance of a 6 m wire of the same material and cross-section?</p>
+</div><h2>10. One surprising idea</h2>
+<p>Superconductors are materials that, below a critical temperature (often close to absolute zero, −273 °C), lose all electrical resistance completely. Resistance drops to exactly zero — not just very small. A current started in a superconducting loop continues flowing indefinitely without any battery. This happens because below the critical temperature, electrons pair up into quantum mechanical entities called <strong>Cooper pairs</strong> that move through the lattice without any collisions. The MRI machine in most major Indian hospitals uses superconducting coils cooled with liquid helium to generate the enormous magnetic fields needed for imaging.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Electrical resistance arises because drifting electrons repeatedly collide with vibrating lattice ions, transferring energy as heat; resistance increases with wire length and temperature, decreases with cross-sectional area, and depends on the material's inherent resistivity ρ.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 22 of 30</footer>
+</div>
+</body>
+</html>

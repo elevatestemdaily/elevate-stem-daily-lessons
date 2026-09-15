@@ -1,26 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why can&#x27;t we see atoms with ordinary micro</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 28</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why Can't We See Atoms with Ordinary Microscopes?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Diffraction limit, wavelength vs atom size, electron microscope, AFM — Day 28</text>
+
+<!-- LEFT: Diffraction limit -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">The Diffraction Limit</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="white" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Abbe Diffraction Limit</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">d_min = λ / (2 NA) ≈ λ/2</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">NA = numerical aperture (typically ~1.4 for oil)</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">Resolution limited to ~half the wavelength used</text>
+<text x="40" y="198" font-family="Arial" font-size="14" fill="#555">Light: λ = 400–700 nm → best ≈ 200 nm</text>
+
+<rect x="30" y="214" width="280" height="100" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Why Atoms Are Hidden</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">Atom diameter: 0.1–0.5 nm (0.1–0.5 ×10⁻⁹ m)</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#333">Light wavelength: 400–700 nm</text>
+<text x="40" y="292" font-family="Arial" font-size="14" fill="#555">Atom is 1,000–4,000 × smaller than λ of light</text>
+<text x="40" y="308" font-family="Arial" font-size="14" fill="#555">Light passes straight past; no diffraction pattern</text>
+
+<rect x="30" y="324" width="280" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="342" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Solution: Shorter Wavelengths</text>
+<text x="40" y="362" font-family="Arial" font-size="14" fill="#333">UV: 200 nm → 100 nm resolution</text>
+<text x="40" y="382" font-family="Arial" font-size="14" fill="#555">X-ray: 0.1 nm → can resolve atomic bonds</text>
+<text x="40" y="398" font-family="Arial" font-size="14" fill="#555">Electron: de Broglie λ = h/mv → &lt;0.01 nm</text>
+
+<rect x="30" y="414" width="280" height="68" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">de Broglie Wavelength</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">Electrons: wave-particle duality</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">At 100 kV: λ = 0.004 nm → sees atoms</text>
+
+<!-- CENTRE: Advanced microscopes -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Advanced Microscopy</text>
+
+<rect x="344" y="104" width="312" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Transmission Electron Microscope (TEM)</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">Electrons pass through ultra-thin sample (100 nm)</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">Resolution: 0.05 nm — individual atoms visible</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">Magnetic lenses focus electron beam</text>
+<text x="354" y="198" font-family="Arial" font-size="14" fill="#555">Must be in high vacuum; sample must be dead</text>
+
+<rect x="344" y="214" width="312" height="90" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="232" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Scanning Electron Microscope (SEM)</text>
+<text x="354" y="252" font-family="Arial" font-size="14" fill="#333">Electron beam scans surface; maps secondary e⁻</text>
+<text x="354" y="272" font-family="Arial" font-size="14" fill="#333">Resolution: 1–5 nm; 3D-like surface images</text>
+<text x="354" y="292" font-family="Arial" font-size="14" fill="#555">Gold-coated samples; used in material science</text>
+
+<rect x="344" y="314" width="312" height="90" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="332" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Atomic Force Microscope (AFM)</text>
+<text x="354" y="352" font-family="Arial" font-size="14" fill="#333">Tiny tip traces surface atom by atom</text>
+<text x="354" y="372" font-family="Arial" font-size="14" fill="#333">Measures van der Waals forces (piconewtons)</text>
+<text x="354" y="392" font-family="Arial" font-size="14" fill="#555">Works in air, liquid; can image living cells</text>
+<text x="354" y="408" font-family="Arial" font-size="14" fill="#555">Resolution: sub-nanometre; can move single atoms</text>
+
+<rect x="344" y="414" width="312" height="68" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">STED microscopy: Nobel 2014 — beats diffraction limit</text>
+<text x="500" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Two lasers cancel outer part of spot → 20 nm resolution</text>
+<text x="500" y="468" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Images synapses in living brain: India's NCBS uses STED</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Microscopy Research</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">IIT Materials Research</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">IIT Madras, Bombay, Delhi: TEM + SEM labs</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Atomic imaging of catalysts, battery materials</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">JNCASR: cryo-EM for proteins (Bangalore)</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">C.V. Raman + X-ray Diffraction</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Raman spectroscopy: molecular fingerprinting</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Same diffraction principle as microscopy</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">IISc Bangalore: X-ray crystallography of enzymes</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Drug Design (AFM + docking)</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CSIR: AFM to image drug–protein binding</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rational drug design: see receptor → design fit</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">COVID: spike protein imaged by cryo-EM in India</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Nanotechnology (DST)</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Nano Mission: ₹1,000 crore fund</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Gold nanoparticles: cancer drug delivery</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">IIT Delhi: nanotube filters, water treatment</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Diffraction limit: d = λ/2. Light (~500 nm) cannot resolve 0.1 nm atoms. Electrons: λ = 0.004 nm → atomic resolution.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">TEM: 0.05 nm resolution. AFM: traces atoms in air/liquid. India: IIT, JNCASR cryo-EM; DST Nano Mission.</text>
 </svg>

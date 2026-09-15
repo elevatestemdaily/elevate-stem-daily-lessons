@@ -1,26 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why do plants need sunlight?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 5</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<defs>
+  <marker id="greyArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+  </marker>
+  <marker id="blueArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+  </marker>
+  <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#059669"/>
+  </marker>
+  <marker id="amberArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+  </marker>
+</defs>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">Why do plants need sunlight?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Photosynthesis: leaf cells convert light energy into glucose food</text>
+
+<!-- ── SUN  x=22–168, y=95–195 ── -->
+<circle cx="95" cy="148" r="45" fill="#fbbf24" opacity="0.9"/>
+<text x="95" y="144" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#78350f">SUN</text>
+<text x="95" y="161" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">Light energy</text>
+<!-- rays -->
+<line x1="95" y1="98" x2="95" y2="85"  stroke="#fbbf24" stroke-width="3"/>
+<line x1="95" y1="198" x2="95" y2="211" stroke="#fbbf24" stroke-width="3"/>
+<line x1="50" y1="148" x2="37" y2="148" stroke="#fbbf24" stroke-width="3"/>
+<line x1="140" y1="148" x2="153" y2="148" stroke="#fbbf24" stroke-width="3"/>
+<line x1="63" y1="116" x2="54" y2="107" stroke="#fbbf24" stroke-width="3"/>
+<line x1="127" y1="116" x2="136" y2="107" stroke="#fbbf24" stroke-width="3"/>
+<line x1="63" y1="180" x2="54" y2="189" stroke="#fbbf24" stroke-width="3"/>
+<line x1="127" y1="180" x2="136" y2="189" stroke="#fbbf24" stroke-width="3"/>
+<!-- sunlight arrow to leaf -->
+<line x1="153" y1="148" x2="288" y2="200" stroke="#fde68a" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#amberArrow)"/>
+<text x="206" y="168" font-family="Arial" font-size="14" fill="#b45309" font-style="italic">Sunlight →</text>
+
+<!-- ── LEAF cross-section  x=290–768, y=158–445 ── -->
+<rect x="290" y="158" width="478" height="287" rx="18" fill="#d1fae5" stroke="#059669" stroke-width="2.5"/>
+<text x="529" y="183" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Leaf (Cross-Section)</text>
+
+<!-- Sub-box A: Upper cells + chloroplasts  y=195–263
+     text zone x=300–510  |  shapes zone x=520–760 -->
+<rect x="306" y="195" width="454" height="68" rx="5" fill="#bbf7d0" stroke="#34d399" stroke-width="1.5"/>
+<!-- text (x=316, max ~28ch*0.55*13=200px → ends x=516) -->
+<text x="316" y="217" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Upper leaf cells</text>
+<text x="316" y="236" font-family="Arial" font-size="14" fill="#065f46">Chloroplasts contain chlorophyll</text>
+<text x="316" y="254" font-family="Arial" font-size="14" fill="#065f46">Absorb red + blue light</text>
+<!-- shapes: chloroplast ellipses in right zone (x=525+) -->
+<ellipse cx="538" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<ellipse cx="568" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<ellipse cx="598" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<ellipse cx="628" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<ellipse cx="658" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<ellipse cx="688" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<ellipse cx="718" cy="222" rx="14" ry="9" fill="#16a34a"/>
+<text x="628" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-style="italic">chloroplasts</text>
+
+<!-- Sub-box B: Photosynthesis reaction  y=271–348  (text only, no shapes) -->
+<rect x="306" y="271" width="454" height="77" rx="5" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+<text x="529" y="296" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#047857">Photosynthesis Reaction (inside chloroplast)</text>
+<text x="529" y="316" text-anchor="middle" font-family="Arial" font-size="14" fill="#047857">CO₂ + H₂O + Light energy → Glucose + O₂</text>
+<text x="529" y="337" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Chlorophyll powers reaction → glucose is made</text>
+
+<!-- Sub-box C-left: Glucose stored  x=306–500, y=356–422 -->
+<rect x="306" y="356" width="192" height="66" rx="5" fill="#fef9c3" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="402" y="380" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Glucose Stored</text>
+<text x="402" y="398" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">Used for growth,</text>
+<text x="402" y="414" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">repair, seeds, energy</text>
+
+<!-- Sub-box C-right: Stomata  x=508–760, y=356–422
+     text zone x=518–700  |  shapes zone x=710–755 -->
+<rect x="508" y="356" width="252" height="66" rx="5" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.5"/>
+<!-- text (18ch*0.55*14=138px → x=518 to x=656; 21ch*0.55*13=150px → x=518 to x=668) -->
+<text x="518" y="380" font-family="Arial" font-size="14" font-weight="700" fill="#1e3a5f">Stomata (tiny pores)</text>
+<text x="518" y="398" font-family="Arial" font-size="14" fill="#1e3a5f">CO₂ enters; O₂ exits</text>
+<text x="518" y="414" font-family="Arial" font-size="14" fill="#1e3a5f">Mainly leaf underside</text>
+<!-- stoma shapes in right zone (x=715+) -->
+<ellipse cx="720" cy="386" rx="5" ry="14" fill="none" stroke="#3b82f6" stroke-width="2"/>
+<ellipse cx="738" cy="386" rx="5" ry="14" fill="none" stroke="#3b82f6" stroke-width="2"/>
+<text x="729" y="412" text-anchor="middle" font-family="Arial" font-size="14" fill="#3b82f6">pore</text>
+
+<!-- ── EXTERNAL LABELS and arrows ── -->
+<!-- CO₂ entering from left -->
+<text x="248" y="395" font-family="Arial" font-size="14" font-weight="700" fill="#6b7280">CO₂</text>
+<text x="240" y="413" font-family="Arial" font-size="14" fill="#6b7280">from air</text>
+<line x1="285" y1="400" x2="306" y2="394" stroke="#6b7280" stroke-width="2.5" marker-end="url(#greyArrow)"/>
+
+<!-- H₂O from roots (below leaf) -->
+<rect x="354" y="456" width="198" height="32" rx="6" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="453" y="477" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Roots absorb H₂O from soil</text>
+<line x1="453" y1="456" x2="453" y2="444" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#amberArrow)"/>
+
+<!-- H₂O label left -->
+<text x="175" y="410" font-family="Arial" font-size="14" font-weight="700" fill="#3b82f6">H₂O</text>
+<text x="162" y="428" font-family="Arial" font-size="14" fill="#3b82f6">from roots</text>
+<text x="165" y="445" font-family="Arial" font-size="14" fill="#3b82f6">via xylem</text>
+<line x1="220" y1="420" x2="290" y2="405" stroke="#3b82f6" stroke-width="2.5" marker-end="url(#blueArrow)"/>
+
+<!-- O₂ released right -->
+<text x="800" y="305" font-family="Arial" font-size="14" font-weight="700" fill="#059669">O₂ released</text>
+<text x="800" y="323" font-family="Arial" font-size="14" fill="#059669">into air through</text>
+<text x="800" y="341" font-family="Arial" font-size="14" fill="#059669">stomata</text>
+<line x1="768" y1="320" x2="798" y2="316" stroke="#059669" stroke-width="2.5" marker-end="url(#greenArrow)"/>
+
+<!-- TAKEAWAY STRIP (y=505–545) -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">CO₂ + H₂O + sunlight → glucose + O₂. Without light, no photosynthesis, no food.</text>
 </svg>

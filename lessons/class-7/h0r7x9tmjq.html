@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 09 — Why does ice float on water? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 09</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does ice float on water?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why ice is less dense than liquid water, describe water's hexagonal crystal structure, and predict what would happen to aquatic life if ice sank instead of floated.</p>
+</div><h2>1. The mystery</h2>
+<p>Almost every substance in the universe is denser as a solid than as a liquid. Iron is denser than molten iron. Wax is denser than melted wax. But water does something strange: its solid form — ice — is actually less dense than liquid water. This is why ice cubes float in your glass of nimbu pani. Why does water break the rules?</p>
+<h2>2. The science behind it</h2>
+<p>Everything depends on how water molecules arrange themselves when they freeze.</p>
+<p><strong>Water molecules and hydrogen bonds.</strong> A water molecule (H₂O) has one oxygen atom bonded to two hydrogen atoms, set at an angle of about 104°. The oxygen side of the molecule has a slight negative charge, and the hydrogen sides have a slight positive charge. This makes water molecules attract each other in a special way called <strong>hydrogen bonding</strong> — the slightly positive hydrogen of one molecule is attracted to the slightly negative oxygen of a neighbouring molecule.</p>
+<p><strong>In liquid water:</strong> Hydrogen bonds are constantly forming and breaking as molecules jostle past each other. The molecules are close together and reasonably disorganised, giving liquid water a density of about <strong>1.00 g/cm³</strong> at room temperature.</p>
+<p><strong>In ice (solid water):</strong> When water cools to 0°C and freezes, the hydrogen bonds lock the molecules into a rigid, orderly <strong>hexagonal lattice</strong> — a pattern shaped like a repeating honeycomb or snowflake. This arrangement is spacious. The regular hexagonal structure has empty spaces in the middle of each ring that are not present in the disorganised liquid. These gaps mean ice takes up <strong>more volume</strong> than the same mass of liquid water.</p>
+<p><strong>The density comparison:</strong>
+- Liquid water: density ≈ <strong>1.00 g/cm³</strong>
+- Ice: density ≈ <strong>0.917 g/cm³</strong></p>
+<p>Because ice is about 9% less dense than liquid water, it floats. For the same reason, water expands by about 9% when it freezes — which is why water pipes burst in freezing temperatures and sealed water bottles crack in a freezer.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of it as a packing problem:
+- <strong>Liquid water</strong> = water molecules packed loosely but randomly → high density
+- <strong>Ice</strong> = molecules locked into a rigid hexagonal cage with built-in gaps → lower density</p>
+<p>In almost all other substances, freezing compresses molecules closer together (higher density). Water is anomalous — it expands when it freezes because the hexagonal lattice keeps molecules further apart than in the liquid.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a side-by-side comparison:</p>
+<ul>
+<li><strong>Left panel (liquid water):</strong> Water molecules represented as small circles, packed closely and somewhat randomly, with short dashed lines showing hydrogen bonds</li>
+<li><strong>Right panel (ice):</strong> Same number of molecules arranged in a regular hexagonal lattice with visible empty spaces in the centre of each hexagon; molecules are more spread out</li>
+</ul>
+<p>Below each panel: density label (1.00 g/cm³ vs 0.917 g/cm³) and a small diagram showing the float/sink result. A key fact box notes that most substances are denser as solids — water is an exception.</p>
+<figure><img src="../../illustrations/class-7/day_09.svg" alt="Diagram for Why does ice float on water?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Aquatic life survives winter:</strong> Ice floats on the surface of ponds and lakes, forming an insulating lid. Liquid water remains below, and aquatic animals and plants survive the winter. If ice sank, lakes would freeze solid from the bottom up and kill everything inside.</li>
+<li><strong>Why glass bottles crack in the freezer:</strong> The 9% expansion of water when it freezes creates enormous pressure inside the sealed bottle, cracking the glass.</li>
+<li><strong>Burst water pipes in winter:</strong> In cities that experience freezing temperatures, uninsulated pipes burst for the same reason — the expanding ice creates pressure greater than the pipe can withstand.</li>
+<li><strong>Icebergs:</strong> Only about 10% of an iceberg is visible above water — the other 90% is submerged. This follows directly from the density difference (density of ice / density of seawater ≈ 0.9 → 90% below surface).</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Fill a glass with water and add two ice cubes.</li>
+<li>Mark the water level on the outside of the glass.</li>
+<li>Predict: when the ice fully melts, will the water level rise, fall, or stay the same? Write down your prediction with a reason.</li>
+<li>Watch and check. (Answer: it stays the same — the ice displaces exactly the amount of water equal to its weight, which is the same water it becomes.)</li>
+<li>Explain your observation using the words "density" and "volume."</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Water actually reaches its <strong>maximum density at 4°C</strong> — denser than both ice and water at 0°C. As water cools from room temperature toward 0°C, it first becomes more dense (down to 4°C). Below 4°C, it starts becoming less dense as the hexagonal crystal lattice begins to form.</p>
+<p>This means the <em>bottom</em> of a lake in winter is not at 0°C — it stays at about 4°C, which is the heaviest (densest) water, and it sinks to the bottom. Fish congregate near the lake bottom in winter because the water there is the "warmest" at 4°C.</p>
+<p><strong>Predict:</strong> If water's maximum density were at 0°C instead of 4°C, how would this change the survival of fish in a winter lake?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main reason ice floats on liquid water?</p>
+<ul>
+<li>A. Ice floats because it contains trapped air bubbles that make it lighter than water.</li>
+<li>B. Ice is less dense than liquid water because water molecules form a hexagonal crystal structure when frozen, taking up more space.</li>
+<li>C. Ice floats because its surface is smoother, reducing the friction that would make it sink.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the molecular structure of ice more useful than knowing that ice floats?</p>
+<ul>
+<li>A. Ice always sinks in warm water, so the molecular explanation is incorrect.</li>
+<li>B. The floating of ice is only important in polar regions and not relevant elsewhere.</li>
+<li>C. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+</ul>
+<h3>Q3</h3>
+<p>What would happen to aquatic life in lakes if ice were denser than water and sank to the bottom?</p>
+<ul>
+<li>A. Fish would swim to the surface in winter because warm water rises to replace sinking ice.</li>
+<li>B. Lakes would freeze more slowly because sunlight would not be blocked by a floating ice layer.</li>
+<li>C. Lakes would freeze solid from the bottom up, killing most aquatic life in winter.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Name three everyday consequences of the fact that water expands when it freezes. For each one, explain whether the expansion is useful, harmful, or both — and give the underlying reason using density and molecular structure.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Scientists believe that if water did not have this anomalous property — if ice sank instead of floated — life on Earth would never have survived the first major ice age. The oceans would have frozen solid from the bottom, eliminating the liquid-water environment in which early life evolved. The strange hexagonal lattice of ice may be one of the reasons life exists at all.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Ice is less dense than liquid water because its hexagonal crystal lattice has empty spaces — so ice floats, lakes stay liquid below, and aquatic life survives winter.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 9 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does your stomach not digest itself?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 1</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- TITLE (y=30–80 reserved) -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">Why does your stomach not digest itself?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Three layers that protect the stomach wall from its own acid</text>
+
+<!-- ── LAYER 1: Acid zone  y=95–185 ── -->
+<!-- text zone x=50–430 | shapes zone x=450–740 -->
+<rect x="35" y="95" width="710" height="90" fill="#fee2e2" rx="6" stroke="#fca5a5" stroke-width="1.5"/>
+<!-- text -->
+<text x="50" y="122" font-family="Arial" font-size="17" font-weight="700" fill="#991b1b">Stomach Cavity — HCl + Pepsin</text>
+<text x="50" y="145" font-family="Arial" font-size="14" fill="#7f1d1d">pH ≈ 2 (very acidic) — breaks down food proteins</text>
+<!-- shapes: acid molecule dots in right zone (x=450+) -->
+<circle cx="470" cy="120" r="7" fill="#fca5a5"/>
+<circle cx="500" cy="135" r="5" fill="#fca5a5"/>
+<circle cx="528" cy="114" r="8" fill="#fca5a5"/>
+<circle cx="558" cy="130" r="6" fill="#fca5a5"/>
+<circle cx="588" cy="118" r="7" fill="#fca5a5"/>
+<circle cx="620" cy="136" r="5" fill="#fca5a5"/>
+<circle cx="648" cy="120" r="7" fill="#fca5a5"/>
+<circle cx="676" cy="133" r="6" fill="#fca5a5"/>
+<circle cx="706" cy="115" r="5" fill="#fca5a5"/>
+<text x="567" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#991b1b" font-style="italic">acid molecules</text>
+
+<!-- inter-layer label -->
+<text x="310" y="192" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">↓ Acid blocked by mucus ↓</text>
+
+<!-- ── LAYER 2: Mucus zone  y=200–305 ── -->
+<!-- text zone x=50–500 | shapes (waves) zone x=510–740 -->
+<rect x="35" y="200" width="710" height="105" fill="#fef3c7" rx="6" stroke="#d97706" stroke-width="1.5"/>
+<!-- text (max reach: "Acid and pepsin cannot penetrate…" 57ch*0.55*14=439px → x=50→489) -->
+<text x="50" y="226" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Mucus Layer — Physical Barrier</text>
+<text x="50" y="248" font-family="Arial" font-size="14" fill="#78350f">1–2 mm thick, secreted by goblet cells</text>
+<text x="50" y="268" font-family="Arial" font-size="14" fill="#78350f">Acid cannot penetrate to living cells below</text>
+<!-- shapes: wavy lines in right zone (x=510+) -->
+<path d="M 515 208 Q 540 220 565 208 Q 590 196 615 208 Q 640 220 665 208 Q 690 196 715 208 Q 735 220 745 208" stroke="#b45309" stroke-width="2" fill="none"/>
+<path d="M 515 228 Q 540 240 565 228 Q 590 216 615 228 Q 640 240 665 228 Q 690 216 715 228 Q 735 240 745 228" stroke="#b45309" stroke-width="2" fill="none"/>
+<path d="M 515 248 Q 540 260 565 248 Q 590 236 615 248 Q 640 260 665 248 Q 690 236 715 248 Q 735 260 745 248" stroke="#b45309" stroke-width="2" fill="none"/>
+<path d="M 515 268 Q 540 280 565 268 Q 590 256 615 268 Q 640 280 665 268 Q 690 256 715 268 Q 735 280 745 268" stroke="#b45309" stroke-width="2" fill="none" opacity="0.6"/>
+<text x="628" y="295" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e" font-style="italic">mucus gel</text>
+
+<!-- ── LAYER 3: Bicarbonate zone  y=315–378 ── -->
+<!-- no shapes, full width for text -->
+<rect x="35" y="315" width="710" height="63" fill="#d1fae5" rx="6" stroke="#10b981" stroke-width="1.5"/>
+<text x="50" y="341" font-family="Arial" font-size="17" font-weight="700" fill="#065f46">Bicarbonate Ions — Chemical Neutraliser</text>
+<text x="50" y="363" font-family="Arial" font-size="14" fill="#064e3b">Neutralises acid that seeps through — keeps cells at pH ≈ 7</text>
+
+<!-- ── LAYER 4: Stomach cells  y=388–468 ── -->
+<!-- text zone x=50–415 | cells zone x=430–740 -->
+<rect x="35" y="388" width="710" height="80" fill="#dbeafe" rx="6" stroke="#93c5fd" stroke-width="1.5"/>
+<!-- text (heading 32ch*0.55*16=282px ends x=332; line2 23ch*0.55*14=177px ends x=227; line3 28ch*0.55*14=215px ends x=265) -->
+<text x="50" y="412" font-family="Arial" font-size="16" font-weight="700" fill="#1e3a5f">Stomach Wall Cells (Epithelium)</text>
+<text x="50" y="432" font-family="Arial" font-size="14" fill="#1e3a5f">Replaced every 3–5 days</text>
+<text x="50" y="452" font-family="Arial" font-size="14" fill="#1e3a5f">Continuous biological repair</text>
+<!-- shapes: cell rectangles in right zone (x=430+) -->
+<rect x="435" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<rect x="474" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<rect x="513" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<rect x="552" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<rect x="591" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<rect x="630" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<rect x="669" y="396" width="34" height="72" fill="none" stroke="#60a5fa" stroke-width="1.5" rx="4"/>
+<!-- nuclei dots -->
+<circle cx="452" cy="432" r="6" fill="#93c5fd"/>
+<circle cx="491" cy="432" r="6" fill="#93c5fd"/>
+<circle cx="530" cy="432" r="6" fill="#93c5fd"/>
+<circle cx="569" cy="432" r="6" fill="#93c5fd"/>
+<circle cx="608" cy="432" r="6" fill="#93c5fd"/>
+<circle cx="647" cy="432" r="6" fill="#93c5fd"/>
+<circle cx="686" cy="432" r="6" fill="#93c5fd"/>
+
+<!-- ── pH GAUGE  x=768–808, y=95–468 ── -->
+<defs>
+  <linearGradient id="phG1" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ef4444"/>
+    <stop offset="50%" stop-color="#fbbf24"/>
+    <stop offset="100%" stop-color="#34d399"/>
+  </linearGradient>
+</defs>
+<text x="788" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">pH</text>
+<rect x="768" y="95" width="40" height="373" fill="url(#phG1)" rx="6" stroke="#1f5f8b" stroke-width="1.5"/>
+<text x="817" y="109" font-family="Arial" font-size="14" fill="#991b1b" font-weight="700">2</text>
+<text x="817" y="225" font-family="Arial" font-size="14" fill="#b45309">4</text>
+<text x="817" y="335" font-family="Arial" font-size="14" fill="#047857">6</text>
+<text x="817" y="470" font-family="Arial" font-size="14" fill="#047857" font-weight="700">7</text>
+<line x1="808" y1="107" x2="816" y2="107" stroke="#555" stroke-width="1.5"/>
+<line x1="808" y1="223" x2="816" y2="223" stroke="#555" stroke-width="1.5"/>
+<line x1="808" y1="333" x2="816" y2="333" stroke="#555" stroke-width="1.5"/>
+<line x1="808" y1="466" x2="816" y2="466" stroke="#555" stroke-width="1.5"/>
+<!-- zone labels right of gauge -->
+<text x="862" y="145" font-family="Arial" font-size="14" fill="#991b1b">Acid</text>
+<text x="862" y="258" font-family="Arial" font-size="14" fill="#92400e">Mucus</text>
+<text x="858" y="350" font-family="Arial" font-size="14" fill="#047857">HCO₃⁻</text>
+<text x="862" y="432" font-family="Arial" font-size="14" fill="#1e3a5f">Cells</text>
+
+<!-- TAKEAWAY STRIP (y=505–545) -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">Mucus + Bicarbonate + Cell renewal = three-layer protection against self-digestion</text>
 </svg>

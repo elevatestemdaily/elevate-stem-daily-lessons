@@ -1,26 +1,90 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Could humans live on Mars?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 28</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">Could humans live on Mars?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Four major challenges — and engineering solutions — Day 28</text>
+
+<!-- 4 COMPARISON PANELS: Earth vs Mars for each challenge -->
+
+<!-- Panel 1: Atmosphere (y=68-185) -->
+<rect x="20" y="68" width="470" height="117" rx="5" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="255" y="86" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Challenge 1: Atmosphere</text>
+<!-- Earth side -->
+<rect x="30" y="93" width="200" height="82" rx="4" fill="#bfdbfe"/>
+<text x="130" y="112" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Earth ✓</text>
+<text x="130" y="127" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">78% N₂ + 21% O₂</text>
+<text x="130" y="141" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1 atm pressure</text>
+<text x="130" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Breathable. Comfortable.</text>
+<text x="130" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Atmosphere: ~100 km thick</text>
+<!-- Mars side -->
+<rect x="240" y="93" width="240" height="82" rx="4" fill="#fecaca"/>
+<text x="360" y="112" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Mars ✗</text>
+<text x="360" y="127" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">95% CO₂, 0.16% O₂</text>
+<text x="360" y="141" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">0.006 atm (0.6% of Earth)</text>
+<text x="360" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Blood would boil without suit</text>
+<text x="360" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">MOXIE O₂: pressurised habitat needed</text>
+
+<!-- Panel 2: Temperature (y=192-310) -->
+<rect x="20" y="192" width="470" height="117" rx="5" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="255" y="210" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Challenge 2: Temperature</text>
+<rect x="30" y="218" width="200" height="82" rx="4" fill="#d1fae5"/>
+<text x="130" y="236" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Earth ✓</text>
+<text x="130" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Average: 15°C</text>
+<text x="130" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Range: −89°C to +57°C</text>
+<text x="130" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Hospitable to life</text>
+<text x="130" y="294" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Greenhouse effect moderates</text>
+<rect x="240" y="218" width="240" height="82" rx="4" fill="#fecaca"/>
+<text x="360" y="236" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Mars ✗</text>
+<text x="360" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Average: −60°C</text>
+<text x="360" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Night (poles): −125°C</text>
+<text x="360" y="280" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Liquid water impossible at surface</text>
+<text x="360" y="294" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Insulated habitat; nuclear heating</text>
+
+<!-- Panel 3: Radiation (y=317-435) -->
+<rect x="20" y="317" width="470" height="117" rx="5" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="255" y="335" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Challenge 3: Radiation</text>
+<rect x="30" y="343" width="200" height="82" rx="4" fill="#d1fae5"/>
+<text x="130" y="361" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Earth ✓</text>
+<text x="130" y="378" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Magnetic field deflects</text>
+<text x="130" y="392" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">most solar wind particles</text>
+<text x="130" y="406" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ozone absorbs UV</text>
+<text x="130" y="420" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Radiation dose: low</text>
+<rect x="240" y="343" width="240" height="82" rx="4" fill="#fecaca"/>
+<text x="360" y="361" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Mars ✗</text>
+<text x="360" y="378" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">No magnetic field → solar</text>
+<text x="360" y="392" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">wind hits surface directly</text>
+<text x="360" y="406" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Cancer-causing radiation daily</text>
+<text x="360" y="420" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Underground habitat + shielding</text>
+
+<!-- RIGHT COLUMN: Solutions + Mangalyaan (x=500-978) -->
+<rect x="500" y="68" width="478" height="170" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="739" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Engineering Solutions</text>
+
+<rect x="512" y="96" width="455" height="30" rx="3" fill="#a7f3d0"/>
+<text x="739" y="116" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">O₂: MOXIE device (NASA) — extracts O₂ from CO₂ atmosphere</text>
+<rect x="512" y="132" width="455" height="30" rx="3" fill="#a7f3d0"/>
+<text x="739" y="152" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Water: extract from permafrost + urine recycling (93% recovery)</text>
+<rect x="512" y="168" width="455" height="30" rx="3" fill="#a7f3d0"/>
+<text x="739" y="188" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Food: hydroponics + algae bioreactors (Spirulina: O₂ + protein)</text>
+<rect x="512" y="203" width="455" height="26" rx="3" fill="#a7f3d0"/>
+<text x="739" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Energy: solar panels + NASA Kilopower nuclear reactor (10 kW)</text>
+
+<!-- Mangalyaan box -->
+<rect x="500" y="248" width="478" height="110" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+<text x="739" y="268" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Mangalyaan — India's Mars Mission (2014)</text>
+<text x="515" y="287" font-family="Arial" font-size="14" fill="#333">India's 1st Mars mission: $74M (cheapest ever).</text>
+<text x="515" y="303" font-family="Arial" font-size="14" fill="#333">First nation to succeed on inaugural attempt.</text>
+<text x="515" y="319" font-family="Arial" font-size="14" fill="#333">Studied Martian atmosphere 7+ yrs; confirmed CO₂.</text>
+<text x="515" y="335" font-family="Arial" font-size="14" fill="#333">Data guides future life-support habitat design.</text>
+<text x="515" y="351" font-family="Arial" font-size="14" fill="#555">ISRO Gaganyaan → next: crewed orbit, life support.</text>
+
+<!-- Challenge 4: Resources (bottom, full width) -->
+<rect x="20" y="442" width="958" height="50" rx="5" fill="#f0f7ff" stroke="#1f5f8b" stroke-width="1.5"/>
+<text x="499" y="460" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Challenge 4: Resources — No food. Soil = perchlorate (toxic). Water = frozen. Sunlight = 43% of Earth's. 6-month comm delay.</text>
+<text x="499" y="477" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mars gravity = 38% → bone loss over months. Dust storms (2–3 months) can block solar power. Every system needs a backup.</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Mars: no O₂, −60°C, deadly radiation, no liquid water — four separate engineering challenges, none easily solved.</text>
 </svg>

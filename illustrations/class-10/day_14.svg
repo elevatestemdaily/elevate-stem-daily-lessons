@@ -1,26 +1,93 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does natural selection work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 14</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Does Natural Selection Work?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Variation, selection pressure, adaptation, antibiotic resistance — Day 14</text>
+
+<!-- LEFT: Darwin's mechanism -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Darwin's Mechanism</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">Four Pillars</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">1. Variation: individuals differ in heritable traits</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">2. Overproduction: more offspring than survive</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">3. Competition: limited resources → struggle</text>
+<text x="40" y="198" font-family="Arial" font-size="14" fill="#555">4. Survival of the fittest: best-fit reproduce more</text>
+
+<rect x="30" y="214" width="280" height="80" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">The Result: Adaptation</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">Favourable alleles increase in frequency</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#555">Over many generations: population changes</text>
+<text x="40" y="288" font-family="Arial" font-size="14" fill="#555">Selection acts on variation already present</text>
+
+<rect x="30" y="304" width="280" height="80" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="322" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Peppered Moth (UK)</text>
+<text x="40" y="342" font-family="Arial" font-size="14" fill="#333">Pre-Industrial: pale form camouflaged on bark</text>
+<text x="40" y="362" font-family="Arial" font-size="14" fill="#555">Soot blackened trees → dark form survived</text>
+<text x="40" y="378" font-family="Arial" font-size="14" fill="#555">Post-Clean Air Act: pale form returned</text>
+
+<rect x="30" y="394" width="280" height="88" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="412" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Three Types of Selection</text>
+<text x="40" y="432" font-family="Arial" font-size="14" fill="#333">Directional: one extreme favoured (giraffe neck)</text>
+<text x="40" y="450" font-family="Arial" font-size="14" fill="#555">Stabilising: extremes removed (birth weight)</text>
+<text x="40" y="468" font-family="Arial" font-size="14" fill="#555">Disruptive: both extremes favoured (beak sizes)</text>
+
+<!-- CENTRE: Antibiotic resistance -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Evolution in Real Time</text>
+
+<rect x="344" y="104" width="312" height="130" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Antibiotic Resistance</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Colony: 1 in 10⁷ bacteria carry resistant mutation</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Antibiotic kills 99.9999%; resistant survivors breed</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">New colony: entirely resistant in days</text>
+<text x="354" y="204" font-family="Arial" font-size="14" fill="#555">Antibiotic did NOT cause mutation — selected for it</text>
+<text x="354" y="220" font-family="Arial" font-size="14" fill="#555">E. coli resistance: observable in 11 days (Harvard)</text>
+
+<rect x="344" y="244" width="312" height="90" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="500" y="262" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Evidence for Evolution</text>
+<text x="354" y="284" font-family="Arial" font-size="14" fill="#333">Fossils: gradual anatomical changes (Tiktaalik)</text>
+<text x="354" y="304" font-family="Arial" font-size="14" fill="#555">Homologous: whale fin, bat wing, human hand</text>
+<text x="354" y="320" font-family="Arial" font-size="14" fill="#555">DNA: 98.7% identical to chimps; 60% to bananas</text>
+
+<rect x="344" y="344" width="312" height="80" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="362" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Sexual + Kin Selection</text>
+<text x="354" y="382" font-family="Arial" font-size="14" fill="#333">Sexual: peacock tail; mate choice drives trait</text>
+<text x="354" y="402" font-family="Arial" font-size="14" fill="#555">Kin: ant sacrifice for colony (shared genes, Hamilton)</text>
+
+<rect x="344" y="434" width="312" height="48" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="452" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Artificial selection: dog breeds from wolf in 15,000 yr</text>
+<text x="500" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">IARI wheat: human-guided natural selection</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: AMR Crisis</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">AMR Burden in India</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">World's highest antibiotic consumption</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Over-the-counter sale → resistant strains spread</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">58,000 newborns die/yr from resistant infections</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">India's AMR Response</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">National Action Plan on AMR (2017)</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ICMR: WHONET surveillance network</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Prescription-only antibiotics push (2019)</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Indian Biodiversity (Evolution)</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">17 megadiverse nations: 8% world species in India</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Western Ghats: 5,000+ endemic species</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Isolation by terrain → rapid speciation</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">J.B.S. Haldane in India</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Worked at ISI Kolkata (1957–61)</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Quantified natural selection mathematically</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Modern synthesis: Darwinism + Mendelism</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Natural selection: variation + differential survival + heredity = adaptation over generations.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Antibiotic resistance: live evolution in days. India: highest global AMR burden; 58,000 newborns lost/yr.</text>
 </svg>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 17 — How does your brain communicate with your body? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 17</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does your brain communicate with your body?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how nerve impulses travel, describe the synapse, and predict what happens if a nerve pathway is damaged.</p>
+</div><h2>1. The mystery</h2>
+<p>You touch a hot stove. In 15–20 milliseconds — before you consciously register pain — your arm has already jerked away. The signal travels from your finger to your spinal cord and back at approximately 70 m/s. How does the body achieve this wireless-internet-speed communication using biological cells?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Neuron structure:</strong> Cell body (soma) + dendrites (receive signals) + axon (transmit signals) + myelin sheath (insulation, speeds transmission) + axon terminals (release neurotransmitters).</p>
+<p><strong>Action potential (nerve impulse):</strong>
+- Resting potential: −70 mV inside (more K⁺ inside, more Na⁺ outside — maintained by Na⁺/K⁺ pump)
+- Stimulus: Na⁺ channels open → Na⁺ rushes in → membrane depolarises to +40 mV
+- K⁺ channels open → K⁺ rushes out → repolarisation
+- Adjacent membrane depolarises → impulse travels down axon
+- Speed: unmyelinated 0.5–2 m/s; myelinated (saltatory conduction) 70–120 m/s</p>
+<p><strong>Synapse:</strong> Gap between neurons. Impulse arrives at axon terminal → vesicles release neurotransmitters (acetylcholine, dopamine, serotonin) into synaptic cleft → diffuse to post-synaptic receptor → triggers new action potential (or inhibits).</p>
+<p><strong>Reflex arc:</strong> Receptor → sensory neuron → spinal cord → motor neuron → effector. Bypasses brain for speed.</p>
+<p><strong>Central Nervous System (CNS):</strong> Brain + spinal cord. <strong>Peripheral NS:</strong> Somatic (voluntary) + Autonomic (involuntary — sympathetic/parasympathetic).</p>
+<h2>3. Build the mental model</h2>
+<p>Think of nerve signal transmission as a relay race through a very long tunnel:</p>
+<ul>
+<li><strong>The neuron</strong> is one relay runner. The baton is the action potential; each runner carries it along their axon, then passes it to the next.</li>
+<li><strong>The resting neuron</strong> is a runner crouched at the start line with energy stored in ion concentration gradients: Na⁺ piled outside, K⁺ piled inside, separated by the Na⁺/K⁺ pump.</li>
+<li><strong>The action potential</strong> is the starter's gun — Na⁺ floods in, the membrane depolarises to +40 mV, and the wave sweeps down the axon like falling dominoes.</li>
+<li><strong>Myelin</strong> is a shortcut: the signal jumps from one node of Ranvier to the next, making myelinated fibres 50–100× faster than unmyelinated ones.</li>
+<li><strong>The synapse</strong> is the handoff zone — no physical connection exists, so the signal crosses as a chemical neurotransmitter, which triggers a new electrical impulse on the receiving neuron.</li>
+</ul>
+<p>Losing the myelin sheath (as in multiple sclerosis) removes those shortcuts — signals slow to a crawl and coordination fails.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a single neuron occupying the full horizontal width of the illustration, with each compartment labelled and colour-coded.</p>
+<p>The cell body (soma) is a large circle on the left, coloured light orange, with the nucleus visible inside; several branching dendrites extend leftward, labelled "receive signals."</p>
+<p>The axon extends rightward as a long horizontal line; a cut-away cross-section shows the axon surrounded by a segmented myelin sheath (light blue), with small gaps labelled "nodes of Ranvier" where the bare membrane is exposed.</p>
+<p>At the right end, the axon terminal expands into a bulb-shaped structure; a zoomed inset shows the synaptic cleft — the axon terminal contains small circles representing neurotransmitter vesicles, and the post-synaptic membrane on the right shows receptor proteins as Y-shaped structures.</p>
+<p>Arrows along the axon point rightward and are labelled "+40 mV → −70 mV → +40 mV" to show the travelling action potential wave; a speed label reads "70–120 m/s (myelinated)."</p>
+<figure><img src="../../illustrations/class-9/day_17.svg" alt="Diagram for How does your brain communicate with your body?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Neurological disorders are the leading cause of disability in India: approximately 6 million epilepsy patients, 2 million Parkinson's patients, and 1 million multiple sclerosis patients. Antiepileptic drugs such as phenytoin and carbamazepine block Na⁺ channels, preventing the runaway action potentials that produce seizures — a direct pharmacological intervention at the ion-channel level.</p>
+<p>Parkinson's disease results from the degeneration of dopamine-releasing neurons in the substantia nigra. Dopamine depletion breaks the signalling chain from brain to motor neurons, causing tremor and rigidity. The standard treatment — levodopa — crosses the blood-brain barrier and is converted to dopamine inside the brain. Deep brain stimulation (DBS), an electrical implant that mimics neurotransmitter signalling, was developed for Indian patients at AIIMS Delhi. India produces 30 % of global generic neurological drugs, making these treatments widely accessible.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Test the patellar (knee-jerk) reflex: sit with legs crossed so one foot hangs freely. Use the edge of your hand or a ruler to tap firmly just below the kneecap. Your lower leg kicks upward involuntarily.</p>
+<p>This is a two-neuron reflex arc: a sensory neuron in the patellar tendon detects the stretch, sends a signal directly to the spinal cord (not the brain), and a motor neuron immediately signals the quadriceps to contract. The entire loop completes before the brain receives any information.</p>
+<p>Try to suppress it using willpower — you generally cannot override it before the contraction completes. That inability is direct evidence that the reflex arc runs through the spinal cord independently. Notice also that both legs respond slightly — the spinal cord sends a weaker inhibitory signal to the opposite hamstring to prevent your whole body from toppling.</p>
+</div><h2>7. Think deeper</h2>
+<p>Memory formation involves long-term potentiation (LTP): repeated activation of a synapse physically strengthens the connection — the post-synaptic membrane inserts more AMPA receptors, and the pre-synaptic terminal releases more neurotransmitter per impulse. This means practising a skill literally builds stronger synaptic connections, which is why repetition works in learning.</p>
+<p>Short-term memory is held in hippocampal circuits; consolidation to long-term memory (cortex) happens primarily during slow-wave sleep, when the hippocampus replays recent experiences and transfers patterns to the cortex. Sleep deprivation impairs LTP at the molecular level — literally preventing the protein synthesis needed to stabilise new synaptic connections. India's ₹6,000 crore sleep disorder industry is directly linked to this neuroscience.</p>
+<p><strong>Predict:</strong> A student studies a topic intensively for one night with only 3 hours of sleep. Another student studies the same material over three evenings with 7 hours of sleep each night. Using LTP and memory consolidation, predict which student will retain more information after one week, and explain the molecular reason why.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does the brain send signals to muscles and organs throughout the body?</p>
+<ul>
+<li>A. The brain releases chemicals directly into the bloodstream that travel to all cells simultaneously</li>
+<li>B. The brain sends electrical impulses along nerve cells through the nervous system to target organs</li>
+<li>C. The brain uses magnetic fields to remotely control muscle fibres without any physical connection</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of nerve signal transmission more useful than knowing the brain controls the body?</p>
+<ul>
+<li>A. Understanding control is enough; transmission details are only relevant to neurologists</li>
+<li>B. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>C. Nerve transmission is too complex for Class 9 so simplified descriptions are more practical</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If a nerve pathway between the brain and a limb were damaged, what would you predict?</p>
+<ul>
+<li>A. Signals could not travel to the limb, causing loss of movement or sensation in that area</li>
+<li>B. The brain would find an alternative magnetic route to continue controlling the limb</li>
+<li>C. The limb would generate its own electrical signals to compensate for the lost connection</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A patient is given a drug that permanently blocks all Na⁺ channels in the peripheral nervous system but does not affect the brain or spinal cord directly. Describe step by step what would happen to: (a) voluntary movement, (b) reflex responses, and (c) the patient's ability to feel pain. Then explain why local anaesthetics like lidocaine — which temporarily block Na⁺ channels in a small region — are safe during dental procedures but the drug described above would be lethal.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The speed of nerve conduction in an unmyelinated fibre is only about 1 m/s — slow enough that if you were a 10-metre-tall giant, it would take 10 seconds to feel a pinprick on your foot. Large dinosaurs may have faced exactly this problem: a Brachiosaurus with a 9-metre neck would have experienced a noticeable delay between feeling something touch its tail and its brain registering the sensation. Some palaeontologists argue this explains the large sacral neural ganglion found in some dinosaur fossils — a secondary nerve cluster near the hips that may have handled reflexes for the rear half of the body, letting the animal respond without waiting for the brain.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A nerve impulse is not electricity flowing through a wire — it is a wave of ion movements across a membrane, relayed chemically across each synapse, and myelination speeds this relay to over 100 m/s by letting the wave skip between gaps.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 17 of 30</footer>
+</div>
+</body>
+</html>

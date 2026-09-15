@@ -1,26 +1,159 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr25b" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1d4ed8"/></marker>
+  <marker id="arr25r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does rainwater become groundwater?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 25</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How does rainwater become groundwater?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Infiltration → vadose zone → aquifer recharge — Day 25</text>
+
+<!-- ── LEFT: Cross-section diagram ── -->
+<rect x="20" y="74" width="500" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="270" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Groundwater Cross-Section</text>
+
+<!-- Rain drops -->
+<text x="60" y="116" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">💧</text>
+<text x="130" y="110" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">💧</text>
+<text x="200" y="118" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">💧</text>
+<text x="270" y="108" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">💧</text>
+<text x="340" y="114" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">💧</text>
+<text x="420" y="116" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">💧</text>
+
+<!-- Trees (shows forest vs paved) -->
+<!-- Left half: forest -->
+<line x1="70" y1="128" x2="70" y2="154" stroke="#065f46" stroke-width="3"/>
+<polygon points="56,154 70,118 84,154" fill="#16a34a"/>
+<line x1="140" y1="128" x2="140" y2="154" stroke="#065f46" stroke-width="3"/>
+<polygon points="126,154 140,118 154,154" fill="#16a34a"/>
+<line x1="210" y1="128" x2="210" y2="154" stroke="#065f46" stroke-width="3"/>
+<polygon points="196,154 210,118 224,154" fill="#16a34a"/>
+<text x="140" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">FOREST → infiltrates</text>
+
+<!-- Right half: paved road -->
+<rect x="290" y="142" width="210" height="14" rx="0" fill="#6b7280"/>
+<text x="395" y="132" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">PAVEMENT → runoff</text>
+
+<!-- Ground surface -->
+<rect x="30" y="156" width="480" height="16" rx="2" fill="#92400e"/>
+<text x="270" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Ground surface</text>
+
+<!-- Vadose zone -->
+<rect x="30" y="172" width="480" height="80" rx="0" fill="#d4b896"/>
+<!-- small dots showing soil pores -->
+<circle cx="100" cy="195" r="4" fill="#c5a47e"/>
+<circle cx="150" cy="205" r="4" fill="#c5a47e"/>
+<circle cx="200" cy="192" r="4" fill="#c5a47e"/>
+<circle cx="250" cy="210" r="4" fill="#c5a47e"/>
+<circle cx="300" cy="196" r="4" fill="#c5a47e"/>
+<circle cx="350" cy="208" r="4" fill="#c5a47e"/>
+<circle cx="400" cy="192" r="4" fill="#c5a47e"/>
+<circle cx="130" cy="220" r="4" fill="#c5a47e"/>
+<circle cx="180" cy="232" r="4" fill="#c5a47e"/>
+<circle cx="230" cy="226" r="4" fill="#c5a47e"/>
+<circle cx="280" cy="230" r="4" fill="#c5a47e"/>
+<circle cx="330" cy="222" r="4" fill="#c5a47e"/>
+<circle cx="380" cy="234" r="4" fill="#c5a47e"/>
+<text x="270" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#451a03">Vadose Zone (unsaturated)</text>
+<text x="270" y="233" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">Pores partly filled with air + water</text>
+
+<!-- Water table dashed line -->
+<line x1="30" y1="252" x2="510" y2="252" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="8,4"/>
+<text x="270" y="248" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Water Table</text>
+
+<!-- Aquifer -->
+<rect x="30" y="252" width="480" height="90" rx="0" fill="#bfdbfe"/>
+<!-- dots showing saturated pores -->
+<circle cx="80" cy="275" r="5" fill="#1d4ed8"/>
+<circle cx="120" cy="285" r="5" fill="#1d4ed8"/>
+<circle cx="160" cy="270" r="5" fill="#1d4ed8"/>
+<circle cx="200" cy="285" r="5" fill="#1d4ed8"/>
+<circle cx="240" cy="275" r="5" fill="#1d4ed8"/>
+<circle cx="280" cy="286" r="5" fill="#1d4ed8"/>
+<circle cx="320" cy="272" r="5" fill="#1d4ed8"/>
+<circle cx="360" cy="284" r="5" fill="#1d4ed8"/>
+<circle cx="400" cy="276" r="5" fill="#1d4ed8"/>
+<circle cx="440" cy="288" r="5" fill="#1d4ed8"/>
+<circle cx="100" cy="303" r="5" fill="#1d4ed8"/>
+<circle cx="140" cy="316" r="5" fill="#1d4ed8"/>
+<circle cx="180" cy="308" r="5" fill="#1d4ed8"/>
+<circle cx="220" cy="320" r="5" fill="#1d4ed8"/>
+<circle cx="260" cy="310" r="5" fill="#1d4ed8"/>
+<circle cx="300" cy="318" r="5" fill="#1d4ed8"/>
+<text x="270" y="300" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1e3a8a">Aquifer (saturated layer)</text>
+<text x="270" y="318" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">All pores filled with water</text>
+<text x="270" y="335" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">Porous rock — sandstone/gravel</text>
+
+<!-- Confining layer -->
+<rect x="30" y="342" width="480" height="22" rx="0" fill="#374151"/>
+<text x="270" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#e5e7eb">Confining Layer (clay/granite — impermeable)</text>
+
+<!-- Confined artesian aquifer -->
+<rect x="30" y="364" width="480" height="40" rx="0" fill="#93c5fd"/>
+<text x="270" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1e3a8a">Confined (Artesian) Aquifer</text>
+<text x="270" y="398" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e40af">Under pressure — rises in borewell</text>
+
+<!-- Infiltration arrows -->
+<line x1="100" y1="172" x2="100" y2="250" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr25b)"/>
+<line x1="180" y1="172" x2="180" y2="250" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr25b)"/>
+<line x1="260" y1="172" x2="260" y2="250" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arr25b)"/>
+
+<!-- Runoff arrow on paved side -->
+<line x1="350" y1="156" x2="506" y2="172" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arr25r)"/>
+<text x="450" y="152" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">runoff →</text>
+
+<!-- Labels for infiltration -->
+<text x="90" y="215" font-family="Arial" font-size="14" fill="#1d4ed8">↓ infiltrates</text>
+
+<!-- Borewell on right -->
+<rect x="462" y="166" width="10" height="228" rx="2" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
+<text x="485" y="270" font-family="Arial" font-size="14" fill="#92400e">Borewell</text>
+
+<!-- ── RIGHT: Factors + India ── -->
+<rect x="534" y="74" width="446" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="757" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Recharge Factors &amp; India</text>
+
+<!-- Factors affecting recharge -->
+<rect x="544" y="104" width="210" height="186" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="649" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Recharge Rate</text>
+<text x="554" y="142" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">↑ More recharge:</text>
+<text x="554" y="160" font-family="Arial" font-size="14" fill="#333">• Forest cover</text>
+<text x="554" y="178" font-family="Arial" font-size="14" fill="#333">• Sandy soil</text>
+<text x="554" y="196" font-family="Arial" font-size="14" fill="#333">• Slow steady rain</text>
+<text x="554" y="218" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">↓ Less recharge:</text>
+<text x="554" y="236" font-family="Arial" font-size="14" fill="#333">• Concrete / roads</text>
+<text x="554" y="254" font-family="Arial" font-size="14" fill="#333">• Clay soil</text>
+<text x="554" y="272" font-family="Arial" font-size="14" fill="#333">• Heavy cloudbursts</text>
+<text x="554" y="283" text-anchor="left" font-family="Arial" font-size="14" fill="#333">• Deforestation</text>
+
+<!-- India boxes -->
+<rect x="766" y="104" width="204" height="186" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="868" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">India Crisis</text>
+<text x="868" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">250 km³/year extracted</text>
+<text x="868" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">#1 groundwater user</text>
+<text x="868" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Punjab/Haryana:</text>
+<text x="868" y="198" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">water table −4 cm/yr</text>
+<text x="868" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">(NASA GRACE satellite)</text>
+<text x="868" y="238" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">60% irrigation via</text>
+<text x="868" y="256" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">groundwater pumping</text>
+<text x="868" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Exhaustion risk: 25 yrs</text>
+
+<rect x="544" y="298" width="426" height="80" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="757" y="316" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">India Solutions</text>
+<text x="557" y="336" font-family="Arial" font-size="14" fill="#333">• Chennai: mandatory rooftop rainwater harvesting (2001)</text>
+<text x="557" y="354" font-family="Arial" font-size="14" fill="#333">• Check dams: small dams slow runoff → recharge ponds</text>
+<text x="557" y="372" font-family="Arial" font-size="14" fill="#555">• Rajasthan johads (traditional ponds) — ancient recharge tech</text>
+
+<rect x="544" y="386" width="426" height="96" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="757" y="404" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Fossil Water Warning</text>
+<text x="557" y="424" font-family="Arial" font-size="14" fill="#333">Some Rajasthan boreholes tap water</text>
+<text x="557" y="442" font-family="Arial" font-size="14" fill="#333">that fell as rain 8,000–30,000 yrs ago</text>
+<text x="557" y="462" font-family="Arial" font-size="14" fill="#dc2626">Non-renewable — once used, gone forever</text>
+<text x="557" y="478" font-family="Arial" font-size="14" fill="#555">Carbon-14 dating reveals water age</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Rain infiltrates through soil → saturates aquifer below water table. Forest cover = more recharge.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India extracts 250 km³/yr. Punjab water table falling. Chennai rooftop harvesting shows the fix.</text>
 </svg>

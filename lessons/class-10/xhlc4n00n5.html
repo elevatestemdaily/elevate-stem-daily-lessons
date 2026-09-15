@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 12 — How are proteins produced from DNA instructions? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 12</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How are proteins produced from DNA instructions?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to describe the two-stage process of transcription and translation, name the key molecules involved at each stage, and predict what happens to protein production when ribosomes are disabled.</p>
+</div><h2>1. The mystery</h2>
+<p>Your DNA sits locked inside the nucleus of every cell, never leaving. Yet every second, thousands of different proteins are being assembled outside the nucleus — in the cytoplasm. Haemoglobin in red blood cells, insulin in pancreatic cells, collagen in skin cells. Each protein is different, each is made in the right cell at the right time. How does the static library of DNA instructions get turned into the dynamic, working machinery of life?</p>
+<h2>2. The science behind it</h2>
+<p>The journey from DNA to protein happens in two distinct stages: <strong>transcription</strong> (in the nucleus) and <strong>translation</strong> (at ribosomes in the cytoplasm). Together, this process is called <strong>gene expression</strong> and follows the central dogma of molecular biology: DNA → RNA → Protein.</p>
+<p><strong>Stage 1 — Transcription</strong></p>
+<p>When a gene needs to be expressed, an enzyme called <strong>RNA polymerase</strong> binds to a specific sequence on the DNA called the <strong>promoter region</strong>, just upstream of the gene. The double helix unwinds locally and RNA polymerase reads the template strand of DNA in the 3' to 5' direction, synthesising a complementary strand of <strong>messenger RNA (mRNA)</strong> in the 5' to 3' direction.</p>
+<p>The base-pairing rules used in transcription are the same as in DNA replication, with one key difference: in mRNA, <strong>uracil (U)</strong> replaces thymine (T). So wherever adenine (A) appears on the DNA template, uracil appears in the new mRNA strand.</p>
+<p>The mRNA strand is a mobile copy of the gene's information. In eukaryotic cells (including all human cells), the raw mRNA — called pre-mRNA — is processed before leaving the nucleus: non-coding sequences called <strong>introns</strong> are spliced out, and the coding sequences called <strong>exons</strong> are joined together. A protective cap is added at the 5' end and a poly-A tail at the 3' end. The mature mRNA then exits the nucleus through nuclear pore complexes and enters the cytoplasm.</p>
+<p><strong>Stage 2 — Translation</strong></p>
+<p>In the cytoplasm, the mRNA binds to a <strong>ribosome</strong> — a complex molecular machine made of two subunits (large and small), each built from ribosomal RNA (rRNA) and proteins. Ribosomes are the actual sites where amino acids are assembled into a protein chain.</p>
+<p>Translation proceeds codon by codon. The ribosome reads the mRNA sequence from the start codon <strong>AUG</strong> (which codes for the amino acid methionine and signals "begin here") toward a stop codon (UAA, UAG, or UGA). For each codon, a specific <strong>transfer RNA (tRNA)</strong> molecule carries the matching amino acid to the ribosome. Each tRNA has a three-base sequence called an <strong>anticodon</strong> at one end that is complementary to the mRNA codon, and carries its specific amino acid at the other end.</p>
+<p>The ribosome has three binding sites: the A site (where an incoming aminoacyl-tRNA binds), the P site (where the growing polypeptide chain is held), and the E site (where the empty tRNA exits). A peptide bond forms between the amino acid in the A site and the growing chain in the P site. The ribosome moves one codon along the mRNA, the process repeats, and the chain grows. When a stop codon is reached, no tRNA binds — instead, a release factor protein signals the chain to detach. The newly formed polypeptide then folds into its functional three-dimensional shape.</p>
+<p>The entire process from one mRNA molecule can involve multiple ribosomes reading simultaneously (a structure called a <strong>polysome</strong>), producing many copies of the same protein quickly.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the process as a factory with two departments:</p>
+<ul>
+<li><strong>Nucleus (Transcription department):</strong> Photocopies the relevant page of the DNA instruction manual onto a temporary slip of paper (mRNA). The original book (DNA) never leaves the vault.</li>
+<li><strong>Cytoplasm — Ribosomes (Translation department):</strong> Reads the paper slip codon by codon, fetches the matching component (amino acid via tRNA), and assembles the final product (protein).</li>
+</ul>
+<p>Key roles:
+- <strong>DNA</strong> = master blueprint (stays in the nucleus)
+- <strong>mRNA</strong> = working photocopy (carries instructions to ribosomes)
+- <strong>tRNA</strong> = delivery vehicle (brings correct amino acid for each codon)
+- <strong>Ribosome</strong> = assembly machine (forms peptide bonds between amino acids)
+- <strong>Protein</strong> = finished product (performs the actual biological function)</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a two-panel diagram:</p>
+<ul>
+<li><strong>Left panel (Transcription):</strong> The DNA double helix partially unwound, with RNA polymerase shown as a wedge moving along it, a growing mRNA strand emerging, and labels for "promoter", "template strand", "mRNA (5'→3')" and "U replaces T"</li>
+<li><strong>Right panel (Translation):</strong> An mRNA strand threaded through a ribosome, with two tRNA molecules shown (one in A site, one in P site), growing polypeptide chain exiting the ribosome, labelled "AUG start codon", "anticodon", and "peptide bond"</li>
+<li>A central arrow labelled "Central Dogma: DNA → mRNA → Protein"</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_12.svg" alt="Diagram for How are proteins produced from DNA instructions?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Understanding transcription and translation has enabled several practical applications relevant to Indian students:</p>
+<ul>
+<li><strong>Antibiotics targeting ribosomes:</strong> Many common antibiotics — including streptomycin, erythromycin, and tetracycline — work by binding to bacterial ribosomes and blocking translation. Because bacterial ribosomes (70S) differ structurally from human ribosomes (80S), these drugs can halt protein synthesis in bacteria without harming human cells. This specificity comes directly from knowing the translation mechanism.</li>
+<li><strong>Insulin production:</strong> Human insulin used by diabetic patients in India is produced by inserting the human insulin gene into <em>E. coli</em> bacteria. The bacterial cell's own transcription and translation machinery reads the human gene and produces human insulin — a direct industrial application of the central dogma.</li>
+<li><strong>COVID-19 mRNA vaccines:</strong> The Pfizer and Moderna vaccines used in India's vaccination drive delivered synthetic mRNA encoding the SARS-CoV-2 spike protein directly into human cells. Human ribosomes translated this mRNA into the spike protein, triggering immunity — proof that the translation mechanism can be harnessed for medicine.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how are proteins produced from dna instructions</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that destroying ribosomes halts protein synthesis completely. Now extend the prediction: some cells in the human body — such as mature red blood cells — have no nucleus and no DNA. Yet they carry haemoglobin, which is a protein.</p>
+<p><strong>Predict:</strong> If a red blood cell's haemoglobin molecules are damaged or destroyed, can the cell produce new haemoglobin to replace them? Use your knowledge of where transcription occurs and what ribosomes need in order to function. What does this imply for the lifespan of a red blood cell?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the correct sequence for protein production from DNA?</p>
+<ul>
+<li>a. DNA is directly converted into proteins inside the nucleus without any intermediary</li>
+<li>b. DNA is transcribed into mRNA, which is translated into a protein at ribosomes</li>
+<li>c. Proteins are copied directly from existing proteins using DNA as a guide only</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding transcription and translation more useful than just knowing proteins come from DNA?</p>
+<ul>
+<li>a. Because transcription and translation are only relevant for bacterial cells</li>
+<li>b. The mechanism reveals why drugs targeting ribosomes can stop bacterial protein synthesis</li>
+<li>c. Because translation is the only step that matters; transcription is just copying</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to protein production if ribosomes in a cell were destroyed?</p>
+<ul>
+<li>a. Protein synthesis would halt completely because ribosomes are where mRNA is translated</li>
+<li>b. Protein production would increase because the cell uses mitochondria as backup</li>
+<li>c. Protein production would continue normally since DNA can produce proteins directly</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A single gene can produce multiple different proteins from the same DNA sequence through a process called <strong>alternative splicing</strong>. After transcription, the cell's splicing machinery can include or exclude different exons from the same pre-mRNA, producing different mature mRNAs — and therefore different proteins — from one gene. The human body contains roughly 20,000–25,000 genes, yet can produce over 100,000 different protein variants. One gene, many products — all from the same DNA but processed differently.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Proteins are produced in two stages: transcription copies a gene from DNA into mRNA inside the nucleus, and translation reads that mRNA codon by codon at ribosomes in the cytoplasm, assembling the correct amino acid chain — so destroying ribosomes halts all protein production immediately.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 12 of 30</footer>
+</div>
+</body>
+</html>

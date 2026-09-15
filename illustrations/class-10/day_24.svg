@@ -1,26 +1,94 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does an electric motor work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 24</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Does an Electric Motor Work?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Magnetic force, Fleming's left-hand rule, commutator, EVs — Day 24</text>
+
+<!-- LEFT: Motor principle -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Force on Current in B-field</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">F = BIL sinθ (Lorentz Force)</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">F = force (N); B = flux density (T)</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">I = current (A); L = wire length (m)</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">θ = angle between I and B</text>
+<text x="40" y="198" font-family="Arial" font-size="14" fill="#555">Maximum when I ⊥ B (θ = 90°)</text>
+
+<rect x="30" y="214" width="280" height="80" rx="4" fill="white" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Fleming's Left-Hand Rule</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">Left hand: index = B direction, middle = I</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#555">Thumb = force direction (motor effect)</text>
+<text x="40" y="288" font-family="Arial" font-size="14" fill="#555">Right-hand rule: generator (induced EMF)</text>
+
+<rect x="30" y="304" width="280" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="322" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">DC Motor Components</text>
+<text x="40" y="342" font-family="Arial" font-size="14" fill="#333">Armature: current-carrying coil in B-field</text>
+<text x="40" y="362" font-family="Arial" font-size="14" fill="#555">Commutator: reverses current every half turn</text>
+<text x="40" y="380" font-family="Arial" font-size="14" fill="#555">Carbon brushes: slide contact with commutator</text>
+<text x="40" y="396" font-family="Arial" font-size="14" fill="#555">Ensures continuous rotation (not just half-turn)</text>
+
+<rect x="30" y="414" width="280" height="68" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Back EMF</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">Rotating coil: acts as generator → back EMF</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">Limits current; self-regulating mechanism</text>
+
+<!-- CENTRE: Motor types + generator -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Motor Types and Generator</text>
+
+<rect x="344" y="104" width="312" height="108" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">AC Motor (Induction Motor)</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">Rotating magnetic field from stator coils</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">Induces currents in rotor → force on rotor</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">No brushes or commutator: robust and efficient</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">85–90% of industrial motors worldwide</text>
+
+<rect x="344" y="222" width="312" height="90" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="240" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">BLDC Motor (Brushless DC)</text>
+<text x="354" y="260" font-family="Arial" font-size="14" fill="#333">Perm. magnets in rotor; stator: IC switching</text>
+<text x="354" y="280" font-family="Arial" font-size="14" fill="#555">90–95% efficiency; no brushes to wear out</text>
+<text x="354" y="296" font-family="Arial" font-size="14" fill="#555">Used in: EV drives, ceiling fans, drones, computers</text>
+
+<rect x="344" y="322" width="312" height="88" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="340" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Motor ↔ Generator Duality</text>
+<text x="354" y="360" font-family="Arial" font-size="14" fill="#333">Motor: electrical energy → mechanical energy</text>
+<text x="354" y="380" font-family="Arial" font-size="14" fill="#333">Generator: mechanical energy → electrical energy</text>
+<text x="354" y="400" font-family="Arial" font-size="14" fill="#555">EV regen. braking: motor acts as generator</text>
+
+<rect x="344" y="420" width="312" height="62" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="500" y="438" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Torque: τ = NBIA sinα (N = turns)</text>
+<text x="500" y="456" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Speed control: vary voltage or frequency (VFD)</text>
+<text x="500" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Stepper motor: precise angle steps (3D printers, CNC)</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Motors and EVs</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Electric Vehicle Revolution</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 3rd largest EV market globally (2023)</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ola Electric: BLDC motor scooters (India-made)</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">FAME-II: ₹10,000 crore EV incentive scheme</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Electric Trains (Indian Railways)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">100% electrification: completed 2024</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Vande Bharat: BLDC traction motors</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Regenerative braking: feeds power back to grid</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Ceiling Fans (India #1)</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 400 million ceiling fans in use</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Old induction fans: 75W; BLDC fans: 28W</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">UJALA: LED + BLDC fans subsidised scheme</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">IIT Motor Research</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">IIT Bombay: permanent magnet motor design</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CSIR-CMERI: indigenous EV motor fabrication</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">PLI scheme: EV motor component manufacturing</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">F = BIL. Fleming's left hand: B (index), I (middle), Force (thumb). Commutator ensures continuous rotation.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">BLDC: 90–95% efficient. Motor ↔ generator duality: EV regenerative braking. India: 3rd largest EV market.</text>
 </svg>

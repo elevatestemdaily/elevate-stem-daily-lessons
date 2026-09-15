@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 27 — Why are stars different colours? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 27</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why are stars different colours?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why star colour depends on temperature, describe blackbody radiation, and predict how a star's colour shifts as it cools.</p>
+</div><h2>1. The mystery</h2>
+<p>Look at the night sky from a dark location: most stars appear white-yellow, but some are distinctly blue-white (like Sirius), some orange-red (like Betelgeuse), some orange (like Antares). These are not optical illusions — stars genuinely glow different colours. Why?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Blackbody radiation:</strong> Any object with temperature emits electromagnetic radiation. The spectrum (range of wavelengths) depends on temperature — described by Planck's law.</p>
+<p><strong>Wien's displacement law:</strong> The peak wavelength of emitted radiation shifts with temperature:
+λ_peak = 2.898 × 10⁻³ / T (metres, where T is in Kelvin)</p>
+<ul>
+<li>T = 3,000 K: λ_peak ≈ 970 nm (near-infrared → appears red/orange)</li>
+<li>T = 5,778 K (Sun): λ_peak ≈ 500 nm (visible green — but Sun emits across visible spectrum → appears yellow-white)</li>
+<li>T = 10,000 K: λ_peak ≈ 290 nm (ultraviolet → peak invisible, but emits intensely in blue end → appears blue-white)</li>
+<li>T = 30,000 K: λ_peak ≈ 97 nm (extreme UV → appears brilliant blue-white)</li>
+</ul>
+<p><strong>Star spectral classes (O B A F G K M):</strong> Oh Be A Fine Girl/Guy, Kiss Me
+- O-type: 30,000–50,000 K, blue
+- B-type: 10,000–30,000 K, blue-white (Rigel)
+- A-type: 7,500–10,000 K, white (Sirius, Vega)
+- F/G-type: 5,000–7,500 K, yellow-white (Sun: G2V)
+- K-type: 3,500–5,000 K, orange (Arcturus)
+- M-type: &lt;3,500 K, red (Betelgeuse, Proxima Centauri)</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a blacksmith heating a steel rod. At room temperature it is dull grey — it emits infrared heat but no visible light. As it enters the forge fire, it glows deep red, then brightens to orange, then yellow-orange. Professional bladesmiths know that steel at "forging temperature" (~1,200°C or ~1,470 K) glows bright orange — and they judge temperature by colour alone, without a thermometer.</p>
+<p>Stars work on exactly the same principle, scaled up by thousands of degrees. A cool red star like Betelgeuse (3,500 K) is like the steel just beginning to glow — its peak emission is in the infrared, and only the tail of its spectrum spills into visible red light. The Sun (5,778 K) is like steel at full forging heat — peak emission near 500 nm green, but it radiates across the entire visible spectrum so we perceive it as white-yellow. A blue-white star like Rigel (11,000 K) is so hot that its peak is already in the ultraviolet; the blue end of its visible spectrum dominates, so it appears blue-white.</p>
+<p>The colour is not paint — it is a thermometer. A star's colour tells astronomers its surface temperature without any need to physically measure it.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG for this lesson shows a horizontal temperature axis running from 3,000 K on the left to 30,000 K on the right. Above the axis, five star discs are drawn at increasing sizes to indicate luminosity, each coloured to match its spectral class: a deep red disc (M-type, Betelgeuse, 3,500 K), an orange disc (K-type, Arcturus, 4,300 K), a yellow-white disc (G-type, Sun, 5,778 K), a white disc (A-type, Sirius, 9,940 K), and a blue-white disc (B-type, Rigel, 11,000 K).</p>
+<p>Below the axis, five blackbody radiation curves are plotted — each a smooth hill shape peaking at a different wavelength. The red-star curve peaks far to the right of the visible band (near-infrared); the Sun's curve peaks at ~500 nm within the visible band; the blue-star curve peaks in the ultraviolet, left of the visible band. A vertical shaded strip (400–700 nm) marks the visible spectrum. An inset in the corner shows Wien's law written out: λ_peak = 2.898 × 10⁻³ / T.</p>
+<h2>5. Real-world connection</h2>
+<p>Indian astronomy has a 4,000-year history — Aryabhata (499 CE) calculated Earth's rotation period as 23h 56m (actual: 23h 56m 4s). The Giant Metrewave Radio Telescope (GMRT) near Pune is the world's largest radio telescope at low frequencies — studying pulsars, quasars, and galaxy formation using radio waves from stars. India's AstroSat (2015) observes the universe across X-ray, UV, and visible wavelengths — measuring stellar temperatures across the electromagnetic spectrum by recording where each star's emission peaks. ISRO's PSLV launched AstroSat as India's first dedicated astronomy satellite.</p>
+<p>Colour-temperature relationships from stellar physics also drive industrial pyrometry in Indian steel plants: blast furnace operators at Tata Steel's Jamshedpur facility monitor molten iron temperature by its glow colour using optical pyrometers — instruments calibrated on exactly the same blackbody physics that governs star colours.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Heating a metal object:</strong> Hold a steel fork or metal spoon (not silver — use a cheaper alloy) over a candle flame for 30 seconds, keeping the handle end cool enough to hold. Observe the tip carefully in a dimly lit room.</p>
+<p>As temperature rises, the tip glows deep dull red, then brightens to orange-red. If you could heat it further (do not attempt on a candle — this requires a proper Bunsen burner), it would shift toward yellow-white. You are watching blackbody radiation in real time. Note that the colour change happens gradually — it is a continuous shift, not discrete jumps. This is exactly what happens over billions of years as a star cools: a continuous drift from blue through yellow to red. Record what colour you observe and estimate the temperature from Wien's law (red peak ~700 nm → T ≈ 4,100 K).</p>
+</div><h2>7. Think deeper</h2>
+<p>Stellar evolution: A star's temperature and colour change over its lifetime. Stars are born as protostars (cool, red), heat up on the main sequence (the Sun will stay here for another 5 billion years), then expand into red giants (cool, red, large) as hydrogen runs out, then collapse into white dwarfs (hot, white, tiny) or, for massive stars, supernovae and neutron stars or black holes.</p>
+<p>A star's position on the Hertzsprung-Russell (H-R) diagram — luminosity vs temperature — reveals its age and evolutionary stage. The H-R diagram is one of the most powerful tools in astrophysics, and it was built entirely by understanding the temperature-colour relationship encoded in Wien's displacement law. Betelgeuse — the orange-red star in Orion's shoulder — is so large that if placed at the Sun's location, its surface would extend beyond Jupiter's orbit. Its red colour tells us it has left the main sequence and is approaching the end of its life.</p>
+<p><strong>Predict:</strong> Betelgeuse has been dimming and brightening unpredictably since 2019 — astronomers call it the "Great Dimming." If the dimming is caused by the star partially covering itself with cool dark patches (like enormous sunspots), predict how the star's average colour would shift during the dimming event. What instrument measurement would confirm your prediction?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What determines the colour of a star as observed from Earth?</p>
+<ul>
+<li>A. A star's colour depends on its surface temperature; hotter stars appear blue and cooler stars appear red</li>
+<li>B. A star's colour depends on its chemical composition; iron stars appear red and hydrogen stars appear blue</li>
+<li>C. A star's colour depends on its distance from Earth; closer stars appear blue and distant ones appear red</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the temperature-colour mechanism more useful than just knowing stars are different colours?</p>
+<ul>
+<li>A. Star colours can be seen without a telescope so no further mechanism is needed for understanding</li>
+<li>B. Star colour mechanisms are only relevant to professional astronomers using spectral telescopes</li>
+<li>C. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If a star gradually cooled from a very high temperature, what colour change would you predict?</p>
+<ul>
+<li>A. The star would shift from blue or white toward yellow, orange, and eventually red as it cools</li>
+<li>B. The star would shift from red to blue as cooling lowers the energy of emitted photons</li>
+<li>C. The star's colour would stay white because all stars emit the same spectrum regardless of temperature</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A newly discovered star has a measured peak emission wavelength of 580 nm — in the yellow part of the visible spectrum.</p>
+<p>Using Wien's displacement law (λ_peak = 2.898 × 10⁻³ / T), calculate its surface temperature. Then classify it into the O-B-A-F-G-K-M spectral system and name the nearest known star in that spectral class. Predict what colour this star appears to the naked eye, and explain whether its colour would be identical to, warmer than, or cooler than the Sun. Finally, describe one piece of data (other than colour) that astronomers could collect to independently verify the temperature you calculated.</p>
+</div><h2>10. One surprising idea</h2>
+<p>White dwarfs — the cooling remnants of stars like our Sun — begin their post-stellar life glowing blue-white at 100,000 K. Over billions of years they cool through white, yellow, orange, and eventually red. But the universe is only 13.8 billion years old, and the coolest known white dwarfs are still at ~3,500 K (red). Theoretical "black dwarfs" — white dwarfs that have cooled below visible emission — cannot yet exist: not enough time has passed in the universe's history. Every star visible in the night sky is still radiating visibly because the universe is too young for any star to have fully cooled to darkness. The night sky is bright partly because physics has not yet had enough time to make it dark.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A star's colour is a direct thermometer of its surface temperature — hotter stars emit peak radiation at shorter (bluer) wavelengths while cooler stars peak in the red, following Wien's displacement law.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 27 of 30</footer>
+</div>
+</body>
+</html>

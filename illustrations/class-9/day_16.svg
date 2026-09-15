@@ -1,26 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why do organisms need tissues?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 16</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why do organisms need tissues?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Epithelial, connective, muscular, nervous — and plant tissues — Day 16</text>
+
+<!-- LEFT: Animal tissues -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#f0f9ff" stroke="#0284c7" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#0284c7">Animal Tissues</text>
+
+<rect x="30" y="104" width="280" height="76" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="175" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Epithelial Tissue</text>
+<text x="40" y="140" font-family="Arial" font-size="14" fill="#333">Lines surfaces, cavities, organs</text>
+<text x="40" y="158" font-family="Arial" font-size="14" fill="#555">Protection, absorption, secretion</text>
+<text x="40" y="172" font-family="Arial" font-size="14" fill="#555">Skin, gut lining, lung alveoli</text>
+
+<rect x="30" y="188" width="280" height="76" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="175" y="204" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Connective Tissue</text>
+<text x="40" y="224" font-family="Arial" font-size="14" fill="#333">Supports and connects other tissues</text>
+<text x="40" y="242" font-family="Arial" font-size="14" fill="#555">Bone, cartilage, blood, fat, tendons</text>
+<text x="40" y="256" font-family="Arial" font-size="14" fill="#555">Rich in extracellular matrix (fibres)</text>
+
+<rect x="30" y="272" width="280" height="76" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="175" y="288" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Muscular Tissue</text>
+<text x="40" y="308" font-family="Arial" font-size="14" fill="#333">Contracts to produce movement</text>
+<text x="40" y="326" font-family="Arial" font-size="14" fill="#555">Skeletal (voluntary), cardiac, smooth</text>
+<text x="40" y="340" font-family="Arial" font-size="14" fill="#555">Actin + myosin filaments slide together</text>
+
+<rect x="30" y="356" width="280" height="76" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="175" y="372" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Nervous Tissue</text>
+<text x="40" y="392" font-family="Arial" font-size="14" fill="#333">Transmits electrical signals</text>
+<text x="40" y="410" font-family="Arial" font-size="14" fill="#555">Neurons + supporting glial cells</text>
+<text x="40" y="424" font-family="Arial" font-size="14" fill="#555">Brain, spinal cord, peripheral nerves</text>
+
+<rect x="30" y="442" width="280" height="40" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="175" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Organ = multiple tissue types together</text>
+<text x="175" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Heart: muscle + connective + nervous</text>
+
+<!-- CENTRE: Plant tissues + organisation -->
+<rect x="344" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Plant Tissues</text>
+
+<rect x="354" y="104" width="312" height="88" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Meristematic Tissue</text>
+<text x="364" y="144" font-family="Arial" font-size="14" fill="#333">Actively dividing cells (plant's stem cells)</text>
+<text x="364" y="164" font-family="Arial" font-size="14" fill="#555">Apical meristem: tip of root and shoot</text>
+<text x="364" y="182" font-family="Arial" font-size="14" fill="#555">Lateral meristem: makes plant wider</text>
+
+<rect x="354" y="202" width="312" height="106" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Permanent Tissue Types</text>
+<text x="364" y="242" font-family="Arial" font-size="14" fill="#333">Parenchyma: storage, photosynthesis</text>
+<text x="364" y="262" font-family="Arial" font-size="14" fill="#333">Collenchyma: flexible support (leaves)</text>
+<text x="364" y="282" font-family="Arial" font-size="14" fill="#555">Sclerenchyma: dead, rigid (coconut shell)</text>
+<text x="364" y="300" font-family="Arial" font-size="14" fill="#555">Xylem: water transport (root → leaf)</text>
+
+<rect x="354" y="318" width="312" height="76" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="500" y="336" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Xylem and Phloem</text>
+<text x="364" y="358" font-family="Arial" font-size="14" fill="#333">Xylem: carries water and minerals upward</text>
+<text x="364" y="378" font-family="Arial" font-size="14" fill="#555">Phloem: carries sugars from leaves down</text>
+
+<rect x="354" y="404" width="312" height="78" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="422" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Organisation Levels</text>
+<text x="364" y="444" font-family="Arial" font-size="14" fill="#333">Cell → Tissue → Organ → Organ system</text>
+<text x="364" y="462" font-family="Arial" font-size="14" fill="#555">→ Organism</text>
+<text x="364" y="478" font-family="Arial" font-size="14" fill="#555">Specialisation improves efficiency</text>
+
+<!-- RIGHT: India context -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; Tissue Science</text>
+
+<rect x="680" y="104" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Bone Marrow Transplant</text>
+<text x="825" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Connective tissue: blood stem cells</text>
+<text x="825" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">AIIMS: 1,000+ transplants/year</text>
+<text x="825" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Treats leukaemia, lymphoma</text>
+
+<rect x="680" y="202" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Cotton Fibre</text>
+<text x="825" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sclerenchyma cells: dead, hollow</text>
+<text x="825" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cellulose walls → strong fibre</text>
+<text x="825" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India: 2nd largest cotton producer</text>
+
+<rect x="680" y="300" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Cardiac Tissue Research</text>
+<text x="825" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cardiac muscle: involuntary, never rests</text>
+<text x="825" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">AIIMS cardiac surgery: 5,000/year</text>
+<text x="825" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Artificial cardiac patches: IIT research</text>
+
+<rect x="680" y="398" width="290" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Skin Grafting</text>
+<text x="825" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Epithelial tissue transplant for burns</text>
+<text x="825" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India: major burns from cooking fires</text>
+<text x="825" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Burn units: AIIMS, KEM Hospital</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">4 animal tissues: epithelial, connective, muscular, nervous. Plant: xylem (water), phloem (sugar).</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Cell → tissue → organ → system. Cotton fibre = sclerenchyma cells. India: 2nd largest cotton producer.</text>
 </svg>

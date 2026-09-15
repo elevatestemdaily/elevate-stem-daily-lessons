@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 25 — How does sound travel? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 25</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does sound travel?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how sound travels as a longitudinal wave, identify what sound needs to travel, and predict what happens when sound enters a vacuum.</p>
+</div><h2>1. The mystery</h2>
+<p>Thunder reaches you seconds after lightning — sound is slow (340 m/s in air) compared to light (300,000 km/s). But sound from an explosion on the Moon never reaches Earth. Why? And how does a vibrating guitar string turn into music 10 metres away without anything visibly moving between you?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Sound as a longitudinal wave:</strong> A vibrating object (guitar string, speaker cone, vocal cord) alternately pushes and pulls the air molecules next to it, creating:
+- <em>Compressions:</em> regions of high pressure (molecules pushed together)
+- <em>Rarefactions:</em> regions of low pressure (molecules spread out)</p>
+<p>These compressions and rarefactions travel outward as a wave — but the air molecules themselves don't travel. They oscillate back and forth around their rest position. The wave pattern (energy) travels forward.</p>
+<p><strong>Speed of sound:</strong>
+- In dry air at 20°C: ~343 m/s
+- Increases with temperature (warmer → faster molecules → compressions travel faster)
+- In water: ~1,480 m/s (molecules closer, faster transmission)
+- In steel: ~5,120 m/s (rigid lattice, very fast compression travel)
+- In vacuum: 0 m/s — NO medium, NO sound</p>
+<p><strong>Properties:</strong> Frequency (f, Hz), wavelength (λ, m), amplitude (volume), speed (v = fλ).</p>
+<p><strong>Reflection (echo):</strong> Sound reflects off hard surfaces. Used in sonar, ultrasound, bat echolocation.</p>
+<p><strong>Interference:</strong> Two sound waves can add (loud) or cancel (quiet) — basis of noise-cancelling headphones.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of sound like a crowd-wave (the "Mexican wave") in a cricket stadium. When 50,000 fans at the Wankhede do the wave, each person stands up and sits down — no one actually moves around the stadium. The <em>wave pattern</em> travels all the way around, but each individual stays in their own seat.</p>
+<p>Sound works exactly the same way. Each air molecule gets pushed forward, bumps into the next one, then springs back. The molecule itself barely moves — it stays roughly in place. What travels is the pattern of pushes and pulls: the compression-rarefaction wave. Energy races across the room at 343 m/s; the molecules contributing to that journey barely shift a fraction of a millimetre.</p>
+<p>Now imagine there are no fans in the stadium at all — an empty ground. No one to push, no one to spring back. The wave cannot form. That is a vacuum: no molecules, no medium, no sound wave possible, no matter how powerful the source.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG for this lesson shows a horizontal cross-section of air with a vibrating speaker cone on the left edge. Immediately to the right of the cone, air molecules (shown as small filled circles) are packed densely together in a bright orange band — this is the compression zone. Beyond it, the circles spread apart in a pale blue band — the rarefaction zone. The orange and blue bands alternate across the full width of the image, showing four complete cycles of a sound wave travelling rightward.</p>
+<p>A curved arrow below each molecule shows its back-and-forth oscillation direction (horizontal, parallel to wave travel), confirming the wave is <em>longitudinal</em> — particle motion is along the direction of energy travel, not across it. A bracket spanning one orange-blue pair is labelled "one wavelength (λ)." At the far right of the image, a simplified ear diagram receives the arriving compressions. A small inset in the lower corner shows a vacuum chamber (bell jar with a ringing bell) with a crossed-out sound symbol, illustrating that removing the medium silences the source.</p>
+<h2>5. Real-world connection</h2>
+<p>Medical ultrasound (sound at 1–20 MHz, well above the 20 kHz human hearing limit) is used for roughly 50 million scans per year in India. Ultrasound reflects off tissue boundaries; timing the echo reveals tissue depth and structure — the same principle as sonar. DRDO develops sonar systems for India's Navy to detect submarines using sound reflection underwater. India's construction industry uses ultrasonic pulse velocity (UPV) testing to detect cracks in concrete: sound travels slower through cracked concrete, so a measured delay maps structural damage without drilling.</p>
+<p>The Indian Railways uses ultrasonic flaw detectors to scan rail tracks for internal cracks before they cause derailments. All of these applications depend on one core fact: sound needs a medium, its speed in that medium is predictable, and reflections carry information about what the wave encountered.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>String telephone:</strong> Stretch a long, tight piece of string between two paper cups. Press one cup to your ear; have a partner speak softly into the other. The cup membrane vibrates → vibration travels along the taut string (solid medium) → second cup membrane vibrates → you hear the voice clearly.</p>
+<p>Now let the string go slack. Sound almost disappears. You have just demonstrated two things: (1) sound requires a medium, and (2) the medium's tension (a proxy for rigidity) controls how well compressions travel. A taut string transmits the wave efficiently; a slack string cannot sustain compressions, so transmission collapses. If you have access to a bell jar with a vacuum pump (a school physics lab typically has one), watch the ringing alarm clock inside become inaudible as air is removed — the definitive demonstration.</p>
+</div><h2>7. Think deeper</h2>
+<p>The sonic boom: when an aircraft flies faster than sound (Mach 1 = 343 m/s), it outruns the pressure waves it creates. The waves pile up into a cone-shaped shockwave — the sonic boom heard as the aircraft passes. India's Tejas fighter (HAL) can exceed Mach 1.8. Sonic booms can shatter windows — DRDO and IAF plan supersonic test corridors over uninhabited areas.</p>
+<p>Supersonics also create interesting temperature effects: air compressed by the shockwave heats dramatically (the same principle as a diesel engine, where air compression ignites fuel without a spark). Noise-cancelling headphones exploit interference: a microphone samples incoming sound, a processor inverts the wave (flipping compressions and rarefactions), and a speaker plays the inverted wave into the ear simultaneously — the two waves cancel.</p>
+<p><strong>Predict:</strong> A submarine at 200 m depth fires a sonar ping that reflects off the sea floor. The ping returns after 0.54 seconds. If sound travels at 1,500 m/s in that water, how deep is the sea floor below the submarine? What would happen to the return time if the submarine dove into colder, denser water?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does sound travel from a source to your ears?</p>
+<ul>
+<li>A. Sound travels as electromagnetic waves that do not need a medium and can pass through a vacuum</li>
+<li>B. Sound travels by heating the air around it, causing a chain of warm air pockets to carry the vibration</li>
+<li>C. Sound travels as longitudinal pressure waves through a medium by compressing and expanding particles</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of sound propagation more useful than just knowing sound travels?</p>
+<ul>
+<li>A. Sound travel is obvious from daily experience so its mechanism is only needed for advanced music</li>
+<li>B. Sound propagation mechanisms are only relevant in underwater acoustics and not in air</li>
+<li>C. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If sound tried to travel through a vacuum such as outer space, what would you predict?</p>
+<ul>
+<li>A. Sound would travel faster in a vacuum because there are no particles to slow it down</li>
+<li>B. Sound would travel at the same speed in a vacuum as it does in air at sea level</li>
+<li>C. Sound would not travel at all because there are no particles to transmit the pressure waves</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A geology team wants to locate an underground rock layer without drilling. They place an explosive charge on the surface and measure when the sound pulse returns to detectors placed 500 m away. The round-trip time is 0.4 seconds. Sound travels at 2,500 m/s in the rock beneath.</p>
+<p>Calculate the depth of the rock layer. Then explain why the reflected pulse loses energy each time it crosses a boundary between different rock types — use your understanding of compressions and the need for a medium to support your answer. Finally, predict whether the reflected pulse would be detected more easily on a cold winter morning or a hot summer afternoon, and explain why.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The loudest sound ever recorded on Earth was the eruption of Krakatoa in 1883 — heard 4,800 km away (roughly from Mumbai to Moscow). The pressure wave circled the globe four times, measurable on barographs worldwide. At that distance, the sound was still detectable — not by ears, but as a wave of compressions in the atmosphere recorded as pressure fluctuations. The eruption released energy equivalent to 200 megatons of TNT. The lesson: sound is not just a sensory experience — it is a physical pressure wave that carries measurable energy, and at sufficient amplitude it becomes a destructive mechanical force capable of shattering rock, collapsing buildings, and killing organisms.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Sound is a longitudinal pressure wave that can only travel through matter — it moves by pushing molecules together and apart in sequence, which is why there is complete silence in the vacuum of space.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 25 of 30</footer>
+</div>
+</body>
+</html>

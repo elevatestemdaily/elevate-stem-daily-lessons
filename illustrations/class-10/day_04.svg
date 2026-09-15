@@ -1,26 +1,95 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does antacid work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 4</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why Does Antacid Work?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Stomach acid, neutralisation chemistry, and acid indigestion — Day 4</text>
+
+<!-- LEFT: Stomach acid -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#dc2626">Stomach Chemistry</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Gastric Acid (HCl)</text>
+<text x="40" y="144" font-family="Arial" font-size="14" fill="#333">pH 1.5–3.5: highly acidic</text>
+<text x="40" y="164" font-family="Arial" font-size="14" fill="#333">Parietal cells secrete HCl</text>
+<text x="40" y="184" font-family="Arial" font-size="14" fill="#555">Functions: kills bacteria, activates pepsin</text>
+<text x="40" y="200" font-family="Arial" font-size="14" fill="#555">Denatures proteins: unfolds them</text>
+
+<rect x="30" y="214" width="280" height="100" rx="4" fill="white" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Stomach Lining Protection</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">Mucus layer (pH ~7) coats inner wall</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#333">If mucus breaks down → ulcer</text>
+<text x="40" y="292" font-family="Arial" font-size="14" fill="#555">H. pylori bacteria causes many ulcers</text>
+<text x="40" y="308" font-family="Arial" font-size="14" fill="#555">Antibiotics + antacids: dual treatment</text>
+
+<rect x="30" y="324" width="280" height="80" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="342" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Acid Reflux (GERD)</text>
+<text x="40" y="362" font-family="Arial" font-size="14" fill="#333">HCl enters oesophagus (not protected)</text>
+<text x="40" y="380" font-family="Arial" font-size="14" fill="#555">Heartburn: burning sensation in chest</text>
+<text x="40" y="396" font-family="Arial" font-size="14" fill="#555">Affects ~30% of urban Indians</text>
+
+<rect x="30" y="414" width="280" height="68" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="170" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Digestion Needs Acid</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">Pepsin (enzyme): works only at low pH</text>
+<text x="40" y="470" font-family="Arial" font-size="14" fill="#555">Too little acid: poor protein digestion</text>
+
+<!-- CENTRE: Antacid chemistry -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">How Antacids Work</text>
+
+<rect x="344" y="104" width="312" height="108" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Neutralisation Reaction</text>
+<text x="354" y="144" font-family="Arial" font-size="14" fill="#333">Antacid = weak base (neutralises H⁺)</text>
+<text x="354" y="164" font-family="Arial" font-size="14" fill="#333">Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O</text>
+<text x="354" y="184" font-family="Arial" font-size="14" fill="#555">NaHCO₃ + HCl → NaCl + H₂O + CO₂↑</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">pH rises → less burning sensation</text>
+
+<rect x="344" y="222" width="312" height="100" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="240" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Common Antacid Ingredients</text>
+<text x="354" y="262" font-family="Arial" font-size="14" fill="#333">Mg(OH)₂ (milk of magnesia): mild laxative</text>
+<text x="354" y="282" font-family="Arial" font-size="14" fill="#333">Al(OH)₃ (aluminium hydroxide): constipation</text>
+<text x="354" y="302" font-family="Arial" font-size="14" fill="#555">CaCO₃ (chalk): provides Ca²⁺ too</text>
+<text x="354" y="318" font-family="Arial" font-size="14" fill="#555">NaHCO₃ (baking soda): fast but temporary</text>
+
+<rect x="344" y="332" width="312" height="80" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="350" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Proton Pump Inhibitors (PPIs)</text>
+<text x="354" y="372" font-family="Arial" font-size="14" fill="#333">Omeprazole: blocks HCl secretion at source</text>
+<text x="354" y="392" font-family="Arial" font-size="14" fill="#555">More effective than just neutralising acid</text>
+<text x="354" y="408" font-family="Arial" font-size="14" fill="#555">India: most prescribed drug class</text>
+
+<rect x="344" y="422" width="312" height="60" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Why Not Use Strong Base?</text>
+<text x="354" y="462" font-family="Arial" font-size="14" fill="#555">NaOH would corrode oesophagus</text>
+<text x="354" y="478" font-family="Arial" font-size="14" fill="#555">Weak bases react slowly: controlled relief</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Antacid Use</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Traditional Remedies</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Coconut water: pH 5–7, mild alkali effect</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Banana: antacid properties (pH ~5)</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Chilled milk: fat + protein buffer acid</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">DRDO Antacid Research</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Ranitidine: Indian generics supply army</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Pantoprazole: Indian pharma exports</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">90% of India's antacids are generic</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Spicy Food and Acid</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Capsaicin stimulates gastric acid secretion</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India's spicy diet: antacids a daily need</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">₹4,000 crore antacid market in India</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Oral Rehydration Salts (ORS)</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">WHO ORS: NaCl + glucose + NaHCO₃</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Restores electrolyte + acid-base balance</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India AIIMS pioneered ORS use globally</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Stomach HCl pH 1.5–3.5. Antacid = weak base: Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O, raises pH.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">PPIs block acid at source (omeprazole). India: most antacids are generics. ₹4,000 crore market.</text>
 </svg>

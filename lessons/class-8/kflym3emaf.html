@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 09 — How does pressure change with depth? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 09</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does pressure change with depth?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover why pressure increases with depth, calculate how much pressure acts on a diver at different depths, and understand the life-threatening conditions this creates for deep-sea exploration.</p>
+</div><h2>1. The mystery</h2>
+<p>A deep-sea fish collected from 1,000 metres below the ocean surface often dies or literally explodes when brought to the surface. A scuba diver who surfaces too quickly risks "the bends" — a condition that can paralyse or kill. A submarine must be built from steel several centimetres thick to survive the deep ocean. Why does going deeper in water create such extreme forces? And why does pressure increase with depth rather than being the same throughout the water?</p>
+<h2>2. The science behind it</h2>
+<p><strong>What is pressure?</strong></p>
+<p>Pressure is force per unit area: P = F/A (units: Pascal, Pa = N/m²)</p>
+<p><strong>Why pressure increases with depth:</strong></p>
+<p>At any depth in a fluid, the pressure at that point is caused by the weight of all the fluid above that point pressing down. A column of water 1 metre tall and 1 m² base has:
+- Volume = 1 m³
+- Mass = 1,000 kg (density of water = 1,000 kg/m³)
+- Weight = 1,000 × 10 = 10,000 N
+- Pressure at base = 10,000/1 = 10,000 Pa = 0.1 atm</p>
+<p><strong>The hydrostatic pressure formula:</strong></p>
+<p><strong>P = ρgh</strong></p>
+<p>Where:
+- P = pressure (Pa)
+- ρ (rho) = density of the fluid (kg/m³)
+- g = gravitational acceleration (10 m/s²)
+- h = depth below the surface (m)</p>
+<p>Every additional 10 metres of water depth adds approximately 1 atmosphere of pressure (≈ 100,000 Pa). This is because the weight of water (1000 kg/m³ × 10 m × 10 m/s²) = 100,000 Pa = 1 atm.</p>
+<p><strong>Total pressure at depth h</strong> (including atmospheric pressure at the surface):</p>
+<p>P_total = P_atmosphere + ρgh = 101,325 Pa + (1000 × 10 × h)</p>
+<p><strong>Double the depth → approximately double the pressure</strong> (from the water column alone). This directly explains Q3.</p>
+<p><strong>Examples:</strong>
+- At 10 m depth: P_water = 100,000 Pa = 1 atm → total = 2 atm
+- At 50 m depth: P_water = 500,000 Pa = 5 atm → total = 6 atm
+- At 200 m (typical submarine operating depth): ~21 atm
+- At 11,000 m (Mariana Trench): ~1,100 atm</p>
+<p><strong>Why pressure acts equally in all directions:</strong></p>
+<p>Unlike a solid, a fluid cannot transmit forces only in the direction they are applied. Pressure at a point in a fluid acts equally in all directions (<strong>Pascal's Law</strong>). This means a submarine hull at depth is under the same crushing force inward from all sides.</p>
+<p><strong>The bends (decompression sickness):</strong></p>
+<p>At depth, higher pressure forces more nitrogen gas to dissolve in the blood (Henry's Law: dissolved gas ∝ pressure). If a diver surfaces too quickly, pressure drops rapidly → nitrogen comes out of solution as bubbles in the blood and tissues → blockages in joints, nervous system, lungs → extreme pain, paralysis, death. The cure: a recompression chamber.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of depth in water like adding layers of books on top of you. Each layer of water (like a book) adds its weight to all the layers below. At 1 metre, only one layer presses on you. At 10 metres, 10 layers press on you. At 1,000 metres, 1,000 layers press on you from all sides. The total weight of all those layers pressing down (and inward from the sides) is the pressure you feel. Double the depth → double the layers → double the pressure from the water alone.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_09.svg" alt="Diagram for How does pressure change with depth?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a vertical cross-section of ocean from surface (0 m) to 200 m. A column of water is shown with depth markers at 0, 10, 50, 100, 200 m. At each depth, a pressure gauge shows the corresponding value (1 atm, 2 atm, 6 atm, 11 atm, 21 atm). A diver is shown at 10 m, a shark at 50 m, a submarine at 200 m. Arrows point inward on each object, showing pressure from all directions. The formula P = ρgh is shown. An inset shows a diver's body at depth with bubbles forming in blood (the bends).</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Scuba diving limits:</strong> Recreational scuba divers are limited to ~40 m. Below 40 m, nitrogen narcosis (nitrogen dissolving in the nervous system, causing anaesthetic effects) and rapid decompression risk become serious. At 40 m, total pressure = 5 atm.</li>
+<li><strong>INS Chakra — Indian nuclear submarine:</strong> Can dive to approximately 600 m (classified depth). At 600 m, pressure ≈ 61 atm. The hull must withstand this inward force without buckling — requiring steel with high yield strength, welded precisely with no defects.</li>
+<li><strong>Hydraulic systems:</strong> Pascal's Law is used in every hydraulic jack, car brake, and JCB excavator in India. A small force on a small piston area creates pressure that acts equally everywhere in the fluid — a large piston area multiplies this into a large force. Formula: F₁/A₁ = F₂/A₂.</li>
+<li><strong>Deep-sea fish adaptations:</strong> Fish adapted to great depths (like snailfish found at 8,000 m) have no swim bladder (which would collapse), flexible cell membranes with special lipids that remain fluid at high pressure, and proteins adapted to function under extreme compression.</li>
+<li><strong>Mumbai's Bandra-Worli Sea Link:</strong> The pylons supporting this bridge extend into the ocean floor. Engineers had to account for the increasing water pressure as depth increased when designing the underwater foundations.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Take a plastic bottle, fill it with water, and poke three small holes at different heights — top, middle, and bottom. Hold the bottle over a sink. The water at the bottom hole shoots out furthest (highest pressure from most water above it). The water at the top shoots out least far (least water above). You have just demonstrated that pressure increases with depth and can be converted to kinetic energy (the water jet). The depth of each hole = h in the formula P = ρgh.</p>
+</div><h2>7. Think deeper</h2>
+<p>In a mercury barometer, the weight of a 760 mm column of mercury (density 13,600 kg/m³) equals atmospheric pressure (≈ 101,325 Pa). Verify: P = ρgh = 13,600 × 10 × 0.76 = 103,360 Pa ≈ 101,325 Pa (close enough). Now imagine a water barometer: at what height would water need to be raised to balance atmospheric pressure? (Calculate using ρ_water = 1,000, g = 10, P = 101,325 Pa.) This is why mercury (not water) is used in barometers — a water barometer would be 10+ metres tall.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What happens to water pressure as you go deeper underwater?</p>
+<ul>
+<li>A. Pressure decreases with depth because there is less air below the surface</li>
+<li>B. Pressure stays constant at any depth because water is incompressible</li>
+<li>C. Pressure increases with depth because the weight of water above increases</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the pressure-depth mechanism useful?</p>
+<ul>
+<li>A. Memorising that deep water is dangerous is sufficient for all purposes</li>
+<li>B. Pressure mechanisms only matter for gases, not liquids like water</li>
+<li>C. It helps predict safe diving depths and design submarines and pipelines</li>
+</ul>
+<h3>Q3</h3>
+<p>If a submarine descended to twice the depth, what would you predict about external pressure?</p>
+<ul>
+<li>A. External pressure would remain the same because water density is constant</li>
+<li>B. Pressure would decrease as colder water is less able to exert force</li>
+<li>C. External pressure would approximately double due to greater water weight above</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>(a) Calculate the water pressure at 3,800 m — the depth of the Titanic wreck. (Water density = 1,000 kg/m³, g = 10 m/s².) (b) A submarine hull is a cylinder of diameter 10 m. Calculate the inward force on one square metre of the hull at this depth. (c) If the hull steel has a yield strength of 250 MPa (250 × 10⁶ Pa), and the steel is 30 mm thick, calculate the stress in the steel. Is 3,800 m within the safe range? (Hint: hoop stress in a thin-walled cylinder = P × r / t, where r = radius, t = thickness.)</p>
+</div><h2>10. One surprising idea</h2>
+<p>The pressure at the bottom of the Mariana Trench (11,000 m) is about 1,100 atmospheres — equivalent to about 50 jumbo jets stacked on top of a 1 m² tile. Yet life thrives there. Snailfish (<em>Pseudoliparis swirei</em>) have been recorded at depths of 8,336 m — they have flexible, gelatinous bodies (no rigid structures to crush), cell membranes rich in unsaturated fatty acids that remain fluid under pressure, and a chemical called trimethylamine oxide (TMAO) that prevents proteins from unfolding at high pressure. The deep sea is not an uninhabitable extreme — it is an ecosystem that has been colonised by life that has solved every problem we would find fatal.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>P = ρgh: pressure in a fluid increases with depth because of the weight of fluid above. Every 10 m adds ~1 atm. Double depth → approximately double water pressure. Pascal's Law: pressure acts equally in all directions in a fluid.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 9 of 30</footer>
+</div>
+</body>
+</html>

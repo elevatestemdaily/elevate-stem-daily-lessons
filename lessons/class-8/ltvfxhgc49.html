@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 27 — How do satellites stay in orbit? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 27</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do satellites stay in orbit?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why a satellite doesn't fall despite gravity, describe orbital velocity, and predict what happens when a satellite slows down due to drag.</p>
+</div><h2>1. The mystery</h2>
+<p>The ISS (International Space Station) orbits at 420 km above Earth. Gravity at that altitude is still about 88 % of surface gravity — the ISS is being pulled toward Earth constantly. So why doesn't it fall? And why do astronauts inside float weightlessly, if gravity is still pulling them?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Newton's cannon thought experiment:</strong> Imagine firing a cannonball horizontally from a very tall mountain. Fire it slowly — it curves down and lands nearby. Fire it faster — it lands farther. Fire it at just the right speed — the ball curves down exactly as fast as Earth's surface curves away from it. The ball <em>keeps falling</em> but never hits the ground. It is in orbit.</p>
+<p><strong>Orbital velocity:</strong> At 420 km altitude, the ISS must move at about 7.66 km/s (27,576 km/h) to maintain orbit. At this speed, gravity provides exactly the centripetal acceleration needed to keep the ISS curving around Earth.</p>
+<p><strong>The maths:</strong>
+- Gravitational force = centripetal force
+- GMm/r² = mv²/r
+- v = √(GM/r)
+- At r = 6,800 km (Earth radius + 420 km): v ≈ 7.66 km/s</p>
+<p><strong>Weightlessness explained:</strong> Astronauts float because they are in free fall — falling around Earth at the same rate as the ISS. Everything around them is falling together. There is no "support" — like falling in a lift that has cut its cable.</p>
+<p><strong>Geostationary orbit (GEO):</strong> At 35,786 km altitude, a satellite orbits once every 24 hours — matching Earth's rotation. It appears stationary from the ground. India's INSAT and GSAT communication satellites are in GEO. ISRO's PSLV launches satellites to low Earth orbit (LEO) and geosynchronous transfer orbit.</p>
+<p><strong>Orbital decay:</strong> At low altitudes (under ~600 km), atmospheric drag slows the satellite slightly. This reduces orbital velocity → the satellite falls to a lower orbit → moves faster (closer to Earth). Eventually it re-enters the atmosphere and burns up.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a satellite in orbit as a ball tied to a string, but the string is invisible and the ball never stops moving.</p>
+<p>On the ground, when you throw a ball horizontally, gravity pulls it downward at 9.8 m/s². It hits the ground after a few seconds. Now imagine throwing it faster — it travels farther before landing. Keep increasing the speed and the ball lands farther and farther away.</p>
+<p>Earth's surface is curved. At 8 km/s, something thrown horizontally drops exactly 5 metres downward every second — and Earth's surface also curves away downward by 5 metres every second at that distance. The ball falls forever but never arrives at the ground. That is orbit.</p>
+<p>The key insight: a satellite is not being pushed up. It is not fighting gravity. It is falling continuously in a curved path that matches Earth's curvature. The moment you reduce its sideways speed (drag does this), the curve no longer matches — and the satellite spirals inward.</p>
+<ul>
+<li><strong>Too slow:</strong> falls inward (like a ball thrown with insufficient speed — curves down and hits the ground)</li>
+<li><strong>Just right:</strong> orbit maintained (continuous free fall around the planet)</li>
+<li><strong>Too fast:</strong> flies outward into a higher, larger orbit (escape speed at 11.2 km/s leaves Earth entirely)</li>
+</ul>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows Earth as a blue sphere at the centre. Three curved arrows trace different launch trajectories from the top of a mountain on the surface. The first (shortest arrow, labelled "7 km/s") curves down and strikes Earth — too slow. The second (medium arrow, labelled "7.66 km/s — LEO orbit") curves around Earth in a smooth closed loop, with the label "ISS path." The third (longest arrow, labelled "11.2 km/s — escape velocity") curves away from Earth and leaves the frame. A separate orbit ring shows the geostationary orbit at 35,786 km with a small satellite icon labelled "INSAT/GSAT" and a dotted line connecting it vertically to a dish antenna in India. The diagram includes the equation v = √(GM/r) and two data points: ISS at 7.66 km/s (420 km) and GPS at 3.87 km/s (20,200 km).</p>
+<figure><img src="../../illustrations/class-8/day_27.svg" alt="Diagram for How do satellites stay in orbit?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>ISRO has launched over 430 satellites for 34 countries. India's own satellite fleet includes:
+- <strong>INSAT/GSAT:</strong> weather forecasting, TV broadcasting, internet (GEO at 36,000 km)
+- <strong>IRS (Remote Sensing):</strong> crop monitoring, disaster mapping, forest cover assessment (LEO at 600–900 km)
+- <strong>NavIC:</strong> India's own GPS navigation constellation (7 satellites)
+- <strong>Chandrayaan-1 (2008):</strong> discovered water ice on the Moon
+- <strong>Mangalyaan (2013):</strong> Mars mission, first Asian spacecraft to reach Mars, cost less than Hollywood film <em>Gravity</em>
+- <strong>Chandrayaan-3 (2023):</strong> first soft landing near the Moon's south pole</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Orbit simulation:</strong> Tie a small rubber ball to a string (60 cm). Swing it in a horizontal circle above your head. The tension in the string acts like gravity — keeping the ball in circular motion. Now shorten the string: the ball moves faster in a smaller circle. Lengthen it: it moves slower in a larger circle. This mimics how satellites closer to Earth orbit faster (ISS at 7.66 km/s) than satellites further away (GPS at 3.87 km/s, Moon at 1.02 km/s).</p>
+</div><h2>7. Think deeper</h2>
+<p>A geostationary orbit seems magical — a satellite that hovers motionless above one spot. But it requires an extremely precise orbit: at exactly 35,786 km, with zero inclination. A satellite 1 km higher or lower will slowly drift east or west. Station-keeping (small thruster burns every few weeks) is required to keep it in place. When a satellite runs out of fuel for station-keeping, it is moved to a "graveyard orbit" 300 km above GEO to avoid interfering with working satellites. The Kessler syndrome describes a runaway scenario: one collision generates debris that causes more collisions, making entire orbital shells unusable. Space debris is a serious real-world problem, with over 27,000 tracked objects currently orbiting Earth.</p>
+<p><strong>Predict:</strong> ISRO's Chandrayaan-3 used multiple orbit-raising manoeuvres before leaving Earth orbit for the Moon. Each manoeuvre fired engines at a specific point in the orbit. At which point in an elliptical orbit — closest approach (perigee) or farthest point (apogee) — should a rocket fire to most efficiently raise the opposite end of the orbit, and why?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Why doesn't a satellite fall to Earth even though gravity pulls on it?</p>
+<ul>
+<li>A. The satellite reaches an altitude where gravity is too weak to pull it down</li>
+<li>B. Solar panels on the satellite produce thrust that counteracts gravitational pull</li>
+<li>C. The satellite moves so fast sideways that it keeps falling around Earth's curve</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding orbital mechanics more useful than just knowing satellites stay up?</p>
+<ul>
+<li>A. Knowing satellites stay in orbit is sufficient for all space mission planning</li>
+<li>B. Orbital mechanics only apply to large satellites, not to small cubesats</li>
+<li>C. It allows engineers to calculate correct launch speeds and orbital altitudes</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If a satellite were slowed down significantly by atmospheric drag, what would you predict?</p>
+<ul>
+<li>A. The satellite would move to a higher orbit because lower speed saves fuel</li>
+<li>B. The satellite's orbit would decay and it would eventually fall back to Earth</li>
+<li>C. The satellite would orbit in a wider ellipse but remain at the same altitude</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>The ISS orbits at 420 km altitude with an orbital speed of 7.66 km/s. Atmospheric drag causes it to lose about 2 km of altitude per month without correction, requiring periodic "reboost" burns from visiting cargo spacecraft.</p>
+<p>(a) Using v = √(GM/r), calculate the orbital speed needed at 350 km altitude (r = 6,721 km, GM = 3.986 × 10¹⁴ m³/s²). Is this faster or slower than at 420 km — and why? (b) If drag slows the ISS by 1 m/s per week, estimate how many weeks before it would need a reboost to avoid re-entry within 3 months. (c) Chandrayaan-3 orbited the Moon at 100 km altitude before landing. The Moon's GM = 4.9 × 10¹² m³/s² and radius = 1,737 km. Calculate the orbital speed required at 100 km altitude above the Moon and compare it to the ISS orbit speed — what does this tell you about the Moon's gravity relative to Earth's?</p>
+</div><h2>10. One surprising idea</h2>
+<p>Astronauts on the ISS are not weightless because gravity has disappeared — at 420 km altitude, gravity is still 88 % as strong as on the surface. They are weightless because they are in continuous free fall, and the ISS falls with them. A scale under an astronaut's feet reads zero — not because there is no gravity, but because both the astronaut and the scale are accelerating downward at the same rate. This is the same sensation you feel in the first second of a lift dropping: a momentary lightness as you and the lift fall together. For ISS astronauts, that sensation lasts the entire mission — months at a time — which is why they lose bone density and muscle mass without constant exercise.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A satellite stays in orbit not by fighting gravity but by falling around Earth so fast sideways that it keeps missing — reduce that sideways speed and gravity wins, pulling it back into the atmosphere.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 27 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">The architecture of a cell</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 12</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">What is inside a cell?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Cell organelles: nucleus, mitochondria, ER, Golgi and more — Day 12</text>
+
+<!-- LEFT: Cell diagram -->
+<rect x="20" y="74" width="320" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="180" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Animal Cell</text>
+
+<!-- Cell membrane -->
+<ellipse cx="180" cy="290" rx="145" ry="170" fill="#dcfce7" fill-opacity="0.6" stroke="#16a34a" stroke-width="2.5"/>
+<text x="180" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#16a34a">Cell membrane</text>
+
+<!-- Nucleus -->
+<circle cx="180" cy="270" r="42" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="180" y="266" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Nucleus</text>
+<text x="180" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">DNA + RNA</text>
+<!-- Nuclear membrane dots -->
+<circle cx="185" cy="228" r="4" fill="#1d4ed8"/>
+<circle cx="138" cy="255" r="4" fill="#1d4ed8"/>
+
+<!-- Mitochondria -->
+<ellipse cx="270" cy="185" rx="32" ry="18" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="270" y="182" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Mito</text>
+<text x="270" y="197" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">ATP</text>
+
+<!-- ER rough -->
+<path d="M 100 180 Q 108 165 116 180 Q 124 195 132 180" fill="none" stroke="#f97316" stroke-width="2"/>
+<path d="M 100 196 Q 108 181 116 196 Q 124 211 132 196" fill="none" stroke="#f97316" stroke-width="2"/>
+<text x="116" y="155" text-anchor="middle" font-family="Arial" font-size="14" fill="#f97316">RER</text>
+
+<!-- Golgi -->
+<path d="M 100 370 Q 130 360 160 370" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<path d="M 105 380 Q 132 370 160 380" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<path d="M 108 390 Q 132 380 160 390" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<text x="130" y="408" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c3aed">Golgi</text>
+
+<!-- Lysosome -->
+<circle cx="254" cy="360" r="14" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+<text x="254" y="365" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Lys</text>
+
+<!-- Ribosome dots -->
+<circle cx="230" cy="210" r="4" fill="#374151"/>
+<circle cx="248" cy="225" r="4" fill="#374151"/>
+<circle cx="215" cy="225" r="4" fill="#374151"/>
+<text x="240" y="248" font-family="Arial" font-size="14" fill="#374151">ribo</text>
+
+<!-- CENTRE: Organelle functions -->
+<rect x="354" y="74" width="302" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="505" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Organelle Functions</text>
+
+<rect x="364" y="104" width="282" height="46" rx="3" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="505" y="120" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Nucleus</text>
+<text x="374" y="138" font-family="Arial" font-size="14" fill="#333">Control centre; stores DNA; directs cell</text>
+
+<rect x="364" y="156" width="282" height="46" rx="3" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="505" y="172" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Mitochondria</text>
+<text x="374" y="190" font-family="Arial" font-size="14" fill="#333">Power house; aerobic respiration → ATP</text>
+
+<rect x="364" y="208" width="282" height="46" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+<text x="505" y="224" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Rough ER</text>
+<text x="374" y="242" font-family="Arial" font-size="14" fill="#333">Studded with ribosomes; protein synthesis</text>
+
+<rect x="364" y="260" width="282" height="46" rx="3" fill="#f0f9ff" stroke="#0284c7" stroke-width="1"/>
+<text x="505" y="276" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#0284c7">Smooth ER</text>
+<text x="374" y="294" font-family="Arial" font-size="14" fill="#333">Lipid synthesis; detox (liver cells)</text>
+
+<rect x="364" y="312" width="282" height="46" rx="3" fill="#ede9fe" stroke="#7c3aed" stroke-width="1"/>
+<text x="505" y="328" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Golgi Apparatus</text>
+<text x="374" y="346" font-family="Arial" font-size="14" fill="#333">Package and ship proteins/lipids</text>
+
+<rect x="364" y="364" width="282" height="46" rx="3" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="505" y="380" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Lysosome</text>
+<text x="374" y="398" font-family="Arial" font-size="14" fill="#333">Digest waste; "cell's recycling bin"</text>
+
+<rect x="364" y="416" width="282" height="46" rx="3" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="505" y="432" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Ribosome</text>
+<text x="374" y="450" font-family="Arial" font-size="14" fill="#333">Protein synthesis; in cytoplasm + RER</text>
+
+<!-- RIGHT: Plant cell + India -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Plant Cell &amp; India</text>
+
+<rect x="680" y="104" width="290" height="130" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Plant Cell Extras</text>
+<text x="690" y="144" font-family="Arial" font-size="14" fill="#333">Cell wall: rigid cellulose support</text>
+<text x="690" y="162" font-family="Arial" font-size="14" fill="#333">Chloroplast: photosynthesis (glucose)</text>
+<text x="690" y="180" font-family="Arial" font-size="14" fill="#333">Large vacuole: water storage, rigidity</text>
+<text x="690" y="198" font-family="Arial" font-size="14" fill="#555">No centrioles or lysosomes (usually)</text>
+<text x="690" y="216" font-family="Arial" font-size="14" fill="#555">Plasmodesmata: cell-to-cell channels</text>
+
+<rect x="680" y="244" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="262" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Pharmaceuticals</text>
+<text x="825" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Drug targets: specific organelles</text>
+<text x="825" y="300" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Antibiotics disrupt bacterial ribosomes</text>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">India makes 20% of world's antibiotics</text>
+
+<rect x="680" y="342" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="360" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Cell Biology Research</text>
+<text x="825" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">NCBS Bangalore: cell biology research</text>
+<text x="825" y="398" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">IISc: electron microscopy of organelles</text>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Discovered mitochondrial proteins</text>
+
+<rect x="680" y="440" width="290" height="42" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="457" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Robert Hooke (1665): first saw cells</text>
+<text x="825" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">In cork under his microscope</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Nucleus = control; mitochondria = ATP; RER = proteins; Golgi = packaging; lysosome = recycling.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Plant extras: cell wall, chloroplasts, large vacuole. India makes 20% of world's antibiotics.</text>
 </svg>

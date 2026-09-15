@@ -1,26 +1,113 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="fieldArr17" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 7 2.5, 0 5" fill="#1f5f8b"/>
+  </marker>
+</defs>
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does a compass point north?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 17</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">Why does a compass point north?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Earth's liquid iron core creates a magnetic field — Day 17</text>
+
+<!-- LEFT COLUMN: Earth's core explanation (x=20-300) -->
+<rect x="20" y="70" width="290" height="100" rx="6" fill="#1f5f8b"/>
+<text x="165" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">Earth = Giant Magnet</text>
+<text x="35" y="110" font-family="Arial" font-size="14" fill="white">Liquid iron outer core circulates</text>
+<text x="35" y="125" font-family="Arial" font-size="14" fill="white">due to Earth's rotation → acts as a</text>
+<text x="35" y="140" font-family="Arial" font-size="14" fill="white">dynamo → generates geomagnetic field.</text>
+<text x="35" y="156" font-family="Arial" font-size="14" fill="white">(This is called the geodynamo.)</text>
+
+<rect x="20" y="180" width="290" height="90" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="165" y="198" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Compass Needle</text>
+<text x="35" y="215" font-family="Arial" font-size="14" fill="#333">A compass needle is a tiny bar</text>
+<text x="35" y="229" font-family="Arial" font-size="14" fill="#333">magnet. Its north pole aligns with</text>
+<text x="35" y="243" font-family="Arial" font-size="14" fill="#333">Earth's magnetic field lines —</text>
+<text x="35" y="257" font-family="Arial" font-size="14" fill="#333">always pointing toward magnetic north.</text>
+
+<rect x="20" y="280" width="290" height="90" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="165" y="298" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Magnetic ≠ Geographic North</text>
+<text x="35" y="315" font-family="Arial" font-size="14" fill="#333">Magnetic north pole sits near</text>
+<text x="35" y="329" font-family="Arial" font-size="14" fill="#333">northern Canada (~11° from true north).</text>
+<text x="35" y="343" font-family="Arial" font-size="14" fill="#333">This offset = magnetic declination.</text>
+<text x="35" y="357" font-family="Arial" font-size="14" fill="#333">Navigators must correct for this.</text>
+
+<rect x="20" y="380" width="290" height="90" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="165" y="398" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Animals Use Earth's Field</text>
+<text x="35" y="415" font-family="Arial" font-size="14" fill="#333">Homing pigeons, sea turtles, salmon,</text>
+<text x="35" y="429" font-family="Arial" font-size="14" fill="#333">and bees have magnetite crystals</text>
+<text x="35" y="443" font-family="Arial" font-size="14" fill="#333">in their tissue — biological compasses</text>
+<text x="35" y="457" font-family="Arial" font-size="14" fill="#333">for navigation over thousands of km.</text>
+
+<!-- CENTER: Earth with field lines (x=320-680) -->
+<!-- Earth outer circle (atmosphere tint) -->
+<circle cx="500" cy="285" r="148" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+<!-- Earth body -->
+<circle cx="500" cy="285" r="115" fill="#3b82f6"/>
+<!-- Continents (simplified) -->
+<ellipse cx="480" cy="260" rx="28" ry="40" fill="#4ade80"/>
+<ellipse cx="525" cy="300" rx="20" ry="28" fill="#4ade80"/>
+<ellipse cx="465" cy="315" rx="14" ry="18" fill="#4ade80"/>
+<!-- Inner core -->
+<circle cx="500" cy="285" r="35" fill="#fbbf24" stroke="#d97706" stroke-width="2"/>
+<text x="500" y="282" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">liquid iron</text>
+<text x="500" y="293" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">outer core</text>
+
+<!-- Geographic north label (top) -->
+<text x="500" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Geographic North Pole</text>
+<line x1="500" y1="108" x2="500" y2="130" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+
+<!-- Geographic south label (bottom) -->
+<text x="500" y="480" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Geographic South Pole</text>
+<line x1="500" y1="442" x2="500" y2="475" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+
+<!-- Magnetic poles (offset) -->
+<!-- Magnetic north (geographic south region) - magnetic south pole of Earth -->
+<text x="440" y="448" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Mag. South</text>
+<!-- Magnetic south (geographic north region) -->
+<text x="565" y="128" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Mag. North</text>
+
+<!-- Field lines (simplified arcs) -->
+<!-- Left field lines -->
+<path d="M490,140 Q320,285 490,428" fill="none" stroke="#1f5f8b" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#fieldArr17)"/>
+<path d="M475,148 Q280,285 475,420" fill="none" stroke="#1f5f8b" stroke-width="1.2" stroke-dasharray="6,3"/>
+<!-- Right field lines -->
+<path d="M510,140 Q680,285 510,428" fill="none" stroke="#1f5f8b" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#fieldArr17)"/>
+<path d="M525,148 Q720,285 525,420" fill="none" stroke="#1f5f8b" stroke-width="1.2" stroke-dasharray="6,3"/>
+
+<!-- RIGHT COLUMN: Compass diagram (x=700-978) -->
+<rect x="700" y="70" width="278" height="165" rx="6" fill="#f0f7ff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="839" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Compass Needle</text>
+<!-- Compass circle -->
+<circle cx="839" cy="175" r="55" fill="white" stroke="#1f5f8b" stroke-width="2"/>
+<!-- Cardinal directions -->
+<text x="839" y="130" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">N</text>
+<text x="839" y="228" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#555">S</text>
+<text x="793" y="179" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">W</text>
+<text x="886" y="179" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">E</text>
+<!-- Needle (red north end, white south end) -->
+<polygon points="839,132 833,175 839,175 845,175 839,132" fill="#dc2626"/>
+<polygon points="839,218 833,175 839,175 845,175 839,218" fill="#aaa"/>
+<circle cx="839" cy="175" r="5" fill="#555"/>
+
+<rect x="700" y="245" width="278" height="120" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="839" y="264" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#0284c7">How it works</text>
+<text x="714" y="282" font-family="Arial" font-size="14" fill="#333">1. Earth's field lines run roughly</text>
+<text x="714" y="296" font-family="Arial" font-size="14" fill="#333">   N–S through the atmosphere.</text>
+<text x="714" y="311" font-family="Arial" font-size="14" fill="#333">2. Needle's N pole is attracted</text>
+<text x="714" y="325" font-family="Arial" font-size="14" fill="#333">   to Earth's magnetic south (near</text>
+<text x="714" y="339" font-family="Arial" font-size="14" fill="#333">   geographic north). Needle aligns.</text>
+<text x="714" y="354" font-family="Arial" font-size="14" fill="#333">3. Red tip → magnetic north.</text>
+
+<rect x="700" y="375" width="278" height="97" rx="6" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+<text x="839" y="393" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">India Context</text>
+<text x="714" y="410" font-family="Arial" font-size="14" fill="#333">Indian magnetic declination varies</text>
+<text x="714" y="424" font-family="Arial" font-size="14" fill="#333">by region (~0° to −2°). Sailors, hikers,</text>
+<text x="714" y="438" font-family="Arial" font-size="14" fill="#333">and surveyors add this correction</text>
+<text x="714" y="452" font-family="Arial" font-size="14" fill="#333">when using a compass for navigation.</text>
+<text x="714" y="466" font-family="Arial" font-size="14" fill="#555">GPS satellites use radio, not magnets.</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Earth's iron core creates a magnetic field. Compass needle (tiny magnet) aligns with field lines → magnetic north.</text>
 </svg>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 25 — How does electromagnetic induction work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 25</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does electromagnetic induction work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to state Faraday's law with the formula EMF = −dΦ/dt, explain Lenz's law, describe how a generator differs from a motor, and predict what happens to induced EMF when a coil spins twice as fast.</p>
+</div><h2>1. The mystery</h2>
+<p>In 1831, Michael Faraday discovered something remarkable: he could make electricity without a battery — just by moving a magnet near a coil of wire. Today, every power station in India, every transformer on a electricity pole, and every wireless phone charger works because of this discovery. How does moving a magnet create electricity, and why does it stop the moment the magnet is held still?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Faraday's law of electromagnetic induction</strong> states: whenever the magnetic flux through a conducting loop changes, an electromotive force (EMF) is induced in the loop. In equation form:</p>
+<p><strong>EMF = −dΦ/dt</strong></p>
+<p>where <strong>Φ</strong> (phi) is the magnetic flux (in webers, Wb = tesla × m²) and <strong>dΦ/dt</strong> is the rate at which that flux changes with time. The negative sign is the mathematical expression of Lenz's law (explained below). The key word is <em>changing</em>: a static magnet sitting beside a coil induces nothing. Only a <em>change</em> in flux — caused by moving the magnet, moving the coil, or changing the field strength — produces an EMF.</p>
+<p><strong>What is magnetic flux?</strong> Flux Φ = B × A × cos θ, where B is the field strength, A is the area of the loop, and θ is the angle between the field direction and the normal to the loop. Flux is highest when the field passes straight through the loop (θ = 0°) and zero when the field runs parallel to the loop plane (θ = 90°).</p>
+<p><strong>Lenz's law — the direction of induced current:</strong> The negative sign in Faraday's equation has a physical meaning. The induced current always flows in a direction that opposes the change in flux that caused it. If you push a north pole towards a coil, the induced current creates its own north pole facing the approaching magnet — repelling it. This opposition means you must do work to push the magnet; that work is the source of the electrical energy. Lenz's law is essentially energy conservation expressed magnetically.</p>
+<p><strong>How a generator works:</strong> A generator is a motor run in reverse. Instead of supplying current to make a coil rotate, you mechanically rotate the coil inside a magnetic field. As the coil turns, the angle θ between the field and the coil normal changes continuously. The flux Φ = BA cos θ changes at a rate that follows a sine curve. Therefore the induced EMF also follows a sine curve — this is why AC (alternating current) is naturally produced by a rotating generator. The EMF peaks when the coil plane is parallel to the field (rate of flux change is maximum) and is zero when the coil faces the field directly (flux is maximum but momentarily not changing).</p>
+<p>The peak EMF is: <strong>EMF₀ = NBAω</strong>, where N is the number of turns, B is field strength, A is coil area, and <strong>ω</strong> is angular speed (radians per second). If the coil rotates twice as fast (ω doubles), the rate of flux change doubles, and the peak EMF doubles. India's grid runs at 50 Hz — generators at Tarapur or Kudankulam nuclear plants spin at exactly 3000 rpm (50 rotations per second) for this reason.</p>
+<p><strong>Transformers — induction without rotation:</strong> A transformer uses two coils wound on an iron core. AC current in the primary coil creates a changing magnetic field in the iron core, which then passes through the secondary coil — continuously changing its flux. By Faraday's law, an EMF is induced in the secondary. The ratio of voltages equals the ratio of turns: V₂/V₁ = N₂/N₁. Step-up transformers (more turns in secondary) raise voltage for long-distance transmission, reducing current and therefore reducing transmission losses (P_loss = I²R). Step-down transformers at local substations reduce 11,000 V to the 230 V used in Indian homes.</p>
+<p><strong>Wireless charging:</strong> A phone charging pad contains a coil carrying alternating current at around 100–200 kHz. This rapidly changing current creates a rapidly changing magnetic field, which induces an EMF in the coil inside the phone — transformer action without a wire connection. The phone's internal circuit converts this AC to DC to charge the battery.</p>
+<h2>3. Build the mental model</h2>
+<p>Three things determine whether induction happens and how much:</p>
+<ul>
+<li><strong>Change in flux</strong> (not flux itself) → induces EMF</li>
+<li><strong>Rate of change</strong> → faster change = larger EMF (EMF = −dΦ/dt)</li>
+<li><strong>Number of turns</strong> → N coils each contribute, so total EMF = N × (−dΦ/dt)</li>
+</ul>
+<p>The direction is always given by Lenz's law: induced current opposes the change.</p>
+<table>
+<thead>
+<tr>
+<th>Increase...</th>
+<th>Effect on induced EMF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Speed of rotation (ω)</td>
+<td>EMF increases proportionally</td>
+</tr>
+<tr>
+<td>Number of turns (N)</td>
+<td>EMF increases proportionally</td>
+</tr>
+<tr>
+<td>Magnetic field strength (B)</td>
+<td>EMF increases proportionally</td>
+</tr>
+<tr>
+<td>Coil area (A)</td>
+<td>EMF increases proportionally</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows two side-by-side diagrams. Left: a bar magnet being pushed into a coil — flux arrows enter the coil, a galvanometer needle deflects, and a label reads "flux increasing → EMF induced." Right: the same magnet held stationary — no deflection, label reads "flux constant → no EMF." A second panel shows a coil rotating between magnet poles with a sine-wave graph of induced EMF below it, with peaks labelled "coil parallel to field" and zeros labelled "coil perpendicular to field."</p>
+<figure><img src="../../illustrations/class-10/day_25.svg" alt="Diagram for How does electromagnetic induction work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Electromagnetic induction underlies India's entire electricity infrastructure:</p>
+<ul>
+<li><strong>Power stations</strong>: Thermal plants (coal, gas), hydro stations, and nuclear plants all use generators that rotate coils inside massive electromagnets. The Bhakra Nangal dam's generators produce 1325 MW using exactly this principle.</li>
+<li><strong>The electricity pole outside your home</strong>: The cylindrical box on distribution poles is a step-down transformer — induction without any moving parts.</li>
+<li><strong>Induction cooktops</strong>: An alternating current at 20–100 kHz creates a rapidly changing field beneath the glass surface. The iron or steel base of a compatible vessel acts as a secondary coil — eddy currents are induced in the vessel base, heating it directly. Only the vessel heats; the glass surface stays cool.</li>
+<li><strong>Guitar pickups</strong>: Steel strings vibrate near permanent magnets, changing the magnetic flux through a coil wound around the magnet. This induces a tiny AC voltage that is amplified by the amplifier.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does electromagnetic induction work</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A transformer is described as having 200 turns in the primary and 4000 turns in the secondary, connected to a 230 V AC supply. Calculate the output voltage. Now suppose the secondary coil has a resistance of 100 Ω connected as a load — calculate the secondary current and the primary current (assume 100% efficiency). Finally, predict: if the primary were connected to DC instead of AC, would the secondary produce any output? Use Faraday's law to justify your answer.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes electromagnetic induction to produce a current?</p>
+<ul>
+<li>a. A static magnet placed near a wire permanently induces a constant current</li>
+<li>b. A changing magnetic field through a conductor induces an electromotive force (EMF)</li>
+<li>c. Induction occurs when two wires carrying current are connected in parallel</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding Faraday's induction mechanism more useful than knowing generators exist?</p>
+<ul>
+<li>a. Because Faraday's law is too complex for practical use in designing generators</li>
+<li>b. Because induction only works in generators and cannot be applied elsewhere</li>
+<li>c. The mechanism explains how generators, transformers and wireless chargers all work</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q3</h3>
+<p>What would happen to induced EMF if the coil rotated twice as fast inside the magnetic field?</p>
+<ul>
+<li>a. Induced EMF would halve because faster rotation reduces each magnetic flux change</li>
+<li>b. Induced EMF would remain the same because only the magnet's strength matters</li>
+<li>c. Induced EMF would increase because the rate of change of magnetic flux increases</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Lenz's law makes electromagnetic braking possible — no friction required. Maglev trains and high-speed elevators use this: a conducting disc or plate moves between magnet poles. The changing flux induces eddy currents in the conductor, and by Lenz's law these currents create a force opposing the motion — a smooth, wear-free braking force that increases with speed. Unlike disc brakes, electromagnetic brakes never need pad replacements and cannot overheat from friction.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Electromagnetic induction occurs because a changing magnetic flux through a coil induces an EMF given by Faraday's law (EMF = −dΦ/dt); doubling the coil's rotation speed doubles the rate of flux change and therefore doubles the induced EMF — the principle behind every generator, transformer, and wireless charger.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 25 of 30</footer>
+</div>
+</body>
+</html>

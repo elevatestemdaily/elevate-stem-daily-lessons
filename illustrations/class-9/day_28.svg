@@ -1,26 +1,105 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do scientists know the universe is exp</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 28</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How do scientists know the universe is expanding?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Redshift, Hubble's law v=H₀d, CMB evidence — Day 28</text>
+
+<!-- LEFT: Redshift diagram -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#fef3c7" stroke="#ca8a04" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Redshift: Stretched Light</text>
+
+<rect x="30" y="104" width="290" height="180" rx="4" fill="white" stroke="#ca8a04" stroke-width="1"/>
+<text x="175" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Galaxy moving away: light stretched</text>
+<text x="40" y="148" font-family="Arial" font-size="14" fill="#555">Lab spectrum (at rest):</text>
+<!-- Rest spectrum colour bar -->
+<rect x="40" y="154" width="270" height="18" rx="2" fill="#8b5cf6"/>
+<rect x="90" y="154" width="270" height="18" rx="2" fill="#3b82f6" fill-opacity="0.8"/>
+<rect x="150" y="154" width="200" height="18" rx="2" fill="#22c55e" fill-opacity="0.7"/>
+<rect x="210" y="154" width="140" height="18" rx="2" fill="#facc15" fill-opacity="0.8"/>
+<rect x="260" y="154" width="90" height="18" rx="2" fill="#ef4444" fill-opacity="0.9"/>
+<line x1="130" y1="154" x2="130" y2="172" stroke="black" stroke-width="2.5"/>
+<line x1="170" y1="154" x2="170" y2="172" stroke="black" stroke-width="2.5"/>
+<text x="40" y="204" font-family="Arial" font-size="14" fill="#555">Redshifted (galaxy receding):</text>
+<!-- Redshifted spectrum -->
+<rect x="40" y="210" width="270" height="18" rx="2" fill="#7c3aed"/>
+<rect x="90" y="210" width="270" height="18" rx="2" fill="#2563eb" fill-opacity="0.8"/>
+<rect x="155" y="210" width="200" height="18" rx="2" fill="#16a34a" fill-opacity="0.7"/>
+<rect x="220" y="210" width="140" height="18" rx="2" fill="#d97706" fill-opacity="0.8"/>
+<rect x="275" y="210" width="80" height="18" rx="2" fill="#b91c1c" fill-opacity="0.9"/>
+<line x1="155" y1="210" x2="155" y2="228" stroke="black" stroke-width="2.5"/>
+<line x1="200" y1="210" x2="200" y2="228" stroke="black" stroke-width="2.5"/>
+<text x="40" y="254" font-family="Arial" font-size="14" fill="#dc2626">Lines shift toward RED (longer λ)</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#333">Faster recession → more redshift</text>
+
+<rect x="30" y="294" width="290" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="175" y="312" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Hubble's Law (1929)</text>
+<text x="40" y="336" font-family="Arial" font-size="16" font-weight="700" fill="#1d4ed8">v = H₀ × d</text>
+<text x="40" y="358" font-family="Arial" font-size="14" fill="#333">H₀ ≈ 70 km/s per Megaparsec</text>
+<text x="40" y="376" font-family="Arial" font-size="14" fill="#555">Farther galaxy → recedes faster</text>
+
+<rect x="30" y="394" width="290" height="88" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="175" y="412" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">What is Expanding?</text>
+<text x="40" y="432" font-family="Arial" font-size="14" fill="#333">Space itself stretches — not galaxies</text>
+<text x="40" y="452" font-family="Arial" font-size="14" fill="#333">moving through fixed space</text>
+<text x="40" y="472" font-family="Arial" font-size="14" fill="#555">Raisin bread analogy: every raisin recedes</text>
+
+<!-- CENTRE: Evidence + dark energy -->
+<rect x="344" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Evidence for Expansion</text>
+
+<rect x="354" y="104" width="292" height="100" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Cosmic Microwave Background</text>
+<text x="364" y="144" font-family="Arial" font-size="14" fill="#333">Afterglow of Big Bang (380,000 yr)</text>
+<text x="364" y="164" font-family="Arial" font-size="14" fill="#333">Uniform 2.7 K microwave radiation</text>
+<text x="364" y="184" font-family="Arial" font-size="14" fill="#555">Confirms hot dense early universe</text>
+<text x="364" y="200" font-family="Arial" font-size="14" fill="#555">Detected: Penzias and Wilson, 1965</text>
+
+<rect x="354" y="214" width="292" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="232" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Galaxy Surveys</text>
+<text x="364" y="254" font-family="Arial" font-size="14" fill="#333">All distant galaxies: redshifted</text>
+<text x="364" y="274" font-family="Arial" font-size="14" fill="#333">Farther = higher z (redshift parameter)</text>
+<text x="364" y="294" font-family="Arial" font-size="14" fill="#555">Sloan Digital Sky Survey: 1M+ galaxies</text>
+<text x="364" y="310" font-family="Arial" font-size="14" fill="#555">All confirm Hubble's law</text>
+
+<rect x="354" y="324" width="292" height="100" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="342" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Dark Energy (1998)</text>
+<text x="364" y="364" font-family="Arial" font-size="14" fill="#333">Expansion is accelerating, not slowing!</text>
+<text x="364" y="384" font-family="Arial" font-size="14" fill="#333">Nobel Prize 2011 for this discovery</text>
+<text x="364" y="404" font-family="Arial" font-size="14" fill="#555">Dark energy: ~68% of universe</text>
+<text x="364" y="420" font-family="Arial" font-size="14" fill="#555">Nature: still completely unknown</text>
+
+<rect x="354" y="434" width="292" height="48" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="500" y="452" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Type Ia supernovae: standard candles</text>
+<text x="500" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Known brightness → distance from z</text>
+
+<!-- RIGHT: India context -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Cosmic Observations</text>
+
+<rect x="680" y="104" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">GMRT, Pune</text>
+<text x="825" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Giant Metrewave Radio Telescope</text>
+<text x="825" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">30 dishes × 45 m: measures redshifts</text>
+<text x="825" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Radio: sees galaxies hidden to optical</text>
+
+<rect x="680" y="202" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">AstroSat: X-ray Redshift</text>
+<text x="825" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Measures redshift in X-ray spectrum</text>
+<text x="825" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Studies rapidly expanding AGN jets</text>
+<text x="825" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Active galactic nuclei far into cosmos</text>
+
+<rect x="680" y="300" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Indian CMB Research</text>
+<text x="825" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">TIFR contributed to CMB anisotropy</text>
+<text x="825" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Participating: ESA Euclid dark energy</text>
+<text x="825" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Mapping universe's large-scale structure</text>
+
+<rect x="680" y="398" width="290" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">India Cosmic Vision</text>
+<text x="825" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ISRO planning XPoSat mission</text>
+<text x="825" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">X-ray polarimetry of extreme objects</text>
+<text x="825" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Galactic structure and neutron stars</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Redshift + Hubble's law v=H₀d: farther galaxy → faster recession. Space itself expands, not galaxies moving.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">CMB at 2.7 K = afterglow of Big Bang. India's GMRT Pune measures cosmic redshifts in radio waves.</text>
 </svg>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 26 — How does a camera see? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 26</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a camera see?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to apply the lens formula 1/f = 1/v + 1/u to explain image formation, describe what aperture and focal length control, and predict how the field of view changes when a shorter focal length lens is fitted.</p>
+</div><h2>1. The mystery</h2>
+<p>You point your phone at a friend three metres away, tap the screen, and in milliseconds a sharp, full-colour image is recorded. The phone camera lens is smaller than your fingernail. How does a tiny piece of glass bend light from a real three-dimensional scene into a flat, sharp image? And why does zooming in make the background blurry while keeping the subject sharp?</p>
+<h2>2. The science behind it</h2>
+<p>A camera captures an image using the principle of <strong>refraction through a convex lens</strong>. Light rays from every point on a scene travel in straight lines until they hit the curved glass of the camera lens. The curved surface is thicker at the centre than at the edges, so it bends rays from a single point on the object so that they converge to a single point on the sensor or film. This convergence point is the <strong>image point</strong>. The collection of all image points forms a complete image.</p>
+<p><strong>The lens formula</strong> relates the object distance (u), image distance (v), and focal length (f) of a convex lens:</p>
+<p><strong>1/f = 1/v + 1/u</strong></p>
+<p>By convention in NCERT Class 10, distances are measured from the optical centre of the lens: u is negative (object on the left), v is positive for a real image (on the right), and f is positive for a convex lens.</p>
+<p>For an object far away (u very large), 1/u ≈ 0, so v ≈ f. This means distant objects are focused very close to the focal point — which is why the focal length of a camera lens tells you roughly where the sensor must sit to capture infinity focus.</p>
+<p><strong>Real vs virtual images:</strong> A convex lens produces a <strong>real image</strong> when the object is beyond the focal point (u &gt; f). A real image is inverted and can be projected onto a surface — exactly what happens on the camera sensor. This is why the image on a camera sensor is upside-down; the camera software (or your brain, in the case of the eye) flips it.</p>
+<p><strong>Focal length and field of view:</strong> A longer focal length lens brings distant objects closer (like a telescope) but captures a narrower angle — a telephoto lens with f = 200 mm gives a narrow field of view. A shorter focal length (f = 24 mm wide-angle) bends light more sharply, fitting a wider scene onto the same sensor, but distant objects appear smaller. A smartphone camera typically has an equivalent focal length of 24–28 mm — wide enough to fit a group of people in a room.</p>
+<p><strong>Aperture and the f-number:</strong> The aperture is the opening through which light enters. A larger aperture admits more light (useful in dim conditions) and also produces a shallower <strong>depth of field</strong> — objects at the focused distance are sharp, but objects nearer or farther fall out of focus quickly. Aperture is expressed as an f-number: f/2.8 is wider than f/11. A wide aperture (small f-number) creates the blurred background (bokeh) seen in portrait photography.</p>
+<p><strong>Shutter speed:</strong> Controls how long the sensor is exposed. A fast shutter speed (1/1000 s) freezes motion; a slow speed (1/30 s) can blur moving subjects but allows more light in dark conditions. Professional photographers balance aperture, shutter speed, and ISO (sensor sensitivity) — the "exposure triangle."</p>
+<p><strong>Digital sensors — CMOS technology:</strong> Modern cameras use a <strong>CMOS</strong> (Complementary Metal-Oxide-Semiconductor) sensor. The sensor surface is a grid of millions of tiny photodetectors called <strong>pixels</strong> (picture elements). Each pixel contains a photodiode that converts incoming photons into electrons — the more photons, the more electrons, the brighter the value recorded. A Bayer colour filter places red, green, or blue filters over alternating pixels; software interpolates to produce full colour at every pixel. A 12-megapixel sensor has 12 million such pixels arranged in a rectangle, typically around 4000 × 3000.</p>
+<p><strong>Smartphone optics:</strong> Because smartphones are thin, the physical focal length of the lens must be very short — around 4–5 mm actual focal length. This short focal length means the lens bends light very sharply. The trade-off is a very deep depth of field (almost everything in focus simultaneously) and a wide angle of view. Portrait mode simulates a blurred background using software depth estimation, not optical blur.</p>
+<h2>3. Build the mental model</h2>
+<p>Image formation in four steps:</p>
+<ol>
+<li>Light from an object point travels outward in all directions.</li>
+<li>Some of those rays hit the convex lens and are <strong>refracted</strong> (bent) by the curved surfaces.</li>
+<li>All refracted rays from that single object point converge at a <strong>single image point</strong>, at a distance v given by 1/v = 1/f − 1/u.</li>
+<li>The sensor at position v records the intensity and colour at each pixel.</li>
+</ol>
+<p>Key relationships:
+- Shorter focal length → more bending → wider field of view → objects appear smaller
+- Longer focal length → less bending → narrower field of view → objects appear larger (zoomed)
+- Larger aperture → more light, shallower depth of field
+- Closer object → image forms farther from lens (v increases)</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a horizontal optical axis. On the left, a vertical arrow (the object) sits beyond the focal point. Three standard rays are drawn: one parallel to the axis (refracts through the far focal point), one through the optical centre (passes straight), and one through the near focal point (refracts parallel). All three rays converge on the right side to form an inverted, smaller real image arrow. Labels show u (object distance), v (image distance), f (focal length), and the equation 1/f = 1/v + 1/u.</p>
+<figure><img src="../../illustrations/class-10/day_26.svg" alt="Diagram for How does a camera see?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>DSLR portrait photography</strong>: A photographer uses an f = 85 mm lens at f/1.8 aperture. The short depth of field means the subject's face is sharp while the background is smoothly blurred. This is pure optics: shallow depth of field from a wide aperture with a longer focal length.</li>
+<li><strong>Surveillance cameras</strong>: Wide-angle lenses (short focal length) cover entire rooms. The image is sharp everywhere because the deep depth of field keeps all distances in focus simultaneously.</li>
+<li><strong>Satellite remote sensing</strong>: ISRO's Cartosat-3 satellite uses a long focal length lens to image ground objects as small as 0.25 m from 509 km altitude — the lens formula applied at astronomical object distances.</li>
+<li><strong>Macro photography</strong>: Objects very close to the lens (u close to f) produce a very large v. Extension tubes move the sensor away from the lens to match this large image distance, allowing 1:1 size reproduction of insects and flowers.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does a camera see</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A convex lens has focal length f = 10 cm. An object is placed 15 cm from the lens. Use the lens formula 1/f = 1/v + 1/u to calculate the image distance v. Then determine the magnification m = v/u and state whether the image is upright or inverted. Now predict: if the object is moved to 20 cm from the lens, does the image move closer to or farther from the lens? What happens to image size? Finally, at what object distance would the image form at infinity (i.e., v → ∞)?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does a camera capture an image?</p>
+<ul>
+<li>a. A lens focuses light onto a sensor or film, forming an inverted real image</li>
+<li>b. A camera captures images by detecting electrical signals from light-emitting objects</li>
+<li>c. Light is absorbed by the camera body and chemically converted into colour patterns</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding lens refraction and focus more useful than just knowing cameras take photos?</p>
+<ul>
+<li>a. The mechanism explains aperture, focal length, depth of field and image sharpness</li>
+<li>b. Because all cameras are identical and no understanding is needed to use them</li>
+<li>c. Because understanding optics only applies to film cameras and not digital ones</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen to a camera image if the lens were replaced with a much shorter focal length?</p>
+<ul>
+<li>a. The image would be identical because focal length only affects camera weight</li>
+<li>b. The field of view would be wider and objects would appear smaller in the frame</li>
+<li>c. The image would be darker because shorter lenses block more incoming light</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A camera obscura — a dark room with a tiny hole in one wall — was used by Renaissance painters to project real scenes onto paper and trace them accurately. Johannes Vermeer is thought to have used one in the 1600s, three centuries before photography existed. The pinhole does exactly what a lens does, but instead of bending light with glass it simply blocks all rays except those that pass through the tiny hole — producing an inverted image with everything in sharp focus, at the cost of almost no light reaching the surface. A lens solves the light problem: it gathers many rays from each object point and bends them all to the same image point, giving brightness without sacrificing sharpness.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A camera forms an image because a convex lens refracts light from every point in the scene to a corresponding point on the sensor, governed by the lens formula 1/f = 1/v + 1/u; a shorter focal length lens bends light more sharply, producing a wider field of view where objects appear smaller in the frame.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

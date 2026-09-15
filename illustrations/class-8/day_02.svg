@@ -1,26 +1,109 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">The microscopic battle between bacteria an</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 2</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">The microscopic battle: bacteria vs antibiotics</text>
+
+<!-- Left: Bacterial cell structure -->
+<text x="30" y="92" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">BACTERIAL CELL (antibiotic targets)</text>
+
+<!-- Bacterial cell outline -->
+<ellipse cx="150" cy="230" rx="120" ry="85" fill="#fff3e0" stroke="#e07000" stroke-width="2"/>
+<text x="150" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="#e07000">PEPTIDOGLYCAN</text>
+<text x="150" y="117" text-anchor="middle" font-family="Arial" font-size="14" fill="#e07000">CELL WALL (mesh)</text>
+
+<!-- Grid pattern for cell wall -->
+<line x1="70" y1="180" x2="230" y2="180" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+<line x1="70" y1="200" x2="230" y2="200" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+<line x1="70" y1="260" x2="230" y2="260" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+<line x1="70" y1="280" x2="230" y2="280" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+<line x1="100" y1="155" x2="100" y2="310" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+<line x1="150" y1="148" x2="150" y2="315" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+<line x1="200" y1="155" x2="200" y2="310" stroke="#e07000" stroke-width="1" stroke-dasharray="5,3"/>
+
+<!-- Ribosomes inside -->
+<circle cx="120" cy="220" r="7" fill="#f48fb1"/>
+<circle cx="145" cy="235" r="7" fill="#f48fb1"/>
+<circle cx="170" cy="220" r="7" fill="#f48fb1"/>
+<circle cx="160" cy="245" r="7" fill="#f48fb1"/>
+<text x="150" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#880e4f">70S ribosomes</text>
+
+<!-- DNA circle -->
+<ellipse cx="150" cy="230" rx="25" ry="18" fill="none" stroke="#1f5f8b" stroke-width="1.5" stroke-dasharray="4,2"/>
+<text x="150" y="232" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b">DNA</text>
+
+<!-- Labels -->
+<text x="150" y="330" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#e07000">Target 1: Cell wall</text>
+<text x="150" y="344" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">(Penicillin/Amoxicillin)</text>
+<text x="150" y="360" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#880e4f">Target 2: Ribosome</text>
+<text x="150" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">(Erythromycin/Tetracycline)</text>
+<text x="150" y="390" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Target 3: DNA enzyme</text>
+<text x="150" y="404" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">(Ciprofloxacin)</text>
+
+<!-- Centre: How penicillin works -->
+<text x="340" y="92" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">HOW PENICILLIN KILLS</text>
+
+<rect x="300" y="105" width="160" height="45" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="380" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Normal: cell wall builds</text>
+<text x="380" y="137" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">enzyme links peptidoglycan</text>
+<text x="380" y="152" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ strong rigid wall</text>
+
+<text x="380" y="175" text-anchor="middle" font-family="Arial" font-size="18" fill="#1f5f8b">↓</text>
+
+<rect x="300" y="185" width="160" height="45" rx="6" fill="#fff3e0" stroke="#e07000" stroke-width="1.5"/>
+<text x="380" y="202" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#e07000">Penicillin blocks enzyme</text>
+<text x="380" y="217" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">wall weakens → gaps form</text>
+<text x="380" y="232" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">water rushes in (osmosis)</text>
+
+<text x="380" y="253" text-anchor="middle" font-family="Arial" font-size="18" fill="#1f5f8b">↓</text>
+
+<rect x="300" y="263" width="160" height="40" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+<text x="380" y="278" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">Cell swells and bursts</text>
+<text x="380" y="293" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bacterium dead</text>
+
+<!-- Note box -->
+<rect x="300" y="320" width="160" height="55" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+<text x="380" y="337" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">Safe for humans:</text>
+<text x="380" y="352" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Our cells have no</text>
+<text x="380" y="367" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">peptidoglycan wall → no target</text>
+
+<!-- Ribosome comparison -->
+<rect x="300" y="390" width="160" height="55" rx="6" fill="#fbe9e7" stroke="#bf360c" stroke-width="1.5"/>
+<text x="380" y="407" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#bf360c">Ribosome difference:</text>
+<text x="380" y="422" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bacteria: 70S (antibiotic fits)</text>
+<text x="380" y="437" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Human: 80S (antibiotic doesn't fit)</text>
+
+<!-- Right: Resistance diagram -->
+<text x="510" y="92" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">HOW RESISTANCE EVOLVES</text>
+
+<!-- Step 1 -->
+<rect x="500" y="105" width="460" height="75" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="510" y="122" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">1. Large colony — mostly sensitive bacteria</text>
+<text x="510" y="138" font-family="Arial" font-size="14" fill="#333">○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ (normal)</text>
+<text x="510" y="154" font-family="Arial" font-size="14" fill="#c62828">● (one resistant mutant — rare random mutation)</text>
+<text x="510" y="170" font-family="Arial" font-size="14" fill="#333">Antibiotic prescribed (or overused)</text>
+
+<!-- Step 2 -->
+<rect x="500" y="193" width="460" height="60" rx="6" fill="#fff3e0" stroke="#e07000" stroke-width="1.5"/>
+<text x="510" y="210" font-family="Arial" font-size="14" font-weight="700" fill="#e07000">2. Antibiotic kills sensitive bacteria</text>
+<text x="510" y="226" font-family="Arial" font-size="14" fill="#777">✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ ✗ (killed)</text>
+<text x="510" y="243" font-family="Arial" font-size="14" fill="#c62828">● (resistant mutant survives)</text>
+
+<!-- Step 3 -->
+<rect x="500" y="267" width="460" height="60" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+<text x="510" y="284" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">3. Resistant bacteria multiply (every 20 min)</text>
+<text x="510" y="300" font-family="Arial" font-size="14" fill="#c62828">● ● ● ● ● ● ● ● ● ● ● ● ● ● ● ●</text>
+<text x="510" y="318" font-family="Arial" font-size="14" fill="#333">Pass resistance genes to other bacteria (horizontal)</text>
+
+<!-- Virus box -->
+<rect x="500" y="341" width="460" height="50" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+<text x="730" y="358" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">Antibiotics DON'T work on viruses</text>
+<text x="730" y="375" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">No cell wall, no bacterial ribosome → no antibiotic target</text>
+
+<!-- MRSA box -->
+<rect x="500" y="405" width="460" height="50" rx="6" fill="#fbe9e7" stroke="#bf360c" stroke-width="1.5"/>
+<text x="730" y="422" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#bf360c">MRSA in Indian hospitals: 25–50% of ICU infections</text>
+<text x="730" y="438" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 27% of MDR-TB burden — patients stop meds early</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="536" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Antibiotics target bacterial structures human cells lack. Resistant bacteria survive overuse and spread.</text>
 </svg>

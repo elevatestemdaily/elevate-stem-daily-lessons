@@ -1,26 +1,124 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why are some animals disappearing?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 22</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why are some animals disappearing?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Habitat loss → population collapse → extinction cascade — Day 22</text>
+
+<!-- ── LEFT: Extinction drivers + IUCN ── -->
+<rect x="20" y="74" width="290" height="416" rx="6" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+<text x="165" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#ea580c">Why Species Disappear</text>
+
+<!-- Stacked driver boxes -->
+<rect x="30" y="104" width="270" height="38" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="165" y="120" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">#1 Habitat Destruction</text>
+<text x="165" y="136" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Forest clearing, wetland drainage</text>
+
+<rect x="30" y="148" width="270" height="34" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="165" y="162" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">#2 Poaching &amp; Hunting</text>
+<text x="165" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Removal faster than reproduction</text>
+
+<rect x="30" y="188" width="270" height="34" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="165" y="202" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">#3 Invasive Species</text>
+<text x="165" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Outcompete / predate natives</text>
+
+<rect x="30" y="228" width="270" height="34" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="165" y="242" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">#4 Climate Change</text>
+<text x="165" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Shifts habitat zones poleward</text>
+
+<rect x="30" y="268" width="270" height="34" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+<text x="165" y="282" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#0369a1">#5 Pollution</text>
+<text x="165" y="298" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">DDT, plastic, pesticides</text>
+
+<!-- IUCN Pyramid -->
+<text x="165" y="324" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">IUCN Red List</text>
+<rect x="98" y="330" width="134" height="22" rx="2" fill="#dc2626"/>
+<text x="165" y="345" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Critically Endangered</text>
+<rect x="72" y="356" width="186" height="22" rx="2" fill="#f97316"/>
+<text x="165" y="371" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Endangered</text>
+<rect x="46" y="382" width="238" height="22" rx="2" fill="#eab308"/>
+<text x="165" y="397" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Vulnerable</text>
+<rect x="30" y="408" width="270" height="22" rx="2" fill="#84cc16"/>
+<text x="165" y="423" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Near Threatened</text>
+<rect x="30" y="434" width="270" height="22" rx="2" fill="#22c55e"/>
+<text x="165" y="449" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Least Concern</text>
+
+<text x="165" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">~8.7 million species on Earth</text>
+
+<!-- ── CENTRE: Keystone species concept ── -->
+<rect x="324" y="74" width="330" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="489" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Keystone Species Effect</text>
+
+<!-- Keystone arch diagram -->
+<rect x="334" y="104" width="310" height="170" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="489" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Apex predator removed:</text>
+
+<!-- Cascade steps -->
+<rect x="380" y="130" width="218" height="26" rx="3" fill="#7c3aed"/>
+<text x="489" y="147" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Tiger / Wolf removed</text>
+
+<line x1="489" y1="156" x2="489" y2="166" stroke="#6b7280" stroke-width="2"/>
+<rect x="364" y="166" width="250" height="24" rx="3" fill="#f97316"/>
+<text x="489" y="182" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Deer/elk population explodes</text>
+
+<line x1="489" y1="190" x2="489" y2="200" stroke="#6b7280" stroke-width="2"/>
+<rect x="348" y="200" width="282" height="24" rx="3" fill="#eab308"/>
+<text x="489" y="216" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Vegetation overgrazed</text>
+
+<line x1="489" y1="224" x2="489" y2="234" stroke="#6b7280" stroke-width="2"/>
+<rect x="334" y="234" width="310" height="28" rx="3" fill="#dc2626"/>
+<text x="489" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Many species collapse — cascade!</text>
+
+<!-- India Vulture story -->
+<rect x="334" y="282" width="310" height="116" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="489" y="300" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">India: Vulture Collapse 1990s</text>
+<text x="489" y="318" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Diclofenac (cattle drug) killed</text>
+<text x="489" y="336" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">99% of vultures in 10 years</text>
+<text x="489" y="354" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">→ Feral dogs exploded</text>
+<text x="489" y="372" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">→ Rabies deaths increased</text>
+<text x="489" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cost: ~$34 billion economic loss</text>
+
+<!-- Fragmentation concept -->
+<rect x="334" y="406" width="310" height="76" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="489" y="424" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Habitat Fragmentation</text>
+<text x="489" y="442" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Large habitat → islands of habitat</text>
+<text x="489" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">→ inbreeding, no migration</text>
+<text x="489" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Extinction debt set in</text>
+
+<!-- ── RIGHT: India conservation ── -->
+<rect x="668" y="74" width="312" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="824" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">India Conservation</text>
+
+<rect x="678" y="104" width="292" height="80" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="824" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#f97316">Project Tiger (1973)</text>
+<text x="824" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">1973: 1,800 tigers left</text>
+<text x="824" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">2022: 3,167 tigers — success!</text>
+<text x="824" y="174" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">53 tiger reserves, 18 states</text>
+
+<rect x="678" y="194" width="292" height="72" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="824" y="212" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Project Elephant</text>
+<text x="824" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">29,000+ elephants in corridors</text>
+<text x="824" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Ecosystem engineers</text>
+<text x="824" y="264" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Create water holes for 100s of spp</text>
+
+<rect x="678" y="276" width="292" height="72" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="824" y="294" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Great Indian Bustard</text>
+<text x="824" y="312" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Fewer than 150 remain</text>
+<text x="824" y="330" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Power lines kill birds in Rajasthan</text>
+<text x="824" y="346" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">SC ordered underground cables</text>
+
+<rect x="678" y="358" width="292" height="72" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="824" y="376" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#0369a1">Gangetic Dolphin</text>
+<text x="824" y="394" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">National aquatic animal</text>
+<text x="824" y="412" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Critically threatened by dams</text>
+<text x="824" y="428" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Indicator of river health</text>
+
+<rect x="678" y="440" width="292" height="44" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="824" y="458" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">India: one of 17 megadiverse</text>
+<text x="824" y="476" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">countries — highest biodiversity/area</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Habitat destruction is the #1 cause. Keystone species loss triggers cascades.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India: tigers recovered from 1,800 to 3,167. Vulture loss showed cascade — one spp., massive cost.</text>
 </svg>

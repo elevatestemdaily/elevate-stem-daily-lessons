@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 16 — What is actually happening inside a chemical reaction? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 16</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>What is actually happening inside a chemical reaction?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover what actually happens at the molecular level when substances react — and understand the concepts of activation energy, bond energy, and catalysts that govern every reaction in chemistry.</p>
+</div><h2>1. The mystery</h2>
+<p>Mix baking soda and vinegar — fizzing explosion. Strike a match — fire. Leave iron in rain — rust. Add yeast to dough — it rises. All of these are chemical reactions, but what is actually happening? Atoms cannot be created or destroyed (conservation of mass) — so where do the new substances come from? The ingredients disappear but new materials appear. At the scale of a millionth of a millimetre, what is actually occurring between molecules when a reaction happens?</p>
+<h2>2. The science behind it</h2>
+<p><strong>What a chemical reaction is at the molecular level:</strong></p>
+<p>A chemical reaction involves the <strong>breaking of existing chemical bonds</strong> between atoms and the <strong>forming of new bonds</strong> — rearranging atoms into new combinations.</p>
+<p>Atoms themselves are never created or destroyed (Lavoisier's Law of Conservation of Mass). Only their connections change.</p>
+<p><strong>Example — combustion of methane (natural gas, LPG):</strong></p>
+<p>CH₄ + 2O₂ → CO₂ + 2H₂O</p>
+<p>At the molecular level:
+- 4 C–H bonds in CH₄ are broken (requires energy: <strong>endothermic bond-breaking</strong>)
+- 2 O=O bonds in O₂ are broken (requires energy)
+- 2 C=O bonds in CO₂ are formed (releases energy: <strong>exothermic bond-forming</strong>)
+- 4 O–H bonds in 2H₂O are formed (releases energy)
+- Net energy: bond energy released &gt; bond energy required → <strong>exothermic</strong> reaction → heat and light produced</p>
+<p><strong>Activation energy:</strong></p>
+<p>Even exothermic reactions require an initial energy input to start — the <strong>activation energy (Eₐ)</strong>. This is the energy needed to weaken bonds enough for the reaction to begin.</p>
+<p>The match's flame provides Eₐ to start the gas burning. Once started, the exothermic reaction provides enough energy to sustain itself.</p>
+<p><strong>Catalysts:</strong></p>
+<p>A catalyst provides an alternative reaction pathway with a <strong>lower activation energy</strong>. It is not consumed — it is the same before and after the reaction. Examples:
+- Platinum in a catalytic converter (car exhaust)
+- Enzymes in your body (biological catalysts)
+- Iron catalyst in the Haber-Bosch process (making fertiliser)</p>
+<p><strong>Endothermic vs exothermic:</strong></p>
+<ul>
+<li><strong>Exothermic:</strong> energy released (bond energy formed &gt; broken) → products are lower energy than reactants → feels hot (combustion, rust, respiration)</li>
+<li><strong>Endothermic:</strong> energy absorbed (bond energy broken &gt; formed) → feels cold (photosynthesis, cooking, dissolving ammonium nitrate)</li>
+</ul>
+<p><strong>Rate of reaction:</strong></p>
+<p>The rate depends on:
+1. <strong>Concentration</strong> (more molecules → more collisions)
+2. <strong>Temperature</strong> (higher T → faster molecules → more energetic collisions)
+3. <strong>Surface area</strong> (more contact → more collisions)
+4. <strong>Catalyst</strong> (lower Eₐ → more successful collisions)</p>
+<h2>3. Build the mental model</h2>
+<p>Think of atoms as Lego bricks and bonds as the connectors between them. A chemical reaction is when two existing Lego structures bump into each other hard enough to break apart, and the pieces reconnect in a new arrangement. The "hard enough" is the activation energy — a gentle tap won't break the connectors, but a hard enough collision will. A catalyst is like a Lego disassembly tool that makes it easier to snap pieces apart, so even gentler collisions can succeed. The total number of bricks (atoms) stays the same — only how they are connected changes.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_16.svg" alt="Diagram for What is actually happening inside a chemical reaction?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows: Left panel — three molecular collision sequences: (1) two reactant molecules approaching, (2) transition state (bonds partially broken), (3) product molecules separating. Centre panel — energy diagram (reaction coordinate): reactants at one level, a hill (activation energy Eₐ) in the middle, products at a lower level (exothermic). A dashed lower curve shows the same reaction with a catalyst (lower Eₐ hill). Right panel — real reaction examples: CH₄+O₂ combustion (exothermic), CO₂+H₂O photosynthesis (endothermic), iron rusting (very slow exothermic).</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Haber-Bosch process (fertiliser):</strong> Nitrogen + hydrogen → ammonia (NH₃) using an iron catalyst at 400°C and 200 atm. This reaction produces 80% of India's synthetic fertiliser — without it, India could not grow enough food for its population. The catalyst is essential: without it, the reaction is too slow to be practical.</li>
+<li><strong>Car catalytic converters:</strong> Delhi's severe pollution led to strict emission norms (BS6 standard from 2020). Every car now has a catalytic converter (platinum/palladium/rhodium catalyst) that converts CO and NOₓ exhaust gases to CO₂ and N₂.</li>
+<li><strong>LPG cooking:</strong> LPG (liquefied petroleum gas) combustion in Indian kitchens — 300 million households use LPG (Pradhan Mantri Ujjwala Yojana). Each gas cylinder combusts propane/butane in exothermic reactions: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O + energy.</li>
+<li><strong>Enzymes in food digestion:</strong> The amylase in your saliva is a biological catalyst that breaks starch (long glucose chains) into shorter sugars — the same chemical bond-breaking that happens in industrial food processing, just at body temperature instead of 200°C.</li>
+<li><strong>Cement hardening:</strong> Portland cement setting is an exothermic reaction between calcium silicates and water, producing calcium silicate hydrate crystals — the microscopic structure that makes concrete strong. India produces ~400 million tonnes of cement per year.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Mix one teaspoon of baking soda (NaHCO₃) with one teaspoon of white vinegar (dilute acetic acid CH₃COOH) in a glass. Observe: fizzing (CO₂ gas produced), temperature drop (endothermic reaction). Touch the glass — it feels cooler. Compare: light a match (exothermic — feels hot). You have observed both types of reactions in 30 seconds. The baking soda reaction: NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂ — bonds broken and reformed, new substances created, temperature changed.</p>
+</div><h2>7. Think deeper</h2>
+<p>Chemists have recently achieved "bond-selective" chemistry: by tuning a laser to exactly the vibrational frequency of a specific bond in a molecule, they can break that one bond without breaking others — like breaking only one Lego connector in a complex structure without disturbing any others. This allows chemists to direct reactions toward specific products rather than letting all possible products form. In 2023, this technique was used to create molecules that were previously impossible to make selectively. What does this tell you about the relationship between energy, frequency, and chemical bonds?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What actually happens at the molecular level during a chemical reaction?</p>
+<ul>
+<li>A. Atoms are destroyed and new atoms are created from energy in the reaction</li>
+<li>B. Bonds between atoms break and new bonds form, creating different substances</li>
+<li>C. Molecules are compressed until they merge into a new larger molecule</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding bond-breaking and bond-forming more useful than memorising reaction products?</p>
+<ul>
+<li>A. It allows prediction of energy changes and products in new reactions</li>
+<li>B. Memorising products is sufficient since all reactions behave the same way</li>
+<li>C. Bond mechanisms only apply to organic chemistry, not inorganic reactions</li>
+</ul>
+<h3>Q3</h3>
+<p>If a catalyst were added to a chemical reaction, what would you predict?</p>
+<ul>
+<li>A. The reaction would stop because catalysts block bond-breaking pathways</li>
+<li>B. New atoms would form because catalysts provide extra chemical energy</li>
+<li>C. The reaction would speed up as the catalyst lowers activation energy</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>The combustion of methane: CH₄ + 2O₂ → CO₂ + 2H₂O. Bond energies (kJ/mol): C-H = 413, O=O = 495, C=O = 805, O-H = 460. (a) How many C-H bonds and O=O bonds are broken? Calculate total energy required for bond-breaking. (b) How many C=O bonds (in CO₂) and O-H bonds (in 2H₂O) are formed? Calculate total energy released. (c) Is the reaction exothermic or endothermic? Calculate the net energy change. (d) The actual enthalpy of combustion of methane is −890 kJ/mol. How close is your bond-energy estimate?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The same reaction that makes rust (iron oxidation: 4Fe + 3O₂ → 2Fe₂O₃) also keeps you warm and alive — respiration is essentially controlled, slow oxidation of glucose (C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy). Your body "burns" glucose the same way fire burns wood — the difference is that enzymes slow the reaction down to a usable rate and capture the energy as ATP instead of releasing it all as heat. A human body at rest releases about 80 W of heat — the same as an 80W light bulb. You are, chemically speaking, a slow, carefully controlled fire.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Chemical reactions = bonds break (absorb energy) + new bonds form (release energy). If energy released &gt; absorbed → exothermic. Catalyst lowers activation energy → faster reaction. Atoms are conserved — only connections change.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

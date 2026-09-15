@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 15 — How does a mobile phone transmit information? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 15</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a mobile phone transmit information?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover how your voice and data are converted into electromagnetic waves and sent across hundreds of kilometres — and understand the physics behind the world's largest wireless network.</p>
+</div><h2>1. The mystery</h2>
+<p>India has over 1.1 billion mobile phone subscribers — the world's second-largest mobile market. When you make a call, your voice travels hundreds of kilometres in under a second. It passes through the air, through towers, through undersea cables, and through satellites — yet arrives perfectly reconstructed at the other end. There are no wires between you and your friend. How does a device the size of your palm encode the sound of your voice into invisible waves and send it across a city in milliseconds?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Step 1 — Converting sound to electrical signal:</strong></p>
+<p>The phone's microphone contains a diaphragm that vibrates with sound waves. These vibrations create a varying electrical signal (analogue) that mirrors the sound wave's pattern of compressions and rarefactions.</p>
+<p><strong>Step 2 — Digitisation (ADC):</strong></p>
+<p>The analogue signal is sampled thousands of times per second (4G samples at 48,000 times/second). Each sample is assigned a binary number (0s and 1s). This converts continuous sound into discrete digital data.</p>
+<p><strong>Step 3 — Compression:</strong></p>
+<p>Digital audio codecs (like AAC or Opus) compress the data by removing sounds humans cannot perceive — reducing the data by 10–20×.</p>
+<p><strong>Step 4 — Encoding into radio waves:</strong></p>
+<p>The phone's transmitter varies the properties of a carrier radio wave to encode the digital data:
+- <strong>Frequency Modulation (FM):</strong> vary frequency to encode signal
+- <strong>Amplitude Modulation (AM):</strong> vary amplitude
+- <strong>Modern phones use OFDM</strong> (Orthogonal Frequency Division Multiplexing) — thousands of narrow sub-carrier frequencies simultaneously, making 4G/5G robust to interference.</p>
+<p>The carrier frequency for 4G LTE in India is typically 1,800 MHz or 2,100 MHz — frequencies allocated by TRAI (Telecom Regulatory Authority of India).</p>
+<p><strong>Step 5 — Transmission:</strong></p>
+<p>The encoded radio signal is transmitted as an <strong>electromagnetic wave</strong> (EM wave) from the phone's antenna. EM waves travel at the speed of light (3 × 10⁸ m/s) through air and space.</p>
+<p><strong>Step 6 — Cell tower reception and routing:</strong></p>
+<p>The signal reaches the nearest cell tower (BTS — Base Transceiver Station). The tower demodulates the signal and sends it as digital data through a fibre optic backhaul cable to a mobile switching centre, which routes the call to the recipient's network.</p>
+<p><strong>Step 7 — Reception:</strong></p>
+<p>The recipient's tower sends radio waves to the recipient's phone. The phone demodulates, decodes, decompresses, converts back to analogue, drives the speaker. The reverse of the sending process.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of radio communication like sending a message in Morse code by flashing a torch. Your voice (the message) is the pattern of dots and dashes. The torch beam (carrier wave) is the radio wave. You modulate (change) the pattern of the beam to encode your message. The receiver interprets the pattern of flashes back into words. A mobile phone does this 48,000 times per second, using 1,800 MHz oscillations instead of a visible torch, and uses 1,000+ narrow frequency bands simultaneously (OFDM) so that interference on one band does not lose the whole message.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_15.svg" alt="Diagram for How does a mobile phone transmit information?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows the 7-step transmission chain: (1) Person speaking into phone → sound wave shown. (2) Microphone converting to electrical signal — waveform. (3) ADC sampling → binary numbers. (4) Radio wave modulation — carrier wave with encoded data. (5) Phone antenna radiating EM waves. (6) Cell tower receiving, converting to fibre optic → routing centre. (7) Recipient tower radiating → recipient phone → speaker → person hearing. Below: a frequency spectrum shows 2G/3G/4G/5G bands from 700 MHz to 26 GHz, colour-coded.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Jio's 5G rollout:</strong> Reliance Jio launched 5G in India in October 2022, using 700 MHz (for rural reach) and 26 GHz (millimetre-wave, for urban capacity). By 2024, India had over 100 million 5G subscribers — one of the world's fastest 5G rollouts.</li>
+<li><strong>BSNL rural connectivity:</strong> BSNL (government telecom) provides coverage in remote villages of the Northeast and Ladakh using lower-frequency bands (700 MHz, 900 MHz) that travel farther and penetrate terrain better than high-frequency waves.</li>
+<li><strong>ISRO satellite internet:</strong> In remote areas without cell towers (islands, tribal regions), ISRO's GSAT satellites provide internet. The signal travels 36,000 km to a geostationary satellite and back — adding ~250 milliseconds of delay (latency).</li>
+<li><strong>Spectrum auctions:</strong> India's spectrum auctions (conducted by DoT) determine which frequencies Jio, Airtel, and Vi can use. The 2022 auction raised ₹1.5 lakh crore (~$18 billion) — the radio spectrum has enormous monetary value because it is limited.</li>
+<li><strong>Train WiFi:</strong> Indian Railways' free train WiFi (operated by RailTel) connects passengers through 4G modems on trains, which connect to lineside towers as the train moves — the phone automatically hands off from one tower to the next (handover) without dropping the connection.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Open your phone's Settings → Network → Signal strength (or use a signal meter app). Walk around the room or building and note how signal strength (in dBm — negative numbers, closer to 0 = stronger) changes. Note: signal is stronger near windows and weaker inside concrete rooms (concrete blocks radio waves). Go to the top floor vs the bottom — observe the difference. You are directly observing how obstacles absorb and scatter radio waves — the same phenomenon network engineers model when planning cell tower placement.</p>
+</div><h2>7. Think deeper</h2>
+<p>5G uses millimetre-wave frequencies (24–100 GHz) for extremely high speeds (&gt;10 Gbps). But these short waves cannot penetrate walls or travel far — a 5G mmWave cell only covers ~100 metres. This means 5G requires "small cells" — thousands of tiny antennas on lamp-posts and buildings, rather than a few tall towers. This creates a dilemma: more antennas → more coverage, but also more infrastructure, cost, and public concern about electromagnetic exposure. India's TRAI regulates emission limits (10 W/m² for public areas). How does the physics of wave penetration constrain the design of future wireless networks?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How does a mobile phone send information wirelessly?</p>
+<ul>
+<li>A. It sends electrical pulses through underground copper cables to towers</li>
+<li>B. It converts data into electromagnetic radio waves that travel to a cell tower</li>
+<li>C. It beams laser light signals directly to satellites in low orbit</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding radio wave transmission more useful than knowing phones communicate?</p>
+<ul>
+<li>A. It helps engineers improve signal strength, bandwidth, and network coverage</li>
+<li>B. Knowing phones communicate wirelessly is sufficient for all telecom work</li>
+<li>C. Radio wave mechanisms only apply to older 2G networks, not 4G or 5G</li>
+</ul>
+<h3>Q3</h3>
+<p>If you moved to an area with no cell towers nearby, what would you predict?</p>
+<ul>
+<li>A. The phone would automatically switch to satellite mode for full signal</li>
+<li>B. Signal strength would drop and calls and data would fail or disconnect</li>
+<li>C. Phone signals would become stronger as they spread out more in open space</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>(a) A radio wave travels at 3 × 10⁸ m/s. How long does it take to travel from your phone to a cell tower 2 km away? (b) From that tower, the signal travels through fibre optic cable at 2 × 10⁸ m/s to a routing centre 50 km away. How long does this take? (c) A satellite internet connection sends the signal 36,000 km to a geostationary satellite at the speed of light. What is the one-way delay? Why is this a problem for real-time voice calls? (d) 4G LTE uses a 20 MHz-wide channel and achieves ~75 Mbps download speed. At this rate, how long does it take to download a 600 MB Bollywood film?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The first mobile phone call in India was made on 31 July 1995, from the West Bengal Chief Minister to the Union Communications Minister using Modi Tel's network in Kolkata. The phone used was a Motorola analogue handset and the call used the AMPS (Advanced Mobile Phone Service) standard — the same technology as the first US mobile phones. That network operated at 800 MHz and could handle ~400 calls per cell tower. A modern 5G cell in Mumbai using 100 MHz of mmWave spectrum can handle 10,000+ simultaneous users — a 25× improvement in just under 30 years.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Voice → electrical signal → digitised → compressed → modulated onto radio carrier wave → transmitted at speed of light → received by tower → routed via fibre → recipient's phone reverses the process. India uses 700 MHz to 26 GHz spectrum.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 15 of 30</footer>
+</div>
+</body>
+</html>

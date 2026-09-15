@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 03 — How does diffusion work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 03</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does diffusion work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to define diffusion, explain how concentration gradients drive it, and predict how temperature or particle size affects diffusion rate.</p>
+</div><h2>1. The mystery</h2>
+<p>You spray perfume in one corner of a room. Within minutes, people on the other side smell it — without any fan or wind. Gas particles spread by themselves. Why do they always spread from high concentration to low, and never the other way?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Diffusion:</strong> The net movement of particles from a region of high concentration to low concentration, driven purely by random particle motion — no energy input needed.</p>
+<p><strong>Why it works:</strong> Particles move randomly in all directions. In a region of high concentration, there are more particles randomly moving outward than there are particles from the low-concentration region randomly moving inward. The net flow is outward — from high to low. This is a statistical effect of random motion, not a directed force.</p>
+<p><strong>Fick's Law:</strong> Rate of diffusion ∝ (concentration difference) × (surface area) / (thickness of membrane)</p>
+<p><strong>Factors affecting rate:</strong>
+- Higher temperature → faster particles → faster diffusion
+- Smaller molecules → move faster → diffuse faster
+- Steeper gradient (bigger concentration difference) → faster diffusion
+- Larger surface area → more pathways → faster diffusion</p>
+<p><strong>Osmosis</strong> is a special case of diffusion — water molecules diffuse through a semipermeable membrane from low solute concentration (high water concentration) to high solute concentration (low water concentration).</p>
+<h2>3. Build the mental model</h2>
+<p>Picture a packed cinema hall (high concentration of people) connected by a wide doorway to an empty lobby (low concentration). When the film ends, people leave through the door — not because a force pushes them toward the lobby, but because there are simply more people on one side making random choices. With 500 people in the hall and 5 in the lobby, statistically far more random steps carry people from hall to lobby than from lobby to hall. The net flow is always from more crowded to less crowded.</p>
+<p>Now make it more precise:</p>
+<ul>
+<li><strong>Temperature</strong> = how fast each person walks. Faster walkers → the hall empties faster.</li>
+<li><strong>Doorway width</strong> = surface area. A wider door → more people per second can cross → faster diffusion.</li>
+<li><strong>Concentration difference</strong> = how packed the hall is vs the lobby. If the lobby is already half full, the net flow slows — fewer people are making the crossing in the "wrong" direction by accident.</li>
+<li><strong>No pump is needed</strong> — diffusion is spontaneous because random motion statistically favours movement from crowded to empty.</li>
+</ul>
+<p>This is why diffusion always runs from high to low concentration: it is not a force, it is statistics. At equilibrium (equal concentrations), particles still move in both directions equally — there is no net flow, but motion never stops.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG diagram is split into two halves separated by a dotted vertical line labelled "concentration gradient." The left half is shaded dark red with densely packed particle dots labelled "High concentration." The right half is pale with sparse dots labelled "Low concentration." Arrows of different lengths cross the dotted line: many long arrows point from left to right, and a few short arrows point from right to left. A net arrow beneath both panels points left-to-right and is labelled "Net diffusion." A smaller inset panel at the bottom shows Fick's Law written out symbolically, with each variable (concentration difference, surface area, membrane thickness) colour-coded and matched to a labelled part of the diagram. A second inset shows two identical containers — one at 20°C with slow-moving arrows and one at 60°C with fast-moving arrows — to illustrate the temperature effect.</p>
+<figure><img src="../../illustrations/class-9/day_03.svg" alt="Diagram for How does diffusion work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Every cell in your body relies on diffusion for gas exchange: oxygen from air diffuses through alveoli in your lungs into blood, CO₂ diffuses out. India has ~100 million asthma patients — inflamed airways reduce the surface area available for diffusion, causing breathlessness. Dialysis machines (used by ~200,000 kidney patients in India) mimic diffusion: blood flows past a membrane; waste urea and excess salts diffuse out into dialysis fluid. Understanding diffusion underlies every drug delivery system — tablets, patches, inhalers — designed by India's generic drug industry, which supplies 20% of global medicines.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Place one drop of ink in the centre of a petri dish of still agar gel (or very still water). Observe over 10 minutes. The colour spreads outward in all directions equally — this is pure diffusion, no convection. Put the dish in sunlight (warmer) and compare to a dish in shade. The warmer dish shows faster spreading — temperature increases particle kinetic energy, increasing diffusion rate.</p>
+<p>If you have two identical dishes, add the same sized ink drop to each at the same time. Leave one at room temperature and wrap the other in a cloth soaked in warm water (about 40°C). After 5 minutes, photograph both and estimate the diameter of the stain. The warm dish stain should be noticeably wider — a direct, measurable demonstration of how temperature affects diffusion rate.</p>
+</div><h2>7. Think deeper</h2>
+<p>Graham's Law of Diffusion: rate ∝ 1/√(molecular mass). So hydrogen (mass 2) diffuses 4× faster than oxygen (mass 32). This principle was used in the Manhattan Project to separate uranium-235 from uranium-238 for nuclear weapons — the lighter ²³⁵UF₆ molecules diffused slightly faster through membranes, allowing gradual separation. India's uranium enrichment at the Nuclear Fuel Complex, Hyderabad, uses similar diffusion principles.</p>
+<p>The same statistical foundation that explains perfume spreading in a room also explains why a sugar cube dropped in a cup of tea will eventually sweeten the whole cup without stirring — the sugar molecules walk a "random walk," and over enough steps, they reach every corner of the liquid. Mathematically, the distance a particle diffuses scales with the square root of time: to diffuse twice as far, it needs four times as long. This is why diffusion across a single cell (10 µm) takes milliseconds, but diffusion across a room (5 m) takes many minutes.</p>
+<p><strong>Predict:</strong> A dialysis patient's blood contains 0.8 g/L of urea. The dialysis fluid starts with 0 g/L urea. As dialysis runs, the fluid fills with urea. At what point would you expect the rate of urea removal from the blood to slow down significantly — and why? What would the dialysis technician have to do to maintain the rate?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What correctly describes diffusion?</p>
+<ul>
+<li>A. Diffusion is the movement of water molecules only through a semipermeable membrane</li>
+<li>B. Diffusion is the net movement of particles from high concentration toward low concentration</li>
+<li>C. Diffusion is the process by which particles clump together under gravitational attraction</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of diffusion more useful than memorising the definition?</p>
+<ul>
+<li>A. Definitions are hard to remember, while mechanisms can be guessed from context</li>
+<li>B. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>C. Mechanisms are tested less frequently in school examinations than definitions</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If temperature were increased, what would you predict about the rate of diffusion?</p>
+<ul>
+<li>A. Diffusion would slow down because higher temperature makes particles too energetic to spread</li>
+<li>B. Diffusion would stop because particles become too heavy at high temperatures</li>
+<li>C. Diffusion would speed up because higher temperature increases particle kinetic energy</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A student sets up an experiment to test how membrane thickness affects diffusion. She fills a sausage-shaped dialysis tube (a semipermeable membrane) with concentrated glucose solution and places it in a beaker of pure water. She has two membrane samples: thin (0.02 mm) and thick (0.08 mm).</p>
+<p>Using Fick's Law, predict how the rate of glucose diffusion will differ between the two membranes. Then explain: if she doubled the surface area of the thin membrane (by using a larger tube) and also doubled the concentration difference, by what factor would the diffusion rate change? Show your reasoning step by step. Finally, identify one biological structure in the human body that maximises diffusion rate by exploiting all three variables in Fick's Law simultaneously.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Diffusion is fast enough for cells but far too slow for rooms at human body temperature. Oxygen diffuses across a cell membrane (about 10 micrometres) in about 0.1 milliseconds — fast enough to supply a mitochondrion. But if you had to rely on diffusion alone to supply oxygen to a human body from the lungs (about 1 metre), it would take roughly 11 years. This is why multicellular life required a circulatory system: the heart is a bulk-flow pump that solves the distance problem that diffusion cannot.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Diffusion is net particle movement from high to low concentration, driven entirely by random motion — no energy input required — and its rate increases with temperature, surface area, and concentration difference.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,165 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="plateArr26" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#dc2626"/>
+  </marker>
+  <marker id="waveArr26" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 7 2.5, 0 5" fill="#1f5f8b"/>
+  </marker>
+</defs>
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why do earthquakes happen?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 26</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">Why do earthquakes happen?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Tectonic stress builds at plate boundaries → sudden slip → seismic waves — Day 26</text>
+
+<!-- LEFT PANEL: Transform fault top view (x=20-480, y=68-290) -->
+<rect x="20" y="68" width="460" height="222" rx="6" fill="#f0f7ff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="250" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Transform Fault — Stress Builds Over Time</text>
+
+<!-- Step 1: Plates locked -->
+<rect x="35" y="95" width="130" height="70" rx="4" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+<text x="100" y="113" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Step 1: Locked</text>
+<!-- Two plates side by side -->
+<rect x="45" y="118" width="50" height="36" rx="3" fill="#92400e"/>
+<rect x="100" y="118" width="50" height="36" rx="3" fill="#78350f"/>
+<text x="70" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Plate A</text>
+<text x="125" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Plate B</text>
+<!-- Locked zigzag boundary -->
+<polyline points="97,118 93,126 97,134 93,142 97,150 93,154" fill="none" stroke="#d97706" stroke-width="2"/>
+
+<!-- Step 2: Stress building -->
+<rect x="175" y="95" width="130" height="70" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="240" y="113" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Step 2: Stress</text>
+<rect x="185" y="118" width="50" height="36" rx="3" fill="#92400e"/>
+<rect x="241" y="118" width="50" height="36" rx="3" fill="#78350f"/>
+<!-- Pressure arrows -->
+<line x1="184" y1="136" x2="172" y2="136" stroke="#dc2626" stroke-width="2" marker-end="url(#plateArr26)"/>
+<line x1="293" y1="136" x2="305" y2="136" stroke="#dc2626" stroke-width="2" marker-end="url(#plateArr26)"/>
+<!-- Stress squiggles -->
+<path d="M234,122 Q232,128 236,134 Q232,140 236,146 Q232,152 234,154" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+<text x="240" y="162" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">years of push</text>
+
+<!-- Step 3: SLIP -->
+<rect x="315" y="95" width="150" height="70" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="390" y="113" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Step 3: SLIP!</text>
+<rect x="325" y="118" width="50" height="36" rx="3" fill="#92400e"/>
+<rect x="395" y="118" width="50" height="36" rx="3" fill="#78350f"/>
+<!-- Slip gap -->
+<text x="380" y="140" text-anchor="middle" font-family="Arial" font-size="22" fill="#dc2626">⚡</text>
+<!-- Slip arrows (opposite directions) -->
+<line x1="327" y1="122" x2="305" y2="115" stroke="#dc2626" stroke-width="2" marker-end="url(#plateArr26)"/>
+<line x1="443" y1="150" x2="465" y2="157" stroke="#dc2626" stroke-width="2" marker-end="url(#plateArr26)"/>
+<text x="390" y="176" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">sudden fault slip</text>
+
+<!-- Connector arrows -->
+<line x1="165" y1="130" x2="173" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#waveArr26)"/>
+<line x1="306" y1="130" x2="314" y2="130" stroke="#555" stroke-width="1.5" marker-end="url(#waveArr26)"/>
+
+<!-- Seismic waves radiating -->
+<text x="250" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">Seismic waves radiate from focus:</text>
+<!-- Wave rings -->
+<circle cx="250" cy="252" r="12" fill="none" stroke="#1f5f8b" stroke-width="1.5" opacity="0.9"/>
+<circle cx="250" cy="252" r="24" fill="none" stroke="#1f5f8b" stroke-width="1.2" opacity="0.7"/>
+<circle cx="250" cy="252" r="36" fill="none" stroke="#1f5f8b" stroke-width="1" opacity="0.5"/>
+<circle cx="250" cy="252" r="48" fill="none" stroke="#1f5f8b" stroke-width="0.8" opacity="0.3"/>
+<text x="250" y="255" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">focus</text>
+<text x="320" y="252" font-family="Arial" font-size="14" fill="#1f5f8b">P-waves (fastest,</text>
+<text x="320" y="264" font-family="Arial" font-size="14" fill="#1f5f8b">compress rock)</text>
+<text x="320" y="278" font-family="Arial" font-size="14" fill="#dc2626">S-waves (slower,</text>
+<text x="320" y="287" font-family="Arial" font-size="14" fill="#dc2626">shear rock sideways)</text>
+
+<!-- RIGHT PANEL TOP: Cross section with focus/epicentre (x=490-978, y=68-245) -->
+<rect x="490" y="68" width="488" height="177" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="734" y="88" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Cross-section: Focus and Epicentre</text>
+
+<!-- Ground surface line -->
+<line x1="505" y1="130" x2="970" y2="130" stroke="#4ade80" stroke-width="4"/>
+<text x="520" y="125" font-family="Arial" font-size="14" fill="#065f46">ground surface</text>
+
+<!-- Buildings on surface -->
+<rect x="600" y="110" width="20" height="20" fill="#6b7280"/>
+<rect x="605" y="102" width="10" height="10" fill="#4b5563"/>
+<rect x="680" y="110" width="20" height="20" fill="#6b7280"/>
+<rect x="685" y="102" width="10" height="10" fill="#4b5563"/>
+<!-- Building shaking -->
+<rect x="760" y="107" width="20" height="23" fill="#dc2626" opacity="0.7"/>
+<rect x="765" y="99" width="10" height="10" fill="#dc2626" opacity="0.7"/>
+<text x="770" y="93" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">shaking!</text>
+
+<!-- Epicentre marker on surface -->
+<circle cx="734" cy="130" r="6" fill="#dc2626"/>
+<text x="734" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">epicentre</text>
+
+<!-- Underground layers -->
+<rect x="505" y="130" width="465" height="40" rx="0" fill="#d97706" opacity="0.3"/>
+<rect x="505" y="170" width="465" height="30" rx="0" fill="#d97706" opacity="0.5"/>
+<text x="505" y="147" font-family="Arial" font-size="14" fill="#92400e">crust</text>
+<text x="505" y="182" font-family="Arial" font-size="14" fill="#92400e">upper mantle</text>
+
+<!-- Focus point -->
+<circle cx="734" cy="185" r="8" fill="#dc2626"/>
+<text x="734" y="204" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">focus (hypocentre)</text>
+<text x="734" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">where fault slipped</text>
+
+<!-- Vertical line epicentre to focus -->
+<line x1="734" y1="136" x2="734" y2="177" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+<!-- Wave rings from focus -->
+<circle cx="734" cy="185" r="20" fill="none" stroke="#1f5f8b" stroke-width="1.5" opacity="0.7"/>
+<circle cx="734" cy="185" r="35" fill="none" stroke="#1f5f8b" stroke-width="1" opacity="0.5"/>
+
+<!-- India map box (x=490-978, y=253-478) -->
+<rect x="490" y="253" width="488" height="225" rx="6" fill="#f0f7ff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="734" y="273" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">India's Seismic Zones</text>
+
+<!-- Simplified India outline zone bands -->
+<rect x="505" y="283" width="458" height="35" rx="4" fill="#fee2e2"/>
+<text x="734" y="298" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Zone V — Highest Risk</text>
+<text x="734" y="312" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Kashmir, Uttarakhand, HP, NE India — Himalayan zone</text>
+
+<rect x="505" y="325" width="458" height="35" rx="4" fill="#fed7aa"/>
+<text x="734" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#ea580c">Zone IV — High Risk</text>
+<text x="734" y="354" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Delhi, Jammu, parts of Bihar and Rajasthan</text>
+
+<rect x="505" y="367" width="458" height="35" rx="4" fill="#fef9c3"/>
+<text x="734" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#ca8a04">Zone III — Moderate Risk</text>
+<text x="734" y="396" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mumbai, Bengaluru, Kolkata — ancient faults, lower activity</text>
+
+<rect x="505" y="409" width="458" height="25" rx="4" fill="#d1fae5"/>
+<text x="734" y="426" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Zone II (Low Risk): Chennai, South India (Deccan craton)</text>
+
+<text x="505" y="453" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">2001 Bhuj (Gujarat):</text>
+<text x="505" y="466" font-family="Arial" font-size="14" fill="#333">Magnitude 7.7. Allah Bund fault reactivated after ~180 yrs.</text>
+
+<!-- LEFT BOTTOM: Seismograph trace (x=20-480, y=305-478) -->
+<rect x="20" y="305" width="460" height="173" rx="6" fill="#f9fafb" stroke="#6b7280" stroke-width="2"/>
+<text x="250" y="325" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Seismograph Trace</text>
+
+<!-- Trace baseline -->
+<line x1="40" y1="400" x2="460" y2="400" stroke="#9ca3af" stroke-width="1"/>
+<!-- Flat baseline before P-wave -->
+<polyline points="40,400 130,400 132,399 134,400 136,400" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<!-- P-wave arrival: small oscillations -->
+<polyline points="140,400 145,390 150,410 155,388 160,412 165,395 170,405 175,400 180,400" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<!-- Quiet zone between P and S -->
+<polyline points="180,400 220,400 222,401 224,400" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<!-- S-wave arrival: large oscillations -->
+<polyline points="230,400 235,365 240,435 245,355 250,445 255,360 260,440 265,368 270,430 275,375 280,420 285,385 290,408 300,400 320,400" fill="none" stroke="#dc2626" stroke-width="2"/>
+<!-- Flat after -->
+<polyline points="320,400 460,400" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+
+<!-- Labels on trace -->
+<line x1="140" y1="340" x2="140" y2="395" stroke="#1f5f8b" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="140" y="334" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">P-wave</text>
+<text x="140" y="344" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b">arrives first</text>
+<line x1="230" y1="340" x2="230" y2="395" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+<text x="230" y="334" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626" font-weight="700">S-wave</text>
+<text x="230" y="344" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">arrives later</text>
+<text x="265" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">3 stations → triangulate epicentre location</text>
+<text x="265" y="473" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Richter scale: each +1 unit = 31.6× more energy released</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Fault stress builds as plates push. When rock strength is exceeded → sudden slip → seismic waves → earthquake.</text>
 </svg>

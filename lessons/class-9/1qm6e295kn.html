@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 02 — Why do particles move even when you can't see them? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 02</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do particles move even when you can't see them?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why particles are always in motion, describe Brownian motion, and predict what happens to particle speed when temperature changes.</p>
+</div><h2>1. The mystery</h2>
+<p>A drop of food colouring placed gently into still water spreads slowly without stirring. Smoke particles under a microscope jiggle randomly without any visible cause. What is moving them? And why?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Kinetic energy and temperature:</strong> Every particle has kinetic energy (KE = ½mv²). Temperature is a measure of the <em>average</em> kinetic energy of all particles in a substance. Higher temperature = faster particles. At absolute zero (−273.15°C = 0 K), particle motion approaches its minimum.</p>
+<p><strong>Brownian motion:</strong> In 1827, botanist Robert Brown noticed pollen grains in water moving in random zigzag paths. Einstein explained this in 1905: invisible water molecules constantly collide with the pollen from all directions, but randomly — at any instant, slightly more hits come from one side, pushing the pollen that way. Visible proof of invisible particles.</p>
+<p><strong>Why particles move in a solid:</strong> Even in a solid, particles vibrate about their fixed positions — they don't stop. This is why solids conduct heat: vibrating particles pass energy to their neighbours.</p>
+<p><strong>Evaporation:</strong> The fastest-moving particles at the surface of a liquid escape into gas phase. This is why liquids cool as they evaporate — the fastest (hottest) particles leave first, lowering average KE.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine a football stadium packed with players, each bouncing a ball on the spot. The faster each player bounces, the warmer the stadium "feels." Now drop a large inflated beach ball into the crowd. It gets knocked around by all the bouncing — sometimes harder from the left, sometimes from the right — and it drifts in a jittery, unpredictable path. This is Brownian motion: the beach ball is the pollen grain, and the players bouncing balls are water molecules.</p>
+<p>Two crucial points from this analogy:</p>
+<ol>
+<li><strong>The ball never stops moving</strong> — because the players never stop bouncing, even at low energy. At absolute zero, the bouncing would almost completely stop, and the beach ball would finally hold still.</li>
+<li><strong>You cannot see the players, only the beach ball</strong> — this is exactly Brown's situation. He could see the pollen; he could not see the water molecules. The random jitter of the visible grain was the proof that something invisible was hitting it.</li>
+</ol>
+<p>The hotter the stadium (higher temperature), the faster each player bounces, the more forceful each collision with the beach ball, and the faster and more erratically the ball drifts. Temperature controls energy; energy controls motion.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG diagram has two panels. The left panel shows a microscope view: a large pollen grain (labelled "visible particle") surrounded by dozens of tiny water molecules (labelled "invisible particles") with short arrows pointing in random directions from each molecule toward the grain. A dotted zigzag trail behind the pollen grain shows its path over time — sharp random turns at each major collision. The right panel is a temperature comparison: two beakers side by side, one labelled "Cold water (4°C)" and one labelled "Hot water (60°C)." In the cold beaker, water molecules have short arrows indicating slow movement. In the hot beaker, the same molecules have long arrows radiating outward. A red ink drop in each beaker shows a small spread in the cold beaker and a much larger spread in the hot beaker after the same elapsed time, with an inset clock showing "5 minutes."</p>
+<figure><img src="../../illustrations/class-9/day_02.svg" alt="Diagram for Why do particles move even when you can't see them?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Refrigerators (Godrej, Whirlpool) work by letting a refrigerant liquid evaporate inside the cooling chamber, absorbing heat energy as the fastest particles escape. India's cold chain for food and vaccines relies on this principle. The ₹77,000 crore Indian refrigerator market depends on particle physics. Understanding evaporative cooling also underlies India's traditional clay pot (matka) cooling — water seeps through porous clay and evaporates, cooling water inside. Every vaccine in India's Universal Immunisation Programme reaches rural health centres through a cold chain maintained by refrigerators whose operating principle is evaporation removing high-energy particles from a liquid.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Place a drop of ink in cold water and another in hot water. Observe which spreads faster. The hot water particles have more kinetic energy → they move faster → they collide with ink particles more forcefully → ink spreads faster. You're watching temperature's effect on particle motion.</p>
+<p>Once you have observed the difference, try to estimate: if the ink spreads twice as fast in hot water as in cold, has the temperature doubled (in Celsius)? Heat cold water from 10°C to 40°C — that is a 4× increase in Celsius, but the Kelvin temperatures are 283 K and 313 K, only about 1.1× increase. Average kinetic energy scales with Kelvin temperature, not Celsius. The smaller kinetic energy increase explains why diffusion rates do not quadruple when temperature appears to quadruple on the Celsius scale.</p>
+</div><h2>7. Think deeper</h2>
+<p>Einstein's 1905 paper on Brownian motion was a landmark proof that atoms and molecules actually exist — this was still debated at the time. By calculating how far a pollen grain would drift in a given time from known molecular masses, Einstein gave experimenters a way to measure Avogadro's number (6.022 × 10²³). This work contributed to Einstein receiving the 1921 Nobel Prize in Physics (though officially for the photoelectric effect, the Brownian motion paper was equally transformative).</p>
+<p>At very low temperatures approaching absolute zero, the quantum behaviour of particles becomes dominant. Helium, for example, remains liquid even at near-absolute zero because its quantum zero-point energy prevents it from solidifying under normal pressure. This "quantum jitter" is a residual motion that cannot be removed by any amount of cooling — it is the ground state of the particle, not a thermal effect. So even the statement "motion approaches minimum at absolute zero" has a quantum asterisk.</p>
+<p><strong>Predict:</strong> A sealed room contains perfume vapour uniformly distributed at 30°C. If the room is cooled to 5°C overnight, would you expect the perfume molecules to still be uniformly distributed in the morning, or to settle toward the floor? Use what you know about kinetic energy and gravity to reason through what would actually happen.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main reason particles in matter are always in motion?</p>
+<ul>
+<li>A. Particles possess kinetic energy and move continuously at all temperatures above absolute zero</li>
+<li>B. Particles are pushed by gravity which keeps them vibrating constantly</li>
+<li>C. Particles move only when an external force such as wind acts on them</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q2</h3>
+<p>Why is knowing the mechanism of particle motion more useful than just knowing they move?</p>
+<ul>
+<li>A. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>B. It saves time because you only need to learn one fact about motion</li>
+<li>C. Mechanisms are easier to draw in diagrams than descriptions of motion</li>
+</ul>
+<p><strong>Correct answer: A</strong></p>
+<h3>Q3</h3>
+<p>If temperature were lowered toward absolute zero, what would happen to particle motion?</p>
+<ul>
+<li>A. Particle motion would increase because cold particles vibrate more rapidly</li>
+<li>B. Particle motion would stay constant because temperature does not affect speed</li>
+<li>C. Particle motion would approach zero as thermal energy is removed from the system</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A student places a sealed glass jar containing a small amount of liquid acetone (nail polish remover) on a warm windowsill at 40°C. The jar feels warm. After moving it to a cool room at 10°C, the student notices tiny droplets forming on the inner glass surface.</p>
+<p>Using the kinetic particle model, explain step by step: (a) why acetone molecules left the liquid surface at 40°C to fill the jar with vapour; (b) why the same molecules condense back onto the glass at 10°C; and (c) why the liquid that was left behind at 40°C would feel cool to the touch if the jar were open. Refer specifically to particle speed and kinetic energy in each step. No equipment needed — this is a reasoning exercise.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The motion of particles in matter means that heat travels through a metal rod purely by particles knocking into their neighbours — like toppling dominoes, but in all directions at once. When one end of an iron rod is heated, the iron atoms at the hot end vibrate faster and transfer energy to adjacent atoms, which transfer it onward. This process, called thermal conduction, means the "warmth" you feel from a metal surface is literally atomic vibrations passing from atom to atom through billions of collisions until they reach the atoms in your fingertip. The warmth of a cup of chai is kinetic energy of water molecules transferred via particle collisions all the way to nerve endings in your palm.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Particles in all matter are always moving because they possess kinetic energy proportional to temperature — this invisible motion is what drives evaporation, heat conduction, and the random jitter of Brownian motion.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 2 of 30</footer>
+</div>
+</body>
+</html>

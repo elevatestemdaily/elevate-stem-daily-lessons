@@ -1,26 +1,127 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr17" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#7c3aed"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does your brain communicate with your </text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 17</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How does your brain communicate with your body?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Action potential, synapse, neurotransmitters, reflex arc — Day 17</text>
+
+<!-- LEFT: Neuron structure -->
+<rect x="20" y="74" width="310" height="416" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="175" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#7c3aed">Neuron Structure</text>
+
+<!-- Neuron diagram -->
+<rect x="30" y="104" width="290" height="164" rx="4" fill="white" stroke="#7c3aed" stroke-width="1"/>
+<!-- Dendrites -->
+<line x1="90" y1="150" x2="60" y2="120" stroke="#7c3aed" stroke-width="2"/>
+<line x1="90" y1="150" x2="55" y2="145" stroke="#7c3aed" stroke-width="2"/>
+<line x1="90" y1="150" x2="65" y2="170" stroke="#7c3aed" stroke-width="2"/>
+<!-- Cell body -->
+<circle cx="110" cy="160" r="28" fill="#c4b5fd" stroke="#7c3aed" stroke-width="2"/>
+<text x="110" y="157" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">Cell</text>
+<text x="110" y="171" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">body</text>
+<!-- Axon -->
+<line x1="138" y1="160" x2="295" y2="160" stroke="#7c3aed" stroke-width="3"/>
+<!-- Myelin sheaths -->
+<rect x="155" y="152" width="20" height="16" rx="8" fill="#a5f3fc" stroke="#0284c7" stroke-width="1"/>
+<rect x="185" y="152" width="20" height="16" rx="8" fill="#a5f3fc" stroke="#0284c7" stroke-width="1"/>
+<rect x="215" y="152" width="20" height="16" rx="8" fill="#a5f3fc" stroke="#0284c7" stroke-width="1"/>
+<rect x="245" y="152" width="20" height="16" rx="8" fill="#a5f3fc" stroke="#0284c7" stroke-width="1"/>
+<!-- Axon terminals -->
+<circle cx="295" cy="155" r="5" fill="#7c3aed"/>
+<circle cx="295" cy="165" r="5" fill="#7c3aed"/>
+<text x="175" y="192" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">dendrite → cell body → axon → terminal</text>
+<text x="60" y="212" font-family="Arial" font-size="14" fill="#555">Myelin sheath speeds signal 100x</text>
+<text x="60" y="228" font-family="Arial" font-size="14" fill="#555">Nodes of Ranvier: gaps in myelin</text>
+<text x="60" y="246" font-family="Arial" font-size="14" fill="#555">Signal jumps node to node (saltatory)</text>
+<text x="60" y="262" font-family="Arial" font-size="14" fill="#555">Unmyelinated: 1 m/s   Myelinated: 100 m/s</text>
+
+<rect x="30" y="282" width="290" height="96" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="175" y="300" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Action Potential</text>
+<text x="40" y="320" font-family="Arial" font-size="14" fill="#333">Resting: −70 mV (Na⁺ out, K⁺ in)</text>
+<text x="40" y="338" font-family="Arial" font-size="14" fill="#333">Stimulus: Na⁺ rushes in → +40 mV</text>
+<text x="40" y="356" font-family="Arial" font-size="14" fill="#555">K⁺ flows out → repolarises</text>
+<text x="40" y="372" font-family="Arial" font-size="14" fill="#555">Signal travels axon like a wave</text>
+
+<rect x="30" y="388" width="290" height="94" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1"/>
+<text x="175" y="406" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Reflex Arc</text>
+<text x="40" y="426" font-family="Arial" font-size="14" fill="#333">Stimulus → receptor → sensory nerve</text>
+<text x="40" y="444" font-family="Arial" font-size="14" fill="#333">→ spinal cord → motor nerve → effector</text>
+<text x="40" y="462" font-family="Arial" font-size="14" fill="#555">Bypasses brain (fast!): knee jerk, hot pan</text>
+<text x="40" y="478" font-family="Arial" font-size="14" fill="#555">Time: 20–50 ms vs 200 ms conscious</text>
+
+<!-- CENTRE: Synapse -->
+<rect x="344" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Synapse &amp; Neurotransmitters</text>
+
+<rect x="354" y="104" width="312" height="186" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="510" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Synaptic Transmission</text>
+<!-- Pre-synaptic terminal -->
+<rect x="364" y="132" width="120" height="56" rx="4" fill="#c4b5fd" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="424" y="156" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">Pre-synaptic</text>
+<text x="424" y="172" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c1d95">terminal</text>
+<!-- Vesicles -->
+<circle cx="374" cy="148" r="6" fill="#a5f3fc"/>
+<circle cx="388" cy="152" r="6" fill="#a5f3fc"/>
+<circle cx="376" cy="162" r="6" fill="#a5f3fc"/>
+<!-- Synaptic cleft -->
+<rect x="484" y="130" width="30" height="60" fill="#f0f9ff"/>
+<text x="499" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">gap</text>
+<text x="499" y="174" text-anchor="middle" font-family="Arial" font-size="14" fill="#374151">20 nm</text>
+<!-- Post-synaptic -->
+<rect x="514" y="132" width="142" height="56" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+<text x="585" y="156" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Post-synaptic</text>
+<text x="585" y="172" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">membrane</text>
+<!-- Dots in cleft -->
+<circle cx="494" cy="148" r="4" fill="#0284c7"/>
+<circle cx="497" cy="158" r="4" fill="#0284c7"/>
+<circle cx="494" cy="168" r="4" fill="#0284c7"/>
+<text x="510" y="210" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Neurotransmitter in vesicle → released</text>
+<text x="510" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">into synaptic cleft → binds receptor</text>
+<text x="510" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">→ new action potential (or inhibition)</text>
+<text x="510" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Then: reuptake or degradation</text>
+<text x="510" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Key NTs: acetylcholine, dopamine, serotonin</text>
+
+<rect x="354" y="300" width="312" height="182" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="510" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Neurotransmitter Disorders</text>
+<text x="364" y="340" font-family="Arial" font-size="14" fill="#333">Parkinson's: too little dopamine</text>
+<text x="364" y="360" font-family="Arial" font-size="14" fill="#555">Levodopa drug replenishes it</text>
+<text x="364" y="380" font-family="Arial" font-size="14" fill="#333">Depression: low serotonin/noradrenaline</text>
+<text x="364" y="400" font-family="Arial" font-size="14" fill="#555">SSRIs block serotonin reuptake</text>
+<text x="364" y="420" font-family="Arial" font-size="14" fill="#333">Alzheimer's: acetylcholine deficiency</text>
+<text x="364" y="440" font-family="Arial" font-size="14" fill="#555">Nerve gas: blocks acetylcholinesterase</text>
+<text x="364" y="460" font-family="Arial" font-size="14" fill="#555">→ continuous firing → paralysis</text>
+<text x="364" y="476" font-family="Arial" font-size="14" fill="#555">DRDO: antidotes for nerve agents</text>
+
+<!-- RIGHT: India context -->
+<rect x="670" y="74" width="310" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="825" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India &amp; Neuroscience</text>
+
+<rect x="680" y="104" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">NIMHANS Bangalore</text>
+<text x="825" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">National Institute Mental Health</text>
+<text x="825" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 197 million mental disorders</text>
+<text x="825" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Depression, schizophrenia, anxiety</text>
+
+<rect x="680" y="202" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Yoga &amp; the Nervous System</text>
+<text x="825" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Pranayama activates vagus nerve</text>
+<text x="825" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Parasympathetic → reduced cortisol</text>
+<text x="825" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">NIMHANS + AIIMS: yoga studies</text>
+
+<rect x="680" y="300" width="290" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="825" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Neurosurgery</text>
+<text x="825" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 500+ neurosurgeons</text>
+<text x="825" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Parkinson's DBS surgery (deep brain)</text>
+<text x="825" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Cochlear implants: inner ear neurons</text>
+
+<rect x="680" y="398" width="290" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="825" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Epilepsy — India</text>
+<text x="825" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">10 million epilepsy patients in India</text>
+<text x="825" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Uncontrolled neuron firing (seizures)</text>
+<text x="825" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Anti-epileptic drugs stabilise ion channels</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Action potential: Na⁺ rush in → +40 mV. Synapse: neurotransmitter crosses gap → new signal.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Reflex arc bypasses brain (20–50 ms). India: 197M mental disorders; NIMHANS is Asia's largest neuro institute.</text>
 </svg>

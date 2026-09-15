@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 11 — How does a hydraulic lift lift a car? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 11</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a hydraulic lift lift a car?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover how a small force on a tiny piston can lift an entire car — and understand the one principle that makes hydraulic brakes, JCB excavators, and aircraft landing gear all work.</p>
+</div><h2>1. The mystery</h2>
+<p>A mechanic at a garage pushes a small lever with one hand and a 1,500 kg car rises smoothly into the air. A JCB excavator bucket digs into hard rock with enormous force — all controlled by a driver pressing small pedals. A dentist's chair adjusts effortlessly under a patient weighing 80 kg. In every case, a small input force creates a vastly larger output force. How does fluid trapped inside pipes multiply force?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Pascal's Law:</strong></p>
+<p>When pressure is applied to a confined fluid, it is transmitted equally and undiminished in all directions. This is the foundation of all hydraulic systems.</p>
+<p>Pressure is defined as: <strong>P = F / A</strong> (Force ÷ Area), measured in Pascals (Pa = N/m²).</p>
+<p><strong>How the hydraulic lift works:</strong></p>
+<p>A small piston (area A₁) and a large piston (area A₂) are connected by an enclosed oil-filled pipe.</p>
+<p>When you push down on the small piston with force F₁:
+- Pressure created: P = F₁ / A₁
+- This pressure is transmitted equally throughout the fluid
+- The same pressure acts on the large piston: P = F₂ / A₂
+- Therefore: <strong>F₁/A₁ = F₂/A₂</strong>, which gives <strong>F₂ = F₁ × (A₂/A₁)</strong></p>
+<p><strong>The key equation:</strong></p>
+<p><strong>F₁ × A₂ = F₂ × A₁</strong> → the force is amplified by the ratio of piston areas.</p>
+<p>Example: A₁ = 10 cm², A₂ = 1,000 cm² (ratio = 100), input force F₁ = 100 N → output force F₂ = 10,000 N = enough to lift ~1,000 kg.</p>
+<p><strong>Energy is conserved:</strong></p>
+<p>The lift is not free. By the work-energy principle: Work in = Work out (ignoring friction).</p>
+<p>F₁ × d₁ = F₂ × d₂</p>
+<p>If force is multiplied by 100, distance is divided by 100. The small piston travels 100 cm for the large piston to rise 1 cm.</p>
+<p><strong>Why oil, not water?</strong></p>
+<p>Hydraulic systems use oil because oil does not corrode metal, does not boil easily, lubricates the pistons, and has consistent viscosity.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of pressure like a rumour spreading through a crowd. Whisper a secret to one person in a small room — it spreads equally to everyone, no stronger or weaker per person. Hydraulic pressure is the same: apply pressure at one point and every square centimetre of the fluid receives exactly that pressure. The large piston has more square centimetres exposed, so it receives more total force — even though each cm² gets the same pressure.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_11.svg" alt="Diagram for How does a hydraulic lift lift a car?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a cross-section of a hydraulic lift: a narrow input cylinder connected by a pipe to a wide output cylinder. The small piston is pushed down with a small force arrow; the large piston lifts a car with a large force arrow. Pressure arrows show equal pressure throughout the fluid. The equation F₁/A₁ = F₂/A₂ appears with numbers. A sidebar shows real applications: car lift, JCB arm, aircraft landing gear, bicycle brakes.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Maruti service centres:</strong> Every authorised Maruti, Hyundai, or Tata service centre in India uses hydraulic vehicle lifts. A typical 4-post hydraulic lift operates at ~150 bar and can lift a 3,000 kg vehicle.</li>
+<li><strong>JCB excavators:</strong> The JCB factory in Pune manufactures India's most common earthmoving equipment. A JCB 3DX backhoe uses hydraulic cylinders at up to 350 bar — digging force exceeds 50,000 N.</li>
+<li><strong>Mumbai Metro elevators:</strong> Platform elevators at metro stations use hydraulic systems to lift wheelchair users in compact shafts.</li>
+<li><strong>Aircraft brakes:</strong> Landing gear brakes at Indian airports use hydraulic brake systems. Pilot presses brake pedal → hydraulic pressure → callipers grip wheel disc.</li>
+<li><strong>Medical/dental chairs:</strong> Hydraulic patient chairs allow precise, smooth height adjustment — essential in Ayushman Bharat health centres across rural India.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Take two syringes of different sizes (5 mL and 20 mL). Connect their nozzles with a short rubber tube filled with water (no air bubbles). Push the small syringe plunger — the large syringe plunger moves with much less force required at the large end, but also moves less distance. Calculate the area ratio (roughly proportional to the square of the barrel diameter ratio) and verify that the output force is amplified approximately by this ratio.</p>
+</div><h2>7. Think deeper</h2>
+<p>A hydraulic system seems to produce more force than you put in. Does this violate Newton's laws? No — because force and displacement are inversely related. Work = Force × Distance. The work you do on the small piston equals the work done by the large piston (minus friction losses). Hydraulics are a mechanical advantage system, like a lever, not a free energy machine. What does this imply about the speed at which the large piston rises compared to the speed at which the small piston is pushed?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What scientific principle makes a hydraulic lift able to lift a heavy car?</p>
+<ul>
+<li>A. Bernoulli's principle: fast-moving fluid creates lift under the car</li>
+<li>B. Pascal's law: pressure applied to a fluid is transmitted equally in all directions</li>
+<li>C. Archimedes' principle: the oil displaces the car's weight upward</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding Pascal's law more useful than just knowing hydraulics work?</p>
+<ul>
+<li>A. Knowing hydraulics work is sufficient for designing all mechanical systems</li>
+<li>B. Pascal's law only applies to water, not to the oil used in hydraulics</li>
+<li>C. It lets engineers calculate piston sizes needed to lift any given load</li>
+</ul>
+<h3>Q3</h3>
+<p>If the output piston area of a hydraulic lift were doubled, what would you predict?</p>
+<ul>
+<li>A. The lift force would be halved because more area reduces the pressure</li>
+<li>B. The fluid would flow backwards and the car would be lowered instead</li>
+<li>C. The lift force would double, allowing the system to lift twice the load</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A hydraulic press has an input piston of area 5 cm² and an output piston of area 500 cm². (a) What pressure is created when an input force of 200 N is applied? (b) What output force does the press exert? (c) If the input piston moves 40 cm, how far does the output piston move? (d) Verify that work in equals work out (ignoring friction). (Hint: convert cm² to m²: 1 cm² = 10⁻⁴ m².)</p>
+</div><h2>10. One surprising idea</h2>
+<p>The word "hydraulic" comes from the Greek <em>hydraulis</em> — a water organ invented in the 3rd century BCE by Ctesibius of Alexandria. He used water pressure to drive air through organ pipes. Blaise Pascal formalised the pressure law in 1648. Joseph Bramah used it in 1795 to build the first hydraulic press. Today, the same principle — unchanged since Pascal — allows the Chandrayaan-3 rover to adjust its wheels on the lunar surface and lets a Maruti mechanic in Nagpur lift a car with one hand.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Pascal's Law: pressure applied to a confined fluid transmits equally in all directions. F₂ = F₁ × (A₂/A₁). Larger piston area → greater force. Energy is conserved — larger force means smaller distance moved.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 11 of 30</footer>
+</div>
+</body>
+</html>

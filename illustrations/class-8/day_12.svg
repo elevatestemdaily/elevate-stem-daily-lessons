@@ -1,26 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="cur12" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1d4ed8"/></marker>
+  <marker id="frc12" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#065f46"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does an electric motor work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 12</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does an electric motor work?</text>
+<text x="500" y="62" text-anchor="middle" font-family="Arial" font-size="17" fill="#555">F = BIL — current in magnetic field → force → rotation — Day 12</text>
+
+<!-- ── LEFT: DC Motor cross-section ── -->
+<rect x="20" y="78" width="360" height="360" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="200" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">DC Motor</text>
+
+<!-- N magnet -->
+<rect x="30" y="108" width="70" height="250" rx="6" fill="#ef4444" stroke="#b91c1c" stroke-width="2"/>
+<text x="65" y="238" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">N</text>
+
+<!-- S magnet -->
+<rect x="320" y="108" width="70" height="250" rx="6" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2"/>
+<text x="355" y="238" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="white">S</text>
+
+<!-- Field lines -->
+<line x1="101" y1="190" x2="320" y2="190" stroke="#fca5a5" stroke-width="1.5" stroke-dasharray="6,3"/>
+<line x1="101" y1="233" x2="320" y2="233" stroke="#fca5a5" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="210" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#ef4444">B field N→S</text>
+
+<!-- Coil -->
+<rect x="155" y="118" width="110" height="220" rx="4" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+<!-- Current in coil sides -->
+<line x1="158" y1="175" x2="158" y2="270" stroke="#1d4ed8" stroke-width="3" marker-end="url(#cur12)"/>
+<line x1="262" y1="270" x2="262" y2="175" stroke="#1d4ed8" stroke-width="3" marker-end="url(#cur12)"/>
+<text x="140" y="226" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">I↓</text>
+<text x="278" y="226" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">I↑</text>
+
+<!-- Force arrows -->
+<line x1="148" y1="228" x2="122" y2="228" stroke="#065f46" stroke-width="3" marker-end="url(#frc12)"/>
+<line x1="272" y1="228" x2="298" y2="228" stroke="#065f46" stroke-width="3" marker-end="url(#frc12)"/>
+<text x="112" y="224" text-anchor="end" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">F</text>
+<text x="302" y="224" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">F</text>
+
+<!-- Rotation arc -->
+<path d="M210,126 Q240,110 240,130" fill="none" stroke="#c62828" stroke-width="2.5" marker-end="url(#cur12)"/>
+<text x="250" y="120" font-family="Arial" font-size="14" fill="#c62828" font-weight="700">Rotation</text>
+
+<!-- Axle -->
+<circle cx="210" cy="228" r="6" fill="#334155"/>
+<text x="220" y="232" font-family="Arial" font-size="14" fill="#334155">Axle</text>
+
+<!-- Commutator -->
+<rect x="177" y="340" width="66" height="16" rx="4" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+<text x="210" y="352" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f" font-weight="700">Commutator</text>
+
+<!-- Labels below motor -->
+<text x="200" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Every 180° the split ring reverses</text>
+<text x="200" y="408" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">current → force stays rotational</text>
+<text x="200" y="426" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Battery connected via carbon brushes</text>
+
+<!-- ── CENTRE: Equation + Rule ── -->
+<rect x="393" y="78" width="260" height="180" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="523" y="100" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Force Equation</text>
+<text x="523" y="132" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#7c3aed">F = B I L</text>
+<text x="523" y="156" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">B = magnetic field (Tesla)</text>
+<text x="523" y="176" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">I = current (Amperes)</text>
+<text x="523" y="196" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">L = conductor length (m)</text>
+<text x="523" y="218" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Larger B or I → more torque</text>
+<text x="523" y="246" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">(stronger field or more current)</text>
+
+<rect x="393" y="270" width="260" height="172" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="523" y="292" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#7c3aed">Fleming's Left-Hand Rule</text>
+<text x="523" y="316" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">☝ Index = B (field)</text>
+<text x="523" y="338" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">🖕 Middle = I (current)</text>
+<text x="523" y="360" text-anchor="middle" font-family="Arial" font-size="15" fill="#333">👍 Thumb = F (force)</text>
+<text x="523" y="384" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">All three mutually perpendicular</text>
+<text x="523" y="404" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Right-Hand Rule → generators</text>
+<text x="523" y="424" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Motor ↔ Generator: same device</text>
+
+<!-- ── RIGHT: Applications ── -->
+<rect x="666" y="78" width="314" height="375" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="823" y="100" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Applications in India</text>
+
+<rect x="676" y="110" width="294" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="130" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Ceiling fans</text>
+<text x="823" y="150" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">450 million fans in India — AC induction motor</text>
+<text x="823" y="170" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">5-star rated: 35 W vs old motors at 75 W</text>
+
+<rect x="676" y="186" width="294" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="206" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">E-rickshaws (1.5 million in India)</text>
+<text x="823" y="226" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">BLDC hub motors — no commutator</text>
+<text x="823" y="246" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Electronic controller replaces brushes</text>
+
+<rect x="676" y="262" width="294" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="282" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Mumbai Metro — Aqua Line</text>
+<text x="823" y="302" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">24 motors per train, 190 kW each</text>
+<text x="823" y="322" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">4,560 kW total — AC induction</text>
+
+<rect x="676" y="338" width="294" height="68" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="823" y="358" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">ISRO satellite reaction wheels</text>
+<text x="823" y="378" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Precise DC motors control pointing</text>
+<text x="823" y="398" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">No fuel needed — Chandrayaan, Aditya-L1</text>
+
+<rect x="676" y="414" width="294" height="38" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="823" y="432" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">20 million electric pumps in India — all motors</text>
+<text x="823" y="448" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">Irrigation, borewells, water supply</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">F = BIL: current in magnetic field → force → torque → rotation.</text>
+<text x="500" y="543" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Commutator reverses current every 180°, keeping rotation continuous. Stronger B or I → more torque.</text>
 </svg>

@@ -1,26 +1,86 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does blood know where to go?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 4</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<defs>
+  <marker id="grayArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+  </marker>
+  <marker id="redArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+  </marker>
+</defs>
+
+<!-- TITLE -->
+<text x="500" y="44" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">How does blood know where to go?</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="16" fill="#1f5f8b">Blood follows fixed plumbing — two loops, four chambers, one-way valves</text>
+
+<!-- ── LUNGS BOX  x=50–272, y=95–178 ── -->
+<!-- text zone x=130–272 | shapes zone x=50–120 -->
+<rect x="50" y="95" width="222" height="83" rx="8" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+<!-- lung shapes in left zone -->
+<ellipse cx="80" cy="136" rx="18" ry="24" fill="#93c5fd" stroke="#3b82f6" stroke-width="1.5"/>
+<ellipse cx="112" cy="136" rx="18" ry="24" fill="#93c5fd" stroke="#3b82f6" stroke-width="1.5"/>
+<!-- text in right zone (x=135+) -->
+<text x="195" y="119" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1e3a5f">LUNGS</text>
+<text x="195" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a5f">Drop CO₂</text>
+<text x="195" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#1e3a5f">Pick up O₂</text>
+
+<!-- ── HEART  x=390–610, y=185–368 ── -->
+<rect x="390" y="185" width="220" height="183" rx="14" fill="#fce7f3" stroke="#db2777" stroke-width="2.5"/>
+<text x="500" y="210" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#9d174d">HEART</text>
+<line x1="500" y1="220" x2="500" y2="363" stroke="#9d174d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="395" y1="282" x2="605" y2="282" stroke="#9d174d" stroke-width="1.5" stroke-dasharray="4,3"/>
+<!-- Chamber labels -->
+<text x="445" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#831843">Right Atrium</text>
+<text x="445" y="264" text-anchor="middle" font-family="Arial" font-size="14" fill="#9d174d">(RA)</text>
+<text x="555" y="248" text-anchor="middle" font-family="Arial" font-size="14" fill="#831843">Left Atrium</text>
+<text x="555" y="264" text-anchor="middle" font-family="Arial" font-size="14" fill="#9d174d">(LA)</text>
+<text x="445" y="315" text-anchor="middle" font-family="Arial" font-size="14" fill="#831843">Right Ventricle</text>
+<text x="445" y="331" text-anchor="middle" font-family="Arial" font-size="14" fill="#9d174d">(RV)</text>
+<text x="555" y="315" text-anchor="middle" font-family="Arial" font-size="14" fill="#831843">Left Ventricle</text>
+<text x="555" y="331" text-anchor="middle" font-family="Arial" font-size="14" fill="#9d174d">(LV)</text>
+<!-- valve symbols -->
+<polygon points="488,274 500,282 488,290" fill="#db2777" opacity="0.7"/>
+<polygon points="512,274 500,282 512,290" fill="#db2777" opacity="0.7"/>
+
+<!-- ── PULMONARY LOOP (top)
+     RV → up → lungs (gray/deoxygenated)
+     lungs → LA (red/oxygenated) ── -->
+<!-- RV up to y=148, left to x=272 -->
+<path d="M 445 185 L 445 148 L 272 148 L 272 110" stroke="#6b7280" stroke-width="3" fill="none" marker-end="url(#grayArrow)"/>
+<!-- Pulmonary artery label (in content area, clear of title zone) -->
+<text x="348" y="138" text-anchor="middle" font-family="Arial" font-size="14" fill="#6b7280">← Pulmonary artery</text>
+<!-- Lungs → LA: red path at y=132 -->
+<path d="M 272 132 L 430 132 L 430 185" stroke="#ef4444" stroke-width="3" fill="none" marker-end="url(#redArrow)"/>
+<!-- Pulmonary veins label -->
+<text x="348" y="120" text-anchor="middle" font-family="Arial" font-size="14" fill="#ef4444">Pulmonary veins →</text>
+
+<!-- ── SYSTEMIC LOOP (right + bottom) ── -->
+<!-- LV → aorta → body tissues (red) -->
+<path d="M 555 368 L 555 405 L 668 405 L 668 420" stroke="#ef4444" stroke-width="3" fill="none" marker-end="url(#redArrow)"/>
+<!-- Aorta label (x=570, y=395 — clear of body tissues box) -->
+<text x="608" y="397" font-family="Arial" font-size="14" fill="#ef4444">Aorta →</text>
+
+<!-- ── BODY TISSUES BOX  x=650–960, y=420–490 ── -->
+<rect x="650" y="420" width="310" height="70" rx="8" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
+<text x="805" y="445" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">BODY TISSUES</text>
+<text x="805" y="463" text-anchor="middle" font-family="Arial" font-size="14" fill="#78350f">Capillaries: O₂ out, CO₂ in</text>
+
+<!-- Body → RA return path (gray/deoxygenated) at y=458 -->
+<path d="M 650 455 L 340 455 L 340 430 L 390 430 L 390 368" stroke="#6b7280" stroke-width="3" fill="none" marker-end="url(#grayArrow)"/>
+<!-- Veins label -->
+<text x="490" y="472" font-family="Arial" font-size="14" fill="#6b7280">Veins → Vena Cava → Right Atrium</text>
+
+<!-- ── LEGEND  x=30–210, y=390–470 ── -->
+<rect x="30" y="390" width="185" height="85" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="122" y="411" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">Legend</text>
+<line x1="45" y1="431" x2="95" y2="431" stroke="#ef4444" stroke-width="3"/>
+<text x="103" y="436" font-family="Arial" font-size="14" fill="#991b1b">Oxygenated</text>
+<line x1="45" y1="454" x2="95" y2="454" stroke="#6b7280" stroke-width="3"/>
+<text x="103" y="459" font-family="Arial" font-size="14" fill="#374151">Deoxygenated</text>
+<text x="45" y="470" font-family="Arial" font-size="14" fill="#475569">◀ = one-way valve</text>
+
+<!-- TAKEAWAY STRIP (y=505–545) -->
+<rect x="0" y="505" width="1000" height="40" fill="#1f5f8b"/>
+<text x="500" y="530" text-anchor="middle" font-family="Arial" font-size="15" fill="white" font-weight="700">Two loops, four chambers, one-way valves. Block any artery → tissue loses oxygen.</text>
 </svg>

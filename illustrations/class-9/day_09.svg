@@ -1,26 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How do chemical bonds hold matter together</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 9</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How do chemical bonds hold matter together?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Ionic, covalent, and metallic bonds — the octet rule — Day 9</text>
+
+<!-- LEFT: Ionic bond -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#dc2626">Ionic Bond</text>
+<text x="30" y="114" font-family="Arial" font-size="14" fill="#333">Electron transfer: metal gives e⁻ to non-metal</text>
+<!-- Na → Na+ + e- -->
+<rect x="30" y="122" width="280" height="160" rx="4" fill="white" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="140" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">NaCl (table salt)</text>
+<!-- Na atom -->
+<circle cx="80" cy="190" r="32" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+<text x="80" y="186" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Na</text>
+<text x="80" y="200" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">2,8,1</text>
+<!-- Cl atom -->
+<circle cx="260" cy="190" r="32" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+<text x="260" y="186" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Cl</text>
+<text x="260" y="200" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">2,8,7</text>
+<!-- Electron transfer arrow -->
+<text x="170" y="196" text-anchor="middle" font-family="Arial" font-size="18" fill="#dc2626">→</text>
+<text x="170" y="212" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">e⁻ transferred</text>
+<text x="40" y="254" font-family="Arial" font-size="14" fill="#555">Na⁺ + Cl⁻ → ionic lattice</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#555">Strong electrostatic attraction</text>
+
+<rect x="30" y="296" width="280" height="88" rx="4" fill="#fecaca" stroke="#dc2626" stroke-width="1"/>
+<text x="170" y="314" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Properties</text>
+<text x="40" y="334" font-family="Arial" font-size="14" fill="#333">High melting point (801°C for NaCl)</text>
+<text x="40" y="352" font-family="Arial" font-size="14" fill="#333">Conducts electricity when dissolved</text>
+<text x="40" y="370" font-family="Arial" font-size="14" fill="#555">Crystalline solid structure</text>
+
+<rect x="30" y="394" width="280" height="88" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="1"/>
+<text x="170" y="412" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">India example</text>
+<text x="40" y="432" font-family="Arial" font-size="14" fill="#333">Rock salt mines: Rajasthan, Gujarat</text>
+<text x="40" y="450" font-family="Arial" font-size="14" fill="#333">India produces 30 million t/year</text>
+<text x="40" y="468" font-family="Arial" font-size="14" fill="#555">Largest salt producer globally</text>
+
+<!-- CENTRE: Covalent bond -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Covalent Bond</text>
+
+<rect x="344" y="104" width="312" height="160" rx="4" fill="#f0f9ff" stroke="#0284c7" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#0284c7">Electron sharing (non-metals)</text>
+<!-- H-H molecule diagram -->
+<circle cx="430" cy="175" r="28" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="430" y="171" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">H</text>
+<text x="430" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">e⁻</text>
+<circle cx="574" cy="175" r="28" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="574" y="171" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">H</text>
+<text x="574" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">e⁻</text>
+<!-- Shared region -->
+<ellipse cx="502" cy="175" rx="48" ry="22" fill="#93c5fd" fill-opacity="0.4" stroke="#1d4ed8" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="502" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">shared</text>
+<text x="344" y="234" font-family="Arial" font-size="14" fill="#333">H₂O: O shares 2 pairs with 2 H atoms</text>
+<text x="344" y="252" font-family="Arial" font-size="14" fill="#333">CO₂: C shares 2 pairs with each O</text>
+<text x="344" y="268" font-family="Arial" font-size="14" fill="#555">Octet rule: atoms share until 8 outer e⁻</text>
+
+<rect x="344" y="274" width="312" height="100" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="292" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Covalent Properties</text>
+<text x="354" y="312" font-family="Arial" font-size="14" fill="#333">Lower melting point than ionic</text>
+<text x="354" y="332" font-family="Arial" font-size="14" fill="#333">Often gas or liquid at room temp</text>
+<text x="354" y="352" font-family="Arial" font-size="14" fill="#555">Poor electrical conductors (no free e⁻)</text>
+<text x="354" y="370" font-family="Arial" font-size="14" fill="#555">Examples: H₂O, CO₂, CH₄, glucose</text>
+
+<rect x="344" y="384" width="312" height="98" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="500" y="402" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Metallic Bond</text>
+<text x="354" y="422" font-family="Arial" font-size="14" fill="#333">Metal atoms: sea of free electrons</text>
+<text x="354" y="442" font-family="Arial" font-size="14" fill="#333">Positive ions in electron cloud</text>
+<text x="354" y="462" font-family="Arial" font-size="14" fill="#555">Conducts electricity, heat; malleable</text>
+<text x="354" y="480" font-family="Arial" font-size="14" fill="#555">Iron, copper, aluminium — India's metals</text>
+
+<!-- RIGHT: Octet rule + India -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Octet Rule &amp; India</text>
+
+<rect x="690" y="104" width="280" height="100" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">The Octet Rule</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Atoms react to achieve 8 electrons</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">in their outermost shell</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Noble gas configuration = stable</text>
+<text x="830" y="196" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Drives all chemical bonding</text>
+
+<rect x="690" y="214" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="232" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Pharmaceuticals</text>
+<text x="830" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: world's pharmacy — 20% of</text>
+<text x="830" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">global generic drugs</text>
+<text x="830" y="288" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">All drug design = covalent bond chemistry</text>
+
+<rect x="690" y="312" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="330" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Plastics &amp; Polymers</text>
+<text x="830" y="350" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Polythene: long C-C covalent chains</text>
+<text x="830" y="368" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India: 19 million t/year plastic</text>
+<text x="830" y="386" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Reliance: world's largest polyester maker</text>
+
+<rect x="690" y="410" width="280" height="72" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="428" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Copper Wiring (Metallic bond)</text>
+<text x="830" y="448" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India uses 1.5 million t copper/year</text>
+<text x="830" y="466" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Free electrons → electricity conduction</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Ionic: electron transfer (NaCl). Covalent: electron sharing (H₂O). Metallic: electron sea.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Octet rule drives all bonding. India: world's largest salt producer; 20% of global generic drugs.</text>
 </svg>

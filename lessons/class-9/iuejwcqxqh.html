@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 04 — Why does temperature change particle motion? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 04</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does temperature change particle motion?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain the relationship between temperature and kinetic energy, describe how heating drives state changes, and predict what happens when a gas is cooled significantly.</p>
+</div><h2>1. The mystery</h2>
+<p>Ice melts at exactly 0°C. Water boils at exactly 100°C (at sea level). Why do these transitions happen at specific temperatures, and why does the temperature stay constant while something is melting even if you keep heating it?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Temperature and kinetic energy:</strong> Temperature (in Kelvin) is directly proportional to the average kinetic energy of particles. T ∝ KE_average. Doubling temperature (in Kelvin) doubles average kinetic energy.</p>
+<p><strong>Kinetic energy:</strong> KE = ½mv². Lighter particles (like H₂) move faster than heavier ones (like O₂) at the same temperature.</p>
+<p><strong>State changes and latent heat:</strong>
+- When ice is heated toward 0°C, KE increases, particles vibrate more vigorously.
+- At 0°C, added energy breaks intermolecular bonds (not increases KE) → temperature stays constant while ice melts. This energy = latent heat of fusion (334 kJ/kg for water).
+- At 100°C, latent heat of vaporisation (2,260 kJ/kg) breaks remaining liquid bonds → all energy goes into freeing gas particles, temperature stays at 100°C until all water has evaporated.</p>
+<p><strong>Kelvin scale:</strong> K = °C + 273. Absolute zero (0 K = −273°C) is where kinetic energy reaches its theoretical minimum. There is no negative temperature on the Kelvin scale.</p>
+<h2>3. Build the mental model</h2>
+<p>Temperature is like the speed setting on a blender. Turn the dial up — the blades spin faster, the contents churn more violently. That "violence" is kinetic energy. Now imagine the blender is full of ice cubes instead of liquid. At a low setting (below 0°C), the cubes just rattle around but stay solid. As you increase the dial past a critical setting (0°C), the ice does not instantly zoom into fast liquid motion — instead, all incoming energy goes into <em>breaking the interlocking ice structure</em>, not speeding up the particles. The dial reading (temperature) stays flat on the thermometer even though you're pouring in energy. This flat line is the latent heat plateau.</p>
+<p>Once all the ice is broken apart into liquid, the temperature rises again with additional energy. Then, at the next critical setting (100°C), the same thing happens: all energy goes into breaking the hydrogen bonds that hold water molecules together in liquid, and the temperature holds flat again until every molecule has escaped as vapour.</p>
+<p>The critical insight: <strong>temperature measures particle kinetic energy, but during a state change, energy goes into breaking bonds rather than increasing speed.</strong> This is why a boiling kettle never exceeds 100°C no matter how hard it boils.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG diagram is a heating curve for water: a graph with time on the x-axis and temperature (°C) on the y-axis. The curve starts at −20°C (solid ice), slopes upward as ice is heated, then goes flat at 0°C for a labelled horizontal plateau marked "Melting — latent heat of fusion (334 kJ/kg), temperature constant." The curve then slopes upward again through the liquid phase, flattens again at 100°C for a wider plateau labelled "Boiling — latent heat of vaporisation (2,260 kJ/kg), temperature constant," then slopes up again as steam is superheated. Each segment is colour-coded: blue for solid, blue-green for liquid, red for gas. Particle diagrams alongside each segment show vibrating fixed-position particles (solid), sliding particles (liquid), and free-flying particles (gas). Arrows on the two plateaus are labelled "energy goes into breaking bonds, not speeding particles."</p>
+<figure><img src="../../illustrations/class-9/day_04.svg" alt="Diagram for Why does temperature change particle motion?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India's massive steel industry (JSW Bellary, TATA Jamshedpur) heats iron to &gt;1,538°C (iron's melting point). Precise temperature control is critical — too cool and the iron doesn't flow into moulds, too hot and impurities cause defects. Blast furnaces in India run at 1,900°C. The Indian cooking tradition of the pressure cooker (used in 80% of Indian kitchens) raises boiling point to ~120°C by increasing pressure — latent heat is still absorbed at that temperature, but food cooks faster because of the higher temperature. Power plants at NTPC stations boil water to produce steam that drives turbines — engineers must account for the enormous latent heat of vaporisation (2,260 kJ/kg) when calculating how much fuel is needed to convert water to steam.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Boil water and measure its temperature every 30 seconds while it's boiling vigorously. Despite continuous heating, the thermometer stays at 100°C. This demonstrates latent heat: energy input goes into breaking intermolecular bonds, not raising temperature. Compare: when you add ice to room-temperature water, the water cools — the ice absorbs 334 J per gram as latent heat of fusion before it melts.</p>
+<p>Now try this additional step: measure the time it takes for 500 mL of water to reach 100°C from 25°C. Then measure how long it stays at 100°C as you continue heating until all the water has evaporated (or a large portion of it). The evaporation phase takes far longer per degree of "progress" than the heating phase — a direct experience of how much larger the latent heat of vaporisation (2,260 kJ/kg) is compared to the heat needed just to raise temperature.</p>
+</div><h2>7. Think deeper</h2>
+<p>At very high temperatures, atoms can lose their electrons entirely, forming plasma — the fourth state of matter. The Sun (core temperature 15 million K) consists entirely of plasma. India's Institute for Plasma Research (IPR, Gandhinagar) works on controlled nuclear fusion in a tokamak (ADITYA-U) that must heat hydrogen plasma to 100 million degrees — hotter than the Sun's core. If achieved, fusion could provide limitless clean energy. This is the cutting edge of temperature physics.</p>
+<p>At the opposite extreme, cooling atoms to within billionths of a degree of absolute zero produces a Bose-Einstein condensate — a fifth state of matter first created in 1995. In this state, thousands of atoms merge into a single quantum state and behave as one entity, moving in perfect synchrony. The particles don't slow their motion in any familiar sense — instead, their quantum wave functions overlap and merge. This shows that the simple "slower = colder" picture breaks down completely at extreme temperatures.</p>
+<p><strong>Predict:</strong> A pressure cooker builds up steam pressure inside a sealed pot, raising the boiling point of water to 120°C. If you open the pressure cooker while it is still pressurised, what would happen to the water inside? Use what you know about boiling points and pressure to explain why this is a safety hazard.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the relationship between temperature and the kinetic energy of particles?</p>
+<ul>
+<li>A. Temperature measures the total potential energy stored in chemical bonds between particles</li>
+<li>B. Temperature is a measure of the average kinetic energy of particles in a substance</li>
+<li>C. Temperature measures the number of particles present in a given volume of substance</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is identifying the mechanism linking temperature and particle motion important?</p>
+<ul>
+<li>A. It allows students to skip calculations and focus on written descriptions only</li>
+<li>B. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+<li>C. It is required only for physics and not for chemistry or biology topics</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q3</h3>
+<p>If a gas were cooled significantly, what change in particle motion would you predict?</p>
+<ul>
+<li>A. The particles would gain energy and collide more forcefully with container walls</li>
+<li>B. The particles would slow down and may eventually condense into a liquid or solid</li>
+<li>C. The particles would reorganise into a new element with different chemical properties</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A student is cooking rice on a mountain at an altitude of 3,500 metres (like Leh, Ladakh), where atmospheric pressure is about 65 kPa instead of the standard 101 kPa at sea level.</p>
+<p>Use your understanding of boiling point and latent heat to answer: (a) Will water boil at a higher or lower temperature than 100°C at this altitude, and why? (b) The rice needs to reach 98°C inside each grain to cook properly. Will open-pot boiling at this altitude cook the rice adequately? (c) How would using a pressure cooker solve the problem, and what physical mechanism makes it work? Refer to particle kinetic energy and intermolecular forces in your answer.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Water's latent heat of vaporisation (2,260 kJ/kg) is extraordinarily high compared to most liquids — nearly seven times higher than ethanol, for instance. This single property is why sweating cools the human body so effectively: evaporating just 1 gram of sweat removes 2,260 joules from your skin. It is also why coastal cities like Mumbai have more moderate climates than inland cities at similar latitudes — the ocean's vast water surface absorbs and releases heat through evaporation and condensation, buffering temperature swings. India's monsoon is powered by the same mechanism: the Arabian Sea evaporates enormous quantities of water (absorbing latent heat), which condenses over land (releasing that heat), driving the convective system that delivers 70% of India's annual rainfall.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Temperature measures the average kinetic energy of particles — but during a state change, added energy breaks intermolecular bonds rather than speeding up particles, which is why temperature holds constant at 0°C and 100°C no matter how hard you keep heating.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

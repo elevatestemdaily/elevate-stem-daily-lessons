@@ -1,26 +1,120 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr17" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#1f5f8b"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why does fire need oxygen?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 17</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b">Why does fire need oxygen?</text>
+<text x="500" y="62" text-anchor="middle" font-family="Arial" font-size="17" fill="#555">Combustion = fuel + heat + oxygen → chain reaction — Day 17</text>
+
+<!-- ── LEFT: Fire triangle + chain reaction ── -->
+<rect x="20" y="78" width="455" height="410" rx="6" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+<text x="247" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#ea580c">The Fire Triangle</text>
+
+<!-- Triangle -->
+<polygon points="247,112 96,326 398,326" fill="none" stroke="#dc2626" stroke-width="3"/>
+
+<!-- Side labels -->
+<rect x="30" y="216" width="88" height="32" rx="4" fill="#f59e0b"/>
+<text x="74" y="236" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">OXYGEN</text>
+<rect x="340" y="216" width="74" height="32" rx="4" fill="#ef4444"/>
+<text x="377" y="236" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">HEAT</text>
+<rect x="190" y="330" width="64" height="32" rx="4" fill="#dc2626"/>
+<text x="222" y="350" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">FUEL</text>
+
+<!-- FIRE label in centre -->
+<text x="190" y="238" text-anchor="middle" font-family="Arial" font-size="26" fill="#f97316">FIRE</text>
+<text x="190" y="260" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">remove any side</text>
+<text x="190" y="278" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">= fire goes out</text>
+
+<!-- Combustion equations -->
+<rect x="30" y="376" width="202" height="88" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="131" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Complete (enough O₂)</text>
+<text x="131" y="413" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CH₄ + 2O₂ →</text>
+<text x="131" y="431" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CO₂ + 2H₂O + energy</text>
+<text x="131" y="449" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Blue flame, efficient</text>
+
+<rect x="244" y="376" width="218" height="88" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="353" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Incomplete (low O₂)</text>
+<text x="353" y="413" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CH₄ + O₂ →</text>
+<text x="353" y="431" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">CO + C (soot) + H₂O</text>
+<text x="353" y="449" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Yellow flame, CO toxic</text>
+
+<!-- Chain reaction (right half of left panel) -->
+<rect x="278" y="108" width="185" height="260" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="370" y="126" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Chain Reaction</text>
+
+<rect x="288" y="132" width="165" height="40" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+<text x="370" y="148" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Initiation</text>
+<text x="370" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">O₂ → 2 O· (radicals)</text>
+
+<line x1="370" y1="172" x2="370" y2="184" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arr17)"/>
+
+<rect x="288" y="186" width="165" height="52" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+<text x="370" y="203" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Propagation</text>
+<text x="370" y="219" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">O· + fuel → CO₂ + H₂O</text>
+<text x="370" y="233" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">+ more radicals</text>
+
+<line x1="370" y1="238" x2="370" y2="250" stroke="#6b7280" stroke-width="1.5" marker-end="url(#arr17)"/>
+
+<rect x="288" y="252" width="165" height="50" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1"/>
+<text x="370" y="268" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#16a34a">Termination</text>
+<text x="370" y="284" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Radicals combine →</text>
+<text x="370" y="299" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">chain stops</text>
+
+<text x="370" y="328" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b">CO₂ extinguisher:</text>
+<text x="370" y="346" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b">displaces O₂ →</text>
+<text x="370" y="364" text-anchor="middle" font-family="Arial" font-size="14" fill="#1f5f8b">propagation stops</text>
+
+<!-- ── RIGHT: Types + India ── -->
+<rect x="489" y="78" width="494" height="410" rx="6" fill="#f8fafc" stroke="#6b7280" stroke-width="1.5"/>
+<text x="736" y="98" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Combustion Types &amp; India Context</text>
+
+<rect x="499" y="108" width="232" height="100" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
+<text x="615" y="126" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Complete Combustion</text>
+<text x="615" y="144" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">LPG burner — blue flame</text>
+<text x="615" y="162" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">More efficient, less soot</text>
+<text x="615" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Ujjwala: free LPG to poor</text>
+<text x="615" y="198" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">9.7 crore beneficiaries</text>
+
+<rect x="743" y="108" width="231" height="100" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="858" y="126" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Incomplete Combustion</text>
+<text x="858" y="144" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Chulha (biomass) — yellow</text>
+<text x="858" y="162" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">CO gas — silent killer</text>
+<text x="858" y="180" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">800 million still use biomass</text>
+<text x="858" y="198" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">PM2.5 — #1 indoor pollutant</text>
+
+<rect x="499" y="218" width="232" height="90" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="615" y="236" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Spontaneous Combustion</text>
+<text x="615" y="254" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">No spark needed</text>
+<text x="615" y="272" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Dhanbad coal mine —</text>
+<text x="615" y="290" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">burning since 1916</text>
+<text x="615" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Hay bales, oily rags</text>
+
+<rect x="743" y="218" width="231" height="90" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="858" y="236" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Controlled Explosion</text>
+<text x="858" y="254" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Very fast combustion</text>
+<text x="858" y="272" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">ISRO rockets: H₂ + O₂</text>
+<text x="858" y="290" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Diwali crackers — KNO₃</text>
+<text x="858" y="305" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Diesel engine: no spark</text>
+
+<!-- India safety facts -->
+<rect x="499" y="318" width="474" height="62" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="736" y="336" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">India Fire Safety</text>
+<text x="736" y="355" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">~25,000 deaths/year — Class A: solid, B: liquid, C: gas, D: metal</text>
+<text x="736" y="373" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">CO₂ extinguisher removes O₂. Water removes heat. Sand smothers fuel.</text>
+
+<!-- Ignition temperatures -->
+<rect x="499" y="390" width="474" height="90" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="736" y="408" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Ignition Temperatures</text>
+<text x="509" y="426" font-family="Arial" font-size="14" fill="#333">• LPG: ~470°C — auto-ignition in open air</text>
+<text x="509" y="444" font-family="Arial" font-size="14" fill="#333">• Kerosene: ~220°C — widely used in lamps</text>
+<text x="509" y="462" font-family="Arial" font-size="14" fill="#555">• Diesel: ~250°C — compressed air ignites (no spark plug)</text>
+<text x="509" y="476" font-family="Arial" font-size="14" fill="#555">• Magnesium: ~473°C — burns white in fireworks</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Fire needs fuel + O₂ + heat (fire triangle). Combustion is a radical chain reaction.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Remove any side to extinguish. Complete combustion (blue flame) cleaner than incomplete (yellow, CO).</text>
 </svg>

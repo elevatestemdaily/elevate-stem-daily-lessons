@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 30 — Ultimate Challenge: Solve a real-world science problem using Class 10 concepts | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 30</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Ultimate Challenge: Solve a real-world science problem using Class 10 concepts</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why a solar panel generates electricity using the photoelectric effect, apply E = hf to explain why sunlight (but not infrared) frees electrons from silicon, describe how a p-n junction converts this to usable current, and predict why power output falls on a cloudy day.</p>
+</div><h2>1. The mystery</h2>
+<p>A flat silicon panel sitting on a rooftop quietly converts sunlight into electricity — no moving parts, no fuel, no combustion. India has installed over 80 GW of solar capacity and is targeting 500 GW by 2030. Rooftop panels on schools, railway stations, and homes across Gujarat, Rajasthan, and Tamil Nadu generate clean electricity every day. But how exactly does sunlight — a form of electromagnetic radiation — push electrons through a circuit? This is not a simple question. The answer required Albert Einstein to win the Nobel Prize.</p>
+<h2>2. The science behind it</h2>
+<p><strong>The photoelectric effect — Einstein's 1905 discovery</strong></p>
+<p>When light falls on a metal surface, electrons are sometimes ejected from it. This was first observed in the 1880s, but classical wave physics could not explain the experimental observations:
+1. Electrons are ejected only if the light frequency exceeds a <strong>threshold frequency</strong> (ν₀) — below this, no electrons are emitted regardless of how bright the light is.
+2. Above the threshold, the number of electrons ejected depends on brightness (intensity), but their maximum kinetic energy depends only on frequency, not intensity.
+3. Emission is instantaneous — no delay even in dim light.</p>
+<p>Classical wave theory predicted that even low-frequency light, if bright enough, should eventually deliver enough energy to eject electrons — but this was never observed. Einstein resolved the contradiction in 1905 by proposing that light is not a continuous wave but arrives in discrete packets called <strong>photons</strong>. Each photon carries energy:</p>
+<p><strong>E = hf</strong></p>
+<p>where <strong>h = 6.626 × 10⁻³⁴ J·s</strong> is Planck's constant and <strong>f</strong> is the frequency of light.</p>
+<p>Each photon delivers its energy to a single electron — all at once. If hf exceeds the <strong>work function</strong> (φ) of the material (the minimum energy needed to free an electron), the electron is ejected. If hf &lt; φ, no single photon has enough energy to free an electron, no matter how many photons arrive. This explains the threshold frequency: ν₀ = φ/h. Above threshold, the maximum kinetic energy of the ejected electron is:</p>
+<p><strong>KE_max = hf − φ</strong></p>
+<p>Einstein won the 1921 Nobel Prize in Physics specifically for this explanation.</p>
+<p><strong>From photoelectric effect to solar cell</strong></p>
+<p>A solar cell is a semiconductor device — specifically a <strong>p-n junction</strong> made from silicon — that converts photon energy into electrical current using the photoelectric effect inside the solid.</p>
+<p><strong>Silicon and doping:</strong> Pure silicon has four valence electrons. Doping with phosphorus (5 valence electrons) creates <strong>n-type silicon</strong> with spare electrons. Doping with boron (3 valence electrons) creates <strong>p-type silicon</strong> with "holes" (missing electrons). When p-type and n-type silicon are joined, the junction region develops a built-in electric field pointing from n to p.</p>
+<p><strong>How a photon creates current:</strong> When a photon from sunlight strikes the solar cell, it is absorbed by a silicon atom and its energy knocks an electron free (photoelectric effect within the solid). This creates an electron-hole pair. The built-in electric field at the p-n junction pushes the free electron toward the n-side and the hole toward the p-side — separating the charges. If an external circuit connects the two sides, electrons flow through it as electric current. This is how light becomes electricity.</p>
+<p>For silicon, the <strong>band gap</strong> (the minimum photon energy needed to free an electron) is 1.1 eV, corresponding to a photon wavelength of about 1100 nm (near-infrared). This means silicon can absorb visible light (all wavelengths 400–700 nm, which have more than 1.1 eV per photon) and near-infrared. Photons with energy above 1.1 eV free electrons; excess energy above the band gap is lost as heat. Photons below 1.1 eV (far infrared) pass straight through without generating any current.</p>
+<p><strong>Efficiency limits:</strong> A single-junction silicon solar cell has a theoretical maximum efficiency of about <strong>33%</strong> (the Shockley-Queisser limit), because: (a) photons below the band gap are not absorbed, and (b) photons above the band gap lose their excess energy as heat. Commercial silicon panels typically achieve 18–22% efficiency. Multi-junction cells (used in ISRO satellites) stack layers of different semiconductors tuned to different photon energies, reaching 40%+ efficiency.</p>
+<p><strong>Effect of cloud cover:</strong> Clouds scatter and absorb sunlight, reducing the number of photons reaching the panel. Fewer photons → fewer electron-hole pairs generated → less current → less power (P = IV). On a heavily overcast day, a solar panel may produce only 10–25% of its clear-sky output. This intermittency is why solar installations are paired with batteries (like lithium-ion storage) or grid backup.</p>
+<p><strong>India's solar energy context:</strong> India receives among the highest solar irradiance in the world — 4–7 kWh/m²/day across most of the country. The Bhadla Solar Park in Rajasthan (2245 MW) is one of the world's largest. ISRO uses high-efficiency multi-junction solar panels on all its satellites — the Mars Orbiter Mission (Mangalyaan) was powered by a 750 W solar panel throughout its 10-month journey to Mars.</p>
+<p><strong>Combining Class 10 concepts in a solar energy system:</strong>
+- <strong>Photoelectric effect</strong> (Day 30): converts photons to electrons
+- <strong>Electromagnetic induction</strong> (Day 25): the inverter converts DC from panels to AC for home use via transformer action
+- <strong>Resistance</strong> (Day 22): determines cable losses in the wiring from panel to inverter
+- <strong>Electric circuits</strong> (Day 21): panels connected in series/parallel to achieve target voltage and current</p>
+<h2>3. Build the mental model</h2>
+<p>Solar electricity generation — the five-step chain:</p>
+<ol>
+<li><strong>Photon</strong> from sunlight arrives with energy E = hf</li>
+<li>If hf &gt; band gap (1.1 eV for silicon): <strong>electron is freed</strong> from silicon atom (photoelectric effect within solid)</li>
+<li><strong>p-n junction's built-in field</strong> separates electron (to n-side) and hole (to p-side)</li>
+<li>External circuit provides a path → <strong>electron flows through wire</strong> as current</li>
+<li>Inverter converts DC → AC → plugs into home grid</li>
+</ol>
+<p>Reduce photons (cloud, shade) → reduce step 2 → reduce current → reduce power. Increase photon frequency (UV vs red) → more energy per photon → more energy above band gap → more electrons freed per photon — but also more wasted heat above band gap.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows two panels. Left: a photon (wave arrow) striking a silicon atom, knocking out an electron (labelled "KE = hf − φ"). An energy diagram shows the band gap of 1.1 eV; photons above this level free electrons, those below do not. Right: a cross-section of a p-n junction solar cell — photons enter from the top, electron-hole pairs form at the junction, the built-in field separates them with arrows, and an external circuit (bulb) completes the loop. A sun icon with "fewer photons on cloudy day → less current" annotates the diagram.</p>
+<figure><img src="../../illustrations/class-10/day_30.svg" alt="Diagram for Ultimate Challenge: Solve a real-world science problem using Class 10 concepts"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India's solar sector connects directly to Class 10 physics:</p>
+<ul>
+<li><strong>PM-KUSUM scheme</strong>: Provides farmers with solar pumps to replace diesel-powered irrigation pumps. Each pump uses a solar panel array connected to a DC motor (Day 24 concepts) — the photovoltaic effect generates current that drives the motor.</li>
+<li><strong>Solar street lights</strong>: Use a small solar panel during the day to charge a battery. At night, the battery powers an LED. The complete system involves photoelectric effect (charging), electric circuits (battery and LED), and light (electromagnetic spectrum).</li>
+<li><strong>ISRO satellites</strong>: Mangalyaan's solar panels use triple-junction GaInP/GaAs/Ge cells. Each junction is tuned to a different part of the solar spectrum, capturing photons that single-junction silicon would waste. This is applied E = hf engineering.</li>
+<li><strong>Rooftop solar economics</strong>: A 2 kW rooftop system in Delhi generates approximately 8 units (kWh) per day. At ₹8/unit electricity rate, it saves about ₹64/day — the payback period on the system cost is typically 4–5 years, after which electricity is essentially free for 20+ years.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>ultimate challenge: solve a real-world science problem using class 10 concepts</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A solar panel manufacturer advertises two panel models:
+- <strong>Panel A</strong>: silicon (band gap 1.1 eV), efficiency 20%, costs ₹15,000 per panel
+- <strong>Panel B</strong>: gallium arsenide (band gap 1.42 eV), efficiency 28%, costs ₹45,000 per panel</p>
+<p>Using E = hf (and f = c/λ), calculate the maximum wavelength of light that each panel can absorb. (Use h = 6.626 × 10⁻³⁴ J·s, c = 3 × 10⁸ m/s, 1 eV = 1.6 × 10⁻¹⁹ J.)</p>
+<p>Which panel absorbs more of the solar spectrum? If both panels have an area of 1.6 m² and India receives 5 kWh/m²/day of solar energy, calculate the daily energy output of each. Then calculate the cost per watt-peak for each. Under what circumstances would Panel B be worth the extra cost?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which Class 10 concept best explains why a solar panel generates electricity from sunlight?</p>
+<ul>
+<li>a. Electromagnetic induction: sunlight spins a coil inside a magnetic field</li>
+<li>b. Photoelectric effect: photons knock electrons free, creating current in the circuit</li>
+<li>c. Chemical reactions: sunlight converts silicon into electrical charge carriers</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is applying multiple Class 10 concepts to a single real-world problem more powerful than one concept alone?</p>
+<ul>
+<li>a. Real systems involve overlapping mechanisms: combining concepts leads to deeper solutions</li>
+<li>b. Because real problems always have exactly one cause and one solution only</li>
+<li>c. Because Class 10 concepts are all identical and combining them changes nothing</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q3</h3>
+<p>What would happen to electric power output of a solar panel on a cloudy day?</p>
+<ul>
+<li>a. Output would be identical because solar panels use reflected ground light not direct sunlight</li>
+<li>b. Output would increase because cloud cover reduces temperature and improves panel efficiency</li>
+<li>c. Output would decrease because fewer photons reach the panel to generate the photoelectric effect</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Einstein won the Nobel Prize not for his famous theories of relativity — special (1905) or general (1915) — but specifically for explaining the photoelectric effect. The Nobel committee awarded him the 1921 prize for "discovery of the law of the photoelectric effect." This is partly because relativity was still controversial in 1921, and partly because the photoelectric effect had direct, experimentally verifiable predictions that had been confirmed by Robert Millikan's precise measurements. The solar panel on your school rooftop is therefore a working tribute to a Nobel Prize-winning discovery — made 120 years ago by a 26-year-old patent clerk writing in his spare time.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A solar panel generates electricity because photons from sunlight carry energy E = hf that frees electrons from silicon atoms via the photoelectric effect; the p-n junction's built-in electric field then separates these electrons to create a current — and on a cloudy day, fewer photons reach the panel, fewer electrons are freed, and power output falls proportionally.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 30 of 30</footer>
+</div>
+</body>
+</html>

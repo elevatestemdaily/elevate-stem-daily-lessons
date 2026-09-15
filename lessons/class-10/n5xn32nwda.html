@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 14 — How does natural selection work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 14</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does natural selection work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to describe the four conditions required for natural selection to operate, explain the mechanism by which favourable traits increase in frequency across generations, and predict how a harmful trait changes in a population over time.</p>
+</div><h2>1. The mystery</h2>
+<p>In the 1940s, before antibiotics were widely used, a simple bacterial infection could kill a healthy adult. Today, certain strains of <em>Staphylococcus aureus</em> — nicknamed MRSA — can resist multiple antibiotics simultaneously. No scientist designed these resistant bacteria. No bacteria decided to become resistant. Yet resistance spread through bacterial populations in hospitals across India and the world within decades. How can a population change so dramatically, so fast, with no plan or purpose directing it?</p>
+<h2>2. The science behind it</h2>
+<p>The answer is <strong>natural selection</strong>, the mechanism first described by Charles Darwin in 1859. Natural selection is not a force that pushes organisms toward any goal — it is a filter. It simply allows some individuals to survive and reproduce more than others, and because survival and reproduction pass traits to offspring, those traits become more common in subsequent generations.</p>
+<p>For natural selection to operate, four conditions must all be present simultaneously:</p>
+<p><strong>Condition 1 — Variation.</strong> Individuals in a population must differ from each other in some heritable trait. In a population of bacteria, some cells may naturally carry a mutation in a gene encoding a cell-wall protein, making their wall slightly different from the majority. This variation arises from random mutation — errors in DNA replication that occur at a rate of roughly one per billion base pairs per replication cycle.</p>
+<p><strong>Condition 2 — Heritability.</strong> The variation must be genetic — it must be passed from parent to offspring. A bacterium with a resistance-conferring mutation will pass that mutation to its daughter cells when it divides by binary fission. Non-genetic variation (such as a scar on one individual) is not heritable and is invisible to natural selection.</p>
+<p><strong>Condition 3 — Differential survival and reproduction (Selection pressure).</strong> The environment must favour some variants over others. When a patient takes an antibiotic such as penicillin, the drug kills bacteria that are sensitive to it by blocking cell-wall synthesis. Bacteria with the resistance mutation survive; sensitive bacteria die. This difference in survival is the selection pressure. Without a selection pressure, all variants survive equally and the trait frequencies remain unchanged.</p>
+<p><strong>Condition 4 — Time and reproduction.</strong> The surviving variants must reproduce, passing their advantageous trait to offspring. <em>E. coli</em> can divide every 20 minutes under ideal conditions. Within hours, one resistant bacterium can become millions of resistant bacteria. Over many generations, the resistant trait increases in frequency from rare to dominant in the population.</p>
+<p>The key insight is that the environment does not create the resistance mutation — the mutation already existed by chance in a few individuals before the antibiotic was introduced. The antibiotic merely changed which individuals survived to reproduce. <strong>Natural selection selects from existing variation; it does not produce the variation it selects.</strong></p>
+<p>At the molecular level, a resistance mutation might alter the shape of the enzyme that penicillin targets (transpeptidase), so the drug can no longer bind and inhibit it. Or the bacterium may gain a gene encoding beta-lactamase — an enzyme that breaks down penicillin itself. Either way, the mechanism producing resistance is a pre-existing DNA sequence difference, not a directed response.</p>
+<p>In populations of sexually reproducing organisms (such as humans), the same four conditions apply, but the timescale is much longer because generation times are years rather than minutes. Charles Darwin's classic example was the diversity of beak shapes in Galápagos finches — different islands presented different food sources (hard seeds versus soft insects), and the beaks best suited to each food source were favoured by selection, producing distinct species over thousands of generations.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of a population as a bag of differently coloured marbles (individuals) being filtered through a screen (the environment):</p>
+<ul>
+<li>Marbles that fit through the screen (favourable trait) pass through and are added back in larger numbers in the next generation</li>
+<li>Marbles that do not fit (unfavourable trait) are removed</li>
+<li>Each generation, the bag is refilled mostly with marbles that passed through</li>
+<li>Over many generations, the bag contains almost exclusively the marble type that fits the screen</li>
+</ul>
+<p>The screen does not create any marble type — it just determines which types are retained. If the screen changes (a new antibiotic is used), a different marble type may now fit.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows three generations of a bacterial population:</p>
+<ul>
+<li><strong>Generation 1:</strong> Mostly pale circles (antibiotic-sensitive bacteria) with two dark circles (resistant mutants), labelled "Before antibiotic"</li>
+<li><strong>Arrow:</strong> Antibiotic exposure — X marks appear over the pale circles</li>
+<li><strong>Generation 2:</strong> Equal mix of pale and dark circles, labelled "After one round of selection"</li>
+<li><strong>Generation 3:</strong> Mostly dark circles, labelled "Resistance now dominant"</li>
+<li>A sidebar shows the mechanism: resistance mutation → transpeptidase shape altered → penicillin cannot bind → bacterium survives</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_14.svg" alt="Diagram for How does natural selection work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Natural selection has immediate, practical relevance in India:</p>
+<ul>
+<li><strong>Antibiotic resistance:</strong> India has one of the highest rates of antibiotic-resistant infections in the world. Overuse of broad-spectrum antibiotics — often sold without prescription — creates strong selection pressure, rapidly increasing the frequency of resistant bacterial strains. Understanding the selection mechanism explains why completing a full antibiotic course matters: stopping early leaves partially resistant survivors that can reproduce and dominate.</li>
+<li><strong>Pesticide resistance in insects:</strong> In India's agriculture, repeated use of the same pesticide (such as organophosphates on cotton bollworm) has produced resistant insect strains through exactly the same mechanism — resistant individuals survive, reproduce, and the resistant allele increases in frequency.</li>
+<li><strong>Sickle-cell allele frequency in malaria regions:</strong> The allele causing sickle-cell disease in homozygous form (HbS/HbS) actually confers partial resistance to malaria in heterozygous carriers (HbA/HbS). In malaria-endemic regions of central India (Odisha, Chhattisgarh, Jharkhand), the selection pressure of malaria has maintained a higher frequency of the HbS allele than would be expected — a real example of natural selection acting on a human population.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>how does natural selection work</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that a trait reducing reproductive success becomes rarer over generations. Now extend the prediction: consider a recessive allele that is harmful only when two copies are present (homozygous), but completely neutral — neither harmful nor beneficial — when only one copy is present (heterozygous carriers).</p>
+<p><strong>Predict:</strong> Would natural selection eliminate this recessive harmful allele from the population completely over time? Consider how many copies of the allele are hidden in heterozygous carriers at any given generation, and whether natural selection can "see" an allele that has no effect on the carrier's survival. What does this tell us about why recessive genetic diseases can persist in human populations for thousands of generations?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the core mechanism of natural selection?</p>
+<ul>
+<li>a. Organisms choose to develop useful traits when the environment demands it</li>
+<li>b. Individuals with traits better suited to the environment survive and reproduce more</li>
+<li>c. The environment directly mutates DNA to match what each organism needs</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding natural selection's mechanism more useful than just knowing evolution happens?</p>
+<ul>
+<li>a. Because knowing evolution happens is all that is needed to pass exams</li>
+<li>b. Because the mechanism proves evolution only applies to large visible animals</li>
+<li>c. The mechanism predicts why antibiotic resistance evolves in bacteria populations</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<h3>Q3</h3>
+<p>What would happen to a trait in a population if it reduced reproductive success?</p>
+<ul>
+<li>a. The trait would spread faster because disadvantaged individuals breed more</li>
+<li>b. The trait would become rarer over generations as fewer carriers pass it on</li>
+<li>c. The trait would remain stable in the population indefinitely through genetic drift</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Darwin did not know about DNA or genes when he proposed natural selection in 1859. He knew that traits were inherited and that variation existed, but the molecular mechanism — mutations in base sequences producing variant alleles, which are then passed to offspring during meiosis and fertilisation — was only understood in the 20th century. The fact that Darwin arrived at the correct mechanism purely from observing organisms in nature, without any knowledge of the molecular level, is one of the most impressive achievements in the history of science.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Natural selection works because random mutations produce heritable variation in a population, environmental pressure kills individuals with less-suited variants, and survivors reproduce — so favourable alleles increase in frequency across generations without any planning or direction.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 14 of 30</footer>
+</div>
+</body>
+</html>

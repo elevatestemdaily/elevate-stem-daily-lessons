@@ -1,26 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="arr02r" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#dc2626"/></marker>
+</defs>
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Why do particles move even when you can&#x27;t </text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 2</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Why do particles move even when you can't see them?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Brownian motion, kinetic energy, and absolute zero — Day 2</text>
+
+<!-- LEFT: Brownian motion -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">Brownian Motion</text>
+<rect x="30" y="104" width="280" height="164" rx="4" fill="white" stroke="#d97706" stroke-width="1"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Pollen grain path in water</text>
+<polyline points="80,185 100,160 125,175 108,148 135,162 118,138 144,152 165,140 155,165 178,150 168,178 195,162 185,185"
+  fill="none" stroke="#d97706" stroke-width="2.5"/>
+<circle cx="80" cy="185" r="6" fill="#d97706"/>
+<circle cx="100" cy="200" r="4" fill="#93c5fd"/>
+<circle cx="135" cy="195" r="4" fill="#93c5fd"/>
+<circle cx="165" cy="206" r="4" fill="#93c5fd"/>
+<circle cx="118" cy="216" r="4" fill="#93c5fd"/>
+<circle cx="152" cy="222" r="4" fill="#93c5fd"/>
+<circle cx="178" cy="216" r="4" fill="#93c5fd"/>
+<circle cx="205" cy="208" r="4" fill="#93c5fd"/>
+<text x="170" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Invisible water molecules collide</text>
+<text x="170" y="268" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">randomly — pollen jiggles visibly</text>
+
+<text x="30" y="292" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">1827: Robert Brown observed pollen</text>
+<text x="30" y="310" font-family="Arial" font-size="14" fill="#333">moving randomly in water.</text>
+<text x="30" y="328" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">1905: Einstein explained it:</text>
+<text x="30" y="346" font-family="Arial" font-size="14" fill="#333">random molecular collisions →</text>
+<text x="30" y="364" font-family="Arial" font-size="14" fill="#333">direct experimental proof of atoms!</text>
+
+<rect x="30" y="382" width="280" height="100" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="400" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Temperature Scales</text>
+<text x="40" y="420" font-family="Arial" font-size="14" fill="#333">°C: water freezes 0°, boils 100°</text>
+<text x="40" y="438" font-family="Arial" font-size="14" fill="#333">Kelvin: K = °C + 273</text>
+<text x="40" y="456" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">0 K = −273°C = Absolute Zero</text>
+<text x="40" y="474" font-family="Arial" font-size="14" fill="#555">No particle motion possible</text>
+
+<!-- CENTRE: KE and pressure -->
+<rect x="334" y="74" width="312" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="490" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Temperature &amp; Kinetic Energy</text>
+<rect x="344" y="104" width="292" height="90" rx="4" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="490" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Key Equation</text>
+<text x="490" y="146" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#16a34a">KE = ½mv²</text>
+<text x="490" y="168" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Temperature ∝ average KE of particles</text>
+<text x="490" y="185" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Double T (Kelvin) → double average KE</text>
+
+<!-- Cold vs hot gas visual -->
+<rect x="344" y="204" width="140" height="118" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="414" y="222" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">COLD gas</text>
+<circle cx="375" cy="252" r="7" fill="#3b82f6"/>
+<circle cx="405" cy="266" r="7" fill="#3b82f6"/>
+<circle cx="435" cy="250" r="7" fill="#3b82f6"/>
+<circle cx="388" cy="290" r="7" fill="#3b82f6"/>
+<circle cx="420" cy="306" r="7" fill="#3b82f6"/>
+<text x="414" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Slow particles</text>
+
+<rect x="496" y="204" width="140" height="118" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+<text x="566" y="222" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">HOT gas</text>
+<circle cx="526" cy="244" r="7" fill="#ef4444"/>
+<circle cx="562" cy="256" r="7" fill="#ef4444"/>
+<circle cx="600" cy="242" r="7" fill="#ef4444"/>
+<line x1="526" y1="244" x2="510" y2="230" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr02r)"/>
+<line x1="562" y1="256" x2="578" y2="242" stroke="#dc2626" stroke-width="1.5" marker-end="url(#arr02r)"/>
+<circle cx="540" cy="286" r="7" fill="#ef4444"/>
+<circle cx="578" cy="300" r="7" fill="#ef4444"/>
+<text x="566" y="320" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Fast particles</text>
+
+<rect x="344" y="332" width="292" height="150" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+<text x="490" y="350" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#374151">Why Pressure Increases with T</text>
+<text x="354" y="372" font-family="Arial" font-size="14" fill="#333">Hot particles hit walls harder → more</text>
+<text x="354" y="390" font-family="Arial" font-size="14" fill="#333">force → more pressure</text>
+<text x="354" y="410" font-family="Arial" font-size="14" fill="#555">P/T = constant (Gay-Lussac's law)</text>
+<text x="354" y="430" font-family="Arial" font-size="14" fill="#555">Tyre pressure rises in hot weather</text>
+<text x="354" y="450" font-family="Arial" font-size="14" fill="#555">Pressure cooker: high P → 120°C</text>
+<text x="354" y="470" font-family="Arial" font-size="14" fill="#555">→ food cooks faster</text>
+
+<!-- RIGHT: India context -->
+<rect x="660" y="74" width="320" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="820" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Temperature in Action</text>
+
+<rect x="670" y="104" width="300" height="86" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="820" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Pressure Cooker</text>
+<text x="820" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">India's most-used kitchen appliance</text>
+<text x="820" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Sealed → P ↑ → boiling point 120°C</text>
+<text x="820" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Dal cooks 3× faster — saves fuel</text>
+
+<rect x="670" y="200" width="300" height="86" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">India's Temperature Range</text>
+<text x="820" y="238" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rajasthan summer: 50°C = 323 K</text>
+<text x="820" y="256" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Kashmir winter: −20°C = 253 K</text>
+<text x="820" y="274" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">70 K range = 28% KE difference</text>
+
+<rect x="670" y="296" width="300" height="86" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="820" y="314" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">ISRO Cryogenics</text>
+<text x="820" y="334" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Liquid H₂ at 20 K (−253°C)</text>
+<text x="820" y="352" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">used as rocket fuel — near 0 KE</text>
+<text x="820" y="370" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">GSLV Mk III cryogenic stage</text>
+
+<rect x="670" y="392" width="300" height="90" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="820" y="410" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">S.N. Bose — Indian Physicist</text>
+<text x="820" y="430" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Co-discovered Bose-Einstein statistics</text>
+<text x="820" y="450" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Near absolute zero: Bose-Einstein</text>
+<text x="820" y="470" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">condensate — quantum state of matter</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Temperature = average KE = ½mv². Absolute zero (0 K) = no motion possible.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Brownian motion proved atoms exist. S.N. Bose (India) co-founded quantum statistics with Einstein.</text>
 </svg>

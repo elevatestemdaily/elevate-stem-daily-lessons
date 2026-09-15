@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 03 — Why do we breathe faster after running? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 03</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do we breathe faster after running?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain the feedback loop that controls breathing rate during exercise, identify what chemical triggers it, and predict what happens if breathing is deliberately held after sprinting.</p>
+</div><h2>1. The mystery</h2>
+<p>You cross the finish line of a 400-metre race and your lungs immediately feel like they are working overtime. You breathe fast and deep for several minutes even after you have stopped running completely. Your muscles have slowed down — so why is your body still demanding so much air?</p>
+<h2>2. The science behind it</h2>
+<p>The answer begins inside your muscles.</p>
+<p><strong>Why muscles need oxygen during exercise:</strong>
+Your muscles run on energy. To release that energy from glucose (a sugar carried in your blood), cells use <strong>oxygen</strong> in a process called <strong>cellular respiration</strong>. The products are: energy (used immediately for movement), <strong>water</strong>, and <strong>carbon dioxide (CO₂)</strong>. At rest, this process runs slowly and steadily.</p>
+<p><strong>What changes when you run:</strong>
+When you sprint, muscles contract powerfully and repeatedly. They need to release energy much faster. So they burn far more glucose, consume far more oxygen, and produce far more CO₂. This CO₂ enters the bloodstream.</p>
+<p><strong>How the body detects the change:</strong>
+When CO₂ dissolves in blood, it makes the blood slightly more acidic. Your body has specialised detector cells called <strong>chemoreceptors</strong> — located in the brainstem and in the walls of the aorta (the large artery near the heart) — that constantly monitor the CO₂ level and acidity of the blood. The moment CO₂ rises above the normal range, these receptors send urgent signals to the <strong>breathing centre</strong> in the brainstem.</p>
+<p><strong>The automatic response:</strong>
+The breathing centre sends motor signals to the <strong>diaphragm</strong> (the dome-shaped muscle below the lungs) and the <strong>intercostal muscles</strong> (the muscles between your ribs): "Contract faster and deeper!" This is what you feel as rapid, deep breathing after exercise.</p>
+<p><strong>Why it works:</strong>
+Faster and deeper breaths bring in more fresh oxygen and — crucially — push out the excess CO₂ through the lungs. As CO₂ is expelled, the acidity of the blood returns to normal. The chemoreceptors detect this and the breathing rate gradually slows back down.</p>
+<p><strong>The key fact:</strong> The main trigger for faster breathing is <strong>rising CO₂</strong> — not falling oxygen. Even if your oxygen level is completely normal, high CO₂ alone will make you breathe faster. This is why holding your breath feels almost immediately uncomfortable: CO₂ builds up within seconds and the urge to breathe becomes nearly impossible to ignore.</p>
+<h2>3. Build the mental model</h2>
+<p>This is a classic <strong>feedback loop</strong> — a system that detects a change and automatically corrects it:</p>
+<p><strong>Exercise → Muscles produce more CO₂ → CO₂ rises in blood → Chemoreceptors detect the rise → Brain signals "breathe faster and deeper" → Faster breathing expels CO₂ → Blood CO₂ returns to normal → Breathing rate slows</strong></p>
+<p>The loop is completely automatic — you do not consciously decide to breathe faster. Your brainstem handles it without your awareness.</p>
+<p>At rest: ~15 breaths per minute.
+During intense exercise: ~40–60 breaths per minute, each much deeper.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows the breathing feedback loop as a four-node cycle:</p>
+<ul>
+<li><strong>Node 1 (bottom-left):</strong> A running figure with the label "Muscles produce CO₂ during exercise"</li>
+<li><strong>Node 2 (top-left):</strong> "CO₂ rises in blood → Chemoreceptors detect rise (brainstem + aorta)"</li>
+<li><strong>Node 3 (top-right):</strong> "Brain signals diaphragm: 'Breathe faster and deeper!'"</li>
+<li><strong>Node 4 (bottom-right):</strong> "Lungs expel CO₂, take in O₂ → Blood CO₂ drops"</li>
+<li>Arrows connecting the four nodes in a clockwise cycle</li>
+<li>A small label in the centre: "Automatic feedback loop — no conscious control needed"</li>
+</ul>
+<figure><img src="../../illustrations/class-7/day_03.svg" alt="Diagram for Why do we breathe faster after running?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Athletes and training:</strong> Regular exercise makes muscles more efficient — they waste less energy and produce less CO₂ for the same effort. A trained long-distance runner's breathing rate rises far more slowly than an untrained person's during the same speed.</li>
+<li><strong>Asthma:</strong> The airways narrow during exercise, making it physically harder to move air. The CO₂ signal from chemoreceptors keeps saying "breathe more" but the airways cannot respond fully — causing the characteristic gasping and breathlessness.</li>
+<li><strong>Why you cannot hold your breath for long after a sprint:</strong> Muscles continue releasing CO₂ even after you stop running. Chemoreceptors detect the rising level within seconds and trigger an urge to breathe that is almost impossible to override voluntarily.</li>
+<li><strong>Singing and public speaking:</strong> Trained singers control their breathing consciously to breathe at precise moments, working <em>with</em> the CO₂ feedback mechanism rather than ignoring it.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Count your breaths for one full minute while sitting still. Write the number.</li>
+<li>Do 30 jumping jacks as fast as possible. Immediately count your breaths for one full minute. Write the number.</li>
+<li>Wait 2 minutes. Count your breaths again.</li>
+<li>Draw a simple graph: time on the x-axis (rest, after exercise, 2 minutes later) and breathing rate on the y-axis.</li>
+<li>Explain the shape of the graph using the CO₂ feedback loop you learned today.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>A free diver (someone who dives underwater without oxygen tanks) can extend breath-holding by <strong>hyperventilating</strong> — breathing very rapidly before diving. This flushes excess CO₂ out of the blood before the dive begins.</p>
+<p>Because chemoreceptors respond to CO₂ and not to falling oxygen, the diver feels no urge to breathe even as oxygen is actually running dangerously low in the tissues. Oxygen can drop to levels that cause unconsciousness with no warning at all. Many free-diving deaths happen exactly this way.</p>
+<p><strong>Predict:</strong> Hyperventilating reduces the urge to breathe underwater — but does it actually give the diver more oxygen to use? Why or why not?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main reason we breathe faster after running?</p>
+<ul>
+<li>A. Muscles use more oxygen and produce more carbon dioxide during exercise, so breathing rate increases to meet demand.</li>
+<li>B. Running heats the lungs, which makes the diaphragm contract more rapidly automatically.</li>
+<li>C. The body needs to cool down quickly, so it exhales hot air faster.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is knowing the mechanism of increased breathing rate more useful than memorising that we breathe faster?</p>
+<ul>
+<li>A. The mechanism is only useful for doctors, not for students.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Memorising the fact is sufficient because breathing rate never changes.</li>
+</ul>
+<h3>Q3</h3>
+<p>If a person held their breath after sprinting, what would you predict would happen?</p>
+<ul>
+<li>A. The muscles would stop producing carbon dioxide to prevent overload.</li>
+<li>B. Carbon dioxide levels in the blood would rise rapidly, triggering an urgent urge to breathe.</li>
+<li>C. The heart would slow down to reduce the demand for oxygen.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>After your next run or any intense physical exercise, count your breathing rate every 30 seconds for 5 minutes and write each measurement down. Plot the numbers on a simple graph. Identify the point where CO₂ was probably highest and the point where it returned to near-normal, based on the graph shape.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Your body responds to rising CO₂ far more urgently than to falling oxygen. You can tolerate low oxygen for several minutes without much distress — but even a modest rise in CO₂ becomes uncomfortable within seconds. The sensation of "I cannot breathe" during exercise is driven almost entirely by the CO₂ signal, not by a lack of oxygen. This is why the urge to breathe during breath-holding feels so urgent even when there is still plenty of oxygen left.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Breathing rate after exercise is controlled by an automatic feedback loop: rising CO₂ (not falling O₂) triggers chemoreceptors, which signal the diaphragm to breathe faster and deeper until CO₂ is expelled and the blood returns to its normal balance.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 08 — The hidden world inside a drop of water | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 08</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>The hidden world inside a drop of water</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to name the three main types of microorganisms found in pond water, describe what each type does, and predict what happens to them when water is boiled.</p>
+</div><h2>1. The mystery</h2>
+<p>A single drop of water from a pond looks completely clear. Hold it up to the light — nothing visible. But place that same drop on a microscope slide and magnify it even 100 times, and you are looking at a bustling city of living things, some of which are hunting, others fleeing, and others quietly making their own food using sunlight.</p>
+<h2>2. The science behind it</h2>
+<p>A single drop of pond water (about 0.05 mL) can contain thousands of microscopic living organisms. They belong to three main groups:</p>
+<p><strong>1. Bacteria (0.5–5 micrometres)</strong>
+Bacteria are <strong>prokaryotes</strong> — single-celled organisms with no nucleus. They are the smallest living things visible through a school microscope at 400× magnification. In pond water, bacteria play a critical role: they <strong>decompose</strong> dead plant and animal matter, breaking it down into simpler chemicals that enrich the water and feed other organisms. Without bacteria, dead material would just accumulate and pond ecosystems would collapse.</p>
+<p><strong>2. Algae (various sizes, up to 100 micrometres)</strong>
+Algae are <strong>eukaryotes</strong> (cells with a proper nucleus) that contain <strong>chlorophyll</strong> and perform photosynthesis — exactly like plants. Common pond algae include:
+- <strong>Spirogyra:</strong> long green threads with a distinctive spiral chloroplast coiling through each cell
+- <strong>Chlamydomonas:</strong> a tiny single cell that uses two whip-like <strong>flagella</strong> to swim, and has a cup-shaped chloroplast
+- <strong>Diatoms:</strong> single cells enclosed in a two-part glass-like shell made of silica, with intricate geometric patterns — beautiful under a microscope</p>
+<p>Algae produce <strong>oxygen</strong> and <strong>organic molecules</strong> that form the base of the pond food chain.</p>
+<p><strong>3. Protozoa (10–300 micrometres)</strong>
+Protozoa are single-celled eukaryotes that move and hunt:
+- <strong>Amoeba:</strong> moves by extending blob-like projections called <strong>pseudopods</strong> (false feet) and wraps around food particles — a process called <strong>phagocytosis</strong> (cell-eating)
+- <strong>Paramecium:</strong> covered in hundreds of tiny <strong>cilia</strong> (hair-like structures) that beat in coordinated waves to propel it through water at remarkable speed; also uses cilia to sweep food into a mouth-like groove</p>
+<p>None of these can be seen with the naked eye. You need a <strong>light microscope</strong> at 40×–400× to observe them.</p>
+<h2>3. Build the mental model</h2>
+<p>The pond drop is a miniature ecosystem with distinct roles:
+- <strong>Algae</strong> = producers (make food and oxygen via photosynthesis)
+- <strong>Bacteria</strong> = decomposers (break down dead matter, recycle nutrients)
+- <strong>Protozoa</strong> = consumers (eat bacteria and algae, controlling their populations)</p>
+<p>Remove any group and the system breaks. The clean, clear appearance of the water hides this entire food web operating at the microscopic scale.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a simulated microscope view of a pond water drop. The circular field of view is divided into three labelled zones:</p>
+<ul>
+<li><strong>Green zone (left):</strong> Spirogyra threads with spiral chloroplasts; label "Algae — photosynthesis, produces O₂"</li>
+<li><strong>Blue zone (centre):</strong> Paramecium with cilia lines around its surface; label "Protozoa — single-celled animals"</li>
+<li><strong>Amber zone (right):</strong> Rod-shaped bacteria; label "Bacteria — decomposers, recycle nutrients"</li>
+</ul>
+<p>Below the microscope view, a small food-web arrow diagram shows: Algae → Protozoa → (nutrients back to) → Bacteria → Algae</p>
+<figure><img src="../../illustrations/class-7/day_08.svg" alt="Diagram for The hidden world inside a drop of water"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Drinking water treatment:</strong> Municipal water supplies chlorinate and filter water specifically to kill bacteria and remove other microorganisms. That is why tap water is (mostly) safe to drink but pond water is not.</li>
+<li><strong>Boiling water:</strong> Heating to 100°C denatures the proteins in microorganism cells, killing most of them. This is why boiling makes water safe for drinking.</li>
+<li><strong>Yoghurt and cheese:</strong> Made using specific bacteria (Lactobacillus) added to milk — a safe, controlled use of bacteria that we eat deliberately.</li>
+<li><strong>Sewage treatment:</strong> Bacteria are used deliberately in sewage plants to break down organic waste — the same role they play in ponds, just managed for human purposes.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>If you have access to a school microscope, prepare a wet mount slide from a small amount of pond or aquarium water.</li>
+<li>Start at 40× magnification — look for any movement. Then switch to 100×.</li>
+<li>Sketch anything moving. Estimate its size (how many times does it fit across the view field?).</li>
+<li>If no microscope is available, search "pond water under microscope 400x" on YouTube — you will find real footage showing all three groups.</li>
+<li>Predict: if you left pond water in direct sunlight for a week, would the algae population increase or decrease? Why?</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Some ponds in Indian cities turn bright green in summer — a phenomenon called <strong>algal bloom</strong>. This happens when excess nutrients (often from agricultural runoff containing fertilisers) enter the water. Algae thrive, multiply explosively, and cover the surface.</p>
+<p>Here is the twist: when the bloom is enormous and the algae eventually die, bacteria decompose the mass of dead algae. Bacterial decomposition consumes oxygen. The oxygen level in the water drops so drastically that fish suffocate and die — even though the pond looks "full of life" from the green algae above.</p>
+<p><strong>Predict:</strong> An algal bloom appears on a village pond. A week later, dead fish are found. Explain, using the bacteria–oxygen connection, how an explosion of plant-like algae could kill animals.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is found in a drop of pond water that cannot be seen with the naked eye?</p>
+<ul>
+<li>A. A drop of water contains tiny air pockets that give it its round shape on surfaces.</li>
+<li>B. Water droplets contain dissolved minerals arranged in crystal patterns invisible to the eye.</li>
+<li>C. Microscopic living organisms such as bacteria, algae, and protozoa exist in a drop of pond water.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is identifying the mechanism of what makes water life-supporting more useful than just knowing microbes exist?</p>
+<ul>
+<li>A. All microbes are harmful, so understanding them has no benefit for students.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Microbes in water are destroyed by oxygen, so the mechanism is always the same.</li>
+</ul>
+<h3>Q3</h3>
+<p>If the water in a pond were heated to a very high temperature, what would you predict would happen to the microorganisms?</p>
+<ul>
+<li>A. The microorganisms would grow larger because heat provides them with more energy.</li>
+<li>B. Most microorganisms would be killed by the heat, drastically reducing their population.</li>
+<li>C. The microorganisms would move to the bottom of the pond to avoid the heat.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain to a younger sibling — without using "microscope," "bacteria," or "protozoa" — why pond water might make you sick but boiled water won't. Then explain the same thing using all the correct scientific terms. Both explanations should describe the same cause-and-effect chain.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A single millilitre of ocean surface water typically contains about <strong>one million bacteria</strong> and <strong>ten million viruses</strong> — and yet the ocean is not a toxic wasteland. These organisms are in balance, keeping each other's populations in check. Viruses in the ocean actually kill so many bacteria that they release nutrients which feed algae — the ocean's viruses are, unexpectedly, partly responsible for the fish we eat.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Bacteria + algae + protozoa form a food web in every pond drop — all invisible to the naked eye. Boiling kills most of them by destroying their cell proteins.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 8 of 30</footer>
+</div>
+</body>
+</html>

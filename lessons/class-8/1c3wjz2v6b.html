@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 08 — Why can a giant ship float? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 08</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can a giant ship float?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover how a 100,000-tonne steel ship floats when a solid steel coin sinks — and understand Archimedes' principle well enough to predict whether any object will float or sink.</p>
+</div><h2>1. The mystery</h2>
+<p>A steel ball bearing sinks immediately in water. A steel ship weighing 100,000 tonnes floats. A solid gold coin sinks, but a gold-leaf boat can float. The material is the same in each pair — steel is steel, gold is gold. So what actually determines whether something floats?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Archimedes' Principle:</strong></p>
+<p>When an object is placed in a fluid, the fluid exerts an upward force on it called the <strong>buoyant force</strong> (upthrust). This force equals the weight of the fluid displaced by the object.</p>
+<p><strong>Buoyant force = weight of fluid displaced = ρ_fluid × V_displaced × g</strong></p>
+<p>Where:
+- ρ_fluid = density of the fluid (water ≈ 1000 kg/m³)
+- V_displaced = volume of fluid pushed aside by the object
+- g = gravitational acceleration (10 m/s²)</p>
+<p><strong>The floating rule:</strong></p>
+<p>An object floats if the buoyant force ≥ its weight (gravity pulling it down).</p>
+<p>This simplifies to a density comparison:
+- If the object's <strong>average density</strong> &lt; fluid density → it floats
+- If the object's <strong>average density</strong> &gt; fluid density → it sinks</p>
+<p>The key word is <strong>average density</strong> — the density of the object including all the space inside it.</p>
+<p><strong>Why the ship floats:</strong></p>
+<p>A solid steel block: density ≈ 7,800 kg/m³ &gt;&gt; water (1,000 kg/m³). Sinks.</p>
+<p>A steel ship is not solid steel. It is a hollow steel shell enclosing a massive volume of air (density ≈ 1.2 kg/m³). The average density of the whole ship (steel shell + air inside) is around 200–700 kg/m³ — less than water. So it floats.</p>
+<p>As the ship is loaded with cargo, its average density increases. If too much cargo is added, it sinks lower. Ships have a <strong>Plimsoll line</strong> — a mark on the hull showing the maximum safe loading depth for different water types (salt water is denser than fresh water, so ships float higher in the sea than in a river).</p>
+<p><strong>The mechanism step by step:</strong></p>
+<ol>
+<li>Ship placed in water → its hull displaces water.</li>
+<li>The displaced water exerts an upward buoyant force equal to the weight of that displaced water.</li>
+<li>If the buoyant force = ship's weight → ship floats.</li>
+<li>If the ship is pushed deeper → more water displaced → greater upthrust → pushes ship back up. Floating is a stable equilibrium.</li>
+<li>If a hole opens in the hull → water enters → replaces the enclosed air → average density rises → ship sinks. This directly explains Q3: a ship denser than water sinks.</li>
+</ol>
+<p><strong>Plimsoll line — why salt water matters:</strong></p>
+<p>Salt water (density ≈ 1025 kg/m³) is denser than fresh water (1000 kg/m³). A ship displaces less volume to generate the same upthrust in salt water. So a ship floats <strong>higher</strong> in the ocean than in a freshwater river. Ships crossing from ocean to river must account for this — they can carry more cargo in salt water than fresh.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the ship as a hollow bowl placed in a sink of water. The bowl is made of steel (dense), but it traps air inside. The total system (steel + air) weighs less per cubic metre than water → it floats. If you fill the bowl with water (sink the air out), the bowl sinks — same steel, but average density now much higher. The question is never "what is the material made of?" but "what is the average density of the whole object?"</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_08.svg" alt="Diagram for Why can a giant ship float?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram has three panels. Left: A solid steel sphere in water — weight arrow down (larger), buoyant force arrow up (smaller) → net downward → sinks. Centre: A hollow ship in water — weight arrow down, buoyant force arrow up (equal) → equilibrium → floats. Cross-section shows steel hull (dark) with large air gap inside. The displaced water volume is highlighted. Right: Overloaded ship — waterline above the Plimsoll mark, average density &gt; water → starting to sink. Bottom bar: Plimsoll line diagram with salt water (SW), fresh water (FW), tropical (T), summer (S) marks explained.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>INS Vikrant — India's aircraft carrier:</strong> Built at Cochin Shipyard and commissioned in 2022. The ship weighs about 45,000 tonnes and is made of high-strength steel — yet it floats because its hull encloses enormous volumes of air. Without Archimedes' principle, India could not project naval power across the Indian Ocean.</li>
+<li><strong>Submarines:</strong> Submarines control their buoyancy using <strong>ballast tanks</strong> — compartments that can be filled with water (to sink) or blown out with compressed air (to rise). Underwater, they are denser than water; at the surface, they pump out the ballast water and become less dense.</li>
+<li><strong>Hydrometer:</strong> A simple instrument that measures the density of a liquid using Archimedes' principle. It sinks deeper in less dense liquids and floats higher in denser ones. Used to test battery acid concentration, milk adulteration, and alcohol content.</li>
+<li><strong>Dead Sea:</strong> The Dead Sea in Jordan/Israel has salinity of ~34% (vs ocean ~3.5%). Density ≈ 1240 kg/m³. Human bodies (average density ~985 kg/m³) float effortlessly — no swimming required. The high density means the upthrust far exceeds body weight even without much displacement.</li>
+<li><strong>Titanic:</strong> The Titanic sank not because the steel was too heavy, but because water entered the hull, replacing air with water → average density increased beyond water density → the buoyant force could no longer support the ship's weight.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Take a small ball of clay — it sinks in a bowl of water. Now reshape the same clay into a shallow open bowl shape. If done correctly, the clay boat will float. The mass is identical — only the shape changed. The boat shape displaces more water volume than the clay ball, so the buoyant force increases. Now slowly add small stones to the clay boat until it sinks. The moment the average density (clay + stones + air inside) exceeds water density, it sinks. You have just demonstrated both Archimedes' principle and the Plimsoll limit.</p>
+</div><h2>7. Think deeper</h2>
+<p>A ship submerged 5 metres below the surface in water: does the buoyant force change compared to when it was floating? The buoyant force depends on the volume of fluid displaced — not the depth. At 5 m below, the ship still displaces the same volume (assuming the hull is rigid and doesn't compress) → same buoyant force. But a submarine changes depth by changing the volume of water in its ballast tanks — effectively changing its average density. If the ballast tanks fail and the sub cannot pump out water, what happens? Predict using your understanding of average density.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What principle explains why a massive steel ship can float on water?</p>
+<ul>
+<li>A. Steel becomes less dense when heated by the sun on open oceans</li>
+<li>B. Archimedes' principle: the ship displaces water equal to its weight</li>
+<li>C. Air currents beneath the hull push the ship upward like a wing</li>
+</ul>
+<h3>Q2</h3>
+<p>Why does understanding buoyancy as a mechanism matter more than memorising that ships float?</p>
+<ul>
+<li>A. Memorising that ships float is sufficient for all naval engineering</li>
+<li>B. It lets engineers predict how much cargo a ship can safely carry</li>
+<li>C. Buoyancy mechanisms only apply to wooden boats, not steel ones</li>
+</ul>
+<h3>Q3</h3>
+<p>If a ship took on water and became denser than water overall, what would you predict?</p>
+<ul>
+<li>A. The ship would sink because upthrust would no longer equal the total weight</li>
+<li>B. The ship would rise higher in the water due to increased internal pressure</li>
+<li>C. The ship's buoyancy force would increase to balance the extra weight</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A hollow steel cube has outer dimensions 2 m × 2 m × 2 m, and wall thickness 5 cm (0.05 m). Steel density = 7,800 kg/m³. Water density = 1,000 kg/m³. (a) Calculate the volume of steel in the walls. (b) Calculate the mass of the steel cube. (c) Calculate the volume of the whole cube (outer dimensions). (d) Calculate the average density of the cube (mass/outer volume). (e) Will the cube float? (f) How much cargo (maximum additional mass) can be placed inside before it sinks?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The ancient Greek mathematician Archimedes (287–212 BC) is said to have discovered buoyancy while stepping into a full bathtub — he noticed the water overflowing and realised this could measure the volume of irregular objects. He reportedly ran through the streets shouting "Eureka!" ("I have found it!"). Whether the story is true or not, the principle he identified — that upthrust equals the weight of displaced fluid — is used today in designing aircraft carriers, submarines, oil platforms, and the instrument used to check whether your milk has been adulterated. One bathtub observation → 2,200 years of engineering application.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Buoyant force = weight of fluid displaced. Float if average density &lt; fluid density. A ship floats because the hull traps air, lowering average density below water. Fill the hull with water → average density rises above water → ship sinks.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 8 of 30</footer>
+</div>
+</body>
+</html>

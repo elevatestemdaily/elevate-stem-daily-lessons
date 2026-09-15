@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 10 — Why does a balloon expand at high altitude? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 10</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a balloon expand at high altitude?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover the law that links pressure, volume, and temperature in gases — and understand why this law controls weather balloons, your lungs, and the behaviour of every gas on Earth.</p>
+</div><h2>1. The mystery</h2>
+<p>A balloon inflated at sea level and carried to the top of a mountain (3,000 m altitude) expands visibly — even though no air was added. The same balloon placed in a freezer shrinks without losing any air. Taken underwater, it shrinks dramatically. What determines the size of a gas — and why does the same amount of gas take up different amounts of space under different conditions?</p>
+<h2>2. The science behind it</h2>
+<p><strong>What gas pressure actually is:</strong></p>
+<p>Inside a balloon, gas molecules are in constant random motion. They collide with the walls of the balloon billions of times per second. Each collision exerts a tiny force on the wall. The sum of all these forces per unit area is the <strong>gas pressure</strong>. More molecules = more collisions = more pressure. Faster molecules (higher temperature) = harder collisions = more pressure.</p>
+<p><strong>Boyle's Law (constant temperature):</strong></p>
+<p>At a fixed temperature, pressure × volume = constant:</p>
+<p><strong>P × V = constant → P₁V₁ = P₂V₂</strong></p>
+<p>If external pressure decreases (altitude increases), the gas inside expands until internal pressure equals external pressure. This is exactly what happens to the balloon at altitude:
+- At sea level: high atmospheric pressure compresses balloon
+- At 3,000 m: lower atmospheric pressure → balloon can expand → volume increases
+- Atmospheric pressure falls from ~101,000 Pa at sea level to ~70,000 Pa at 3,000 m</p>
+<p><strong>Charles's Law (constant pressure):</strong></p>
+<p>At a fixed pressure, volume / temperature = constant:</p>
+<p><strong>V/T = constant → V₁/T₁ = V₂/T₂</strong> (T must be in Kelvin: K = °C + 273)</p>
+<p>Cold air (freezer): molecules move more slowly → fewer/weaker collisions with walls → lower pressure → balloon shrinks to restore equilibrium.</p>
+<p><strong>The Combined Gas Law:</strong></p>
+<p><strong>P₁V₁/T₁ = P₂V₂/T₂</strong></p>
+<p>This single equation connects all three variables and allows prediction of any gas's behaviour when conditions change.</p>
+<p><strong>The altitude mechanism (Boyle's Law applied):</strong></p>
+<ol>
+<li>At sea level: atmospheric pressure = 1 atm pressing inward on balloon.</li>
+<li>As altitude increases: less atmosphere above → atmospheric pressure decreases.</li>
+<li>The gas inside still exerts the same pressure (same amount of gas, same temperature — nearly).</li>
+<li>The inward force decreases → the balloon expands until internal and external pressure equalise.</li>
+<li>At high enough altitude, a weather balloon will expand until it bursts.</li>
+</ol>
+<p><strong>The underwater mechanism (Boyle's Law, opposite direction):</strong></p>
+<p>Underwater, water pressure ADDS to atmospheric pressure. Greater inward force → balloon volume decreases. This directly explains Q3: underwater = increased pressure → balloon shrinks.</p>
+<p><strong>Why mountains feel cold: adiabatic cooling</strong></p>
+<p>As air rises in the atmosphere, lower pressure allows it to expand. Expansion requires energy — which the air takes from its own internal energy → temperature drops. This is why mountains are cold and clouds form at altitude.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the gas inside the balloon as a crowd of people in a room. Each person randomly bumps into the walls — these bumps are the gas pressure. If the room walls can move (elastic balloon), and the crowd is compressed by an external wall (atmospheric pressure), the room is small. Remove the external wall (go to high altitude, where atmosphere is thinner) — the crowd can spread out → the room (balloon) gets bigger. Cool the room (freezer) — people move more slowly → hit walls less hard → walls close in. The number of people (moles of gas) never changes.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_10.svg" alt="Diagram for Why does a balloon expand at high altitude?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows three scenarios side by side. Left: Balloon at sea level — large atmospheric pressure arrows pressing inward, balloon at normal size. Centre: Same balloon at 3,000 m altitude — fewer/smaller atmospheric pressure arrows, balloon expanded. Right: Same balloon 10 m underwater — large inward arrows (atmosphere + water pressure), balloon compressed small. Below each balloon: gas molecule dots (same number in all three) with movement arrows. Bottom: P₁V₁ = P₂V₂ equation with a worked example using sea level vs altitude pressures.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Weather balloons:</strong> The Indian Meteorological Department (IMD) launches weather balloons twice daily from 52 stations across India. These balloons carry radiosondes (instrument packages) to 30–40 km altitude. At that altitude, atmospheric pressure is ~1% of sea level — the balloon volume expands about 100× before bursting. The radiosonde parachutes back, transmitting temperature, humidity, and pressure data that feeds into monsoon forecasting.</li>
+<li><strong>ISRO balloon experiments:</strong> ISRO uses stratospheric balloons for astronomy experiments above most of the atmosphere. These balloons are inflated with only a small amount of helium at ground level — they are designed to expand as they rise, reaching diameters of 100+ metres at 40 km altitude.</li>
+<li><strong>Aircraft cabin pressure:</strong> Aircraft cabins are pressurised at the equivalent of ~2,400 m altitude (cabin pressure ~75,000 Pa). Without pressurisation, the thin air at cruising altitude (~10,000 m, pressure ~26,000 Pa) would cause hypoxia within minutes. The pressure differential also explains why ears pop during descent — the middle ear must equalise to the rising cabin pressure.</li>
+<li><strong>Scuba tanks:</strong> Scuba tanks store air at ~200 atm (200× atmospheric pressure). As the diver breathes, the regulator reduces this to the ambient water pressure. At depth, this air expands in the lungs. A diver who holds their breath while ascending — as gas in lungs expands at lower pressure — risks lung rupture (pulmonary barotrauma).</li>
+<li><strong>Your lungs:</strong> Every breath uses Boyle's Law. Diaphragm contracts → chest volume increases → pressure in lungs falls below atmospheric → air flows in (inhalation). Diaphragm relaxes → chest volume decreases → pressure rises → air flows out (exhalation). You breathe using pressure differences, not suction.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Half-fill a sealed plastic bottle with air. Squeeze it hard — you can feel the air pressure increase as you reduce the volume (Boyle's Law: smaller V → higher P). Release and the bottle springs back. Now place the sealed bottle in a hot-water basin for 2 minutes (Charles's Law: T increases → gas expands → pressure rises, bottle feels tighter if not flexible). Then place it in a cold-water basin. The bottle squeezes inward slightly as the air cools and contracts. You can feel Boyle's and Charles's Laws with your hands.</p>
+</div><h2>7. Think deeper</h2>
+<p>The atmosphere is mostly nitrogen (~78%) and oxygen (~21%). At altitude, there are fewer molecules of both per cubic metre — so although the ratio is the same, each breath delivers fewer oxygen molecules. At 5,000 m, atmospheric pressure is about 54% of sea level, meaning each breath delivers only 54% of the oxygen molecules. This causes altitude sickness (headache, nausea). At 8,000 m+ (the "death zone"), even with a full breath, your blood cannot pick up enough oxygen for sustained effort. Mountaineers use supplemental oxygen above 8,000 m. How does the oxygen concentration in your blood change as you acclimatise to altitude over days and weeks? (Hint: the body responds by increasing red blood cell production.)</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Why does a sealed balloon get bigger when it rises to high altitude?</p>
+<ul>
+<li>A. Atmospheric pressure decreases at altitude, allowing the gas inside to expand</li>
+<li>B. Warmer temperatures at altitude cause the rubber to stretch outward</li>
+<li>C. Gravity decreases at altitude so gas molecules spread apart naturally</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is knowing the mechanism of gas expansion more useful than just observing it expands?</p>
+<ul>
+<li>A. Observing the expansion is enough to design weather balloons accurately</li>
+<li>B. It enables predictions about balloon volume at different altitudes or pressures</li>
+<li>C. Gas expansion mechanisms only apply to helium, not to air-filled balloons</li>
+</ul>
+<h3>Q3</h3>
+<p>If a balloon were taken deep underwater instead, what would you predict?</p>
+<ul>
+<li>A. The balloon would shrink because increased pressure compresses the gas inside</li>
+<li>B. The balloon would expand as water is denser and pushes gas outward</li>
+<li>C. The balloon would stay the same size as water pressure is uniform</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A weather balloon is filled with helium to a volume of 1.5 m³ at sea level (pressure = 101,000 Pa, temperature = 20°C = 293 K). It rises to 20 km altitude where pressure = 5,500 Pa and temperature = −56°C = 217 K. (a) Using the combined gas law (P₁V₁/T₁ = P₂V₂/T₂), calculate the volume at 20 km altitude. (b) If the balloon material can stretch to a maximum volume of 25 m³ before bursting, will it survive to 20 km? (c) If the balloon starts at 1.2 m diameter at sea level, what diameter does it reach at 20 km? (Volume of sphere = 4/3 × π × r³.)</p>
+</div><h2>10. One surprising idea</h2>
+<p>In 1783, Jacques Charles (whose name is attached to Charles's Law) made the first hydrogen-filled balloon flight in Paris, ascending to 549 metres. He noticed the balloon's skin bulged as it rose — the gas was expanding against the lower atmospheric pressure. He was experiencing Boyle's Law in real time, without yet having the equations. He had to release gas deliberately to prevent the balloon from bursting. Modern weather balloons — launched from Kolkata, Pune, Chennai, and 49 other Indian stations every day — still face the same constraint: they must be under-filled at launch so that the expanding gas at altitude does not burst them before they reach their target height.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>At high altitude, atmospheric pressure is lower → balloon gas expands (Boyle's Law: P₁V₁ = P₂V₂). Underwater: higher pressure → gas compresses → balloon shrinks. Temperature also matters: cold → gas contracts, heat → expands (Charles's Law).</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

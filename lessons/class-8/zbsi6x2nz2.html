@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 12 — How does an electric motor work? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 12</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does an electric motor work?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover why a coil carrying current in a magnetic field rotates — and understand the principle powering every fan, pump, train, and electric vehicle in India.</p>
+</div><h2>1. The mystery</h2>
+<p>Every ceiling fan in India contains an electric motor. So does every water pump in every Indian household, every air conditioner, every electric rickshaw, and every metro train. Electricity flows in — mechanical rotation comes out. But why does passing electricity through a wire make it move? There is no explosion, no steam, no gears — yet a motor can produce enough force to accelerate a 22-tonne metro train. What is actually happening inside?</p>
+<h2>2. The science behind it</h2>
+<p><strong>The Lorentz Force:</strong></p>
+<p>When a current-carrying conductor is placed in a magnetic field, it experiences a force. The magnitude is:</p>
+<p><strong>F = BIL</strong></p>
+<p>Where B = magnetic field strength (Tesla), I = current (Amperes), L = length of conductor (metres).</p>
+<p>The direction is given by <strong>Fleming's Left-Hand Rule</strong>: point the index finger in the direction of the magnetic field, middle finger in the direction of current — the thumb points in the direction of the force on the conductor.</p>
+<p><strong>DC Motor structure:</strong></p>
+<ol>
+<li><strong>Armature (rotor):</strong> A coil of wire that can rotate freely, mounted on an axle.</li>
+<li><strong>Field magnets (stator):</strong> Permanent magnets (or electromagnets) that create the external magnetic field.</li>
+<li><strong>Commutator:</strong> A split-ring switch attached to the axle. As the coil turns 180°, the commutator reverses the current direction in the coil — keeping the force always in the same rotational direction.</li>
+<li><strong>Brushes:</strong> Fixed carbon contacts that maintain electrical connection to the rotating commutator.</li>
+</ol>
+<p><strong>How rotation is produced:</strong></p>
+<ul>
+<li>Current flows through the coil → each side of the coil in the magnetic field experiences a force (Lorentz force).</li>
+<li>The two sides of the coil are in opposite positions relative to the magnets → they experience forces in opposite directions → this creates a turning moment (torque).</li>
+<li>The coil rotates. When it reaches 90° (vertical), the forces have no turning effect — but momentum carries it through. The commutator then reverses the current, so forces keep pushing in the same rotational direction.</li>
+</ul>
+<p><strong>Power and efficiency:</strong></p>
+<p>Electrical power in: P = V × I. Mechanical power out: P = torque × angular velocity. Modern electric motors can exceed 95% efficiency — far better than petrol engines (~30%).</p>
+<p><strong>AC motors:</strong></p>
+<p>Most motors in Indian industry run on AC (alternating current from the grid). In AC induction motors (used in fans and pumps), the alternating current creates a rotating magnetic field that "drags" the rotor around. No commutator needed.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the motor coil as a bar being pushed on both ends by two magnets. Push the left end up and the right end down — the bar spins. Now halfway through the spin, the left end is where the right end was. If you kept pushing in the same way, the bar would slow down and reverse. The commutator is like a switch that swaps which end gets which push — so both ends are always being pushed to rotate in the same direction. Current direction flips, but rotation direction stays constant.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_12.svg" alt="Diagram for How does an electric motor work?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a DC motor cross-section: two field magnets (N and S poles), a rectangular coil between them, a commutator (split ring) attached to the axle, and two brushes touching the commutator. Curved arrows show the coil rotating. Force arrows on the coil sides (using F=BIL) show opposite forces creating torque. A Fleming's Left-Hand Rule inset explains the force direction. A sidebar shows: fan motor, electric rickshaw, metro train — all use the same principle.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Ceiling fans:</strong> India has ~450 million ceiling fans in use. Each contains an AC induction motor. The BEE star-rating system grades fans by motor efficiency — a 5-star fan motor uses ~35 W vs an old motor's ~75 W.</li>
+<li><strong>Electric rickshaws (e-rickshaws):</strong> Over 1.5 million e-rickshaws operate in India, especially in UP and Bihar. Their hub motors are DC brushless motors (BLDC) — the commutator is replaced by an electronic controller, eliminating wear.</li>
+<li><strong>Mumbai Metro Line 3:</strong> The Aqaua Line uses AC induction traction motors producing 190 kW per motor. Each train has 24 motors, totalling 4,560 kW of motor power.</li>
+<li><strong>ISRO satellite reaction wheels:</strong> Small precision DC motors spin heavy wheels inside satellites to control pointing direction — no fuel needed. Used in Chandrayaan and Aditya-L1 spacecraft.</li>
+<li><strong>Water pumps:</strong> Every submersible pump drawing water from borewells in Indian villages and cities uses a motor. India runs an estimated 20 million electric pumps for irrigation.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Strip insulation from 1 m of enamelled wire. Wind it into a coil (20 turns, ~4 cm diameter). Scrape the enamel off one end completely, and only the top half off the other end (this creates the commutator effect). Rest the coil on two loops of bare wire connected to a 3 V battery. Hold a strong magnet (from an old speaker) near the coil. The coil should spin spontaneously. This is a "homopolar motor" — the simplest working electric motor you can build in 10 minutes.</p>
+</div><h2>7. Think deeper</h2>
+<p>A motor and a generator are fundamentally the same device — just run in opposite directions. In a motor, electrical energy → mechanical energy (current in → rotation out). In a generator, mechanical energy → electrical energy (rotation in → current out). A spinning motor can generate electricity (back-EMF), and a generator can be used as a motor if you feed it electricity. The Chandrayaan-3 lander used the same devices for both purposes during different phases of the mission. What does this symmetry tell you about the nature of electromagnetic energy conversion?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes an electric motor to rotate?</p>
+<ul>
+<li>A. A current-carrying coil in a magnetic field experiences a force, causing rotation</li>
+<li>B. Electric charge builds up on the coil and repels the outer casing</li>
+<li>C. Heating of the wire by current causes it to expand and spin</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the motor mechanism more useful than knowing it spins?</p>
+<ul>
+<li>A. It helps engineers design motors with the correct power and efficiency</li>
+<li>B. Knowing the motor spins is sufficient for all electrical engineering work</li>
+<li>C. The motor mechanism only applies to DC motors, not AC motors</li>
+</ul>
+<h3>Q3</h3>
+<p>If the magnetic field in a motor were made stronger, what would you predict?</p>
+<ul>
+<li>A. The motor would stop spinning because stronger fields oppose current flow</li>
+<li>B. The motor would produce more torque and rotate with greater force</li>
+<li>C. The motor coil would resist rotation due to greater electromagnetic induction</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A DC motor coil has 50 turns, each side 0.15 m long, carrying 2 A of current. The magnetic field is 0.3 T. (a) Calculate the force on each side of a single-turn coil using F = BIL. (b) Calculate the total force on one side with 50 turns. (c) If the coil width is 0.10 m, calculate the torque (torque = force × perpendicular distance = F × half-width × 2). (d) If the motor runs at 3,000 rpm (50 rev/s), calculate the mechanical power output (P = torque × 2π × frequency).</p>
+</div><h2>10. One surprising idea</h2>
+<p>The world's most efficient electric motor is not in a Tesla car — it's in a Dyson vacuum cleaner. Dyson's V12 motor spins at 125,000 rpm (about 5× faster than a Formula 1 engine) and produces 220,000 W of suction power from a device you hold in one hand. It achieves this through a tiny, precisely engineered axle just 6 mm in diameter. Closer to home, BHEL in Bhopal manufactures electric motors used in Indian Railways locomotives — some producing over 3,700 kW each, enough to power 3,000 Indian homes.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A current-carrying coil in a magnetic field experiences a force (F = BIL). The commutator reverses current direction every half-turn, maintaining continuous rotation. Stronger field or more current → more torque.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 12 of 30</footer>
+</div>
+</body>
+</html>

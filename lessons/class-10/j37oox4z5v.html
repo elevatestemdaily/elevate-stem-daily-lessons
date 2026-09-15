@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 13 — Why are offspring similar but not identical? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 10 · DAY 13</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why are offspring similar but not identical?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain how sexual reproduction produces variation through chromosome sorting and random fertilisation, define the terms allele, homologous chromosome and independent assortment, and predict how genetic variation changes if organisms switch to asexual reproduction.</p>
+</div><h2>1. The mystery</h2>
+<p>Look at any family photograph. The children resemble their parents — same nose shape, similar eye colour, recognisable smile. But no child is an exact copy of either parent, and siblings are different from each other even though they came from the same two parents. If genes are simply passed down from parent to child, why isn't each child an identical copy? And if the mixing process is random, why do children still look like their parents at all?</p>
+<h2>2. The science behind it</h2>
+<p>The answer lies in the mechanics of <strong>sexual reproduction</strong> and the way chromosomes are distributed during a special type of cell division called <strong>meiosis</strong>.</p>
+<p>Human body cells are <strong>diploid (2n = 46)</strong> — they contain 23 pairs of chromosomes. In each pair, one chromosome came originally from the father and one from the mother. These matched pairs are called <strong>homologous chromosomes</strong>. Each chromosome carries genes at fixed positions called <strong>loci</strong> (singular: locus). The two copies of a gene at the same locus on homologous chromosomes may be identical or slightly different — these variants are called <strong>alleles</strong>.</p>
+<p>When the body produces sex cells (gametes — sperm in males, eggs in females), it uses meiosis. During meiosis, the chromosome number is halved: each gamete ends up <strong>haploid (n = 23)</strong>, carrying one chromosome from each homologous pair. The result is that each gamete has a unique combination of chromosomes.</p>
+<p><strong>Source of variation 1 — Independent assortment.</strong> During meiosis I, each pair of homologous chromosomes lines up at the cell's equator independently of all other pairs. This means the maternal and paternal chromosome of pair 1 sorts independently of pair 2, pair 3, and so on. With 23 pairs, the number of possible chromosome combinations in a single gamete is 2²³ = 8,388,608 — over eight million different possibilities from just the chromosome sorting step alone.</p>
+<p><strong>Source of variation 2 — Crossing over (recombination).</strong> During the early stages of meiosis I, homologous chromosomes pair up tightly and exchange segments of DNA at points called <strong>chiasmata</strong>. This process, called <strong>crossing over</strong>, creates new chromosomes that are mixtures of maternal and paternal DNA. It generates combinations of alleles that did not exist in either parent, dramatically expanding the range of possible genetic outcomes.</p>
+<p><strong>Source of variation 3 — Random fertilisation.</strong> After meiosis, one sperm (from over eight million possible types) randomly fuses with one egg (from over eight million possible types) at fertilisation. The resulting zygote therefore carries a chromosome combination selected from 2²³ × 2²³ possibilities — roughly 70 trillion different combinations, not counting the additional variation from crossing over.</p>
+<p>Despite all this variation, offspring still resemble their parents because they still carry alleles inherited from those parents — just in new combinations. A child cannot inherit a gene for blue eyes unless at least one parent carries the allele for blue eyes. The resemblance comes from shared alleles; the differences come from how those alleles are recombined and which combination the child happened to receive.</p>
+<p>Mutations — random, rare errors in DNA replication — add yet another, smaller source of new variation. But the dominant engine of variation in sexually reproducing organisms is the shuffling mechanism of meiosis combined with random fertilisation.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of each parent's genome as a deck of 23 different playing cards (chromosomes). Each parent has two copies of each card (diploid). Making a gamete is like dealing a hand of 23 cards — one card from each pair — with the added twist that some cards have been partially swapped with their partner before dealing (crossing over).</p>
+<ul>
+<li><strong>Meiosis</strong> = shuffling and dealing the deck to make a unique 23-card hand</li>
+<li><strong>Independent assortment</strong> = each card chosen randomly from its pair, regardless of other pairs</li>
+<li><strong>Crossing over</strong> = partially exchanging halves of some cards before dealing</li>
+<li><strong>Fertilisation</strong> = combining two unique 23-card hands to make a 46-card set</li>
+<li><strong>Alleles</strong> = the slightly different versions of the "same" card from each parent</li>
+</ul>
+<p>The child will always have cards from both parents — that is why resemblance occurs. But the specific combination is unique — that is why identity does not occur.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows:</p>
+<ul>
+<li><strong>Top row:</strong> Two homologous chromosome pairs from a parent, one blue (paternal) and one orange (maternal) chromosome in each pair</li>
+<li><strong>Middle row:</strong> Four possible gametes after meiosis, each showing a different combination of blue and orange chromosomes (for two chromosome pairs only, for clarity), labelled "Independent assortment"</li>
+<li><strong>Bottom row:</strong> A crossing-over diagram showing one blue and one orange chromosome exchanging a segment at a chiasma, producing two recombinant chromosomes labelled "New allele combination"</li>
+<li>A caption: "With 23 chromosome pairs: 2²³ &gt; 8 million gamete types before crossing over"</li>
+</ul>
+<figure><img src="../../illustrations/class-10/day_13.svg" alt="Diagram for Why are offspring similar but not identical?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Understanding genetic variation mechanisms has direct applications:</p>
+<ul>
+<li><strong>Inherited diseases in Indian families:</strong> Conditions like thalassaemia are common in certain communities in India (Gujarat, Punjab, Sindh communities). Knowing that two carrier parents have a 25% chance of producing an affected child (who inherits the faulty allele from both parents) allows genetic counsellors to advise families before pregnancy — a direct application of understanding allele inheritance.</li>
+<li><strong>Agriculture and crop breeding:</strong> India's Green Revolution relied on selectively breeding wheat varieties with specific allele combinations for high yield and short stature. Plant breeders deliberately exploit the same meiotic shuffling mechanism — selecting offspring with the desired combination of traits from crosses between two parent varieties.</li>
+<li><strong>Why identical twins exist:</strong> Identical (monozygotic) twins arise when a single fertilised egg splits into two embryos. Because they come from the same zygote, they share the same allele combinations — demonstrating that when sexual variation is bypassed at fertilisation, the result is genetic identity.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Write your first explanation of <strong>why are offspring similar but not identical</strong> in one sentence.</li>
+<li>Draw three boxes: <strong>Cause → Mechanism → Result</strong>.</li>
+<li>Put one scientific idea into each box.</li>
+<li>Circle the part you are least certain about.</li>
+<li>Write one observation or experiment that could test it.</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Q3 established that asexual reproduction dramatically reduces variation because offspring are genetic clones. Now extend this prediction: consider a species that switched entirely to asexual reproduction in a stable environment where it was thriving.</p>
+<p><strong>Predict:</strong> If the environment then changed suddenly — a new disease pathogen appeared, for example — what would happen to the asexually reproducing population compared with a sexually reproducing population of the same species? Connect your answer to the mechanism of variation described in this lesson, and explain why genetic diversity is particularly important in the face of new diseases.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Why do sexually reproducing offspring resemble parents but are not identical?</p>
+<ul>
+<li>a. Each parent contributes half the chromosomes; random gene combinations create variation</li>
+<li>b. Offspring are identical to one parent but not the other due to dominant genes</li>
+<li>c. Environmental factors during growth cause minor changes to inherited DNA sequences</li>
+</ul>
+<p><strong>Correct answer: a</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding genetic variation mechanisms more useful than just noting family resemblances?</p>
+<ul>
+<li>a. Because family resemblances are obvious and need no scientific explanation</li>
+<li>b. The mechanism explains inherited diseases, evolution and why siblings differ</li>
+<li>c. Because the mechanism proves all siblings receive exactly 50% of each gene</li>
+</ul>
+<p><strong>Correct answer: b</strong></p>
+<h3>Q3</h3>
+<p>What would happen to variation if organisms reproduced only asexually?</p>
+<ul>
+<li>a. Variation would increase because asexual reproduction allows more mutations</li>
+<li>b. Variation would be the same because mutations occur at the same rate either way</li>
+<li>c. Variation would decrease dramatically because offspring would be genetic clones</li>
+</ul>
+<p><strong>Correct answer: c</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain today's concept to a younger student in <strong>60 seconds without technical jargon</strong>. Then explain it again using the correct scientific vocabulary.</p>
+<p>If both explanations describe the same mechanism, you have understood the concept rather than memorised it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The process of crossing over during meiosis means that no two eggs or sperm produced by one person are genetically identical to each other — they are all unique. A woman is born with roughly one to two million immature egg cells (oocytes), and each one, when it completes meiosis, will be a genetically distinct cell. The variation within a single person's own gametes is itself enormous, even before fertilisation with another person's gamete.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Sexual offspring resemble their parents because they inherit alleles from them, but are not identical because meiosis independently assorts 23 chromosome pairs — generating over 8 million gamete types — and random fertilisation combines two such gametes, producing unique allele combinations in every individual.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 10 · Day 13 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,26 +1,121 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Ultimate Challenge: Design a future sustai</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 30</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+
+<!-- Title -->
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">Ultimate Challenge: Design a Sustainable City</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Systems thinking: every urban system connects to every other — Day 30</text>
+
+<!-- ── LEFT: Energy + Water systems ── -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#16a34a">Energy &amp; Water</text>
+
+<!-- Energy box -->
+<rect x="30" y="104" width="280" height="150" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#92400e">Energy Sources</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">☀ Rooftop solar (300+ sunny days)</text>
+<text x="40" y="160" font-family="Arial" font-size="14" fill="#333">💨 Wind turbines in buildings</text>
+<text x="40" y="178" font-family="Arial" font-size="14" fill="#333">🔋 Battery storage for night</text>
+<text x="40" y="196" font-family="Arial" font-size="14" fill="#555">LED streets: 60% less energy</text>
+<text x="40" y="214" font-family="Arial" font-size="14" fill="#555">Electric buses + metro rail</text>
+<text x="40" y="232" font-family="Arial" font-size="14" fill="#555">India 2070 net-zero target</text>
+
+<!-- Water box -->
+<rect x="30" y="262" width="280" height="152" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="280" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Water Cycle</text>
+<text x="40" y="300" font-family="Arial" font-size="14" fill="#333">💧 Rooftop rainwater harvesting</text>
+<text x="40" y="318" font-family="Arial" font-size="14" fill="#333">   → aquifer recharge (Day 25)</text>
+<text x="40" y="338" font-family="Arial" font-size="14" fill="#333">♻ Greywater recycled for</text>
+<text x="40" y="356" font-family="Arial" font-size="14" fill="#333">   gardens, toilet flushing</text>
+<text x="40" y="376" font-family="Arial" font-size="14" fill="#555">Zero liquid discharge target</text>
+<text x="40" y="394" font-family="Arial" font-size="14" fill="#555">Chennai model: mandatory HWH</text>
+
+<!-- Connection note -->
+<rect x="30" y="422" width="280" height="60" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="170" y="440" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Systems connection:</text>
+<text x="170" y="458" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Less energy → less water pumped</text>
+<text x="170" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">More green → more recharge</text>
+
+<!-- ── CENTRE: City system diagram ── -->
+<rect x="334" y="74" width="330" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="499" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Circular City Model</text>
+
+<!-- Central hub -->
+<circle cx="499" cy="280" r="42" fill="#1f5f8b"/>
+<text x="499" y="276" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">SMART</text>
+<text x="499" y="292" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">CITY</text>
+
+<!-- Six surrounding nodes with connections -->
+<!-- Top: Energy -->
+<circle cx="499" cy="138" r="28" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+<text x="499" y="134" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#78350f">Energy</text>
+<text x="499" y="150" text-anchor="middle" font-family="Arial" font-size="14" fill="#92400e">Solar</text>
+<line x1="499" y1="166" x2="499" y2="238" stroke="#ca8a04" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+<!-- Right: Food -->
+<circle cx="611" cy="196" r="28" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+<text x="611" y="192" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Food</text>
+<text x="611" y="208" text-anchor="middle" font-family="Arial" font-size="14" fill="#16a34a">Rooftop</text>
+<line x1="582" y1="214" x2="536" y2="248" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+<!-- Right-bottom: Waste -->
+<circle cx="611" cy="365" r="28" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="611" y="361" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Waste</text>
+<text x="611" y="377" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">→Gas</text>
+<line x1="582" y1="348" x2="538" y2="312" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+<!-- Bottom: Transport -->
+<circle cx="499" cy="422" r="28" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="499" y="418" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">Mobility</text>
+<text x="499" y="434" text-anchor="middle" font-family="Arial" font-size="14" fill="#7c3aed">EV+Metro</text>
+<line x1="499" y1="394" x2="499" y2="322" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+<!-- Left-bottom: Water -->
+<circle cx="387" cy="365" r="28" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="387" y="361" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Water</text>
+<text x="387" y="377" text-anchor="middle" font-family="Arial" font-size="14" fill="#1d4ed8">Recycle</text>
+<line x1="416" y1="348" x2="460" y2="312" stroke="#1d4ed8" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+<!-- Left-top: Green -->
+<circle cx="387" cy="196" r="28" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+<text x="387" y="192" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Green</text>
+<text x="387" y="208" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Trees</text>
+<line x1="416" y1="214" x2="461" y2="248" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+<!-- Arrows between nodes (outer connections) -->
+<path d="M 527 166 Q 580 170 584 194" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+<path d="M 415 214 Q 395 258 388 338" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+
+<!-- ── RIGHT: India Smart Cities ── -->
+<rect x="678" y="74" width="302" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="829" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India Smart Cities</text>
+
+<rect x="688" y="104" width="282" height="84" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="829" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Smart Cities Mission</text>
+<text x="829" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">100 cities, ₹2 lakh crore</text>
+<text x="829" y="158" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Sensors for traffic, energy, water</text>
+<text x="829" y="176" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Pune, Bhopal, Surat — top ranked</text>
+
+<rect x="688" y="198" width="282" height="84" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="829" y="216" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">India at Scale</text>
+<text x="829" y="234" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">35–40 lakh new urban residents</text>
+<text x="829" y="252" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">added every year</text>
+<text x="829" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">= 1 medium city built/month</text>
+
+<rect x="688" y="292" width="282" height="84" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="829" y="310" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#7c3aed">Zero-Waste Hierarchy</text>
+<text x="829" y="328" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Refuse → Reduce → Reuse</text>
+<text x="829" y="346" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Recycle → Rot (compost)</text>
+<text x="829" y="364" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Wet waste → biogas → compost</text>
+
+<rect x="688" y="386" width="282" height="96" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="829" y="404" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#065f46">India 2070 Net-Zero</text>
+<text x="829" y="422" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Every new city must align</text>
+<text x="829" y="440" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">with carbon-neutral future</text>
+<text x="829" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Decisions now lock in patterns</text>
+<text x="829" y="478" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">for the next 100 years</text>
+
+<!-- Takeaway -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Sustainable city = energy, water, food, waste, transport — all looped, not linear.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">India adds 40 lakh urban residents/year. Smart Cities Mission: 100 cities, sensors, zero-waste.</text>
 </svg>

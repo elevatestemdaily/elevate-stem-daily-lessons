@@ -1,26 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<defs>
+  <marker id="digArr20" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+    <polygon points="0 0, 8 3, 0 6" fill="#1f5f8b"/>
+  </marker>
+</defs>
+<!-- Background -->
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">What happens when food is digested?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 20</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<!-- Title -->
+<text x="500" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">What happens when food is digested?</text>
+<text x="500" y="58" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Enzymes are biological scissors — Day 20</text>
+
+<!-- LEFT: Digestive tract silhouette (x=20-270, y=70-478) -->
+<rect x="20" y="70" width="250" height="408" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="145" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Digestive System</text>
+<!-- Mouth -->
+<ellipse cx="145" cy="110" rx="35" ry="15" fill="#fecaca" stroke="#dc2626" stroke-width="1.5"/>
+<text x="145" y="114" text-anchor="middle" font-family="Arial" font-size="14" fill="#dc2626">Mouth</text>
+<!-- Oesophagus -->
+<rect x="137" y="125" width="16" height="30" rx="3" fill="#fca5a5"/>
+<!-- Stomach -->
+<ellipse cx="145" cy="185" rx="42" ry="30" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>
+<text x="145" y="188" text-anchor="middle" font-family="Arial" font-size="14" fill="#9a3412">Stomach</text>
+<!-- Small intestine (coiled) -->
+<path d="M145,215 Q175,240 155,265 Q135,290 165,315 Q185,335 155,355" fill="none" stroke="#86efac" stroke-width="8"/>
+<path d="M155,355 Q130,370 145,390" fill="none" stroke="#86efac" stroke-width="8"/>
+<text x="145" y="420" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">Small intestine</text>
+<text x="145" y="432" text-anchor="middle" font-family="Arial" font-size="14" fill="#065f46">(6–7 m long)</text>
+<!-- Large intestine (arc on left) -->
+<path d="M145,390 Q100,400 95,440 Q97,460 145,465" fill="none" stroke="#d4d4d4" stroke-width="7"/>
+<text x="55" y="430" font-family="Arial" font-size="14" fill="#555">Large</text>
+<text x="52" y="441" font-family="Arial" font-size="14" fill="#555">intestine</text>
+
+<!-- Step labels along tract -->
+<text x="192" y="113" font-family="Arial" font-size="14" fill="#92400e" font-weight="700">1</text>
+<text x="192" y="155" font-family="Arial" font-size="14" fill="#92400e" font-weight="700">2</text>
+<text x="192" y="190" font-family="Arial" font-size="14" fill="#9a3412" font-weight="700">3</text>
+<text x="192" y="290" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">4</text>
+
+<!-- RIGHT COLUMN: 4 enzyme boxes (x=285-978) -->
+<!-- Enzyme 1: Amylase -->
+<rect x="285" y="70" width="335" height="90" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="285" y="70" font-family="Arial" font-size="14" fill="none"/>
+<text x="452" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">1. Salivary Amylase (Mouth)</text>
+<text x="300" y="108" font-family="Arial" font-size="14" fill="#333">Breaks starch (glucose chains) → maltose.</text>
+<text x="300" y="122" font-family="Arial" font-size="14" fill="#333">Chew plain rice 2 min: tastes sweet.</text>
+<text x="300" y="136" font-family="Arial" font-size="14" fill="#333">Amylase starts in the mouth.</text>
+<text x="300" y="152" font-family="Arial" font-size="14" fill="#1d4ed8" font-weight="700">Starch → glucose (amylase cuts carbs)</text>
+
+<!-- Enzyme 2: Pepsin -->
+<rect x="285" y="170" width="335" height="90" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+<text x="452" y="190" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#be185d">2. Pepsin (Stomach)</text>
+<text x="300" y="208" font-family="Arial" font-size="14" fill="#333">Stomach: HCl (pH 1–2) activates pepsin.</text>
+<text x="300" y="222" font-family="Arial" font-size="14" fill="#333">Pepsin cuts proteins → shorter peptides</text>
+<text x="300" y="236" font-family="Arial" font-size="14" fill="#333">for further digestion downstream.</text>
+<text x="300" y="252" font-family="Arial" font-size="14" fill="#be185d" font-weight="700">Proteins → peptides (acid + pepsin)</text>
+
+<!-- Enzyme 3: Lipase + Bile -->
+<rect x="285" y="270" width="335" height="100" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="2"/>
+<text x="452" y="290" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">3. Lipase + Bile (Small Intestine)</text>
+<text x="300" y="308" font-family="Arial" font-size="14" fill="#333">Bile emulsifies fats → tiny droplets.</text>
+<text x="300" y="322" font-family="Arial" font-size="14" fill="#333">(more surface area for lipase to act).</text>
+<text x="300" y="336" font-family="Arial" font-size="14" fill="#333">Lipase: fats → fatty acids + glycerol.</text>
+<text x="300" y="350" font-family="Arial" font-size="14" fill="#333">Amylase + trypsin continue digestion.</text>
+<text x="300" y="362" font-family="Arial" font-size="14" fill="#065f46" font-weight="700">Fats → fatty acids + glycerol (bile+lipase)</text>
+
+<!-- Villi absorption band -->
+<rect x="285" y="380" width="335" height="98" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="452" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7c3aed">4. Absorption by Villi</text>
+<text x="300" y="418" font-family="Arial" font-size="14" fill="#333">Villi: finger-like folds + microvilli.</text>
+<text x="300" y="432" font-family="Arial" font-size="14" fill="#333">Surface area ≈ 250 m² (half a court!).</text>
+<text x="300" y="446" font-family="Arial" font-size="14" fill="#333">Glucose, amino acids, fatty acids pass</text>
+<text x="300" y="460" font-family="Arial" font-size="14" fill="#333">through villi walls into blood → cells.</text>
+<text x="300" y="474" font-family="Arial" font-size="14" fill="#7c3aed" font-weight="700">Large → small molecules → blood</text>
+
+<!-- RIGHT SIDE INFO PANEL (x=635-978, y=70-478) -->
+<rect x="635" y="70" width="343" height="130" rx="6" fill="#f9fafb" stroke="#6b7280" stroke-width="2"/>
+<text x="806" y="90" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#374151">Enzyme = Biological Scissors</text>
+<text x="650" y="110" font-family="Arial" font-size="14" fill="#333">• Each enzyme cuts ONE specific bond</text>
+<text x="650" y="124" font-family="Arial" font-size="14" fill="#333">• Works at body temperature (37°C)</text>
+<text x="650" y="138" font-family="Arial" font-size="14" fill="#333">• Not used up — same enzyme cuts</text>
+<text x="650" y="152" font-family="Arial" font-size="14" fill="#333">  thousands of molecules</text>
+<text x="650" y="166" font-family="Arial" font-size="14" fill="#333">• Name clue: -ase suffix (amylase, lipase)</text>
+<text x="650" y="181" font-family="Arial" font-size="14" fill="#333">• Lock-and-key model: enzyme shape fits</text>
+<text x="650" y="193" font-family="Arial" font-size="14" fill="#333">  only its specific molecule</text>
+
+<!-- Lactose intolerance box -->
+<rect x="635" y="210" width="343" height="100" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="806" y="230" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Lactose Intolerance</text>
+<text x="650" y="248" font-family="Arial" font-size="14" fill="#333">Enzyme lactase digests lactose (milk</text>
+<text x="650" y="262" font-family="Arial" font-size="14" fill="#333">sugar) → glucose + galactose.</text>
+<text x="650" y="276" font-family="Arial" font-size="14" fill="#333">Without lactase → lactose undigested</text>
+<text x="650" y="290" font-family="Arial" font-size="14" fill="#333">→ bacteria in colon ferment it →</text>
+<text x="650" y="304" font-family="Arial" font-size="14" fill="#333">gas, bloating, pain. ~65% of adults</text>
+
+<!-- pH ranges box -->
+<rect x="635" y="320" width="343" height="158" rx="6" fill="#f0f7ff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="806" y="340" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">pH of Digestive Regions</text>
+<text x="650" y="358" font-family="Arial" font-size="14" fill="#333">Mouth:           pH 6.5–7.5 (slightly acidic)</text>
+<text x="650" y="374" font-family="Arial" font-size="14" fill="#333">Stomach:        pH 1.5–2.0 (very acidic)</text>
+<text x="650" y="390" font-family="Arial" font-size="14" fill="#333">Small intestine: pH 7.5–8.0 (alkaline)</text>
+<text x="650" y="406" font-family="Arial" font-size="14" fill="#555">Enzymes are pH-sensitive — amylase</text>
+<text x="650" y="420" font-family="Arial" font-size="14" fill="#555">stops working in the acid stomach.</text>
+<text x="650" y="436" font-family="Arial" font-size="14" fill="#555">Pancreatic juice (alkaline) neutralises</text>
+<text x="650" y="450" font-family="Arial" font-size="14" fill="#555">stomach acid before small intestine.</text>
+<text x="650" y="468" font-family="Arial" font-size="14" fill="#1f5f8b" font-weight="700">Wrong pH → enzyme shape distorts → fails</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="525" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Enzymes cut large molecules: amylase→starch, pepsin→protein, lipase→fats. Villi absorb small molecules into blood.</text>
 </svg>

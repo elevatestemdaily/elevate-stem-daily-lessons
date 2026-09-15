@@ -1,26 +1,117 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">The science of friction</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 7</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#1f5f8b">The science of friction</text>
+
+<!-- Left panel: Microscopic surfaces -->
+<text x="30" y="88" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">MICROSCOPIC REALITY</text>
+
+<!-- Dry contact -->
+<rect x="20" y="100" width="290" height="175" rx="8" fill="#fff3e0" stroke="#e07000" stroke-width="2"/>
+<text x="165" y="119" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#e07000">DRY SURFACES — asperities interlock</text>
+
+<!-- Top surface with asperity peaks -->
+<path d="M35,150 L60,150 L70,135 L80,150 L100,150 L112,132 L124,150 L145,150 L158,128 L170,150 L190,150 L202,136 L214,150 L235,150 L247,130 L259,150 L290,150" fill="none" stroke="#e07000" stroke-width="2"/>
+<text x="165" y="165" text-anchor="middle" font-family="Arial" font-size="14" fill="#e07000">top surface (asperity peaks)</text>
+
+<!-- Bottom surface with asperity peaks (inverted) -->
+<path d="M35,205 L55,205 L67,220 L79,205 L100,205 L115,222 L130,205 L150,205 L163,218 L176,205 L195,205 L210,222 L225,205 L250,205 L265,225 L280,205 L290,205" fill="none" stroke="#3949ab" stroke-width="2"/>
+<text x="165" y="238" text-anchor="middle" font-family="Arial" font-size="14" fill="#3949ab">bottom surface (asperity peaks)</text>
+
+<!-- Contact points (overlap region between curves) -->
+<circle cx="80" cy="155" r="5" fill="#c62828" opacity="0.8"/>
+<circle cx="124" cy="153" r="4" fill="#c62828" opacity="0.8"/>
+<circle cx="176" cy="157" r="5" fill="#c62828" opacity="0.8"/>
+<circle cx="225" cy="154" r="4" fill="#c62828" opacity="0.8"/>
+<text x="165" y="192" text-anchor="middle" font-family="Arial" font-size="14" fill="#c62828">contact points (asperity tips only)</text>
+
+<text x="165" y="256" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Peaks interlock → must break bonds to slide</text>
+<text x="165" y="268" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Cold welds form at contact → shear needed</text>
+
+<!-- Lubricated contact -->
+<rect x="20" y="290" width="290" height="125" rx="8" fill="#e0f7fa" stroke="#006064" stroke-width="2"/>
+<text x="165" y="309" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#006064">WITH LUBRICANT — surfaces separated</text>
+
+<!-- Top surface -->
+<path d="M35,335 L60,335 L70,320 L80,335 L100,335 L112,317 L124,335 L145,335 L158,313 L170,335 L190,335 L202,321 L214,335 L235,335 L247,315 L259,335 L290,335" fill="none" stroke="#e07000" stroke-width="2"/>
+
+<!-- Oil film fill -->
+<rect x="35" y="338" width="255" height="18" fill="#80deea" opacity="0.6"/>
+<text x="165" y="352" text-anchor="middle" font-family="Arial" font-size="14" fill="#006064">OIL FILM (viscous liquid layer)</text>
+
+<!-- Bottom surface -->
+<path d="M35,360 L55,360 L67,375 L79,360 L100,360 L115,377 L130,360 L150,360 L163,373 L176,360 L195,360 L210,377 L225,360 L250,360 L265,380 L280,360 L290,360" fill="none" stroke="#3949ab" stroke-width="2"/>
+
+<text x="165" y="397" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Oil film separates surfaces</text>
+<text x="165" y="411" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Resistance = liquid viscosity only</text>
+
+<!-- Comparison arrows -->
+<text x="55" y="435" font-family="Arial" font-size="14" font-weight="700" fill="#e07000">← Large friction force (dry)</text>
+<text x="55" y="453" font-family="Arial" font-size="14" font-weight="700" fill="#006064">← Small friction force (lubricated)</text>
+
+<!-- Centre panel: Friction equation -->
+<text x="350" y="88" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">FRICTION EQUATION</text>
+
+<rect x="340" y="100" width="260" height="100" rx="8" fill="#e8eaf6" stroke="#3949ab" stroke-width="2"/>
+<text x="470" y="125" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">F = μN</text>
+<text x="470" y="148" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">F = friction force (N)</text>
+<text x="470" y="163" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">μ = coefficient of friction (no units)</text>
+<text x="470" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">N = normal force (N) — weight of object</text>
+
+<!-- Worked example -->
+<rect x="340" y="215" width="260" height="100" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="470" y="233" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c07000">Worked example</text>
+<text x="470" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">10 kg block on concrete (μ = 0.6)</text>
+<text x="470" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">N = 10 × 10 = 100 N</text>
+<text x="470" y="282" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">F = 0.6 × 100 = 60 N to slide</text>
+<text x="470" y="298" text-anchor="middle" font-family="Arial" font-size="14" fill="#2a7a2a">→ Need at least 60 N push to start moving</text>
+
+<!-- Counter-intuitive: area doesn't matter -->
+<rect x="340" y="330" width="260" height="80" rx="6" fill="#fce4ec" stroke="#c62828" stroke-width="1.5"/>
+<text x="470" y="348" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c62828">Friction ≠ contact area!</text>
+<text x="470" y="365" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Same block on its narrow face or wide face</text>
+<text x="470" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">→ same friction force (same N, same μ)</text>
+<text x="470" y="396" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">More area = more contact points but weaker each</text>
+
+<!-- μ values table -->
+<rect x="340" y="425" width="260" height="50" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="470" y="443" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Typical μ values</text>
+<text x="470" y="460" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Rubber 0.7, steel 0.57, ice 0.03</text>
+<text x="470" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Knee joint: μ = 0.001, most slippery</text>
+
+<!-- Right panel: Applications -->
+<text x="630" y="88" font-family="Arial" font-size="14" font-weight="700" fill="#1f5f8b">REAL-WORLD APPLICATIONS</text>
+
+<rect x="620" y="100" width="360" height="65" rx="6" fill="#e8eaf6" stroke="#3949ab" stroke-width="1.5"/>
+<text x="800" y="118" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#3949ab">Car brakes (ABS)</text>
+<text x="800" y="134" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">High-friction pads (μ≈0.45) grip disc</text>
+<text x="800" y="150" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">ABS: rolling static > sliding friction</text>
+<text x="800" y="163" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Locked wheel stops less than ABS</text>
+
+<rect x="620" y="180" width="360" height="65" rx="6" fill="#fff3e0" stroke="#e07000" stroke-width="1.5"/>
+<text x="800" y="198" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#e07000">Engine oil (SAE 10W-40)</text>
+<text x="800" y="214" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Dozens of metal surfaces at thousands of RPM</text>
+<text x="800" y="230" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">No oil → engine seizes in seconds from heat</text>
+<text x="800" y="243" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Viscosity grade: cold winters to hot summers</text>
+
+<rect x="620" y="260" width="360" height="65" rx="6" fill="#e8f5e9" stroke="#2a7a2a" stroke-width="1.5"/>
+<text x="800" y="278" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#2a7a2a">Joint lubrication</text>
+<text x="800" y="294" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Synovial fluid: μ ≈ 0.001, best lubricant</text>
+<text x="800" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Osteoarthritis: cartilage wears → bone on bone → pain</text>
+<text x="800" y="323" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Hip/knee replacement = metal/ceramic bearing with lubricant</text>
+
+<rect x="620" y="340" width="360" height="65" rx="6" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1.5"/>
+<text x="800" y="358" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#7b1fa2">Space: cold welding (galling)</text>
+<text x="800" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">In vacuum: no oxide layer to prevent asperity bonding</text>
+<text x="800" y="390" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Metal parts that touch can permanently cold-weld</text>
+<text x="800" y="403" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">MoS₂ dry lubricant for space components</text>
+
+<!-- Friction as useful box -->
+<rect x="620" y="420" width="360" height="55" rx="6" fill="#fff8e1" stroke="#c07000" stroke-width="1.5"/>
+<text x="800" y="438" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#c07000">Friction is NOT always a problem!</text>
+<text x="800" y="455" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Walk, write, drive, screw, play violin — all need friction</text>
+<text x="800" y="469" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Zero friction = nothing stays in place</text>
+
+<!-- Takeaway strip -->
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="536" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Friction = asperities interlocking. F = μN, not area-dependent. Lubricant separates surfaces → friction drops.</text>
 </svg>

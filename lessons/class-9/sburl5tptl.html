@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 05 — Atoms: the tiny building blocks of everything | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 9 · DAY 05</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Atoms: the tiny building blocks of everything</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to describe the structure of an atom, explain what protons, neutrons, and electrons do, and predict what changing the number of protons does to an element.</p>
+</div><h2>1. The mystery</h2>
+<p>Gold stays gold no matter how finely you divide it. A single gold atom is still gold — it cannot be divided further and remain gold. But inside an atom is a whole world of structure. How is an atom built?</p>
+<h2>2. The science behind it</h2>
+<p><strong>Atomic structure:</strong>
+- <strong>Nucleus:</strong> Tiny, dense centre (radius ~10⁻¹⁵ m) containing:
+  - <em>Protons:</em> positive charge (+1), mass ≈ 1 u (atomic mass unit)
+  - <em>Neutrons:</em> no charge, mass ≈ 1 u
+- <strong>Electron cloud:</strong> Electrons (charge −1, mass ≈ 0.0005 u) occupy shells (energy levels) around the nucleus</p>
+<p><strong>Atomic number (Z):</strong> Number of protons. Defines the element — carbon always has 6 protons, oxygen always has 8.</p>
+<p><strong>Mass number (A):</strong> Protons + neutrons. Determines atomic mass.</p>
+<p><strong>Electron shells (Bohr model):</strong> Shells can hold 2, 8, 8, 18... electrons. Electrons in the outermost shell (valence electrons) determine chemical properties.</p>
+<p><strong>Isotopes:</strong> Same element (same Z), different number of neutrons (different A). Carbon-12 and Carbon-14 are both carbon, but ¹⁴C has 2 extra neutrons → unstable → radioactive.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of an atom as a cricket stadium:</p>
+<ul>
+<li><strong>The pitch at the centre</strong> is the nucleus — tiny compared to the whole ground, but where all the mass and identity of the game lives. The protons (positive) are always on that pitch; change the number of players on the pitch and you have a completely different match (a different element).</li>
+<li><strong>The neutrons</strong> are like extra groundsmen on the pitch — they add mass and help hold the pitch together, but do not change which teams are playing.</li>
+<li><strong>The electron shells</strong> are the concentric stands surrounding the pitch — tier 1 (2 seats), tier 2 (8 seats), tier 3 (8 seats in NCERT scope). Electrons sit in the lowest available tier.</li>
+<li><strong>Valence electrons</strong> are the fans in the outermost tier — the ones that interact with fans in neighbouring stadiums (other atoms). Chemistry is what happens when outer-tier fans reach across and share or give away their seats.</li>
+</ul>
+<p>The key insight: the pitch (nucleus) is about 100,000 times smaller than the stadium (atom). Nearly all the atom is empty space. What feels solid is the electromagnetic force between electron clouds, not physical matter touching matter.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG for this lesson shows a cross-section of a carbon atom drawn to conceptual (not true) scale so both nucleus and shells are visible simultaneously.</p>
+<p>At the centre, a tightly packed cluster of six red spheres (protons) and six grey spheres (neutrons) forms the nucleus, labelled with its radius (~10⁻¹⁵ m) to contrast with the overall atomic radius (~10⁻¹⁰ m). Two concentric dashed circles represent the first and second electron shells, with two blue dots on the inner ring and four blue dots on the outer ring, each labelled with the electron symbol e⁻. An arrow points to the outer ring with the annotation "valence electrons = 4 → forms 4 bonds." A colour key in the corner identifies protons (red, +1 charge), neutrons (grey, 0 charge), and electrons (blue, −1 charge). A sidebar compares carbon-12 and carbon-14, showing the same electron arrangement but 6 vs 8 neutrons in the nucleus, with ¹⁴C flagged as radioactive.</p>
+<figure><img src="../../illustrations/class-9/day_05.svg" alt="Diagram for Atoms: the tiny building blocks of everything"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India's nuclear programme (DAE — Department of Atomic Energy) is built on atomic science. The Bhabha Atomic Research Centre (BARC) in Mumbai operates nuclear reactors using uranium-235 and plutonium-239. India has 22 nuclear reactors producing ~6,780 MW of electricity. Nuclear medicine at AIIMS uses radioactive isotopes — Technetium-99m for bone scans, Iodine-131 for thyroid treatment. All of this comes from understanding atomic structure developed over the past century.</p>
+<p>Every semiconductor chip manufactured at India's growing fab facilities (including the Tata Electronics plant in Dholera, Gujarat) depends on controlling the number of valence electrons in silicon atoms. Doping silicon with phosphorus (one extra valence electron) or boron (one fewer valence electron) creates n-type and p-type semiconductors — the building blocks of every transistor. Atomic structure is not abstract chemistry; it is the reason your phone works.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Model an atom with household items: a small ball at the centre (nucleus), threads or orbit lines at fixed distances, small beads on the threads (electrons). For carbon (Z=6): 6 protons + 6 neutrons in nucleus, 2 electrons in first shell, 4 in second. Notice the nucleus is tiny relative to the orbital distances — if the nucleus were the size of a golf ball, the first electron shell would be 1 km away.</p>
+<p>Once built, try modelling nitrogen (Z=7): add one proton and one neutron to the nucleus, place the 7th electron in the second shell. Now count the valence electrons — 5 — and note that nitrogen needs 3 more to fill its shell, which is exactly why it forms three bonds in NH₃.</p>
+</div><h2>7. Think deeper</h2>
+<p>The Bohr model (1913) was a huge step but is not the full picture. Quantum mechanics (1920s–1930s) replaced orbits with orbitals — probabilistic regions where electrons are likely to be found. The Schrödinger equation describes the wavefunction of an electron, and Heisenberg's uncertainty principle states we cannot simultaneously know an electron's exact position and momentum. This seemingly abstract physics underlies every semiconductor and transistor — the foundation of India's entire electronics and IT industry.</p>
+<p><strong>Predict:</strong> If a silicon atom (Z=14, 4 valence electrons) were replaced in a chip by germanium (Z=32, also 4 valence electrons), the chip would still function because both are in Group 14 with identical valence electron counts. But germanium allows electrons to move more easily at room temperature. What advantage and what problem might this create for chip designers?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which statement best describes an atom?</p>
+<ul>
+<li>A. An atom is a cluster of molecules held together by surface tension forces</li>
+<li>B. An atom is the smallest unit of an element retaining that element's chemical properties</li>
+<li>C. An atom is a unit of energy that cannot be divided by any known process</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<h3>Q2</h3>
+<p>Why is understanding how atoms behave more useful than just memorising their definition?</p>
+<ul>
+<li>A. Definitions are optional knowledge, while behaviour is tested in every examination</li>
+<li>B. Atomic behaviour is simpler to learn because it involves only three rules</li>
+<li>C. A mechanism explains cause-and-effect and allows prediction in new situations</li>
+</ul>
+<p><strong>Correct answer: C</strong></p>
+<h3>Q3</h3>
+<p>If the number of protons in an atom were changed, what would you predict?</p>
+<ul>
+<li>A. The mass of the atom would stay identical because protons have negligible mass</li>
+<li>B. The atom would become a different element with different chemical properties</li>
+<li>C. The atom's electron shells would collapse because electrons depend on neutrons</li>
+</ul>
+<p><strong>Correct answer: B</strong></p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A student claims: "Carbon and nitrogen are almost identical atoms — carbon has 6 protons and nitrogen has 7, a difference of just one." Using atomic structure, write a detailed rebuttal. Explain how one extra proton changes the number of electrons, the valence electron count, the bonding behaviour, and the resulting compounds each element forms. Give at least two specific compounds as examples. Conclude with a general principle: what does this tell us about why atomic number, not atomic mass, determines an element's chemical identity?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The nucleus of an atom takes up roughly one ten-thousandth of a billionth of the atom's total volume — yet it contains 99.97% of the atom's mass. If you removed all the empty space from every atom in a human body and compressed just the nuclei together, the resulting object would be smaller than a grain of fine dust — yet it would weigh the same 70 kg. This is not a thought experiment; neutron stars are exactly this: the collapsed cores of dead stars where electron shells have been crushed away, leaving only nuclear-density matter about 20 km across but more massive than the Sun.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>An atom's identity is set by its proton count alone — change the protons and you change the element, while valence electrons in the outer shell determine every chemical bond that atom can form.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 9 · Day 5 of 30</footer>
+</div>
+</body>
+</html>

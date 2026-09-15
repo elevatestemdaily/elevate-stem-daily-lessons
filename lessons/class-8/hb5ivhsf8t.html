@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 02 — The microscopic battle between bacteria and antibiotics | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 02</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>The microscopic battle between bacteria and antibiotics</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover exactly how antibiotics kill bacteria — and why overusing them is creating bacteria that our medicines can no longer stop.</p>
+</div><h2>1. The mystery</h2>
+<p>A doctor prescribes amoxicillin for a throat infection. Two days later, the patient feels better. The bacteria that were multiplying inside the throat are dead. But the antibiotic never entered a single bacterial cell — and yet the bacteria died. How can a medicine kill something it never touches?</p>
+<h2>2. The science behind it</h2>
+<p>Bacteria are living cells with their own machinery — but their machinery is subtly different from human cell machinery. Antibiotics exploit these differences by targeting bacterial structures that human cells do not have.</p>
+<p><strong>How major antibiotic classes work:</strong></p>
+<p><strong>1. Cell wall synthesis inhibitors (Penicillin, Amoxicillin).</strong>
+Bacteria (unlike human cells) have a rigid cell wall made of a mesh of peptidoglycan. Without it, the cell bursts from internal water pressure (osmotic pressure). Penicillin-class antibiotics block the enzyme that builds this peptidoglycan mesh. The bacteria can no longer repair or extend their cell walls. As they try to divide, the wall weakens, water rushes in, and the cell swells and bursts. Human cells have no peptidoglycan wall → the antibiotic has no target in human cells → no harm to the patient.</p>
+<p><strong>2. Protein synthesis inhibitors (Erythromycin, Tetracycline).</strong>
+These antibiotics bind to bacterial ribosomes (the molecular machines that make proteins). Bacteria have 70S ribosomes; human cells have 80S ribosomes — different enough that the antibiotic fits the bacterial ribosome but not the human one. Without functional ribosomes, bacteria cannot make the proteins they need to survive and reproduce.</p>
+<p><strong>3. DNA gyrase inhibitors (Ciprofloxacin).</strong>
+These block an enzyme bacteria use to unwind and copy their DNA during reproduction. Without DNA replication, bacteria cannot divide. Human cells use different enzymes for this process.</p>
+<p><strong>Antibiotic resistance — the crisis:</strong></p>
+<p>When antibiotics are overused or courses are not completed, some bacteria survive by chance — because they carry a mutation in the antibiotic's target structure. These resistant bacteria:
+- Reproduce rapidly (bacteria divide every 20 minutes in ideal conditions)
+- Pass resistance genes to other bacteria horizontally (even across different species)</p>
+<p>The result: bacteria evolve that are resistant to multiple antibiotics. MRSA (methicillin-resistant <em>Staphylococcus aureus</em>) kills 700,000 people globally per year and is already spreading in Indian hospitals. By 2050, antibiotic-resistant infections are projected to kill 10 million people annually — more than cancer.</p>
+<p><strong>Why antibiotics don't work on viruses:</strong> Viruses have no cell wall, no bacterial ribosome, no bacterial DNA gyrase. They live inside your own cells and use your own machinery. Antibiotics have no bacterial targets to attack.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine bacteria as houses with brick walls. Penicillin is like a saboteur who removes one specific type of mortar used only in brick houses — not in concrete buildings (your cells). Without that mortar, the walls can't hold up. The houses collapse. Your concrete buildings are untouched. Resistance is like a brick that changed shape — the saboteur's tool no longer fits the new brick. Overuse of antibiotics is like training all the houses to have the new-shaped bricks.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_02.svg" alt="Diagram for The microscopic battle between bacteria and antibiotics"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram has three panels. Left: A bacterial cell showing: outer peptidoglycan mesh (blue grid), ribosomes (orange dots inside), DNA (central circle). Centre: Penicillin molecule (shown as key) blocking the peptidoglycan-building enzyme → gaps appear in the wall → cell bursting arrow. Right: Resistance diagram showing: normal bacteria (cross) vs resistant bacteria (circle with modified wall, survives antibiotic exposure, multiplies). Bottom bar: virus has no cell wall → antibiotic has no target.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>MRSA in Indian hospitals:</strong> Studies show MRSA rates in Indian ICUs range from 25–50%. Many infections acquired in hospitals are now resistant to standard antibiotics, requiring more expensive and less effective alternatives.</li>
+<li><strong>Antibiotic use in poultry farming:</strong> India is the world's third-largest producer of antibiotics, and a significant portion goes to livestock as growth promoters (not to treat disease). This selects for resistant bacteria that can then transfer to humans through the food chain.</li>
+<li><strong>Completing the course:</strong> Stopping antibiotics when you feel better (before the course is done) leaves behind the most resistant bacteria in your body — the ones that survived the initial doses. These are exactly the ones that should be killed last.</li>
+<li><strong>Tuberculosis:</strong> Multidrug-resistant TB (MDR-TB) requires 18–24 months of treatment with expensive, toxic drugs. India carries 27% of the global MDR-TB burden, partly because TB treatment is long and many patients stop taking medicines when they feel better.</li>
+<li><strong>Antivirals are different:</strong> Oseltamivir (Tamiflu) blocks viral neuraminidase — an enzyme on the influenza virus surface that helps new virus particles spread. It is not an antibiotic and does not kill bacteria.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>In your notebook, list 5 times you or a family member took antibiotics in the past year. For each: (1) Was it prescribed by a doctor or taken from a chemist without prescription? (2) Was the full course completed? (3) Was it for a cold or fever (which might be viral)? Tally up how many of those courses might have been unnecessary (viral infections) or incomplete. This is the everyday source of resistance.</p>
+</div><h2>7. Think deeper</h2>
+<p>Bacteriophages are viruses that specifically infect and kill bacteria — without harming human cells. In the 1920s, before antibiotics were discovered, phage therapy was used to treat bacterial infections. It fell out of use when penicillin was discovered in 1928. Now, as antibiotic resistance grows, phage therapy is being revisited. Unlike antibiotics, phages evolve alongside resistant bacteria — but they are very specific, killing only one or a few bacterial species. Should we invest heavily in phage therapy as a backup to antibiotics? What would be the challenges of making it as easy to use as a tablet?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How do antibiotics kill or stop bacteria?</p>
+<ul>
+<li>A. They target bacterial cell structures that human cells do not have</li>
+<li>B. They heat the bloodstream to kill bacteria through thermal shock</li>
+<li>C. They remove oxygen from tissues so bacteria cannot respire</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the mechanism of antibiotic resistance important?</p>
+<ul>
+<li>A. It helps doctors memorise drug names more easily</li>
+<li>B. Mechanisms are only useful for chemistry, not biology</li>
+<li>C. Knowing the mechanism helps predict and prevent resistance spreading</li>
+</ul>
+<h3>Q3</h3>
+<p>If antibiotics are overused, what would you predict about bacteria?</p>
+<ul>
+<li>A. Bacteria would become larger and easier to detect under microscopes</li>
+<li>B. Bacteria would lose their ability to reproduce as quickly</li>
+<li>C. Resistant bacteria would survive and multiply, making treatment harder</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A rural Indian clinic gives out amoxicillin without prescription to anyone who asks, for any illness. A city hospital strictly requires prescriptions and confirms the infection is bacterial before prescribing. Over 10 years, compare the expected frequency of resistant infections in patients treated at each facility. Write out your reasoning using: (a) selection pressure, (b) resistant mutant survival, (c) horizontal gene transfer, and (d) the effect on future treatment options.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Penicillin was discovered accidentally in 1928 when Alexander Fleming noticed that a Petri dish of <em>Staphylococcus</em> bacteria had been contaminated by a mould (<em>Penicillium notatum</em>) — and a clear ring around the mould was free of bacteria. Fleming realised the mould was producing a substance that killed the bacteria. The mould had been doing this for millions of years — not to help humans, but because it had evolved this weapon to compete with bacteria for space and nutrients. We borrowed an evolutionary arms race strategy and turned it into medicine. The bacteria are now fighting back using the same evolutionary process.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Antibiotics target bacterial-specific structures (cell wall, bacterial ribosomes, bacterial DNA enzymes) that human cells lack. Overuse kills sensitive bacteria and leaves resistant ones to multiply — creating infections no medicine can treat.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 2 of 30</footer>
+</div>
+</body>
+</html>

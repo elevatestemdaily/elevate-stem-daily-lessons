@@ -1,26 +1,94 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
 <rect width="1000" height="560" fill="#f8fbff"/>
-<text x="500" y="48" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">How does electromagnetic induction work?</text>
-<text x="500" y="78" text-anchor="middle" font-family="Arial" font-size="17">Scientific mechanism — Day 25</text>
-<rect x="70" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="190" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">OBSERVE</text>
-<text x="190" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens?</text>
-<text x="190" y="242" text-anchor="middle" font-family="Arial" font-size="15">Evidence / experience</text>
-<line x1="310" y1="205" x2="390" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="390,205 370,193 370,217" fill="#1f5f8b"/>
-<rect x="390" y="145" width="240" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="510" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">MECHANISM</text>
-<text x="510" y="218" text-anchor="middle" font-family="Arial" font-size="16">What interacts?</text>
-<text x="510" y="242" text-anchor="middle" font-family="Arial" font-size="15">Cause → process → change</text>
-<line x1="630" y1="205" x2="710" y2="205" stroke="#1f5f8b" stroke-width="6"/>
-<polygon points="710,205 690,193 690,217" fill="#1f5f8b"/>
-<rect x="710" y="145" width="220" height="120" rx="20" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="820" y="185" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700">PREDICT</text>
-<text x="820" y="218" text-anchor="middle" font-family="Arial" font-size="16">What happens next?</text>
-<text x="820" y="242" text-anchor="middle" font-family="Arial" font-size="15">Testable outcome</text>
-<circle cx="500" cy="390" r="95" fill="white" stroke="#1f5f8b" stroke-width="4"/>
-<text x="500" y="382" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">THINK</text>
-<text x="500" y="410" text-anchor="middle" font-family="Arial" font-size="16">Change one</text>
-<text x="500" y="432" text-anchor="middle" font-family="Arial" font-size="16">variable.</text>
-<text x="500" y="510" text-anchor="middle" font-family="Arial" font-size="18">Observe → Explain → Predict</text>
+<text x="500" y="36" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">How Does Electromagnetic Induction Work?</text>
+<text x="500" y="60" text-anchor="middle" font-family="Arial" font-size="16" fill="#555">Faraday's law, Lenz's law, generators, transformers — Day 25</text>
+
+<!-- LEFT: Faraday's law -->
+<rect x="20" y="74" width="300" height="416" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+<text x="170" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1d4ed8">Faraday's Law</text>
+
+<rect x="30" y="104" width="280" height="100" rx="4" fill="white" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="170" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">EMF = −N dΦ/dt</text>
+<text x="40" y="142" font-family="Arial" font-size="14" fill="#333">Changing magnetic flux → induced EMF</text>
+<text x="40" y="162" font-family="Arial" font-size="14" fill="#333">N = number of coil turns</text>
+<text x="40" y="182" font-family="Arial" font-size="14" fill="#555">Φ = B·A·cosθ (magnetic flux, Webers)</text>
+<text x="40" y="198" font-family="Arial" font-size="14" fill="#555">Faster change → larger EMF</text>
+
+<rect x="30" y="214" width="280" height="90" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1"/>
+<text x="170" y="232" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#1d4ed8">Three Ways to Change Flux</text>
+<text x="40" y="252" font-family="Arial" font-size="14" fill="#333">1. Move magnet in/out of coil</text>
+<text x="40" y="272" font-family="Arial" font-size="14" fill="#333">2. Change B (e.g., vary current in nearby coil)</text>
+<text x="40" y="290" font-family="Arial" font-size="14" fill="#555">3. Rotate coil in uniform B (AC generator)</text>
+
+<rect x="30" y="314" width="280" height="80" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="170" y="332" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#dc2626">Lenz's Law (−ve sign)</text>
+<text x="40" y="352" font-family="Arial" font-size="14" fill="#333">Induced current opposes the change causing it</text>
+<text x="40" y="372" font-family="Arial" font-size="14" fill="#555">Coil resists magnet approach (braking force)</text>
+<text x="40" y="390" font-family="Arial" font-size="14" fill="#555">Energy conserved: work in = electrical out</text>
+
+<rect x="30" y="404" width="280" height="78" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="170" y="422" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#92400e">Eddy Currents</text>
+<text x="40" y="442" font-family="Arial" font-size="14" fill="#333">Induced in bulk conductors (not wires): circular</text>
+<text x="40" y="460" font-family="Arial" font-size="14" fill="#555">Heating: bad (transformers), good (hobs)</text>
+<text x="40" y="476" font-family="Arial" font-size="14" fill="#555">Reduced by laminating transformer cores</text>
+
+<!-- CENTRE: Generator + transformer -->
+<rect x="334" y="74" width="332" height="416" rx="6" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Generator and Transformer</text>
+
+<rect x="344" y="104" width="312" height="108" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="500" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">AC Generator</text>
+<text x="354" y="142" font-family="Arial" font-size="14" fill="#333">Coil rotates in B-field (turbine-driven)</text>
+<text x="354" y="162" font-family="Arial" font-size="14" fill="#333">EMF = NBAω sin(ωt) → sinusoidal AC</text>
+<text x="354" y="182" font-family="Arial" font-size="14" fill="#555">Slip rings (not commutator): output stays AC</text>
+<text x="354" y="200" font-family="Arial" font-size="14" fill="#555">Steam turbine spins rotor at 3000 rpm (50 Hz)</text>
+
+<rect x="344" y="222" width="312" height="108" rx="4" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+<text x="500" y="240" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1d4ed8">Transformer</text>
+<text x="354" y="260" font-family="Arial" font-size="14" fill="#333">Primary coil: AC in → changing flux in core</text>
+<text x="354" y="280" font-family="Arial" font-size="14" fill="#333">Secondary coil: changing flux → induced EMF</text>
+<text x="354" y="300" font-family="Arial" font-size="14" fill="#555">V₁/V₂ = N₁/N₂; I₁V₁ = I₂V₂ (ideal)</text>
+<text x="354" y="316" font-family="Arial" font-size="14" fill="#555">Only works with AC (DC: no changing flux)</text>
+
+<rect x="344" y="340" width="312" height="90" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="500" y="358" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Mutual Inductance</text>
+<text x="354" y="378" font-family="Arial" font-size="14" fill="#333">Two coils: AC in one → EMF induced in other</text>
+<text x="354" y="398" font-family="Arial" font-size="14" fill="#555">M = mutual inductance (H, henrys)</text>
+<text x="354" y="414" font-family="Arial" font-size="14" fill="#555">Wireless Qi charging: uses mutual inductance</text>
+
+<rect x="344" y="440" width="312" height="42" rx="4" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+<text x="500" y="458" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Self-inductance: coil opposes change in its own current</text>
+<text x="500" y="474" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Spark on switch-off: large dL/dt → large EMF</text>
+
+<!-- RIGHT: India context -->
+<rect x="680" y="74" width="300" height="416" rx="6" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+<text x="830" y="94" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#92400e">India: Induction Applications</text>
+
+<rect x="690" y="104" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="122" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Hydro Generators (Bhakra)</text>
+<text x="830" y="142" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Bhakra Dam: 1,325 MW, 226 m head</text>
+<text x="830" y="160" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Turbine → shaft → rotor of generator</text>
+<text x="830" y="178" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">11 kV generated, stepped up to 220–400 kV</text>
+
+<rect x="690" y="202" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#16a34a">Wireless Charging (Ola)</text>
+<text x="830" y="240" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Inductive Qi charging: phone + EV scooters</text>
+<text x="830" y="258" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Mutual inductance: 88–94% efficiency</text>
+<text x="830" y="276" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">DRDO: wireless power for military devices</text>
+
+<rect x="690" y="300" width="280" height="88" rx="4" fill="white" stroke="#6b7280" stroke-width="1"/>
+<text x="830" y="318" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#dc2626">Induction Cooktops</text>
+<text x="830" y="338" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Eddy currents in iron pan → direct heating</text>
+<text x="830" y="356" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">90% efficient vs 60% gas stoves</text>
+<text x="830" y="374" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">LPG users switching to induction: PM UJJWALA</text>
+
+<rect x="690" y="398" width="280" height="84" rx="4" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+<text x="830" y="416" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#065f46">Vande Bharat Regeneration</text>
+<text x="830" y="436" text-anchor="middle" font-family="Arial" font-size="14" fill="#333">Braking: traction motors → generators</text>
+<text x="830" y="454" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Energy fed back to overhead line (OHE)</text>
+<text x="830" y="472" text-anchor="middle" font-family="Arial" font-size="14" fill="#555">Saves ~30% energy vs non-regen trains</text>
+
+<rect x="0" y="500" width="1000" height="60" fill="#1f5f8b"/>
+<text x="500" y="520" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">EMF = −N dΦ/dt (Faraday). Lenz: induced current opposes change. Generator: coil rotates → AC out.</text>
+<text x="500" y="544" text-anchor="middle" font-family="Arial" font-size="14" fill="#a5f3fc">Transformer: V₁/V₂ = N₁/N₂ (AC only). Induction hobs: eddy currents. Vande Bharat: regen braking.</text>
 </svg>

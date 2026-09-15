@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 03 — How does your immune system recognize an enemy? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 03</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does your immune system recognize an enemy?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover the molecular lock-and-key system your immune cells use to distinguish "self" from "enemy" — and understand exactly how memory cells make second infections so much milder than the first.</p>
+</div><h2>1. The mystery</h2>
+<p>Your body is invaded by millions of bacteria and viruses every day — but most of the time you don't get sick. When you do get sick, your body eventually clears the infection and remembers the invader for years. How does a system that has never seen a particular virus before know to attack it — and how does it "remember" something it has never been taught to recognise?</p>
+<h2>2. The science behind it</h2>
+<p>The immune system has two main branches: <strong>innate immunity</strong> (fast, general) and <strong>adaptive immunity</strong> (slow, specific, long-lasting memory).</p>
+<p><strong>Antigens: the identity badge of every pathogen</strong></p>
+<p>Every bacterium and virus has unique proteins on its outer surface called <strong>antigens</strong> (short for antibody generators). These molecular markers are specific to each pathogen — like a face uniquely recognisable to a face-recognition system. Your immune cells use these surface markers to identify foreign cells vs. your own cells.</p>
+<p><strong>How recognition works (adaptive immunity):</strong></p>
+<p><strong>1. Phagocytosis and antigen presentation.</strong> When a bacterium enters the body, <strong>phagocytes</strong> (macrophages, dendritic cells) engulf it and break it into fragments. They then display antigen fragments on their surface using <strong>MHC (Major Histocompatibility Complex) proteins</strong> — acting like a "Wanted Poster" that shows other immune cells what the enemy looks like.</p>
+<p><strong>2. T-cell activation.</strong> <strong>Helper T-cells</strong> have surface receptors that recognise specific antigen-MHC combinations. When a helper T-cell's receptor fits the displayed antigen, it activates and divides into a clone of many identical T-cells.</p>
+<p><strong>3. B-cell activation and antibody production.</strong> Activated helper T-cells stimulate <strong>B-cells</strong> that recognise the same antigen. Activated B-cells become <strong>plasma cells</strong> that produce <strong>antibodies</strong> — Y-shaped proteins that bind to the antigen. Antibodies:
+- Mark pathogens for destruction by phagocytes (opsonisation)
+- Neutralise toxins by blocking them
+- Clump pathogens together (agglutination) making them easier to engulf</p>
+<p><strong>4. Memory cells — the immune system's note-taking.</strong> Both T-cells and B-cells produce <strong>memory cells</strong> that persist for years. On second exposure to the same antigen:
+- Memory cells recognise it within hours (vs. 10–14 days first time)
+- The immune response is far stronger and faster
+- The pathogen is destroyed before symptoms develop
+- This is exactly why Q3 answer is C: the second response is faster due to memory B cells.</p>
+<p><strong>5. Killer T-cells.</strong> Activated killer T-cells (cytotoxic T-cells) directly destroy your own cells if they are infected by a virus — preventing the virus from using those cells to replicate.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of each pathogen as a criminal with a unique face (antigen). The first time police (immune system) encounter this criminal, they have to identify him, put out wanted posters, assemble a task force (takes 10–14 days). The criminal causes significant damage in this time. But police also photograph and fingerprint the criminal. The next time the same criminal appears, police recognise him within minutes and arrest him before he can cause harm. Vaccines are a training exercise using a photo of the criminal — so police are ready before he even arrives.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_03.svg" alt="Diagram for How does your immune system recognize an enemy?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a flow chart in three stages. Left: Pathogen (bacterium with antigen spikes) enters. Macrophage engulfs and displays antigen on MHC. Centre: Helper T-cell with matching receptor binds to MHC-antigen complex → activates. B-cell also recognises antigen → plasma cell → Y-shaped antibodies flood out. Right: Memory B-cells and memory T-cells shown stored (labelled "years of memory"). Second exposure box: virus enters → memory cells respond in hours → no illness.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Why vaccines need boosters:</strong> Memory B-cells gradually decline in number over years. For some diseases (tetanus, hepatitis B), boosters renew the memory cell population. For influenza, the virus mutates its surface antigens each year — old memory cells no longer recognise it, so a new vaccine is needed annually.</li>
+<li><strong>Autoimmune diseases:</strong> When the immune system's "self vs enemy" recognition fails and it attacks the body's own cells, the result is an autoimmune disease. Rheumatoid arthritis (immune attacks joints), Type 1 diabetes (immune destroys insulin-producing cells), lupus. Treatment involves suppressing the immune system — which carries its own infection risks.</li>
+<li><strong>HIV:</strong> HIV specifically targets and destroys helper T-cells. Without helper T-cells, neither B-cells (antibodies) nor killer T-cells are properly activated — the entire adaptive immune system collapses. People with AIDS (advanced HIV) die from infections that a healthy immune system would easily control.</li>
+<li><strong>Blood groups and MHC:</strong> The MHC system is also what makes organ transplants difficult — the recipient's immune system recognises the donor's MHC proteins as "foreign" and attacks the transplanted organ. Immunosuppressant drugs are used to prevent this rejection.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Look at your arm for the small round BCG vaccination scar (most Indians have one). This scar marks the spot where a weakened tuberculosis antigen was introduced under your skin. Your dendritic cells picked up the antigen, activated T-cells and B-cells, and memory cells formed. Those memory cells are still there — ready to deploy against tuberculosis. The scar is the physical evidence of immune memory being written into your body.</p>
+</div><h2>7. Think deeper</h2>
+<p>Some people are born with <strong>SCID</strong> (Severe Combined Immunodeficiency) — they have no functional T-cells or B-cells. They must live in sterile bubbles because any infection, even a common cold, could be fatal. In 1971, a boy in Texas named David Vetter lived for 12 years in a plastic sterile bubble — "the boy in the bubble." Gene therapy has since allowed some SCID patients to be cured. Consider: if you had to design a treatment for SCID, would you try to repair the immune cells (gene therapy), give the patient frequent antibody transfusions, or attempt a bone marrow transplant? What would be the risks and benefits of each approach?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does the immune system use to identify foreign invaders?</p>
+<ul>
+<li>A. The colour of pathogens is detected by white blood cells</li>
+<li>B. Body temperature rises and burns pathogens before recognition</li>
+<li>C. Antigens on the surface of pathogens trigger immune recognition</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the immune recognition mechanism useful?</p>
+<ul>
+<li>A. It allows doctors to memorise the names of all pathogens</li>
+<li>B. It explains how vaccines and immunity work, enabling predictions</li>
+<li>C. Immune mechanisms only apply to bacterial infections, not viruses</li>
+</ul>
+<h3>Q3</h3>
+<p>If a person encountered a pathogen for the second time, what would you predict?</p>
+<ul>
+<li>A. The immune response would be faster due to memory B cells</li>
+<li>B. The immune response would be slower because antibodies degrade over time</li>
+<li>C. The body would have no memory of the pathogen and react identically</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A drug company is designing a new vaccine against a fictional bacterium called <em>Bacterium X</em>. They have identified its most distinctive antigen protein (AntX). Design the vaccine: (a) What form should AntX be in — live, dead, weakened, or just the protein? Explain why. (b) Should the vaccine be given once or multiple times? (c) How would you test whether the vaccine created memory cells without exposing test subjects to the real bacteria? Describe one test method.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Your body is producing antibodies right now — without any infection. B-cells randomly generate antibody molecules with billions of different shapes (through a process of genetic shuffling during development). Most of these antibodies never match anything in your life. They are the immune system's preparation for pathogens you have never encountered and may never encounter — a library of locks waiting for keys. The key insight: diversity in the immune system is generated <em>before</em> the threat, not in response to it.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Antigens on pathogen surfaces trigger immune recognition. Helper T-cells activate B-cells → antibodies neutralise pathogens. Memory B-cells persist for years → second exposure = fast response in hours. This is why vaccines and past infections provide protection.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 06 — How does a seed know which way to grow? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 06</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a seed know which way to grow?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>By the end of this lesson, you should be able to explain why a seed's root always grows downward and its shoot always grows upward, name the cells and chemical responsible for sensing gravity, and predict what happens to a germinating seed in zero gravity.</p>
+</div><h2>1. The mystery</h2>
+<p>Bury a mango seed any way you like — upside down, sideways, or at an angle — and within a day or two the root will bend downward and the shoot will push upward. The seed has no eyes, no brain, no GPS. So how does it know which way is down?</p>
+<h2>2. The science behind it</h2>
+<p>The answer is a process called <strong>gravitropism</strong> — the ability of a plant to grow in a direction determined by gravity. Roots are <strong>positively gravitropic</strong> (they grow toward gravity) and shoots are <strong>negatively gravitropic</strong> (they grow away from it).</p>
+<p><strong>Step 1 — Sensing gravity with statoliths.</strong> Deep inside the root tip is a cluster of special cells called <strong>statocytes</strong> (also called columella cells). Each statocyte contains tiny, dense starch-filled bodies called <strong>statoliths</strong> — essentially tiny gravity pellets. Because they are denser than the surrounding fluid in the cell, statoliths always settle to the lowest side of the cell, no matter which direction the root is pointing. This settling is the signal that says "down is this way."</p>
+<p><strong>Step 2 — Auxin redistribution.</strong> When statoliths settle on one side, they trigger a cascade that causes a plant hormone called <strong>auxin</strong> (indole-3-acetic acid, or IAA) to move toward whichever side the statoliths settled on — the lower side. Auxin is produced at the growing tip of roots and shoots and normally travels straight downward, but gravitropism reroutes it laterally.</p>
+<p><strong>Step 3 — Differential cell growth.</strong> Here is the clever twist: auxin has opposite effects in roots and shoots.
+- In <strong>roots</strong>, higher auxin on the lower side <strong>inhibits</strong> cell elongation on that side. The upper side, with less auxin, elongates faster. The root curves downward.
+- In <strong>shoots</strong>, higher auxin on the lower side <strong>promotes</strong> cell elongation. The lower side grows faster, pushing the shoot tip upward.</p>
+<p>The same chemical — auxin — produces opposite growth responses in roots and shoots because the two tissues have different sensitivities to it.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the plant as a slow-motion robot that uses gravity as its compass:</p>
+<ul>
+<li><strong>Sensor:</strong> Statoliths settle to the lowest point inside statocyte cells → tells the plant which direction is down</li>
+<li><strong>Signal:</strong> Auxin hormone redistributes to the lower side</li>
+<li><strong>Response:</strong> Root curves toward gravity; shoot curves away from it</li>
+</ul>
+<p>The entire mechanism works without any nervous system — it is purely chemical, operating over hours rather than milliseconds.</p>
+<h2>4. Visual explanation</h2>
+<p>The included SVG shows a labeled seedling diagram on the left (shoot growing up, root growing down, with the soil line marked) and a three-step mechanism panel on the right:</p>
+<ul>
+<li><strong>Step 1 box:</strong> Statocyte cells with statolith dots settled at the bottom</li>
+<li><strong>Step 2 box:</strong> Auxin moving to the lower side of the root tip (shown as concentrated dots on one side)</li>
+<li><strong>Step 3 box:</strong> The resulting curvature — root bends down, shoot bends up, with growth arrows</li>
+</ul>
+<figure><img src="../../illustrations/class-7/day_06.svg" alt="Diagram for How does a seed know which way to grow?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Planting seeds:</strong> Farmers don't need to worry about planting seeds the "right way up" — gravitropism corrects any orientation within 24–48 hours.</li>
+<li><strong>Climbing plants:</strong> Tendrils use a related response (thigmotropism — touch sensing) to curl around a support, working alongside gravitropism.</li>
+<li><strong>Space farming experiments:</strong> Seeds germinated on the International Space Station (ISS) grow in random directions because there is no significant gravity to guide them. Studying this helps scientists design food-growing systems for future space missions.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<ol>
+<li>Soak a bean or chickpea seed overnight until it sprouts slightly.</li>
+<li>Place it sideways in a damp cotton ball (not pointing up or down).</li>
+<li>Check every 12 hours: in which direction does the root grow? In which direction does the shoot grow?</li>
+<li>Predict: if you rotate the sprouting seed 180° (so the root now points up), what will happen over the next 24 hours?</li>
+<li>Write one sentence explaining what you observe using the words "gravitropism" and "auxin."</li>
+</ol>
+</div><h2>7. Think deeper</h2>
+<p>Gravity is not the only directional signal plants respond to. Shoots also respond to <strong>light</strong> (phototropism — growing toward a light source). Both responses use auxin, but in phototropism, auxin moves toward the shaded side of the shoot rather than the lower side.</p>
+<p><strong>Predict:</strong> If a plant were growing in a room lit from one side (light from the left) AND tilted sideways (so gravity acts to the right), the shoot would receive two auxin signals pointing in different directions. Which direction do you predict the shoot tip would bend — toward the light or toward gravity? Give a reason.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main mechanism that tells a seed's root to grow downward and shoot to grow upward?</p>
+<ul>
+<li>A. A process called gravitropism makes roots grow toward gravity and shoots grow away from it.</li>
+<li>B. Seeds detect the colour of soil and grow their roots toward darker regions.</li>
+<li>C. The seed's outer coat has markings that orient the embryo correctly before germination.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is knowing the mechanism of directional growth more useful than just observing that roots grow down?</p>
+<ul>
+<li>A. Roots always grow in random directions, so there is no mechanism to study.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Seed growth direction is determined only by the farmer planting the seed correctly.</li>
+</ul>
+<h3>Q3</h3>
+<p>If a germinating seed were grown in a rotating drum that cancelled out the effect of gravity, what would you predict?</p>
+<ul>
+<li>A. The root would grow faster because less gravity means less resistance to elongation.</li>
+<li>B. The shoot would grow downward because photosynthesis requires the leaves to face the soil.</li>
+<li>C. The root and shoot would grow in random directions, unable to use gravity as a guide.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Explain gravitropism to a Class 4 student in 60 seconds without using "auxin," "statoliths," or "gravitropism." Then explain it again using all three terms. Check: do both versions describe the same mechanism — statolith settling, hormone shift, and differential growth?</p>
+</div><h2>10. One surprising idea</h2>
+<p>Statoliths are so light — each weighing only about a trillionth of a gram — that scientists long doubted they could exert enough force to trigger a biological signal. It turns out the plant amplifies this tiny mechanical signal through a cascade of chemical reactions, the same way your ear's hair cells amplify tiny sound vibrations into nerve impulses. Tiny physical signal → big biological response is a recurring trick in living systems.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Statoliths in root cap cells settle toward gravity → auxin shifts to that side → roots curve toward gravity, shoots curve away. Same hormone, opposite effects.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 6 of 30</footer>
+</div>
+</body>
+</html>

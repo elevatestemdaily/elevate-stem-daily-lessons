@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 19 — Why does iron rust? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 7 · DAY 19</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does iron rust?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Understand the chemistry that slowly destroys iron — and why the same chemistry is the reason we can breathe.</p>
+</div><h2>1. The mystery</h2>
+<p>A new iron nail left in a corner for a few weeks comes back covered in a reddish-brown powder. The nail is lighter than before — some of the metal itself has disappeared. Where did it go? And why doesn't aluminium or gold do the same thing?</p>
+<h2>2. The science behind it</h2>
+<p>Rusting is <strong>oxidation</strong> — iron atoms chemically bond with oxygen atoms. The process requires three ingredients working together:</p>
+<ol>
+<li><strong>Iron (Fe)</strong> — provides electrons to donate.</li>
+<li><strong>Oxygen (O₂)</strong> — accepts those electrons.</li>
+<li><strong>Water (H₂O)</strong> — acts as an electrolyte (a liquid that lets electrons and ions move between iron and oxygen easily).</li>
+</ol>
+<p>The overall reaction: <strong>4Fe + 3O₂ + 6H₂O → 4Fe(OH)₃</strong> which then dehydrates to <strong>Fe₂O₃·xH₂O</strong> — hydrated iron oxide. This is rust.</p>
+<p>Rust is fundamentally different from iron. Iron is strong and dense; rust is crumbly, porous, and weak. Rust also occupies more volume than the iron it replaced — causing the flaky, expanding layer that breaks concrete and snaps bolts.</p>
+<p><strong>Why does water speed it up?</strong> Water dissolves salts and other ions that carry charge, turning the wet iron surface into a mini battery. Salty seawater rusts iron 10× faster than fresh water because more ions are available to carry charge.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of iron atoms as people holding hands. Oxygen molecules are thieves trying to grab those hands. Normally the iron people hold on tightly. But when water is present, it acts like a crowded bazaar — it's easier for the thieves (oxygen) to sneak in and grab hands (electrons). Once oxygen grabs an iron atom's electrons, that iron atom is no longer part of the metal — it's rust. The thieves have stolen part of the nail.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-7/day_19.svg" alt="Diagram for Why does iron rust?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a cross-section of an iron surface. O₂ molecules from air approach the iron surface. H₂O molecules are shown between them. Arrows show electrons (e⁻) moving from iron to oxygen. The product layer — reddish-brown Fe₂O₃ — builds up on the surface. A second panel shows galvanisation: a zinc layer on top of iron, with zinc oxidising instead of iron (sacrificial protection).</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Galvanising:</strong> Iron coated with a thin layer of zinc (found on dustbins, roofing sheets, lamp posts). Zinc rusts instead of iron because zinc is more reactive — it "sacrifices" itself. Even if the zinc is scratched, it protects the iron underneath.</li>
+<li><strong>Stainless steel:</strong> Iron alloyed with chromium (≥10.5%). Chromium reacts instantly with oxygen to form a thin invisible Cr₂O₃ layer that blocks further oxidation. This self-healing passive layer is why surgical tools and kitchen sinks don't rust.</li>
+<li><strong>Painting:</strong> A coat of paint seals iron from air and moisture. Once the paint chips, rusting begins from the exposed spot and creeps under the intact paint (undercutting).</li>
+<li><strong>Ships:</strong> Large ships are fitted with <strong>sacrificial anodes</strong> (blocks of zinc bolted to the hull) that rust away slowly, protecting the steel hull. Divers replace them regularly.</li>
+<li><strong>Taj Mahal's iron scaffolding:</strong> Pre-Mughal architects used iron clamps that have rusted and expanded, cracking the marble. Conservation crews drill out and replace them with stainless or fibreglass alternatives.</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Set up three nails in separate glasses: (1) iron nail in plain water + air, (2) iron nail in water sealed with cooking oil on top (blocking air), (3) iron nail in dry glass with silica gel (no water). Check after 3 days. Prediction: nail 1 rusts fastest (both water and air), nail 2 rusts slowly or not (no air), nail 3 doesn't rust (no water). This proves both water AND oxygen are needed.</p>
+</div><h2>7. Think deeper</h2>
+<p>The same process that makes iron rust — giving electrons to oxygen — is what powers your body's cells. In cellular respiration, food molecules donate electrons to oxygen, releasing energy that powers your muscles and brain. Oxygen "corrodes" your food just as it corrodes iron; both are oxidation reactions. The key difference is your cells use enzymes to control the reaction slowly and capture the energy. Fire (combustion) is the same reaction happening uncontrolled and fast. Is breathing more like rusting slowly, or burning quickly?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the chemical process that causes iron to rust?</p>
+<ul>
+<li>A. Iron absorbs carbon dioxide from the air, which breaks down its surface into a reddish powder.</li>
+<li>B. Iron rusts because the heat from sunlight causes the metal atoms to break apart and turn red.</li>
+<li>C. Iron reacts with oxygen and water in the environment to form iron oxide, commonly known as rust.</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the chemistry of rusting more useful than knowing that iron turns reddish-brown?</p>
+<ul>
+<li>A. Rust is only a colour change and does not involve any chemical reaction.</li>
+<li>B. A mechanism explains the cause-and-effect chain and allows prediction in new situations.</li>
+<li>C. Rusting happens only in coastal areas, so the mechanism is not generally applicable.</li>
+</ul>
+<h3>Q3</h3>
+<p>If you coated an iron nail with a layer of paint before leaving it outside, what would you predict?</p>
+<ul>
+<li>A. The nail would rust much more slowly because paint prevents oxygen and water from reaching the iron.</li>
+<li>B. The nail would rust faster because paint traps moisture against the iron surface.</li>
+<li>C. The nail would rust from the inside outward because paint blocks oxygen from escaping.</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Mumbai's coastal air contains salt spray. Delhi's dry inland air does not. Both cities have iron bridges of similar age. Predict which bridge would need more rust maintenance — and explain your prediction using the three-ingredient model (iron, oxygen, water). Then explain why a steel bridge in a desert like Rajasthan might last decades without maintenance but still eventually needs inspection.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The rust problem costs the world economy about <strong>$2.5 trillion per year</strong> — roughly 3.4% of global GDP. This includes collapsing bridges, corroded pipelines, and failing offshore oil platforms. Yet the same iron that rusts in moist air is the same element that carries oxygen in your blood (as haemoglobin). Iron's tendency to react with oxygen is simultaneously the thing that destroys our infrastructure and the thing that makes animal life possible.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Iron + oxygen + water → iron oxide (rust). Water speeds up the reaction by carrying charge. Prevention: paint (barrier), galvanise (zinc sacrifices itself), stainless steel (chromium passive layer).</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 7 · Day 19 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 14 — Why does lightning happen? | Elevate STEM Daily</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{font-weight:800; font-size:1rem;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <span class="brand">Elevate STEM Daily</span>
+    <span class="day-badge">CLASS 8 · DAY 14</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does lightning happen?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Discover why thunderstorms build up millions of volts of electrical charge — and understand the physics that makes lightning rods, Faraday cages, and storm safety work.</p>
+</div><h2>1. The mystery</h2>
+<p>A bolt of lightning releases about 5 billion joules of energy and heats the air around it to 30,000°C — five times hotter than the surface of the Sun. It happens in about 0.2 seconds. Every year, lightning kills an estimated 2,000 people in India — more deaths than from most natural disasters. Yet a lightning rod, a simple pointed metal spike on a rooftop, can protect an entire building. Why do clouds build up millions of volts? And how does a spike of metal prevent catastrophe?</p>
+<h2>2. The science behind it</h2>
+<p><strong>How charge separation occurs in storm clouds:</strong></p>
+<p>A cumulonimbus (storm) cloud extends from about 1 km to 12 km altitude. Inside:
+1. Strong updrafts carry water droplets and ice crystals upward.
+2. Heavier, partially melting ice pellets (graupel) fall downward.
+3. When ice crystals collide with graupel, electrons transfer: ice crystals become positively charged, graupel becomes negatively charged.
+4. Result: <strong>positive charge accumulates at the top of the cloud, negative charge at the bottom.</strong>
+5. The negative base of the cloud induces a positive charge on the ground below (through electrostatic induction).</p>
+<p><strong>Electrical breakdown:</strong></p>
+<ul>
+<li>Voltage difference between cloud base and ground can exceed <strong>300 million volts (300 MV)</strong>.</li>
+<li>Air is normally an insulator. But when the electric field exceeds ~3 million volts per metre, air molecules ionise → become conductors.</li>
+<li>A <strong>stepped leader</strong> (invisible channel of ionised air) extends downward from the cloud in steps of ~50 metres.</li>
+<li><strong>Streamers</strong> of positive charge extend upward from the ground (especially from tall pointed objects).</li>
+<li>When a leader meets a streamer → a conducting path is complete → the main return stroke fires upward at ~100,000 km/s → this is the bright flash.</li>
+</ul>
+<p><strong>The lightning rod (Franklin rod):</strong></p>
+<p>Invented by Benjamin Franklin in 1752. A pointed metal spike connected by a thick copper cable to a buried earth plate. The sharp point concentrates the electric field → ions bleed off → <strong>may prevent full discharge by dissipating charge slowly</strong>, and if lightning does strike, <strong>safely conducts the massive current to earth</strong> rather than through the building.</p>
+<p><strong>Energy of a lightning bolt:</strong></p>
+<p>A single bolt transfers about 5 coulombs of charge across 300 MV → energy = charge × voltage = 5 × 300×10⁶ = 1.5 × 10⁹ joules. However, the discharge lasts only 0.2 s → power = 7.5 × 10⁹ W = 7.5 GW (briefly). In practice, about 1–5 GJ is actually useful energy per bolt.</p>
+<h2>3. Build the mental model</h2>
+<p>Think of the storm cloud as a giant capacitor being charged up by a conveyor belt of colliding ice crystals. The conveyor (updraft) continuously separates positive charge (top) from negative charge (bottom). The cloud is like one plate of a capacitor; the ground is the other. As the voltage difference grows, the insulating air between them is under increasing stress. Eventually the air cracks — ionises — and a spark jumps across. The lightning rod gives the spark a preferred, safe path — like a drain for the excess charge.</p>
+<h2>4. Visual explanation</h2>
+<figure><img src="../../illustrations/class-8/day_14.svg" alt="Diagram for Why does lightning happen?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<p>The diagram shows a cross-section of a storm cloud over a city: the cloud base is negative (blue minus signs) and the top positive (red plus signs). The ground below is shown with induced positive charge. Stepped leaders extend downward from cloud base; streamers extend upward from rooftops. The lightning bolt path follows the channel where they meet. A building on the right has a lightning rod connected by a copper cable to an earth stake — the discharge safely flows through this path. Temperature label: "30,000°C — 5× Sun's surface." A voltage scale shows cloud-to-ground 300 MV.</p>
+<h2>5. Real-world connection</h2>
+<ul>
+<li><strong>Lightning deaths in India:</strong> India records ~2,000–2,500 lightning fatalities annually, concentrated in eastern states (Bihar, Odisha, West Bengal) during the pre-monsoon season (April–June). NDMA has issued guidelines for safe shelter during thunderstorms.</li>
+<li><strong>Damini App:</strong> India's IMD (Indian Meteorological Department) offers the "Damini" app that provides real-time lightning alerts with 5-km and 30-40 minute advance warning. Used widely in Bihar and Odisha to alert farmers in fields.</li>
+<li><strong>Lightning rods on Indian monuments:</strong> The Qutb Minar in Delhi (73 m tall) has a lightning protection system. So does the Brihadeeswara Temple in Thanjavur and Rashtrapati Bhavan in Delhi.</li>
+<li><strong>Faraday cage principle:</strong> A car's metal body acts as a Faraday cage — if lightning strikes the car, current flows around the outside metal shell and the occupants inside are safe. This is why staying inside a car during a thunderstorm is safer than standing outside.</li>
+<li><strong>Cloud-to-cloud vs cloud-to-ground:</strong> About 75% of lightning is cloud-to-cloud (intra-cloud) and only ~25% cloud-to-ground (the dangerous kind for people and buildings).</li>
+</ul>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Rub a plastic ruler vigorously on your hair or a wool cloth. Hold it near small pieces of torn paper — they are attracted and jump to the ruler. Now rub two balloons and hold them near each other — they repel. You are demonstrating charge separation (triboelectric effect) — the same mechanism (friction/contact charge transfer) that happens between ice crystals and graupel inside storm clouds. The difference is scale: your ruler builds up ~10,000 V; a storm cloud builds up ~300,000,000 V.</p>
+</div><h2>7. Think deeper</h2>
+<p>Ball lightning is a rare phenomenon — glowing spheres of light that float for seconds during thunderstorms and pass through glass windows. Scientists have recorded it, but no fully accepted explanation exists. Proposed mechanisms include: plasma vortices, microwave trapping, or quantum vacuum effects. Even ordinary lightning is not fully understood — the exact mechanism of stepped leader formation was a topic of active research as recently as the 2020s. What does it mean for science that we use lightning protection every day yet cannot fully model how lightning initiates at the microscopic level?</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes the electrical discharge we see as lightning?</p>
+<ul>
+<li>A. Friction between raindrops and clouds produces heat that glows as lightning</li>
+<li>B. Oxygen in clouds reacts with nitrogen and releases energy as a bright flash</li>
+<li>C. Charge separation in clouds builds up until electrical discharge jumps to ground</li>
+</ul>
+<h3>Q2</h3>
+<p>Why is understanding the charge-separation mechanism more useful than knowing lightning is dangerous?</p>
+<ul>
+<li>A. Knowing lightning is dangerous is sufficient for all safety applications</li>
+<li>B. The mechanism only explains cloud-to-ground lightning, not cloud-to-cloud</li>
+<li>C. It helps design lightning rods and predict storm behaviour accurately</li>
+</ul>
+<h3>Q3</h3>
+<p>If a tall metal rod were placed on a building during a storm, what would you predict?</p>
+<ul>
+<li>A. The rod would attract more lightning and cause more damage to the building</li>
+<li>B. The rod would repel lightning by creating a magnetic field around the building</li>
+<li>C. Lightning would strike the rod and safely conduct charge to the ground</li>
+</ul>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>(a) A lightning bolt transfers 5 coulombs of charge through a potential difference of 3 × 10⁸ V. Calculate the energy released (E = Q × V). (b) If the bolt lasts 0.25 seconds, calculate the average power. (c) A standard Indian home uses 5 kWh of electricity per day. How many homes could be powered for one day by the energy in one lightning bolt? (Convert J to kWh: 1 kWh = 3.6 × 10⁶ J.) (d) Why is it impractical to harvest lightning for electricity?</p>
+</div><h2>10. One surprising idea</h2>
+<p>The thunder you hear is not the lightning itself — it is the explosive expansion of air heated to 30,000°C in microseconds. This superheated channel of air expands faster than the speed of sound, creating a shock wave — thunder. Light reaches you almost instantly (speed of light: 3×10⁸ m/s). Sound takes about 3 seconds per kilometre. So by counting seconds between the flash and the thunder and dividing by 3, you can calculate how many kilometres away the lightning struck. At 30 km away, you would see the flash ~0.0001 seconds after it occurs, but hear the thunder 10 seconds later.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Charge separation in storm clouds (ice crystal collisions) builds up to 300 MV. Air ionises when field exceeds 3 MV/m → stepped leader bridges cloud to ground → return stroke = lightning. Lightning rods safely conduct discharge to earth.</strong></p></div>
+
+  <footer>© Elevate STEM Daily · Class 8 · Day 14 of 30</footer>
+</div>
+</body>
+</html>
