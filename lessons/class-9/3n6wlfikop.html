@@ -3,22 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Day 13 — Mitochondria: the cell's power plants | Elevate STEM Daily</title>
+<title>Day 13: Mitochondria: the cell's power plants | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0B1B33; --navy-deep:#081527; --navy-soft:#4C5876;
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
     --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
-    --electric:#1477C8; --teal:#0FA89E; --amber:#E8A33D;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
   }
   *{box-sizing:border-box;}
   body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
   .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
-  header{background:var(--navy); color:#fff; padding:22px 0;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
   header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
-  header .brand{font-weight:800; font-size:1rem;}
-  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
   .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
   h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
   .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
@@ -30,7 +33,7 @@
   .card h2{margin-top:0;}
   .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
   .mission-card p{color:#DDE4F0; margin-bottom:0;}
-  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7FC4EF; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
   figure{margin:26px 0; text-align:center;}
   figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
   figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
@@ -41,18 +44,26 @@
   .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
   .quiz-item .q{font-weight:700; margin-bottom:4px;}
   .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
-  .takeaway{background:linear-gradient(135deg, var(--navy), #0F2A4D); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
   .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
   .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
-  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(15,168,158,0.05);}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
   .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
   code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
 </style>
 </head>
 <body>
 <header>
   <div class="hwrap">
-    <span class="brand">Elevate STEM Daily</span>
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
     <span class="day-badge">CLASS 9 · DAY 13</span>
   </div>
 </header>
@@ -133,7 +144,7 @@
 <div class="takeaway"><span class="label">Daily Takeaway</span>
 <p><strong>Mitochondria are nanoscale hydroelectric dams: they use a proton gradient across the inner membrane to spin ATP synthase, and without oxygen to drain that gradient, the entire system halts and the cell loses 95 % of its energy supply.</strong></p></div>
 
-  <footer>© Elevate STEM Daily · Class 9 · Day 13 of 30</footer>
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Day 13 of 30</footer>
 </div>
 </body>
 </html>
