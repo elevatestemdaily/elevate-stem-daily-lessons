@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 42: Why do mushrooms not need green leaves? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 42</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do mushrooms not need green leaves?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a mushroom-forming fungus can obtain nutrients without green leaves. Identify <strong>hyphae</strong>, <strong>mycelium</strong> and <strong>saprotrophic nutrition</strong>. Distinguish the visible mushroom from the more extensive feeding network and avoid assuming that all fungi have exactly the same relationships.</p>
+</div><h2>1. The mystery</h2>
+<p>After damp weather, a mushroom appears beside decaying wood. It seems to arrive suddenly, like a little umbrella pushed out of the ground. There are no broad leaves collecting light, and its cap does not look like a root system.</p>
+<p>The visible mushroom is not the entire organism. Much of the fungus can already exist as a network of fine threads within the material below. To explain how it gets nutrients, look at that hidden network and the surrounding material rather than treating the cap as a tiny green plant with missing leaves.</p>
+<h2>2. The science behind it</h2>
+<p>Fungi form a different biological group from green plants. They do not obtain their carbon by the leaf-based photosynthetic process familiar from green crops. Instead they acquire organic materials from other sources. The precise source depends on the kind of fungus.</p>
+<p>The body of many fungi includes fine filaments called <strong>hyphae</strong>. A branching collection of hyphae is a <strong>mycelium</strong>. This network can spread through wood, leaf litter, soil or another suitable material. Its fine branches create extensive contact with the surroundings.</p>
+<p>In <strong>saprotrophic nutrition</strong>, an organism obtains nutrients from dead organic material. Many mushroom-forming fungi use this approach. The hyphae release <strong>enzymes</strong> into the material around them. These molecules help break large organic compounds into smaller products that can be absorbed.</p>
+<p>The sequence matters: secretion happens outside the feeding cells, breakdown occurs in the surroundings, and suitable small products are then taken in. The fungus does not swallow a whole piece of log into a stomach. Its feeding surface works directly against the material it occupies.</p>
+<p>A broad network is useful because a piece of wood does not deliver nutrients to one central mouth. Hyphae can extend into new regions, increasing access to material. The network is therefore a feeding structure as well as a means of occupying space.</p>
+<p>The <strong>mushroom</strong> is a fruiting structure produced by certain fungi. Its appearance does not mean the organism only began existing that morning. The underlying network may have been growing before conditions supported the visible structure. Today we focus on the feeding network, not the details of reproduction.</p>
+<p>Not every mushroom-forming fungus feeds on dead material in the same way. Some fungi form partnerships with living plants, and some are parasites. Therefore a mushroom beside a tree is not enough evidence to identify its exact nutritional relationship.</p>
+<p>Decay also depends on moisture, temperature, oxygen availability and the properties of the material. The correct conditions allow the network and its enzymes to function. A dry log and a damp log need not change at the same rate, and a classroom description should not assign a universal time for decomposition.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine a branching network laid across a large loaf-shaped block. At many points the network releases tiny tools that free usable pieces from the block's surface. Those pieces enter the network nearby.</p>
+<p>The branching lines represent hyphae. The tools represent enzymes, not teeth or hands. The released pieces represent smaller nutrient molecules, not necessarily visible crumbs. Keeping those meanings clear prevents the model from becoming misleading.</p>
+<p>Draw a small mushroom above the network, but make the underground or internal branches much more extensive. Label the cap as a visible structure and the network as the main feeding contact in this example.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a mushroom above decaying wood and a larger network of hyphae inside it. A magnified contact region uses one arrow for enzyme release and another for uptake of smaller breakdown products.</p>
+<p>The text zones distinguish mycelium, external breakdown and absorption. The arrows show two directions of exchange, so the illustration does not suggest that the fungus simply sucks intact wood into the cap.</p>
+<p>The wood is a saprotrophic example. The diagram is not a claim that every mushroom, including every one found near a living tree, has this exact feeding relationship.</p>
+<figure><img src="../../illustrations/class-7/day_42.svg" alt="Diagram for Why do mushrooms not need green leaves?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Cultivated edible mushrooms can be grown on suitable prepared agricultural materials. Different species require different substrates and conditions. The link is the feeding network: it accesses organic material in its surroundings, rather than depending on broad green leaves.</p>
+<p>Fungal activity also contributes to the breakdown of fallen wood. That process changes how material moves through a landscape. This lesson stays with the mechanism at a hyphal feeding surface; the later soil lesson will examine the mixture of organic materials that develops in soil.</p>
+<p>Wild mushrooms cannot be identified as safe to eat from a simple colour, shape or classroom diagram. Observation should use photographs rather than collecting unknown specimens for this activity.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and several pieces of yarn or drawn branching lines. Do not grow mould or open mouldy food.</p>
+<ol>
+<li>Draw a block representing dead wood.</li>
+<li>Arrange branching lines across it as a mycelium.</li>
+<li>Mark small enzyme arrows leaving several branch tips.</li>
+<li>Add different arrows showing small products entering the branches.</li>
+<li>Draw a mushroom above the block and ask which part provides most of the feeding contact in this example.</li>
+</ol>
+<p>The paper pieces are a model, not an experiment demonstrating enzyme chemistry. Ask a partner to describe the order of secretion, external breakdown and uptake. Correct the drawing if it suggests that the cap swallows the block or that all uptake occurs at one point.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why might a finely branching network obtain resources from a solid substrate more effectively than one thick strand with little branching? Consider how much of the substrate is contacted and how far the network can reach.</p>
+<p>Now suppose the substrate dries. Distinguish having organic material present from having conditions that allow the fungus to use it. A food source can remain in place while growth becomes limited by the surroundings.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a branching collection of fungal hyphae called?</p>
+<ul>
+<li>A. Meniscus</li>
+<li>B. Mycelium</li>
+<li>C. Crystal lattice</li>
+</ul>
+<p><strong>Answer:</strong> B — A mycelium is the network formed by branching fungal hyphae.</p>
+<h3>Q2</h3>
+<p>Why does a saprotrophic fungus release enzymes onto dead material?</p>
+<ul>
+<li>A. To break large compounds into usable products</li>
+<li>B. To turn every cell into a green leaf</li>
+<li>C. To make the wood disappear without products</li>
+</ul>
+<p><strong>Answer:</strong> A — External breakdown produces smaller materials that the fungus can absorb.</p>
+<h3>Q3</h3>
+<p>A mushroom appears overnight. What can you reasonably infer?</p>
+<ul>
+<li>A. Every fungus under it is a parasite</li>
+<li>B. The entire organism must be one night old</li>
+<li>C. A feeding network may already have existed</li>
+</ul>
+<p><strong>Answer:</strong> C — The visible mushroom can develop after a mycelium has already occupied the substrate.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create an illustrated explanation titled “The mushroom you see is not the whole feeding system.” Include the words hyphae, mycelium, enzymes and uptake, each attached to a specific feature in the drawing.</p>
+<p>Add one limitation: your example concerns a fungus using dead material, and other fungal relationships exist. Your explanation should stay focused on obtaining nutrients rather than repeating the earlier lesson on the microscopic organisms in a water drop.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A fungus can carry out important parts of feeding outside its own cells. This shifts the usual picture of a meal: the environment immediately around the hyphae becomes the place where large materials are broken down. Seeing the network explains more than looking only at the mushroom's umbrella-like outline.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A saprotrophic fungus releases enzymes from its hyphae, breaks down dead material outside its cells, and absorbs suitable smaller products.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 12 of 30</footer>
+</div>
+</body>
+</html>

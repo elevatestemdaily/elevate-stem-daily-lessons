@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 37: Why do homologous compounds form a predictable series? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 37</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do homologous compounds form a predictable series?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Recognise a <strong>homologous series</strong> using a common functional feature and a repeating CH2 increment. Predict a neighbouring formula and distinguish similar chemical behaviour from identical physical properties. Use alcohol formulas on paper without handling or tasting any chemical.</p>
+</div><h2>1. The mystery</h2>
+<p>Methanol, ethanol and a propanol formula look related, yet they are not the same substance. Their formulas follow a useful pattern: each successive member in this simple sequence contains one additional carbon and two additional hydrogens.</p>
+<p>Why group them? Their shared OH functional feature supports similarities in chemistry, while changing chain size can alter physical behaviour. A series organises compounds without pretending they are interchangeable.</p>
+<p>The useful question is which structural part stays comparable and which part grows from one member to the next.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>homologous series</strong> is a family of related organic compounds with a common general pattern and similar functional features. Successive members in the usual straight-chain sequence differ by a <strong>CH2</strong> group.</p>
+<p>For a simple alcohol example, write <strong>CH3OH</strong>, <strong>C2H5OH</strong> and <strong>C3H7OH</strong>. The OH group remains represented, while the hydrocarbon portion increases. Counting the complete atoms gives CH4O, C2H6O and C3H8O.</p>
+<p>The increment CH2 has an approximate relative mass contribution of 14 using rounded carbon 12 and hydrogen 1 values. This gives a useful regular mass step in the simple sequence. It is a formula calculation, not a measurement of every commercial liquid labelled alcohol.</p>
+<p>The <strong>functional group</strong> helps organise characteristic reactions. The carbon skeleton also influences behaviour, so similar does not mean identical under every condition. A family label is a guide to relationships, not a replacement for the actual structure.</p>
+<p>Physical properties can vary along a series. For suitable comparable members, boiling behaviour often changes with chain size and intermolecular interactions. It is too strong to say every property changes in a perfectly monotonic way across all isomers and conditions.</p>
+<p>A <strong>general formula</strong> must be used within its intended family. The same molecular formula can sometimes correspond to different structural arrangements, a separate topic addressed later. Formula matching alone does not prove that a compound has the required functional group.</p>
+<p>The alcohol examples also have different practical hazards and uses. A shared OH group does not make substances safe to drink or suitable substitutes. No real chemical handling is part of this lesson.</p>
+<p>The focus differs from the earlier explanation of carbon's ability to form many compounds. That topic explained bonding diversity. Here the target is a classification pattern that supports formula prediction while preserving differences between related substances.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a fixed coloured OH tag attached to carbon-chain blocks. Add one carbon and two hydrogens between successive formula cards while keeping the functional tag visible.</p>
+<p>Count the full atom totals separately from the shortened formula notation. This prevents the OH hydrogen from being forgotten when comparing CH3OH with a full molecular formula.</p>
+<p>Then put a different structural arrangement beside a matching atom-total card and mark it needs checking. The model shows why a series needs a structural relationship, not merely an arithmetic coincidence in a list of formulas.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the three alcohol formula cards with CH2 arrows between them. The common OH feature is identified separately from the growing carbon portion.</p>
+<p>A mass-increment panel calculates about 14 from the rounded elemental contributions. A lower comparison states similar chemistry but potentially different physical properties and hazards.</p>
+<p>The diagram contains no bottle-opening, solvent use or flame test. It is a classification and formula-accounting model, not a recipe or a claim that all compounds called alcohol can be used interchangeably.</p>
+<figure><img src="../../illustrations/class-10/day_37.svg" alt="Diagram for Why do homologous compounds form a predictable series?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Organic naming and product descriptions can contain related family terms. Understanding a series helps students see why the names are connected while still requiring the full identity for a practical decision.</p>
+<p>An Indian chemistry classroom may use formula cards to predict the next member safely. The paper exercise gives the core relationship without bringing toxic or flammable samples into a home activity.</p>
+<p>Everyday uses of the word alcohol can be vague. This lesson deliberately uses chemical names and formulas, and it never treats family membership as a safety assessment or permission to taste a substance.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours.</p>
+<ol>
+<li>Write the three supplied alcohol formulas.</li>
+<li>Highlight the common OH feature.</li>
+<li>Count all carbon, hydrogen and oxygen atoms for each.</li>
+<li>Compare successive totals and identify CH2.</li>
+<li>Predict the next simple formula while keeping the same family pattern.</li>
+</ol>
+<p>Use the supplied sequence rather than an unknown household product. Do not open, smell, mix or taste any alcohol. The model predicts a formula relationship; it does not measure boiling point, establish purity or identify every possible isomer.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why is a shared functional feature useful for grouping compounds even when their physical properties differ? Separate recurring reaction-related structure from complete identity.</p>
+<p>Now suppose a formula list differs by CH2 but no structural information is supplied. What would you check before confidently assigning a homologous series? A numerical increment is helpful evidence, not permission to ignore functional arrangement.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the usual successive formula increment in this simple series?</p>
+<ul>
+<li>A. CH2</li>
+<li>B. O2 only</li>
+<li>C. NaCl</li>
+</ul>
+<p><strong>Answer:</strong> A — Each neighbouring member adds one carbon and two hydrogens in the supplied sequence.</p>
+<h3>Q2</h3>
+<p>Why is the common functional feature important?</p>
+<ul>
+<li>A. It proves every property and hazard is identical</li>
+<li>B. It helps organise related chemical behaviour</li>
+<li>C. It removes the need to know actual structure</li>
+</ul>
+<p><strong>Answer:</strong> B — The shared feature supports family relationships without making members the same substance.</p>
+<h3>Q3</h3>
+<p>After C2H5OH, which supplied simple alcohol-series formula comes next?</p>
+<ul>
+<li>A. C2H6OH</li>
+<li>B. C3H6</li>
+<li>C. C3H7OH</li>
+</ul>
+<p><strong>Answer:</strong> C — Adding CH2 preserves the OH feature and gives the next simple formula.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a family chart with formulas, complete atom counts, common functional feature and CH2 steps. Include the approximate mass increment using the stated rounded atomic values.</p>
+<p>Add two limits: related members are not identical, and formula totals alone may not establish structure. Your chart should predict a neighbour while remaining a safe paper exercise rather than a comparison of real chemical samples.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A repeating difference can organise a very large family without making every member the same. The stable part of the pattern supports prediction, while the changing part produces new properties. Classification is useful because it preserves both continuity and difference rather than erasing one of them.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A homologous series combines a recurring functional pattern with successive CH2 increments; related formulas support prediction but do not make all properties or hazards identical.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

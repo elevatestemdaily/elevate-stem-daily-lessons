@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 47: How do structural isomers share a formula but differ in arrangement? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 47</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do structural isomers share a formula but differ in arrangement?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Distinguish <strong>molecular formula</strong> from <strong>atom connectivity</strong> using C4H10. Compare butane and 2-methylpropane as structural isomers. Recognise why rotating or bending a drawing does not create a new connectivity pattern and why the same formula does not guarantee identical properties.</p>
+</div><h2>1. The mystery</h2>
+<p>Two structural drawings each contain four carbons and ten hydrogens, yet their carbon connections differ. One has a chain of four carbons; the other has a central carbon connected to three other carbons.</p>
+<p>The atom totals match, but the connection map does not. A molecular formula compresses some information and leaves other information out.</p>
+<p>The useful question is not whether the drawings look different on the page. It is whether the same atoms are connected in the same pattern after harmless changes of drawing orientation are allowed.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>molecular formula</strong> states the number of each kind of atom in a molecule. <strong>Structural isomers</strong> share a molecular formula but differ in connectivity. This is a more specific relationship than merely being members of the same homologous family.</p>
+<p>For <strong>butane</strong>, a condensed structure is CH3–CH2–CH2–CH3. The four-carbon chain contains two terminal CH3 groups and two internal CH2 groups, giving ten hydrogens in total.</p>
+<p>For <strong>2-methylpropane</strong>, a central CH group connects to three CH3 groups. The nine hydrogens on the methyl groups plus the central hydrogen again give C4H10. The carbon network is branched rather than one four-carbon path.</p>
+<p>The central carbon's number of carbon neighbours differs from any carbon in the unbranched chain. This graph-like feature cannot be changed merely by turning the page. It demonstrates a genuine connectivity difference.</p>
+<p>A bent drawing of butane remains butane if its connections are unchanged. Molecules also have three-dimensional shapes and can change conformation, but not every shape or orientation difference is structural isomerism. The lesson focuses on the connection map.</p>
+<p>Different connectivity can influence physical properties because molecular shape affects interactions and packing. The isomers need not have identical boiling behaviour. We give no real fuel-performance or handling claim from the formula comparison alone.</p>
+<p>The same atom total also does not automatically identify a functional group in more complicated cases. A structural formula preserves connections that a molecular formula leaves unspecified. This connects to the earlier ester lesson without repeating its naming mechanism.</p>
+<p>Both example substances require appropriate chemical handling in real settings. Students do not need gas samples, lighters or odour tests. Paper structures provide the complete learning goal safely.</p>
+<h2>3. Build the mental model</h2>
+<p>Use four carbon nodes and connecting lines. First make one path of four nodes. Then make a three-branch pattern around a central node. Add hydrogen counts according to the intended simple valence model.</p>
+<p>Try rotating the first graph on paper. Its node-neighbour pattern does not become the branched graph. The difference is structural rather than artistic.</p>
+<p>Next redraw the chain as a zigzag. The picture changes, but the connectivity does not. Comparing which nodes connect, rather than matching silhouettes, prevents overcounting ordinary redrawings as new isomers. This is a useful bridge between chemical notation and simple network reasoning.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the four-carbon chain and the branched carbon network side by side. Hydrogen counts complete both to C4H10. A central-node marker highlights the three carbon neighbours in 2-methylpropane.</p>
+<p>A lower strip rotates or bends the chain representation while preserving connections. Its caption says same structure, different drawing. No three-dimensional model is claimed to be exact.</p>
+<p>The illustration contains no real gas container or preparation steps. Its purpose is atom counting and connectivity comparison, keeping this lesson distinct from the earlier carbon-bond diversity explanation and the homologous CH2 increment pattern.</p>
+<figure><img src="../../illustrations/class-10/day_47.svg" alt="Diagram for How do structural isomers share a formula but differ in arrangement?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Chemical labels need sufficient identity because one formula can correspond to more than one substance. A safe and useful material description cannot always stop at the atom totals.</p>
+<p>In an Indian chemistry classroom, paper node models can reveal isomerism without any laboratory handling. The method is especially useful for checking whether two seemingly different drawings actually preserve the same graph.</p>
+<p>Real product behaviour also depends on mixture composition and conditions. A C4H10 example should not be turned into a recommendation about a household fuel or an experiment involving ignition.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and a pencil, or four safe large paper circles as carbon tokens.</p>
+<ol>
+<li>Connect four nodes into one chain.</li>
+<li>Count the hydrogen groups in CH3–CH2–CH2–CH3.</li>
+<li>Rearrange the nodes into one central node with three neighbours.</li>
+<li>Count three CH3 groups and one CH.</li>
+<li>Redraw the original chain as a zigzag and compare connectivity.</li>
+</ol>
+<p>Do not use toothpicks or sharp construction tools. Label the structures and formula separately. Ask a partner whether a rotated chain creates a new isomer and require an answer based on connections rather than appearance.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a molecular formula fail to identify one unique substance? State the connection information it omits.</p>
+<p>Now imagine two drawings with all the same connected neighbours but different positions on the page. What evidence would justify treating them as different structural isomers? The answer should show that visual difference alone is insufficient.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What do structural isomers share?</p>
+<ul>
+<li>A. Only the same drawing orientation</li>
+<li>B. Every atom connection by definition</li>
+<li>C. A molecular formula</li>
+</ul>
+<p><strong>Answer:</strong> C — They share atom totals while differing in connectivity.</p>
+<h3>Q2</h3>
+<p>Why is 2-methylpropane not merely a bent drawing of butane?</p>
+<ul>
+<li>A. The page has a different colour</li>
+<li>B. Its carbon-neighbour pattern is different</li>
+<li>C. Its formula must contain a fifth carbon</li>
+</ul>
+<p><strong>Answer:</strong> B — A central carbon connected to three carbon neighbours differs from the unbranched path.</p>
+<h3>Q3</h3>
+<p>A butane diagram is rotated with all bonds preserved. What results?</p>
+<ul>
+<li>A. The same connectivity in a new drawing</li>
+<li>B. A different molecular formula</li>
+<li>C. A new structural isomer automatically</li>
+</ul>
+<p><strong>Answer:</strong> A — Rotation changes presentation rather than the atom connection graph.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a comparison card for the two C4H10 structures, including carbon connections, hydrogen count and name. Add a false-isomer example made by rotating or bending the chain drawing.</p>
+<p>Explain why one pair differs in connectivity while the other does not. Keep all work on paper and avoid boiling-point numbers or practical fuel claims that were not measured in the activity.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The same collection of atoms can make different substances because a formula is not a full connection map. Chemistry therefore needs several levels of description. Atom counts answer what is present, while structure answers how it is connected; neither level should be mistaken for all the information in the other.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Structural isomers share atom totals but differ in connectivity; butane and 2-methylpropane both have C4H10, while rotating one unchanged graph creates no new isomer.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 17 of 30</footer>
+</div>
+</body>
+</html>

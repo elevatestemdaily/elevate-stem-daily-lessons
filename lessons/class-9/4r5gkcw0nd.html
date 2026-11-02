@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 34: How does a rain gauge turn collected water into rainfall depth? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 34</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a rain gauge turn collected water into rainfall depth?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Convert collected rainwater volume into an equivalent <strong>rainfall depth</strong> using a known catchment area. Distinguish the gauge opening from the collection bottle, and recognise why placement, losses and the observation interval matter to a useful rainfall record.</p>
+</div><h2>1. The mystery</h2>
+<p>Two rain gauges collect different volumes during the same shower. One has a wider opening. Does its larger collection prove heavier rain fell at that location? Not without accounting for area.</p>
+<p>Rainfall depth expresses how much water would cover a level area if it stayed there uniformly without losses or movement. Dividing collected volume by the relevant opening area makes different-sized gauges comparable in a simplified model.</p>
+<p>The key question is therefore not only how many millilitres were collected, but how much horizontal area supplied them during what interval.</p>
+<h2>2. The science behind it</h2>
+<p>A rain gauge catches water through a defined <strong>catchment opening</strong>. Ideally that opening has a known area, is suitably oriented and collects a representative sample of falling rain. The water may then enter a narrower bottle or measuring system.</p>
+<p>The basic geometric relation is <strong>depth = volume / area</strong>. Volume has units of length cubed, and area length squared, leaving a length. Consistent units are essential before converting the result into millimetres.</p>
+<p>For an invented example, a 100-square-centimetre opening collects 50 cubic centimetres of water. The equivalent depth is 0.5 centimetres, or 5 millimetres. One cubic centimetre is one millilitre, but that equivalence does not remove the need to divide by opening area.</p>
+<p>If the same rainfall depth falls into twice the catchment area, twice the volume is expected in the ideal model. The depth remains the same. This is why a collection bottle's liquid height alone may not equal rainfall depth when a funnel concentrates water into it.</p>
+<p>The <strong>observation interval</strong> is part of the measurement. A total collected over an hour is not directly comparable to a total collected over a whole day without describing those periods. Rainfall total and rainfall rate answer related but different questions.</p>
+<p>Real gauges can lose or gain water through processes outside the ideal model. Wind can affect catch, splash can enter or leave, and evaporation can reduce a delayed reading. An obstructing roof or tree can change what reaches the opening.</p>
+<p>Placement and level orientation therefore matter. A gauge tilted or sheltered inappropriately may not represent the intended rainfall even if its volume scale is read perfectly. Careful arithmetic cannot repair unrepresentative collection conditions.</p>
+<p>A measured rainfall depth does not state how much enters the soil or reaches an aquifer. Runoff, interception and infiltration change the water's later path. The gauge measures precipitation input at a place and interval, not every subsequent part of the water budget.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a rectangular layer of water above a known flat area. Its volume equals base area multiplied by depth. Turn that relation around to recover depth from volume and area.</p>
+<p>Then draw a wide funnel above a narrow bottle. Keep the catchment area at the funnel mouth, not the bottle's waist. This prevents the common error of using the convenient visible container diameter instead of the area that actually intercepted the rain.</p>
+<p>Compare two openings with different areas receiving the same illustrated depth. Their volume blocks differ, but division by each proper area restores the same depth. The model shows what the normalisation accomplishes.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a catchment opening, collection container and a separate depth-equals-volume-over-area panel. The invented 100-square-centimetre and 50-millilitre example gives a 5-millimetre depth.</p>
+<p>A comparison doubles opening area and collection volume while preserving the ideal rainfall depth. Labels distinguish opening area from the narrower receiving bottle's area.</p>
+<p>The diagram is an arithmetic and collection model. It does not depict a real shower, prescribe an official gauge installation or imply that rooftop and open-ground collections are automatically interchangeable.</p>
+<figure><img src="../../illustrations/class-9/day_34.svg" alt="Diagram for How does a rain gauge turn collected water into rainfall depth?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian weather reports often express rainfall in millimetres. That unit represents an equivalent depth, allowing comparison more meaningfully than an unexplained bottle volume.</p>
+<p>A school rainfall project should record location, opening geometry, reading times and unusual collection conditions. A tree drip or roof outlet can produce a different input from direct open rainfall, so it belongs in the method notes rather than being silently treated as equivalent.</p>
+<p>No one should go out during a storm to read a gauge. Safe adult-managed placement and later observation are separate from understanding the calculation, which can be learned entirely from paper examples.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a ruler and a calculator if desired. No outdoor collection is required.</p>
+<ol>
+<li>Draw a catchment opening labelled 100 square centimetres.</li>
+<li>Assign the invented collected volume of 50 millilitres.</li>
+<li>Convert millilitres to cubic centimetres.</li>
+<li>Divide by area, then convert centimetres to millimetres.</li>
+<li>Double both opening area and collection volume and repeat.</li>
+</ol>
+<p>State that the data are invented. The arithmetic does not establish actual rainfall at your school. Add a note naming one collection error that would remain even if every calculation were correct. This keeps the physical measurement and numerical conversion linked but distinct.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can two gauges show different collected volumes yet agree on rainfall depth? Use their opening areas in your answer.</p>
+<p>Now imagine the bottle's narrow height scale is read directly as rain depth despite a much wider funnel mouth. What has been overlooked? Explain why identifying the collection geometry belongs before arithmetic, not after an implausible result appears.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How is equivalent rainfall depth calculated in the ideal model?</p>
+<ul>
+<li>A. Collected volume divided by catchment area</li>
+<li>B. Bottle colour divided by opening width</li>
+<li>C. Collected volume multiplied by time only</li>
+</ul>
+<p><strong>Answer:</strong> A — Volume divided by the area that intercepted the rain gives equivalent depth.</p>
+<h3>Q2</h3>
+<p>Why can a wider opening collect more volume in the same shower?</p>
+<ul>
+<li>A. The rainfall depth must change with every bottle</li>
+<li>B. Its walls create extra rain chemically</li>
+<li>C. It intercepts rain over more area</li>
+</ul>
+<p><strong>Answer:</strong> C — The same depth multiplied by a larger catchment area gives a larger volume.</p>
+<h3>Q3</h3>
+<p>Invented volume is 50 cm³ over 100 cm². What depth results?</p>
+<ul>
+<li>A. 50 mm</li>
+<li>B. 5 mm</li>
+<li>C. 500 mm</li>
+</ul>
+<p><strong>Answer:</strong> B — The quotient is 0.5 cm, which equals 5 mm.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a rain-record sheet with opening area, collected volume, units, time interval, calculated depth and collection notes. Use one invented calculation and one example of an obstruction or loss.</p>
+<p>Include a safety note that readings are not taken during storms. Your sheet should not claim that rainfall depth alone measures groundwater recharge or that a container under a roof outlet measures the same thing as direct rainfall through a known open catchment.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Millimetres of rain can describe a large total volume when spread over a large area. The depth is a normalised measure, not a statement that only a tiny amount of water existed. Understanding the area relation links a local gauge reading with a broader water-input calculation without inventing any actual rainfall statistic.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Rainfall depth equals collected volume divided by the true catchment area in consistent units; placement and observation interval remain part of the measurement.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

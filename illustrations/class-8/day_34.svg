@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why do we see different Moon phases during a month?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">One illumination pattern can produce different apparent discs</text>
+<text x="150" y="134" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Sunlight from left</text>
+<text x="720" y="134" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Space-view geometry</text>
+<line x1="65" y1="190" x2="280" y2="190" stroke="#e6a23c" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="65" y1="255" x2="280" y2="255" stroke="#e6a23c" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="65" y1="320" x2="280" y2="320" stroke="#e6a23c" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="500" cy="255" r="25" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="340" cy="255" r="19" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M340 236 A19 19 0 0 0 340 274 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="500" cy="170" r="19" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M500 151 A19 19 0 0 0 500 189 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="660" cy="255" r="19" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M660 236 A19 19 0 0 0 660 274 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="500" cy="340" r="19" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M500 321 A19 19 0 0 0 500 359 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="200" cy="420" r="23" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<text x="200" y="462" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">New</text>
+<circle cx="500" cy="420" r="23" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="462" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Quarter</text>
+<circle cx="800" cy="420" r="23" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="800" y="462" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Full</text>
+<path d="M500 397 A23 23 0 0 0 500 443 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="380" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Observer-view examples</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Ordinary phases are changing views; Earth shadow is an eclipse event.</text>
+</svg>

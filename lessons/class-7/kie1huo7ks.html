@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 35: How can a mesh keep tea leaves out of your cup? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 35</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a mesh keep tea leaves out of your cup?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain <strong>filtration</strong> using a kitchen strainer. Identify the mixture, filter, <strong>residue</strong> and <strong>filtrate</strong>. Predict which changes help remove smaller suspended pieces, and explain why a drink can remain coloured or sweet after visible tea leaves have been removed.</p>
+</div><h2>1. The mystery</h2>
+<p>A tea seller pours a mixture through a strainer. The liquid reaches the cup, but most leaves stay behind. The tea still has colour and taste. A small wire grid has made a useful separation, but it has not removed everything that came from the leaves.</p>
+<p>Now imagine replacing that strainer with one containing much larger holes. Would the same leaves remain behind? And if you replaced it with a much finer filter, would dissolved sugar necessarily disappear too? These questions reveal both the strength and the limit of a simple filter.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>mesh</strong> is a network with openings. In a kitchen strainer, wires define many small openings through which liquid can pass. Suspended leaf pieces are often too large to pass through easily, so they are retained.</p>
+<p>Separating suspended solid material from a fluid using a porous barrier is called <strong>filtration</strong>. The barrier may be woven wire, cloth, paper or another porous material. Its structure must allow the fluid through while retaining at least some of the unwanted particles.</p>
+<p>The material retained is the <strong>residue</strong>. The liquid collected after passing through is the <strong>filtrate</strong>. These words describe the two outputs of the process. They do not tell you that either output is pure or safe to consume.</p>
+<p>The key comparison is between the effective size of an opening and the size and shape of a suspended piece. A large leaf fragment cannot easily cross a small opening. A very fine fragment may pass through a coarse mesh. Flexible fragments can also bend, and irregular particles may orient differently.</p>
+<p>A finer filter can retain smaller suspended pieces, but it often slows the flow. It may have smaller passages, and those passages may become blocked. A pile of retained solids, sometimes called a <strong>filter cake</strong>, adds another layer that the liquid must cross.</p>
+<p>A filter cake can improve retention of some particles while reducing flow. This does not mean that endless layers are always desirable. A useful design must balance clarity, speed, capacity and ease of cleaning.</p>
+<p>Dissolved substances behave differently from suspended leaves. Sugar dissolved in tea is not present as intact visible sugar grains. Its dissolved particles pass through an ordinary kitchen mesh with the water. Many dissolved tea compounds also remain, which is why the filtrate retains colour and taste.</p>
+<p>Some specialised membranes can separate certain dissolved materials. An ordinary tea strainer is not such a membrane. Avoid the misleading rule that “filters remove everything smaller than we can see” or that “clear water must be safe.” The performance depends on the filter and the substances present.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine people approaching a doorway. A wide box cannot fit through a narrow opening, while a small object can. The mesh acts as many doorways at once. Retention depends partly on whether the solid can negotiate those openings.</p>
+<p>The analogy has limits. Water is a flowing material rather than a queue of people, and flexible particles do not behave like rigid boxes. Still, the doorway comparison makes one prediction clear: increasing opening size can allow more solid pieces through.</p>
+<p>Draw an arrow into a filter and two outputs. Label the solids remaining above as residue and the collected liquid below as filtrate. Include dissolved sugar symbols in both the incoming liquid and the filtrate.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a mixture entering a grid. Large amber leaf shapes remain above the mesh, while blue liquid arrows continue below. Labels identify residue, mesh openings and filtrate in separate text regions.</p>
+<p>A second small comparison shows a coarse and a fine grid with the same example particle. The drawing uses exaggerated sizes so the comparison is visible. It is not a scale drawing of wire openings or sugar molecules.</p>
+<p>A caption states that dissolved sugar passes an ordinary strainer. Removing visible leaf pieces therefore changes the drink's suspended solids without removing all dissolved compounds.</p>
+<figure><img src="../../illustrations/class-7/day_35.svg" alt="Diagram for How can a mesh keep tea leaves out of your cup?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Tea stalls and home kitchens across India rely on this separation. The strainer's design affects how quickly a cup can be poured and how many fine fragments reach it. A very fine mesh may need cleaning more often.</p>
+<p>Cloth filtration of a kitchen mixture uses the same general size-exclusion idea, but folded cloth has a more complicated path than a single wire mesh. A paper coffee filter has still another pore structure.</p>
+<p>A strainer used to catch food scraps at a sink protects the drain. It does not remove dissolved salt or make the wastewater drinkable. Knowing what a device retains is as important as noticing that something passes through it.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use room-temperature water, a kitchen strainer, a bowl and a little coarse loose tea. An adult should supervise handling and cleanup. No kettle, stove or hot drink is needed.</p>
+<ol>
+<li>Mix the tea with water in a cup and stir gently.</li>
+<li>Place the strainer above the collecting bowl.</li>
+<li>Pour slowly and watch where the coarse pieces remain.</li>
+<li>Examine whether any small fragments passed into the bowl.</li>
+<li>Add a small amount of dissolved sugar solution to a separate trial if available, and predict whether the mesh could retain the dissolved sugar.</li>
+</ol>
+<p>Do not taste experimental samples. A visual comparison cannot measure dissolved sugar reliably. The final step is a prediction based on particle form, not a claim that sweetness can be judged by looking.</p>
+</div><h2>7. Think deeper</h2>
+<p>A filter initially allows liquid through quickly, then slows as solids accumulate. Has the original mesh necessarily changed size? Explain how retained material can obstruct the available paths even when the wires remain unchanged.</p>
+<p>Now consider pouring the mixture around the outside edge rather than through the mesh. A device can have an excellent filter material and still fail if liquid bypasses it. The frame and seal matter too.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the liquid collected after filtration called?</p>
+<ul>
+<li>A. Mesh</li>
+<li>B. Residue</li>
+<li>C. Filtrate</li>
+</ul>
+<p><strong>Answer:</strong> C — Filtrate is the fluid that has passed through the filter.</p>
+<h3>Q2</h3>
+<p>Why does dissolved sugar pass through an ordinary tea strainer?</p>
+<ul>
+<li>A. Sugar must be floating as large grains</li>
+<li>B. Dissolved sugar is far smaller than its openings</li>
+<li>C. The mesh changes sugar into water</li>
+</ul>
+<p><strong>Answer:</strong> B — Dissolved sugar particles pass with water through the comparatively large openings.</p>
+<h3>Q3</h3>
+<p>What is likely as more leaf residue blocks a mesh?</p>
+<ul>
+<li>A. The liquid may pass through more slowly</li>
+<li>B. The mesh manufactures larger holes</li>
+<li>C. The water becomes a new element</li>
+</ul>
+<p><strong>Answer:</strong> A — Accumulated solids obstruct pathways and can reduce the filtration rate.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a reusable strainer for a busy tea stall. Choose between a coarse single mesh and a finer mesh that needs more frequent cleaning. Explain which pieces each design is likely to retain and what happens to pouring speed as residue accumulates.</p>
+<p>Include a rim that directs the mixture through the filter instead of around it. Finish with one honest limitation: your design separates suspended pieces but does not remove all dissolved substances.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A filter can become better at retaining some fine solids as it becomes worse at letting liquid flow. The collected residue adds new obstacles, so clarity and speed can change in opposite directions. Good filtration design is therefore a continuing balance, rather than a contest to make every opening as tiny as possible.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A mesh retains many suspended pieces larger than its openings, while the filtrate can still contain dissolved sugar, colour and other substances.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 5 of 30</footer>
+</div>
+</body>
+</html>

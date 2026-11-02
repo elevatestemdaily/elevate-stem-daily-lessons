@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 33: Why do crystals appear when a salt solution dries? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 33</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do crystals appear when a salt solution dries?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a clear salt solution can leave solid crystals as water evaporates. Identify <strong>crystallisation</strong>, distinguish crystal growth from making a new substance, and predict how the amount of water influences what remains dissolved. Do not expect crystal growth to finish during a five-minute setup.</p>
+</div><h2>1. The mystery</h2>
+<p>A drop of salty water dries on a plate. Yesterday it looked like a transparent liquid. Today a pale mark remains. Under good lighting, parts of that mark may have straight edges rather than the rounded outline of the original drop.</p>
+<p>Where did the solid come from? The plate did not manufacture salt, and the water did not change into salt. The salt was already present in the clear liquid. Drying made it visible again in a different arrangement.</p>
+<p>The interesting question is how dissolved material becomes an ordered solid instead of remaining hidden in the liquid.</p>
+<h2>2. The science behind it</h2>
+<p>Water acts as a <strong>solvent</strong>, and dissolved salt is a <strong>solute</strong>. Together they make a <strong>solution</strong>. Clear does not mean empty: a solution can contain dissolved material too small to see as separate grains.</p>
+<p>Common salt is mainly <strong>sodium chloride</strong>. In a crystal, sodium and chloride ions occupy a repeating arrangement called a <strong>crystal lattice</strong>. The ions are electrically charged particles. At this level, you only need the idea of a regular arrangement extending through the solid.</p>
+<p>When salt dissolves, its ions become dispersed and surrounded by water molecules. The separate grains disappear from sight, but the salt has not vanished. There is still dissolved material available to form a solid later.</p>
+<p>In an open dish, water can leave the liquid surface as <strong>water vapour</strong>. Under ordinary room conditions, sodium chloride does not leave with the water at an appreciable rate. As water is lost, more dissolved salt is present relative to the amount of remaining water.</p>
+<p>At a particular temperature, only a limited amount of salt remains dissolved in a given amount of water at equilibrium. As evaporation continues, the solution can reach conditions where a solid phase forms and grows. A tiny starting region, a <strong>nucleus</strong>, provides an ordered arrangement to which more ions can join.</p>
+<p>This is <strong>crystallisation</strong>: dissolved material becomes an ordered solid. Existing crystals, surface irregularities or tiny particles can provide starting sites. Growth is influenced by evaporation rate, disturbances and impurities. These factors help explain why real dried drops produce uneven patterns.</p>
+<p>The geometry of the sodium chloride lattice helps explain its familiar cube-like crystals. However, a kitchen observation may show crusts or crowded clusters rather than perfect cubes. Table salt can include additives, and crystals can overlap. An imperfect shape does not mean the basic mechanism has failed.</p>
+<p>Crystal growth from salt water does not require creating a new chemical substance. Salt can be recovered by removing the solvent. If clean water is added later, the salt can dissolve again. That recovery is different from a reaction that makes a different substance from the original ingredients.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine tiles scattered in a wide tray. As available space changes, tiles begin joining an orderly pattern already started in one corner. The ordered patch becomes bigger as additional pieces find places along its edge.</p>
+<p>The tiles represent dissolved ions, and the ordered patch represents a crystal. The analogy cannot show the electrical interactions or water surrounding the ions. It does capture a useful distinction: <strong>growth adds material to an existing ordered solid</strong>.</p>
+<p>Make a three-box sketch: clear solution, less water with crystal starting sites, and visible crystals. Keep a salt symbol in every box. Remove only some water symbols between boxes.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG uses three stages arranged left to right. The first dish contains blue liquid with small amber salt symbols. The second has a lower liquid level and water-vapour arrows above it. The third contains several square crystal outlines.</p>
+<p>The salt symbols are schematic. A dissolved ion is far too small to be drawn at this scale, and individual grains are not floating unchanged in the clear solution. The symbols simply track the presence of dissolved material.</p>
+<p>Labels below the dishes describe water loss and ordered solid growth. The diagram does not promise that every dried sample forms a perfect cube.</p>
+<figure><img src="../../illustrations/class-7/day_33.svg" alt="Diagram for Why do crystals appear when a salt solution dries?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A white ring can appear where salty water repeatedly dries near a tap or container. Such deposits may contain several minerals, so a white mark is not automatically pure sodium chloride. Its location still suggests a useful question: what dissolved material was left behind when water departed?</p>
+<p>Coastal salt production also uses water removal, but this lesson focuses on the microscopic growth of an ordered solid rather than the design of salt pans. Kitchen observations show the same distinction between the water that leaves and the solute that remains.</p>
+<p>Crystals are also important in product manufacture. Controlling their growth can affect grain size and how easily a material can be handled.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use table salt, room-temperature drinking water, a spoon and two clean shallow dishes. No heating is needed. Do not eat the samples after the investigation.</p>
+<ol>
+<li>Stir a small spoonful of salt into a little water until it dissolves.</li>
+<li>Spread a thin layer of the clear solution in one dish.</li>
+<li>Put plain water in the other dish as a comparison.</li>
+<li>Label both dishes and place them somewhere stable, away from pets and small children.</li>
+<li>Sketch their starting appearance and predict what each will leave behind.</li>
+</ol>
+<p>The five minutes are for setup. Check later, possibly the following day or beyond. Drying time depends on the amount of water, exposed area, air movement and room conditions. Do not report an exact waiting time as a universal result.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a salt crystal begins growing in a dish. Then someone adds enough clean water to make the liquid much more dilute. Does the crystal have to keep growing simply because it already exists?</p>
+<p>Explain how the surrounding liquid can now favour some solid dissolving instead. A crystal's presence tells you what formed earlier; it does not guarantee that the present conditions still support growth.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the repeating arrangement inside a crystal called?</p>
+<ul>
+<li>A. A vapour bubble</li>
+<li>B. A crystal lattice</li>
+<li>C. A water current</li>
+</ul>
+<p><strong>Answer:</strong> B — A lattice is the repeating arrangement of particles within a crystal.</p>
+<h3>Q2</h3>
+<p>Why can salt appear as a solid after salt water dries?</p>
+<ul>
+<li>A. The dish manufactures new salt</li>
+<li>B. Water changes into sodium chloride</li>
+<li>C. Water leaves while salt remains</li>
+</ul>
+<p><strong>Answer:</strong> C — Evaporation removes solvent and can allow dissolved salt to crystallise.</p>
+<h3>Q3</h3>
+<p>What may happen if enough clean water is added to a small salt crystal?</p>
+<ul>
+<li>A. It can dissolve in the added water</li>
+<li>B. It must turn into a different element</li>
+<li>C. It must keep growing faster</li>
+</ul>
+<p><strong>Answer:</strong> A — If the liquid is sufficiently dilute, salt can pass from the solid into solution.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a picture sequence that prevents two common mistakes: “clear liquid contains no salt” and “water turns into salt.” Show the water and salt separately at each stage using different symbols.</p>
+<p>Then predict what changes if the same salt solution is divided between a broad shallow dish and a narrow deep cup. State what is held equal and explain why exposed surface area may affect drying time without changing the identity of the salt.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A crystal's straight faces can emerge without anyone cutting or carving them. Their larger shape reflects repeated arrangements at a scale too small to see. Crystal growth links the invisible organisation of matter with a visible object, although crowded crystals and impurities often hide the clean geometry in an everyday sample.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>As water leaves a salt solution, dissolved salt can join an ordered crystal lattice; the salt was present before the crystals became visible.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can two sensors agree closely and still both be wrong?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Invented reference: 100 model units; agreement and correctness differ</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Spread versus reference offset</text>
+<text x="745" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Shared calibration source</text>
+<line x1="75" y1="220" x2="430" y2="220" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="180" y1="202" x2="180" y2="238" stroke="#579b70" stroke-width="3"/>
+<line x1="75" y1="320" x2="430" y2="320" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="180" y1="302" x2="180" y2="338" stroke="#579b70" stroke-width="3"/>
+<circle cx="320" cy="220" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="340" cy="220" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="320" cy="220" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="160" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="200" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="160" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="200" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="250" y="263" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Tight cluster, displaced</text>
+<text x="250" y="365" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Wider, centred in this example</text>
+<rect x="620" y="180" width="260" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="700" y1="240" x2="650" y2="285" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="800" y1="240" x2="850" y2="285" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="610" y="300" width="80" height="45" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="810" y="300" width="80" height="45" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="750" y="401" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Two outputs can share one bias</text>
+<text x="500" y="461" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Repeats estimate variation; they do not automatically remove a shared offset.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Accuracy needs an appropriate reference with its own stated uncertainty.</text>
+</svg>

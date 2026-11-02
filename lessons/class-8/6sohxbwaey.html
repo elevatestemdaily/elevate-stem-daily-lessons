@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 55: Why does a paper cup hold its shape better with a rolled rim? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 55</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a paper cup hold its shape better with a rolled rim?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how shaping a thin edge can change its resistance to deformation. Distinguish <strong>stiffness</strong>, strength and shell shape. Use a rolled paper-cup rim to connect geometry with local support, without assuming that the material's chemical composition must change.</p>
+</div><h2>1. The mystery</h2>
+<p>A thin paper cup often has a rolled or thickened rim. The edge is not flat like the freshly cut edge of a simple paper cylinder. When gently squeezed, the rim can help the opening retain its shape.</p>
+<p>Why would bending the same kind of material into a different section matter? A structure's response depends on how material is arranged relative to the loads, not only on what substance it contains.</p>
+<p>The rim acts as part of a connected shell. Its benefit is therefore more than simply hiding a sharp-looking edge or adding decoration.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Stiffness</strong> describes resistance to deformation under a specified load. <strong>Strength</strong> concerns how much loading can be sustained before a relevant failure. A component can be relatively stiff without being strongest under every possible kind of load.</p>
+<p>A paper cup is a thin <strong>shell</strong>. Its curved wall carries and redistributes forces differently from a flat sheet. The open edge is a location where the shell can be especially easy to distort if it has little local support.</p>
+<p>A rolled rim creates a larger and more structured <strong>cross-section</strong> at that edge. Material is distributed through a deeper shape rather than remaining in one very thin flat strip. This can increase resistance to certain bending and distortion modes.</p>
+<p>The ring-like arrangement also connects neighbouring parts of the opening. When one region is pressed, the rim can distribute some response around the circumference instead of allowing only a small unsupported patch to fold inward.</p>
+<p>This does not make the cup infinitely rigid. A sufficiently large squeeze, a weak joint or a damaged rim can still change the opening's shape. Performance depends on geometry, material thickness, moisture, joints and the direction of loading.</p>
+<p><strong>Buckling</strong> is an instability in which a compressed structure changes shape markedly. Thin walls can buckle even when the material has not simply snapped into two pieces. A rim can help restrain some local modes but cannot prevent every possible instability in the entire cup.</p>
+<p>Moisture can weaken or soften some paper structures, depending on coatings and composition. A wet cup and a dry cup are not a fair pure comparison of rim geometry. The state of the material must be controlled or at least recorded.</p>
+<p>The lesson differs from rubber-band elasticity. A rolled rim demonstrates how geometry stiffens a thin shell against particular distortions; a rubber band demonstrates recoverable rearrangement of a flexible material network. Both involve forces, but their core explanatory targets are different.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a thin flat strip in cross-section and then the same type of strip folded or rolled into a deeper shape. Put an equal gentle load arrow on each. The deeper section changes how bending can occur.</p>
+<p>Next join the shaped edge into a ring. Press one point in your drawing and trace how neighbouring regions help resist the change. This adds circumferential support to the local section idea.</p>
+<p>Finally cut a gap in the drawn ring. Predict how that interruption might alter support, while remembering that the exact response depends on the whole geometry. The model separates intact structure from the raw material's identity.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares a plain thin edge with a rolled-rim cross-section. A top view shows a continuous ring around an opening and arrows for a gentle squeeze.</p>
+<p>A separate damaged-rim example interrupts the ring and labels the resulting loss of continuity as a possible weakness. The illustration is qualitative; it does not claim a measured increase in force resistance.</p>
+<p>The diagram distinguishes stiffness from strength and notes that loading direction matters. It is not a design specification for a commercial food container or a claim that every rolled edge performs identically when wet.</p>
+<figure><img src="../../illustrations/class-8/day_55.svg" alt="Diagram for Why does a paper cup hold its shape better with a rolled rim?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Rolled edges and shaped sections appear in many everyday objects, including containers and thin panels. The engineering principle is to arrange material so it resists the relevant deformation efficiently.</p>
+<p>A corrugated sheet also uses shape to change response, although its geometry and loading differ from a cup rim. Recognising the shared design question does not mean the two structures have identical mechanics.</p>
+<p>For a school project, a paper model can show the idea without crushing disposable cups or using hot liquid. The goal is to examine shape, not to test a container beyond its intended use or infer food safety from its stiffness.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use two similar scrap-paper strips torn by hand and a little reusable tape if available. No scissors, sharp tools or hot drink is needed.</p>
+<ol>
+<li>Leave one strip flat.</li>
+<li>Fold the long edges of the other into shallow flanges or a loose rolled shape.</li>
+<li>Support both across the same short gap on a table.</li>
+<li>Apply a very gentle comparable touch at the centre.</li>
+<li>Sketch the difference in bending.</li>
+</ol>
+<p>Your hand does not guarantee equal forces, and folding can change more than one geometric feature. Treat the result as qualitative. The strip comparison models cross-section effects; it does not reproduce a complete cup's curved shell or measure a commercial rim's strength.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why is adding a shaped rim different from changing the paper into a chemically stronger material? Identify which property was deliberately altered in the structural model.</p>
+<p>Now imagine the rim contains a gap or a crushed segment. Explain why continuity around the opening can matter even if the total amount of paper remains almost the same. Structure involves connections as well as material quantity.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does stiffness describe?</p>
+<ul>
+<li>A. Resistance to deformation under a specified load</li>
+<li>B. Only the colour of the paper surface</li>
+<li>C. A guarantee against every possible failure</li>
+</ul>
+<p><strong>Answer:</strong> A — Stiffness concerns how much a structure deforms under the relevant loading.</p>
+<h3>Q2</h3>
+<p>Why can a rolled rim help a thin opening keep its shape?</p>
+<ul>
+<li>A. It must change paper into a new element</li>
+<li>B. Its section and continuity provide structural support</li>
+<li>C. It eliminates every force on the cup</li>
+</ul>
+<p><strong>Answer:</strong> B — The shaped continuous edge can resist and redistribute particular distortions.</p>
+<h3>Q3</h3>
+<p>A dry rimmed cup is compared with a wet plain cup. What complicates the comparison?</p>
+<ul>
+<li>A. Both cups must now have identical properties</li>
+<li>B. Geometry no longer affects anything</li>
+<li>C. Material condition differs as well as geometry</li>
+</ul>
+<p><strong>Answer:</strong> C — Moisture can change paper response, so the test does not isolate rim shape alone.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a paper-container edge intended to resist gentle squeezing. Draw both its cross-section and its top view, then explain what each view reveals.</p>
+<p>Include one limitation involving moisture, a joint or loading direction. Your proposal should distinguish a qualitative design argument from a measured strength claim. Do not use a person's body weight, heavy loads or a hot liquid to test your model.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A small amount of material placed in a useful shape can change a structure's response more than the same material left flat. The lesson is not that material properties are unimportant. It is that chemistry, geometry and connection all contribute, so judging a structure only by thickness or weight misses part of the design.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A rolled rim can stiffen a thin cup opening through cross-section shape and ring continuity; its performance still depends on material condition and loading.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 25 of 30</footer>
+</div>
+</body>
+</html>

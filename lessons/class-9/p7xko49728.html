@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 54: Why is carbon dioxide measured as a proportion of dry air? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 54</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why is carbon dioxide measured as a proportion of dry air?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why gas-composition reports may specify a <strong>dry-air basis</strong>. Distinguish the amount of carbon dioxide from the denominator used to express its proportion. Use a symbolic parcel model to show how changing water vapour can alter a wet-air fraction without changing the dry-gas comparison.</p>
+</div><h2>1. The mystery</h2>
+<p>Two gas-composition reports appear different, but one includes water vapour in the denominator and the other removes it from the comparison. Their numbers cannot be interpreted fairly until the basis is known.</p>
+<p>A proportion can change because the target amount changes, because the total used as denominator changes, or both. Humidity creates an important example of the second possibility.</p>
+<p>The question is a measurement convention rather than an explanation of greenhouse warming. We track what is being counted and divided, not how the gas interacts with outgoing infrared radiation.</p>
+<h2>2. The science behind it</h2>
+<p>A gas fraction compares the amount of a component with the amount of a defined total. In a molecular or molar description, the numerator can represent carbon-dioxide molecules or moles, while the denominator represents the included gas mixture.</p>
+<p>A <strong>wet-air fraction</strong> includes water vapour in that total. A <strong>dry-air fraction</strong> excludes water vapour from the denominator. The term dry basis describes the reporting reference, not a claim that the actual outdoor atmosphere contains no water.</p>
+<p>Let a model parcel contain c units of carbon dioxide, n units of total dry gas including that carbon dioxide, and w units of water vapour. Its dry fraction is c/n. Its wet fraction is c divided by n plus w.</p>
+<p>If c and n stay fixed while w increases, the wet denominator grows and the wet fraction falls. The dry fraction remains unchanged. That mathematical change does not mean carbon dioxide was chemically removed from the parcel.</p>
+<p><strong>Parts per million</strong>, or ppm, expresses a proportion scaled by a million. The basis must still be specified. A ppm label alone does not tell the reader whether water was included or whether the quantity is a mole fraction or a different reporting measure.</p>
+<p>Instrument methods may dry a sample or correct for water effects and the reporting basis. The implementation varies. The conceptual requirement is to know what the reported ratio represents before comparing observations.</p>
+<p>Humidity is not the only source of real variation. Carbon dioxide can genuinely change with sources, sinks, mixing and location. Normalising the denominator does not erase those physical changes or make every sample equal.</p>
+<p>This lesson deliberately gives no current atmospheric concentration or trend statistic. Its symbolic model is timeless arithmetic. A real contemporary value would need a dated source, measurement context and reporting basis, rather than an invented number inserted to make the explanation look current.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a fixed group of dry-gas symbols containing a few marked carbon-dioxide symbols. Count the target and total dry group. Then add a separate set of water-vapour symbols without removing any dry ones.</p>
+<p>Calculate the two ratios symbolically. The target count stays fixed, but the wet total increases. The dry comparison intentionally holds the humidity component out of its denominator.</p>
+<p>Now add more carbon-dioxide symbols instead of water. Both appropriate fractions can change because the target itself changed. Comparing these two manipulations makes it clear that normalisation distinguishes one source of variation; it does not declare all observed variation artificial.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows identical dry-gas groups with different added water-vapour amounts. Carbon-dioxide symbols remain the same in the first comparison. Separate fraction labels show c/n and c/(n+w).</p>
+<p>A second small arrow adds target gas and identifies that as a real numerator change. The diagram uses symbol counts only and does not represent a measured atmospheric composition or a present-day concentration.</p>
+<p>Labels emphasise denominator choice and the need to specify units and basis. No greenhouse-energy arrows appear, keeping this topic distinct from the infrared mechanism reserved for a later lesson.</p>
+<figure><img src="../../illustrations/class-9/day_54.svg" alt="Diagram for Why is carbon dioxide measured as a proportion of dry air?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Scientific gas reports often include qualifications that seem small but determine whether numbers are comparable. Dry-air basis is one example of a denominator convention with a practical purpose.</p>
+<p>In India, humidity can vary greatly across locations and weather conditions, but this lesson does not supply a regional humidity statistic. The model simply explains why a changing water component can complicate an unqualified gas-fraction comparison.</p>
+<p>A school discussion should inspect the reporting description before comparing values from different instruments or sources. Agreement in the word ppm is not enough if the quantities or bases differ.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three colours for target gas, other dry gases and water vapour.</p>
+<ol>
+<li>Draw one fixed dry-gas group containing a marked target subset.</li>
+<li>Copy it unchanged into a second panel.</li>
+<li>Add water-vapour symbols only to the second.</li>
+<li>Write dry and wet fractions beside both panels.</li>
+<li>Explain which denominator changed and which target count did not.</li>
+</ol>
+<p>Use abstract counts rather than claiming a current atmospheric value. The activity demonstrates ratio logic, not a chemical measurement or a climate trend. Do not collect breath samples or purchase a sensor to complete the paper model.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a falling wet-air fraction occur without a loss of target molecules in the chosen comparison? Name the denominator change explicitly.</p>
+<p>Now imagine the target amount rises while water vapour also changes. What information would be needed to separate those effects? A normalised report helps interpretation but does not replace a complete understanding of the measured parcel and procedure.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does dry-air basis exclude from the denominator?</p>
+<ul>
+<li>A. Every carbon-dioxide molecule</li>
+<li>B. Water vapour</li>
+<li>C. All gases except the target</li>
+</ul>
+<p><strong>Answer:</strong> B — The dry comparison removes the water-vapour component from the included total.</p>
+<h3>Q2</h3>
+<p>Why can added water lower a wet-air target fraction?</p>
+<ul>
+<li>A. It increases the included total without adding target</li>
+<li>B. The target must chemically vanish</li>
+<li>C. A ratio never depends on its denominator</li>
+</ul>
+<p><strong>Answer:</strong> A — A larger denominator can reduce a fraction while its numerator stays fixed.</p>
+<h3>Q3</h3>
+<p>Two reports both use ppm but different bases. What should happen before comparison?</p>
+<ul>
+<li>A. Invent a current concentration to fill the gap</li>
+<li>B. Assume the values must mean exactly the same thing</li>
+<li>C. Check the quantity and denominator convention</li>
+</ul>
+<p><strong>Answer:</strong> C — Matching unit labels alone does not establish comparable reporting bases.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a reporting checklist for a hypothetical gas comparison. Include target, fraction type, units, dry or wet basis, date and measurement context.</p>
+<p>Use the symbolic c, n and w model to correct the claim that any change in a reported percentage must mean the target gas was added or removed. Keep your explanation free of unsupported current concentration figures and distinct from greenhouse heat-transfer mechanisms.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A proportion can change while its numerator stays unchanged. That fact is simple arithmetic, yet it can strongly affect scientific comparisons. Asking what belongs in the denominator is therefore not pedantry; it identifies exactly which aspect of a system a reported number is intended to describe.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A dry-air gas fraction excludes water vapour from its denominator, helping separate humidity-related ratio changes from changes in the target dry-gas composition.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 24 of 30</footer>
+</div>
+</body>
+</html>

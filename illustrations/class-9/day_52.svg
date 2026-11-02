@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why does a recoil cart move backwards when it launches a load?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Invented values; all velocities use the same ground reference frame</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Initially: total momentum zero</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">After internal release</text>
+<rect x="145" y="230" width="210" height="65" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="300" y="205" width="35" height="25" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="590" y="230" width="180" height="65" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="860" y="205" width="35" height="25" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="665" y1="190" x2="590" y2="190" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="790" y1="205" x2="945" y2="205" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="650" y="355" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Cart: 2 kg, 0.5 m/s left</text>
+<text x="820" y="406" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Load: 0.1 kg, 10 m/s right</text>
+<text x="260" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">System includes both parts</text>
+<text x="500" y="462" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Equal opposite momenta; unequal speeds. External horizontal effects neglected.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Internal motion can increase while the total momentum remains zero.</text>
+</svg>

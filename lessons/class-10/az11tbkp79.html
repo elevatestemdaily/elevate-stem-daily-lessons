@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 36: How does a leaf export sugar to a growing fruit? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 36</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a leaf export sugar to a growing fruit?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Trace sugars from a source region to a growing fruit through <strong>phloem</strong>. Identify loading, water entry, pressure-driven bulk flow and unloading. Distinguish making sugar from distributing it and recognise why source-to-sink direction is not always simply down the plant.</p>
+</div><h2>1. The mystery</h2>
+<p>A green leaf can produce sugars while a growing fruit some distance away needs imported material. The fruit is not connected to a tiny conveyor belt carrying visible sugar grains along the branch.</p>
+<p>Sugars move in solution through living transport tissues. Loading and unloading create conditions that support pressure-driven flow. To explain the journey, follow both sugar and water rather than treating the leaf as a factory whose products somehow reach every destination automatically.</p>
+<p>The question is distribution within the plant, not a repeat of the mechanism that first makes sugars using light.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>source</strong> is a region supplying transportable organic material under the current conditions. A mature exporting leaf can be a source. A <strong>sink</strong> imports material for growth, use or storage; a developing fruit is a familiar example.</p>
+<p><strong>Phloem</strong> contains conducting cells called sieve-tube elements in flowering plants, supported by associated living cells including <strong>companion cells</strong>. Sieve plates connect the conducting pathway while allowing sap to move between elements.</p>
+<p>Sugars, commonly transported as <strong>sucrose</strong>, are loaded into the phloem near a source. Many plants use energy-dependent loading steps, while other routes also exist. It is too absolute to claim that every species loads in exactly one way.</p>
+<p>In a simplified <strong>pressure-flow model</strong>, increased solute loading encourages water entry from surrounding tissues, often connected with xylem water supply. The resulting turgor pressure near the source can become higher than at an unloading sink region.</p>
+<p>That pressure difference drives <strong>bulk flow</strong> of sap along the pathway. The sap carries dissolved sugars with it. It is not necessary to imagine each sugar molecule individually walking the entire distance under its own power.</p>
+<p>At the sink, sugars are unloaded and used or stored. Water can leave the pathway and rejoin other tissue routes, helping maintain the conditions for continued flow. Loading and unloading belong to one coupled system.</p>
+<p>Source and sink identities can change. A storage organ can later export reserves, while a young leaf may import before becoming an exporter. Phloem transport can therefore occur upward or downward in different pathways according to the current source-sink relationship.</p>
+<p>This differs from saying one sieve tube carries two opposed bulk streams through exactly the same space at the same moment. Different pathways can serve different directions. The network-level statement needs that qualification to avoid an oversimplified two-way-pipe picture.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a source reservoir and a sink connected by a narrow pathway. Add sugar loading at the source, water entry and a higher-pressure label. At the other end, remove sugar and some water through unloading routes.</p>
+<p>Trace one bulk-flow arrow between the ends. The pressure gradient explains movement through the pathway, while the loading and unloading processes establish and maintain the conditions.</p>
+<p>Then reverse which organ is exporting in a new panel. The labels source and sink follow function rather than a permanent geographical top and bottom. This checks that the explanation is a transport model, not a memorised arrow pointing down every stem.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows an exporting leaf region, a phloem pathway and an importing fruit region. Separate arrows mark sucrose loading, water entry, bulk sap movement and unloading.</p>
+<p>Pressure labels identify the relative source-to-sink difference without assigning real numerical values. Companion cells are represented beside the conducting pathway, and sieve plates appear as simple separators with openings.</p>
+<p>The drawing is not a full anatomical section or a repeat of blood circulation. Its purpose is the coupled pressure-flow mechanism and changing organ roles, with different transport directions represented by different pathways when needed.</p>
+<figure><img src="../../illustrations/class-10/day_36.svg" alt="Diagram for How does a leaf export sugar to a growing fruit?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A growing fruit depends on material imported from other plant regions as well as its own local functions. Crop growth therefore involves distribution, not only the presence of green leaves somewhere on the plant.</p>
+<p>Orchard management can change canopy arrangement and demand, but this lesson does not prescribe pruning or feeding a crop. Those decisions require species and condition information beyond the transport diagram.</p>
+<p>Students should not cut a stem, strip bark or inject coloured chemicals to test phloem movement. Such procedures can damage a plant and are unnecessary for the paper mechanism model.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours for sugar and water.</p>
+<ol>
+<li>Draw a source and a sink connected by a sieve-tube model.</li>
+<li>Add sugar loading and water entry at the source.</li>
+<li>Label higher relative pressure there.</li>
+<li>Trace bulk sap flow and sugar unloading at the sink.</li>
+<li>Draw a second situation in which a stored reserve becomes the source.</li>
+</ol>
+<p>Keep the direction tied to organ function. Do not label every path downward automatically. The model is qualitative and does not measure a real transport rate or claim identical loading in every plant species.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why is sugar production alone insufficient to explain how a distant fruit receives material? Identify the missing transport and unloading steps.</p>
+<p>Now imagine a storage organ exporting during renewed growth. How should the source and sink labels change? A useful biological label can describe a current role rather than a permanent identity attached to one organ.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which tissue carries the source-to-sink sugar stream in this model?</p>
+<ul>
+<li>A. Only the outer waxy cuticle</li>
+<li>B. Phloem</li>
+<li>C. A separate human-like artery</li>
+</ul>
+<p><strong>Answer:</strong> B — Phloem sap carries organic materials through the plant transport network.</p>
+<h3>Q2</h3>
+<p>Why can sugar loading contribute to pressure-driven flow?</p>
+<ul>
+<li>A. It promotes water entry and raises source pressure</li>
+<li>B. It makes every tube dry and empty</li>
+<li>C. It removes every sink from the plant</li>
+</ul>
+<p><strong>Answer:</strong> A — Loading can alter water movement and turgor, establishing a pressure difference.</p>
+<h3>Q3</h3>
+<p>A storage organ begins exporting reserves. What should the model do?</p>
+<ul>
+<li>A. Force every transport arrow downward</li>
+<li>B. Keep it labelled sink forever</li>
+<li>C. Relabel its current role as a source</li>
+</ul>
+<p><strong>Answer:</strong> C — Source and sink describe current export and import functions.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a source-to-fruit transport diagram with separate sugar and water arrows, pressure comparison and unloading. Include one change of organ role in a second panel.</p>
+<p>Your explanation must distinguish pressure-driven movement along the tube from the processes establishing the gradient. Avoid a universal downward-flow claim and state that the simplified model does not represent every loading mechanism or every pathway simultaneously.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The same organ can switch from importer to exporter as its role changes. Source and sink are functional relationships, not simply names for leaves and roots. Following that relationship makes a transport network understandable even when growth patterns change through the season.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Phloem translocation couples sugar loading and water-driven pressure with sink unloading; flow follows current source-sink relationships rather than one permanent downward direction.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 6 of 30</footer>
+</div>
+</body>
+</html>

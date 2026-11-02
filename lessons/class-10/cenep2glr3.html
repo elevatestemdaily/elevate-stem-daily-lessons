@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 60: Ultimate Challenge: Can you choose a cooler school roof using an evidence matrix? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 60</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Ultimate Challenge: Can you choose a cooler school roof using an evidence matrix?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Choose between fictional school-roof options using an <strong>evidence matrix</strong>. Combine heat-related performance, repair, waste and effort without hiding uncertainty behind a total score. Keep essential structural and waterproofing requirements as conditions that a favourable score cannot cancel.</p>
+</div><h2>1. The mystery</h2>
+<p>A school team sees two attractive roof proposals. One emphasises solar reflectance and limited added material. The other claims easier repair and lower installation effort. A colourful advertisement does not establish which is better for the school's actual needs.</p>
+<p>Several lessons now connect: reflectance changes absorbed sunlight, heat-transfer paths affect indoor conditions, repair changes service life and material handling affects waste. The challenge is to compare those ideas consistently.</p>
+<p>A decision needs a defined purpose and evidence for each claim. Adding attractive features without checking their relevance can create an impressive score for a poorly understood option.</p>
+<h2>2. The science behind it</h2>
+<p>Start with a <strong>common service requirement</strong>: compare options for the same roof area, intended use and relevant weather conditions. An option assessed on a cool cloudy day cannot be fairly compared with another assessed only in stronger sunshine without accounting for the difference.</p>
+<p>Separate <strong>essential constraints</strong> from scored preferences. Structural suitability, waterproofing and appropriate installation must be assessed by responsible adults and qualified people. An option that fails an essential requirement cannot compensate merely by receiving a high reflectance score.</p>
+<p>For this fictional classroom example, call the options A and B. A is a proposed reflective surface with a particular repair and material-use plan. B is a different roof treatment with another repair and effort profile. These descriptions do not certify any real product or construction method.</p>
+<p>Use four criteria: heat-related performance, repairability, waste implications and implementation effort. Give them invented <strong>weights</strong> of 4, 3, 2 and 1. The weights express the fictional team's priorities; they are not measured scientific constants or national recommendations.</p>
+<p>Score each criterion on an invented scale from 0 to 2, with larger scores better. Give A the scores <strong>2, 1, 2, 1</strong> and B the scores <strong>1, 2, 1, 2</strong>. These are supplied exercise data, not measurements of actual roof technologies or promises of temperature reduction.</p>
+<p>Multiply each score by its weight and sum. A gives 4×2 + 3×1 + 2×2 + 1×1 = <strong>16</strong>. B gives 4×1 + 3×2 + 2×1 + 1×2 = <strong>14</strong>. The maximum in this model is 20, since the weights sum to 10 and the highest score is 2.</p>
+<p>The total does not make uncertain evidence certain. An <strong>unknown</strong> criterion should stay marked unknown until suitable evidence exists, rather than receiving an invented favourable score. Record the basis, limitations and confidence beside each supplied or assessed score.</p>
+<p>Test <strong>sensitivity</strong> by changing a priority. Swap the heat and repair weights to 3 and 4 while keeping the other weights unchanged. Both options then score 15. The ranking depends partly on stated priorities, so reporting only the original winner hides an important decision condition.</p>
+<p>Avoid double-counting closely related benefits. For example, absorbed-sunlight reduction and a predicted indoor-heat benefit may partly describe the same causal chain. A matrix needs well-defined criteria so one attractive mechanism is not rewarded several times without justification.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a gate before a scoring table. The gate represents essential suitability checks; only options with adequate confirmation proceed to the preference comparison.</p>
+<p>In the table, place criteria in rows and options in columns. Keep weights separate from scores so a reader can see whether a difference comes from evidence or from priorities. Add an evidence-status column.</p>
+<p>At the end, write a conditional decision rather than a bare winner. For example, A ranks higher under the supplied scores and original weights, provided essential conditions are met. That sentence preserves the reasoning the total alone would hide.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows an essential-check gate followed by a compact score matrix. Each row lists one criterion's fictional weight and the supplied A and B scores. The totals 16 and 14 follow the original weights.</p>
+<p>A second line shows the 15–15 tie after swapping heat and repair priorities. An uncertainty marker reminds readers that missing evidence cannot be replaced with a convenient score.</p>
+<p>No roof dimensions, measured cooling values or installation details are included. The diagram is a decision tool for a fictional paper project, not permission to climb onto a roof or apply a coating.</p>
+<figure><img src="../../illustrations/class-10/day_60.svg" alt="Diagram for Ultimate Challenge: Can you choose a cooler school roof using an evidence matrix?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian schools experience varied roof materials, shading, weather and maintenance conditions. A suitable local decision needs information about that building rather than a universal claim that one treatment cools every classroom by the same amount.</p>
+<p>Students can request already available drawings, product information or adult-provided observations. They should not climb roofs, touch hot surfaces, undertake structural inspections or install trial materials. Suitable professionals handle building assessment and work.</p>
+<p>The matrix helps organise a discussion among people who value different outcomes. It makes trade-offs visible, but it does not replace measured evidence, building requirements or the judgement needed to define fair criteria.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and a calculator if desired. All quantities are fictional exercise inputs.</p>
+<ol>
+<li>Write weights 4, 3, 2 and 1 beside the four criteria.</li>
+<li>Enter A's scores 2, 1, 2, 1 and B's scores 1, 2, 1, 2.</li>
+<li>Calculate the weighted totals and check the maximum.</li>
+<li>Swap the first two weights and recompute.</li>
+<li>Add an essential-check gate and an unknown-evidence marker.</li>
+</ol>
+<p>Explain why the tie does not mean every actual roof option is equivalent. It concerns these supplied scores and changed priorities only. Do not turn the numerical example into a real procurement or installation recommendation.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why should waterproofing remain an essential condition rather than a low-weight preference that other features can outweigh? Distinguish a minimum acceptable service requirement from a desirable improvement.</p>
+<p>Now imagine A's waste score has no evidence. Should the original total remain a confident 16? Explain how to record the missing basis and what further information is needed. A transparent uncertainty can improve the decision more than an impressive-looking unsupported total.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What must happen before an option passes to preference scoring?</p>
+<ul>
+<li>A. The largest advertisement must be selected</li>
+<li>B. Essential suitability conditions must be confirmed</li>
+<li>C. Unknown evidence must be assigned the best score</li>
+</ul>
+<p><strong>Answer:</strong> B — Essential requirements act as a gate rather than a tradeable low-weight benefit.</p>
+<h3>Q2</h3>
+<p>Why does swapping heat and repair weights matter in the supplied example?</p>
+<ul>
+<li>A. It changes the priorities and produces a 15–15 tie</li>
+<li>B. The roof must physically change during the calculation</li>
+<li>C. It proves every real roof has identical performance</li>
+</ul>
+<p><strong>Answer:</strong> A — The supplied scores yield a tie under the altered weights, exposing ranking sensitivity.</p>
+<h3>Q3</h3>
+<p>A supplied favourable waste score lacks evidence for a real option. What is the useful action?</p>
+<ul>
+<li>A. Invent a larger score to remove uncertainty</li>
+<li>B. Keep it and claim the total proves performance</li>
+<li>C. Mark it unknown and seek an appropriate basis</li>
+</ul>
+<p><strong>Answer:</strong> C — A matrix organises evidence; it does not justify inventing a missing fact.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Produce a one-page recommendation using the supplied fictional data. Include the original totals, the changed-weight tie, essential checks and evidence still needed for a real school.</p>
+<p>Connect at least three earlier mechanisms to specific criteria: solar absorption, thermal losses, repair life or material-flow consequences. State the conditions under which the ranking holds. Your result should be a reviewable argument, with no invented cooling statistic, product endorsement or student rooftop activity.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A precise total can conceal an uncertain decision. Arithmetic can be completely correct while its scores lack evidence or its priorities remain disputed. Showing both the calculation and its assumptions makes the matrix more useful than displaying a winner with extra decimal places.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A useful roof decision combines essential checks, comparable evidence and explicit priorities; weighted scores organise the argument but cannot manufacture missing facts or cancel a failed requirement.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 30 of 30</footer>
+</div>
+</body>
+</html>

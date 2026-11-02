@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why does a pure substance melt over a narrower range than a</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">mixture?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Illustrative intervals are evidence to interpret, not purity certificates</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Defined onset and completion</text>
+<text x="745" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Invented model values</text>
+<text x="330" y="215" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Narrow example: 68 to 69</text>
+<rect x="710" y="200" width="70" height="20" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<text x="440" y="285" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Broader example: 61 to 67</text>
+<rect x="220" y="305" width="420" height="20" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="150" y1="365" x2="850" y2="365" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="150" y1="357" x2="150" y2="373" stroke="#1f5f8b" stroke-width="2"/>
+<text x="150" y="404" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">60</text>
+<line x1="500" y1="357" x2="500" y2="373" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="404" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">65</text>
+<line x1="850" y1="357" x2="850" y2="373" stroke="#1f5f8b" stroke-width="2"/>
+<text x="850" y="404" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">70</text>
+<text x="500" y="454" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Some mixtures melt sharply; method quality and other evidence matter.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Narrow range supports an inference under conditions; it does not define purity.</text>
+</svg>

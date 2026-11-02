@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 50: How can a rainwater budget size a school's storage tank? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 50</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a rainwater budget size a school's storage tank?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Use a <strong>water budget</strong> to relate roof catchment, collection losses, storage and demand. Distinguish total available rainwater from the tank capacity needed across time. Keep all example quantities explicitly hypothetical and avoid treating a storage calculation as a drinking-water or structural-design certificate.</p>
+</div><h2>1. The mystery</h2>
+<p>A school roof can collect a large total during a wet spell, yet a tank may overflow then run short later. A capacity chosen from the annual total alone misses the timing of inflow and use.</p>
+<p>The useful question is how much arrives, how much is lost, what is already stored and how quickly the intended demand removes it. A tank is a buffer in a changing system, not a container that makes rainfall uniform through the year.</p>
+<p>A good calculation needs both geometry and a sequence of events.</p>
+<h2>2. The science behind it</h2>
+<p>The ideal rain volume from a catchment is <strong>area × rainfall depth</strong> in consistent units. A real collection system retains only part of that input. A <strong>collection factor</strong> can represent specified losses in a simplified model, provided its meaning and basis are stated.</p>
+<p>For an invented example, use a 100-square-metre roof, 10 millimetres of rain and a model collection factor of 0.8. Ten millimetres is 0.01 metre. Multiplying gives 0.8 cubic metre, or 800 litres, collected under the assumptions.</p>
+<p>The factor 0.8 is invented for the example, not a universal value for Indian roofs. Surface, first-flush handling, leaks and collection conditions can change actual capture. A practical design needs relevant evidence rather than copying the classroom number.</p>
+<p>A <strong>storage balance</strong> follows starting volume plus inflow minus delivered use and other losses. If the result exceeds capacity, some water overflows. If available water is less than demand, the model must record unmet demand rather than a negative physical water volume.</p>
+<p>The <strong>timing</strong> matters. Two rainfall sequences with the same total can require different storage capacities or produce different shortages. Long dry intervals can matter even when an annual sum looks generous.</p>
+<p>Demand should be defined by intended use and interval. An invented 100-litre model demand is not a claim about a real school's needs. Useful planning records variation and what happens when demand or rainfall differs from the chosen scenario.</p>
+<p>Water quality and system condition are separate requirements. Roof collection can contain material unsuitable for a proposed use. A volume calculation does not certify potability or prescribe a treatment method.</p>
+<p>Tank placement, structural support and overflow routing also require suitable adult and professional design. This lesson explains the budget and evidence needs, not a building installation, plumbing specification or guaranteed savings claim.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a tank with a capacity line. Add an inflow arrow from the roof, an outflow for demand and a separate overflow route. Mark the starting level before each model event.</p>
+<p>Step through a wet event followed by dry-use intervals. Update storage without allowing it above capacity or below zero. Record lost overflow and unmet demand as separate outputs of the model.</p>
+<p>Then change only the event order while preserving the total input. A different result shows why sequence matters. The tank's usefulness is a relationship between timing, capacity and demand, not simply the largest rain volume mentioned in a report.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows roof catchment, a model loss factor, a tank and demand and overflow routes. The invented 100 m², 10 mm and 0.8 example produces 800 litres.</p>
+<p>A lower timeline distinguishes wet input events from dry demand intervals. Capacity clips the upper storage level, while an unmet-demand marker records a shortage without drawing negative water.</p>
+<p>The illustration is not an installation plan or a real school's measured rainfall record. Its caption states that quality, structural support and actual local data are additional questions beyond the numerical budget.</p>
+<figure><img src="../../illustrations/class-10/day_50.svg" alt="Diagram for How can a rainwater budget size a school's storage tank?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Rainwater-storage projects in India face varied rainfall patterns, roof conditions and intended uses. A single national capacity rule cannot replace a local budget and appropriate engineering assessment.</p>
+<p>A school project can use fictional sequences or reliable supplied records. It should not send children onto roofs, into tanks or near overflow drains during rain. Existing ground-level diagrams provide enough context.</p>
+<p>The lesson also differs from groundwater recharge. A storage tank retains water for a planned use, while recharge concerns water entering subsurface systems. Both can belong to wider water management, but their budgets and decisions are not identical.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a calculator if desired.</p>
+<ol>
+<li>Convert the invented 10 mm rainfall depth into metres.</li>
+<li>Calculate the ideal roof volume and apply the stated model factor.</li>
+<li>Draw a tank with an invented capacity.</li>
+<li>Step through one inflow and two stated demand events.</li>
+<li>Record overflow or unmet demand where applicable.</li>
+</ol>
+<p>Label every input hypothetical. The result is an arithmetic scenario, not a recommended tank size. Do not infer water safety, building strength or a monetary saving from the calculated litres.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a tank overflow during a rainy period and still fail to meet later demand? Explain the limit on carrying water across time.</p>
+<p>Now compare two sequences with equal total rain but different spacing between events. What additional information is needed beyond the annual total? A useful design must preserve the temporal pattern that the sum hides.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What gives ideal rainfall volume before collection losses?</p>
+<ul>
+<li>A. Only the tank colour multiplied by price</li>
+<li>B. Demand divided by the roof name</li>
+<li>C. Catchment area multiplied by rainfall depth</li>
+</ul>
+<p><strong>Answer:</strong> C — Area times depth gives volume when units are consistent.</p>
+<h3>Q2</h3>
+<p>Why is an annual total insufficient for tank capacity?</p>
+<ul>
+<li>A. Inflow timing and demand affect overflow and shortage</li>
+<li>B. Water can always be stored above physical capacity</li>
+<li>C. Every rainfall sequence has identical timing</li>
+</ul>
+<p><strong>Answer:</strong> A — A tank must carry water between events, so sequence and use matter.</p>
+<h3>Q3</h3>
+<p>Invented area 100 m², depth 0.01 m and factor 0.8 give what volume?</p>
+<ul>
+<li>A. 8,000 litres</li>
+<li>B. 800 litres</li>
+<li>C. 8 litres</li>
+</ul>
+<p><strong>Answer:</strong> B — The product is 0.8 cubic metre, equal to 800 litres.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a storage-budget sheet with catchment area, rainfall depth, collection assumption, starting storage, capacity, demand, overflow and unmet demand. Use the invented example for one event.</p>
+<p>Add two alternative timing scenarios and a list of real evidence needed before design. Your conclusion must remain a budget proposal, not a recommendation to build a tank or certify the collected water for drinking.</p>
+</div><h2>10. One surprising idea</h2>
+<p>More total rain does not automatically solve a timing problem. Water that overflows when a tank is full cannot help a later dry interval unless the system has another suitable route or storage. A sequence-based account reveals opportunities and limits that an impressive annual total can hide.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Tank sizing needs a time-based balance of captured rain, capacity and demand; annual totals, invented capture factors and volume arithmetic alone cannot complete a real design.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 20 of 30</footer>
+</div>
+</body>
+</html>

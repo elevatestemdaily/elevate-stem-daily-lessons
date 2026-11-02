@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 47: Why do lichen partners live together on a rock? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 47</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do lichen partners live together on a rock?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain a lichen as an integrated partnership rather than a tiny leafed plant. Identify the <strong>fungal partner</strong> and <strong>photosynthetic partner</strong>, trace the exchange between them, and distinguish growing on a rock or bark surface from taking food from a living host.</p>
+</div><h2>1. The mystery</h2>
+<p>A pale crust spreads across a rock. A nearby patch has leaf-like lobes, although neither looks like an ordinary plant with stems and roots. These may be lichens, but identifying an unfamiliar patch requires more than its colour.</p>
+<p>A lichen's visible body is formed through a close association. Looking only at its outside can hide the different organisms that contribute to its structure and nutrition. The interesting question is how partners with different capabilities can function together on a surface that supplies no ready-made leaf canopy.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>lichen</strong> is a close association involving a fungus and a photosynthetic partner, commonly a green alga or a cyanobacterium. Some lichens include more than one photosynthetic partner and additional microorganisms. The simple two-partner model explains the principal exchange without describing all of that complexity.</p>
+<p>The photosynthetic partner can make organic materials using light. Here we treat that ability as a prerequisite rather than repeating the earlier lesson on how green plants use sunlight. The new question is how its products contribute to a shared living association.</p>
+<p>The fungal partner forms much of the lichen's visible structure. Its network surrounds or contacts the photosynthetic cells and helps create their immediate environment. This structure contributes to protection and to holding or obtaining water and mineral nutrients.</p>
+<p>Organic products from the photosynthetic partner support the fungus. In return, the fungal structure can provide a more protected setting and improved access to water and minerals. This division of roles helps explain why the association can occupy some places where either partner alone would behave differently.</p>
+<p>This is often introduced as <strong>mutualism</strong>, a relationship in which both partners benefit. Real interactions are more complicated than a perfectly equal trade. Their balance can vary with species and conditions. A useful school model shows the main contributions without pretending every lichen operates like an identical business contract.</p>
+<p>The combined body is called a <strong>thallus</strong>. Depending on the lichen, it can be crust-like, leaf-like or more branched. Leaf-like form does not make it an ordinary leaf, and attachment structures are not the same as the nutrient-absorbing roots of a flowering plant.</p>
+<p>A lichen on tree bark is not automatically feeding parasitically on the tree. The bark can be a support surface. This is different from Cuscuta establishing a feeding connection to living transport tissues. Surface location and nutritional connection must be considered separately.</p>
+<p>Water availability affects activity. Some lichens tolerate drying and become more active again when wetted, but responses vary. It is inappropriate to promise a universal growth rate or claim that every lichen can survive every extreme. The association's capabilities still depend on its partners and surroundings.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a sheltered workshop. One partner contributes organic food; the other contributes the physical setting and helps manage access to water and minerals. Put arrows in both directions rather than drawing one organism simply eating another.</p>
+<p>Then draw a rock underneath the workshop. Label it support. Do not add an arrow showing the rock supplying sugars, because that would confuse the supporting surface with the biological partner that makes organic products.</p>
+<p>The model's limit is that the partners are not separate workers standing in a room. Their tissues are closely associated. The lichen's visible form emerges from that integration rather than from two independently shaped organisms merely sitting side by side.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a simplified section through a lichen. Fungal threads surround a row of green photosynthetic cells. A lower attachment region contacts a rock without entering a living vascular system.</p>
+<p>Two resource arrows identify organic products moving toward the fungus and water or mineral access supported by the fungal structure. A protective upper layer is drawn above the partner cells. The section is schematic and does not represent every lichen anatomy.</p>
+<p>A separate label distinguishes the support surface from the feeding partners. The diagram teaches resource exchange, not the use of lichens as air-quality indicators, which belongs to a different planned lesson.</p>
+<figure><img src="../../illustrations/class-7/day_47.svg" alt="Diagram for Why do lichen partners live together on a rock?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Lichens can occur on rocks, old walls and tree bark in many landscapes, including parts of India. Their presence is an opportunity to ask what the surface provides and what the partners provide. The surface is not automatically a source of organic food.</p>
+<p>A gardener who sees a lichen on bark should not conclude from location alone that the tree is being drained of sugar. A plant parasite needs a different kind of evidence, such as a feeding connection to living tissues.</p>
+<p>Do not scrape lichens from heritage structures or natural rocks for this lesson. Photographs and diagrams show the association without damaging slow-growing patches or an important surface.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use two colours of paper or pencils and a plain sheet. No specimen is needed.</p>
+<ol>
+<li>Draw a branching fungal network using one colour.</li>
+<li>Add a row of small photosynthetic partner cells using the other.</li>
+<li>Label the main contribution of each partner.</li>
+<li>Draw arrows for their exchange and a rock below as support.</li>
+<li>Cover one partner with a paper scrap and explain which contribution is now missing.</li>
+</ol>
+<p>Ask a partner whether your drawing accidentally gives the rock the job of making food. Correct that arrow if necessary. The model should also show more than two unconnected objects: the network must make contact with the partner cells to represent their close association.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a lichen becomes dry. Its physical structure remains visible, but the partners' activities may slow. Why would appearance alone be an incomplete measure of current biological activity?</p>
+<p>Now compare a lichen on bark with a parasitic vine attached to a stem. What evidence distinguishes using a surface for support from obtaining resources through a living host connection? State the difference without assuming every organism found on a tree is harmful.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which partners form the core of a simple lichen model?</p>
+<ul>
+<li>A. A rock and a metal thread</li>
+<li>B. Two identical flowering plants</li>
+<li>C. A fungus and a photosynthetic partner</li>
+</ul>
+<p><strong>Answer:</strong> C — The principal association includes a fungus and an alga or cyanobacterium.</p>
+<h3>Q2</h3>
+<p>What is an important contribution of the fungal partner?</p>
+<ul>
+<li>A. Replacing all light with mineral grains</li>
+<li>B. Providing structure and access to water</li>
+<li>C. Making the rock photosynthesise</li>
+</ul>
+<p><strong>Answer:</strong> B — Fungal tissues help form a protected setting and obtain or retain resources.</p>
+<h3>Q3</h3>
+<p>A lichen rests on tree bark. What follows from that observation alone?</p>
+<ul>
+<li>A. The bark may simply provide support</li>
+<li>B. It must be a yellow parasitic vine</li>
+<li>C. It definitely drains the tree through phloem</li>
+</ul>
+<p><strong>Answer:</strong> A — Growing on bark does not by itself establish a parasitic feeding connection.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Make a three-part guide titled “Partner, support, or host?” Put a fungal partner and a photosynthetic partner in the first section, a rock beneath a lichen in the second, and a feeding parasite-host connection in the third.</p>
+<p>Use arrows to show the relevant resource relationships. The guide should explain why the same visible situation, one organism sitting on another surface, can conceal very different biological relationships.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A shape that looks like one simple organism can arise from a close partnership. The familiar outline of a lichen does not reveal every contributor to its functioning. Understanding the exchange between partners can therefore explain more than naming its colour or deciding whether its outline looks leaf-like.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A lichen combines fungal structure with a photosynthetic partner; their resource exchange differs from merely resting on a rock or parasitising a host.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 17 of 30</footer>
+</div>
+</body>
+</html>

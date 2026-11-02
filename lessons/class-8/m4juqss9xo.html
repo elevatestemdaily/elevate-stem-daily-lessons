@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 36: How can seed spacing reduce competition in a field? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 36</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can seed spacing reduce competition in a field?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why planting more seeds in the same plot does not guarantee a larger useful harvest. Connect <strong>plant density</strong>, competition and crop arrangement. Distinguish the performance of one plant from production per unit area, and design a spacing comparison that keeps other conditions as similar as possible.</p>
+</div><h2>1. The mystery</h2>
+<p>Two equal garden beds receive the same crop. One contains many crowded seedlings; the other has fewer plants with more room between them. The crowded bed looks greener at first because more stems are visible. Later, some plants remain small or shade their neighbours.</p>
+<p>Would planting only a few widely separated plants solve every problem? Not necessarily. Each plant might grow larger while much of the bed remains unused. The design question is how to balance individual access to resources with useful production across the whole area.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Plant density</strong> is the number of plants per unit area. <strong>Spacing</strong> describes how the plants are arranged, including the distances between plants and between rows. Two layouts can have the same density but distribute plants differently.</p>
+<p>Plants share access to resources such as light, water, nutrients and growing space. When nearby plants depend on overlapping supplies, <strong>competition</strong> can limit growth. Crowding does not create extra light or water simply because more seeds were sown.</p>
+<p>Leaves can shade neighbouring leaves. Roots can occupy overlapping soil regions. These effects depend on the crop's size, growth stage and environment. A young seedling's needs do not remain identical as it grows into a mature plant.</p>
+<p>Very close spacing can also change airflow and humidity within the canopy. Those conditions can influence plant health, although the consequences depend on the crop and the organisms present. The lesson does not promise that every dense planting must develop disease.</p>
+<p>Wider spacing can improve access for an individual plant, but fewer plants occupy the plot. This creates a trade-off between <strong>yield per plant</strong> and <strong>yield per unit area</strong>. A treatment producing the largest individual plant may not produce the most useful crop from the entire bed.</p>
+<p>The useful density depends on the crop and growing conditions. A leafy vegetable harvested young and a large fruiting plant have different requirements. Water supply, fertility, variety and management also affect the outcome. No single spacing is correct for every Indian field or school garden.</p>
+<p>Regular rows help growers place seeds, inspect crops and carry out cultivation. Arrangement is therefore not only about biological competition; it also affects access for people and equipment. A layout that prevents tending or harvesting can fail despite looking efficient on paper.</p>
+<p>A spacing investigation must separate the intended comparison from other differences. If one bed receives more water or a different seed variety, a growth difference cannot confidently be attributed to spacing alone. Use matched conditions and record limitations rather than turning one observation into a universal recommendation.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw identical resource zones around plants in two equal rectangles. In the crowded rectangle, let many zones overlap. In the widely spaced rectangle, leave large unused gaps. The zones are a model of access, not fixed circular territories that real roots obey.</p>
+<p>Next label two outcome boxes: size of each plant and total useful output from the plot. Keeping those outcomes separate exposes the trade-off that a simple “bigger is better” rule misses.</p>
+<p>Finally compare two layouts with the same number of plants but different clustering. The total density is unchanged, yet local competition can differ. This shows why a count alone does not fully describe spacing.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows equal plots with crowded, moderate and very wide arrangements. Schematic canopies overlap more in the crowded plot. A separate pair compares evenly distributed and clustered plants at the same count.</p>
+<p>Labels distinguish plant density from arrangement and individual growth from area-based output. The diagram does not show real crop yields or claim that the middle arrangement is numerically optimal for every species.</p>
+<p>The shaded circles indicate possible resource overlap, not exact root or light boundaries. The explanation focuses on competition and planting geometry rather than nitrogen conversion, which was covered in an earlier lesson.</p>
+<figure><img src="../../illustrations/class-8/day_36.svg" alt="Diagram for How can seed spacing reduce competition in a field?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian farmers choose crop-specific sowing arrangements and may later thin seedlings where appropriate. The decision reflects the crop and conditions, not a general contest to fit the greatest possible number of plants into the smallest space.</p>
+<p>A school garden bed must also leave room for watering, observation and safe movement. Plants along an edge may receive different light from those in the centre, so comparisons need to record position rather than assuming every location is equivalent.</p>
+<p>Seed packets and local agricultural guidance provide practical spacing information for identified crops. This lesson explains why such advice exists without replacing it with an invented universal number.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use squared paper and small circles drawn or torn from scrap paper. No planting or long growth period is required.</p>
+<ol>
+<li>Draw three equal plots.</li>
+<li>Arrange crowded plants in one, moderate spacing in another and very few in the third.</li>
+<li>Add larger canopy circles to represent mature growth.</li>
+<li>Mark overlaps and unused regions.</li>
+<li>Create two new plots with the same plant count but different clustering.</li>
+</ol>
+<p>Explain what the model predicts and what it cannot establish. Paper circles do not measure yield, root spread or disease risk. The activity identifies design questions for a later supervised trial rather than proving one layout best within five minutes.</p>
+</div><h2>7. Think deeper</h2>
+<p>One treatment produces larger plants, while another produces more total edible material from the same area. Which is better? Explain why the answer depends on the stated goal.</p>
+<p>Now consider a trial with more edge plants in one treatment. How could extra access to light create a misleading spacing comparison? Identify what should be recorded before interpreting the result as a biological effect of density alone.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is plant density?</p>
+<ul>
+<li>A. Mass of one seed divided by its colour</li>
+<li>B. Number of plants per unit area</li>
+<li>C. The depth of every root in a field</li>
+</ul>
+<p><strong>Answer:</strong> B — Plant density counts plants relative to the area they occupy.</p>
+<h3>Q2</h3>
+<p>Why can crowded plants grow poorly?</p>
+<ul>
+<li>A. Their access to resources overlaps</li>
+<li>B. Crowding creates unlimited water</li>
+<li>C. Every plant stops needing light</li>
+</ul>
+<p><strong>Answer:</strong> A — Plants can compete when nearby roots and leaves rely on overlapping resources.</p>
+<h3>Q3</h3>
+<p>A few widely spaced plants are large. What still needs checking?</p>
+<ul>
+<li>A. Whether every plant has identical roots</li>
+<li>B. Whether clear water contains any atoms</li>
+<li>C. The useful output from the whole plot</li>
+</ul>
+<p><strong>Answer:</strong> C — Large individual size does not establish the greatest output per unit area.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a paper trial comparing two spacing arrangements for one identified crop. State the equal plot areas, matched seed source, watering procedure and measurement goal.</p>
+<p>Choose whether the main outcome is plant size or useful output per unit area, and justify that choice. Include one limitation concerning position or growth stage. Your design should allow a result other than “more seeds always wins” without claiming that sparse planting must always be superior.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The best individual performer need not belong to the best-performing plot. A plant can benefit from extra space while the area as a whole produces less because too few plants occupy it. Looking at both levels prevents a common mistake in agricultural comparisons and many other systems that share limited resources.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Spacing balances competition and land use; larger individual plants do not automatically mean greater useful production per unit area.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 6 of 30</footer>
+</div>
+</body>
+</html>

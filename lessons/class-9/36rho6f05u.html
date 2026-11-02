@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 40: How does a control sample expose contamination in a water test? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 40</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a control sample expose contamination in a water test?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a <strong>blank control</strong> can reveal a signal introduced by a testing procedure. Distinguish the sample's original contents from contamination or background added during handling. Interpret a positive blank without claiming that one control automatically proves every result wrong or every clean-looking sample safe.</p>
+</div><h2>1. The mystery</h2>
+<p>A water test produces a small signal. The class attributes it to the collected sample, but a comparison made with target-free water and the same handling steps also produces a signal.</p>
+<p>Where could that shared response have come from? A container, reagent, tool or the procedure itself may have contributed. Without the blank, the added background could be mistaken for something originally present in the sampled water.</p>
+<p>The control asks a focused question: what response appears when the intended target is absent from the starting control material?</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>blank</strong> begins with material intended to lack the target being measured and passes through a specified part of the method. Its response helps reveal contributions not due to the target in the real starting sample.</p>
+<p>A <strong>reagent blank</strong> includes relevant test reagents without the ordinary sample. It can reveal reagent or instrument background. A <strong>procedural blank</strong> can include additional handling and equipment steps. Names and exact definitions depend on the method, so the record must state what was actually done.</p>
+<p>A field-handled blank can explore contamination introduced during collection or transport. It does not necessarily test every later laboratory source unless those steps are included too. A control's coverage is defined by its pathway.</p>
+<p>A detectable blank signal can indicate contamination, background response or another method issue. It should prompt investigation of the relevant sources. The signal does not automatically identify which container or reagent caused it.</p>
+<p>A low or absent blank response is reassuring about the tested pathway under those conditions, but it does not prove every sample result is accurate. Calibration errors, sample-specific interference or contamination outside the blank's route may remain.</p>
+<p>Blindly subtracting any blank reading from every sample is not always justified. Appropriate correction depends on the method, variability and how the background behaves. A school model should show the logic without inventing a universal analytical rule.</p>
+<p>The blank also differs from a <strong>known standard</strong> containing a known amount of target. A standard asks whether the method responds appropriately to a specified target amount. A blank asks what happens without that target at the start. Both can be useful, but their jobs are different.</p>
+<p>This lesson does not provide a drinking-water safety test. A simplified colour signal, visual observation or blank result cannot establish the absence of every biological and chemical hazard. We use paper records to investigate method quality rather than testing unknown water for consumption.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two parallel routes. One begins with the real sample; the other begins with target-free control material. Send both through the same illustrated containers, tools and reading step where the design requires a shared procedure.</p>
+<p>Add a small unwanted contribution at a shared step. Both outputs can then show a response, revealing why the sample's result cannot all be credited automatically to its original contents.</p>
+<p>Now move the unwanted contribution to a sample-only step that the blank skipped. The blank can remain low while the sample is affected. This exposes the control's coverage limit and motivates recording the exact pathway rather than simply writing control present.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows sample and blank paths through matched handling stages. A shared container contribution appears in both outputs. A separate symbol marks a possible sample-only source that the blank would not detect.</p>
+<p>Labels distinguish no target initially from no possible signal anywhere. The drawing also compares a blank with a target-containing standard without assigning concentrations or detection limits.</p>
+<p>The example is conceptual and does not represent a real test kit. Its purpose is interpreting procedural evidence, not demonstrating that clear water or a negative classroom result is safe to drink.</p>
+<figure><img src="../../illustrations/class-9/day_40.svg" alt="Diagram for How does a control sample expose contamination in a water test?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Laboratory quality checks use controls because a measured signal can have more than one source. Clean-looking apparatus and careful intentions do not guarantee zero background contribution.</p>
+<p>A school investigation using food colour and clean water can discuss the same logic, but it should not claim to reproduce a validated environmental analysis. The interpretation depends on what the signal means and which steps are shared.</p>
+<p>For actual water-quality decisions in India, appropriate sampling and testing methods matter. This lesson supports understanding their controls; it does not replace professional testing or give a universal safe-water threshold.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours. No unknown water, reagents or laboratory chemicals are needed.</p>
+<ol>
+<li>Draw a sample route and a target-free blank route.</li>
+<li>Put identical handling boxes along both.</li>
+<li>Add an unwanted signal contribution at one shared box.</li>
+<li>Trace the contribution to both outputs.</li>
+<li>Add a second source on a step that only the sample takes.</li>
+</ol>
+<p>Ask which source the blank can reveal and which it can miss. Label every symbol hypothetical. The model tests control coverage and causal reasoning, not real analytical performance or the safety of a water sample.</p>
+</div><h2>7. Think deeper</h2>
+<p>A blank has a signal, but only one of several reagents is actually contaminated. Why does the blank alone not identify the exact reagent? Suggest a sequence of narrower checks in a paper model.</p>
+<p>Now imagine the blank did not travel to the collection site. Could it evaluate contamination from the field bottle? Explain why a control must pass through a relevant step to provide evidence about that step.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the starting purpose of a blank control?</p>
+<ul>
+<li>A. To lack the intended measurement target</li>
+<li>B. To prove all water safe without testing</li>
+<li>C. To contain every possible contaminant deliberately</li>
+</ul>
+<p><strong>Answer:</strong> A — The blank helps assess response not attributable to the target in its starting material.</p>
+<h3>Q2</h3>
+<p>Why can a shared contaminated container affect both outputs?</p>
+<ul>
+<li>A. Controls never contact any apparatus</li>
+<li>B. A blank must destroy all contaminants instantly</li>
+<li>C. Both routes pass through that contribution</li>
+</ul>
+<p><strong>Answer:</strong> C — A shared handling source can add a signal to the sample and blank alike.</p>
+<h3>Q3</h3>
+<p>A laboratory blank skips field collection. What can it fail to check?</p>
+<ul>
+<li>A. The meaning of the word sample</li>
+<li>B. Contamination from the skipped field handling</li>
+<li>C. Every shared laboratory step by definition</li>
+</ul>
+<p><strong>Answer:</strong> B — A control provides no direct evidence about a pathway it did not experience.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a method diagram that labels each control's starting material and route. Include a sample, a procedural blank and a known standard with distinct jobs.</p>
+<p>Write a response plan for an unexpected blank signal without automatically declaring every sample contaminated or subtracting an arbitrary number. Keep the exercise on paper and state that a method-quality control is not a complete drinking-water safety certificate.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A useful control is a carefully designed comparison, not merely an extra container on the bench. Its power depends on which pathways it shares with the sample and which it deliberately omits. Naming those pathways makes the control's strengths and blind spots visible before a result is interpreted.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A blank tests for response introduced along its specified pathway; it helps separate sample content from procedural background but cannot check steps it never shared.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

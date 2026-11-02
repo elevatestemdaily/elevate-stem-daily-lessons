@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 43: How can terminal voltage fall when a cell powers a larger load? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 43</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can terminal voltage fall when a cell powers a larger load?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Distinguish a cell's <strong>emf</strong> from its terminal voltage while delivering current. Use a simple internal-resistance model to explain voltage sag under greater electrical demand. State assumptions and avoid treating a paper equation as a safe current rating or an instruction to test a cell by short circuit.</p>
+</div><h2>1. The mystery</h2>
+<p>A cell shows a higher voltage with little demand and a lower voltage while supplying more current. The reading can recover when the demand is removed, even though the cell has not magically regained all the energy it supplied.</p>
+<p>The source is not ideal. Some of its energy-per-charge capability is associated with processes inside the cell while current flows. A simplified model represents this using an emf and an internal resistance.</p>
+<p>The useful question is which voltage is measured at the external terminals under the stated load.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Emf</strong>, written E here, describes the energy supplied per unit charge by the source model. Despite the historical words electromotive force, its unit is the volt, not the newton. It is not a mechanical force.</p>
+<p>A simple cell model places an ideal emf in series with an <strong>internal resistance</strong>, r. When a discharging current I flows, the internal voltage drop is Ir. The external <strong>terminal voltage</strong> is then <strong>V = E − Ir</strong>.</p>
+<p>As current increases under this model, the internal drop grows and terminal voltage falls. The title's larger load means greater electrical demand, not necessarily a larger resistance number. A lower external resistance can draw more current from the same source model.</p>
+<p>For invented values, E is 1.5 volts, r is 0.5 ohms and I is 0.2 amperes. The internal drop is 0.1 volt, leaving a terminal voltage of 1.4 volts. These are model values, not a particular product's measured specification.</p>
+<p>With a simple external resistance R, current is E divided by R plus r. The external voltage is also IR. These relations agree when the same circuit and assumptions are used, rather than treating the emf as the unchanged voltage across every load.</p>
+<p>At nearly zero current, the internal drop in the model is small, so an appropriate open-circuit reading can approximate emf. That approximation does not imply an instrument draws absolutely no current or that a real cell's chemistry is perfectly constant.</p>
+<p>Real cells vary with state of charge, temperature, age and current history. Internal resistance is an approximation that can be useful over a range, not a fixed universal number engraved inside every cell.</p>
+<p>A short-circuit calculation is not a safe current rating. Real heating and chemical effects can be hazardous, and the simple model may no longer apply. This lesson remains a paper analysis with no battery connection, probing or improvised load experiment.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a source capability E followed by an internal-drop box and the remaining terminal voltage. Use a consistent energy-per-charge account rather than imagining charge being used up inside the cell.</p>
+<p>Increase current in a second model while holding E and r fixed. The Ir box grows and the terminal share shrinks. This makes the cause of voltage sag visible without requiring a detailed repeat of the earlier microscopic resistance lesson.</p>
+<p>Add a conditions tag for temperature and state of charge. In a real comparison, changing those along with current can change E or r too. The tag prevents the simple proportional model from being treated as a complete battery simulation.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the ideal emf and internal resistance inside a cell-model boundary, with an external load beyond the terminals. A voltage account labels E, Ir and V separately.</p>
+<p>The invented numerical example gives 1.5 − 0.1 = 1.4 volts. A comparison arrow increases current and shows the growing internal drop under fixed model parameters.</p>
+<p>The diagram is conceptual and contains no practical terminals to connect or short. Its caption states that real cell conditions vary and that the equation supplies neither a product rating nor a safe test procedure.</p>
+<figure><img src="../../illustrations/class-10/day_43.svg" alt="Diagram for How can terminal voltage fall when a cell powers a larger load?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Battery-powered devices can respond to voltage changes under demand. A low-demand reading alone may not describe how a source behaves while powering the intended task.</p>
+<p>Different cells and operating conditions can show different responses. A classroom model should not be used to diagnose or repair a real rechargeable pack, substitute incompatible cells or infer a safe discharge limit.</p>
+<p>Students in India can learn the distinction through supplied data without buying test equipment or opening a device. Any actual battery issue should follow the product's appropriate adult-managed guidance, not an improvised classroom short-circuit trial.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a calculator if needed.</p>
+<ol>
+<li>Write the invented E, r and I values.</li>
+<li>Calculate Ir with volt units.</li>
+<li>Subtract it from E to find V.</li>
+<li>Increase model current while fixing E and r and compare.</li>
+<li>State which real conditions the model is holding unchanged.</li>
+</ol>
+<p>Do not attach any wires or batteries. Add a clear note that the result is not a safe-current specification. The activity tests a conditional source model and avoids a physical demonstration whose heating and chemistry would introduce unmeasured risks.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a cell's terminal voltage rise after a load is removed without implying that no energy was delivered? Use the reduction of the current-dependent drop in your answer.</p>
+<p>Now compare two measurements taken at different temperatures. Which assumption would need checking before attributing the entire voltage change to external demand? A real observation can change several source properties together.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What unit describes emf in this model?</p>
+<ul>
+<li>A. Volt</li>
+<li>B. Newton only</li>
+<li>C. Metre per second</li>
+</ul>
+<p><strong>Answer:</strong> A — Emf is energy per charge, so its unit is the volt despite the historical name.</p>
+<h3>Q2</h3>
+<p>Why does terminal voltage fall as model current increases?</p>
+<ul>
+<li>A. The current-dependent internal drop becomes zero</li>
+<li>B. The internal drop Ir increases</li>
+<li>C. Every external load must have infinite resistance</li>
+</ul>
+<p><strong>Answer:</strong> B — With E and r fixed, increasing I increases the amount subtracted from E.</p>
+<h3>Q3</h3>
+<p>Invented E = 1.5 V, r = 0.5 Ω and I = 0.2 A. What is V?</p>
+<ul>
+<li>A. 1.6 V</li>
+<li>B. 0.1 V</li>
+<li>C. 1.4 V</li>
+</ul>
+<p><strong>Answer:</strong> C — Ir is 0.1 volt, so E minus Ir is 1.4 volts.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a voltage-account card with emf, current, internal resistance, internal drop and terminal voltage. Use the invented example and label all assumptions.</p>
+<p>Correct the statement that a larger electrical demand must leave terminal voltage unchanged because the cell has one printed voltage. Include one reason the real source can depart from the simple model, without recommending any practical battery test.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A source can have a useful energy-per-charge capability that differs from the voltage available at its terminals under demand. The difference belongs to the operating system, not merely a bad label. Understanding the load condition makes a voltage reading more informative than treating it as a permanent property independent of current.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>For a discharging cell model, terminal voltage is E − Ir; greater current increases the internal drop, while real source conditions limit the approximation.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 13 of 30</footer>
+</div>
+</body>
+</html>

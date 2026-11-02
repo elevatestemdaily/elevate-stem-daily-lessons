@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a speed–time graph give distance travelled?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Distance comes from area when speed is nonnegative</text>
+<text x="245" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Constant speed: rectangle</text>
+<text x="745" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Linear change: trapezium</text>
+<line x1="110" y1="350" x2="390" y2="350" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="110" y1="350" x2="110" y2="180" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="590" y1="350" x2="870" y2="350" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="590" y1="350" x2="590" y2="180" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="115" y="250" width="245" height="95" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<line x1="110" y1="250" x2="360" y2="250" stroke="#579b70" stroke-width="4"/>
+<path d="M595 275 L850 200 L850 345 L595 345 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="590" y1="275" x2="850" y2="200" stroke="#579b70" stroke-width="4"/>
+<text x="245" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">2 m/s for 3 s → 6 m</text>
+<text x="745" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">2 to 4 m/s over 3 s → 9 m</text>
+<text x="245" y="426" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Time (s) horizontally</text>
+<text x="745" y="426" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Speed (m/s) vertically</text>
+<text x="500" y="466" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Invented examples; straight segments model the changes between points.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Zero slope can still give positive area and continued travel.</text>
+</svg>

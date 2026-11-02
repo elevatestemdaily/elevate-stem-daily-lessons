@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can lichens help map air quality without measuring a gas</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">directly?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Biological patterns have multiple influences and need matched observations</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Defined survey area A</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Defined survey area B</text>
+<rect x="150" y="175" width="200" height="185" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="650" y="175" width="200" height="185" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="200" cy="220" r="16" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="280" cy="280" r="24" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="310" cy="205" r="12" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="695" cy="245" r="13" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="785" cy="315" r="10" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<text x="250" y="410" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Record bark, moisture and light</text>
+<text x="750" y="410" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Match effort and identify uncertainty</text>
+<text x="500" y="457" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Patch counts are not automatically a gas concentration measurement.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Lichen absence alone cannot establish a particular pollution level.</text>
+</svg>

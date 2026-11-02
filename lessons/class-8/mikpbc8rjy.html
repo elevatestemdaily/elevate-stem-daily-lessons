@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 43: How does a combine harvester separate grain from stalks? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 43</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a combine harvester separate grain from stalks?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain the different jobs combined in a grain harvester. Distinguish cutting, <strong>threshing</strong>, separation and cleaning. Trace grain and lighter crop material through different routes and predict why adjusting one stage can change grain loss or impurity in the final collection.</p>
+</div><h2>1. The mystery</h2>
+<p>A combine moves through a standing cereal crop and collects grain while returning other material to the field or a separate route. The machine has not dissolved the stalks or turned all the crop into grain. It performs several mechanical separations in sequence.</p>
+<p>The key mystery is how grain attached to heads becomes loose, then becomes separated from a much larger volume of plant material. One mechanism cannot explain every stage. Following the material through the machine reveals why the word combine is appropriate: several jobs are coordinated.</p>
+<h2>2. The science behind it</h2>
+<p>A combine's front system gathers and cuts the crop or collects material prepared by a different harvesting method. The exact header varies with crop and machine. Its first job is to bring material into the processing path in a controlled way.</p>
+<p><strong>Threshing</strong> releases grain from the harvested heads using mechanical action. In common designs, material passes through moving components that rub or strike it against another surface. This detaches grain without requiring the whole stalk to be ground into powder.</p>
+<p><strong>Separation</strong> then removes much of the longer straw and other plant material from the released grain. Walkers, rotors or other mechanisms can contribute, depending on the machine. The design tries to recover grain while allowing bulky material to follow another route.</p>
+<p><strong>Cleaning</strong> deals with smaller impurities mixed with grain. Airflow can carry lighter chaff differently from denser grain, while sieves help sort material by size and passage behaviour. The airflow and sieve stages are coordinated rather than interchangeable.</p>
+<p>The term <strong>winnowing</strong> describes separation using differences in how material responds to moving air. Mass, shape and exposed area matter. A light broad chaff piece can be carried away more readily than a compact grain under suitable conditions.</p>
+<p>A stronger cleaning airflow is not always better. Too little can leave impurities, while too much can carry useful grain away. Similarly, an aggressive threshing setting may release more grain but damage it or increase unwanted material entering later stages.</p>
+<p>The machine therefore balances <strong>recovery</strong>, <strong>cleanliness</strong> and <strong>damage</strong>. Crop condition, moisture, variety and feed rate influence the suitable settings. There is no universal speed or airflow value correct for every Indian crop and combine.</p>
+<p>This is different from one kitchen mesh retaining tea leaves. A combine uses a sequence of release and separation mechanisms, including aerodynamic behaviour. A sieve may be one component, but it does not by itself explain how attached grain becomes detached or how the entire crop stream is handled.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a flow chart with four boxes: gathering, threshing, separating and cleaning. Put a crop head entering the first and separate grain and residue routes leaving later boxes.</p>
+<p>At threshing, change attached grain symbols into loose grain symbols without changing their identity. At cleaning, draw a light chaff path diverted by air while grain follows a different path.</p>
+<p>Add a small loss arrow at each relevant stage. The design target is not simply producing a neat final box; it is doing so while limiting grain left in straw, grain blown out and damaged grain. The flow chart makes those trade-offs visible.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows crop entering a header, grain being released at a threshing region and separate routes for straw, chaff and collected grain. A cleaning-air arrow acts across the mixed stream.</p>
+<p>Labels identify the purpose of each stage rather than a particular manufacturer's internal layout. Grain symbols remain recognisable throughout so the diagram does not imply that threshing manufactures grain from stalk tissue.</p>
+<p>A lower comparison shows insufficient and excessive cleaning airflow as possible problems. It is qualitative and does not provide operating instructions or numerical settings for real farm machinery.</p>
+<figure><img src="../../illustrations/class-8/day_43.svg" alt="Diagram for How does a combine harvester separate grain from stalks?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Combine harvesting is familiar in several grain-growing regions of India. The visible machine can hide a complex internal material flow. Understanding the sequence helps explain why harvest performance depends on crop condition and adjustment rather than the machine's size alone.</p>
+<p>Traditional threshing and winnowing perform some of the same jobs separately. The combine coordinates them within a continuous system. This continuity creates a requirement to match the rate of one stage to the capacity of the next.</p>
+<p>Students must stay away from operating harvesters, moving belts and threshing equipment. Never collect samples near a working machine for this lesson. Photographs and paper diagrams are sufficient.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two sizes of drawn symbols. No fan, grain dust or moving equipment is needed.</p>
+<ol>
+<li>Draw a crop head with attached grain symbols.</li>
+<li>Move the grain symbols into a threshing output box as loose pieces.</li>
+<li>Divide long straw from the smaller mixed stream.</li>
+<li>Draw airflow carrying light chaff toward one route.</li>
+<li>Trace useful grain into the collection box and mark possible losses.</li>
+</ol>
+<p>Explain what each stage changes. The model does not demonstrate actual grain aerodynamics or provide machine settings. Do not blow paper dust or real grain material into the air; a drawn arrow represents the airflow safely.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a threshing stage feeds material faster than the cleaning stage can handle. What kinds of problems might appear even if each component works under lighter loading?</p>
+<p>Now imagine increasing the cleaning airflow. Explain why improved removal of light chaff might eventually be accompanied by grain loss. The design goal is selective separation, not maximum movement of every particle.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the purpose of threshing?</p>
+<ul>
+<li>A. Releasing grain from harvested heads</li>
+<li>B. Changing stalks into new grain chemically</li>
+<li>C. Making all crop material dissolve</li>
+</ul>
+<p><strong>Answer:</strong> A — Threshing uses mechanical action to detach grain from the crop heads.</p>
+<h3>Q2</h3>
+<p>Why can air help separate chaff from grain?</p>
+<ul>
+<li>A. All crop particles respond identically to air</li>
+<li>B. They respond differently to moving air</li>
+<li>C. Air changes every grain into a liquid</li>
+</ul>
+<p><strong>Answer:</strong> B — Differences in mass, shape and exposed area affect how materials move in airflow.</p>
+<h3>Q3</h3>
+<p>Cleaning airflow becomes excessive. What problem may appear?</p>
+<ul>
+<li>A. No material can move at all</li>
+<li>B. The crop must grow new roots instantly</li>
+<li>C. Useful grain may be carried away</li>
+</ul>
+<p><strong>Answer:</strong> C — A separation system can lose target material if the airflow carries it into the reject route.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a troubleshooting chart connecting three observations with possible stages: grain still attached to heads, excessive chaff in collected grain and grain leaving with the light-material stream.</p>
+<p>Give a mechanism-based possibility for each without claiming one certain diagnosis. Include a warning that actual inspection and adjustment belong to trained operators. Your chart should show the difference between understanding a process and approaching dangerous machinery to test it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Making one stage more aggressive can worsen the overall result. Extra threshing can increase damage, and extra air can remove useful grain. A combine's performance depends on a coordinated balance, showing why engineering optimisation is different from turning every control to its maximum setting.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A combine coordinates grain release, straw separation and air-and-sieve cleaning; useful performance balances recovery, cleanliness and limited damage.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 13 of 30</footer>
+</div>
+</body>
+</html>

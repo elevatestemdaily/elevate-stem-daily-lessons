@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 49: Why does a box cooker need a transparent cover? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 49</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a box cooker need a transparent cover?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a transparent cover can improve a box solar cooker's energy balance. Distinguish admitting sunlight from limiting warm-air exchange. Recognise continuing losses and avoid the false picture that every infrared photon is trapped forever or that a cover guarantees safe cooking performance.</p>
+</div><h2>1. The mystery</h2>
+<p>An open dark box can absorb sunlight, yet moving air can carry some of its thermal energy away. A transparent cover changes the enclosure while still allowing useful solar input to reach the interior.</p>
+<p>Why not use an opaque insulated lid instead? It could reduce some losses but also block much of the incoming sunlight. A useful design needs both input and retention.</p>
+<p>The question is how the cover changes the pathways. Its value is not simply that glass is special or that an enclosed box automatically reaches a fixed temperature.</p>
+<h2>2. The science behind it</h2>
+<p>A box solar cooker contains an absorbing interior and an enclosure intended to direct solar energy into useful heating. Some designs use reflectors to increase input, but the central comparison here is open versus covered under otherwise similar illumination.</p>
+<p>A suitable <strong>transparent cover</strong> transmits much useful sunlight into the box. The interior absorbs part of that energy. A cover that blocks too much input would weaken the source side of the balance.</p>
+<p>The cover also reduces direct exchange of warm interior air with cooler outside air. This limits one important <strong>convective loss</strong> route, especially when external airflow would otherwise replace the warmed air readily.</p>
+<p>The enclosure still loses energy. Heat transfers through the cover and walls, and the cover exchanges energy with the surrounding air and sky. Insulation around suitable parts of the box can reduce other losses but does not make them vanish.</p>
+<p>Glass has wavelength-dependent radiation properties, so radiative exchange can also be affected. However, the statement all infrared is permanently trapped is false. Absorption, emission and transfer through a real cover continue.</p>
+<p>This differs from the main planetary CO2 greenhouse mechanism. An ordinary box cover physically limits air exchange, while atmospheric greenhouse warming depends on radiation transfer through gases. The shared everyday word greenhouse should not hide that distinction.</p>
+<p>The useful temperature depends on incoming sunlight, losses, load and time. Adding a cover cannot guarantee one cooking temperature under all weather and food conditions. We therefore give no promised cooking duration or food-safety claim.</p>
+<p>A box cooker is not automatically a pressure cooker. The educational enclosure model does not prescribe sealing a vessel or building a hot apparatus. Actual designs and food use require suitable tested equipment and responsible adult operation.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw an open box with sunlight entering and warm-air arrows leaving. In a second picture, add a transparent cover and reduce the direct air-exchange arrows while keeping incoming radiation visible.</p>
+<p>Add continuing loss arrows through cover and walls. The model should show improvement of one route, not a magical boundary that stops every energy transfer.</p>
+<p>Now replace the transparent cover with an opaque lid in a thought experiment. Some retention may improve, but input changes too. This comparison explains why a successful design must consider the whole balance rather than optimise only one side.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares open and transparent-covered boxes under equal illustrative sunlight. Air-exchange arrows are larger in the open model. The covered model still shows wall, cover and radiation losses.</p>
+<p>A separate opaque-lid inset reduces the sunlight input and identifies the trade-off. The colours show pathways, not measured temperatures. No real performance values are printed.</p>
+<p>The diagram is not a construction plan. It includes no focusing activity, hot vessel or food experiment. Its caption distinguishes convective enclosure effects from the gas-radiation mechanism of planetary greenhouse warming.</p>
+<figure><img src="../../illustrations/class-10/day_49.svg" alt="Diagram for Why does a box cooker need a transparent cover?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Solar cooker education in India often introduces a dark interior, insulation, a cover and sometimes reflectors. Each feature has a different job, and explaining them separately produces a better design account than saying all parts trap heat.</p>
+<p>A reflector can create glare or concentrated illumination, so it is not needed for this activity. Students should not experiment with mirrors in sunlight, climb onto roofs or handle a hot cooker.</p>
+<p>A classroom model also cannot establish that food reached a suitable temperature throughout. Understanding the heat balance is distinct from validating an actual cooking process under its specific conditions.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours. No sunlight, container heating or food is needed.</p>
+<ol>
+<li>Draw equal sunlight inputs over an open and covered box.</li>
+<li>Add warm-air exchange arrows to the open one.</li>
+<li>Reduce that route in the covered model.</li>
+<li>Keep other loss routes visible in both.</li>
+<li>Draw an opaque-lid version and mark its reduced input.</li>
+</ol>
+<p>Label every arrow qualitative. Ask a partner which route the transparent cover mainly changes in the comparison and why the covered model still cannot warm forever. The exercise tests energy-pathway reasoning without a practical cooking trial.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can the best retention barrier fail as a solar design if it blocks the required input? State the competing functions rather than treating insulation as a universal answer.</p>
+<p>Now imagine strong wind outside a covered box. Which losses may still change even though direct interior-air replacement is reduced? A boundary can suppress one transfer pathway while remaining coupled to its surroundings through others.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What useful input does a suitable transparent cover admit?</p>
+<ul>
+<li>A. Sunlight reaching the absorbing interior</li>
+<li>B. Only a current from an electric generator</li>
+<li>C. An unlimited supply of fuel created inside</li>
+</ul>
+<p><strong>Answer:</strong> A — Transmission allows solar energy to enter while the enclosure changes air exchange.</p>
+<h3>Q2</h3>
+<p>Why can the cover reduce a major loss route?</p>
+<ul>
+<li>A. It permanently stops every kind of energy transfer</li>
+<li>B. It limits direct warm-air replacement</li>
+<li>C. It turns the whole box into a vacuum automatically</li>
+</ul>
+<p><strong>Answer:</strong> B — The enclosure reduces convective exchange with outside air in the comparison.</p>
+<h3>Q3</h3>
+<p>A cartoon shows every infrared photon trapped forever. What needs correction?</p>
+<ul>
+<li>A. The box must have no incoming sunlight</li>
+<li>B. A cover can never affect air exchange</li>
+<li>C. Real covers still exchange and transfer energy</li>
+</ul>
+<p><strong>Answer:</strong> C — Losses through and around the cover continue, so total permanent trapping is not an accurate model.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a labelled cover-design argument with sunlight transmission, reduced air exchange and continuing losses. Include the opaque-lid counterexample.</p>
+<p>Your conclusion must avoid total-infrared-trapping language and a guaranteed cooking time. State that the diagram is a mechanism model rather than a student construction or food-safety test. The goal is to explain why transparency and enclosure work together.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A good cover must allow one energy route while restricting another. Perfectly blocking everything would also block the source the device depends on. Selectivity, not total isolation, is the useful engineering idea behind the transparent enclosure.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A transparent cover admits solar input while limiting warm-air exchange; other losses continue, so performance follows the whole energy balance rather than permanent heat trapping.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 19 of 30</footer>
+</div>
+</body>
+</html>

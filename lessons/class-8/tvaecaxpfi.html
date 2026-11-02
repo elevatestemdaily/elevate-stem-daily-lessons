@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 32: Why does curd set when a little starter is added to milk? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 32</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does curd set when a little starter is added to milk?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Trace the role of a curd starter from living bacteria to changed milk structure. Identify <strong>lactose</strong>, <strong>lactic acid</strong> and <strong>casein</strong>. Explain why setting depends on biological activity and conditions, not merely on stirring a white spoonful into another white liquid.</p>
+</div><h2>1. The mystery</h2>
+<p>A small amount of curd is mixed into suitable warm milk. Several hours later, the milk can become a soft gel. The starter is much smaller than the final bowl, so it cannot simply have filled the space with ready-made curd.</p>
+<p>What changed through the larger volume? The starter carries living microorganisms that can act on a milk component and alter the conditions around milk proteins. The resulting network explains why a flowing liquid can become spoonable.</p>
+<p>The mechanism connects a biological process with a material change that is visible in an ordinary kitchen.</p>
+<h2>2. The science behind it</h2>
+<p>Milk contains water, fat, proteins, minerals and a sugar called <strong>lactose</strong>. Traditional curd starters contain communities of microorganisms, including <strong>lactic acid bacteria</strong>. School examples commonly refer to Lactobacillus, but an actual starter need not be a single pure bacterial species.</p>
+<p>Under suitable conditions, these bacteria use lactose and produce <strong>lactic acid</strong>. This is a form of fermentation. Our focus is the acid's effect on milk structure, not a repeat of the earlier lesson on cellular energy pathways.</p>
+<p>Milk contains proteins called <strong>caseins</strong>, organised in small assemblies called micelles. These protein assemblies remain dispersed under the original milk conditions. As the mixture becomes more acidic, the balance of interactions between them changes.</p>
+<p>Casein assemblies can then associate into a <strong>gel network</strong> that holds much of the water and other milk components. This network produces the thicker, set texture. The starter has caused changes throughout the milk through biological activity rather than contributing enough solid material to account for the whole bowl directly.</p>
+<p>Temperature influences the microorganisms' activity and the developing structure. Milk that is too cool may set slowly. Excessive heat can damage the starter organisms. The useful temperature depends on the culture, so a single universal setting temperature should not be claimed for every traditional starter.</p>
+<p>Time also matters. A five-minute classroom setup cannot normally demonstrate the entire fermentation. The rate depends on the starter, milk, temperature and handling. A thickened result is therefore an observation to connect with conditions, not a promise that every bowl sets after exactly the same interval.</p>
+<p>The liquid sometimes seen separating from curd is commonly called <strong>whey</strong>. Disturbing or contracting the gel can change how much liquid is visibly released. This does not mean that all the milk water was chemically converted into the solid part.</p>
+<p>Curd formation is not identical to spoilage by arbitrary microbes. Safe food preparation depends on appropriate ingredients, clean handling and established household practices. This lesson explains the mechanism without asking students to grow unknown microbes or decide food safety from smell alone.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a cup containing separate protein-assembly symbols. Add a few bacterial symbols labelled starter. In the next stage, add an acid-production arrow and connect the protein symbols into a loose network.</p>
+<p>Shade water throughout the spaces in the network. This prevents the mistaken picture that the final curd contains only protein and no water. A gel is a structure holding fluid, not simply a dry pile of solid grains.</p>
+<p>Keep three steps distinct: bacteria act on a milk component, acidity changes, and proteins associate differently. The final texture is the result of the chain, so omitting either the biological or structural step leaves the explanation incomplete.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows milk with dispersed casein assemblies, starter bacteria producing acid, and a connected protein gel. Water remains represented in every stage. A separate label identifies lactose as the milk sugar involved.</p>
+<p>The diagram uses enlarged symbols; bacteria and casein assemblies are not visible at this scale in a kitchen bowl. The network is schematic, not a photograph of its exact geometry.</p>
+<p>The arrows connect fermentation with changed protein interactions. They do not suggest that bacteria physically weave strings between every particle or that the starter simply expands to occupy the entire bowl unchanged.</p>
+<figure><img src="../../illustrations/class-8/day_32.svg" alt="Diagram for Why does curd set when a little starter is added to milk?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Many Indian households make dahi using a small portion from an earlier batch as starter. The tradition is an example of transferring an active microbial community into a fresh food environment under suitable conditions.</p>
+<p>Different milk compositions and starter cultures can produce different textures and tastes. A comparison must record those differences before blaming temperature alone. Using a changed milk and a changed starter at once makes it harder to identify a cause.</p>
+<p>Commercial yogurt and traditional dahi are not guaranteed to use identical cultures or processing methods. Their shared broad principle is microbial acidification influencing the milk proteins, while the practical recipes and controls can differ.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, blue and green pencils, and a spoonful of already prepared curd only if an adult permits. No milk incubation or heating is required. Do not taste the handled sample.</p>
+<ol>
+<li>Sketch flowing milk as dispersed protein assemblies in water.</li>
+<li>Add starter bacteria and an arrow labelled lactose to lactic acid.</li>
+<li>Connect the protein symbols into a gel network.</li>
+<li>If available, tilt the prepared curd gently with a spoon to observe its soft structure.</li>
+<li>Explain where the water remains in the model.</li>
+</ol>
+<p>This is a mechanism model and observation of an existing food, not a five-minute fermentation experiment. Do not leave an experimental bowl unrefrigerated or use unknown spoiled milk to create a comparison.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose two bowls use the same milk but different starter communities. Why might their setting behaviour differ even at the same temperature?</p>
+<p>Now imagine one bowl is disturbed repeatedly while the other is left still. Which observation might concern the developing gel rather than just bacterial activity? Separate changes in the biological process from changes caused by physically handling the structure that forms.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which milk sugar is used by lactic acid bacteria?</p>
+<ul>
+<li>A. Cellulose</li>
+<li>B. Sodium chloride</li>
+<li>C. Lactose</li>
+</ul>
+<p><strong>Answer:</strong> C — Lactose is a sugar present in milk and used during lactic fermentation.</p>
+<h3>Q2</h3>
+<p>Why does milk become thicker as curd sets?</p>
+<ul>
+<li>A. Casein assemblies form a water-holding network</li>
+<li>B. The bowl manufactures dry sand</li>
+<li>C. All water becomes a new element</li>
+</ul>
+<p><strong>Answer:</strong> A — Acidification changes protein interactions and allows a gel network to form.</p>
+<h3>Q3</h3>
+<p>Two trials change both milk and starter. What is the main comparison problem?</p>
+<ul>
+<li>A. Both must set at exactly the same rate</li>
+<li>B. The cause of a difference is harder to isolate</li>
+<li>C. No microbes could exist in either trial</li>
+</ul>
+<p><strong>Answer:</strong> B — Changing two relevant factors makes their individual effects difficult to separate.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a three-stage explanation for a younger student who thinks the starter simply turns larger by absorbing milk. Include the milk sugar, the acid produced and the casein network.</p>
+<p>Then design a paper comparison that changes only starter identity while recording milk and temperature conditions. State why a real food trial would require adult control and why a sour smell alone would not certify that an unknown sample is safe.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A small starter can influence a much larger volume because living organisms act on material already present in the milk. The final structure comes largely from the milk's own components. The change is therefore neither a simple dilution of the starter nor the replacement of all the milk with bacterial cells.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Lactic acid bacteria act on lactose, increasing acidity and changing casein interactions so a water-holding protein gel can form.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 2 of 30</footer>
+</div>
+</body>
+</html>

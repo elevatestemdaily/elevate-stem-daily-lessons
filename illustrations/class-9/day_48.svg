@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a balanced poultry ration differ from feeding only</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">grain?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Match several nutrient roles to the intended birds and conditions</text>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A full feeder is not a complete needs assessment</text>
+<circle cx="500" cy="220" r="40" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="545" cy="195" r="20" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M562 190 L580 200 L563 204 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="35" y="315" width="130" height="30" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="100" y1="300" x2="480" y2="265" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="100" y="389" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Energy</text>
+<rect x="235" y="315" width="130" height="30" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="300" y1="300" x2="480" y2="265" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="300" y="389" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Protein materials</text>
+<rect x="435" y="315" width="130" height="30" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="500" y1="300" x2="520" y2="265" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="500" y="389" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Minerals</text>
+<rect x="635" y="315" width="130" height="30" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="700" y1="300" x2="520" y2="265" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="700" y="389" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Vitamins</text>
+<rect x="835" y="315" width="130" height="30" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="900" y1="300" x2="520" y2="265" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="900" y="389" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Water access</text>
+<text x="500" y="445" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Age, purpose, actual intake and ingredient quality remain relevant.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">This is a paper needs model, not a feed recipe or animal intervention.</text>
+</svg>

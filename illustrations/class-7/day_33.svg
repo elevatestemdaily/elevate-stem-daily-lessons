@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why do crystals appear when a salt solution dries?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Water departs; dissolved salt joins an ordered solid</text>
+<text x="175" y="138" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">1. Clear salt solution</text>
+<path d="M65 195 L85 348 L265 348 L285 195" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="138" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">2. Water evaporates</text>
+<path d="M390 195 L410 348 L590 348 L610 195" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<text x="825" y="138" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">3. Crystals remain</text>
+<path d="M715 195 L735 348 L915 348 L935 195" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="85" y="220" width="180" height="120" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<rect x="410" y="285" width="180" height="55" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<circle cx="110" cy="250" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="160" cy="290" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="220" cy="265" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="140" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="245" cy="320" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="435" cy="310" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="490" cy="320" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="545" cy="315" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="450" y1="255" x2="450" y2="180" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="500" y1="255" x2="500" y2="180" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="550" y1="255" x2="550" y2="180" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="770" y="300" width="30" height="30" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="785" y1="300" x2="785" y2="330" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="770" y1="315" x2="800" y2="315" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="815" y="280" width="30" height="30" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="830" y1="280" x2="830" y2="310" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="815" y1="295" x2="845" y2="295" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="850" y="315" width="30" height="30" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="865" y1="315" x2="865" y2="345" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="850" y1="330" x2="880" y2="330" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="300" y1="270" x2="365" y2="270" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="630" y1="270" x2="695" y2="270" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="175" y="391" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Salt is already present</text>
+<text x="500" y="391" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Less solvent remains</text>
+<text x="825" y="391" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Repeating crystal lattice</text>
+<text x="500" y="443" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Symbols show presence, not visible grains in the clear liquid.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Crystallisation recovers salt; water does not turn into salt.</text>
+</svg>

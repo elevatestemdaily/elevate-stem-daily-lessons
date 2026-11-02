@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can chromatography separate the colours in black ink?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Different interactions produce different migration distances</text>
+<text x="250" y="134" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Paper and water system</text>
+<text x="735" y="134" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Read from one baseline</text>
+<rect x="120" y="315" width="320" height="55" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="225" y="160" width="110" height="190" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="220" y1="305" x2="340" y2="305" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="220" y1="185" x2="340" y2="185" stroke="#1f5f8b" stroke-width="3"/>
+<rect x="245" y="225" width="70" height="12" rx="2" fill="#e6a23c" stroke="#e6a23c" stroke-width="2"/>
+<rect x="245" y="265" width="70" height="12" rx="2" fill="#579b70" stroke="#579b70" stroke-width="2"/>
+<circle cx="280" cy="305" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="380" y1="300" x2="380" y2="190" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="720" y="205" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Solvent front: furthest liquid travel</text>
+<text x="720" y="258" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Bands: differential migration</text>
+<text x="720" y="312" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Spot begins above reservoir level</text>
+<text x="500" y="429" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Invented distance ratio: 3 cm / 6 cm = 0.5</text>
+<text x="500" y="462" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">A pattern depends on the sample, solvent and stationary environment.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">This is distribution-based separation, not simply a size sieve.</text>
+</svg>

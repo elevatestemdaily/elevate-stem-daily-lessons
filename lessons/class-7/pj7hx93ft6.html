@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 56: Why is a spinning fan a poor clock but a pendulum useful? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 56</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why is a spinning fan a poor clock but a pendulum useful?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why repeated motion becomes a useful clock only when its intervals are sufficiently stable. Define an <strong>oscillation</strong> and its <strong>period</strong> for a simple pendulum. Compare a classroom pendulum with an ordinary spinning fan without claiming that either is a perfect time standard.</p>
+</div><h2>1. The mystery</h2>
+<p>A fan blade passes the same point again and again. A pendulum swings back and forth repeatedly. Both motions have recognisable cycles, yet one is usually a poor classroom timekeeper and the other can help compare equal time intervals.</p>
+<p>The difference is not simply circular motion versus swinging. A rotating mechanism can be used in a good clock if its rate is controlled. The question is whether each cycle represents a stable interval under the conditions in which the device is being used.</p>
+<p>Repeated motion is a starting point, not a complete clock design.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>periodic motion</strong> repeats its state after an interval. The <strong>period</strong> is the time for one complete cycle. For a simple pendulum, one full oscillation can be counted from a chosen extreme, across to the other extreme, and back to the starting extreme.</p>
+<p>Going from one side to the other is only half a cycle. A counting method must define its starting and ending event clearly. Otherwise two observers can report different periods while watching exactly the same motion.</p>
+<p>A simple pendulum consists of a small mass, or <strong>bob</strong>, suspended from a fixed support by a light string. When displaced slightly and released, it swings. Under small-angle conditions, its period depends mainly on the pendulum's length and the local gravitational environment.</p>
+<p>Increasing length makes the period longer. Changing the bob's mass alone does not substantially change the ideal small-angle period. These statements describe a simplified model. Air resistance, support movement, string properties and large swings can alter real behaviour.</p>
+<p>Small swings are useful because their periods change relatively little with modest changes in amplitude. A large swing is not simply a bigger version with exactly the same timing. A classroom pendulum should therefore use gentle displacements rather than dramatic arcs.</p>
+<p>An ordinary fan can change speed as its controls, electrical supply or loading change. Starting and stopping also involve changing rates. Counting blade passages without checking speed stability does not provide a trustworthy time interval.</p>
+<p>This does not mean rotating devices are intrinsically unsuitable for clocks. A controlled rotor can provide a stable cycle, and specialised timing systems do use controlled periodic processes. The comparison concerns an everyday fan operated without a validated timebase.</p>
+<p>A pendulum also needs energy supplied to maintain its motion if it is to run as a clock. A freely swinging classroom bob gradually loses amplitude. A clock mechanism both maintains motion and counts cycles, while careful design limits disturbances that change the period.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine marking a tally each time a cycle returns to the same state. The tally becomes elapsed time only if you know the duration represented by each cycle well enough for the task.</p>
+<p>Draw two rows of tick marks. One has nearly equal spacing; the other has visibly changing spacing. Both repeat, but only the first supports a simple count-times-period estimate over the illustrated interval.</p>
+<p>Then draw a pendulum at its left extreme, centre, right extreme, centre and left extreme again. Put one bracket around the entire sequence. This prevents a common mistake in which a half-swing is counted as a complete period.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the pendulum at its two extremes and centre, with arrows tracing a full return. A bracket states that one complete oscillation returns to the same extreme and direction of motion.</p>
+<p>A second comparison shows a shorter and longer pendulum with the same gentle swing condition. The longer one is labelled as having a longer period in the simple model. A fan icon is paired with irregularly spaced cycle marks to illustrate an uncontrolled rate.</p>
+<p>The drawing does not show a quantitative speed trace from a real fan or promise a perfectly constant classroom pendulum period.</p>
+<figure><img src="../../illustrations/class-7/day_56.svg" alt="Diagram for Why is a spinning fan a poor clock but a pendulum useful?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Older pendulum clocks use a mechanism that maintains the swing and counts cycles. Their usefulness depends on controlling length, support and disturbances, not merely on hanging a weight from a string.</p>
+<p>Modern devices often use other repeatable processes, including electronic oscillations. The shared idea is a stable timebase plus counting. The physical process can differ while the measurement principle remains similar.</p>
+<p>A ceiling fan in a classroom is designed primarily to move air. It should not be touched, marked or approached to test timing. Photographs or a paper diagram provide all the comparison needed for this lesson.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Do this with an adult.</strong> Use a short existing string tied securely to a small soft object, a stable low support and a stopwatch. Keep it away from faces, pets, furniture edges and ceiling fans. Do not stand on a chair or swing a heavy object.</p>
+<ol>
+<li>Give the bob a small displacement and release without pushing.</li>
+<li>Choose one extreme as the counting point.</li>
+<li>Time several complete returns, such as ten cycles.</li>
+<li>Divide the total time by the number of cycles.</li>
+<li>State the start and finish convention in your notes.</li>
+</ol>
+<p>The result is an estimate for this setup. Timing several cycles reduces the relative effect of button delay, but it does not remove every error. If a safe support is unavailable, use the paper sequence instead.</p>
+</div><h2>7. Think deeper</h2>
+<p>Two students time the same pendulum. One counts each crossing of the centre; the other counts returns to the left extreme. Why can they obtain different numbers of counted events during the same interval?</p>
+<p>Now consider replacing the bob with another soft object of similar shape but different mass. Explain why the simple small-angle model does not predict a large period change from mass alone, while acknowledging that real drag and support conditions can matter.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is one complete pendulum oscillation?</p>
+<ul>
+<li>A. Travel from one extreme only to the other</li>
+<li>B. Any single crossing of the centre</li>
+<li>C. A return to the same extreme after a full swing</li>
+</ul>
+<p><strong>Answer:</strong> C — A complete cycle returns the pendulum to the same stage of its motion.</p>
+<h3>Q2</h3>
+<p>Why is an ordinary fan a poor unverified timebase?</p>
+<ul>
+<li>A. Its rotation rate can change</li>
+<li>B. Its blades cannot pass one point twice</li>
+<li>C. Circular motion can never be periodic</li>
+</ul>
+<p><strong>Answer:</strong> A — Changing fan speed changes the time represented by each counted rotation.</p>
+<h3>Q3</h3>
+<p>A pendulum takes an invented 12 seconds for ten cycles. What is the estimated period?</p>
+<ul>
+<li>A. 10 seconds</li>
+<li>B. 1.2 seconds</li>
+<li>C. 120 seconds</li>
+</ul>
+<p><strong>Answer:</strong> B — Dividing 12 seconds by ten complete cycles gives 1.2 seconds per cycle.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a timing instruction card for a pendulum investigation. Define one complete cycle, recommend gentle swings and state how to estimate period from a multi-cycle measurement.</p>
+<p>Include a comparison with an ordinary fan: the problem is uncontrolled or changing rate, not a rule that circular motion can never keep time. Your card should distinguish a classroom measurement aid from a clock engineered to run continuously.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Counting perfectly is not enough if the interval being counted keeps changing. A clock combines a repeatable physical process with a counting mechanism. This explains why any repeated movement is only a candidate timebase until its stability has been examined.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A useful clock needs stable cycle intervals; a gentle pendulum can provide a repeatable period, but repeated motion alone does not guarantee reliable timekeeping.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

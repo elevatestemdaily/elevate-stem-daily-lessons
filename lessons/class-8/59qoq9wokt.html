@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 46: How do farmers interrupt a weed's life cycle without herbicides? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 46</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do farmers interrupt a weed's life cycle without herbicides?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why the timing of weed removal matters as well as the amount removed. Connect current competition with the <strong>soil seed bank</strong> and future emergence. Distinguish preventing seed return from eliminating every possible source of weeds, without using herbicides or handling unknown plants.</p>
+</div><h2>1. The mystery</h2>
+<p>Two garden teams remove similar-looking weeds. One works before the plants produce mature seeds; the other waits until seed heads are ready to shed. Both beds look clearer afterwards, yet their future weed problems may differ.</p>
+<p>The visible plants are only part of the population. Seeds already in the soil and new seeds returned by mature plants can influence later emergence. A management decision therefore changes both today's competition and tomorrow's starting conditions.</p>
+<p>The useful question is where the next generation of weeds could come from and which routes an action interrupts.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>weed</strong> is a plant growing where it is not wanted in a particular managed setting. The same species can have a different role elsewhere. The term describes a relationship to the management goal, not a separate biological group of universally bad plants.</p>
+<p>Weeds can compete with a crop for light, water and nutrients. Removing them can reduce that current competition, depending on timing and conditions. However, removing visible growth does not necessarily remove the seeds or underground structures that support future growth.</p>
+<p>Many weeds add seeds to the <strong>soil seed bank</strong>, the collection of viable seeds in or on the soil. Seeds can arrive from the present plants, nearby areas, moved soil, equipment or other routes. A bed that looks empty can therefore retain the capacity for future emergence.</p>
+<p>Removing suitable weeds <strong>before mature seed production</strong> can reduce the new seed contribution from those plants. The action does not guarantee an empty seed bank, but it interrupts one source of replenishment. This is a management-timing principle rather than a repeated lesson on reproductive anatomy.</p>
+<p>If mature seeds are already present, handling can scatter them. A plan must account for seed maturity and disposal rather than simply shaking every removed plant over the bed. Actual species and local advice matter, so students should not improvise disposal methods for unknown weeds.</p>
+<p>Some unwanted plants also regrow from roots, rhizomes or other persistent structures. Cutting shoots may suppress current competition while leaving regrowth potential. Preventing seed return is valuable for appropriate species but does not address every survival route.</p>
+<p><strong>Mulch</strong>, crop cover, suitable mechanical removal and cultivation timing can all contribute to non-herbicide management. Each has conditions and limitations. A surface cover may suppress some emergence without stopping every established plant or every perennial underground structure.</p>
+<p>Repeated inspection is therefore useful. A one-time clearing can be followed by later emergence from the existing bank or new arrivals. The goal is a managed reduction in unwanted competition and future replenishment, not a promise that a single action permanently erases all weeds.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a bank with incoming and outgoing arrows. The incoming arrow represents seeds added; the outgoing arrow represents germination or loss of viability. Put visible plants above the bank.</p>
+<p>Now remove one plant before seed maturity and cross out its seed-return arrow. Leave the older bank and other incoming routes in place. This shows both the benefit and the limit of the action.</p>
+<p>Add a second plant with an underground regrowth structure. Mark that pathway separately from seeds. A good management model identifies several routes instead of assuming every species restarts only from one newly scattered seed.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares removal before mature seed return with later handling of a seed-bearing plant. A lower band represents an existing soil seed bank in both cases.</p>
+<p>Arrows identify seed input, possible later emergence and an independent underground regrowth route. The diagram labels these as examples because weed species differ. It does not show the internal reproductive process or claim a measured number of seeds per plant.</p>
+<p>A management strip links observation, timing and follow-up. Its purpose is to explain why the state of the plant at removal affects future conditions, not to provide identification or disposal instructions for a particular harmful species.</p>
+<figure><img src="../../illustrations/class-8/day_46.svg" alt="Diagram for How do farmers interrupt a weed's life cycle without herbicides?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Farmers and gardeners in India use different methods depending on the crop, labour, tools and weed species. Timing a safe removal before seed return can complement other practices, while a perennial species may require a different plan.</p>
+<p>A school garden can map where unwanted plants appear without pulling them. Repeated observations may reveal fresh emergence after an initial clearing. That pattern does not mean the earlier work had no effect; the starting seed bank and other sources still matter.</p>
+<p>Unknown plants can irritate skin or have sharp parts. Students should not handle them for this lesson. Adult identification and safe gardening guidance belong before any real removal activity.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and small drawn seed symbols. Do not collect, scatter or grow weeds.</p>
+<ol>
+<li>Draw a crop bed with a soil seed bank underneath.</li>
+<li>Add one young weed and one with mature seeds.</li>
+<li>Cross out the young plant's future seed-return arrow when it is removed.</li>
+<li>Keep older seeds and an outside-input arrow visible.</li>
+<li>Add a possible underground regrowth route for a different example.</li>
+</ol>
+<p>Explain which pathway each action changes. The number of symbols is invented for the model and is not a real estimate of seed abundance. Ask a partner why a visibly clear bed can still produce later seedlings without any new seeds arriving that day.</p>
+</div><h2>7. Think deeper</h2>
+<p>Two beds look equally clear after weeding. One had mature seeds shed just before clearing, while the other did not. Why might their later emergence differ?</p>
+<p>Now consider a perennial weed growing from underground structures. Explain why preventing seed return may help its spread but still leave a local regrowth problem. A useful plan matches the pathway rather than applying one slogan to every species.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the soil seed bank?</p>
+<ul>
+<li>A. Viable seeds present in or on the soil</li>
+<li>B. The total weight of every adult crop</li>
+<li>C. A container holding only metal tools</li>
+</ul>
+<p><strong>Answer:</strong> A — The seed bank can support later emergence even when visible plants are absent.</p>
+<h3>Q2</h3>
+<p>Why can removing weeds before mature seed production help?</p>
+<ul>
+<li>A. It removes every underground structure automatically</li>
+<li>B. It guarantees no seeds ever arrive again</li>
+<li>C. It reduces one source of new seed input</li>
+</ul>
+<p><strong>Answer:</strong> C — Early removal can interrupt seed return from those plants.</p>
+<h3>Q3</h3>
+<p>A weed regrows from a rhizome after shoots are cut. What does this show?</p>
+<ul>
+<li>A. Every earlier observation must be invented</li>
+<li>B. Regrowth pathways differ among species</li>
+<li>C. Seeds are the only possible starting route</li>
+</ul>
+<p><strong>Answer:</strong> B — Some plants persist through underground structures as well as seeds.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a non-herbicide observation plan for a school garden using photographs or adult-led records. Track visible growth, seed-maturity stage, possible incoming routes and later reappearance.</p>
+<p>Do not ask students to identify or handle unknown plants. Your plan should explain one advantage of early timing and one reason follow-up remains necessary. End by distinguishing today's cleared appearance from the hidden starting conditions beneath the soil surface.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A successful action can leave an invisible problem partly unchanged. Removing a visible weed can reduce competition immediately while an existing seed bank remains. This is why judging management only by a photograph taken right after clearing misses the part of the system that influences the next season.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Removing appropriate weeds before mature seed return can reduce future replenishment, but existing seeds, new arrivals and underground regrowth can still require follow-up.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why can a paper fold be reversed but cooked rice cannot?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Restoring shape and preserving chemical identity are different questions</text>
+<text x="170" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Paper: initial sheet</text>
+<text x="500" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Folded</text>
+<text x="830" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Opened; crease remains</text>
+<rect x="100" y="160" width="140" height="75" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M430 210 L500 160 L570 210 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="760" y="160" width="140" height="75" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="830" y1="160" x2="830" y2="235" stroke="#e6a23c" stroke-width="2"/>
+<line x1="285" y1="195" x2="390" y2="195" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="610" y1="195" x2="715" y2="195" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="170" y="286" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Starch: organised regions</text>
+<text x="500" y="286" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Heat with water</text>
+<text x="830" y="286" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Swollen; less ordered</text>
+<rect x="100" y="310" width="140" height="95" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="118" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="141" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="164" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="187" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="233" cy="325" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="118" cy="343" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="141" cy="343" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="164" cy="343" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="187" cy="343" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="343" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="233" cy="343" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="118" cy="361" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="141" cy="361" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="164" cy="361" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="187" cy="361" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="361" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="233" cy="361" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="118" cy="379" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="141" cy="379" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="164" cy="379" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="187" cy="379" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="379" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="233" cy="379" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="118" cy="397" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="141" cy="397" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="164" cy="397" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="187" cy="397" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="397" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="233" cy="397" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="290" y1="350" x2="400" y2="350" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="600" y1="350" x2="710" y2="350" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M448 385 Q470 300 500 360 Q530 405 555 315" fill="none" stroke="#1f5f8b" stroke-width="4"/>
+<path d="M755 345 Q770 295 825 316 Q910 295 915 350 Q925 415 840 417 Q750 425 755 345 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M775 350 Q800 320 820 365 Q850 400 890 340" fill="none" stroke="#e6a23c" stroke-width="4"/>
+<text x="500" y="458" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Cooling does not rebuild the original raw starch granules.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Irreversibility alone does not prove that a new substance formed.</text>
+</svg>

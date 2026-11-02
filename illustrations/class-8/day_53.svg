@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can an electroscope reveal an object&#x27;s charge?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Like-charge repulsion makes a redistribution or transfer visible</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Contact can transfer charge</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Nearby object: redistribution</text>
+<circle cx="250" cy="195" r="24" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="250" y1="220" x2="250" y2="285" stroke="#1f5f8b" stroke-width="5"/>
+<path d="M250 280 L185 350 M250 280 L315 350" fill="none" stroke="#1f5f8b" stroke-width="5"/>
+<rect x="130" y="240" width="240" height="130" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M250 280 L185 350 M250 280 L315 350" fill="none" stroke="#1f5f8b" stroke-width="5"/>
+<line x1="199" y1="330" x2="211" y2="330" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="205" y1="324" x2="205" y2="336" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="289" y1="330" x2="301" y2="330" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="295" y1="324" x2="295" y2="336" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="750" cy="195" r="24" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="750" y1="220" x2="750" y2="285" stroke="#1f5f8b" stroke-width="5"/>
+<path d="M750 280 L685 350 M750 280 L815 350" fill="none" stroke="#1f5f8b" stroke-width="5"/>
+<rect x="630" y="240" width="240" height="130" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M750 280 L685 350 M750 280 L815 350" fill="none" stroke="#1f5f8b" stroke-width="5"/>
+<line x1="699" y1="330" x2="711" y2="330" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="705" y1="324" x2="705" y2="336" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="789" y1="330" x2="801" y2="330" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="795" y1="324" x2="795" y2="336" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="80" y="180" width="145" height="20" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="540" y="180" width="130" height="20" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="685" y1="190" x2="715" y2="190" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="250" y="418" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">A touching path crosses the boundary</text>
+<text x="750" y="418" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">The gap remains; charge moves inside</text>
+<text x="500" y="461" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Leaf angle alone identifies neither sign nor a universal charge amount.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Local charge distribution can change while the isolated total stays the same.</text>
+</svg>

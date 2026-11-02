@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can terminal voltage fall when a cell powers a larger load?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">A discharging source model splits emf into internal drop and terminal voltage</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Cell-model boundary</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Invented voltage account</text>
+<rect x="80" y="175" width="350" height="180" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="160" y1="210" x2="160" y2="310" stroke="#1f5f8b" stroke-width="5"/>
+<line x1="190" y1="230" x2="190" y2="290" stroke="#1f5f8b" stroke-width="3"/>
+<path d="M200 260 L235 260 L245 240 L265 280 L285 240 L305 280 L315 260 L390 260" fill="none" stroke="#1f5f8b" stroke-width="3"/>
+<text x="250" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Ideal E plus internal r</text>
+<text x="750" y="207" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1f5f8b">E = 1.5 V</text>
+<text x="750" y="263" text-anchor="middle" font-family="Arial" font-size="18" font-weight="400" fill="#1f5f8b">Ir = 0.2 × 0.5 = 0.1 V</text>
+<text x="750" y="320" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1f5f8b">V = E − Ir = 1.4 V</text>
+<text x="500" y="461" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Greater current under fixed E and r leaves less terminal voltage.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The equation is not a safe-current rating or a battery-testing instruction.</text>
+</svg>

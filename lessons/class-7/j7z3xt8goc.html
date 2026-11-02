@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 49: How do dead leaves become the dark part of soil? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 49</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do dead leaves become the dark part of soil?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Trace fallen leaves into a changing mixture of soil organic materials. Distinguish fresh <strong>litter</strong>, decomposing material and the more transformed material often called <strong>humus</strong>. Explain how organic matter affects soil properties without treating it as a single substance or a guaranteed measure of fertility.</p>
+</div><h2>1. The mystery</h2>
+<p>A fresh fallen leaf has a recognisable outline, veins and a crisp surface. Beneath an older pile, the material may be darker and more crumbly, with few intact leaves visible. Mixed into the soil, much of its original identity becomes hard to recognise.</p>
+<p>Where did the leaf shape go, and why does the resulting material matter? The answer involves fragmentation, biological processing, movement and interactions with minerals. It is a story about the changing soil mixture, not simply a leaf being ground into smaller identical leaves.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Litter</strong> includes recently fallen leaves, twigs and other recognisable organic remains on the ground. <strong>Soil organic matter</strong> is broader. It includes materials at different stages of change, living organisms and substances associated with soil minerals.</p>
+<p>Small animals can fragment leaves and mix pieces with the surroundings. Microorganisms process organic compounds further. We do not repeat the earlier detailed lesson on how fungal hyphae feed; here the focus is the mixture that remains, moves and interacts with the soil over time.</p>
+<p>Some of the leaf's carbon returns to the atmosphere during biological processing. Some becomes part of organisms, and some remains in transformed organic materials. Therefore the final soil material is not simply the original leaf chopped up with every part preserved in place.</p>
+<p>The term <strong>humus</strong> is commonly used in school science for dark, well-decomposed organic material whose original source is no longer easily recognised. It is not one pure chemical with a single formula. Modern descriptions emphasise a diverse mixture and its interactions with the surrounding soil.</p>
+<p>Some organic material is physically protected within small soil aggregates or associated with mineral surfaces. These surroundings can make it less accessible to decomposers. Persistence therefore depends partly on the environment and mineral contact, not just on a supposedly indestructible humus molecule.</p>
+<p><strong>Aggregates</strong> are groups of soil particles held together in structures. Organic materials can contribute to aggregation, influencing the arrangement of pores. This can affect how water and air move through soil, although the result depends on the soil and the kind of organic input.</p>
+<p>Organic matter can also help soils retain water and hold some nutrient ions. As materials are processed, nutrients may be released into forms organisms can use. None of this means that adding any amount of any dead material instantly supplies a balanced plant diet.</p>
+<p>The rate of change depends on moisture, temperature, air availability, organisms and the material itself. A tough dry leaf and a softer moist leaf need not change at the same rate. No universal number of days turns every leaf pile into the same finished soil material.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a pathway with several branches rather than one straight arrow from leaf to humus. One branch leads to gases, one to living organisms and another to changing organic materials mixed with minerals.</p>
+<p>Keep the stages overlapping. A real sample can contain fresh fragments beside more transformed material and living roots. It is not necessary for the entire pile to finish one stage before any part enters another.</p>
+<p>Draw a few mineral particles joined into an aggregate, with organic material between or on their surfaces. This shows why the final effect on soil involves relationships among materials, not just the presence of a dark colour.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a recognisable leaf, partly fragmented litter and organic material mixed with mineral grains. Branching arrows indicate that not all original leaf matter remains in the soil: some enters organisms or leaves as gas.</p>
+<p>A magnified aggregate shows mineral particles with organic material at contacts and surfaces. Labels describe possible effects on structure, water and nutrient retention without assigning a fixed improvement percentage.</p>
+<p>The final material is deliberately drawn as varied fragments and coatings rather than one identical molecule repeated everywhere. The caption identifies humus as a useful broad school term for well-transformed organic matter.</p>
+<figure><img src="../../illustrations/class-7/day_49.svg" alt="Diagram for How do dead leaves become the dark part of soil?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Leaf litter under trees can protect the ground while gradually contributing organic inputs. Removing every leaf changes both surface cover and the supply of material entering the soil. The effects depend on the location and how the area is managed.</p>
+<p>School gardens sometimes use mature compost as a soil amendment. Its properties differ from those of a fresh pile of kitchen scraps. A finished-looking dark material is not automatically sterile, nutritionally complete or suitable in unlimited amounts.</p>
+<p>In Indian home gardens, the right practice depends on space, drainage and the plants being grown. This lesson provides a mechanism for asking better questions, rather than a universal recipe for applying organic material to every soil.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use photographs of fresh leaves, partly decomposed litter and a soil aggregate, or draw them from the lesson diagram. Do not open mouldy containers or collect material from an unknown contaminated site.</p>
+<ol>
+<li>Put the pictures in a possible sequence.</li>
+<li>Mark which original leaf features are still recognisable.</li>
+<li>Add arrows to show material entering organisms and returning to the air.</li>
+<li>Draw mineral grains beside the transformed organic material.</li>
+<li>Label one possible effect on the arrangement of pores.</li>
+</ol>
+<p>The pictures compare stages; they do not measure the time between them. Keep that distinction visible in your notebook. If you use real garden observations with an adult, avoid direct handling and wash hands afterwards.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose two soils contain similar amounts of organic material, but one has more of it protected within aggregates or associated with minerals. Why might the material persist differently?</p>
+<p>Now consider a dark soil and a pale soil. Explain why colour alone cannot tell you the full quantity, composition or usefulness of their organic matter. A visible clue is valuable, but it is not a complete chemical analysis.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does soil organic matter include?</p>
+<ul>
+<li>A. Materials at several stages and living organisms</li>
+<li>B. Only one pure substance called humus</li>
+<li>C. Only fresh leaves with intact outlines</li>
+</ul>
+<p><strong>Answer:</strong> A — Soil organic matter is a diverse category rather than one chemical compound.</p>
+<h3>Q2</h3>
+<p>Why can mineral association affect organic matter persistence?</p>
+<ul>
+<li>A. Minerals remove every organism instantly</li>
+<li>B. It can make material less accessible</li>
+<li>C. It turns all carbon into metal</li>
+</ul>
+<p><strong>Answer:</strong> B — Association and physical protection can limit access by decomposers.</p>
+<h3>Q3</h3>
+<p>A soil sample is very dark. What should you avoid claiming from colour alone?</p>
+<ul>
+<li>A. That it has a visible colour</li>
+<li>B. That more investigation could be useful</li>
+<li>C. That its complete fertility is already known</li>
+</ul>
+<p><strong>Answer:</strong> C — Colour alone does not establish all nutrient, structural and organic-matter properties.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Make a labelled poster correcting the claim that humus is “one permanent chemical made from leaves.” Include fresh litter, living organisms, transformed materials, mineral association and a route returning carbon to the atmosphere.</p>
+<p>Add one soil-property connection, such as aggregation or water retention. Explain it as a possible influence under stated conditions, avoiding a promise that the darkest sample must always be best for every plant.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Part of what makes organic matter persist can be where it is located. Material protected inside an aggregate or associated with a mineral surface may be harder for organisms to access. Longevity is therefore partly a property of a material's surroundings and relationships, not only a property of the material by itself.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Fallen leaves enter a changing soil mixture; humus is a broad term for transformed organic matter that interacts with minerals, organisms and pore structure.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 19 of 30</footer>
+</div>
+</body>
+</html>

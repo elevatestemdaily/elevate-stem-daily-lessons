@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does an ester name reveal two chemical building blocks?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Read connectivity and include the carbonyl carbon in the acid-derived part</text>
+<text x="180" y="260" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">CH3</text>
+<text x="370" y="260" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">C</text>
+<text x="550" y="260" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">O</text>
+<text x="730" y="260" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">CH2</text>
+<text x="900" y="260" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">CH3</text>
+<text x="370" y="180" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700" fill="#1f5f8b">O</text>
+<line x1="220" y1="252" x2="340" y2="252" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="400" y1="252" x2="520" y2="252" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="580" y1="252" x2="690" y2="252" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="770" y1="252" x2="860" y2="252" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="363" y1="198" x2="363" y2="229" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="377" y1="198" x2="377" y2="229" stroke="#1f5f8b" stroke-width="2"/>
+<text x="280" y="354" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#1f5f8b">Ethanoate portion</text>
+<text x="790" y="354" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#1f5f8b">Ethyl portion</text>
+<text x="500" y="422" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700" fill="#1f5f8b">Name order: ethyl ethanoate</text>
+<text x="500" y="466" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">The C(=O)–O linkage is structural evidence; smell is not a full test.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Formula exercise only: no ester preparation or chemical smelling activity.</text>
+</svg>

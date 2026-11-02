@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a seed drill place seeds at a steady depth?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Storage, metering, groove formation and depth control must coordinate</text>
+<text x="240" y="134" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Seed pathway</text>
+<text x="750" y="134" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Placement and support</text>
+<path d="M100 170 L380 170 L325 245 L155 245 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="240" cy="270" r="25" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="180" cy="200" r="5" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="230" cy="215" r="5" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="290" cy="195" r="5" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M240 297 L240 340 L560 340 L560 375" fill="none" stroke="#1f5f8b" stroke-width="10"/>
+<line x1="265" y1="270" x2="340" y2="270" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="455" y1="375" x2="920" y2="375" stroke="#579b70" stroke-width="4"/>
+<path d="M505 315 L525 375 L545 315" fill="none" stroke="#1f5f8b" stroke-width="4"/>
+<circle cx="765" cy="335" r="38" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="680" y1="295" x2="765" y2="335" stroke="#1f5f8b" stroke-width="4"/>
+<line x1="570" y1="375" x2="625" y2="375" stroke="#e6a23c" stroke-width="6"/>
+<text x="240" y="420" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Hopper → meter → tube</text>
+<text x="750" y="420" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Opener + support + cover</text>
+<text x="500" y="463" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">A blocked route after metering can still create a row gap.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Uniform release alone cannot guarantee uniform final seed depth.</text>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 34: Why does extra carbon dioxide slow Earth's cooling to space? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 34</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does extra carbon dioxide slow Earth's cooling to space?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how additional carbon dioxide changes Earth's outward infrared energy transfer. Distinguish <strong>absorption</strong>, atmospheric emission and permanent trapping. Connect an initial energy imbalance with warming toward a new balance without claiming that every incoming solar ray is blocked or that energy is created.</p>
+</div><h2>1. The mystery</h2>
+<p>Earth receives energy from sunlight and emits energy toward space. If the incoming sunlight is held approximately fixed in a simplified comparison, why can adding a small atmospheric component affect temperature?</p>
+<p>The outgoing pathway matters as much as the incoming one. Carbon dioxide interacts with particular infrared wavelengths emitted by the surface and atmosphere. Changing those interactions alters how readily energy reaches space under the existing temperature structure.</p>
+<p>The useful model is a flow and balance, not a sealed greenhouse roof containing an ever-growing pile of heat forever.</p>
+<h2>2. The science behind it</h2>
+<p>Earth's surface absorbs some incoming solar radiation and emits <strong>infrared radiation</strong>. The atmosphere also absorbs and emits radiation. Different gases interact with different wavelengths, so air is not one uniformly transparent or opaque material.</p>
+<p><strong>Carbon dioxide</strong> can absorb infrared at particular wavelengths through molecular energy transitions. The absorbed energy can be exchanged with surrounding molecules, and atmospheric CO2 can also emit infrared radiation according to its conditions.</p>
+<p>Emission occurs in different directions, including upward and downward. It is misleading to picture every absorbed photon simply bouncing intact straight back to the ground like a mirror reflection. Absorption, molecular interactions and emission form a coupled thermal system.</p>
+<p>Increasing CO2 changes the atmosphere's infrared transfer properties. Under the previous temperature conditions, the outward energy reaching space can be reduced in important wavelength regions. Incoming and outgoing energy are then no longer balanced in the same way.</p>
+<p>The system gains energy until its temperatures and other responses allow a new balance. A warmer surface and atmosphere emit differently, so warming is not a claim that all heat becomes permanently imprisoned. Energy continues to flow through the system.</p>
+<p>One useful extension describes effective emission to space occurring from higher atmospheric regions for some wavelengths when opacity increases. If those regions are colder under the relevant profile, their emission differs. This is a simplified way to connect atmospheric structure with the outward-flux change.</p>
+<p>The <strong>greenhouse effect</strong> differs from the dominant warming mechanism inside an ordinary glass greenhouse, where restricted air exchange can be important. It also differs from stratospheric ozone absorbing ultraviolet. Shared everyday words should not erase the distinct physical processes.</p>
+<p>The lesson gives no current concentration, warming rate or forecast statistic. Its target is the mainstream radiation-balance mechanism. Actual climate responses involve feedbacks, clouds, water, circulation and time, so this diagram is not a complete numerical climate model.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw an energy account with sunlight entering and infrared leaving. Begin with equal total arrows for a balanced model. Add an atmospheric layer that absorbs and emits selected infrared while allowing other routes to continue.</p>
+<p>Increase that layer's relevant opacity without changing the initial temperatures. Show a temporary reduction in outward transfer and mark energy accumulation. Then warm the emitting system in the next panel until the accounting can balance again.</p>
+<p>Keep an open space boundary. Energy is delayed or redistributed in the transfer system, not abolished. The model must contain outgoing arrows in every stage rather than pretending greenhouse gases stop all radiation from ever reaching space.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows incoming sunlight, surface absorption and outgoing infrared interacting with an atmosphere containing CO2. Upward and downward atmospheric-emission arrows are separate from the original incoming solar path.</p>
+<p>A comparison panel starts with fixed sunlight and the previous temperature state, then illustrates the outward-transfer change after added infrared interaction. A later panel identifies adjustment toward a new balance.</p>
+<p>The arrows are qualitative and do not assign real watts per square metre or a current temperature. The caption distinguishes selective absorption from a solid roof, complete blockage and the UV mechanism of ozone protection.</p>
+<figure><img src="../../illustrations/class-10/day_34.svg" alt="Diagram for Why does extra carbon dioxide slow Earth's cooling to space?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Climate explanations in India and elsewhere often use the phrase heat trapping. It can introduce the idea, but the more specific model follows continuous radiation exchange and a changing energy balance.</p>
+<p>An everyday hot room or parked vehicle involves several transfer mechanisms and is not a complete model of the planetary greenhouse effect. Analogies should identify what they explain and where they differ.</p>
+<p>Students do not need to create carbon dioxide, heat sealed containers or expose objects to intense sunlight. A paper energy account isolates the relevant infrared mechanism without a misleading home experiment that changes several conditions at once.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours for solar and infrared energy arrows.</p>
+<ol>
+<li>Draw a balanced incoming-and-outgoing model.</li>
+<li>Add selective atmospheric infrared absorption and emission.</li>
+<li>Increase the relevant interaction while keeping the initial sunlight and temperatures fixed.</li>
+<li>Mark the resulting temporary imbalance.</li>
+<li>Draw a later warmer state with continued energy transfer to space.</li>
+</ol>
+<p>Label the diagram qualitative. Arrow counts are not actual measured energy flows. Ask a partner to check that your model neither creates energy nor removes every outgoing path. Do not interpret the sketch as a numerical climate prediction.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why is no outgoing radiation a poor greenhouse model? Explain how the system can warm while continuing to lose energy to space.</p>
+<p>Now compare a perfectly reflecting mirror with an absorbing and emitting gas. What differs about the direction and physical processing of radiation? This distinction replaces a simplistic photon-bounce story with a more accurate thermal exchange account.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which outgoing radiation is central to the CO2 greenhouse mechanism?</p>
+<ul>
+<li>A. Infrared radiation</li>
+<li>B. Only ultraviolet blocked by ozone</li>
+<li>C. Only sound waves</li>
+</ul>
+<p><strong>Answer:</strong> A — CO2 interacts with particular infrared wavelengths in the outgoing thermal-transfer system.</p>
+<h3>Q2</h3>
+<p>Why can adding CO2 create an initial imbalance?</p>
+<ul>
+<li>A. It creates unlimited energy from nothing</li>
+<li>B. It stops every kind of radiation permanently</li>
+<li>C. It changes outward transfer under the old temperatures</li>
+</ul>
+<p><strong>Answer:</strong> C — Changed infrared interactions can reduce outward transfer before the temperature structure adjusts.</p>
+<h3>Q3</h3>
+<p>A cartoon shows all heat trapped forever under a solid atmospheric roof. What needs correction?</p>
+<ul>
+<li>A. Earth must have no incoming energy</li>
+<li>B. Energy continues to flow and a new balance can develop</li>
+<li>C. CO2 can never emit radiation</li>
+</ul>
+<p><strong>Answer:</strong> B — The atmosphere absorbs and emits selectively rather than acting as a total permanent barrier.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a three-stage energy-balance explanation: initial balance, added infrared interaction at the old temperatures and adjustment toward a new balance. Keep the incoming-sunlight assumption explicit.</p>
+<p>Include two corrections to common cartoons, such as a solid roof and permanently trapped heat. Your conclusion must avoid invented present-day statistics and distinguish CO2 infrared behaviour from ozone's ultraviolet role.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Changing the route out can change a system's temperature even if the route in is initially unchanged. This principle is broader than climate, but its planetary form depends on wavelength-specific radiation and atmospheric structure. The temperature response belongs to the whole energy account, not one isolated molecule producing extra heat.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Additional CO2 alters outgoing infrared transfer, creating an imbalance under the old conditions; warming changes emission toward a new balance while energy continues to escape.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

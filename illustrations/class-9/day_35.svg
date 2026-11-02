@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can a batch code help trace contaminated food?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Fictional record links identify routes, not contamination test results</text>
+<text x="175" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Source lots</text>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Finished batches</text>
+<text x="830" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Destinations</text>
+<rect x="110" y="188" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="110" y="293" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="435" y="188" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="435" y="293" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="765" y="163" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="765" y="248" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="765" y="333" width="130" height="44" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="245" y1="210" x2="430" y2="210" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="245" y1="315" x2="430" y2="315" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="245" y1="210" x2="430" y2="315" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="570" y1="210" x2="760" y2="185" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="570" y1="210" x2="760" y2="270" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="570" y1="315" x2="760" y2="270" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="570" y1="315" x2="760" y2="355" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="175" y="172" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Lot X1</text>
+<text x="175" y="280" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Lot X2</text>
+<text x="500" y="172" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Batch A</text>
+<text x="500" y="280" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Batch B</text>
+<text x="830" y="230" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Shop 1</text>
+<text x="830" y="315" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Shop 2</text>
+<text x="830" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Shop 3</text>
+<text x="500" y="422" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Shared input can connect more than one finished batch.</text>
+<text x="500" y="462" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">A missing arrow remains unknown; do not invent a tidy route.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Trace backward to inputs and forward to destinations using reliable records.</text>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 50: How can random quadrats make a weed survey less biased? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 50</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can random quadrats make a weed survey less biased?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Estimate a plant population from <strong>random quadrat sampling</strong>. Distinguish a sample from a census, calculate density from known areas and explain selection bias. Keep uncertainty visible when plants are clustered rather than assuming a few convenient green patches represent the whole site.</p>
+</div><h2>1. The mystery</h2>
+<p>A field is too large to count every small plant. One student places a square frame over the densest patch and multiplies that count across the field. The arithmetic is neat, but the chosen patch is not a fair representation of the whole area.</p>
+<p>A sampling method must decide where to look before seeing which locations support the desired answer. Random placement can reduce a particular selection bias, while known frame area connects counts to density.</p>
+<p>The useful result is an estimate with conditions, not a disguised claim that every individual was counted.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>quadrat</strong> is a defined sampling area, often represented by a square frame. Its size must be known if counts are to be converted into number per unit area. A quadrat is not automatically one square metre simply because it is square.</p>
+<p><strong>Random sampling</strong> selects locations through an appropriate chance procedure rather than personal preference for dense, sparse or convenient patches. Within the defined sampling region, this helps avoid deliberately choosing the result.</p>
+<p>A site map can use coordinates. Randomly selected coordinate pairs identify quadrat positions, with a clear rule for how the frame aligns to each point. The method should also define what happens at boundaries or inaccessible areas without quietly replacing inconvenient samples.</p>
+<p>A <strong>boundary rule</strong> prevents inconsistent counting. For example, include plants whose base lies on specified edges and exclude those on the opposite edges. The exact convention should be stated and applied consistently.</p>
+<p>Calculate mean count per quadrat, then divide by quadrat area to estimate density. Multiply by the total target area for a population estimate if the sampling assumptions support that step.</p>
+<p>For invented counts of two, four and six plants in equal one-square-metre quadrats, the mean density is four plants per square metre. Over a hypothetical ten-square-metre target area, the estimate is 40 plants. It is not an actual census or field observation.</p>
+<p><strong>Clustering</strong> can make counts vary substantially. More suitable samples and a good design can improve the estimate, but no small set guarantees an exact total. Record the individual counts and the spatial context instead of reporting only one confident-looking multiplied number.</p>
+<p>Random placement also differs from measuring one leaf with a grid. Leaf-area estimation partitions one object's outline; quadrat sampling uses selected locations to infer properties of a larger population. Both need known area, but their targets and uncertainty sources differ.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a field map with plant dots, including a cluster and sparse regions. Overlay a coordinate grid. Select locations by an unbiased paper draw without moving them to more interesting places after inspection.</p>
+<p>Place identical quadrat outlines at the chosen coordinates and record each count. Keep the sampled areas separate from the unobserved remainder. The estimate uses the sample to describe that remainder under assumptions.</p>
+<p>Now compare a deliberately dense-patch sample. Its larger multiplied total can result from selection bias, not from superior arithmetic. This comparison shows why measurement design belongs before calculation in a trustworthy survey.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a dotted field map, coordinate grid and several selected quadrats. A side table contains the invented counts two, four and six for the arithmetic example.</p>
+<p>A highlighted dense patch demonstrates the danger of choosing locations by appearance. The estimated 40 plants is labelled hypothetical and distinct from the actual dots drawn in the illustrative map.</p>
+<p>The diagram includes a boundary-counting note. It does not claim that three quadrats suffice for every real population or that random placement alone removes identification mistakes and every other survey limitation.</p>
+<figure><img src="../../illustrations/class-9/day_50.svg" alt="Diagram for How can random quadrats make a weed survey less biased?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Agricultural and ecological surveys can use sampling when a full count is impractical. The appropriate design depends on the organisms, area and decision. A small classroom frame is an introduction, not a universal field protocol.</p>
+<p>A school garden map can be surveyed on paper or from approved existing observations. Students should not enter crops, disturb protected vegetation or handle unknown plants to fill a table.</p>
+<p>Calling a plant a weed depends on the management context. Identification and counting rules need clarity before the survey, otherwise different observers may count different categories while using the same frame size.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use squared paper, a pencil and a paper draw of coordinate numbers.</p>
+<ol>
+<li>Draw a rectangular field with unevenly distributed plant dots.</li>
+<li>Define one quadrat size and a boundary rule.</li>
+<li>Select several positions before counting them.</li>
+<li>Record each count and calculate the mean.</li>
+<li>Compare with a sample chosen deliberately from the densest patch.</li>
+</ol>
+<p>The map and counts are invented. You can count all dots afterwards to compare the estimate with the known paper total, but label that as a model check. It does not establish the error expected in every real survey.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why might strongly clustered plants require more careful sampling than an almost uniform paper pattern? Consider how much counts can differ between locations.</p>
+<p>Now imagine replacing every inconvenient empty quadrat with a greener nearby patch. What happened to the method even if the final sample size stayed unchanged? Explain why random selection must be preserved through the actual counting procedure.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What must be known to convert a quadrat count into density?</p>
+<ul>
+<li>A. Only the frame colour</li>
+<li>B. The observer preferred answer</li>
+<li>C. The quadrat area</li>
+</ul>
+<p><strong>Answer:</strong> C — Density relates count to a known sampled area.</p>
+<h3>Q2</h3>
+<p>Why choose positions randomly before counting?</p>
+<ul>
+<li>A. To reduce selection based on visible abundance</li>
+<li>B. To make species identification unnecessary</li>
+<li>C. To guarantee every quadrat contains plants</li>
+</ul>
+<p><strong>Answer:</strong> A — An unbiased location rule helps avoid choosing only dense or convenient patches.</p>
+<h3>Q3</h3>
+<p>Invented counts 2, 4 and 6 come from 1 m² quadrats. What is mean density?</p>
+<ul>
+<li>A. 3 plants per m²</li>
+<li>B. 4 plants per m²</li>
+<li>C. 12 plants per m²</li>
+</ul>
+<p><strong>Answer:</strong> B — The mean count is 12 divided by 3, or 4 in each one-square-metre sampling area.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a survey protocol with target definition, area, quadrat size, selection procedure, boundary rule and recording table. Include an estimate calculation using the invented example or your paper map.</p>
+<p>State one source of uncertainty and distinguish the estimate from a census. Your protocol should remain usable when some randomly selected quadrats are empty, rather than treating zero counts as failed observations to replace.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A zero count can be valuable data. Removing empty samples because they look uninteresting changes the population picture and can bias the estimate upward. Random sampling gains value when the procedure respects both occupied and unoccupied locations rather than searching only for visible evidence of plants.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Random quadrats estimate population density from known areas while reducing location-selection bias; keep zero counts, individual results and uncertainty visible.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 20 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can several cells supply a different voltage when</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">rearranged?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Two fictional ideal cells, each 2 V and 3 Ah; paper comparison only</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Aiding series</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Matched parallel</text>
+<rect x="132" y="220" width="56" height="55" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="312" y="220" width="56" height="55" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="80" y1="248" x2="132" y2="248" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="188" y1="248" x2="312" y2="248" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="368" y1="248" x2="430" y2="248" stroke="#1f5f8b" stroke-width="2"/>
+<text x="121" y="208" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">−</text>
+<text x="199" y="208" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">+</text>
+<text x="301" y="208" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">−</text>
+<text x="379" y="208" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">+</text>
+<text x="80" y="297" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">− output</text>
+<text x="430" y="297" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">+ output</text>
+<rect x="722" y="205" width="56" height="35" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="650" y1="223" x2="722" y2="223" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="778" y1="223" x2="850" y2="223" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="722" y="305" width="56" height="35" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="650" y1="323" x2="722" y2="323" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="778" y1="323" x2="850" y2="323" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="650" y1="223" x2="650" y2="323" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="850" y1="223" x2="850" y2="323" stroke="#1f5f8b" stroke-width="2"/>
+<text x="700" y="195" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">−</text>
+<text x="800" y="195" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">+</text>
+<text x="700" y="295" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">−</text>
+<text x="800" y="295" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">+</text>
+<text x="650" y="355" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">− output</text>
+<text x="850" y="355" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">+ output</text>
+<text x="250" y="406" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#1f5f8b">4 V; 3 Ah → 12 Wh</text>
+<text x="750" y="406" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#1f5f8b">2 V; 6 Ah → 12 Wh</text>
+<text x="500" y="460" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">V and Ah describe different quantities; equal Wh does not ensure device suitability.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Never rearrange real cell packs from this diagram; compatibility and protection matter.</text>
+</svg>

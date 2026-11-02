@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 34: Why do we see different Moon phases during a month? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 34</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do we see different Moon phases during a month?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain Moon phases using illumination and the direction from which we view the Moon. Distinguish the <strong>illuminated half</strong> from the visible fraction of that half. Correct the misconception that Earth's shadow produces the ordinary monthly phase cycle.</p>
+</div><h2>1. The mystery</h2>
+<p>The Moon can look like a thin crescent, a half-disc or a nearly complete circle. Its solid body has not been sliced into a different shape each night. The Sun continues to illuminate roughly half of it, but the illuminated portion visible from Earth changes.</p>
+<p>Why does a half-lit sphere not always look half-bright to an observer? Imagine walking around a ball lit from one side. The amount of its bright region facing you changes even if the lamp's direction stays fixed.</p>
+<p>Moon phases are a viewing-geometry problem, not a new explanation of the force keeping the Moon in orbit.</p>
+<h2>2. The science behind it</h2>
+<p>The Moon does not shine by generating visible light like the Sun. We mainly see sunlight <strong>reflected</strong> from its surface. At ordinary phase positions, approximately one hemisphere is illuminated while the other is not directly sunlit.</p>
+<p>The <strong>phase</strong> describes how much of the Moon's apparent disc is illuminated as viewed from Earth. It depends on the relative positions of the Sun, Earth and Moon. The entire physical Moon remains present, including parts of the night side that may be faint or difficult to see.</p>
+<p>Near <strong>new Moon</strong>, the Moon lies in roughly the Sun's direction as viewed from Earth. Most of the illuminated hemisphere faces away from us, so the disc is difficult to see against the sky. This does not mean the Sun has stopped shining on the Moon.</p>
+<p>At a <strong>quarter phase</strong>, the Sun-Earth-Moon viewing geometry gives us about half of the apparent disc illuminated. The name quarter refers to progress through the cycle, not a claim that only one-quarter of the visible disc is bright.</p>
+<p>Near <strong>full Moon</strong>, the Moon is opposite the Sun in our sky. We see most of the illuminated hemisphere. Between these positions, crescent and gibbous appearances represent intermediate visible fractions.</p>
+<p><strong>Waxing</strong> means the illuminated fraction visible from Earth is increasing; <strong>waning</strong> means it is decreasing. A phase cycle from one new Moon to the next takes about 29.5 days. This approximate interval describes the illumination cycle rather than every possible astronomical period associated with the Moon.</p>
+<p>Earth's shadow is responsible for a <strong>lunar eclipse</strong>, which is a different event. Ordinary phases are not caused by Earth's shadow gradually covering the Moon. The Moon's tilted path means exact eclipse alignments do not happen at every new or full Moon.</p>
+<p>Observers can see the same phase with different apparent orientations depending on location and viewing direction. A crescent's tilt is therefore not a complete phase definition. The geometry of the illuminated fraction is more reliable than a universal rule that its bright edge must look exactly the same in every photograph.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a lamp at one side of a page and a ball at several positions around a central observer. Shade the side of each ball facing away from the lamp. That shading represents the unilluminated hemisphere, not Earth's shadow.</p>
+<p>From the observer, draw a viewing line to each ball. Ask how much of the bright hemisphere is facing along that line. At some positions the observer sees little bright surface, at others half, and at others most of it.</p>
+<p>Keep two drawings separate: the space-view geometry and the disc appearance from Earth. Confusing those perspectives is a common source of errors. A top-down half-lit ball is not automatically the same picture as the Moon's apparent disc.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows sunlight arriving from one direction, Earth at the centre and four Moon positions. Each Moon has its Sun-facing side illuminated. Separate small discs below show the approximate appearance from Earth at selected positions.</p>
+<p>Labels distinguish new, quarter and full phases. A caption states that ordinary phases do not require Earth's shadow crossing the Moon. The diagram is not to scale, and the spacing has been adjusted so labels remain readable.</p>
+<p>The illustration addresses geometry only. It does not repeat gravity, orbital stability or the explanation of why the same side of the Moon usually faces Earth.</p>
+<figure><img src="../../illustrations/class-8/day_34.svg" alt="Diagram for Why do we see different Moon phases during a month?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Lunar calendars and festivals in India make the changing Moon familiar. The scientific phase cycle provides a physical reference, while the detailed calendar rules can depend on tradition and observation. This lesson explains the sky geometry rather than predicting a festival date.</p>
+<p>A photograph of a crescent from a different location may look tilted compared with one taken near home. The difference does not mean that the Moon has reversed its phase sequence. Orientation and illuminated fraction are separate observations.</p>
+<p>Never look directly at the Sun to align a model, and do not use binoculars near the Sun. A classroom diagram or safe lamp-and-ball arrangement can explain the geometry without direct solar viewing.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two colours. A physical lamp is optional and must not be hot or require rearranging wall-socket connections.</p>
+<ol>
+<li>Draw sunlight travelling from the left.</li>
+<li>Put Earth at the centre and four small Moon circles around it.</li>
+<li>Colour the left-facing half of each Moon as illuminated.</li>
+<li>Draw the viewing direction from Earth to each.</li>
+<li>Sketch what fraction of the lit side faces the observer.</li>
+</ol>
+<p>Check that your ordinary-phase explanation never sends an Earth-shadow band across the Moon. The drawing should compare perspectives, not imply that Earth and the Moon are close enough for their circles to match their actual size and spacing.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does the phrase quarter Moon show a half-bright disc? Explain which cycle quantity the name refers to and which visible quantity the picture shows.</p>
+<p>Now consider a lunar eclipse near full Moon. Distinguish the ordinary reason the Moon looks full from the additional alignment that allows Earth's shadow to reach it. Treat the eclipse as an extra event, not the cause of the entire phase sequence.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What causes the ordinary Moon phase sequence?</p>
+<ul>
+<li>A. Changing views of its sunlit hemisphere</li>
+<li>B. Pieces of the Moon breaking away</li>
+<li>C. Earth covering it with shadow each night</li>
+</ul>
+<p><strong>Answer:</strong> A — The Sun-Earth-Moon geometry changes the illuminated fraction visible from Earth.</p>
+<h3>Q2</h3>
+<p>Why does a quarter Moon look about half bright?</p>
+<ul>
+<li>A. Only a quarter of the physical Moon exists</li>
+<li>B. The Moon has stopped reflecting sunlight</li>
+<li>C. Quarter names progress through the cycle</li>
+</ul>
+<p><strong>Answer:</strong> C — The cycle name and the visible bright fraction describe different quantities.</p>
+<h3>Q3</h3>
+<p>Earth shadow crosses the Moon near full phase. What extra event is occurring?</p>
+<ul>
+<li>A. The normal cause of every crescent</li>
+<li>B. A lunar eclipse</li>
+<li>C. A new Moon with no sunlight anywhere</li>
+</ul>
+<p><strong>Answer:</strong> B — A lunar eclipse occurs when the alignment lets Earth shadow fall on the Moon.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Prepare a two-view explanation of three phases. For each, show a space-view ball illuminated from the same direction and a separate observer-view disc. Label the viewpoint clearly.</p>
+<p>Use your drawing to correct the claim that Earth's shadow causes every crescent. Include one sentence stating what Earth's shadow does cause, without introducing orbital forces or attempting to forecast a particular eclipse date.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The Moon can be half illuminated while looking almost dark or almost full from Earth. The apparent contradiction disappears when illumination and viewing direction are treated as separate parts of the model. One statement concerns the whole sphere; the other concerns the hemisphere facing the observer.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Moon phases show changing views of the sunlit hemisphere; Earth's shadow causes lunar eclipses, not the ordinary monthly phase sequence.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

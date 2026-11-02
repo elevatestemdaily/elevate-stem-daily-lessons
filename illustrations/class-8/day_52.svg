@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why can equal masses of different fuels release different</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">amounts of heat?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">All numerical values here are invented teaching data</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Fuel A: 10 grams</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Fuel B: 10 grams</text>
+<rect x="95" y="185" width="200" height="55" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="580" y="185" width="300" height="55" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<text x="250" y="285" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">20 kJ/g → 200 kJ total</text>
+<text x="750" y="285" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">30 kJ/g → 300 kJ total</text>
+<line x1="250" y1="315" x2="180" y2="365" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="250" y1="315" x2="350" y2="365" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="750" y1="315" x2="680" y2="365" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="750" y1="315" x2="850" y2="365" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="190" y="410" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Useful route</text>
+<text x="375" y="410" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Other routes</text>
+<text x="675" y="410" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Useful route</text>
+<text x="870" y="410" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Other routes</text>
+<text x="500" y="458" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Arrow sizes below are qualitative, not claimed real efficiencies.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Energy per mass, total energy, temperature and useful heat are different.</text>
+</svg>

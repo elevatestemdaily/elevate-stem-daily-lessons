@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Ultimate Challenge: Can you design a fair-test soil</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">investigation kit?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Design the method, records and limits together with the equipment</text>
+<text x="245" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Matched sample A</text>
+<text x="755" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Matched sample B</text>
+<path d="M145 180 L165 270 L325 270 L345 180" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="245" y1="155" x2="245" y2="175" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="245" y1="285" x2="245" y2="315" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M155 310 L175 365 L315 365 L335 310" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M655 180 L675 270 L835 270 L855 180" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="755" y1="155" x2="755" y2="175" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="755" y1="285" x2="755" y2="315" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M665 310 L685 365 L825 365 L845 310" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="500" cy="235" r="35" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="500" y1="235" x2="500" y2="210" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="500" y1="235" x2="520" y2="245" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="311" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Same input and timing rule</text>
+<text x="245" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Match depth, holders and preparation</text>
+<text x="755" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Record volume, repeat and notes</text>
+<rect x="90" y="425" width="820" height="48" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="300" y1="425" x2="300" y2="473" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="500" y1="425" x2="500" y2="473" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="700" y1="425" x2="700" y2="473" stroke="#1f5f8b" stroke-width="2"/>
+<text x="195" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Sample ID</text>
+<text x="400" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Repeat</text>
+<text x="600" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Volume + units</text>
+<text x="805" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Unusual events</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Fair comparison → readable evidence → a conclusion within its limits.</text>
+</svg>

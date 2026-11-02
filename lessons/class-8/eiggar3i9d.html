@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 45: Why can a thin stream of water bend near a rubbed comb? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 45</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can a thin stream of water bend near a rubbed comb?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a charged comb can attract a thin stream of electrically neutral water. Distinguish <strong>net charge</strong> from a <strong>polar molecule</strong> and use unequal forces in a non-uniform electric field. Avoid claiming that water must acquire the comb's charge or contain a magnet to bend.</p>
+</div><h2>1. The mystery</h2>
+<p>A dry plastic comb is rubbed with a suitable cloth and brought near a thin stream of water without touching it. The stream may bend toward the comb. Before the comb approaches, the water need not carry a large net electrical charge.</p>
+<p>How can neutral material respond to an electric influence? Neutral does not mean every part of a molecule has exactly the same charge distribution. Water's uneven internal distribution and its response to a nearby field help explain the attraction.</p>
+<p>The observation can be weak in humid conditions or with unsuitable materials, so a failed trial needs careful interpretation.</p>
+<h2>2. The science behind it</h2>
+<p>Rubbing some material pairs transfers <strong>electrons</strong> between their surfaces. One object can gain a net negative charge while the other loses electrons and becomes relatively positive. The direction and amount depend on the materials and conditions.</p>
+<p>A charged comb creates an <strong>electric field</strong> around it. This field can exert forces on charges within nearby matter even without direct contact. The field strength varies with location, becoming different across the region near the comb.</p>
+<p>A water molecule has a <strong>polar</strong> charge distribution: one region is relatively negative and another relatively positive, even though the whole molecule is electrically neutral. This molecular polarity does not mean water consists of separate visible positive and negative drops.</p>
+<p>In an electric field, these molecular dipoles tend to orient. The side attracted toward the comb is favoured nearer it, while the other side is slightly farther away. The detailed motion includes thermal disorder, so the drawing of perfectly aligned molecules is an idealisation.</p>
+<p>Because the field is <strong>non-uniform</strong>, the nearer and farther parts do not experience equal force magnitudes. The resulting effect can produce a net attraction toward the stronger-field region near the comb. This helps pull the stream sideways.</p>
+<p>The model can work with either sign of comb charge. The orientation of the water's dipoles changes accordingly, so the net response does not require memorising that a comb must always have one particular sign.</p>
+<p>The stream's motion also depends on its flow rate, width and distance from the comb. A strong thick stream may show less visible deflection than a thin one. Humidity and wet surfaces can allow charge to leak away, reducing the effect.</p>
+<p>This is not a magnetic-compass effect, a circuit supplying current or a lightning discharge. The lesson focuses on polarisation and attraction of neutral material in a changing electric field. No spark or contact between the comb and water is needed for the intended demonstration.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw water molecules as paired positive and negative regions with zero overall charge. Place a charged comb beside them and show the dipoles tending to orient toward its field.</p>
+<p>Make the near-side force arrow slightly larger than the opposing far-side arrow. Label this difference as a result of the field varying with position. If the two arrows were exactly equal and opposite on a perfectly oriented pair in a uniform field, the simple net-translation explanation would fail.</p>
+<p>Reverse the comb's sign in a second drawing and reverse the dipole orientation. Keep the attraction toward the comb. This checks that the model explains a mechanism rather than relying on one memorised colour arrangement.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a charged comb beside a thin water stream. A magnified inset contains neutral polar molecules tending to align in the comb's non-uniform field. Force arrows distinguish the near and far sides.</p>
+<p>The overall stream curves toward the comb without touching it. Labels identify net comb charge, molecular polarity and the stronger nearby field region. The plus and minus symbols are conceptual markers, not visible features of real water.</p>
+<p>The diagram does not imply that every molecule aligns perfectly or that all the water gains the same net charge as the comb. It illustrates an attraction mechanism under suitable conditions.</p>
+<figure><img src="../../illustrations/class-8/day_45.svg" alt="Diagram for Why can a thin stream of water bend near a rubbed comb?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Static effects can be easier to notice with dry materials and less humid air. On a damp monsoon day, charge may leak away more readily, so a classroom result can differ from a dry-weather example without invalidating the general mechanism.</p>
+<p>The comb-water demonstration helps distinguish electrical effects on neutral materials from the idea that only already charged objects can respond. It is one illustration of how internal charge distribution matters.</p>
+<p>This activity uses no battery, wall outlet or electrical appliance. A comb should never be used to investigate wires, sockets or powered equipment. The small static-charge demonstration is entirely separate from household electrical systems.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a dry plastic comb, a dry cloth and a very thin stream of tap water with adult permission. Keep all electrical appliances away and avoid wasting water. A paper model is an alternative.</p>
+<ol>
+<li>Rub the comb with the cloth for a short time.</li>
+<li>Bring it near the thin stream without touching the water.</li>
+<li>Look for sideways deflection.</li>
+<li>Move it farther away and compare the observation.</li>
+<li>Dry it before another attempt if water touches it.</li>
+</ol>
+<p>Do not expect a universal distance or deflection angle. Record the materials and conditions. A weak result may reflect charge leakage, unsuitable materials or stream conditions; do not invent a positive observation simply because the textbook picture shows one.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does neutral not mean unaffected by every electric field? Use the distinction between total charge and internal distribution in your answer.</p>
+<p>Now reverse the comb's sign in the model. Explain how molecular orientation can change while the overall attraction remains toward the stronger-field region. This tests the explanation more strongly than repeating a single diagram with fixed plus and minus labels.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a polar water molecule have?</p>
+<ul>
+<li>A. Only positive charge everywhere</li>
+<li>B. An uneven charge distribution with zero net charge</li>
+<li>C. A hidden permanent bar magnet</li>
+</ul>
+<p><strong>Answer:</strong> B — The molecule has relatively positive and negative regions while remaining neutral overall.</p>
+<h3>Q2</h3>
+<p>Why can the comb produce a net attraction on the stream?</p>
+<ul>
+<li>A. Rubbing turns all water into metal</li>
+<li>B. Every local force must be identical</li>
+<li>C. Its non-uniform field gives unequal forces</li>
+</ul>
+<p><strong>Answer:</strong> C — Near and far regions can experience different force magnitudes in the varying field.</p>
+<h3>Q3</h3>
+<p>The effect is weak on a humid day. What is a plausible explanation?</p>
+<ul>
+<li>A. Charge may leak away more readily</li>
+<li>B. Electric fields cannot exist near any air</li>
+<li>C. Water must have lost all its molecules</li>
+</ul>
+<p><strong>Answer:</strong> A — Humidity and wet surfaces can reduce the stored static charge and weaken the effect.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a three-stage explanation showing electron transfer during rubbing, the field around the comb and the response of neutral polar water. Keep each stage distinct.</p>
+<p>Add one labelled limitation for the real activity, such as humidity or stream thickness. Your explanation must not use a hidden magnet, a circuit current through the stream or the claim that rubbing creates electric charge from nothing.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A material can have zero total charge and still contain a charge distribution that responds strongly to its surroundings. Summing the whole molecule is not the same as describing every region within it. This is why neutral matter can participate in electrical interactions without first becoming a visibly charged object.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A charged comb can orient polar water molecules; unequal forces in its non-uniform field can attract the neutral stream toward it.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 15 of 30</footer>
+</div>
+</body>
+</html>

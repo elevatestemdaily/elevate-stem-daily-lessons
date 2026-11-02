@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 36: Why does a suspension settle while a colloid often stays dispersed? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 36</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a suspension settle while a colloid often stays dispersed?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Classify a dispersion using particle behaviour over a stated observation period. Distinguish <strong>solution</strong>, <strong>suspension</strong> and <strong>colloid</strong> without treating every cloudy sample as identical. Explain why absence of visible settling is useful evidence but not a universal proof of purity or permanent stability.</p>
+</div><h2>1. The mystery</h2>
+<p>A coarse solid mixed into water may settle after standing. A diluted milk sample can remain visibly dispersed over the same short period. Both may look cloudy, yet their components behave differently.</p>
+<p>The contrast is not explained simply by saying one contains particles and the other does not. Both contain dispersed material, but particle scale, interactions and the surrounding fluid affect what happens.</p>
+<p>Classification asks for several observations under known conditions. A sample's first colour or clarity cannot carry the whole explanation.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>dispersion</strong> contains material distributed within another medium. Its behaviour depends on the dispersed particles or droplets and the continuous material around them. A visible cloudiness can arise in more than one kind of system.</p>
+<p>A <strong>solution</strong> contains solute dispersed at a molecular or ionic scale under the relevant conditions. The components do not normally separate by simple standing as visible grains. A clear appearance can be consistent with a solution but does not establish that the sample contains only one substance.</p>
+<p>A <strong>suspension</strong> has dispersed particles large enough that settling and other particle-scale behaviours can become evident over a practical observation period. After standing, a layer may form at the bottom while the upper liquid changes appearance.</p>
+<p>A <strong>colloid</strong> has an intermediate dispersed scale and can remain distributed over periods when a comparable coarse suspension separates visibly. Milk is a complex colloidal system containing dispersed structures, including droplets, rather than one simple pure liquid.</p>
+<p>Settling behaviour is influenced by particle size, density difference, shape and the fluid. It is therefore misleading to make density alone the explanation. Very small dispersed structures do not necessarily settle visibly on the same timescale as larger particles of similar material.</p>
+<p>Colloidal stability also depends on interactions that can help prevent particles or droplets from joining. Conditions can change that stability. Some colloids aggregate, separate or cream over time, so the word colloid does not mean guaranteed uniformity forever.</p>
+<p>Ordinary filter paper or a kitchen mesh may retain a coarse suspension while allowing much finer dispersed material through. That observation can help a comparison, but filter performance depends on its openings and the sample. One unchanged filtrate is not a full chemical identification.</p>
+<p>The lesson deliberately avoids making sky-colour scattering or diffusion the central explanation, since those were covered earlier. The target is classification through multiple properties and timescales. We use settling as evidence, not as a universal mechanism repeated for every treatment device.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw three labelled boxes with different representational scales. Use molecular symbols for a solution, small clustered structures for a colloid and larger separate grains for a suspension. State that the drawing exaggerates all sizes.</p>
+<p>Add a clock symbol and a second view after a defined interval. Let the suspension show a sediment layer while the colloid remains dispersed in the example. Keep the word example visible so the model does not become a promise of permanent stability.</p>
+<p>Finally add a conditions arrow that makes some colloidal structures join. This challenges the mistaken rule that a classification name prevents all future change.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares a solution, colloidal dispersion and coarse suspension using separate containers. A second suspension view shows possible sediment after standing. The colloid panel is labelled as stable over the illustrated interval, not forever.</p>
+<p>A scale note distinguishes molecular dispersion from larger structures without assigning rigid numerical boundaries. Such boundaries can depend on the system and convention, so the diagram teaches relative categories rather than unsupported exact cutoffs.</p>
+<p>The graphic does not identify the sample's safety or use cloudiness as a purity certificate. It shows which observations would support a classification under stated conditions.</p>
+<figure><img src="../../illustrations/class-9/day_36.svg" alt="Diagram for Why does a suspension settle while a colloid often stays dispersed?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Paints, foods and some medicines can contain dispersed structures, but their actual formulations differ. A familiar product name should not be used to infer one universal settling time or treatment method.</p>
+<p>In an Indian school laboratory, comparing fresh simple samples can help students see why a coarse suspension and a colloid deserve different descriptions. The record should include how the sample was prepared and how long it stood.</p>
+<p>A water sample that remains cloudy or becomes clear is not thereby certified safe. Classification describes physical arrangement and behaviour, while biological and chemical safety require different evidence and appropriate testing.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>With adult permission, use clean small containers, room-temperature water, a little kitchen flour and a small fresh milk dilution. Do not taste experimental mixtures or store them for later eating.</p>
+<ol>
+<li>Prepare a small flour-water mixture and a separate milk dilution.</li>
+<li>Label the ingredients and starting time.</li>
+<li>Observe whether a visible layer develops during the available interval.</li>
+<li>Sketch the actual appearance without forcing the predicted result.</li>
+<li>Record that five minutes may be insufficient for a firm classification.</li>
+</ol>
+<p>Flour itself is a mixed material and can create several dispersed structures. Treat it as a practical comparison, not a chemically pure reference. A paper-only version using the supplied diagram is equally suitable.</p>
+</div><h2>7. Think deeper</h2>
+<p>A sample shows no visible sediment after five minutes. What possible explanations remain? Consider a stable fine dispersion, slow settling or an insufficient observation interval.</p>
+<p>Now imagine adding a condition that makes colloidal particles aggregate. Why could settling become more evident afterwards? The classification and behaviour depend on the current particle arrangement, not only the name initially written on the container.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which description fits a colloid in the lesson model?</p>
+<ul>
+<li>A. Only one pure substance by definition</li>
+<li>B. An intermediate-scale dispersion</li>
+<li>C. A mixture guaranteed stable forever</li>
+</ul>
+<p><strong>Answer:</strong> B — A colloid contains fine dispersed structures with behaviour distinct from a coarse suspension.</p>
+<h3>Q2</h3>
+<p>Why should the observation interval be recorded?</p>
+<ul>
+<li>A. No visible settling is a time-limited observation</li>
+<li>B. Particle behaviour never depends on time</li>
+<li>C. Every mixture must settle in one second</li>
+</ul>
+<p><strong>Answer:</strong> A — The evidence supports behaviour over the interval actually observed.</p>
+<h3>Q3</h3>
+<p>Fine particles aggregate into larger clusters. What may become more evident?</p>
+<ul>
+<li>A. A guaranteed new chemical element</li>
+<li>B. The complete absence of all material</li>
+<li>C. Settling or separation</li>
+</ul>
+<p><strong>Answer:</strong> C — Larger structures can behave differently and separate more visibly under suitable conditions.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create an observation table with ingredients, initial appearance, standing time, layer formation and filtration notes if available. Separate direct observations from the proposed class.</p>
+<p>Add one statement explaining why neither clear nor cloudy automatically means pure. Your report should be useful even when no settling is visible within the short activity, and it must not treat a kitchen demonstration as a drinking-water safety test.</p>
+</div><h2>10. One surprising idea</h2>
+<p>No visible change is still an observation, but it is not an unlimited conclusion. A sample stable for a few minutes has demonstrated behaviour over that interval, not for all future time. Linking the claim to the observation period makes a simple classroom comparison much more scientifically useful.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Solutions, colloids and suspensions differ in dispersed scale and behaviour; classification needs stated conditions and time, not appearance or one settling observation alone.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 6 of 30</footer>
+</div>
+</body>
+</html>

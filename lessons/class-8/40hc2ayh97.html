@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 38: How does a seed drill place seeds at a steady depth? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 38</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a seed drill place seeds at a steady depth?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Trace seeds through a simple seed-drill system. Identify the <strong>hopper</strong>, metering mechanism, furrow opener and depth-control arrangement. Explain why uniform seed spacing and depth require coordinated design rather than merely pulling a box of seeds across a field.</p>
+</div><h2>1. The mystery</h2>
+<p>A farmer moves a sowing implement along a row, and seeds are delivered into the soil at a fairly regular depth. The seeds begin together in a hopper, yet they do not all fall into one heap at the first opening.</p>
+<p>Something must regulate their release, guide them to a prepared location and control the relationship between the machine and the soil surface. These jobs belong to different parts of the device.</p>
+<p>Understanding their sequence makes the drill easier to explain than memorising a picture of a tractor with several pipes hanging behind it.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>seed drill</strong> places seeds in prepared rows using a coordinated set of components. Designs vary, so the lesson follows a simple mechanical model rather than claiming that every modern drill has identical parts or control systems.</p>
+<p>The <strong>hopper</strong> stores the seed supply. A <strong>metering mechanism</strong> controls the rate at which seeds leave it. Depending on the design, rotating parts, grooves, cells or other arrangements release seed in a regulated way.</p>
+<p>Some drills coordinate metering with a ground wheel. As the implement travels, the wheel turns and helps link seed release to distance moved. Other machines use different drive and control methods. The general requirement is to match delivery to the intended sowing pattern.</p>
+<p>A <strong>furrow opener</strong> makes a groove in the soil. A tube or channel guides released seeds toward that groove. The seed should arrive where the opener has prepared a suitable path, not bounce into an unrelated part of the row.</p>
+<p><strong>Depth control</strong> keeps the placement system at a suitable position relative to the soil surface. Wheels, skids or other support arrangements can contribute. Consistent machine position matters because a fixed tube length alone does not guarantee constant seed depth on uneven ground.</p>
+<p>A covering or closing component returns soil over the seed or firms the surrounding region, depending on the design. This helps establish the intended contact and cover. Too much compaction or inappropriate depth can still interfere with emergence.</p>
+<p>Uniform depth is useful because seeds then encounter more comparable moisture, cover and emergence distance. However, the correct depth is crop- and condition-specific. No single setting suits every seed size, soil or field moisture condition.</p>
+<p>The mechanism must also cope with practical faults. A blocked tube can leave gaps, an unsuitable metering setting can create clumps, and slipping or bouncing support wheels can disturb delivery. Inspecting the hopper's fullness alone does not confirm that the seed reaches the intended position.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a flow chain: storage, controlled release, guided travel, groove placement and covering. Put each named component under the job it performs. This separates material movement from the machine's physical support.</p>
+<p>Add a second chain showing distance travelled linked to the metering drive. If the machine moves faster, the delivery arrangement must still maintain the intended rate per distance, within its operating capabilities.</p>
+<p>Now introduce a blocked tube in the drawing. Seeds may still leave the meter, yet the row receives an uneven supply. The fault model shows why checking only one component can miss a failure farther along the path.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a hopper above a metering wheel, a seed tube behind a furrow opener and a ground-support wheel controlling placement height. A closing element follows the seed path.</p>
+<p>Arrows trace both seed movement and the coordination between travel and release. The picture uses an enlarged open section so hidden components remain visible. It is not a manufacturing drawing or a specification for constructing a real implement.</p>
+<p>A comparison shows two seeds placed at different depths when the support position varies. The diagram links depth control to field contact rather than suggesting that every seed simply falls the same distance through open air.</p>
+<figure><img src="../../illustrations/class-8/day_38.svg" alt="Diagram for How does a seed drill place seeds at a steady depth?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Seed drills are used in Indian agriculture for various crops and field conditions. Their settings and designs reflect the intended seed and sowing method. A picture of one implement should not be treated as a complete description of every machine called a drill.</p>
+<p>Small manual sowing aids perform some of the same jobs on a different scale. They still need to control seed release and placement. The common engineering idea is coordination, not the size of the tractor or the presence of a particular brand.</p>
+<p>Students must not approach working farm machinery for this lesson. A paper mechanism sequence provides the relevant understanding without moving parts, sharp openers or operating equipment.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a small dry cup of beans as tokens if permitted. Keep small objects away from young children and do not eat handled tokens.</p>
+<ol>
+<li>Draw a hopper, release point, tube and prepared groove on paper.</li>
+<li>Move one token through the sequence at a time.</li>
+<li>Mark equal travel intervals beside the row.</li>
+<li>Try matching release events to those intervals.</li>
+<li>Block the drawn tube with a paper scrap and explain the resulting row gap.</li>
+</ol>
+<p>The activity models coordination, not actual sowing performance. A hand-moved token does not reproduce seed damage, wheel slip or soil resistance. The purpose is to identify the job of each component and a place where a fault could interrupt the chain.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a drill's tube is the same length everywhere, but its wheels bounce over uneven ground. Why can seed placement depth still vary?</p>
+<p>Now consider seeds of two very different sizes passing through one metering setting. What could happen to release regularity? Explain why a system needs suitable settings and inspection rather than assuming one mechanism delivers every seed type identically.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which component controls seed release from the supply?</p>
+<ul>
+<li>A. The tractor paint colour</li>
+<li>B. A random opening without regulation</li>
+<li>C. The metering mechanism</li>
+</ul>
+<p><strong>Answer:</strong> C — Metering regulates how seeds leave the hopper for delivery.</p>
+<h3>Q2</h3>
+<p>Why does a seed drill need depth control?</p>
+<ul>
+<li>A. Machine position relative to soil can vary</li>
+<li>B. Seed tubes must create their own soil</li>
+<li>C. All seed species need exactly one depth</li>
+</ul>
+<p><strong>Answer:</strong> A — Support and field contact affect where the seed is placed below the surface.</p>
+<h3>Q3</h3>
+<p>The meter works but a delivery tube is blocked. What can occur?</p>
+<ul>
+<li>A. The row must receive unlimited extra seed</li>
+<li>B. A gap or uneven delivery in the row</li>
+<li>C. Every seed must still reach the same spot</li>
+</ul>
+<p><strong>Answer:</strong> B — A fault after metering can interrupt the path to the intended placement site.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a labelled sowing-system diagram with one component for each job: storage, metering, groove opening, placement and covering. Include an independent note about depth control.</p>
+<p>Choose two faults and trace their consequences to the row. At least one fault must occur after metering so your explanation shows why a working release mechanism does not guarantee successful final placement. Do not propose constructing a sharp opener at home.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Uniform placement depends on relationships between components as much as on individual parts. A perfectly built tube cannot guarantee depth if its support moves unpredictably, and a good meter cannot overcome a blocked delivery route. Engineering performance emerges from the coordinated system rather than one impressive-looking piece.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A seed drill coordinates metering, groove formation, guided placement and depth control; regular release alone does not guarantee uniform sowing.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 8 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can a distance–time graph reveal a stop?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Invented journey: 0, 100, 100 and 200 metres at 0, 2, 4 and 6 minutes</text>
+<text x="480" y="132" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Cumulative distance (m)</text>
+<line x1="140" y1="370" x2="810" y2="370" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="140" y1="370" x2="140" y2="165" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="105" y="374" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">0</text>
+<text x="105" y="284" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">100</text>
+<text x="105" y="194" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">200</text>
+<text x="140" y="402" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">0</text>
+<text x="360" y="402" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">2</text>
+<text x="580" y="402" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">4</text>
+<text x="800" y="402" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">6</text>
+<line x1="140" y1="370" x2="360" y2="280" stroke="#579b70" stroke-width="4"/>
+<line x1="360" y1="280" x2="580" y2="280" stroke="#e6a23c" stroke-width="5"/>
+<line x1="580" y1="280" x2="800" y2="190" stroke="#579b70" stroke-width="4"/>
+<circle cx="140" cy="370" r="5" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="360" cy="280" r="5" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="580" cy="280" r="5" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="800" cy="190" r="5" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<text x="470" y="247" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Stop: no added distance</text>
+<text x="480" y="441" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Elapsed time (min)</text>
+<path d="M875 220 Q950 230 885 275 Q845 320 935 345" fill="none" stroke="#579b70" stroke-width="3"/>
+<text x="900" y="188" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Route sketch</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The flat segment records a pause, not a flat road.</text>
+</svg>

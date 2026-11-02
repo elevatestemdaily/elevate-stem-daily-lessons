@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 46: Why can you feel heat from the Sun across empty space? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 46</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can you feel heat from the Sun across empty space?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how energy from the Sun crosses mostly empty space. Identify <strong>electromagnetic radiation</strong>, absorption and emission. Distinguish energy arriving at an object from the object's resulting temperature, and predict why an air gap cannot block every route of heat transfer.</p>
+</div><h2>1. The mystery</h2>
+<p>Sunlight reaches Earth even though most of the space between Earth and the Sun contains extremely little matter. There is no continuous metal rod linking them and no stream of air carrying warmth all the way here.</p>
+<p>Yet a sunlit surface can become warmer. What crossed the gap? This question exposes a limitation of models based only on contact between materials or the flow of liquids and gases.</p>
+<p>A complete account of heat transfer needs a route that works without a material medium extending from source to receiver.</p>
+<h2>2. The science behind it</h2>
+<p>The Sun emits <strong>electromagnetic radiation</strong>. This radiation carries energy and can travel through a <strong>vacuum</strong>, a region without matter. In contrast, conduction requires material interactions, and convection requires a moving fluid.</p>
+<p>Electromagnetic radiation includes visible light and infrared, among other kinds. Solar energy is not carried only by infrared. Visible sunlight also transfers energy when it is absorbed by a surface. The word thermal describes the energy-transfer context, not a separate substance called heat rays.</p>
+<p>When radiation reaches an object, some may be <strong>reflected</strong>, some <strong>transmitted</strong>, and some <strong>absorbed</strong>. Reflection redirects energy away; transmission allows it through; absorption transfers energy into the material. What happens depends on the radiation's wavelength and the material's properties.</p>
+<p>Absorbed energy can increase an object's internal energy and temperature. But temperature does not depend only on the rate of incoming radiation. The object also loses energy to its surroundings through radiation and, where matter is present, through other transfer routes.</p>
+<p>An object can therefore receive radiation continuously while its temperature stays roughly steady. This happens when its incoming and outgoing energy transfers balance over the relevant time. Steady temperature is not proof that no energy is arriving.</p>
+<p>Objects around us also <strong>emit radiation</strong>. A warm cup, a wall and a person's body are all emitters. Ordinary warm objects emit mainly at wavelengths our eyes do not detect. They do not have to glow visibly to transfer energy by radiation.</p>
+<p>If two objects at different temperatures exchange radiation, each can emit toward the other. The <strong>net</strong> transfer is generally from the warmer object toward the cooler one, with the detailed exchange depending on their surfaces and surroundings. A one-way arrow in a simple drawing usually represents this net direction.</p>
+<p>A vacuum reduces the conduction and convection pathways between separated surfaces, but it does not prevent radiation crossing the gap. This is why an insulating design may also need surfaces that reduce radiative exchange. “No air” and “no heat transfer” are not equivalent statements.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a source and a receiver separated by a blank region. Use wavy arrows crossing the gap to represent radiation, without adding a chain of air particles or a connecting solid.</p>
+<p>At the receiver, split the arriving arrow into reflected, transmitted and absorbed parts. The drawing should keep track of where energy goes rather than suggesting that every arriving ray must heat the receiver equally.</p>
+<p>Finally add an outgoing arrow from the receiver. Compare the total arriving and leaving energy over a chosen interval. A larger incoming amount can warm it; balanced amounts can maintain a steady temperature. This energy account explains the receiver's behaviour more completely than an incoming arrow alone.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the Sun on the left and a receiving surface on the right, with a largely empty region between them. Wavy arrows cross the gap. Labels identify radiation as the carrier of energy.</p>
+<p>At the surface, one arrow represents absorption and another reflection. A separate outgoing arrow represents emission by the receiver. The diagram does not use visible colour as a temperature scale or claim that only one wavelength is involved.</p>
+<p>A small comparison crosses out a continuous air conveyor between the source and receiver. Radiation needs no such path, even though air can affect radiation travelling through the atmosphere near Earth.</p>
+<figure><img src="../../illustrations/class-7/day_46.svg" alt="Diagram for Why can you feel heat from the Sun across empty space?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A sunlit school courtyard and a shaded patch can feel different because the radiation reaching their surfaces differs. Their temperatures also depend on material, air movement and previous conditions. A simple shade comparison should not be turned into an invented universal temperature difference.</p>
+<p>A vacuum flask uses a gap to reduce some transfer routes and suitable surfaces to limit radiation. Different parts of the flask address different mechanisms. The vacuum alone does not make the contents permanently immune to cooling.</p>
+<p>Do not look at the Sun to investigate this lesson. The important observations concern illuminated surfaces and energy transfer, not direct viewing of the solar disc.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three coloured pencils. There is no need for sunlight, hot objects or special equipment.</p>
+<ol>
+<li>Draw a source, a vacuum gap and an opaque receiving surface.</li>
+<li>Add incoming radiation arrows across the gap.</li>
+<li>Divide the arriving energy into reflected and absorbed arrows.</li>
+<li>Add outgoing emission from the receiver.</li>
+<li>Create two versions: one with more energy arriving than leaving and one with equal amounts.</li>
+</ol>
+<p>Label the arrows as an energy-accounting model rather than measured rays. Explain which receiver can warm and which can remain steady. The activity checks the mechanism without trying to estimate radiation by touching surfaces or exposing skin to sunlight.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose an object receives a constant radiation input. At first it warms. Later its temperature becomes steady. Does that mean the incoming radiation stopped?</p>
+<p>Use the outgoing energy routes to explain the change. Now imagine placing the object in a vacuum while leaving the radiation source unchanged. Identify which transfer routes are reduced and which can still operate across the gap.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which transfer route can cross a vacuum?</p>
+<ul>
+<li>A. Electromagnetic radiation</li>
+<li>B. Conduction through a missing rod</li>
+<li>C. A convection current of air</li>
+</ul>
+<p><strong>Answer:</strong> A — Electromagnetic radiation can carry energy without a material medium.</p>
+<h3>Q2</h3>
+<p>Why can absorbed visible sunlight warm a surface?</p>
+<ul>
+<li>A. Only invisible light can carry energy</li>
+<li>B. The surface must manufacture sunlight</li>
+<li>C. Absorption transfers energy into the material</li>
+</ul>
+<p><strong>Answer:</strong> C — Visible radiation carries energy that can enter a material when absorbed.</p>
+<h3>Q3</h3>
+<p>A receiver has steady temperature under constant radiation. What may explain this?</p>
+<ul>
+<li>A. No energy can be reaching it</li>
+<li>B. Incoming and outgoing transfers balance</li>
+<li>C. It must reflect every incoming ray</li>
+</ul>
+<p><strong>Answer:</strong> B — A steady temperature can result from a balance even while energy continues to arrive.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a labelled section through an insulated container. Include a gap with very little matter and surfaces chosen to reduce radiative exchange. Explain which feature addresses which transfer mechanism.</p>
+<p>Do not claim that the container can keep its contents at exactly one temperature forever. Instead, identify the remaining pathways through supports, the opening and radiation. A useful design slows an energy transfer; it does not suspend the energy balance.</p>
+</div><h2>10. One surprising idea</h2>
+<p>An object can emit energy that your eyes cannot see. Visible glow is not required for thermal radiation. This helps explain why a surface can lose energy by radiation in darkness and why looking for red or orange colour would miss much of the thermal exchange occurring around an ordinary room.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Radiation carries energy across empty space; absorption can warm a receiver, while its temperature depends on the balance of incoming and outgoing energy.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

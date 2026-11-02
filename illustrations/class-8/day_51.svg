@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a bird sanctuary reduce disturbance during nesting?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Manage actual routes and timing around sensitive habitat</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Nesting habitat and buffer</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Guided visitor route</text>
+<rect x="80" y="170" width="430" height="195" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="130" y="205" width="260" height="115" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="190" cy="245" r="13" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="285" cy="280" r="13" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="330" cy="235" r="13" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M570 180 L890 180 L890 345 L570 345" fill="none" stroke="#1f5f8b" stroke-width="7"/>
+<circle cx="575" cy="260" r="18" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="550" y1="260" x2="525" y2="260" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M720 220 L380 260" fill="none" stroke="#e6a23c" stroke-width="3"/>
+<line x1="610" y1="220" x2="645" y2="285" stroke="#1f5f8b" stroke-width="4"/>
+<line x1="645" y1="220" x2="610" y2="285" stroke="#1f5f8b" stroke-width="4"/>
+<text x="250" y="407" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Buffer reduces routine intrusion</text>
+<text x="750" y="407" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Observe from designated points</text>
+<text x="500" y="456" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Seasonal access follows actual bird use; no universal distance is shown.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A boundary name does not replace habitat-aware access management.</text>
+</svg>

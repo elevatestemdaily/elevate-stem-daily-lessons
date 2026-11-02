@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can a displacement series predict which metal wins a</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">competition?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">A partial reactivity order predicts the direction under suitable conditions</text>
+<text x="165" y="135" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Higher → lower reactivity</text>
+<rect x="115" y="180" width="100" height="25" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="115" y="240" width="100" height="25" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="115" y="300" width="100" height="25" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="115" y="360" width="100" height="25" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="165" y="169" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Mg</text>
+<text x="165" y="229" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Zn</text>
+<text x="165" y="289" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Fe</text>
+<text x="165" y="349" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Cu</text>
+<line x1="165" y1="207" x2="165" y2="222" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="165" y1="267" x2="165" y2="282" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="165" y1="327" x2="165" y2="342" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="640" y="135" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Compare solid metal with dissolved metal ions</text>
+<rect x="380" y="185" width="520" height="55" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="470" y1="213" x2="815" y2="213" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="640" y="275" text-anchor="middle" font-family="Arial" font-size="17" font-weight="400" fill="#1f5f8b">Zn + copper ions → zinc ions + Cu</text>
+<text x="640" y="318" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Prediction: displacement is favoured</text>
+<line x1="450" y1="360" x2="830" y2="360" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="620" y1="345" x2="650" y2="375" stroke="#e6a23c" stroke-width="4"/>
+<line x1="650" y1="345" x2="620" y2="375" stroke="#e6a23c" stroke-width="4"/>
+<text x="640" y="413" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Cu + iron ions: no ordinary displacement</text>
+<text x="500" y="467" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Solution, surface and other conditions still matter.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A balanced equation alone cannot establish a favoured reaction direction.</text>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 39: How does wind carry away loose topsoil? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 39</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does wind carry away loose topsoil?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how moving air can detach and transport loose soil particles. Distinguish <strong>suspension</strong>, <strong>saltation</strong> and surface movement. Predict how surface cover and wind barriers influence erosion without assuming that every windy day produces the same soil loss.</p>
+</div><h2>1. The mystery</h2>
+<p>A dry bare field can produce a dusty haze when a strong wind passes. Nearby, a patch covered with low vegetation may release much less dust. The wind did not need to dig with a shovel, yet material has left the ground.</p>
+<p>Look closely at a safe photograph of such a scene. Some grains may move close to the surface while finer material remains in the air. These are not merely different heights of the same journey: several transport mechanisms can operate together.</p>
+<p>The question is how wind starts movement and why some surfaces resist it better than others.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Wind erosion</strong> is the removal and transport of surface material by moving air. It begins when the forces exerted by the air and impacts from moving grains overcome the forces holding particles in place. A loose, dry, exposed surface can be particularly vulnerable.</p>
+<p>Particle behaviour depends on size, mass, shape, moisture and how strongly particles are attached to neighbours. It is wrong to assume that the smallest particles always lift most easily. Very fine particles can stick together or bind to surfaces, especially when moisture is present.</p>
+<p>Once detached, very fine material can be carried in <strong>suspension</strong>. Turbulent air movements help keep particles aloft. Suspended dust may travel beyond the field where it originated, although the distance depends on weather and particle properties.</p>
+<p>Some larger grains move in short hops. This is <strong>saltation</strong>. A grain lifted from the surface falls back and strikes another part of the ground. The impact can dislodge additional material, so movement can build through a chain of impacts.</p>
+<p>Still larger particles may roll or slide close to the surface. This is often called <strong>surface creep</strong>. Hopping grains can help push or knock these particles along. Therefore the air does not have to lift every transported grain fully into the atmosphere.</p>
+<p>These pathways sort material during transport. The fine, nutrient-rich or organic components of topsoil can be lost, depending on the soil. However, the lesson does not assign a universal nutrient percentage to dust or a fixed erosion rate to a field.</p>
+<p><strong>Surface cover</strong> interrupts the process. Leaves, crop residues and other suitable cover can reduce wind reaching the soil, intercept moving grains and protect exposed surfaces. Roots also help stabilise soil, but keeping the surface protected matters even before a plant's roots are considered.</p>
+<p>A <strong>windbreak</strong> slows and redirects airflow. A barrier that lets some air through can shelter an area without creating the same strong downwind turbulence as a completely solid wall. Its effectiveness depends on height, spacing and the landscape. One short barrier cannot protect an unlimited distance.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a surface with three particles. Put the smallest particle in a looping air path for suspension, the middle particle on a series of low arcs for saltation, and the largest on a rolling path.</p>
+<p>Now add a patch of surface cover. Let it interrupt the hopping path and shield part of the soil. You have changed the route by which one moving grain can set others in motion.</p>
+<p>The drawing should not imply a sharp universal size boundary between modes. Real grains vary, and changing wind conditions can change how a particular particle moves. The three names describe transport behaviour rather than three perfectly separate kinds of soil.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows wind crossing a bare soil strip. A high curved path indicates suspended fine material, low repeated arcs indicate saltation, and short arrows near the surface indicate creep.</p>
+<p>A covered strip beside it has fewer exposed grains and a reduced near-surface flow arrow. The barrier is shown as permeable rather than a sealed wall. Labels remain outside the particle paths so the three mechanisms can be followed separately.</p>
+<p>All movement paths are schematic. Their heights and distances are not measured trajectories and should not be used to calculate a field's erosion rate.</p>
+<figure><img src="../../illustrations/class-7/day_39.svg" alt="Diagram for How does wind carry away loose topsoil?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Dry parts of western India can experience dusty conditions, but wind erosion is not limited to deserts. Bare construction sites, exposed roadside soil and recently worked fields can also lose surface material when conditions favour movement.</p>
+<p>Farmers may retain suitable crop residues, establish vegetation or use windbreaks as part of soil protection. The choice depends on cropping needs, water availability and local conditions. A classroom model is not enough to prescribe a complete farm-management plan.</p>
+<p>Dust reaching a school playground may have come from another exposed surface. That observation suggests that protection often requires considering the surrounding area, rather than sweeping only the place where dust settles.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Do not blow real soil, flour or sand into the air. Use a sheet of paper, small crumpled paper pieces and folded strips as cover. Keep windows closed so the pieces remain contained.</p>
+<ol>
+<li>Arrange some pieces on a smooth paper surface.</li>
+<li>Gently move air with a larger sheet held as a hand fan.</li>
+<li>Record which pieces shift, hop or roll.</li>
+<li>Add folded strips around part of the surface and repeat the same gentle movement.</li>
+<li>Sketch where the cover interrupted motion.</li>
+</ol>
+<p>This is a transport model, not a realistic soil experiment. Paper differs from soil in weight, shape and sticking forces. Do not infer a field erosion rate from how far a paper piece moves.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a surface has a firm crust but loose material below. Wind alone may not initially expose much material. What might change if trampling breaks the crust?</p>
+<p>Now imagine moist soil drying after several days. Identify which conditions might make detachment easier. Use these cases to explain why knowing wind speed alone cannot fully predict the amount of soil moved.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the name for soil grains moving in short hops?</p>
+<ul>
+<li>A. Germination</li>
+<li>B. Saltation</li>
+<li>C. Crystallisation</li>
+</ul>
+<p><strong>Answer:</strong> B — Saltation describes repeated short hopping movements near the surface.</p>
+<h3>Q2</h3>
+<p>Why can ground cover reduce wind erosion?</p>
+<ul>
+<li>A. It makes every soil particle heavier</li>
+<li>B. It turns wind into still water</li>
+<li>C. It shelters soil and intercepts grains</li>
+</ul>
+<p><strong>Answer:</strong> C — Cover reduces exposure and can interrupt grain impacts that dislodge more material.</p>
+<h3>Q3</h3>
+<p>A crust is broken by repeated trampling. What might happen?</p>
+<ul>
+<li>A. More loose material may become exposed</li>
+<li>B. The soil must become immune to wind</li>
+<li>C. Wind can no longer reach the surface</li>
+</ul>
+<p><strong>Answer:</strong> A — Breaking a protective crust can expose particles that are easier to detach.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a protection plan for a small bare patch beside a school. Include surface cover and a barrier placed where it would reduce exposure to the common wind direction.</p>
+<p>Explain separately how your plan limits initial detachment and interrupts the movement of already hopping grains. State one observation you would record before and after protection, without promising a precise reduction that you have not measured.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A moving grain can help move another grain. Wind erosion can therefore involve a chain of impacts rather than air lifting each particle independently. Breaking that chain with cover can matter even when the wind itself continues. The mechanism explains why the arrangement of the ground surface is part of the problem.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Wind moves soil through suspension, hopping and surface creep; protected surfaces interrupt detachment and the chain of grain impacts.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 9 of 30</footer>
+</div>
+</body>
+</html>

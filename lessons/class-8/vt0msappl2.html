@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 47: Why can soot make a flame glow yellow? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 47</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can soot make a flame glow yellow?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why hot soot particles can make some flames look yellow. Distinguish <strong>incandescence</strong>, incomplete combustion and colour produced by particular emitting substances. Learn why flame colour alone cannot establish complete burning, temperature or safety.</p>
+</div><h2>1. The mystery</h2>
+<p>In a photograph of a candle, part of the flame looks bright yellow. Another flame in a different photograph looks blue. It is tempting to treat colour as a simple label saying good, bad, hot or cold.</p>
+<p>The yellow light can have a specific source: tiny carbon-rich particles heated within the flame. Their glow differs from some of the light emitted by gases. To understand the picture, ask which material emits the light rather than assuming every yellow flame has exactly the same explanation.</p>
+<p>No real flame is needed for this lesson.</p>
+<h2>2. The science behind it</h2>
+<p>Combustion involves fuel reacting in an environment where fuel and oxidiser mix. Earlier lessons explained oxygen's role. Here the focus is what happens when mixing and burning conditions allow <strong>soot</strong> to form and become hot enough to emit visible light.</p>
+<p>Soot consists of very small carbon-rich particles produced through complex fuel-breakdown and particle-growth processes. It is not simply ordinary dust from the room. The amount formed depends on fuel properties and local conditions within the flame.</p>
+<p>Where fuel-rich regions do not burn completely, soot can develop. These particles may travel into hotter or more oxygen-accessible regions, where some can burn further. Whether particles escape depends on the sequence of formation and oxidation along their paths.</p>
+<p>Hot particles emit radiation, and sufficiently hot soot can <strong>incandesce</strong>, producing a bright yellowish glow in familiar luminous flames. Incandescence means light emission associated with high temperature. The particles need not become a new element to emit that light.</p>
+<p>A blue flame can have a different light-emission balance, including emission associated with excited gas species. However, blue appearance alone is not a complete certificate of safe or perfectly complete combustion. Conditions and unwanted products need separate assessment.</p>
+<p>Not all yellow light in a flame is soot. Particular chemical species can emit strongly at selected colours; sodium is a familiar source of intense yellow emission. This is a reason not to identify soot with certainty from colour alone in every possible flame.</p>
+<p>A flame's visible brightness also depends on the amount of emitting material and viewing conditions. A faint-looking flame can still be dangerously hot. Human vision is not a calibrated instrument for measuring flame temperature or pollutant concentration.</p>
+<p>Soot particles that escape can contribute to smoke and air pollution. The lesson does not quantify emissions from a particular stove or recommend changing an appliance. It explains a mechanism that must be considered alongside fuel, airflow and appropriate equipment testing.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a fuel-rich region producing small particle symbols. Move them into a hotter region and add light rays. Then split the paths: some particles burn further, while others leave with the flow.</p>
+<p>Keep the particle-generation step separate from the light-emission step. Soot can exist without being visibly incandescent once it cools. The glow describes the heated state, not the definition of every soot particle.</p>
+<p>Add a separate symbol for a gas emitting a selected colour. This comparison prevents the model from asserting that all yellow emission has one source. A good mechanism explains a specified example while allowing other physical causes in different conditions.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG is a schematic flame section used only as a diagram. It marks a fuel-rich region, tiny soot symbols in a luminous region and paths showing further burning or possible escape.</p>
+<p>Light rays around hot particles identify incandescence. A separate caution panel distinguishes particle glow from colour produced by selected emitting species. The colours organise the explanation rather than providing a measured flame-temperature map.</p>
+<p>No drawing gives instructions for making or adjusting a flame. The visual is an enlarged mechanism model, not a safe operating guide for a cooker, candle or burner.</p>
+<figure><img src="../../illustrations/class-8/day_47.svg" alt="Diagram for Why can soot make a flame glow yellow?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Photographs of candles, lamps and combustion devices can contain luminous yellow regions. Understanding hot soot offers a useful explanation for some of those examples without requiring students to light anything.</p>
+<p>Smoke from poorly controlled burning raises questions about particles and other products. The visible portion is only part of the output, so judging an appliance by colour or visible smoke alone can miss important issues.</p>
+<p>Household cooking equipment should be used and maintained according to its instructions by responsible adults. This lesson does not recommend modifying air openings, fuel supplies or burners to test colour changes. A photograph and labelled diagram are sufficient for the science.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a published flame photograph or the supplied SVG, paper and coloured pencils. Do not light a candle, incense stick, match or stove.</p>
+<ol>
+<li>Mark the region that appears luminous in the picture.</li>
+<li>Draw an enlarged hot soot particle as one possible emitter.</li>
+<li>Add a separate gas-emission symbol to show a different possible source of colour.</li>
+<li>Write what colour alone cannot prove.</li>
+<li>Sketch a cooled soot particle without visible glow.</li>
+</ol>
+<p>The image cannot establish every chemical species or an exact temperature. State that limit rather than inventing measurements. The activity connects possible mechanisms with observations and explicitly leaves identification questions open where the image alone is insufficient.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a soot particle stop glowing after leaving a hot region while still remaining a particle? Separate its material identity from its temperature-dependent emission.</p>
+<p>Now imagine two flames with similar apparent yellow colour but different emitting materials. Explain why appearance alone is not a complete chemical identification method. The observation can guide a question without answering every part of it.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is incandescence?</p>
+<ul>
+<li>A. The absence of every solid particle</li>
+<li>B. A rule that all yellow materials are safe</li>
+<li>C. Light emission associated with high temperature</li>
+</ul>
+<p><strong>Answer:</strong> C — Hot soot can emit visible light through incandescence.</p>
+<h3>Q2</h3>
+<p>Why can soot form in fuel-rich regions?</p>
+<ul>
+<li>A. Room dust must always be the only source</li>
+<li>B. Local burning conditions can favour particle formation</li>
+<li>C. All fuel has already vanished completely</li>
+</ul>
+<p><strong>Answer:</strong> B — Fuel breakdown and incomplete local burning can lead to carbon-rich particles.</p>
+<h3>Q3</h3>
+<p>A flame looks yellow in a photograph. What should you avoid claiming from that alone?</p>
+<ul>
+<li>A. That its exact composition and safety are known</li>
+<li>B. That several emission mechanisms are possible</li>
+<li>C. That its image has a yellow region</li>
+</ul>
+<p><strong>Answer:</strong> A — Colour alone cannot establish every emitter, temperature or combustion product.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a caption for a diagram of a luminous soot-bearing flame. It must connect fuel-rich conditions, particle formation and hot-particle glow, while identifying where further burning might occur.</p>
+<p>Include two limits: yellow colour is not always soot, and visible colour does not establish safety. Your caption should explain the mechanism without inviting a home flame experiment or presenting unsupported temperature and emissions numbers.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The bright part of a flame can include glowing solid particles, not only glowing gas. A visually fluid shape can therefore contain several material forms and emission processes at once. Distinguishing those contributors makes the colour more informative and less suitable for a one-word judgement.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Hot soot can produce a yellow incandescent glow, but flame colour alone does not identify every emitter or prove complete combustion and safety.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 17 of 30</footer>
+</div>
+</body>
+</html>

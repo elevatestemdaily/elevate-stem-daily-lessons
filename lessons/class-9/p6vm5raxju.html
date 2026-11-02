@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 58: How can composite fish culture use different parts of a pond? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 58</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can composite fish culture use different parts of a pond?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how suitable fish with different feeding zones can share a managed pond. Distinguish <strong>complementary resource use</strong> from unlimited production. Connect surface, water-column and bottom feeding with a culture design while keeping oxygen, food and management limits visible.</p>
+</div><h2>1. The mystery</h2>
+<p>A pond contains food resources in several regions, but one fish type may use only part of that range effectively. Adding a suitable fish with a different feeding pattern can use a resource that was less heavily used before.</p>
+<p>Does more species automatically mean more useful harvest? No. The combination must be compatible, and all fish still share environmental limits. A pond does not acquire infinite oxygen or food because a diagram shows three layers.</p>
+<p>The useful question is how the chosen animals' activities complement one another under managed conditions.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Composite fish culture</strong> combines suitable fish types in one managed system to use different resources and regions. It is an agricultural design, not simply any natural pond containing several species.</p>
+<p>School examples commonly describe <strong>catla</strong> as a surface-oriented feeder, <strong>rohu</strong> as a water-column feeder and <strong>mrigal</strong> as a bottom-oriented feeder. These labels summarise useful tendencies; real feeding behaviour also depends on size, conditions and available food.</p>
+<p>If the components use different resources, <strong>direct competition</strong> can be reduced relative to several types relying on exactly the same food in the same place. Reduced competition is not the same as no interaction or no limits.</p>
+<p>The water column is connected. Dissolved oxygen, temperature, waste and water movement affect more than one feeding zone. A bottom feeder does not live in a separate sealed tank just because the diagram places it lower.</p>
+<p>Food supply must support the planned population. Supplementary feeding and management can influence the system, but this lesson gives no real stocking ratio or ration. Those decisions require suitable local fisheries guidance.</p>
+<p><strong>Compatibility</strong> matters. A combination should not create unacceptable predation, interference or environmental stress. The presence of different feeding zones is one criterion, not a complete recipe for mixing arbitrary fish.</p>
+<p>Reliable seed-stock identity and quality also matter to managed culture. A diagram labelled with three names cannot guarantee that a real collection of juveniles contains those species or is suitable for a site. Practical management requires more evidence than visual guessing.</p>
+<p>The lesson differs from a natural food-chain explanation. Its main mechanism is deliberate complementary resource use within a production system. We do not claim a universal yield improvement percentage or recommend introducing fish into a wild water body.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw one pond with three resource regions, then assign model fish tendencies to each. Keep the region boundaries dashed in meaning: they are descriptive zones, not physical walls.</p>
+<p>Add shared oxygen and water-quality arrows spanning all regions. This prevents the misleading picture that a problem in one zone cannot affect the rest.</p>
+<p>Now give every fish the same food requirement in a counterexample. The benefit of different-zone labels weakens if their actual resource use overlaps strongly. The model tests why the particular combination matters rather than treating species count as the cause of success.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows surface, column and bottom regions with catla, rohu and mrigal labels outside the water drawing. Arrows connect each with its simplified feeding tendency.</p>
+<p>A shared-condition panel spans the whole pond and lists oxygen, food supply and compatibility. It deliberately avoids separate sealed compartments. The fish outlines are schematic, not identification images for stocking juveniles.</p>
+<p>The caption states that the diagram is an educational resource-use model. It supplies neither a recommended population density nor a claim about the yield of a particular Indian pond.</p>
+<figure><img src="../../illustrations/class-9/day_58.svg" alt="Diagram for How can composite fish culture use different parts of a pond?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Composite carp culture is part of inland aquaculture practice in India, with management adapted to local conditions and suitable species. A textbook summary introduces the logic but does not replace training or fisheries advice.</p>
+<p>A school project can compare resource maps without keeping fish or modifying a pond. Releasing purchased or collected fish into natural water is not part of the lesson and can create ecological and welfare problems.</p>
+<p>Managed production and conservation are different decision contexts. A species useful in one controlled system is not automatically appropriate for every wetland, stream or garden pond.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, three fish cards and a blue pencil. No live animals or feed is needed.</p>
+<ol>
+<li>Draw one pond with surface, column and bottom resource zones.</li>
+<li>Place the three example feeding-tendency cards.</li>
+<li>Add shared oxygen and water-quality arrows.</li>
+<li>Replace one card with a fish using the same resource as another.</li>
+<li>Explain how the expected competition changes.</li>
+</ol>
+<p>Keep the result qualitative. Card placement is not a real stocking recommendation, and the layer labels do not determine every moment of a fish's behaviour. Ask a partner to identify a common limit that affects the whole pond despite the different feeding positions.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why could a system using several food zones still fail if dissolved oxygen becomes inadequate? Explain the shared environment rather than treating the zones as independent tanks.</p>
+<p>Now imagine two named species whose actual food use overlaps under the current conditions. What additional evidence would be needed before calling them complementary? Labels are starting hypotheses about behaviour, not substitutes for observation and management knowledge.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main resource-use idea in composite fish culture?</p>
+<ul>
+<li>A. Combining suitable different feeding tendencies</li>
+<li>B. Separating every fish into a sealed invisible tank</li>
+<li>C. Creating unlimited food by adding species</li>
+</ul>
+<p><strong>Answer:</strong> A — Suitable combinations can use resources that overlap less strongly.</p>
+<h3>Q2</h3>
+<p>Why do shared pond conditions still matter?</p>
+<ul>
+<li>A. Feeding labels remove every environmental limit</li>
+<li>B. Bottom fish have no need for water</li>
+<li>C. Oxygen and water quality affect the connected system</li>
+</ul>
+<p><strong>Answer:</strong> C — The resource zones remain part of one environment rather than independent tanks.</p>
+<h3>Q3</h3>
+<p>A paper pond has three species labels but no management evidence. What is justified?</p>
+<ul>
+<li>A. A universal stocking density is now proven</li>
+<li>B. It is a model needing local evaluation</li>
+<li>C. Any wild wetland should receive the same fish</li>
+</ul>
+<p><strong>Answer:</strong> B — Species tendencies are only part of the information required for a real culture plan.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a managed-pond resource map with feeding zones, shared limits and compatibility questions. Use the standard three-species example as a model, not a prescription.</p>
+<p>State two pieces of local information needed before a real plan could be evaluated. Your conclusion should explain reduced overlap without promising no competition, infinite production or safe release of fish into any nearby water body.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Dividing resources among different users does not divide the environment into independent worlds. The fish may feed differently while still depending on the same oxygen supply and water conditions. A successful design combines complementary use with attention to those shared limits.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Composite fish culture can use complementary feeding tendencies, but the whole pond still shares limits of food, oxygen, compatibility and appropriate management.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 28 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does activated charcoal remove some dissolved colours?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Accessible internal surfaces can retain selected dissolved molecules</text>
+<text x="260" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Available sites</text>
+<rect x="80" y="170" width="360" height="190" rx="8" fill="#374151" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M105 220 L220 220 L220 300 L400 300" fill="none" stroke="#f8fbff" stroke-width="27"/>
+<path d="M220 220 L360 220" fill="none" stroke="#f8fbff" stroke-width="20"/>
+<text x="740" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">More sites occupied</text>
+<rect x="560" y="170" width="360" height="190" rx="8" fill="#374151" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M585 220 L700 220 L700 300 L880 300" fill="none" stroke="#f8fbff" stroke-width="27"/>
+<path d="M700 220 L840 220" fill="none" stroke="#f8fbff" stroke-width="20"/>
+<line x1="20" y1="220" x2="65" y2="220" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="445" y1="300" x2="490" y2="300" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="925" y1="300" x2="975" y2="300" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="195" cy="209" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="285" cy="290" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="675" cy="209" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="705" cy="209" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="760" cy="209" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="775" cy="290" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="805" cy="290" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="850" cy="290" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="260" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Target accumulates at surfaces</text>
+<text x="740" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Finite remaining capacity</text>
+<text x="500" y="452" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Pore access, water chemistry and the particular target all matter.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Adsorption is surface association; reduced colour alone does not prove safety.</text>
+</svg>

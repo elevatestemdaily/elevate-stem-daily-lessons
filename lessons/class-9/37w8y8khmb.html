@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 39: How can lichens help map air quality without measuring a gas directly? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 39</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can lichens help map air quality without measuring a gas directly?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how lichen observations can act as <strong>bioindicators</strong> of environmental conditions. Distinguish an organism's response from a direct gas-concentration measurement. Design a habitat-aware comparison that avoids calling every lichen-free surface polluted or every lichen-covered surface clean.</p>
+</div><h2>1. The mystery</h2>
+<p>Two groups survey lichens on trees at different sites. One finds fewer kinds at a roadside location. The group immediately announces a precise pollution level, but it has not measured a gas or checked whether the trees and moisture conditions are comparable.</p>
+<p>Lichens can provide useful biological evidence, yet the inference needs care. Their presence reflects responses to surroundings over time and to more than one condition.</p>
+<p>The question is how to use that evidence without turning an indicator into a direct instrument it is not.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>bioindicator</strong> is an organism or biological response used to provide information about environmental conditions. It can reveal effects integrated over time rather than one instantaneous physical reading.</p>
+<p>Lichens are close fungal-photosynthetic associations, as explained in an earlier lesson. Here we treat that identity as background and focus on how observed abundance or community composition can relate to environmental exposure.</p>
+<p>Some lichens are sensitive to particular air pollutants, including sulphur dioxide in well-studied settings. Other kinds tolerate conditions differently. A survey based on identified groups can therefore provide more information than simply counting every coloured patch as equivalent.</p>
+<p>However, <strong>habitat factors</strong> also influence occurrence. Bark properties, moisture, light, surface age and disturbance can change what grows. A dry young surface and a moist old trunk are not automatically fair comparison sites.</p>
+<p>An observed difference can therefore have several possible causes. A careful design matches or records relevant habitat conditions and uses a consistent observation method. Otherwise habitat variation can be mistaken for an air-quality signal.</p>
+<p><strong>Sampling consistency</strong> matters. Compare defined areas, similar viewing effort and appropriate identification methods. Different observers can miss small patches or classify them differently. A protocol should record uncertainty rather than force every unknown patch into a confident species name.</p>
+<p>A lichen survey does not directly output a gas concentration in parts per million. Linking biological patterns to particular exposures requires suitable local evidence and calibration. A simple school map should be labelled as an observation or indicator map, not a certified pollution measurement.</p>
+<p>The absence of lichens alone is not proof of polluted air. Their presence alone is not proof that every pollutant is absent. Bioindicators complement other evidence; they do not erase the need for appropriate direct monitoring when a specific concentration or safety question must be answered.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw several arrows pointing toward a lichen-observation box: air exposure, moisture, bark and light. A change in the output could reflect one or several inputs.</p>
+<p>Now match the habitat arrows as closely as possible between sites while keeping the air-exposure question open. This shows why controlling the comparison can make the indicator more interpretable without claiming every alternative cause is eliminated.</p>
+<p>Add a separate direct-sensor box. It answers a different question with its own limits. The two evidence routes can support a broader assessment, but they should not be given identical units or described as the same type of measurement.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares defined survey patches on two similar tree surfaces. Habitat-check symbols accompany the lichen observations, and a separate panel identifies a direct gas measurement as a different evidence type.</p>
+<p>Arrows show multiple influences rather than a one-arrow equation from pollution to no lichens. The diagram records unknown identification where appropriate and does not assign a numerical pollution score.</p>
+<p>The illustration does not repeat the nutritional exchange inside lichens. Its purpose is indicator reasoning, survey fairness and the distinction between biological response and direct concentration measurement.</p>
+<figure><img src="../../illustrations/class-9/day_39.svg" alt="Diagram for How can lichens help map air quality without measuring a gas directly?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Environmental surveys can combine biological observations with physical monitoring. In an Indian school project, photographs from approved public locations can support a careful comparison without making claims about a neighbourhood's safety from a few trees.</p>
+<p>A roadside location can differ from a park in surface management, shade and moisture as well as traffic exposure. Recording those differences is part of the science, not an inconvenient distraction from a preferred conclusion.</p>
+<p>Do not scrape lichens from bark or stone, enter roadsides with traffic risk or label a private site polluted publicly based on this exercise. Distant photographs or supplied images are sufficient for learning the method.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use two supplied tree photographs or draw two survey surfaces. No field collection is needed.</p>
+<ol>
+<li>Mark equal comparison areas.</li>
+<li>Record visible patches without inventing species identities.</li>
+<li>List differences in bark, shade and apparent moisture.</li>
+<li>Write what the observations directly establish.</li>
+<li>Write one air-quality hypothesis and one alternative explanation.</li>
+</ol>
+<p>Keep the hypothesis separate from a measured concentration. The images may lack enough information for a strong environmental inference. An honest unknown is more useful than assigning a precise number the activity never measured.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can an organism's condition reflect a longer exposure history than a sensor reading taken at one instant? Explain the potential value without claiming the organism records every pollutant equally.</p>
+<p>Now suppose the two sites have different tree species and bark ages. What would you change before interpreting their lichen differences mainly as pollution evidence? The comparison design determines how much the indicator can reasonably support.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a bioindicator?</p>
+<ul>
+<li>A. A guarantee that a site is completely safe</li>
+<li>B. A biological response used as environmental evidence</li>
+<li>C. A device that directly weighs every gas molecule</li>
+</ul>
+<p><strong>Answer:</strong> B — Bioindicators use organisms or their responses to provide information about conditions.</p>
+<h3>Q2</h3>
+<p>Why compare similar habitats in a lichen survey?</p>
+<ul>
+<li>A. Every coloured patch is the same species</li>
+<li>B. Habitat never influences where lichens grow</li>
+<li>C. Habitat differences can confound the interpretation</li>
+</ul>
+<p><strong>Answer:</strong> C — Moisture, bark and light can alter observations independently of the exposure of interest.</p>
+<h3>Q3</h3>
+<p>A surface has no visible lichens. What follows from that observation alone?</p>
+<ul>
+<li>A. Several explanations remain possible</li>
+<li>B. A precise pollution concentration is known</li>
+<li>C. Every possible pollutant is definitely present</li>
+</ul>
+<p><strong>Answer:</strong> A — Absence can reflect habitat or other conditions and does not by itself establish pollution.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a survey card with site conditions, defined area, observer effort, identification confidence and lichen observations. Include a separate box for any direct monitoring data supplied by a reliable source.</p>
+<p>Write a cautious conclusion that does not convert patch counts into an invented gas concentration. Your plan must identify at least one habitat confounder and one reason a lichen-free surface alone cannot establish that the air is polluted.</p>
+</div><h2>10. One surprising idea</h2>
+<p>An indicator can be valuable precisely because it responds biologically rather than copying a direct instrument. It may integrate effects over time, but that strength comes with interpretive limits. Understanding what the indicator responds to is therefore more important than treating its presence as a universal green light or its absence as an automatic alarm.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Lichen patterns can indicate environmental responses, but habitat, species and method must be considered before relating them to air exposure or direct gas measurements.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 9 of 30</footer>
+</div>
+</body>
+</html>

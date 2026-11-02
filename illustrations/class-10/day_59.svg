@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why can extracting too much groundwater make coastal wells</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">salty?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Pumping changes freshwater head and can move saline water toward a well</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Lower-stress schematic</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Pumping-stressed schematic</text>
+<rect x="50" y="180" width="400" height="170" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M50 350 L450 350 L450 250 Q310 260 210 330 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M50 350 L210 330 Q310 260 450 250 L450 235 Q300 245 195 315 Z" fill="#579b70" stroke="#579b70" stroke-width="2"/>
+<line x1="150" y1="165" x2="150" y2="300" stroke="#1f5f8b" stroke-width="5"/>
+<line x1="405" y1="180" x2="450" y2="180" stroke="#1f5f8b" stroke-width="5"/>
+<rect x="550" y="180" width="400" height="170" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M550 350 L950 350 L950 250 Q810 260 710 330 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M550 350 L710 330 Q810 260 950 250 L950 235 Q800 245 695 315 Z" fill="#579b70" stroke="#579b70" stroke-width="2"/>
+<line x1="650" y1="165" x2="650" y2="300" stroke="#1f5f8b" stroke-width="5"/>
+<line x1="905" y1="180" x2="950" y2="180" stroke="#1f5f8b" stroke-width="5"/>
+<line x1="80" y1="215" x2="365" y2="215" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M550 205 Q620 205 650 250 Q695 220 950 215" fill="none" stroke="#1f5f8b" stroke-width="3"/>
+<path d="M680 350 Q655 320 650 285 Q610 320 550 350 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="850" y1="300" x2="710" y2="300" stroke="#e6a23c" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="650" y1="330" x2="650" y2="280" stroke="#e6a23c" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="250" y="392" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Fresh flow toward sea at right</text>
+<text x="750" y="392" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Lower head; inland / upward intrusion</text>
+<text x="500" y="434" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Blue: fresher water; amber: saline; green band: mixed transition.</text>
+<text x="500" y="468" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Geology, pumping history and local measurements determine the real response.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The pump changes flow; it does not make salt. No water-safety claim follows.</text>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 60: Ultimate Challenge: Can you plan a grain store that prevents avoidable losses? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 60</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Ultimate Challenge: Can you plan a grain store that prevents avoidable losses?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Design a small grain-storage plan that reduces avoidable losses through coordinated controls. Combine entry barriers, starting-condition checks, water-availability awareness and records. Your deliverable is a design-and-inspection system, not a food-safety certificate or a homemade pesticide treatment.</p>
+</div><h2>1. The mystery</h2>
+<p>A school demonstration store has strong-looking containers, yet nobody knows which batch entered which one, whether residues were cleaned out or whether lids fit properly. A later problem is difficult to investigate because the equipment was chosen without a management plan.</p>
+<p>Your challenge is to design the system before real grain is stored. A useful plan must connect container features with routines and evidence. Buying the thickest-looking box does not solve a missing label, hidden initial infestation or water leaking into the room.</p>
+<p>You have limited design tokens, so every feature needs a purpose.</p>
+<h2>2. The science behind it</h2>
+<p>Start with <strong>failure pathways</strong>. New pests can enter through damaged boundaries. Hidden stages can arrive with the grain. Water can change storage conditions, and mixing unidentified batches can make the history difficult to reconstruct. Each pathway needs an appropriate control.</p>
+<p><strong>Exclusion</strong> uses sound walls, closures and maintained seals to reduce new entry. It does not destroy insects already present. The earlier container lesson therefore contributes both a design feature and a limit that must remain visible in the final plan.</p>
+<p>The <strong>starting condition</strong> includes grain history and the state of the empty container. Appropriate adult inspection and cleaning address sources that a closed lid cannot erase. The plan must state who performs these tasks rather than relying on an unspecified future someone.</p>
+<p><strong>Water availability</strong> influences microbial activity. The salt-preservation lesson showed why visible moisture alone is not a complete description. Grain storage requires suitable conditions for the actual material and process; this challenge does not transfer a pickle recipe or an invented salt dose to dry grain.</p>
+<p>The room and handling routes matter. A leak, damp contact surface or wet tool can change the environment. Containers should therefore be considered within the surrounding storage arrangement, not as isolated objects with no incoming material or water pathways.</p>
+<p><strong>Identification records</strong> preserve batch and observation history. Labels can connect contents with source, entry date and container identity. A record is useful only when the labels remain readable and the routine actually records changes.</p>
+<p>Inspection should look for specified signs and boundary problems without requiring students to open suspect grain or handle infestation. A response plan identifies a responsible adult and separates suspicious material from ordinary classroom investigation. It does not prescribe fumigation or improvised chemicals.</p>
+<p>Finally define success narrowly. A design may reduce known pathways and make problems easier to detect without guaranteeing zero loss. Performance needs observation under real supervised conditions. A paper prototype supports a reasoned proposal, not a measured percentage improvement.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw four connected boxes: incoming batch, prepared container, storage setting and inspection record. Put arrows at every transfer. Mark which barrier or procedure controls each arrow.</p>
+<p>Add a question beside each control: what evidence would show it was completed? A label can show identity, a recorded check can show a lid inspection and a room note can show a leak was noticed. None alone proves every condition is satisfactory.</p>
+<p>Then remove one control and trace the remaining gap. This tests the design as a system. It also reveals whether two expensive features solve the same pathway while an important different pathway has been left unaddressed.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows labelled containers on a clean dry model platform, a maintained lid boundary and an inspection card. Incoming-batch and room-water pathways are drawn separately.</p>
+<p>A budget panel uses invented tokens, not real prices. For example, a model plan can allocate two tokens to closure repair, one to labels, two to the platform and one to an inspection routine, totalling six. The costs are a design exercise only.</p>
+<p>A lower decision panel asks whether every identified pathway has a control and a responsible person. The diagram is not an installation specification or a claim that these features meet every real storage requirement.</p>
+<figure><img src="../../illustrations/class-8/day_60.svg" alt="Diagram for Ultimate Challenge: Can you plan a grain store that prevents avoidable losses?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Household and farm storage in India operate at different scales, but both depend on equipment and practices working together. A routine that is too difficult to maintain can undermine an attractive initial design.</p>
+<p>School planning can use empty containers and paper batch cards without exposing children to contaminated material. A real food store needs appropriate adult management and suitable guidance for its contents and conditions.</p>
+<p>This challenge differs from designing a whole sustainable city. Its scope is a specific storage system with traceable failure pathways, limited resources and explicit claims. A small well-defined problem makes the proposed controls easier to assess.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and six drawn design tokens. No grain, pests, chemicals or food incubation is needed.</p>
+<ol>
+<li>Draw the incoming batch and storage area.</li>
+<li>List the main entry, starting-condition and water-related pathways.</li>
+<li>Allocate the invented tokens among features and routines.</li>
+<li>Draft one batch label and one inspection card.</li>
+<li>Ask a partner to identify an uncontrolled pathway.</li>
+</ol>
+<p>Revise the plan before calling it complete. The five-minute output is a prototype, not evidence of improved storage life. If an actual container is used as a prop, it must be clean, empty and unbreakable, and no child should climb on a platform or shelving.</p>
+</div><h2>7. Think deeper</h2>
+<p>A plan spends every token on thicker walls but none on lids, labels or checks. Which failure pathways remain? Explain why one highly developed feature does not guarantee system reliability.</p>
+<p>Now imagine excellent inspection records with containers that cannot be closed properly. What is the opposite mismatch? Useful design requires both physical controls and routines that fit the actual risks.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What should the design identify before choosing features?</p>
+<ul>
+<li>A. Only the brightest container colour</li>
+<li>B. The main failure pathways</li>
+<li>C. An invented guarantee of zero loss</li>
+</ul>
+<p><strong>Answer:</strong> B — Mapping pathways connects each proposed feature with a specific risk or need.</p>
+<h3>Q2</h3>
+<p>Why are labels useful alongside sealed lids?</p>
+<ul>
+<li>A. They preserve batch identity and history</li>
+<li>B. They sterilise every grain instantly</li>
+<li>C. They replace every physical entry barrier</li>
+</ul>
+<p><strong>Answer:</strong> A — Records support traceability while lids address a different physical pathway.</p>
+<h3>Q3</h3>
+<p>A paper design looks promising but has no real trial data. What should its report do?</p>
+<ul>
+<li>A. Claim a guaranteed storage life for all grain</li>
+<li>B. Invent a large percentage reduction</li>
+<li>C. Describe the proposal and evidence still needed</li>
+</ul>
+<p><strong>Answer:</strong> C — A reasoned prototype does not by itself establish measured performance.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Deliver a one-page design with a layout, pathway map, token budget, label template, inspection routine and adult response rule. Explain how at least three features connect to the earlier mechanisms.</p>
+<p>Peer-review the plan for coverage, usability and honest limits. Revise one item after feedback. End with a statement of what would need observation before claiming a numerical reduction in loss. Do not invent a trial result to make the prototype sound successful.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A good design can spend resources on information as well as objects. Labels and records do not physically block an insect, but they make the starting conditions and later changes traceable. They complement barriers by helping people understand and respond to the system rather than guessing after a problem appears.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A grain-store design combines suitable barriers, starting-condition controls, water management and usable records; its claims must stay within the evidence.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 30 of 30</footer>
+</div>
+</body>
+</html>

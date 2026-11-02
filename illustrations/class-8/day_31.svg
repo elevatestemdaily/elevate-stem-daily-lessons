@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does drip irrigation deliver water where a crop needs it?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Local delivery needs placement, suitable rates and working emitters</text>
+<text x="500" y="134" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Main supply → laterals → emitters</text>
+<line x1="70" y1="180" x2="930" y2="180" stroke="#1f5f8b" stroke-width="6"/>
+<line x1="110" y1="180" x2="110" y2="225" stroke="#1f5f8b" stroke-width="4"/>
+<line x1="110" y1="225" x2="900" y2="225" stroke="#1f5f8b" stroke-width="4"/>
+<line x1="110" y1="180" x2="110" y2="285" stroke="#1f5f8b" stroke-width="4"/>
+<line x1="110" y1="285" x2="900" y2="285" stroke="#1f5f8b" stroke-width="4"/>
+<circle cx="220" cy="225" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="220" cy="280" r="27" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="220" y1="247" x2="220" y2="269" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M220 270 l-12 17 m12 -17 l12 17" fill="none" stroke="#579b70" stroke-width="3"/>
+<circle cx="460" cy="225" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="460" cy="280" r="27" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="460" y1="247" x2="460" y2="269" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M460 270 l-12 17 m12 -17 l12 17" fill="none" stroke="#579b70" stroke-width="3"/>
+<circle cx="700" cy="285" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="700" cy="340" r="27" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="700" y1="307" x2="700" y2="329" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M700 330 l-12 17 m12 -17 l12 17" fill="none" stroke="#579b70" stroke-width="3"/>
+<circle cx="860" cy="285" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="847" y1="272" x2="873" y2="298" stroke="#e6a23c" stroke-width="4"/>
+<text x="245" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Wetted root region</text>
+<text x="740" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Blocked outlet: less delivery</text>
+<text x="500" y="453" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Invented rate model: 2 litres/hour × 0.5 hour = 1 litre.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Water volume and the location of the wetted zone are different questions.</text>
+</svg>

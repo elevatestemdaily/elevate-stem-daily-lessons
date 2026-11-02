@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why can the Pole Star help estimate latitude?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">The local horizon changes orientation on a curved Earth</text>
+<text x="260" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Earth and pole direction</text>
+<text x="755" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Altitude is above horizon</text>
+<circle cx="260" cy="280" r="90" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="260" y1="170" x2="260" y2="390" stroke="#579b70" stroke-width="3"/>
+<circle cx="350" cy="280" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="324" cy="216" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="350" y1="200" x2="350" y2="360" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="290" y1="182" x2="358" y2="250" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="370" y1="280" x2="370" y2="210" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="324" y1="210" x2="324" y2="160" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="620" y1="315" x2="920" y2="315" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="750" y1="315" x2="750" y2="175" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="750" y1="315" x2="850" y2="215" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M785 315 Q785 294 775 289" fill="none" stroke="#e6a23c" stroke-width="3"/>
+<text x="260" y="422" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Parallel distant direction; tilted horizons</text>
+<text x="755" y="422" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Horizon and zenith are distinct</text>
+<text x="500" y="464" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Polaris is near the pole; the ideal angle gives northern latitude.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">This relation estimates latitude, not longitude or distance to the star.</text>
+</svg>

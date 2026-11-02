@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 33: How does activated charcoal remove some dissolved colours? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 33</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does activated charcoal remove some dissolved colours?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why a porous carbon material can remove some dissolved substances that pass through an ordinary mesh. Distinguish <strong>adsorption</strong> from absorption and size filtration. Predict why contact conditions and finite capacity matter, and avoid treating colour removal as proof of drinking-water safety.</p>
+</div><h2>1. The mystery</h2>
+<p>A coloured solution passes through a kitchen mesh and keeps its colour. In a suitable treatment system, contact with activated carbon may reduce some colour even though the colouring material was dissolved.</p>
+<p>How can this work if a mesh did not catch the molecules? The carbon provides surfaces to which some dissolved substances can associate. Its many internal pores create accessible surface area within the material.</p>
+<p>The process therefore asks a different question from “Is this particle too large to fit through an opening?” It asks how molecules interact with a surface.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Activated carbon</strong> is a carbon-rich material processed to develop an extensive pore structure. The pores expose internal surfaces. A grain can therefore provide much more accessible surface than its smooth outer outline alone suggests.</p>
+<p><strong>Adsorption</strong> is the accumulation of substances at a surface. In this example, certain dissolved molecules associate with carbon surfaces rather than remaining entirely in the passing water. The solid is the <strong>adsorbent</strong>, and the substance held at its surface is the <strong>adsorbate</strong>.</p>
+<p>This differs from <strong>absorption</strong>, in which a substance enters the bulk of another material. Everyday language sometimes uses the words loosely. The surface-focused definition matters here because it explains why internal area and surface properties influence performance.</p>
+<p>An ordinary mesh mainly retains suspended objects based on their size and shape relative to openings. A dissolved dye can pass through because it is not present as a large grain. Adsorption can still remove some of those molecules if their interactions with the carbon surface are favourable.</p>
+<p>Not every colour or contaminant is adsorbed equally. Molecular properties, pore accessibility, water chemistry and the particular carbon all affect the result. “Carbon removes dissolved substances” is too broad unless the target and conditions are specified.</p>
+<p><strong>Contact time</strong> matters because molecules need access to available surfaces. Water passing too quickly through a poorly arranged system may leave before enough contact occurs. However, a longer time is not a guarantee of complete removal of every target.</p>
+<p>The material also has a finite <strong>capacity</strong>. As accessible sites become occupied, more of a target can pass through. This is called <strong>breakthrough</strong> in treatment contexts. A device can look unchanged while its ability to retain a particular substance has declined.</p>
+<p>Activated carbon is not equivalent to ordinary charcoal from an unknown fire. Preparation, contamination and surface structure differ. Nor is it a universal disinfection method. Removing a visible colour does not prove removal of microbes, dissolved salts or every harmful compound.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a winding corridor inside a carbon grain. Put small attachment sites on the walls and target molecules in the passing water. Some molecules attach while others continue through.</p>
+<p>Make a second drawing with many sites occupied. The same flow can now carry more unretained target out. This model connects limited capacity with a change in output that might not be obvious from the carbon's appearance.</p>
+<p>The sites are simplified symbols, not identical hooks manufactured at fixed intervals. Real surface interactions vary. The useful idea is that contact and available surface properties matter, rather than the carbon physically swallowing every molecule that enters its pores.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a carbon grain with a cutaway pore network. Coloured molecule symbols approach internal surfaces, and some remain associated with the walls. An outlet arrow carries the remaining water and unretained molecules onward.</p>
+<p>A second pore section has more occupied sites and illustrates reduced remaining capacity. Labels distinguish adsorption at surfaces from bulk absorption and mechanical mesh filtration.</p>
+<p>The drawing is not a scale view of pores or a performance claim for a real filter cartridge. It deliberately shows some molecules passing through so the mechanism is not confused with perfect removal or proof of safety.</p>
+<figure><img src="../../illustrations/class-8/day_33.svg" alt="Diagram for How does activated charcoal remove some dissolved colours?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Activated carbon is used in some water-treatment and air-treatment systems for selected substances. A product's intended targets and maintenance instructions matter because different media and designs have different capabilities.</p>
+<p>In an Indian household purifier, a carbon stage may have a different role from a membrane stage or a disinfection stage. One component should not be credited with all the work of the system. The lesson explains a mechanism without recommending a particular purifier or replacement interval.</p>
+<p>A faded coloured liquid is a useful visual observation but an incomplete analysis. It says something about the colour under the test conditions, not everything about the liquid's biological or chemical quality.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two coloured pencils. Do not grind charcoal or handle dusty carbon powders, and do not attempt to purify drinking water.</p>
+<ol>
+<li>Draw a porous grain with several internal passages.</li>
+<li>Mark available surface sites along the walls.</li>
+<li>Add target-molecule symbols entering with water.</li>
+<li>Attach some to the walls and let others leave.</li>
+<li>Repeat with many sites already occupied.</li>
+</ol>
+<p>Ask a partner why the second drawing may release more target despite having the same visible grain shape. The activity models capacity and surface contact. It does not establish that a particular food colour will be adsorbed or that a homemade device is suitable for consumption.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose two carbon grains have the same external size but different internal pore networks. Why could their adsorption behaviour differ?</p>
+<p>Now imagine a target molecule too large to access many of the internal passages. Explain why total internal surface area alone might overstate the surface actually available to that target. Accessibility and interaction strength belong in the explanation alongside area.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is adsorption?</p>
+<ul>
+<li>A. A mesh retaining only visible leaves</li>
+<li>B. Accumulation of a substance at a surface</li>
+<li>C. Every liquid changing into a gas</li>
+</ul>
+<p><strong>Answer:</strong> B — Adsorption involves association at surfaces, including internal pore surfaces.</p>
+<h3>Q2</h3>
+<p>Why does activated carbon not remove every substance equally?</p>
+<ul>
+<li>A. Water always destroys all carbon instantly</li>
+<li>B. Every dissolved molecule has identical behaviour</li>
+<li>C. Targets differ in access and surface interactions</li>
+</ul>
+<p><strong>Answer:</strong> C — Molecular properties, pore access and water chemistry influence retention.</p>
+<h3>Q3</h3>
+<p>A liquid loses visible colour after carbon contact. What can you conclude?</p>
+<ul>
+<li>A. Colour reduction alone does not prove safety</li>
+<li>B. Every microbe and salt must be removed</li>
+<li>C. The liquid is definitely safe to drink</li>
+</ul>
+<p><strong>Answer:</strong> A — A visible colour change does not test every biological and chemical hazard.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design an explanatory label for a carbon-treatment demonstration. It must state the target, describe surface adsorption, and identify an observation that would suggest declining capacity.</p>
+<p>Include a limitation saying that loss of visible colour does not certify drinking-water safety. Your label should distinguish what the demonstration directly shows from wider claims requiring specific testing, without pretending that a fine mesh and an adsorbent are interchangeable devices.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A material's useful surface can lie mostly inside it. A porous grain may provide many contact regions invisible from its outer silhouette. Understanding internal access helps explain why two similarly sized grains need not perform alike and why a used adsorbent may look unchanged while its available capacity differs.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Activated carbon can adsorb selected dissolved substances onto accessible internal surfaces, but contact, capacity and target chemistry limit its performance.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

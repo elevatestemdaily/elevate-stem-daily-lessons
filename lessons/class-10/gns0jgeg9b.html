@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 57: Why does a catalyst change reaction speed without changing the net equation? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 57</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a catalyst change reaction speed without changing the net equation?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a <strong>catalyst</strong> changes a reaction pathway without changing the overall reactants-to-products equation. Use an energy-profile model to separate activation barrier, reaction energy change and equilibrium. Work only with drawings; no chemical reaction is needed.</p>
+</div><h2>1. The mystery</h2>
+<p>Two accounts of a reaction can list the same starting materials and the same final products, yet one route can proceed faster under suitable conditions. The difference need not be extra reactant added to the net equation.</p>
+<p>A catalyst can participate in intermediate steps and be regenerated later. Looking only at the overall equation hides those steps and therefore hides the reason the rate changes.</p>
+<p>The useful question is how a process can take a different route between the same endpoints. The destination and the difficulty of reaching it are related ideas, but they are not the same quantity.</p>
+<h2>2. The science behind it</h2>
+<p>A reaction often requires particles to reach a sufficiently energetic arrangement before products can form. The <strong>activation energy</strong> is a useful measure of the energy barrier associated with a pathway. A high barrier can make a process slow at a given temperature.</p>
+<p>A <strong>catalyst</strong> provides an alternative reaction mechanism with a lower effective activation barrier. More reacting particles can then use the pathway under suitable conditions, increasing the rate. The catalyst does not merely push every particle faster by making the whole mixture hotter.</p>
+<p>The alternative mechanism can contain several steps and <strong>intermediates</strong>. A catalyst may temporarily bind a reactant or form a short-lived species, then be regenerated in a later step. Being absent from the net consumption does not mean being chemically uninvolved.</p>
+<p>When the step equations are combined, the catalyst cancels from the overall reactant-to-product accounting because it is regenerated. An intermediate also cancels, but it is formed during the mechanism and used later; the catalyst is supplied and recovered. Their roles differ even though both can disappear from the net equation.</p>
+<p>An energy-profile drawing compares the same reactant and product states. The catalysed route has a lower relevant barrier, while the energy difference between those endpoints stays the same. The catalyst does not create an extra store of reaction energy by lowering the drawn hill.</p>
+<p>For a reversible system at fixed conditions, catalysis can speed the approach to <strong>equilibrium</strong> without changing its position. It affects routes in both directions. It is therefore incorrect to claim that adding a catalyst alone makes the equilibrium favour a larger final proportion of products.</p>
+<p>A simple one-hill sketch is only a teaching model. A real catalysed pathway can have several rises and valleys, with the slow controlling stages depending on conditions. Lower effective barrier is the key comparison, not a requirement that every mechanism have exactly one peak.</p>
+<p>Catalysts are also <strong>specific</strong> to suitable reactions and conditions. A material that catalyses one process does not automatically accelerate every reaction in the same room. Surface availability, temperature and chemical environment can affect its performance.</p>
+<p>Regeneration does not mean a real catalyst lasts forever. Contamination, surface changes or other deactivation can reduce activity. The ideal net equation describes its reaction role, not an unlimited service-life guarantee for an industrial component.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a reactant energy level at the left and a product energy level at the right. Connect them first with a high peak and then with a lower pathway. Keep the endpoints identical in both drawings.</p>
+<p>Label the climb from the reactant level as the activation barrier. Label the difference between starting and finishing levels separately. The second label must not shrink merely because the peak is lower.</p>
+<p>Now add two or three small steps to the lower route. A catalyst marker enters one step and reappears after another. This shows why the detailed mechanism can change while the net equation retains the same overall material transformation.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares two energy profiles with the same endpoints. The higher curve represents an uncatalysed model route and the lower curve a catalysed one. Labels distinguish barrier height from the unchanged endpoint difference.</p>
+<p>A small step-chain below the graph marks catalyst involvement and regeneration. It is a conceptual pathway, not a recipe or a quantitative energy measurement.</p>
+<p>The diagram does not use a stopwatch result or a percentage rate increase. No particular industrial catalyst loading is assumed. Its job is to make the changed route and unchanged net transformation visible together.</p>
+<figure><img src="../../illustrations/class-10/day_57.svg" alt="Diagram for Why does a catalyst change reaction speed without changing the net equation?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Chemical industries and biological systems use suitable catalysts to make useful transformations proceed at practical rates. In an Indian science classroom, that connection can be discussed without turning the lesson into a home mixing experiment.</p>
+<p>Enzymes are biological catalysts, but this lesson does not repeat a digestion or cellular-energy pathway. The shared point is that a specific mechanism can offer a more accessible route while retaining the same overall transformation.</p>
+<p>An industrial process still needs reactant supply, energy management and appropriate conditions. A catalyst is not a promise of zero energy use, perfect conversion or permanent equipment performance. Those claims require more information than the word catalysed.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two colours.</p>
+<ol>
+<li>Draw energy against reaction-path progress.</li>
+<li>Fix one starting level and one finishing level.</li>
+<li>Add a high route and a lower-barrier alternative.</li>
+<li>Label activation barrier and endpoint energy difference separately.</li>
+<li>Draw a catalyst marker used and regenerated in a small step sequence.</li>
+</ol>
+<p>Keep the curves qualitative. Ask a partner whether moving only the peak changes the final-minus-initial energy difference. Then check that the catalyst marker returns instead of being consumed as a net reactant. No peroxide, metal powder, food enzyme or cleaning product is needed.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does a lower activation barrier fail to prove that more total energy is released? Use the shared endpoint levels to explain the distinction.</p>
+<p>Now consider a reversible process that already sits at equilibrium. Why would a catalyst not by itself create a new product-favouring equilibrium? Your explanation should include the availability of faster routes in both directions, rather than imagining a one-way gate that changes the relative stability of the endpoints.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a catalyst provide?</p>
+<ul>
+<li>A. A guarantee that every reaction becomes irreversible</li>
+<li>B. An alternative pathway with a lower effective barrier</li>
+<li>C. New atoms created from no starting material</li>
+</ul>
+<p><strong>Answer:</strong> B — The alternative mechanism can increase the rate under suitable conditions.</p>
+<h3>Q2</h3>
+<p>Why is the catalyst not consumed in the net equation?</p>
+<ul>
+<li>A. It must become every product molecule permanently</li>
+<li>B. It can never interact with a reactant</li>
+<li>C. It is regenerated during the mechanism</li>
+</ul>
+<p><strong>Answer:</strong> C — Its participation in individual steps cancels when it is recovered overall.</p>
+<h3>Q3</h3>
+<p>At fixed conditions, what does adding a suitable catalyst do to a reversible system?</p>
+<ul>
+<li>A. It speeds equilibrium approach without shifting its position</li>
+<li>B. It changes the endpoint energy difference</li>
+<li>C. It always shifts equilibrium entirely to products</li>
+</ul>
+<p><strong>Answer:</strong> A — Catalysis changes the routes and rates in both directions, not the equilibrium position.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create an energy-profile poster with a catalysed route, an uncatalysed route and identical endpoints. Add a two-step symbolic mechanism showing a catalyst entering and returning.</p>
+<p>Write three claims the drawing supports and one it does not. Supported claims should concern route, rate and regeneration. An unsupported claim might concern a guaranteed equilibrium yield or an exact time saving. Avoid inventing numerical performance for an unspecified reaction.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A substance can be deeply involved in a reaction mechanism and still disappear from the net equation. That disappearance is an accounting result after intermediate steps are added, not evidence that nothing happened to it. The detailed pathway explains an effect the compact overall equation cannot show by itself.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A catalyst offers a lower-barrier pathway and is regenerated; it changes the rate and mechanism without changing the net equation, endpoint energy difference or equilibrium position.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 27 of 30</footer>
+</div>
+</body>
+</html>

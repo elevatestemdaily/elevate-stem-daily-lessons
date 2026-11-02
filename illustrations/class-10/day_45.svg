@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can a repairability score guide a purchase?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Every model score needs a defined criterion and an evidence trail</text>
+<text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Access</text>
+<rect x="65" y="185" width="210" height="145" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Parts</text>
+<rect x="395" y="185" width="210" height="145" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="830" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Information</text>
+<rect x="725" y="185" width="210" height="145" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M105 245 L180 245 L180 280 L235 280" fill="none" stroke="#1f5f8b" stroke-width="3"/>
+<rect x="445" y="225" width="110" height="65" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="770" y1="220" x2="885" y2="220" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="770" y1="250" x2="885" y2="250" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="770" y1="280" x2="885" y2="280" stroke="#1f5f8b" stroke-width="2"/>
+<text x="170" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Defined route</text>
+<text x="500" y="390" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Availability may be unknown</text>
+<text x="830" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Reliable guidance</text>
+<text x="500" y="445" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Invented complete rubric: 2 + 1 + 0 = 3 out of 6.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Keep critical limitations and unknown evidence visible beside a total.</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does wind carry away loose topsoil?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Wind transport includes suspended dust, hopping grains and surface creep</text>
+<text x="180" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Suspension</text>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Saltation: short hops</text>
+<text x="820" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Cover interrupts movement</text>
+<line x1="50" y1="365" x2="950" y2="365" stroke="#579b70" stroke-width="4"/>
+<path d="M75 330 Q100 170 210 185 Q285 195 310 160" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="294" y1="172" x2="315" y2="157" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="105" cy="290" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="145" cy="220" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="225" cy="190" r="4" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M345 355 Q385 250 425 355 Q465 270 505 355 Q545 290 585 355" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="345" cy="355" r="7" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="425" cy="355" r="7" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="505" cy="355" r="7" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="585" cy="355" r="7" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="400" y1="345" x2="420" y2="353" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="510" y1="350" x2="555" y2="350" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M690 365 L702 310 L714 365" fill="none" stroke="#579b70" stroke-width="4"/>
+<path d="M730 365 L742 310 L754 365" fill="none" stroke="#579b70" stroke-width="4"/>
+<path d="M770 365 L782 310 L794 365" fill="none" stroke="#579b70" stroke-width="4"/>
+<path d="M810 365 L822 310 L834 365" fill="none" stroke="#579b70" stroke-width="4"/>
+<path d="M850 365 L862 310 L874 365" fill="none" stroke="#579b70" stroke-width="4"/>
+<path d="M890 365 L902 310 L914 365" fill="none" stroke="#579b70" stroke-width="4"/>
+<line x1="660" y1="205" x2="905" y2="205" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="180" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Fine material remains aloft</text>
+<text x="500" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Impacts loosen more grains</text>
+<text x="820" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Surface is less exposed</text>
+<text x="500" y="453" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Larger grains may roll or slide near the ground: surface creep.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Wind, particle attachment, moisture and cover all affect erosion.</text>
+</svg>

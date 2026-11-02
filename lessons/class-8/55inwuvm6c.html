@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 54: Why does a meteor glow before reaching the ground? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 54</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a meteor glow before reaching the ground?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a fast incoming space particle can produce a luminous atmospheric event. Distinguish <strong>meteoroid</strong>, <strong>meteor</strong> and <strong>meteorite</strong>, and identify <strong>ablation</strong>. Replace the idea of a falling star with an account of energy transfer, heated gas and material loss.</p>
+</div><h2>1. The mystery</h2>
+<p>A bright streak crosses a night-sky photograph. People call it a shooting star, but an actual star has not rushed through the local atmosphere. A much smaller incoming object can create a conspicuous luminous trail.</p>
+<p>Why does it become bright before reaching the ground? The object moves rapidly relative to atmospheric gas. Interactions transfer kinetic energy into heating, excitation and other changes around its path.</p>
+<p>The visible light is an event involving the object and surrounding gas, not simply a tiny star with its own internal stellar energy source.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>meteoroid</strong> is a small natural object in space. When its atmospheric passage produces a luminous event, that event is a <strong>meteor</strong>. A surviving piece that reaches the ground is a <strong>meteorite</strong>. These words distinguish the object, the observed event and a possible surviving fragment.</p>
+<p>Incoming material can move very rapidly relative to atmospheric gas. The detailed flow depends on size and atmospheric conditions. Collisions and, where applicable, strong compression and shock structures transfer energy through the surrounding region.</p>
+<p>Gas can become hot and excited, and material from the object's surface can enter the flow. Emission from these materials contributes to the visible streak. The light is not necessarily produced only by one glowing solid surface.</p>
+<p>Some incoming kinetic energy becomes internal energy of gas and material. This is not an unlimited new energy source: the object's motion and the flow interactions provide the energy budget. Drag and fragmentation can change the object's subsequent motion.</p>
+<p><strong>Ablation</strong> is loss of surface material through processes associated with the intense entry environment, including heating and removal of material. A meteoroid can shrink, fragment or vaporise along its path. Different objects do not all behave identically.</p>
+<p>The everyday phrase friction with air is a rough introduction, but picturing slow rubbing between two familiar solid surfaces is incomplete. High-speed gas dynamics, collisions and energy transfer are central. Compression heating is especially relevant in suitable high-speed flow regimes.</p>
+<p>Many luminous events do not leave a recognisable object on the ground. Others produce surviving meteorites. A bright appearance alone does not tell you the starting mass, exact composition or whether a fragment will survive.</p>
+<p>The event is different from a comet tail. A comet can release material shaped by solar influences in space; a meteor's light comes from atmospheric entry. It also differs from the colour of a distant star. The lesson does not repeat orbital gravity or stellar spectra as its core explanation.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a moving object entering a region containing gas symbols. Add arrows showing energy transferred from relative motion into the surrounding gas and surface. Draw a luminous region along the path.</p>
+<p>Then reduce the size of the object and add released material behind it. Label this ablation rather than automatically calling every lost piece a meteorite. Only a surviving fragment that reaches the ground gets that name.</p>
+<p>Keep the three vocabulary labels on separate parts of the sequence. This prevents a common sentence in which a meteor is treated as both the light and an unchanged rock sitting on the ground with no distinction.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG follows an incoming meteoroid into an atmospheric region, where heated gas and ablated material produce a luminous path. A smaller possible surviving fragment is shown farther along, with a separate ground-reaching label.</p>
+<p>Arrows identify energy transfer and surface material loss. The surrounding gas is visible only as schematic symbols. The illustration exaggerates sizes and does not provide a real altitude, temperature or entry-speed estimate.</p>
+<p>A comparison note separates meteors from stars and comet tails. The picture includes a possible survivor, not a claim that every observed streak must produce a meteorite.</p>
+<figure><img src="../../illustrations/class-8/day_54.svg" alt="Diagram for Why does a meteor glow before reaching the ground?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Meteor photographs and monitored sky-camera records can provide information about a fast event that is difficult to inspect directly. Several observing viewpoints can help reconstruct a path, but a single bright image does not reveal every physical property.</p>
+<p>Indian astronomy clubs and educational sources may discuss meteor showers. A shower is associated with a population of incoming particles, not a group of actual stars falling from the sky.</p>
+<p>Do not travel to a suspected impact site, touch unknown debris or assume a found rock is a meteorite. This lesson uses images and models only. Ordinary unfamiliar material should be left for appropriate adult or expert assessment.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours. No heating, fast projectiles or outdoor night activity is needed.</p>
+<ol>
+<li>Draw an incoming object before atmospheric interaction.</li>
+<li>Add gas symbols and a luminous region along its path.</li>
+<li>Mark energy transfer from motion into gas and surface changes.</li>
+<li>Show some surface material being lost.</li>
+<li>Add a possible surviving fragment at the ground and label the vocabulary carefully.</li>
+</ol>
+<p>The diagram is a process sequence, not a scale drawing. Do not assign numerical speed or temperature from the colour of your pencil. Ask a partner which label names the visible event and which names the possible piece collected only after survival to the surface.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can the brightest part of the visible event involve surrounding gas as well as the object? Use energy transfer and emission in your explanation rather than describing a miniature star.</p>
+<p>Now imagine the object fragments high in the atmosphere. Explain why the light can change while the original body is no longer one intact piece. A recorded streak is evidence of a process, not necessarily a portrait of one unchanged solid.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a meteor in the precise sequence used here?</p>
+<ul>
+<li>A. Every distant star visible at night</li>
+<li>B. The luminous atmospheric event</li>
+<li>C. Only the rock already resting on the ground</li>
+</ul>
+<p><strong>Answer:</strong> B — Meteor names the visible event associated with atmospheric passage.</p>
+<h3>Q2</h3>
+<p>What does ablation describe in this context?</p>
+<ul>
+<li>A. Loss of material from the incoming object</li>
+<li>B. Creation of an unlimited new energy source</li>
+<li>C. The Moon changing phase at midnight</li>
+</ul>
+<p><strong>Answer:</strong> A — The intense entry environment can remove surface material and reduce the object.</p>
+<h3>Q3</h3>
+<p>A fragment survives entry and reaches the ground. What is it called?</p>
+<ul>
+<li>A. A comet nucleus by definition</li>
+<li>B. A constellation</li>
+<li>C. A meteorite</li>
+</ul>
+<p><strong>Answer:</strong> C — A surviving ground-reaching piece is a meteorite.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a labelled three-stage sequence distinguishing meteoroid, meteor and meteorite. Add ablation and a route in which nothing recognisable reaches the ground.</p>
+<p>Include one correction to the phrase shooting star. Your account should connect fast atmospheric interaction to light without claiming that every visible event has the same temperature or that every suspected ground rock can be identified from appearance alone.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The bright streak is partly a record of what happened to the gas and released material along the path. It can be much more visible than the original object. A striking image therefore need not mean that a correspondingly large intact rock remains available to collect afterwards.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A meteor is a luminous atmospheric event powered by fast interaction with gas; ablation removes material, and only surviving ground-reaching pieces are meteorites.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 24 of 30</footer>
+</div>
+</body>
+</html>

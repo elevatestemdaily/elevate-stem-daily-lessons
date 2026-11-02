@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 48: Why do oil and water form separate layers after shaking? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 48</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do oil and water form separate layers after shaking?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why an oil-and-water mixture separates after shaking. Distinguish <strong>immiscibility</strong>, <strong>droplets</strong> and density-based layer order. Predict how changing shaking intensity affects the temporary appearance without assuming that it changes the liquids' long-term tendency to separate.</p>
+</div><h2>1. The mystery</h2>
+<p>A little cooking oil rests above water in a closed transparent container. Shake the container gently, and the sharp boundary disappears into many tiny droplets. Leave it still, and the two main layers return.</p>
+<p>Did shaking make the liquids dissolve and then somehow undo the process? Not necessarily. A liquid can be broken into small suspended droplets without becoming mixed at the molecular scale. The difference between those two arrangements explains why an apparently uniform cloudy mixture may later separate.</p>
+<h2>2. The science behind it</h2>
+<p>Two liquids are <strong>miscible</strong> if they can form a uniform liquid mixture over the relevant range of proportions. Oil and water are largely <strong>immiscible</strong> under ordinary kitchen conditions: they tend to form separate liquid regions rather than one homogeneous solution.</p>
+<p>Water molecules interact strongly with one another. Typical cooking-oil molecules have large nonpolar regions that do not interact with water in the same way. Mixing them does not provide a favourable set of interactions sufficient to keep them uniformly combined at the molecular scale.</p>
+<p>It is misleading to picture oil and water as two materials that actively push each other away like identical magnetic poles. The outcome depends on the relative interactions among water molecules, among oil molecules, and between the two. The system tends toward arrangements that reduce unfavourable interfacial contact.</p>
+<p>Shaking supplies mechanical energy that breaks larger oil regions into <strong>droplets</strong> distributed through water. Each droplet is still a region of oil. It is much larger than an individual molecule, even when it is too small to distinguish easily with the naked eye.</p>
+<p>A temporary dispersion of one liquid as droplets in another can be called an <strong>emulsion</strong>. Without a stabilising arrangement, droplets can encounter one another and merge, a process called <strong>coalescence</strong>. Smaller droplets joining larger ones gradually recreate more distinct liquid regions.</p>
+<p>Many ordinary cooking oils are less dense than water, so they form the upper layer. This density difference helps explain the layer order, not the basic reason the liquids remain separate. Two immiscible liquids could have a different order if their relative densities were different.</p>
+<p>Shaking more vigorously can initially produce smaller droplets and a cloudier appearance. It does not necessarily make the liquids permanently miscible. The time taken to separate depends on droplet size, liquid properties and conditions. There is no single universal waiting time for every kitchen mixture.</p>
+<p>Ordinary food mixtures can contain substances that stabilise droplets, so a real dressing may behave differently from just oil and water. This lesson deliberately excludes detergent and the micelle mechanism of soap, which were covered earlier. The focus is the difference between temporary droplet dispersion and molecular mixing.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw water as a continuous blue region and oil as one amber layer. In a second picture, divide the amber layer into many separate circles surrounded by blue. Keep each circle amber inside.</p>
+<p>The second drawing represents droplets, not dissolved oil molecules. In a third picture, merge neighbouring circles and restore a larger oil region. This sequence makes it possible to explain shaking without claiming a chemical transformation.</p>
+<p>Now place a small label beside the final upper layer saying “less dense in this example.” Keep another label beside the boundary saying “largely immiscible.” These labels answer different questions: which layer is on top, and why separate liquid regions remain.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG has three containers: separate layers, shaken droplets and layers re-forming. Oil is amber and water blue throughout the sequence, so the identities remain trackable.</p>
+<p>The middle container contains small amber circles, each explicitly labelled as a droplet rather than a molecule. Two arrows point toward merging droplets in the final stage. A caption separates immiscibility from the density explanation for oil being above water.</p>
+<p>The diagram exaggerates droplet sizes for visibility. It is not a claim that every shaken mixture has the same sizes or separates along exactly the same timetable.</p>
+<figure><img src="../../illustrations/class-7/day_48.svg" alt="Diagram for Why do oil and water form separate layers after shaking?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A simple oil-and-water dressing may need shaking before use because the ingredients tend to separate. Shaking changes the distribution temporarily. It does not necessarily change the fundamental compatibility of the liquid molecules.</p>
+<p>Cooking oil can also form a surface layer on a watery food. That visible arrangement involves both separation and density. However, a complex food contains many ingredients, so it should not automatically be treated as the same simple two-liquid system.</p>
+<p>Do not pour the experiment into a drain. A small amount of used oil can be wiped into suitable household waste with adult help. The lesson concerns liquid separation, not a demonstration that oil-contaminated water is safe after the visible layer is removed.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a small transparent container with a secure lid, room-temperature water and a small amount of cooking oil. <strong>Do this with an adult.</strong> Use an unbreakable container and keep it well away from electrical equipment.</p>
+<ol>
+<li>Add water, then a small amount of oil.</li>
+<li>Draw the initial layers.</li>
+<li>Close the lid and gently invert the container several times.</li>
+<li>Draw the droplet-like cloudy appearance.</li>
+<li>Leave it still and record any emerging boundary during the remaining time.</li>
+</ol>
+<p>Do not taste the sample or claim a permanent result from a brief observation. Separation may continue beyond five minutes. Do not add detergent; it would introduce a different mechanism and change the question being investigated.</p>
+</div><h2>7. Think deeper</h2>
+<p>If two liquids have different densities but are fully miscible, must they remain as two permanent layers after mixing? Explain why density difference alone is not a complete rule for deciding whether liquids mix.</p>
+<p>Now suppose vigorous shaking makes smaller droplets than gentle inversion. Predict how the appearance might change while keeping the explanation separate from a claim about complete molecular dissolution.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is an oil droplet in shaken water?</p>
+<ul>
+<li>A. A newly created water molecule</li>
+<li>B. A small region of liquid oil</li>
+<li>C. A solid crystal of sugar</li>
+</ul>
+<p><strong>Answer:</strong> B — A droplet remains oil even though it is dispersed within water.</p>
+<h3>Q2</h3>
+<p>Why does ordinary cooking oil usually form the upper layer?</p>
+<ul>
+<li>A. It is commonly less dense than water</li>
+<li>B. It has become a gas</li>
+<li>C. It must contain trapped magnets</li>
+</ul>
+<p><strong>Answer:</strong> A — Relative density helps determine the order of separate liquid layers.</p>
+<h3>Q3</h3>
+<p>A shaken mixture looks evenly cloudy. What can you conclude?</p>
+<ul>
+<li>A. The oil has changed into water</li>
+<li>B. Every oil molecule must be dissolved</li>
+<li>C. Separate droplets may still be present</li>
+</ul>
+<p><strong>Answer:</strong> C — A dispersion of many small droplets can look uniform without being a molecular solution.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a correction to the statement “Shaking makes oil dissolve in water.” Use three pictures to distinguish layers, droplets and a uniform molecular solution.</p>
+<p>Your correction should also explain why oil is usually the upper layer in this kitchen example. Keep the explanation about density separate from the explanation about immiscibility. Include a reminder that the drawings are enlarged models rather than visible molecular photographs.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A mixture can look evenly cloudy while still containing countless separate regions of another liquid. Visual uniformity is not always molecular uniformity. Following whether the material forms droplets or a true solution is more informative than deciding whether the boundary is easy to see at one moment.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Shaking disperses oil into droplets; immiscibility favours separation, while the liquids' relative densities help determine which layer lies above the other.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 18 of 30</footer>
+</div>
+</body>
+</html>

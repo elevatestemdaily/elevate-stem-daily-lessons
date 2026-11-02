@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 44: Why is a comet's tail directed away from the Sun? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 44</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why is a comet's tail directed away from the Sun?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why a comet's tail is shaped by the Sun rather than simply trailing behind like smoke from a moving vehicle. Distinguish the <strong>nucleus</strong>, <strong>coma</strong>, dust tail and ion tail. Recognise why the two tails can have different shapes and why neither is a solid extension of the comet.</p>
+</div><h2>1. The mystery</h2>
+<p>A picture of a comet shows a bright head and a long tail. It is tempting to draw the tail directly opposite the direction the comet is travelling, as though space were air blowing past a car.</p>
+<p>But the Sun strongly influences the escaping material. The tail's orientation can therefore differ from a simple backwards-motion arrow. Some comet pictures even show two tails with different curves.</p>
+<p>The useful question is what material has left the comet and which solar influences act on it, rather than assuming that the visible tail is a fixed handle attached to a moving rock.</p>
+<h2>2. The science behind it</h2>
+<p>A comet's <strong>nucleus</strong> contains ice mixed with dust and rocky material. As solar heating increases under suitable conditions, volatile material escapes and carries dust outward. The surrounding cloud is called the <strong>coma</strong>.</p>
+<p>Some escaped gas becomes <strong>ionised</strong>, meaning it contains electrically charged particles. The Sun continually supplies an outward flow of charged particles and magnetic structure known as the <strong>solar wind</strong>. Its interaction with cometary ions helps form the ion or plasma tail.</p>
+<p>The <strong>ion tail</strong> is generally relatively straight and directed away from the Sun. Its structure reflects interaction with the solar-wind environment, not simply the direction the nucleus happens to be travelling at that moment.</p>
+<p>The <strong>dust tail</strong> behaves differently. Sunlight exerts <strong>radiation pressure</strong> on dust, influencing its motion away from the Sun. Dust also retains motion related to the comet's path. These combined effects can produce a broader, curved tail rather than one perfectly radial line.</p>
+<p>Therefore the statement that a comet tail points away from the Sun is a useful introduction, especially for the ion tail, but it needs qualification for dust. Real viewing geometry and changing solar conditions can further affect the apparent shape.</p>
+<p>A tail consists of released material, not one rigid structure. Different particles leave at different times and follow different paths. The visible pattern can persist while its constituent material is continually changing.</p>
+<p>The comet does not need to pass through Earth's atmosphere to make a tail. Solar heating and interaction with sunlight and solar wind operate in space. This separates comet tails from the atmospheric heating involved in a meteor, which is a different planned topic.</p>
+<p>As a comet moves away from the Sun, its tail need not switch to point behind its motion like an ordinary vehicle plume. Solar direction remains central to the orientation. We focus here on the escaping-material mechanism, not the gravitational explanation of the comet's orbit.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw the Sun, a comet nucleus and an arrow for the comet's motion. Add a separate outward-from-Sun direction. Keeping those arrows separate prevents the common mistake of treating them as automatically opposite.</p>
+<p>From the coma, draw one relatively straight ion tail away from the Sun and one broader curved dust tail. Label the different solar influences instead of assigning both tails exactly the same particle behaviour.</p>
+<p>Then redraw the comet moving outward along a different part of its path. Preserve the away-from-Sun orientation logic. The model should show why a tail can appear to lead rather than trail the comet's motion in some configurations.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows sunlight and solar wind arriving from the Sun side, a nucleus surrounded by a coma, a relatively straight ion tail and a curved dust tail. A separate motion arrow is deliberately not used as the tail's sole direction guide.</p>
+<p>Labels identify charged gas and dust as different material streams. The diagram exaggerates sizes and does not represent a particular named comet or an observed numerical tail length.</p>
+<p>The caption states that tails are released material shaped by solar interactions. It also warns that the dust tail is not always exactly radial, keeping the simple title from becoming an overgeneralised rule.</p>
+<figure><img src="../../illustrations/class-8/day_44.svg" alt="Diagram for Why is a comet's tail directed away from the Sun?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Comet photographs published by space agencies can show a narrow ion tail and a broader dust structure. Their colours may reflect the imaging method, so colour alone is not enough to identify every feature reliably.</p>
+<p>Indian students may encounter comet images through observatories, newspapers or astronomy clubs. A scientifically useful image caption should identify the Sun direction and distinguish a real observation from an artist's illustration or enhanced composite.</p>
+<p>No direct solar viewing is needed. Never search close to the Sun with binoculars or a telescope for this lesson. A published image or paper model is enough to examine the tail geometry safely.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three colours. No dust, smoke or outdoor equipment is required.</p>
+<ol>
+<li>Draw the Sun at one edge and a comet nearer the centre.</li>
+<li>Mark the direction away from the Sun.</li>
+<li>Add a small coma around the nucleus.</li>
+<li>Draw a straight ion-tail model and a curved dust-tail model.</li>
+<li>Add a separate comet-motion arrow and test whether your explanation wrongly depends only on it.</li>
+</ol>
+<p>Repeat the drawing with the comet moving outward. The activity is a directional model, not a calculation of actual particle trajectories. Keep the Sun-facing geometry fixed while changing the motion arrow so the comparison answers the intended question.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why would a tail containing particles released at many different times fail to behave like a rigid rod attached to the nucleus? Consider continuing supply and changing particle positions.</p>
+<p>Now explain why “tail” does not mean “always behind the motion.” Everyday names can suggest a familiar analogy that fails under different physical conditions. Identify the solar direction that your improved model must preserve.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the coma of a comet?</p>
+<ul>
+<li>A. A solid handle attached to Earth</li>
+<li>B. The whole atmosphere of the Sun</li>
+<li>C. The cloud around its nucleus</li>
+</ul>
+<p><strong>Answer:</strong> C — The coma is the surrounding cloud of escaped gas and dust near the nucleus.</p>
+<h3>Q2</h3>
+<p>Why can the dust and ion tails have different shapes?</p>
+<ul>
+<li>A. Dust and ions respond differently to solar influences</li>
+<li>B. One tail must be an ordinary cloud in Earth air</li>
+<li>C. Every particle follows an identical path</li>
+</ul>
+<p><strong>Answer:</strong> A — Radiation pressure and solar-wind interactions affect the material streams differently.</p>
+<h3>Q3</h3>
+<p>A comet moves away from the Sun. Must its ion tail point behind that motion?</p>
+<ul>
+<li>A. Yes, it requires Earth atmosphere</li>
+<li>B. No, the away-from-Sun direction remains central</li>
+<li>C. Yes, tail always means opposite velocity</li>
+</ul>
+<p><strong>Answer:</strong> B — The ion tail is shaped mainly by solar interaction rather than a simple backwards-motion rule.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Correct a cartoon that draws every comet tail directly opposite its velocity arrow. Add the Sun, identify dust and ions, and explain their different responses.</p>
+<p>Include one qualified statement: the ion tail is generally directed away from the Sun, while the dust tail can curve. Do not give an invented length or claim that one simplified drawing predicts every photograph's exact appearance.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A comet can leave its tail material behind without the visible tail always pointing behind its direction of travel. The shape is the history of many particles acted on by solar influences. Treating that pattern as a fixed body part hides the very mechanism that makes it interesting.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Comet tails are escaping material shaped by solar interactions: ions generally stream away from the Sun, while dust responds differently and can form a curved tail.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 14 of 30</footer>
+</div>
+</body>
+</html>

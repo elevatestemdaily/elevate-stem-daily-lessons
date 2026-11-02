@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 41: Why can camphor disappear from an open cupboard? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 41</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can camphor disappear from an open cupboard?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain <strong>sublimation</strong>, the direct transition from solid to gas under relevant conditions. Distinguish it from melting, evaporation and a chemical reaction. Use camphor as a conceptual example without handling, heating or deliberately smelling it.</p>
+</div><h2>1. The mystery</h2>
+<p>A camphor piece left in an open setting can become smaller without leaving an obvious puddle. The material has not necessarily vanished or turned into a completely new chemical substance.</p>
+<p>Some of it can enter the gas phase directly from the solid surface. A process does not need a visible liquid stage simply because a familiar ice cube melts before its water evaporates.</p>
+<p>The useful question is which states the material passes through under the actual conditions. Appearance alone, including the absence of an observed puddle, needs to be interpreted with that model.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Sublimation</strong> is the transition from solid directly to gas without an intervening bulk liquid stage. The reverse gas-to-solid process is <strong>deposition</strong>. These names describe phase transitions rather than the creation or destruction of matter.</p>
+<p>At a solid surface, some particles can leave into the gas under suitable conditions. For substances with appreciable vapour pressure at room conditions, that loss can become noticeable over time. Camphor is a familiar school example of a substance that can slowly sublime.</p>
+<p>The gaseous material consists of the substance in another state. In the ideal pure-substance model, camphor molecules remain camphor molecules as they leave the surface. Sublimation itself does not mean those molecules must chemically decompose.</p>
+<p><strong>Melting</strong> instead produces a bulk liquid from a solid. <strong>Evaporation</strong> transfers liquid into gas. A sequence of melting then evaporation therefore differs from direct sublimation, even though both can end with material in the gas phase.</p>
+<p>A substance is not restricted to one phase-transition route under every condition. Temperature and pressure influence which phases are stable and how a sample behaves. Camphor can also have a liquid phase under suitable conditions; saying it can sublime does not mean it can never melt.</p>
+<p>In an open setting, gas leaving the surface can be carried away into the surroundings, allowing continued net loss. In a closed system, the gas amount and exchange with surfaces can evolve differently. The visible solid can shrink while the total material in a properly closed ideal system remains accounted for.</p>
+<p>Rate depends on temperature, exposed surface, surrounding gas conditions and the substance. No universal cupboard lifetime can be assigned from the topic name. Commercial blocks can also contain additives, so a product should not automatically be treated as a pure reference material.</p>
+<p>An odour can indicate molecules reaching a person's nose, but smelling is not a safe measurement method for arbitrary substances. This lesson does not ask students to inhale camphor, heat it, light it or handle unknown household chemical products.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw three state boxes: solid, liquid and gas. Connect solid directly to gas for sublimation, solid to liquid for melting and liquid to gas for evaporation. Label the reverse direct arrow deposition.</p>
+<p>Place the same material symbol in the solid and gas boxes to preserve identity. This avoids a drawing in which the substance turns into empty space because it is no longer visible.</p>
+<p>Now draw open and closed boundaries around two copies of the model. In the open one, material can leave the drawn region. In the closed one, it remains somewhere inside even if less is present as visible solid. The distinction is system boundary, not a failure of matter accounting.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a solid surface releasing schematic particles directly into a gas region. A separate state map compares this arrow with the two-step melting-and-evaporation route.</p>
+<p>Labels identify sublimation and deposition without adding a liquid puddle to the direct route. A boundary comparison distinguishes an open cupboard model from an ideal closed container.</p>
+<p>The diagram contains no heating apparatus and no instructions for a chemical demonstration. It uses camphor as an explanatory example, not a recommended material for a home activity or a claim that every commercial block has identical composition.</p>
+<figure><img src="../../illustrations/class-9/day_41.svg" alt="Diagram for Why can camphor disappear from an open cupboard?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A household solid that slowly becomes smaller can raise several possible explanations, including sublimation, physical loss or reaction. The object's label and conditions matter before deciding which occurred. Not every shrinking solid is automatically camphor or a pure sublimating substance.</p>
+<p>Industrial processes can use direct solid-gas transitions under controlled conditions. A simple school model explains the phase route without reproducing specialised equipment or temperatures.</p>
+<p>Do not replace camphor with mothballs, iodine or dry ice for this activity. Those materials introduce hazards unnecessary for the question. Paper diagrams provide the relevant distinction safely.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and one colour for each physical state. No camphor or other chemical is needed.</p>
+<ol>
+<li>Draw solid, liquid and gas boxes.</li>
+<li>Add the direct solid-to-gas arrow and label it sublimation.</li>
+<li>Add the separate melting-and-evaporation path.</li>
+<li>Reverse the direct arrow and label deposition.</li>
+<li>Track identical material symbols across an open and closed version.</li>
+</ol>
+<p>Ask a partner to locate the route that never includes a bulk liquid. The symbol count is conceptual, not a rate measurement. Explain what stays the same and what changes rather than writing that the solid simply disappears into nothing.</p>
+</div><h2>7. Think deeper</h2>
+<p>If a closed container has less visible solid after a time, what other location could hold some of the material? Why is observing only the solid portion insufficient for a total-mass conclusion?</p>
+<p>Now imagine changing temperature and pressure. Explain why a substance capable of sublimation under one set of conditions may follow a different route elsewhere. A phase behaviour statement needs conditions, not an absolute label attached to the substance forever.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is sublimation?</p>
+<ul>
+<li>A. Every solid breaking into smaller grains</li>
+<li>B. Only the flow of liquid down a pipe</li>
+<li>C. Direct transition from solid to gas</li>
+</ul>
+<p><strong>Answer:</strong> C — Sublimation bypasses an intervening bulk liquid phase.</p>
+<h3>Q2</h3>
+<p>Why does sublimation not mean matter disappears?</p>
+<ul>
+<li>A. Every molecule must become a new element</li>
+<li>B. The substance can remain present in gas form</li>
+<li>C. Gas contains no material at all</li>
+</ul>
+<p><strong>Answer:</strong> B — The material has changed physical state rather than ceased to exist.</p>
+<h3>Q3</h3>
+<p>A substance can sublime at one condition. Must it never form a liquid?</p>
+<ul>
+<li>A. No, phase behaviour depends on conditions</li>
+<li>B. Yes, pressure never affects phases</li>
+<li>C. Yes, the word forbids every other phase</li>
+</ul>
+<p><strong>Answer:</strong> A — Temperature and pressure can allow a different transition route.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Correct the statement “Camphor disappears because it melts into invisible liquid.” Use a state diagram showing the direct route and explain what gas contains.</p>
+<p>Include a limitation about product composition and conditions. Your explanation should distinguish sublimation from chemical decomposition without proposing a heating or smelling test. The challenge is to improve the model, not to make an unsafe demonstration more dramatic.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The absence of a visible puddle does not make a material-loss observation mysterious once direct solid-to-gas transfer is considered. Invisible does not mean absent. Following the material across states and system boundaries explains more than checking only whether the original solid shape remains.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Sublimation transfers material directly from solid to gas under suitable conditions; the gas still contains the substance, and a liquid stage is not required.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 11 of 30</footer>
+</div>
+</body>
+</html>

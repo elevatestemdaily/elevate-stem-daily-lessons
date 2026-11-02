@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 58: Why is air a mixture while pure water is a compound? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 58</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why is air a mixture while pure water is a compound?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Distinguish a <strong>mixture</strong> from a <strong>compound</strong> using composition and chemical identity. Explain why air can contain changing proportions of components while pure water has a defined molecular composition. Keep the idea of pure water separate from an ordinary sample containing dissolved materials.</p>
+</div><h2>1. The mystery</h2>
+<p>Air is invisible and can look uniform. Pure liquid water can also look uniform. Appearance therefore does not reveal that one is a mixture of substances and the other is a compound.</p>
+<p>Air in a humid room contains more water vapour than air in a dry room. Both are still called air. But a water molecule does not become a different ratio of hydrogen and oxygen just because the weather changes.</p>
+<p>What kind of compositional change can occur without creating a different chemical substance? That question helps separate a mixture from a compound.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>mixture</strong> contains more than one substance combined without requiring those components to form one new fixed-ratio chemical substance. Its proportions can vary. Mixtures can be visibly uneven or uniform at the scale at which they are observed.</p>
+<p>Air contains several gases. Nitrogen and oxygen are major components, together with smaller amounts of other gases and variable water vapour. An air sample can therefore differ in composition from another sample while remaining a gas mixture.</p>
+<p>The components retain their own chemical identities. Oxygen in air has not become a new element called air. Mixing gases changes their distribution and the overall composition of the sample, not necessarily the identity of each component.</p>
+<p>A <strong>compound</strong> consists of elements chemically combined in a defined composition. Pure water is the compound represented by <strong>H2O</strong>. Each ordinary water molecule contains two hydrogen atoms and one oxygen atom. The formula describes an atomic ratio, not equal spoonfuls of ingredients.</p>
+<p>Changing that ratio does not simply create a more oxygen-rich variety of the same water molecule. A different chemical composition refers to a different substance or a mixture of substances. This is distinct from adding a separate gas above a container of water.</p>
+<p>Physical separation methods can separate components of mixtures by exploiting their different properties. Chemical decomposition of a compound is a different kind of operation. This lesson uses that distinction conceptually and does not ask students to generate gases or perform chemical decomposition.</p>
+<p><strong>Pure water</strong> must also be distinguished from drinking water, rainwater or salt water. Ordinary water samples can contain dissolved gases, minerals and other substances. Such a sample is a mixture containing the compound water. Its label in everyday language does not guarantee chemical purity.</p>
+<p>Uniform appearance is therefore not a definition of purity. A clear salt solution can be homogeneous while containing more than one substance. A compound can also occur within a complex mixture. The classification depends on components and chemical composition, not just colour, clarity or whether a sample is liquid.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a box containing several kinds of symbols that remain separate from one another. Change the number of each kind in a second box. This models varying proportions in a mixture.</p>
+<p>For pure water, draw repeated groups, each with two small hydrogen symbols joined to one oxygen symbol. Keep that grouping consistent throughout. This models the formula ratio without requiring a new explanation of chemical bonding.</p>
+<p>Finally add a different dissolved-substance symbol among the water groups. Label the whole box a mixture containing water. The water molecules retain their composition while the overall sample now includes another component. This third picture prevents the mistaken rule that anything called water must be pure.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares an air-mixture box with a pure-water box. Different gas symbols appear separately in the first, while identical H2O groups appear in the second. Labels distinguish changing mixture proportions from fixed molecular composition.</p>
+<p>A smaller third sample shows water molecules alongside dissolved material. It is explicitly labelled as a mixture containing the compound water. The diagram's symbols are not drawn to scale, and their counts are chosen for clarity rather than to represent atmospheric percentages.</p>
+<p>The graphic does not imply that real air molecules are coloured or that every pure substance must consist of the same kind of molecule as water.</p>
+<figure><img src="../../illustrations/class-7/day_58.svg" alt="Diagram for Why is air a mixture while pure water is a compound?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A humid monsoon day and a dry winter day can involve air with different water-vapour content. The changing component does not require inventing a new compound called humid air. It is a composition change within a mixture.</p>
+<p>Water from different Indian regions can contain different dissolved minerals. That does not alter the formula of each water molecule. It alters the composition of the sample as a whole. Chemical purity and suitability for drinking are also different questions, so this lesson offers no water-safety diagnosis.</p>
+<p>A laboratory label stating pure water is a stronger compositional claim than the everyday word water on a jug. Scientific descriptions become clearer when they specify the level being discussed: molecule, substance or sample.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three coloured pencils. No gases, heating or chemicals are needed.</p>
+<ol>
+<li>Draw an air sample with several kinds of separate gas symbols.</li>
+<li>Draw another with a changed proportion of one component.</li>
+<li>Draw pure water using repeated groups of two H symbols and one O symbol.</li>
+<li>Add separate dissolved-material symbols to a copy of the water sample.</li>
+<li>Label mixture, compound and mixture containing a compound beside the appropriate drawings.</li>
+</ol>
+<p>Ask a partner which changes affect the whole sample's proportions and which would change a molecule's formula. Your drawing models composition rather than visible size, exact atmospheric percentages or the physical positions of real molecules.</p>
+</div><h2>7. Think deeper</h2>
+<p>Could a mixture have a very carefully controlled composition? Yes: variable composition means the proportions are not fixed by one compound's chemical formula, not that every mixture must change randomly.</p>
+<p>Now consider a sample containing pure-water molecules plus dissolved salt. Explain why saying “water is a compound” and “this salt-water sample is a mixture” can both be correct. Identify the object each sentence classifies.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does H2O specify for an ordinary water molecule?</p>
+<ul>
+<li>A. Two hydrogen atoms and one oxygen atom</li>
+<li>B. A mixture with any chosen atom ratio</li>
+<li>C. Equal masses of two unknown gases</li>
+</ul>
+<p><strong>Answer:</strong> A — The formula gives the fixed atomic composition of a water molecule.</p>
+<h3>Q2</h3>
+<p>Why is air classified as a mixture?</p>
+<ul>
+<li>A. Every gas has become a new element</li>
+<li>B. It must contain visible solid grains</li>
+<li>C. It contains substances in variable proportions</li>
+</ul>
+<p><strong>Answer:</strong> C — Air contains several gases whose overall proportions can vary.</p>
+<h3>Q3</h3>
+<p>A clear sample contains water and dissolved salt. How is the whole sample classified?</p>
+<ul>
+<li>A. Pure water because it looks clear</li>
+<li>B. A mixture containing the compound water</li>
+<li>C. One new element called salt water</li>
+</ul>
+<p><strong>Answer:</strong> B — The sample has more than one substance even though its water molecules remain H2O.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a guide correcting three claims: all clear samples are pure, all mixtures are visibly uneven, and changing humidity changes the formula of water.</p>
+<p>Use one picture for air, one for pure water and one for a solution containing water. Each correction should name the component or ratio that matters. Do not perform a decomposition experiment; the task is classification from a model of composition.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The same compound can appear inside many different mixtures without losing its chemical identity. A water molecule in a carefully described model can keep its H2O composition while the surrounding sample varies widely. Confusion often arises when a statement about an entire sample is applied to one molecule, or the reverse.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Air is a mixture with variable component proportions; pure water is a compound with H2O composition, while ordinary water samples can be mixtures containing it.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 28 of 30</footer>
+</div>
+</body>
+</html>

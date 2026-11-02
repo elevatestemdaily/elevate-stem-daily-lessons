@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 35: How can a life-cycle comparison reveal a product's hidden waste? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 35</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a life-cycle comparison reveal a product's hidden waste?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Compare products using the same defined service and a clear <strong>life-cycle boundary</strong>. Trace materials through manufacture, transport, use and end of life. Distinguish a complete-looking product from its wider resource and waste pathways without assigning unsupported environmental scores.</p>
+</div><h2>1. The mystery</h2>
+<p>One container looks durable; another looks lightweight. Judging only their appearance at the shop leaves out extraction, manufacturing, transport, cleaning and what happens after use.</p>
+<p>A reusable item may require more material initially but serve many uses. A disposable item may require repeated replacement. Neither label alone determines the better result for every setting.</p>
+<p>The useful comparison begins with the service to be provided. Only then can the required products and associated processes be counted on a common basis.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>life-cycle assessment</strong> considers relevant inputs, outputs and potential environmental effects across a product system. A classroom map can introduce the logic without claiming to perform a complete formal assessment.</p>
+<p>The <strong>functional unit</strong> defines the service being compared. For example, an invented study goal might be carrying a specified lunch portion for 100 school days under stated hygiene and performance conditions. The number defines the model service, not a measured national usage statistic.</p>
+<p>The <strong>system boundary</strong> states which processes are included. A broad comparison can cover raw materials, manufacturing, transport, use and end-of-life handling. Excluding one major stage can change the apparent ranking.</p>
+<p>A durable container's manufacture is allocated across the number of useful services it actually provides. If it is lost after a few uses, the assumed lifetime benefit changes. Calling an item reusable does not establish its real reuse count.</p>
+<p>Use-stage processes can matter. Washing requires water, energy and cleaning materials under relevant conditions. Their contributions should be recorded rather than ignored because they occur after the purchase.</p>
+<p>Replacement and end of life also matter. Recycling, disposal and recovery depend on actual local routes and material condition. A symbol on an item is not proof that every unit enters the intended route after use.</p>
+<p>Different <strong>impact categories</strong> can tell different stories: resource use, climate-related emissions, water use or waste need not move in the same direction. One attractive number should not silently stand for every environmental consequence.</p>
+<p>Data quality and uncertainty are part of the comparison. A classroom map can mark unknown quantities and test scenarios instead of inventing a percentage improvement. A fair conclusion states which service, boundary and assumptions produced it.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two parallel product routes serving the same defined task. Place manufacture, transport, use and end-of-life boxes along each. Add replacement loops wherever another item is required to complete the service.</p>
+<p>Now shorten the durable item's assumed useful life and trace the added replacements. Then change the washing method in a second scenario. The material's name stayed the same, but the system result can change.</p>
+<p>Keep separate columns for different impact questions. This prevents a low solid-waste route from automatically being declared lowest in every other category. The model compares systems delivering a function, not two isolated objects on a desk.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two product systems sharing one functional-unit banner. Each has manufacture, transport, use and end-of-life stages. Reuse and replacement arrows identify different ways to complete the service.</p>
+<p>Unknown input and output fields remain explicitly unmeasured. A boundary outline shows what belongs in the model and a scenario note identifies assumed lifetime and cleaning conditions.</p>
+<p>The diagram supplies no real product score, price or carbon-saving percentage. Its purpose is to expose hidden pathways and assumptions before a conclusion is made, not to advertise a material as universally best.</p>
+<figure><img src="../../illustrations/class-10/day_35.svg" alt="Diagram for How can a life-cycle comparison reveal a product's hidden waste?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian households and schools compare lunch containers, bottles and packaging under different local conditions. The same product can have different use patterns, washing arrangements and collection routes in different places.</p>
+<p>A purchase label rarely contains all the information needed for a full life-cycle comparison. Asking about service life and local recovery can reveal missing evidence, but the classroom model should not pretend to resolve every real decision without data.</p>
+<p>This lesson differs from a waste audit of one organisation's incoming and discarded material. Here the main target is comparing two product systems on a common service basis across stages beyond the place of use.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two fictional container designs. No purchase or waste handling is needed.</p>
+<ol>
+<li>Define one common service for both designs.</li>
+<li>Draw the life-cycle stages for each.</li>
+<li>Add reuse and replacement loops where relevant.</li>
+<li>Mark unknown resource and waste quantities.</li>
+<li>Change one lifetime or cleaning assumption and trace the consequences.</li>
+</ol>
+<p>Keep unknowns visible rather than filling them with plausible-looking numbers. The exercise is a boundary and scenario map, not a measured formal assessment. It should produce better questions before a recommendation, not an unsupported winner.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why could comparing one reusable container with one disposable container be unfair if the task requires many repeated services? Identify the missing reference flow.</p>
+<p>Now imagine the comparison includes manufacturing but excludes washing for one option. Which boundary inconsistency has appeared? A consistent method must follow the service and include relevant processes for both systems.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a functional unit define?</p>
+<ul>
+<li>A. A guarantee that one material always wins</li>
+<li>B. Only the colour of a product</li>
+<li>C. The common service being compared</li>
+</ul>
+<p><strong>Answer:</strong> C — The functional unit makes the required service explicit before counting product flows.</p>
+<h3>Q2</h3>
+<p>Why does assumed reusable lifetime matter?</p>
+<ul>
+<li>A. Manufacturing has no inputs under any condition</li>
+<li>B. It changes how many items provide the service</li>
+<li>C. Reuse count never changes replacement needs</li>
+</ul>
+<p><strong>Answer:</strong> B — Loss or early replacement changes the product flow needed for the same function.</p>
+<h3>Q3</h3>
+<p>A comparison omits washing for one option without explanation. What should be checked?</p>
+<ul>
+<li>A. The consistency and relevance of the system boundary</li>
+<li>B. Whether all impact categories must be identical</li>
+<li>C. Whether a larger font can hide the omission</li>
+</ul>
+<p><strong>Answer:</strong> A — Important use-stage processes need a justified and consistent treatment.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a two-system comparison sheet with functional unit, boundary, lifetime, use-stage process, end-of-life route and data-quality notes. Include at least two impact questions without forcing them into one invented score.</p>
+<p>Write a conditional conclusion that changes when one assumption changes. Your report must distinguish a qualitative classroom map from a completed quantitative assessment and must not claim a real product saves a specific percentage without evidence.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The object is not the whole product system. Replacements, cleaning and collection can matter as much as the item visible on a desk. Defining the service turns an appearance-based comparison into a traceable question about what must happen to provide the same function.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A fair life-cycle comparison uses the same service, consistent boundaries and explicit lifetime and use assumptions; material labels alone cannot determine every environmental outcome.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 5 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 45: How can a repairability score guide a purchase? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 45</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a repairability score guide a purchase?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Build a transparent <strong>repairability score</strong> from defined criteria and evidence. Distinguish access, replaceable parts and available information from a guarantee of easy repair. Use fictional product records and keep unknown evidence separate from an observed failure.</p>
+</div><h2>1. The mystery</h2>
+<p>Two products look equally sturdy, but one has an accessible replaceable part while the other seals that part inside a difficult-to-open assembly. If the part fails, their practical repair routes can differ.</p>
+<p>A score might help compare them, but only if the criteria and evidence are visible. A large total with hidden weights can conceal a major weakness.</p>
+<p>The useful question is not which product receives the most impressive label, but whether a particular likely repair can be performed with appropriate access, parts and reliable information.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Repairability</strong> concerns how feasibly a product can be restored to its intended function under relevant conditions. It depends on design, information, parts, tools and skills rather than one material property alone.</p>
+<p><strong>Access</strong> matters when a failed component must be reached without destroying surrounding parts. Fasteners, joints and the order of disassembly can influence the route. Accessible does not automatically mean safe for an untrained person to open.</p>
+<p><strong>Modularity</strong> can allow a damaged component to be replaced without discarding a much larger assembly. The benefit depends on whether the replacement part is actually obtainable and compatible, not merely whether a diagram draws a separate block.</p>
+<p><strong>Documentation</strong> can help identify parts and procedures. Missing or unreliable information can make an apparently simple design harder to repair. Practical availability can also change, so a real assessment needs a date and context.</p>
+<p>A <strong>scoring rubric</strong> defines each criterion, scale and weight. In a fictional classroom model, three criteria might each receive zero, one or two points. A product with scores two, one and zero totals three out of six.</p>
+<p>The total is not a physical law. Weighting criteria differently can change rankings, and one critical limitation can matter more than the sum suggests. A score should preserve the individual evidence rather than replacing it with a single unexplained number.</p>
+<p>Unknown is different from poor performance. If spare-part availability has not been checked, marking unknown is more honest than inventing a zero or a perfect score. A later check can then resolve the missing evidence.</p>
+<p>Repairability also differs from durability and whole-life environmental impact. A repairable product can still fail often, while a durable one might rarely need intervention. A full decision can consider those properties separately rather than allowing one score to stand for all product quality.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a product as connected modules with an access route to one likely failed part. Mark the fastener, replacement route and information source needed to complete the repair.</p>
+<p>Then create three evidence cards beside the rubric. Each score must point to a card rather than an opinion about how modern or attractive the product looks.</p>
+<p>Remove one card and mark its criterion unknown. This tests whether the report can preserve incomplete knowledge without manufacturing a confident total. A useful rubric supports review and revision, not just a quick winner.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares two fictional module layouts and a three-criterion rubric. Access, part replacement and documentation each have separate evidence fields and score positions.</p>
+<p>An unknown marker interrupts the total where evidence is missing. A second row shows the invented two-plus-one-plus-zero calculation only after all three model entries are supplied.</p>
+<p>The diagram names no actual product or current spare-part supplier. It is an assessment method, not a recommendation to open an electrical appliance or a claim that a high score guarantees every repair will be safe or economical.</p>
+<figure><img src="../../illustrations/class-10/day_45.svg" alt="Diagram for How can a repairability score guide a purchase?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian consumers and schools may face a choice between replacing a whole product and repairing an appropriate component. Access to parts and skilled service can differ by place and time, so real evidence belongs beside a dated assessment.</p>
+<p>A purchase decision can also involve safety, cost, durability and the intended use. A classroom repairability score should not quietly become a complete financial or environmental recommendation.</p>
+<p>Students should use fictional diagrams rather than opening devices, batteries, mains equipment or pressurised products. Understanding a repair route does not grant the training or permission needed to perform it.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two fictional modular-product drawings.</p>
+<ol>
+<li>Define three criteria and a zero-to-two scale.</li>
+<li>Write evidence for each supplied feature.</li>
+<li>Score only the criteria the drawing supports.</li>
+<li>Mark unprovided spare-part information unknown.</li>
+<li>Calculate a total only for a complete invented evidence set.</li>
+</ol>
+<p>State that the rubric is a classroom model, not an official rating scheme. Do not infer actual brand performance or attempt disassembly. Ask a partner whether changing one weight would change the conclusion and whether that weight reflects the stated task.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why might one inaccessible critical component outweigh several easy cosmetic repairs? Relate the scoring system to likely failure and intended function.</p>
+<p>Now imagine a part that was available when the product was new but is unavailable later. Which evidence field changes? Repairability includes a support context, not only the geometry visible at manufacture.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What should each repairability score be linked to?</p>
+<ul>
+<li>A. A guaranteed repair outcome for every person</li>
+<li>B. Defined criteria and supporting evidence</li>
+<li>C. Only the newest-looking product photograph</li>
+</ul>
+<p><strong>Answer:</strong> B — A transparent rubric connects each number with an assessed feature or information source.</p>
+<h3>Q2</h3>
+<p>Why can a total score be incomplete as a decision?</p>
+<ul>
+<li>A. Unknown evidence must automatically mean perfect performance</li>
+<li>B. All criteria always have identical importance</li>
+<li>C. A critical limitation can be hidden by other points</li>
+</ul>
+<p><strong>Answer:</strong> C — The component results and task context can matter more than the sum alone.</p>
+<h3>Q3</h3>
+<p>Fictional complete scores are 2, 1 and 0. What is their total?</p>
+<ul>
+<li>A. 3</li>
+<li>B. 6</li>
+<li>C. 2</li>
+</ul>
+<p><strong>Answer:</strong> A — Adding the three supplied model entries gives three out of a possible six.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a transparent repairability card with criteria, weights, dated evidence, unknowns and a conditional conclusion. Use a fictional product and one specified repair scenario.</p>
+<p>Include a warning against letting the total hide a critical limitation. Your card must distinguish assessment from actual repair instructions and must not invent current part availability or savings for a real product.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A good score can become more useful by refusing to score an unknown. Leaving one field unresolved makes the next evidence need clear and prevents a neat total from overstating what the assessor knows. Transparency is part of the tool's value, not an obstacle to finishing the table.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Repairability scores need explicit criteria and evidence for access, parts and information; unknowns and critical limits should remain visible beside any total.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 15 of 30</footer>
+</div>
+</body>
+</html>

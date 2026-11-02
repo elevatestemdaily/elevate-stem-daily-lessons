@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why does a catalyst change reaction speed without changing the</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">net equation?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Same endpoints; a different pathway has a lower effective activation barrier</text>
+<text x="110" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Energy</text>
+<line x1="135" y1="375" x2="135" y2="170" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="135" y1="375" x2="890" y2="375" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M160 320 C290 320 320 165 450 165 C590 165 625 350 850 350" fill="none" stroke="#1f5f8b" stroke-width="4"/>
+<path d="M160 320 C290 320 330 265 450 265 C590 265 625 350 850 350" fill="none" stroke="#579b70" stroke-width="4"/>
+<text x="510" y="150" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Higher-barrier route</text>
+<text x="500" y="245" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Catalysed model route</text>
+<text x="230" y="405" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Reactants</text>
+<text x="800" y="405" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Products</text>
+<text x="500" y="438" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Reaction-path progress →</text>
+<text x="500" y="470" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Catalyst involved → intermediate steps → catalyst regenerated</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The endpoint energy difference stays fixed; rate changes do not shift equilibrium.</text>
+</svg>

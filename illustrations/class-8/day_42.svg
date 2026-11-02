@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why is petroleum separated into fractions before use?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">A temperature gradient separates groups with different boiling behaviour</text>
+<text x="230" y="134" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Heated mixture feed</text>
+<text x="740" y="134" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Broad collection fractions</text>
+<rect x="390" y="160" width="220" height="210" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="400" y1="205" x2="600" y2="205" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="400" y1="255" x2="600" y2="255" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="400" y1="305" x2="600" y2="305" stroke="#1f5f8b" stroke-width="3"/>
+<line x1="230" y1="325" x2="375" y2="325" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="620" y1="190" x2="870" y2="190" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="620" y1="240" x2="870" y2="240" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="620" y1="290" x2="870" y2="290" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="500" y1="340" x2="500" y2="175" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="760" y="179" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">More volatile components</text>
+<text x="760" y="229" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Intermediate boiling range</text>
+<text x="760" y="279" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Higher-boiling components</text>
+<text x="260" y="220" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Cooler higher region</text>
+<text x="260" y="365" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Hotter lower region</text>
+<line x1="500" y1="380" x2="500" y2="410" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="500" y="443" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Heavy lower residue in this simplified stage</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Distillation separates; cracking changes molecules in a different process.</text>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 54: Why do rain-splashed bare slopes develop tiny channels? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 54</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do rain-splashed bare slopes develop tiny channels?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how rainfall can produce narrow erosion channels called <strong>rills</strong>. Trace the transition from dispersed surface flow to concentrated runoff. Predict how cover, slope and flow pathways affect channel development without assuming that every rainfall produces the same erosion.</p>
+</div><h2>1. The mystery</h2>
+<p>After rain, a bare sloping patch may have tiny channels that were not obvious before. Water has not cut every part of the surface equally. Instead it found some preferred routes, and those routes became more pronounced as the event continued.</p>
+<p>Why would a shallow depression collect more water? How can flowing water make the depression deeper and encourage still more flow through it? These questions reveal a feedback process that differs from grains hopping through the air in wind erosion.</p>
+<p>The transport medium here is water moving over the surface.</p>
+<h2>2. The science behind it</h2>
+<p>Rainfall can enter the soil through <strong>infiltration</strong>. Water that remains at the surface and moves downslope is <strong>runoff</strong>. Runoff can occur when rainfall arrives faster than the surface can admit it or when the soil is already sufficiently wet.</p>
+<p>Raindrop impacts can detach particles from exposed soil. This is sometimes called <strong>splash erosion</strong>. Surface cover can intercept those impacts, reducing the direct disturbance of the soil beneath. The precise effect depends on the cover and the rainfall.</p>
+<p>Initially, runoff may spread across many shallow pathways. Small differences in height guide more water into some routes than others. Where flow becomes concentrated, it can exert a greater local transporting effect and remove more material from the pathway.</p>
+<p>A narrow, shallow channel formed this way is a <strong>rill</strong>. As water removes particles, the channel can deepen. The lower route then attracts more flow, which can increase its capacity to detach and carry material. This is a positive feedback between channel shape and concentrated flow.</p>
+<p>The word positive here does not mean beneficial. It means a change can reinforce itself. A deepening route can promote further concentration unless the flow or surface conditions change.</p>
+<p><strong>Transport</strong> and <strong>deposition</strong> are linked. Water can carry detached particles while conditions support movement. Where flow slows or spreads, some material can settle out. Sediment at the foot of a slope can therefore be evidence of transport from above, although tracing its exact source needs more observation.</p>
+<p>Slope influences how water moves, but it is not the only factor. Soil structure, surface roughness, vegetation, initial wetness and the way runoff is directed all matter. A compacted path can channel water differently from a rough vegetated patch beside it.</p>
+<p>Rills differ from larger persistent channels often called gullies. School descriptions sometimes use practical distinctions based on size and whether ordinary cultivation can remove them. This lesson avoids inventing one exact width that classifies every channel in every setting.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a sloping sheet with several faint routes. Make one route slightly lower. Send more water arrows into it, then deepen it and add more converging arrows.</p>
+<p>You have drawn the feedback: a small height difference concentrates flow, erosion deepens the route, and the deeper route concentrates more flow. The water is not choosing a route deliberately; the shape guides its motion.</p>
+<p>Now add a rough covered patch that spreads incoming water into several smaller routes. Predict how this changes the concentration. Keep the model limited to surface runoff so it does not become another explanation of deep groundwater recharge.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows raindrops reaching a bare slope, shallow runoff lines converging and a small rill developing. A close-up highlights the lower channel floor and incoming water from neighbouring surface areas.</p>
+<p>A second surface has cover and interrupted flow pathways. Labels connect cover with reduced raindrop impact and less concentrated surface movement. The comparison does not promise that any cover will prevent every erosion event.</p>
+<p>A sediment patch at the bottom illustrates possible deposition. Arrow lengths are not measured velocities, and the diagram should not be used to calculate a real channel's rate of deepening.</p>
+<figure><img src="../../illustrations/class-7/day_54.svg" alt="Diagram for Why do rain-splashed bare slopes develop tiny channels?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>During monsoon rain, a bare roadside slope or construction area can develop visible surface channels. Water routed from a roof or paved area may concentrate the input further. The place where runoff enters can therefore matter as much as the amount falling directly on the soil.</p>
+<p>Farmers and land managers can use suitable cover and carefully designed flow management to reduce erosion. Local terrain and rainfall must guide the choices. A classroom explanation cannot replace an engineering assessment of a slope or drainage outlet.</p>
+<p>Students should examine photographs or safe ground-level observations after conditions settle. Do not stand in flowing stormwater, approach unstable slopes or investigate roadside drains during rain.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a shallow tray, a sheet of aluminium foil already available in the kitchen, a little water and a towel for spills. <strong>Do this with an adult.</strong> Do not use sharp-edged cut foil or real loose soil.</p>
+<ol>
+<li>Shape the foil gently into a slight slope inside the tray.</li>
+<li>Make one broad shallow depression with your fingers.</li>
+<li>Pour a small amount of water slowly from the upper end.</li>
+<li>Observe whether water follows the depression.</li>
+<li>Draw where flow concentrates.</li>
+</ol>
+<p>This model demonstrates pathway guidance, not erosion: foil does not behave like detachable soil. Explain that limitation explicitly. No conclusion about sediment production or a real field's erosion rate can be obtained from this tray.</p>
+</div><h2>7. Think deeper</h2>
+<p>A bare slope receives the same total water in two trials. In one, the water is spread evenly; in the other, it enters through one narrow outlet. Why could the erosion risk differ?</p>
+<p>Use local concentration rather than total volume alone in your answer. Then explain why reducing a channel at one location without considering the next outlet might simply transfer the concentration problem farther downslope.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a rill?</p>
+<ul>
+<li>A. A sealed underground water tank</li>
+<li>B. A small erosion channel made by runoff</li>
+<li>C. A cloud containing frozen crystals</li>
+</ul>
+<p><strong>Answer:</strong> B — A rill is a narrow shallow channel produced by concentrated surface flow.</p>
+<h3>Q2</h3>
+<p>Why can a developing rill deepen further?</p>
+<ul>
+<li>A. Its lower route can concentrate more flow</li>
+<li>B. It prevents all water from reaching it</li>
+<li>C. It makes the slope completely level</li>
+</ul>
+<p><strong>Answer:</strong> A — The deepened pathway can draw in additional runoff and reinforce erosion.</p>
+<h3>Q3</h3>
+<p>The same water enters through one narrow outlet instead of being spread. What may change?</p>
+<ul>
+<li>A. The total volume must become zero</li>
+<li>B. The soil must gain unlimited strength</li>
+<li>C. Local flow concentration can increase</li>
+</ul>
+<p><strong>Answer:</strong> C — Concentrating input can increase its local transporting effect even without more total water.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a diagram for a school garden slope that receives runoff from a path. Identify where water enters, where it concentrates and where detached material could accumulate.</p>
+<p>Propose a way to protect the surface and spread or safely guide flow, while stating that real drainage changes need adult planning. Your explanation must show how the proposal interrupts the deepening-channel feedback rather than just hiding the rill beneath decorative material.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A tiny initial depression can influence a much larger flow pattern. Once water is concentrated there, erosion can reinforce the original difference. The visible channel is therefore both a result of flow and a feature that guides future flow, linking the history of the surface to what happens during the next event.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Runoff can concentrate into rills; erosion deepens the preferred route, and that route can then draw in more water and reinforce the channel.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 24 of 30</footer>
+</div>
+</body>
+</html>

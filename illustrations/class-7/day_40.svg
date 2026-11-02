@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a measuring cylinder avoid a volume-reading mistake?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Read water at eye level and use the correct scale interval</text>
+<text x="245" y="132" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Upright cylinder</text>
+<text x="735" y="132" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Horizontal viewing position</text>
+<path d="M150 165 L150 350 L340 350 L340 165" fill="none" stroke="#1f5f8b" stroke-width="3"/>
+<path d="M153 240 Q245 280 337 240 L337 347 L153 347 Z" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="307" y1="205" x2="337" y2="205" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="307" y1="225" x2="337" y2="225" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="307" y1="245" x2="337" y2="245" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="307" y1="265" x2="337" y2="265" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="307" y1="285" x2="337" y2="285" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="307" y1="305" x2="337" y2="305" stroke="#1f5f8b" stroke-width="2"/>
+<text x="375" y="209" text-anchor="start" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">30</text>
+<text x="375" y="309" text-anchor="start" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">20</text>
+<line x1="340" y1="260" x2="765" y2="260" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M785 260 Q815 235 845 260 Q815 285 785 260 Z" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="815" cy="260" r="7" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M340 240 L785 180" fill="none" stroke="#e6a23c" stroke-width="2"/>
+<path d="M340 280 L785 340" fill="none" stroke="#e6a23c" stroke-width="2"/>
+<text x="245" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Use the lowest water point</text>
+<text x="735" y="405" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Sloping views create parallax</text>
+<text x="500" y="453" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Example: 10 mL across five equal intervals gives 2 mL per interval.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Keep the cylinder level; do not tilt it toward your face.</text>
+</svg>

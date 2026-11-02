@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 40: How does air pressure hold an inverted card under a glass? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 40</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does air pressure hold an inverted card under a glass?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain a water-and-card demonstration using <strong>pressure difference</strong>, a continuous seal and force balance. Distinguish pressure beneath the card from the water pressure above it. Recognise why air leakage and the arrangement inside the cup affect the result rather than saying that water has lost its weight.</p>
+</div><h2>1. The mystery</h2>
+<p>An adult fills a small cup with water, covers it with a suitable card and inverts it above a basin. Under suitable conditions, the card can remain in place when the supporting hand is removed.</p>
+<p>The water is still there, and gravity has not switched off. Air beneath the card can exert an upward force. To explain the observation, however, it is not enough to say that air pressure exists. Pressure also acts within the water above the card. The difference between those pressures and the integrity of the seal matter.</p>
+<h2>2. The science behind it</h2>
+<p>Air exerts <strong>atmospheric pressure</strong> on exposed surfaces. The underside of the inverted card is exposed to surrounding air, producing an upward force over the opening. The water above the card exerts a downward pressure force, and the card also has its own weight.</p>
+<p>For the card to remain supported, the upward contribution and any edge effects must balance the downward contributions. In a simplified model, the relevant pressure comparison is outside air beneath the card versus water just above it. Counting only one pressure gives an incomplete explanation.</p>
+<p>The internal water pressure is linked to conditions higher inside the inverted cup. A small movement of the water or expansion of a trapped gas region can reduce pressure in that region. The water column then has a pressure distribution compatible with the lower internal pressure and its own weight.</p>
+<p>This is why the demonstration can depend on fill level, cup height, trapped air and sealing conditions. The system must settle into a force balance; it does not work merely because outside air is always stronger than any water anywhere.</p>
+<p>The <strong>seal</strong> at the rim helps prevent air from entering freely. Surface tension and wet contact at the edge can help maintain that seal. If an air pathway opens, the internal conditions can change and the card may no longer remain supported.</p>
+<p>Do not add the full water weight a second time to a calculation that already uses the correct water pressure at the card and its associated system conditions. Choose a consistent object for a force diagram: the card alone or the combined water-card system.</p>
+<p>The card's stiffness and shape matter too. A card that bends away from the rim may open a leak. A damaged rim or unsuitable material can make the demonstration fail even when the general pressure principle is correct.</p>
+<p>This is different from saying an object is pulled upward by an invisible suction substance. A lower-pressure region allows surrounding pressure to produce an unbalanced push. The effect is explained through forces and pressure differences, with gravity still acting throughout.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw the card alone as a horizontal rectangle. Put an upward arrow beneath it for outside-air pressure and a downward arrow above it for the water's pressure. Add the card's weight as a separate small downward arrow.</p>
+<p>Keep the water's full weight out of this card-only diagram unless you have replaced the pressure treatment with a consistent combined-system model. Otherwise the same contribution can be counted twice.</p>
+<p>Add a rim-seal symbol and an air-leak path in a second drawing. The leak changes the internal conditions, so the force arrows may no longer balance. This model connects a visible failure with a physical cause rather than declaring the demonstration random.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows an inverted unbreakable cup, water, a card and a sealed rim. Separate arrows above and below the card represent the opposing pressure forces. The text zones name the pressures at the card rather than comparing air with an unrelated point elsewhere in the cup.</p>
+<p>A second small drawing introduces a leak at the edge. Its caption explains that internal conditions can change when air enters. The water is not shown becoming weightless.</p>
+<p>The diagram is conceptual, not a reliable construction specification. Real edge forces, material flexibility and trapped gas can affect the result.</p>
+<figure><img src="../../illustrations/class-8/day_40.svg" alt="Diagram for How does air pressure hold an inverted card under a glass?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Pressure differences are involved in many everyday devices that seem to suck. A surrounding fluid pushes toward a lower-pressure region; the word suction can hide that force balance if used without explanation.</p>
+<p>The inverted-card demonstration is useful precisely because it can fail when the seal changes. That failure can be evidence about the setup, not proof that atmospheric pressure stopped existing. Reproducible demonstrations require controlled conditions as well as a correct general principle.</p>
+<p>Do not use the idea to lift heavy objects, improvise vacuum equipment or investigate sealed hot containers. A small water demonstration above a basin is enough to examine the model safely.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Do this with an adult.</strong> Use a small unbreakable cup, room-temperature water, a stiff smooth card and a basin. Keep everything away from electrical equipment and expect spills. Do not use glass or hot water.</p>
+<ol>
+<li>Have the adult prepare and invert the covered cup above the basin.</li>
+<li>Keep a hand ready beneath the card and release support only briefly.</li>
+<li>Observe whether the card stays and whether air enters at an edge.</li>
+<li>Return the cup upright before changing anything.</li>
+<li>Draw the opposing forces at the card.</li>
+</ol>
+<p>The demonstration is not guaranteed to work with every cup and card. A failure is an observation to describe. If suitable materials or supervision are unavailable, use the paper force diagram instead.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does the statement “air pushes upward” fail to explain the whole observation? Identify the downward pressure contribution and the card's weight.</p>
+<p>Now imagine an edge bends away from the rim. Explain how admitting air can change the internal conditions. Keep gravity in your model; the water has not become lighter simply because the card temporarily stays in place.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What acts upward on the underside of the card?</p>
+<ul>
+<li>A. Pressure from the surrounding air</li>
+<li>B. Water changing into a weightless solid</li>
+<li>C. A complete absence of gravity</li>
+</ul>
+<p><strong>Answer:</strong> A — Outside air exerts an upward pressure force on the exposed underside.</p>
+<h3>Q2</h3>
+<p>Why does the rim seal matter?</p>
+<ul>
+<li>A. It stops every atom in the cup moving</li>
+<li>B. It makes water have no mass</li>
+<li>C. It limits air leakage that changes conditions</li>
+</ul>
+<p><strong>Answer:</strong> C — An air leak can alter the internal pressure conditions needed for balance.</p>
+<h3>Q3</h3>
+<p>A card bends and air enters. What is a reasonable prediction?</p>
+<ul>
+<li>A. Gravity must stop acting permanently</li>
+<li>B. The supporting balance may fail</li>
+<li>C. The water must turn into a new element</li>
+</ul>
+<p><strong>Answer:</strong> B — Leakage can change pressures and edge conditions so the card no longer stays supported.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create two labelled force diagrams: one for the card with a functioning seal and one after an air leak changes the system. State which object each diagram describes.</p>
+<p>Your explanation must avoid three errors: ignoring water pressure above the card, declaring gravity absent, and counting the water's weight twice. Add one practical setup limitation, such as card stiffness or rim leakage, without claiming a universal guaranteed result.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A successful demonstration depends on a whole system finding a balance, not on one dramatic force acting alone. The outside air was present before the cup was inverted too. What changes is the arrangement of pressure, liquid, trapped gas and sealing, which makes the same surroundings capable of supporting a different configuration.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>An inverted card can stay when pressure forces and edge conditions balance its downward loading; a working seal matters, and the water never loses its weight.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

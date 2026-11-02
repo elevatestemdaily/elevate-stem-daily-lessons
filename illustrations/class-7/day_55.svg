@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a U-shaped drain trap block sewer gases?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Retained liquid interrupts the open air route through a drain</text>
+<text x="250" y="133" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Seal present</text>
+<text x="750" y="133" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Seal absent</text>
+<path d="M105 175 L105 300 Q105 360 165 360 L275 360 Q335 360 335 300 L335 245 L420 245" fill="none" stroke="#1f5f8b" stroke-width="34"/>
+<path d="M105 175 L105 300 Q105 360 165 360 L275 360 Q335 360 335 300 L335 245 L420 245" fill="none" stroke="#f8fbff" stroke-width="26"/>
+<path d="M605 175 L605 300 Q605 360 665 360 L775 360 Q835 360 835 300 L835 245 L920 245" fill="none" stroke="#1f5f8b" stroke-width="34"/>
+<path d="M605 175 L605 300 Q605 360 665 360 L775 360 Q835 360 835 300 L835 245 L920 245" fill="none" stroke="#f8fbff" stroke-width="26"/>
+<path d="M105 270 L105 300 Q105 360 165 360 L275 360 Q335 360 335 300 L335 257" fill="none" stroke="#ddeeff" stroke-width="24"/>
+<line x1="415" y1="245" x2="360" y2="245" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M900 245 L835 245 L835 300 Q835 360 775 360 L665 360 Q605 360 605 300 L605 205" fill="none" stroke="#e6a23c" stroke-width="3"/>
+<line x1="605" y1="205" x2="605" y2="183" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="250" y="419" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Water blocks continuous gas passage</text>
+<text x="750" y="419" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">An air pathway can reappear</text>
+<text x="500" y="462" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">New inflow can pass the outlet while a lower water seal remains.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A curved empty pipe is not equivalent to a functioning water seal.</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Ultimate Challenge: Can you choose a cooler school roof using an</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">evidence matrix?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Fictional scores organise a decision; they do not replace essential checks or evidence</text>
+<text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Essential checks first</text>
+<rect x="80" y="180" width="180" height="180" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="285" y1="265" x2="355" y2="265" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="170" y="400" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Pass before scoring</text>
+<text x="535" y="135" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Criterion × weight</text>
+<text x="755" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">A</text>
+<text x="870" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">B</text>
+<text x="535" y="192" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Heat × 4</text>
+<text x="755" y="192" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">2</text>
+<text x="870" y="192" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">1</text>
+<line x1="385" y1="205" x2="925" y2="205" stroke="#1f5f8b" stroke-width="1"/>
+<text x="535" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Repair × 3</text>
+<text x="755" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">1</text>
+<text x="870" y="240" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">2</text>
+<line x1="385" y1="253" x2="925" y2="253" stroke="#1f5f8b" stroke-width="1"/>
+<text x="535" y="288" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Waste × 2</text>
+<text x="755" y="288" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">2</text>
+<text x="870" y="288" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">1</text>
+<line x1="385" y1="301" x2="925" y2="301" stroke="#1f5f8b" stroke-width="1"/>
+<text x="535" y="336" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Effort × 1</text>
+<text x="755" y="336" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">1</text>
+<text x="870" y="336" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">2</text>
+<line x1="385" y1="349" x2="925" y2="349" stroke="#1f5f8b" stroke-width="1"/>
+<text x="535" y="393" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Original totals</text>
+<text x="755" y="393" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#1f5f8b">16</text>
+<text x="870" y="393" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#1f5f8b">14</text>
+<text x="500" y="442" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Swap heat / repair weights → 15–15 tie.</text>
+<text x="500" y="470" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Unknown evidence stays unknown; no invented cooling statistic.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A conditional recommendation needs comparable evidence and explicit priorities.</text>
+</svg>

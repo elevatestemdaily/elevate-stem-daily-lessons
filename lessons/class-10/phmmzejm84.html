@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 44: Why can a solar water heater work without a solar cell? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 44</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can a solar water heater work without a solar cell?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Trace energy through a <strong>solar thermal collector</strong>, a heat-transfer route and storage. Distinguish heating water directly with solar energy from converting sunlight into electricity. Recognise active and passive circulation options without treating a system diagram as a rooftop installation guide.</p>
+</div><h2>1. The mystery</h2>
+<p>A solar water heater can provide warm water without using a photovoltaic panel as the main solar-energy converter. Both technologies receive sunlight, but their intended outputs differ.</p>
+<p>In the thermal system, an absorbing collector transfers energy into water or another heat-transfer fluid. The warmed material carries energy toward use or storage. The useful question is how energy reaches the water and remains available, not how an electric generator produces current.</p>
+<p>A collector alone is not the whole system. Movement, storage and losses determine whether useful heating reaches the intended place and time.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>solar thermal collector</strong> absorbs solar radiation and transfers energy as heat. In a simple water-heating model, an absorber and connected fluid passages bring the energy into a moving liquid.</p>
+<p>A <strong>photovoltaic cell</strong> instead converts part of incoming radiation into electrical output. That conversion is not required for the basic solar-thermal pathway. Some real thermal systems use electrical pumps or controls, but that does not make their main collector a photovoltaic generator.</p>
+<p>In a <strong>direct system</strong>, the water to be used can pass through the collector route. In an <strong>indirect system</strong>, a separate heat-transfer fluid can pass through a heat exchanger that warms the water. The appropriate arrangement depends on climate, materials and design needs.</p>
+<p><strong>Circulation</strong> moves energy from the collector toward the tank or load. Active systems use pumps and controls. Some passive systems use a suitable natural-circulation arrangement, drawing on the previously learned movement of warmer and cooler fluid rather than requiring a pump.</p>
+<p>An <strong>insulated storage tank</strong> can keep some of the collected energy available beyond the instant of sunlight input. Insulation slows losses; it does not preserve temperature forever or create extra energy after sunset.</p>
+<p>Collector area, orientation, shading and weather affect input. Storage size, pipe losses and water-use timing affect the useful result. A system can therefore receive sunlight while still failing to meet every demand at every time.</p>
+<p>Other components may manage temperature, pressure, backup heating and safe operation. Their details require suitable design and installation. A classroom diagram does not establish a complete plumbing or safety specification.</p>
+<p>The lesson focuses on the collector-to-liquid-to-storage pathway. It does not repeat the microscopic radiation account, electric induction or the separate box-cooker cover mechanism. Those ideas can be background without replacing the system's specific energy route.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw sunlight entering a collector, then energy moving with a fluid toward a tank. Put a use arrow leaving the tank and loss arrows along the collector, pipes and storage.</p>
+<p>Make two circulation versions: one with a pump symbol and one labelled suitable passive arrangement. Do not assume deleting the pump from any arbitrary pipe layout creates a working passive system.</p>
+<p>Now add a heat exchanger in a copy. Keep the transfer-fluid loop separate from the water-use route. This reveals how energy can cross between fluids without requiring the same water to pass through every component.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a collector, circulating fluid path and insulated storage tank. Incoming sunlight and energy losses are distinguished from water movement. A separate use outlet marks the intended delivered service.</p>
+<p>An inset contrasts direct transfer with an indirect heat-exchanger model. Active and passive circulation labels identify design categories without giving pipe heights, pressure settings or installation instructions.</p>
+<p>The picture is not to scale and gives no promised outlet temperature or efficiency percentage. Its caption states that solar thermal heating and photovoltaic electrical conversion are different pathways even when one real installation includes both kinds of equipment.</p>
+<figure><img src="../../illustrations/class-10/day_44.svg" alt="Diagram for Why can a solar water heater work without a solar cell?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Solar water heaters are used in Indian buildings under varied climates and demand patterns. A suitable design considers local sunshine, water conditions, building structure and operation, not only whether the roof looks sunny in one photograph.</p>
+<p>A school energy project can compare the system pathway using approved diagrams. It should not send students onto roofs, open a hot-water circuit or test the temperature of unknown outlets.</p>
+<p>Actual selection and installation need appropriate expertise. This lesson provides no product recommendation, current subsidy claim or guaranteed payback. Its purpose is to make the thermal route and its limits understandable.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three colours for sunlight, fluid movement and heat loss.</p>
+<ol>
+<li>Draw a collector and storage tank.</li>
+<li>Add a continuous circulation route.</li>
+<li>Trace incoming solar energy into the fluid and storage.</li>
+<li>Add losses and a water-use arrow.</li>
+<li>Draw a separate indirect version with a heat exchanger.</li>
+</ol>
+<p>Label the figure conceptual. Do not build a collector, heat a sealed container or use a real rooftop system. Ask a partner which components move water, which transfer heat and which reduce losses. The categories should remain clear without a promised numerical performance.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a solar-thermal system need backup under some conditions even when its collector works? Consider timing, available input and demand rather than assuming a working panel meets every possible load.</p>
+<p>Now imagine excellent collection but poorly insulated pipes and storage. Which part of the energy pathway is weakened? A system outcome depends on what happens after energy is absorbed as well as on the collector itself.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main intended output of the collector in this lesson?</p>
+<ul>
+<li>A. Only a radio signal</li>
+<li>B. A compulsory electrical current from induction</li>
+<li>C. Thermal energy transferred to a fluid</li>
+</ul>
+<p><strong>Answer:</strong> C — A solar-thermal collector absorbs radiation and supplies heat to the system.</p>
+<h3>Q2</h3>
+<p>Why can an indirect system use a heat exchanger?</p>
+<ul>
+<li>A. It transfers energy between separate fluid routes</li>
+<li>B. It removes every heat loss permanently</li>
+<li>C. It requires both fluids to become the same substance</li>
+</ul>
+<p><strong>Answer:</strong> A — The transfer fluid can warm use-water without being the identical circulating liquid.</p>
+<h3>Q3</h3>
+<p>The collector works but storage loses energy rapidly. What should the explanation include?</p>
+<ul>
+<li>A. All solar systems must be photovoltaic</li>
+<li>B. Losses after collection can reduce useful delivery</li>
+<li>C. The collector must have created no energy transfer at all</li>
+</ul>
+<p><strong>Answer:</strong> B — The complete pathway, not only absorption, determines the delivered service.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a labelled energy-and-fluid map with collector, circulation, storage, use and losses. Include one direct or indirect design choice and state what information a real selection would need.</p>
+<p>Your proposal must distinguish thermal heating from photovoltaic conversion and must not prescribe installation, pressure or roof work. Use qualitative arrows rather than an invented efficiency or temperature claim for an actual school building.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Sunlight does not have to become electricity before it can provide a useful energy service. Direct thermal collection can match a heating task more directly, but its usefulness still depends on movement, storage and demand. The pathway matters as much as the familiar solar label.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Solar water heating transfers absorbed solar energy through a collector and fluid route to use or storage; circulation, losses and demand determine the system's useful output.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 14 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 33: How does a kilowatt-hour measure electricity bought for a shop? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 33</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a kilowatt-hour measure electricity bought for a shop?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Calculate electrical energy from <strong>power</strong> and operating time. Distinguish watts, kilowatts and <strong>kilowatt-hours</strong>, then interpret a simple shop-use table. Keep energy consumption separate from an actual electricity bill's prices and other charges.</p>
+</div><h2>1. The mystery</h2>
+<p>A shopkeeper sees kW on an appliance description and kWh in an energy record. The symbols look similar, but they do not describe the same quantity.</p>
+<p>Power is a rate of energy transfer. Energy accumulates while equipment operates. A modest power used for a long time can therefore consume more energy than a larger power used briefly.</p>
+<p>The useful question is not merely which appliance has the bigger printed number. It is how much energy the device actually transfers over the relevant operating period.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Power</strong> is energy transferred per unit time. One watt equals one joule per second, and one kilowatt equals 1,000 watts. A power rating describes a rate under specified conditions, not a stored amount of energy.</p>
+<p>For constant or appropriately averaged power, <strong>energy = power × time</strong>. If power is in kilowatts and time in hours, the energy unit is <strong>kilowatt-hour</strong>, written kWh.</p>
+<p>An invented 0.5-kilowatt appliance operating at that power for two hours uses one kilowatt-hour. This is an arithmetic example, not a measured shop appliance or a promise that any device always draws its label rating.</p>
+<p>One kilowatt-hour equals 3.6 million joules: 1,000 joules per second multiplied by 3,600 seconds. The hour is part of the energy unit. A kilowatt-hour is not a kilowatt per hour.</p>
+<p>If power changes during operation, use appropriate interval values or an actual integrated energy measurement. A refrigerator or other cycling device cannot necessarily be modelled as drawing maximum rated power continuously. We do not repeat its cooling mechanism here.</p>
+<p>For several devices, calculate the energy contribution of each over a defined period and add them. Keep watts-to-kilowatts conversion consistent. A table using watts directly with hours produces watt-hours unless the result is converted.</p>
+<p>A meter's accumulated energy reading differs from an instantaneous power reading. The difference between suitable start and end energy readings gives consumption over the interval, subject to the meter and reading conditions.</p>
+<p>An actual bill can include tariffs, fixed charges, taxes or other items depending on the applicable system. This lesson supplies no current price or financial recommendation. It explains the energy unit so a reader can distinguish consumption from the separate rules used to calculate payment.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a flow rate entering an energy counter. The rate label is kW; the counter's accumulated total is kWh. The longer the same flow continues, the more the counter increases.</p>
+<p>Make two rectangles with different power heights and time widths. Compare their areas as energy contributions. This connects the unit multiplication with a visible accumulation model rather than treating kWh as an arbitrary billing word.</p>
+<p>Then add a separate price-and-charges box after the energy total. That separation prevents the lesson from silently converting a physical calculation into a claim about every shop's actual bill. The energy result and payment result need different information.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows an invented 0.5 kW input maintained for two hours and an accumulated one-kWh result. A unit ladder converts watts to kilowatts and hours to the energy calculation.</p>
+<p>A second comparison shows lower power over longer time and higher power over shorter time. It is qualitative unless values are explicitly supplied. The graphic includes a separate billing-rules box with no prices.</p>
+<p>The diagram contains no household wiring or socket instructions. It focuses on energy accounting and meter interpretation rather than the earlier current-flow or domestic-circuit mechanisms.</p>
+<figure><img src="../../illustrations/class-10/day_33.svg" alt="Diagram for How does a kilowatt-hour measure electricity bought for a shop?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian shops and homes often discuss electricity consumption in units associated with kWh. Understanding the physical quantity helps a person read usage information without confusing a rate with a total.</p>
+<p>A device's actual operating pattern matters. A lamp run for the whole evening and a machine used briefly can contribute differently even if their nameplate powers suggest the opposite ranking at first glance.</p>
+<p>Do not open a meter, touch wiring or connect a device for this lesson. Use supplied data or an already available safe record with adult permission. Current billing rates and rules should be checked from the applicable provider if needed for a separate practical calculation.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and fictional appliance records.</p>
+<ol>
+<li>Write a 0.5 kW model device and a two-hour interval.</li>
+<li>Multiply to obtain one kWh.</li>
+<li>Add a second invented device with a stated average power and duration.</li>
+<li>Calculate its contribution and the total.</li>
+<li>Keep the price column marked not supplied.</li>
+</ol>
+<p>Label the data invented. Do not infer real appliance efficiency or monthly charges from the exercise. If a power varies, state the averaging assumption rather than treating a maximum rating as a guaranteed constant draw.</p>
+</div><h2>7. Think deeper</h2>
+<p>Can a lower-power device use more energy than a higher-power one? Give a time condition using the product rather than answering from power alone.</p>
+<p>Now imagine two accumulated meter readings but no time record. What can their difference establish, and what is still missing for an average-power calculation? Energy and rate require related but distinct information.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a kilowatt-hour measure?</p>
+<ul>
+<li>A. Electrical resistance alone</li>
+<li>B. Energy</li>
+<li>C. Only instantaneous power</li>
+</ul>
+<p><strong>Answer:</strong> B — Power multiplied by time gives energy, so kWh is an energy unit.</p>
+<h3>Q2</h3>
+<p>Why is a power label insufficient to rank energy use?</p>
+<ul>
+<li>A. Every device uses the same energy forever</li>
+<li>B. Time never affects accumulated energy</li>
+<li>C. Operating duration and actual power pattern also matter</li>
+</ul>
+<p><strong>Answer:</strong> C — Energy depends on rate over time rather than the power number alone.</p>
+<h3>Q3</h3>
+<p>An invented device uses 0.5 kW for 2 hours. What energy results?</p>
+<ul>
+<li>A. 1 kWh</li>
+<li>B. 0.25 kWh</li>
+<li>C. 2.5 kWh</li>
+</ul>
+<p><strong>Answer:</strong> A — Multiplying half a kilowatt by two hours gives one kilowatt-hour.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a fictional shop-use sheet with device, average power, duration, energy and assumptions. Include a total for one clearly defined interval.</p>
+<p>Add a correction to the phrase kilowatt per hour when someone means kWh. Keep billing prices separate and avoid inventing a current tariff. Your sheet should support a physical energy comparison without requiring any contact with electrical installations.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A small rate repeated for long enough can outweigh a large rate used briefly. This is why a power label alone cannot rank energy consumption. The time dimension turns an instantaneous description into an accumulated quantity and explains the otherwise confusing extra hour in kWh.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Kilowatts measure power, while kilowatt-hours measure accumulated energy; multiply a suitable power by operating time before discussing separate billing rules.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

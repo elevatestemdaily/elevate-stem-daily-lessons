@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 60: Ultimate Challenge: Can you design a fair-test soil investigation kit? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 60</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Ultimate Challenge: Can you design a fair-test soil investigation kit?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Design a compact kit and procedure for comparing how clean soil samples handle water. Integrate ideas about pores, volume readings, repeated timings and careful classification. Your product is a <strong>fair-test investigation system</strong>, not a claim that one short test identifies the universally best soil.</p>
+</div><h2>1. The mystery</h2>
+<p>A school garden team receives two clean soil samples labelled A and B. The team wants to compare water passing through them, but its first trial uses different containers, unequal sample depths and different amounts of water. The result appears dramatic, yet nobody can tell which difference caused it.</p>
+<p>Your challenge is to design the kit before trusting the comparison. Good equipment is only part of the answer. The samples, procedure, records and limits must fit together so another group can repeat the investigation and understand what was actually measured.</p>
+<h2>2. The science behind it</h2>
+<p>Begin with a specific <strong>investigation question</strong>: under matched preparation conditions, how much water emerges from each sample during the same observation interval? This is narrower and more testable than “Which soil is best?” It avoids pretending that drainage alone measures fertility, plant suitability and cleanliness.</p>
+<p>Identify the <strong>independent variable</strong>, the factor being compared: the identity of the soil sample. Identify the <strong>dependent variable</strong>, the recorded outcome: collected water volume after a defined time. Variables such as container geometry, sample depth, packing procedure and input water must be controlled as far as practical.</p>
+<p>A sample's pore size and connectivity influence water movement. Texture, compaction, aggregates and channels can all matter. Therefore preparing samples differently can alter the result before the comparison even begins. A consistent preparation procedure is essential.</p>
+<p>Choose an appropriate volume-reading method. A calibrated cylinder gives information that an arbitrarily marked cup does not. Read a water meniscus at eye level and record only useful precision. If the kit uses a kitchen measure, state that limitation rather than inventing millilitre accuracy.</p>
+<p>Define the timing event. For example, start the observation when water is first added and stop at a stated elapsed interval. The exact convention matters more than choosing a supposedly magical interval. Every group must use the same one for a comparable result.</p>
+<p>Use <strong>repeats</strong>, but think about what is being repeated. Pouring more water through an already wetted sample changes its starting condition. A fresh matched portion for each repeat better addresses independent trials, although the available material and kit size may limit what can be done.</p>
+<p>Keep the individual results. A range shows observed variation, and a mean can summarise repeated comparable readings. Neither removes differences caused by poor preparation. A useful record includes both values and method notes.</p>
+<p>Finally, do not call the collected water pure merely because it looks clear. The sample may release fine particles or dissolved substances. This kit studies transport through soil; it is not a drinking-water filter and does not certify safety.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw the kit as four linked parts: matched sample holders, measured water input, timed collection and a recording card. A missing link weakens the whole system. Excellent containers do not rescue unlabelled results, and a neat table does not rescue unequal water inputs.</p>
+<p>Add a checklist before the trial and a results table after it. The first protects the comparison; the second preserves the evidence. Put a small uncertainty box beside the table for leaks, packing differences or delayed reading.</p>
+<p>The design goal is traceability from each reported number back to a sample and procedure. Someone who did not watch the experiment should still be able to understand how the result was obtained.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two matched sample holders above separate collectors. The same measured input is directed toward each, and one timing symbol applies to both observation intervals.</p>
+<p>A recording panel has spaces for sample identity, preparation notes, repeat number, collected volume and unusual events. A lower decision panel asks whether the procedure supports the claim being made. The picture connects equipment with evidence rather than presenting a decorative science-kit box.</p>
+<p>The apparatus is schematic. Real holders must be stable, made from safe existing household equipment and used with adult supervision. Nothing in the diagram requires cut bottles or sharp tools.</p>
+<figure><img src="../../illustrations/class-7/day_60.svg" alt="Diagram for Ultimate Challenge: Can you design a fair-test soil investigation kit?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A school garden needs decisions based on several properties, including water handling, nutrients, roots and local conditions. Your kit addresses only one part of that decision. A good report says what it can establish and which questions remain.</p>
+<p>Comparable procedures matter when results are shared between classrooms. If one class packs samples firmly and another leaves them loose, combining their numbers without notes can hide a preparation difference. Labels and methods therefore travel with the data.</p>
+<p>This challenge differs from designing a city or habitat. You are building a trustworthy way to investigate a small question, including the possibility that the available evidence does not support a confident ranking.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a few existing unbreakable kitchen containers to lay out a proposed kit. Do not run a dirty-water experiment during this planning activity.</p>
+<ol>
+<li>Draw or arrange two matched sample stations.</li>
+<li>Name a safe source of clean comparison samples with an adult's help.</li>
+<li>Write the variables you will match and the outcome you will measure.</li>
+<li>Draft a record card with units and space for repeats.</li>
+<li>Ask a partner to find one ambiguity before the design is used.</li>
+</ol>
+<p>The five minutes produce a prototype plan, not completed experimental evidence. Any later wet trial needs adult supervision, stable strainers or holders, handwashing and a rule against drinking collected water.</p>
+</div><h2>7. Think deeper</h2>
+<p>Imagine sample A produces slightly more collected water than B, but repeat results overlap substantially. What conclusion is justified? Explain why “A is definitely better” is stronger than the evidence supports.</p>
+<p>Now suppose A has been packed firmly and B loosely. Would more repeated readings automatically repair the comparison? Identify the preparation problem that must be addressed before the numbers can answer the intended question.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which outcome directly answers the proposed kit question?</p>
+<ul>
+<li>A. The colour of the investigator notebook</li>
+<li>B. Collected water volume after a set interval</li>
+<li>C. The total number of plants in India</li>
+</ul>
+<p><strong>Answer:</strong> B — The kit compares the measured water output under specified matched conditions.</p>
+<h3>Q2</h3>
+<p>Why use fresh matched sample portions for independent repeats?</p>
+<ul>
+<li>A. Earlier wetting changes a sample starting condition</li>
+<li>B. Repetition means changing every variable</li>
+<li>C. Wet samples must contain no solid particles</li>
+</ul>
+<p><strong>Answer:</strong> A — Reusing an already wetted portion changes the conditions and weakens independence.</p>
+<h3>Q3</h3>
+<p>A and B differ only slightly and repeat results overlap. What is the best report?</p>
+<ul>
+<li>A. Delete readings that disagree with the claim</li>
+<li>B. A is certainly the best soil for every crop</li>
+<li>C. Report the variation and limit the conclusion</li>
+</ul>
+<p><strong>Answer:</strong> C — Small differences relative to observed variation do not justify a universal confident ranking.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Deliver a one-page kit specification containing a labelled layout, safe materials list, preparation procedure, measurement convention and recording table. Include a clear investigation question and one example of a claim the kit cannot establish.</p>
+<p>Then peer-review the design against four criteria: fairness, readability, repeatability and safe handling. Revise one feature after feedback. Your final product should make a future experiment more trustworthy, rather than simply making its equipment look impressive.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A useful investigation can end without declaring a winner. If variation is large or the method has an unresolved difference, identifying that limitation is a valid result of the design process. The kit succeeds when it reveals what the evidence supports, including where the comparison needs improvement.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A fair-test kit links matched preparation, clear measurements, repeat records and limited claims; equipment alone cannot make a comparison trustworthy.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 30 of 30</footer>
+</div>
+</body>
+</html>

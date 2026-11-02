@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 34: Why does sandy soil drain faster than clayey soil? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 34</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does sandy soil drain faster than clayey soil?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Connect soil particle size with the sizes of spaces between particles. Use <strong>pores</strong>, <strong>drainage</strong> and <strong>water retention</strong> to explain why comparable sandy and clayey samples often behave differently. Recognise why texture alone cannot predict every real field or pot.</p>
+</div><h2>1. The mystery</h2>
+<p>After the same shower, water disappears quickly from one garden patch but remains near the surface of another. One patch feels gritty; the other feels smooth and sticky when wet. Both contain spaces between solid particles, so why do they handle water differently?</p>
+<p>A tempting answer is that clay has no spaces at all. That answer is wrong. Clay can have many small spaces. The useful question is whether those spaces form wide, connected routes through which water can move easily.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Soil texture</strong> describes the proportions of sand, silt and clay-sized mineral particles. Sand particles are relatively large, silt particles are intermediate, and clay particles are very small. Real soil usually contains a mixture, together with organic matter and living organisms.</p>
+<p>Spaces between particles are called <strong>pores</strong>. Some hold air, some hold water, and some contain both at different times. A soil's <strong>porosity</strong> describes how much of its volume is pore space. Porosity alone does not tell us how readily water moves through the soil.</p>
+<p>Comparable sandy samples commonly have relatively large connected pores. Water can move through these pathways fairly readily. After excess water drains away, less may remain stored close to particle surfaces and in narrow spaces.</p>
+<p>Clayey samples contain many very small pores. Water moving through narrow, twisting pathways meets greater resistance. Water is also held near mineral surfaces and in small spaces. A clayey sample can therefore retain more water after drainage even though water passes through it slowly.</p>
+<p>Do not confuse <strong>small particles</strong> with <strong>small total pore volume</strong>. A clayey soil can have substantial pore volume while much of that volume is distributed among very small pores. A pile of large and small passageways with the same total empty space would not necessarily carry water at the same rate.</p>
+<p><strong>Infiltration</strong> is water entering the soil surface. <strong>Percolation</strong> is movement through the soil. <strong>Drainage</strong> is the removal of excess water from a region. These processes are related, but the words answer slightly different questions about where the water is moving.</p>
+<p>Texture is only part of the explanation. <strong>Compaction</strong> can reduce useful pore connections. Aggregates, roots, cracks and animal burrows can create larger pathways. A dry cracked clay field may initially admit water rapidly through cracks. That does not overturn the explanation about water moving through its fine-pored matrix.</p>
+<p>Stored water is not all equally available to roots. Some water in very small pores is held tightly. Therefore “holds the most water” does not automatically mean “best for every crop.” Plant growth also depends on air around roots, drainage, nutrients and rooting conditions.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two obstacle courses. In the first, use a few large circles with broad passages between them. In the second, use many small shapes with narrow, winding passages. Trace a water route through each.</p>
+<p>The first sketch represents an idealised sandy sample; the second represents part of a clayey sample. Compare the <strong>width and connectivity of the routes</strong>, not just how much empty paper remains.</p>
+<p>Then add a large crack through the second drawing. It creates a shortcut. This last change explains why real soil structure can modify a prediction based only on particle size. A model becomes stronger when you can state the conditions under which it applies.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two equal-sized sample regions. The sandy panel has larger grains and broad spaces. The clayey panel has smaller particles and narrower pathways. Blue arrows show possible routes for moving water.</p>
+<p>The caption distinguishes movement through connected pores from water held near surfaces. The number of drawn particles is not a measured sample and does not represent a precise porosity. A small crack symbol reminds you that natural structure can alter drainage.</p>
+<p>The diagram compares mechanisms under similar conditions rather than declaring that every sandy field always drains faster than every clay field.</p>
+<figure><img src="../../illustrations/class-7/day_34.svg" alt="Diagram for Why does sandy soil drain faster than clayey soil?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A gardener may water a sandy bed in smaller, more frequent applications because water does not remain stored for as long. A clayey bed may need attention to compaction and drainage so roots are not surrounded by water for too long.</p>
+<p>In India, soil varies greatly even within one village. A path repeatedly walked on can drain differently from an adjoining cultivated patch. That difference can come from structure and compaction as well as texture.</p>
+<p>Adding an arbitrary amount of sand to clay is not a guaranteed repair. Changing soil structure requires care, and a home comparison does not establish a recipe for managing a real agricultural field.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Do this with an adult.</strong> Use two kitchen sieves or strainers lined with matching cloth, two collecting bowls, clean sand and a clean clay-rich garden-soil sample. Avoid dusty handling, unknown contaminated soil and direct contact with wounds. Wash hands afterward.</p>
+<ol>
+<li>Put similar depths of the two samples in the lined strainers.</li>
+<li>Place a separate bowl underneath each.</li>
+<li>Pour the same small measured amount of water gently onto each sample.</li>
+<li>Compare the water collected during the same short interval.</li>
+<li>Record the amounts without assuming a particular answer.</li>
+</ol>
+<p>Packing and starting moisture affect the result. If the water has not emerged within five minutes, record that rather than extending the activity indefinitely. Do not drink the collected water; drainage is not purification.</p>
+</div><h2>7. Think deeper</h2>
+<p>Imagine two samples with the same texture. One is loosely arranged; the other has been pressed firmly. Why might they drain differently?</p>
+<p>Now imagine both are dry, but one contains a deep crack. Predict which route the first water might follow. Use these examples to explain why the label “clay” cannot tell a farmer everything needed about how a particular soil will respond to rain.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What are the spaces between soil particles called?</p>
+<ul>
+<li>A. Pores</li>
+<li>B. Crystals only</li>
+<li>C. Seeds</li>
+</ul>
+<p><strong>Answer:</strong> A — Pores are the spaces that can contain air and water between soil particles.</p>
+<h3>Q2</h3>
+<p>Why does comparable sandy soil often drain readily?</p>
+<ul>
+<li>A. It contains no solid material</li>
+<li>B. Sand always destroys water</li>
+<li>C. Its connected pores are often wider</li>
+</ul>
+<p><strong>Answer:</strong> C — Relatively large connected pathways let water move through more readily.</p>
+<h3>Q3</h3>
+<p>Could a deep crack make water enter a clayey sample quickly at first?</p>
+<ul>
+<li>A. No, clay can never contain openings</li>
+<li>B. Yes, the crack provides a shortcut</li>
+<li>C. No, water only moves through sand</li>
+</ul>
+<p><strong>Answer:</strong> B — Soil structure can create large pathways even when the surrounding matrix has fine pores.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>A school garden has a bed that stays wet after watering. Design a short investigation to distinguish two possibilities: fine texture and strong compaction. Compare nearby samples, describe their starting condition, and propose what observation would support each explanation.</p>
+<p>Do not prescribe a treatment from one observation alone. Your final drawing should show both a water pathway and an air-filled space needed by roots after excess water has drained.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A soil can hold considerable water and still drain slowly. The apparent puzzle disappears once you separate the amount of pore space from the size and connectivity of the pores. Storage and movement are different properties. The same distinction matters in sponges, building materials and many engineered porous structures.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Large connected pores often let sandy soil drain readily; many small pores help clayey soil retain water, while structure can change either result.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 4 of 30</footer>
+</div>
+</body>
+</html>

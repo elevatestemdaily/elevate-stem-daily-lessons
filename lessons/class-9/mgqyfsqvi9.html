@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 31: How can chromatography separate the colours in black ink? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 31</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can chromatography separate the colours in black ink?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why a suitable black ink can separate into coloured bands on paper. Identify the <strong>mobile phase</strong>, stationary material and differential migration. Distinguish chromatography from a mesh sorting particles by size and recognise that one unsplit ink does not invalidate the method.</p>
+</div><h2>1. The mystery</h2>
+<p>A dot of washable black ink sits on paper above a shallow water level. As water moves upward, coloured regions may spread to different heights. The original dot looked like one colour, but its components can behave differently during travel.</p>
+<p>Why does one component remain lower while another moves farther? The answer is not simply that a small dye fits through holes that a large dye cannot. Components spend different amounts of time associated with the moving liquid and the stationary surroundings.</p>
+<p>The separation reveals different migration behaviour within a mixture.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Chromatography</strong> separates mixture components through differences in their distribution between moving and stationary environments. In a simple paper demonstration, water acts as the <strong>mobile phase</strong>, while the paper and its associated stationary environment influence retention.</p>
+<p>The water moves through the paper's small spaces by capillary action. Dissolved ink components can travel with it. That transport alone would not necessarily separate them if every component interacted identically with the system.</p>
+<p>Different dyes can vary in solubility in the moving liquid and in how strongly they associate with stationary material. A component that spends more of its time moving with the liquid generally migrates farther during the same run than one retained more strongly.</p>
+<p>The result is <strong>differential migration</strong>. Components can form separate bands or spots even when the original ink looked uniform. The technique does not require a chemical reaction converting black dye into newly created colours.</p>
+<p>The starting spot should be above the initial solvent surface. If submerged, much of the ink may dissolve directly into the reservoir rather than begin a controlled path along the paper. A small spot helps avoid broad overlapping bands.</p>
+<p>Mark the starting line with pencil rather than another soluble ink. The line is a reference and should not add extra migrating dye. Record the <strong>solvent front</strong>, the furthest visible position reached by the liquid, before the wet boundary becomes hard to identify.</p>
+<p>A simple migration ratio compares a component's travel distance from the baseline with the solvent front's travel distance. For invented distances of three and six centimetres, the ratio is 0.5. This dimensionless comparison is useful only with appropriate conditions and careful measurements.</p>
+<p>A band's position is not a universal chemical identity card. Solvent, paper, temperature, sample amount and other conditions affect the pattern. Some inks contain components unsuitable for water or may not separate visibly in a brief run. A negative-looking result must be reported honestly rather than painted into the expected picture.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a moving walkway beside many stopping places. Different travellers spend different amounts of time paused at those places, so they cover different total distances even though the walkway moves at one rate.</p>
+<p>The walkway represents the mobile phase, and stopping represents interaction with the stationary environment. The analogy captures retention time, not human decision-making or literal hooks catching every molecule.</p>
+<p>Then draw two dye paths starting at one baseline. Keep the same solvent front for both, but give the dyes different migration distances. The shared starting point and run conditions make their relative movement interpretable.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a strip with a pencil baseline above the solvent reservoir, an upward solvent front and separated coloured bands. Distances are measured from the same baseline, not from the lower paper edge.</p>
+<p>A side panel contrasts a component spending more time in the moving phase with one more strongly retained. The diagram labels this as a distribution model rather than a simple size sieve.</p>
+<p>The colours and band positions are illustrative. They do not guarantee that every black pen contains those dyes or that a real classroom run will produce the same heights in five minutes.</p>
+<figure><img src="../../illustrations/class-9/day_31.svg" alt="Diagram for How can chromatography separate the colours in black ink?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Chromatographic methods help analyse mixtures in laboratories, though professional instruments can differ greatly from paper strips. Their shared principle is that components interact differently with moving and stationary environments.</p>
+<p>In a school demonstration, washable pens are more suitable for a water-based attempt than assuming every permanent marker will work. The ink source and paper should be recorded so another group can understand the result.</p>
+<p>This lesson uses water only. It does not require alcohol, fuel, cleaning solvent or an unknown chemical. A simple safe trial is enough to distinguish separation from the claim that one uniform-looking colour must be one pure substance.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a paper strip torn from suitable absorbent paper, a pencil, a washable pen and a shallow cup of room-temperature water. Ask an adult before using household materials. Keep the ink away from clothing and do not taste the water.</p>
+<ol>
+<li>Draw a pencil baseline near the lower end.</li>
+<li>Add a small ink dot on the line.</li>
+<li>Place only the lower paper edge in water, keeping the dot above the surface.</li>
+<li>Watch the front move and note any colour separation.</li>
+<li>Mark the front when the run stops.</li>
+</ol>
+<p>Five minutes may show only an early stage. Report incomplete travel or no visible split without inventing bands. The activity is not a complete identification test for unknown substances.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why would two components with similar retention be difficult to distinguish on a short strip? Consider overlapping bands rather than assuming the original ink must contain only one substance.</p>
+<p>Now change the solvent in a thought experiment. Explain why the pattern could change even if the ink stayed the same. A migration result belongs to a specified system, not to the sample alone.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the mobile phase in the water-and-paper example?</p>
+<ul>
+<li>A. The moving water</li>
+<li>B. The pencil baseline alone</li>
+<li>C. Only the dry cup wall</li>
+</ul>
+<p><strong>Answer:</strong> A — The mobile phase carries dissolved components through the paper system.</p>
+<h3>Q2</h3>
+<p>Why can dyes reach different heights?</p>
+<ul>
+<li>A. Every dye has identical interactions</li>
+<li>B. They differ in movement and retention</li>
+<li>C. Water must create new colours chemically</li>
+</ul>
+<p><strong>Answer:</strong> B — Different distributions between moving and stationary environments produce differential migration.</p>
+<h3>Q3</h3>
+<p>Invented dye and solvent-front distances are 3 cm and 6 cm. What is their ratio?</p>
+<ul>
+<li>A. 2</li>
+<li>B. 9 cm</li>
+<li>C. 0.5</li>
+</ul>
+<p><strong>Answer:</strong> C — Dividing dye travel by front travel gives 3 divided by 6, or 0.5.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write an observation card recording paper, ink, solvent, starting line, run duration and solvent-front position. Add a sketch of the actual outcome rather than a predicted ideal pattern.</p>
+<p>Explain why the initial spot belongs above the reservoir and why one migration ratio does not prove a universal identity. Use the invented three-over-six example only as arithmetic, clearly separate from any measured trial.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A uniform-looking colour can conceal several components, but an unsplit spot does not prove purity either. Separation depends on both the mixture and the chosen system. The same method that reveals hidden complexity also teaches a limit: what you fail to separate may still be more than one substance.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Chromatography separates components through different migration in moving and stationary environments; the pattern depends on the sample and the chosen conditions together.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 1 of 30</footer>
+</div>
+</body>
+</html>

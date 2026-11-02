@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why does curd set when a little starter is added to milk?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Starter activity changes the milk environment and its protein structure</text>
+<text x="170" y="134" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Dispersed casein assemblies</text>
+<rect x="45" y="170" width="250" height="175" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="134" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Bacteria produce lactic acid</text>
+<rect x="375" y="170" width="250" height="175" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="830" y="134" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#1f5f8b">Water-holding gel</text>
+<rect x="705" y="170" width="250" height="175" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="90" cy="215" r="11" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="160" cy="270" r="11" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="235" cy="220" r="11" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="310" r="11" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="430" y="210" width="30" height="9" rx="4" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="485" y="265" width="30" height="9" rx="4" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="555" y="225" width="30" height="9" rx="4" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="770" cy="210" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="830" cy="245" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="890" cy="210" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="775" cy="305" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="860" cy="315" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M770 210 L830 245 L890 210 M830 245 L775 305 L860 315 L890 210" fill="none" stroke="#579b70" stroke-width="3"/>
+<line x1="310" y1="260" x2="355" y2="260" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="640" y1="260" x2="685" y2="260" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="170" y="395" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Milk sugar: lactose</text>
+<text x="500" y="395" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Acidity changes interactions</text>
+<text x="830" y="395" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Water remains in the network</text>
+<text x="500" y="452" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">A starter is active culture, not enough ready-made curd to fill the bowl.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Bacteria → acidification → casein association → changed texture.</text>
+</svg>

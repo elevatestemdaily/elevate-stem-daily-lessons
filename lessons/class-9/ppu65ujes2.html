@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 48: How does a balanced poultry ration differ from feeding only grain? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 48</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a balanced poultry ration differ from feeding only grain?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why feeding poultry only grain can fail to meet all nutritional needs. Distinguish <strong>energy supply</strong>, protein-building materials and minerals or vitamins. Evaluate a ration by the bird's stage and purpose without creating a home feeding recipe or conducting an animal trial.</p>
+</div><h2>1. The mystery</h2>
+<p>A bird can receive plenty of grain yet still have a diet that is not appropriately balanced. Filling a feeder and supplying enough total food are not the same as meeting every nutritional requirement.</p>
+<p>Different components support different functions, and their useful proportions depend on the animal. A young growing bird and a laying bird need not have identical demands.</p>
+<p>The question is not whether grain is always useless or whether one extra ingredient fixes everything. It is how the complete ration relates to the identified bird's needs and management conditions.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>ration</strong> is the feed supplied over a relevant period, considered in relation to the animal's requirements. A <strong>balanced ration</strong> provides suitable nutrients in appropriate amounts and relationships for the intended population and conditions.</p>
+<p>Grains can contribute substantial dietary energy and other nutrients, but their composition does not automatically match every poultry requirement. A single broad ingredient category is not a complete nutritional specification.</p>
+<p><strong>Protein</strong> supplies amino-acid building materials needed for growth and maintenance. The quality and balance of these materials matter, not merely a label saying some protein is present. This lesson does not repeat digestion or the molecular process of protein synthesis.</p>
+<p><strong>Minerals</strong> and <strong>vitamins</strong> support functions that cannot be replaced simply by adding more energy. For example, mineral needs associated with laying can differ from those of birds at another stage. Practical amounts require suitable professional formulation rather than a classroom guess.</p>
+<p><strong>Water</strong> access is also essential to the whole management system. A feed list alone is incomplete if it ignores the bird's ability to drink and its environmental conditions. Appropriate care cannot be reduced to a dry ingredient table.</p>
+<p>Requirements vary with age, type, production stage, health and environment. A ration designed for one group should not automatically be transferred to another. Feed intake and the accessibility of the offered material also affect what is actually consumed.</p>
+<p>Ingredient quality and storage matter. A nutritionally promising formulation can be unsuitable if contaminated, spoiled or badly handled. Conversely, a clean ingredient is not guaranteed to provide every required nutrient in the correct amount.</p>
+<p>More is not always better. Excesses and imbalances can create problems as well as deficiencies. This is why the lesson explains categories and matching rather than offering a percentage recipe, supplement dose or veterinary recommendation for real birds.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a needs chart with separate sections for energy, protein-related materials, minerals, vitamins and water. Place a grain card across some sections without pretending it fills all of them completely.</p>
+<p>Now create two fictional bird-stage cards. Leave their exact numerical needs blank but mark that the pattern can differ. The model demonstrates why identifying the population comes before selecting a ration.</p>
+<p>Add quality and access gates before the bird receives the planned nutrients. A mixture written on paper is not the same as a safe and usable diet actually consumed. This connects formulation, handling and management without reducing them to one ingredient's reputation.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows several nutrient-role boxes feeding into a complete-ration model. A grain-only route leaves some requirement boxes unresolved. A second panel identifies growth stage and production purpose as conditions affecting the design.</p>
+<p>Water access and ingredient quality sit beside the feed route rather than being hidden in a footnote. No numerical nutrient targets or actual feed quantities appear.</p>
+<p>The diagram is a conceptual evaluation aid, not a recipe or a recommendation for a particular breed. It distinguishes missing information from a claimed deficiency diagnosis in a real animal.</p>
+<figure><img src="../../illustrations/class-9/day_48.svg" alt="Diagram for How does a balanced poultry ration differ from feeding only grain?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Poultry farming in India uses feeds suited to different production systems and stages. Labels and professional guidance can specify intended use because one mixture is not automatically appropriate for every bird.</p>
+<p>A school project can examine a fictional or publicly supplied label with adult supervision. It should not alter the feeding of a home bird, farm flock or wild bird to test a classroom hypothesis.</p>
+<p>The broader lesson transfers to evaluating any nutrition plan: quantity, composition, suitability and access are separate questions. A visually full feeder answers only one small part of that assessment.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and nutrient-category cards. No animal or real feed preparation is needed.</p>
+<ol>
+<li>Write energy, protein-related materials, minerals, vitamins and water on separate cards.</li>
+<li>Add a grain-only plan and mark what information it supplies.</li>
+<li>Leave unverified requirements marked unknown rather than automatically absent.</li>
+<li>Add a fictional growth-stage card.</li>
+<li>List what qualified guidance would be needed for an actual formulation.</li>
+</ol>
+<p>Do not invent feed percentages or interpret a real bird's appearance as a diagnosis. The activity teaches completeness of reasoning, not practical ration manufacture. A category being unrecorded on your paper is a missing-information problem, not proof that a named ingredient contains none of it.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can supplying more of an energy-rich ingredient fail to correct a shortage of a different nutrient? Use the distinct functions on the chart rather than treating food as one interchangeable substance.</p>
+<p>Now imagine two groups consume different amounts despite being offered the same formulation. Which management questions would you ask before comparing their outcomes? The planned ration and actual intake are related but not identical.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What makes a ration balanced in this lesson?</p>
+<ul>
+<li>A. It contains only the greatest possible grain mass</li>
+<li>B. It matches several needs for the intended birds</li>
+<li>C. It uses one identical recipe for every animal</li>
+</ul>
+<p><strong>Answer:</strong> B — Balance depends on suitable nutrient relationships and the identified population.</p>
+<h3>Q2</h3>
+<p>Why does poultry stage matter?</p>
+<ul>
+<li>A. Growth and production needs can differ</li>
+<li>B. Every bird has identical requirements forever</li>
+<li>C. Water becomes unnecessary for older birds</li>
+</ul>
+<p><strong>Answer:</strong> A — Requirements depend on age, purpose and other conditions.</p>
+<h3>Q3</h3>
+<p>A grain-only plan lacks nutrient information. What should a student do?</p>
+<ul>
+<li>A. Assume grain contains no nutrients at all</li>
+<li>B. Invent supplement doses for real birds</li>
+<li>C. Identify missing information and seek suitable guidance</li>
+</ul>
+<p><strong>Answer:</strong> C — A paper evaluation should recognise uncertainty rather than create an unvalidated feeding recipe.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a paper checklist for evaluating a fictional poultry feed plan. Include intended bird stage, nutrient roles, water access, ingredient quality and uncertainty.</p>
+<p>Your conclusion should explain why grain alone cannot be assumed complete while avoiding the opposite claim that grain has no nutritional value. Include a clear statement that real diets and health concerns require appropriate professional guidance, not a classroom supplement experiment.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Enough of one useful resource does not substitute for every other resource. A feeder can be full while the overall plan remains poorly matched to the animal. Understanding roles and relationships is therefore more informative than judging adequacy by volume, cost or one familiar ingredient alone.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A balanced poultry ration matches several nutrient roles and management conditions to the bird's stage; grain quantity alone does not establish nutritional completeness.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 18 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a tidal barrage choose when to release water?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">One ebb-generation sequence: fill, hold, then release through a controlled route</text>
+<text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">1. Fill</text>
+<path d="M40 190 L40 345 L300 345 L300 190" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="164" y="185" width="12" height="160" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="102" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Basin</text>
+<text x="238" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Sea</text>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">2. Hold</text>
+<path d="M370 190 L370 345 L630 345 L630 190" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="494" y="185" width="12" height="160" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="432" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Basin</text>
+<text x="568" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Sea</text>
+<text x="830" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">3. Release</text>
+<path d="M700 190 L700 345 L960 345 L960 190" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="824" y="185" width="12" height="160" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="762" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Basin</text>
+<text x="898" y="382" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Sea</text>
+<rect x="44" y="230" width="116" height="110" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<rect x="180" y="230" width="116" height="110" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<rect x="374" y="230" width="116" height="110" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<rect x="510" y="300" width="116" height="40" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<rect x="704" y="245" width="116" height="95" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<rect x="840" y="315" width="116" height="25" rx="0" fill="#ddeeff" stroke="#ddeeff" stroke-width="2"/>
+<line x1="275" y1="270" x2="90" y2="270" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="482" y1="275" x2="518" y2="305" stroke="#e6a23c" stroke-width="4"/>
+<line x1="518" y1="275" x2="482" y2="305" stroke="#e6a23c" stroke-width="4"/>
+<circle cx="830" cy="290" r="16" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="755" y1="290" x2="920" y2="290" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="970" y1="245" x2="970" y2="315" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="960" y1="245" x2="980" y2="245" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="960" y1="315" x2="980" y2="315" stroke="#1f5f8b" stroke-width="2"/>
+<text x="170" y="425" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Incoming water allowed</text>
+<text x="500" y="425" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Sea falls; basin retained</text>
+<text x="830" y="425" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Head drives release</text>
+<text x="500" y="468" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Head is the surface-level difference, and it changes during release.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Gate timing preserves a usable difference; other barrage modes also exist.</text>
+</svg>

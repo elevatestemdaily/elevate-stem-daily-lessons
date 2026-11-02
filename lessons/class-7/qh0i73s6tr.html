@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 31: Why does a steel spoon warm up in hot dal? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 31</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a steel spoon warm up in hot dal?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Follow thermal energy from warm dal into a spoon's handle. Explain <strong>conduction</strong>, distinguish heat from temperature, and predict how changing the spoon's material or shape changes the result. Your model must work even though the steel itself stays in place.</p>
+</div><h2>1. The mystery</h2>
+<p>A spoon stands in a bowl of freshly served dal. Its bowl is under the dal, but its handle sticks into the air. After a while, the handle feels warm too. The dal has not climbed all the way to your fingers. No visible piece of steel has travelled from the bowl to the handle. Something has crossed the distance, however: energy.</p>
+<p>Now imagine a wooden spoon beside it. Would the two handles warm at the same rate? This comparison reveals a property that matters when people choose cooking tools.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Temperature</strong> describes how hot or cold something is. <strong>Heat</strong> is energy transferred because there is a temperature difference. If the dal is hotter than the spoon, energy transfers from the dal to the spoon at their contact surface. The submerged part warms first.</p>
+<p>Inside a solid, neighbouring particles interact. Energy introduced at one end can pass through those interactions to nearby regions. This transfer through material, without the bulk material flowing along the transfer path, is called <strong>thermal conduction</strong>.</p>
+<p>Metals have another useful route for carrying energy: mobile <strong>electrons</strong>. These electrons can move through the metal and transfer energy through interactions. Both particle vibrations and electrons contribute, but electron transport helps explain why many metals conduct heat well.</p>
+<p>The spoon does not need a battery or a closed electrical circuit for this to happen. There is no requirement for a net electrical current along the handle. Here, electrons help carry thermal energy within the metal. That is different from asking why an electrical circuit conducts charge.</p>
+<p>The warmer region transfers energy toward the cooler region. Along the spoon, there is initially a <strong>temperature gradient</strong>: temperature changes with position. The submerged bowl is warmest; the far handle is cooler. Energy is transferred along this gradient toward cooler parts.</p>
+<p>Three features influence the rate. A material with greater <strong>thermal conductivity</strong> transfers energy more readily for the same geometry and temperature difference. A thicker conducting path provides a larger cross-sectional area. A longer path slows transfer between its ends, all else being equal.</p>
+<p>These are comparisons under controlled conditions. A thin aluminium spoon and a thick steel ladle differ in more than material. You cannot use their warming times alone to rank their conductivities. Shape, mass, starting temperature and contact with the dal also matter.</p>
+<p>Meanwhile the handle transfers energy to surrounding air. Therefore its temperature depends on both energy arriving through the steel and energy leaving to its surroundings. It need not become as hot as the dal. If the whole meal cools, the temperature difference driving transfer also decreases.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine a row of connected seats. A disturbance at one end can pass along the row even though the seats stay in their places. This captures one important feature of conduction: <strong>energy travels while the solid remains a solid</strong>.</p>
+<p>Now add mobile messengers moving between the seats. They stand for electrons carrying energy in a metal. Neither part of the model means that a tiny parcel called “hotness” must travel intact from the dal to your fingers.</p>
+<p>Draw four positions along a spoon. Mark their temperatures as warm, less warm, cooler and coolest. Put arrows between neighbouring positions pointing toward the cooler side. Those arrows represent energy transfer, not moving spoon material.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a warm bowl at the left and a metal spoon extending toward the right. Three arrows above the handle follow the direction of thermal energy transfer. The handle stays continuous and stationary.</p>
+<p>Below the drawing, three separated labels identify the contact region, the conducting path and the cooler handle. A second strip illustrates changes in path thickness and length. Its arrows indicate that geometry affects transfer rate; they do not claim a measured rate for a real spoon.</p>
+<p>Read the labels before following the arrows. The colours distinguish regions and do not act as a thermometer scale.</p>
+<figure><img src="../../illustrations/class-7/day_31.svg" alt="Diagram for Why does a steel spoon warm up in hot dal?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A steel karchhi can become uncomfortable to hold during cooking. A wooden grip lengthens and interrupts the easy conducting path to the hand. A handle may also be hollow or attached through a narrow connector. These design choices change how readily energy reaches the user.</p>
+<p>A tawa often has a handle with a different material from its cooking surface. The surface should transfer heat into food; the handle should remain easier to hold. The best material depends on what each part must do.</p>
+<p>Metal tools also feel cooler than wooden tools in the same room because metal can remove energy from a warm hand more rapidly. Feeling colder does not prove the metal started at a lower temperature.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p><strong>Do this with an adult.</strong> Use comfortably warm tap water, never boiling water or a stove. You need a cup, a metal spoon and a wooden spoon.</p>
+<ol>
+<li>Place both spoons in the room beforehand so they start under similar conditions.</li>
+<li>Put their bowls in the warm water, keeping most of each handle out.</li>
+<li>After about a minute, briefly touch each exposed handle. Stop if anything feels uncomfortable.</li>
+<li>Compare a point near the water with one farther away on the metal handle.</li>
+<li>Sketch where warming was easiest to notice.</li>
+</ol>
+<p>Treat this as a qualitative observation. The spoons have different shapes and masses, so the activity does not measure conductivity accurately. No noticeable change is also a valid observation when the water is only mildly warm.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose the far end of a metal rod is kept cool while the near end stays warm. Energy can keep passing through even if the temperature at each location becomes steady. A steady temperature does not necessarily mean that energy has stopped moving.</p>
+<p>What must be true about energy entering and leaving a small section of the rod for that section's temperature to remain unchanged? Describe the balance using arrows of equal size.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is conduction along a spoon?</p>
+<ul>
+<li>A. Heat transfer through its material</li>
+<li>B. Steel flowing toward the handle</li>
+<li>C. Dal travelling inside the handle</li>
+</ul>
+<p><strong>Answer:</strong> A — Energy passes through the solid while its bulk material stays in place.</p>
+<h3>Q2</h3>
+<p>Why do many metals transfer heat readily?</p>
+<ul>
+<li>A. They contain stored flames</li>
+<li>B. Mobile electrons help carry energy</li>
+<li>C. Their atoms must leave the solid</li>
+</ul>
+<p><strong>Answer:</strong> B — Mobile electrons contribute to thermal energy transfer within metals.</p>
+<h3>Q3</h3>
+<p>For otherwise identical metal rods, which change slows transfer between their ends?</p>
+<ul>
+<li>A. Make the path thicker</li>
+<li>B. Increase the end temperatures equally</li>
+<li>C. Make the conducting path longer</li>
+</ul>
+<p><strong>Answer:</strong> C — A longer path reduces the transfer rate for the same end-temperature difference.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a spoon for stirring warm food. Label the bowl, connector and grip. Choose which part should conduct heat readily and which part should slow transfer to the hand.</p>
+<p>Explain one trade-off. A longer handle can increase the distance energy travels, but an extremely long handle may be awkward to use. Compare your design with a short all-metal spoon, keeping the amount of food and the initial temperature the same.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A metal spoon and a wooden spoon can have the same temperature yet feel different. Your skin responds to energy transfer as well as temperature. Touch is useful for noticing change, but it cannot reliably compare temperatures of different materials. This is why a thermometer answers a different question from “Which feels colder?”</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Conduction carries thermal energy along a spoon from warmer regions to cooler regions, while the spoon's material stays in place.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 1 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 42: How does an ester name reveal two chemical building blocks? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 42</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does an ester name reveal two chemical building blocks?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Read a simple <strong>ester</strong> name by identifying its alcohol-derived and acid-derived parts. Locate the <strong>COO linkage</strong> in a structural formula and connect it with the naming order. Distinguish structural identification from guessing a substance by smell or attempting a chemical preparation.</p>
+</div><h2>1. The mystery</h2>
+<p>The name ethyl ethanoate seems to contain two related but different pieces. Each points to part of the molecule's structure. Once the linkage is located, the naming pattern becomes more informative than a long word to memorise.</p>
+<p>An ester can be related conceptually to an alcohol and a carboxylic acid, but that does not mean a bottle contains those two liquids simply mixed together. The product has a distinct bonding arrangement.</p>
+<p>The useful question is which atoms belong to each structural part and how the name records that connection.</p>
+<h2>2. The science behind it</h2>
+<p>A simple ester contains a linkage represented as <strong>R–C(=O)–O–R′</strong>. The carbonyl carbon is joined to one oxygen by a double bond and to another oxygen by a single bond. The second oxygen connects to the alcohol-derived carbon group.</p>
+<p>For <strong>ethyl ethanoate</strong>, a condensed structural formula is <strong>CH3COOCH2CH3</strong>. The CH3COO portion is associated with the ethanoate part, while the CH2CH3 group attached through oxygen is ethyl.</p>
+<p>The first word in this simple naming pattern identifies the alcohol-derived <strong>alkyl group</strong>. The second names the acid-derived <strong>carboxylate part</strong>, using the appropriate ate ending. The order in the name is not simply the left-to-right order in every possible drawing orientation.</p>
+<p>An esterification account can relate an alcohol plus a carboxylic acid to an ester plus water under suitable conditions. The reaction can be reversible. We use that relationship for structure and naming, not as a home preparation instruction.</p>
+<p>The acid's carbonyl carbon remains part of the acid-derived name. Forgetting it can make the carbon count wrong. Ethanoate therefore refers to a two-carbon acid-derived structure, not just the one-carbon CH3 group visible beside the carbonyl.</p>
+<p>The <strong>COO</strong> sequence must be read with bonding context. The formula's arrangement matters; a list of carbon, hydrogen and oxygen totals alone is not always enough to identify the functional group. A separate later lesson addresses equal-formula structural isomers.</p>
+<p>Some esters have familiar odours, but not all are fruity or safe to smell. Odour is not a reliable complete identification test. Chemical family membership does not establish food suitability or safe handling.</p>
+<p>This lesson differs from acids-and-bases chemistry and soap micelles. Its target is a functional linkage and a naming relationship. We do not repeat proton neutralisation, detergent cleaning or carbon's general bonding diversity.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw the ester linkage in the centre and colour its two carbon-containing sides differently. Put the alcohol-derived group beside the single-bonded oxygen and the acid-derived section around the carbonyl.</p>
+<p>Write ethyl below the first identified group and ethanoate below the second. Then assemble the name in its conventional order, even if the drawing has been rotated or reversed on the page.</p>
+<p>Count the carbonyl carbon explicitly. The model should identify atoms through connections, not through whichever cluster looks largest. This makes the name a compact structural guide instead of a memory exercise detached from the formula.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows CH3–C(=O)–O–CH2–CH3 with the ester linkage highlighted. Separate label zones identify the ethanoate and ethyl portions and then place the name ethyl ethanoate in order.</p>
+<p>A small reaction-family strip connects alcohol-derived and acid-derived parts conceptually. It contains no reagent quantities, heating conditions or apparatus.</p>
+<p>The diagram's colours identify structural roles, not real molecular colours. The caption states that smell and a molecular atom-total formula alone do not provide a complete identification method.</p>
+<figure><img src="../../illustrations/class-10/day_42.svg" alt="Diagram for How does an ester name reveal two chemical building blocks?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Ester names appear in chemistry descriptions and product ingredient lists, but their actual uses and hazards depend on the substance. A familiar scent association should not replace the full chemical identity.</p>
+<p>An Indian classroom can practise the naming pattern with printed formulas. This gives a specific skill without bringing solvents or concentrated acids into a home activity.</p>
+<p>Do not mix alcohols and acids, heat a solution or smell an unknown liquid to test the lesson. The structural relationship is sufficient for the learning goal and does not require an esterification experiment.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours.</p>
+<ol>
+<li>Write CH3–C(=O)–O–CH2–CH3 with bonds visible.</li>
+<li>Circle the carbonyl carbon and both connected oxygens.</li>
+<li>Mark the oxygen-linked ethyl group in one colour.</li>
+<li>Mark the ethanoate section, including the carbonyl carbon, in the other.</li>
+<li>Assemble the name in the conventional order.</li>
+</ol>
+<p>Ask a partner to count carbons in each named part and explain the linkage. This is a formula exercise, not chemical handling. Keep the same structure when turning the page so the name does not accidentally change with drawing orientation.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does rotating the structural drawing not change the compound's name? Distinguish spatial presentation from the connections between atoms.</p>
+<p>Now remove the carbonyl double-bond marker from the drawing. What important structural information has been lost? The shorthand COO is useful only when the relevant bonding arrangement is understood.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which linkage identifies the simple ester model?</p>
+<ul>
+<li>A. Only a sodium-to-chloride ionic ratio</li>
+<li>B. C(=O)–O between the structural parts</li>
+<li>C. A plain chain with no oxygen</li>
+</ul>
+<p><strong>Answer:</strong> B — The ester contains the carbonyl carbon joined through oxygen to the second carbon group.</p>
+<h3>Q2</h3>
+<p>Why does ethanoate include the carbonyl carbon?</p>
+<ul>
+<li>A. That carbon belongs to the acid-derived structure</li>
+<li>B. Names count only visible methyl groups</li>
+<li>C. The carbonyl carbon is outside every molecule</li>
+</ul>
+<p><strong>Answer:</strong> A — The acid-derived two-carbon portion includes the carbonyl carbon as well as CH3.</p>
+<h3>Q3</h3>
+<p>A structural drawing is rotated without changing connections. What should happen to its name?</p>
+<ul>
+<li>A. It must become a pure alcohol</li>
+<li>B. It must become a different ester</li>
+<li>C. It remains the same compound name</li>
+</ul>
+<p><strong>Answer:</strong> C — Changing page orientation does not change the atom connectivity.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a labelled ester-naming card with the linkage, two coloured structural portions, carbon counts and name order. Use ethyl ethanoate as the worked example.</p>
+<p>Add one warning against identifying unknown substances by a fruity smell and one note distinguishing structure from a simple mixture of starting ingredients. Do not include synthesis quantities or an instruction to perform the reaction at home.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A chemical name can be a compressed map. Two words preserve information about structural origins and how groups connect, but only if the linkage is read correctly. A missing carbonyl carbon or a mistaken oxygen connection can change the interpretation even when the written word looks almost familiar.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A simple ester name places the alcohol-derived alkyl group before the acid-derived ate part; the C(=O)–O linkage identifies how the two structural regions connect.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 12 of 30</footer>
+</div>
+</body>
+</html>

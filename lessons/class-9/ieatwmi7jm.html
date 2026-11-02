@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 46: Why does a pure substance melt over a narrower range than a mixture? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 46</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a pure substance melt over a narrower range than a mixture?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why a narrow <strong>melting range</strong> can support a purity assessment under suitable conditions. Distinguish onset from completion of melting and recognise exceptions. Treat the result as evidence alongside method quality, not as a universal proof that a sample contains exactly one substance.</p>
+</div><h2>1. The mystery</h2>
+<p>Two labelled laboratory samples begin as solids. In a supplied record, one melts across a narrow interval while the other begins earlier and finishes across a broader interval. Both eventually become liquid, but their transition records differ.</p>
+<p>Why might composition affect that interval? A mixture can have solid and liquid phases with changing compositions as melting progresses. The observation is more informative than simply saying the sample got hot enough.</p>
+<p>No actual heating is needed to investigate the evidence. We can interpret fictional records and examine what conclusions are justified.</p>
+<h2>2. The science behind it</h2>
+<p>For a pure substance in an appropriate stable form at a fixed pressure, equilibrium melting is associated with a characteristic temperature. Real apparatus observes a <strong>range</strong> because heating, sample size, temperature gradients and reading conventions are not perfectly ideal.</p>
+<p>A practical melting range often runs from the first clear sign of liquid to the disappearance of the last solid. The record should state its convention. Different observers using different endpoints may report different ranges for the same process.</p>
+<p>Many soluble impurities can lower the onset and broaden the observed range. The liquid and remaining solid need not keep the original overall composition throughout melting. As one part melts, the composition of the phases can change.</p>
+<p>This is why a lower, broader interval can be a useful sign of impurity in an appropriate comparison. It is not a rule that every possible impurity produces the same effect or that every mixture must melt broadly.</p>
+<p>Some mixtures near a <strong>eutectic composition</strong> can melt sharply. A narrow range can therefore occur without complete chemical purity. This exception matters because it prevents the convenient shortcut from becoming a false definition.</p>
+<p>Different solid forms, decomposition and unsuitable measurement conditions can also complicate interpretation. A sample that changes chemically before completing a clean melt cannot be analysed with a simple phase-transition rule alone.</p>
+<p>Method quality matters. Heating too quickly can create a mismatch between the sample's actual condition and the reported temperature. Packing, crystal size and instrument calibration can influence a practical record. Careful arithmetic cannot repair an uncontrolled heating method.</p>
+<p>The lesson differs from identifying melting versus dissolving or growing salt crystals. Its question is how a measured transition range can provide limited evidence about composition. We do not identify unknown substances or claim a classroom record certifies a product's safety.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a temperature line with two markers for each sample: onset and completion. Shade the interval between them. Compare both the width and location rather than considering only the final temperature.</p>
+<p>Add a separate method box for pressure, heating procedure and endpoint definition. This shows that the range belongs to a sample measured under conditions, not to a label alone.</p>
+<p>Finally draw an exception card marked sharp-melting mixture. Keep it beside the general pattern rather than hiding it. A useful scientific indicator becomes more reliable when the user knows where the inference can fail and what other evidence is needed.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two invented temperature intervals, one narrow and one broader and lower. Each interval has separately labelled onset and completion markers. The values are fictional and do not refer to a real chemical.</p>
+<p>An exception panel identifies a possible sharply melting mixture. A method panel lists heating and observation conditions as additional influences. The diagram therefore supports a cautious comparison rather than a one-number purity certificate.</p>
+<p>No heater, flame or unknown chemical handling appears in the activity. The visual is an evidence-reading exercise designed to separate a useful trend from a universal law.</p>
+<figure><img src="../../illustrations/class-9/day_46.svg" alt="Diagram for Why does a pure substance melt over a narrower range than a mixture?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Laboratories can use melting behaviour as one part of characterising suitable solid substances. Interpretation depends on knowing the method and combining the observation with other information.</p>
+<p>Household materials such as wax or chocolate can be complex mixtures with structural changes that do not fit a simple pure-compound example. They should not be treated as interchangeable reference substances merely because they soften when warmed.</p>
+<p>Students should not heat unknown powders, medicines or household chemicals to test purity. A supplied record can teach the principle without exposure to hot equipment, vapours or substances whose hazards are not known.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a ruler and fictional data only.</p>
+<ol>
+<li>Draw one interval from 68 to 69 degrees in model temperature units.</li>
+<li>Draw another from 61 to 67 in the same units.</li>
+<li>Mark onset and completion separately.</li>
+<li>Compare interval widths and positions.</li>
+<li>Write one possible composition explanation and one method-related alternative.</li>
+</ol>
+<p>Label every value invented. Do not name an actual substance from these numbers. Add an exception note that some mixtures can melt sharply. The exercise is about evidence strength, not a home purity analysis or a test of food and medicine quality.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why would rapid heating make a practical range harder to interpret even if the temperature display has many decimal places? Consider whether the sample and sensor represent the same conditions at the same moment.</p>
+<p>Now imagine a narrow range matching a reference. What additional possibilities prevent that agreement from proving complete purity? Include measurement limits and the sharply melting mixture exception.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a practical melting range record?</p>
+<ul>
+<li>A. An interval between defined melting endpoints</li>
+<li>B. The number of atoms in every crystal</li>
+<li>C. Only the mass of the empty container</li>
+</ul>
+<p><strong>Answer:</strong> A — The onset and completion convention defines the observed transition interval.</p>
+<h3>Q2</h3>
+<p>Why is narrow melting not a universal proof of purity?</p>
+<ul>
+<li>A. Every pure substance must melt broadly</li>
+<li>B. Pressure and method can never matter</li>
+<li>C. Some mixtures can also melt sharply</li>
+</ul>
+<p><strong>Answer:</strong> C — A sharply melting eutectic mixture is one important exception to the simple inference.</p>
+<h3>Q3</h3>
+<p>A sample is heated too rapidly. What should a report consider?</p>
+<ul>
+<li>A. Extra display digits guarantee correctness</li>
+<li>B. Temperature gradients can distort the observed range</li>
+<li>C. The method cannot affect any observation</li>
+</ul>
+<p><strong>Answer:</strong> B — The sample and measured temperature may not remain closely matched under rapid heating.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a cautious laboratory-style comparison using the invented intervals. State what was observed before suggesting impurity as one explanation. Include the endpoint convention and at least two method conditions.</p>
+<p>Your conclusion must avoid saying narrow means certainly pure. Add one exception and one further evidence need. Keep the work on paper, with no recommendation to heat an unknown real sample.</p>
+</div><h2>10. One surprising idea</h2>
+<p>An indicator can be useful without being a definition. A narrow range may support a purity interpretation under appropriate conditions, while exceptions prevent it from proving the whole claim alone. Knowing the exception improves the tool because it guides the next question rather than encouraging overconfidence.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A narrow melting range can support purity evidence, but composition exceptions and measurement conditions mean it is not a stand-alone proof of a pure substance.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

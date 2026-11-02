@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 37: Why does salt help preserve a mango pickle? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 37</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does salt help preserve a mango pickle?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how dissolved salt can reduce water availability for many microorganisms. Distinguish total moisture from <strong>water activity</strong> and recognise preservation as a system with several controls. This is a mechanism lesson, not a recipe or a method for deciding whether an unknown pickle is safe to eat.</p>
+</div><h2>1. The mystery</h2>
+<p>A mango pickle can contain moist pieces of fruit yet resist some kinds of spoilage better than an untreated moist fruit sample. Simply counting visible water is therefore not enough to explain microbial growth.</p>
+<p>Salt is one part of many preservation methods. When dissolved, it changes the environment experienced by microorganisms. The useful question is how readily water is available for their activity, not whether the jar looks wet or dry.</p>
+<p>Other ingredients and handling also matter. Explaining one mechanism must not become a promise that adding any amount of salt makes every food safe indefinitely.</p>
+<h2>2. The science behind it</h2>
+<p>Microorganisms need suitable conditions to grow. Water availability is one important factor, alongside temperature, nutrients, acidity and other conditions. Different organisms tolerate different environments, so a single statement about all microbes would be inaccurate.</p>
+<p>Dissolved salt changes water's behaviour in a solution. Scientists describe the relevant availability using <strong>water activity</strong>, a measure linked to the water's tendency to escape compared with pure water under the same conditions. It is not simply the percentage of the food that is water.</p>
+<p>A moist food can therefore have lower water activity than another equally moist food if its dissolved components differ. Water remains present, but the conditions for microbial use have changed. This distinction is the central mechanism of the lesson.</p>
+<p>For many microorganisms, a sufficiently low water activity limits growth. Cells face difficulty maintaining the water conditions needed for their functioning. We do not repeat the earlier detailed account of diffusion; the focus is the preservation consequence of changing the food environment.</p>
+<p>Salt does not necessarily kill every organism immediately. Some microbes tolerate salty conditions, and survival is different from active growth. A food that inhibits one group can still be vulnerable to another. A jar's appearance cannot establish the status of every microorganism.</p>
+<p>Traditional pickles often combine several <strong>preservation hurdles</strong>, which may include salt, acidity, drying, suitable processing and storage practices. Oil can influence exposure and surface conditions, but it is not a universal sterilising layer. Their combined effect depends on the actual recipe and handling.</p>
+<p>Adding water can alter the concentration of dissolved components and the local conditions. Contamination introduced during handling can also matter. These are reasons to follow a reliable established food procedure, not instructions for improvising a safe concentration in this lesson.</p>
+<p>A numerical water-activity claim requires measurement or well-established information about a specified food. We therefore provide no invented salt percentage, storage life or microbial reduction statistic. The mechanism can be explained accurately without pretending a classroom drawing certifies an actual jar.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two foods containing similar amounts of water. In one, add many dissolved-solute symbols. Put separate labels for total water and availability rather than using the same label for both.</p>
+<p>Then draw a microorganism beside each environment. Mark that growth depends on the surrounding conditions and on the organism's tolerance. Do not cross out every microbe in the saltier example; that would incorrectly imply universal destruction.</p>
+<p>Finally add several controls around the food: appropriate preparation, acidity where relevant, storage and clean handling. The model shows that salt is one component of a preservation system. It is not a replacement for the rest of that system.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares moisture amount with water availability. Blue water symbols remain present in both panels, while amber dissolved-salt symbols are more numerous in one. A separate growth-condition panel states that organisms differ in tolerance.</p>
+<p>Arrows connect dissolved components with changed water activity, then with possible limits on microbial growth. They do not represent measured values for a real mango pickle.</p>
+<p>A final caption distinguishes inhibition from sterilisation. The diagram also shows other preservation controls so it cannot reasonably be read as a recipe saying that one ingredient alone guarantees safe storage.</p>
+<figure><img src="../../illustrations/class-8/day_37.svg" alt="Diagram for Why does salt help preserve a mango pickle?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Many Indian households prepare achar using established combinations of ingredients and processes. The broad science helps explain why those procedures control several conditions rather than relying only on whether fruit pieces look moist.</p>
+<p>Commercial preservation also uses measured and validated controls. A labelled product's storage directions concern its actual formulation and processing. A general classroom explanation is not a substitute for those instructions or a reason to extend a storage period.</p>
+<p>Never taste an experimental or suspicious food to test the theory. A changed smell, colour or texture can prompt adult attention, but the absence of an obvious change does not prove that every food hazard is absent.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and coloured pencils. Do not prepare a storage experiment, grow unknown microbes or taste old pickle.</p>
+<ol>
+<li>Draw two food samples with equal numbers of water symbols.</li>
+<li>Add dissolved-salt symbols to one.</li>
+<li>Label total water separately from water activity.</li>
+<li>Add several microbial types with different tolerance labels.</li>
+<li>Draw a border listing other needed preservation controls.</li>
+</ol>
+<p>Ask a partner to identify two false conclusions the picture must avoid: all moist foods have the same microbial conditions, and all microbes are killed by any salt addition. Revise the drawing if it suggests either. This is a conceptual activity rather than a measurement of a real food sample.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a food has lower water activity but still contains visible liquid. Why is that not a contradiction? Separate the amount of water present from its chemical availability in the particular mixture.</p>
+<p>Now imagine that an organism can tolerate the salt level. Explain why preserving against some microorganisms does not automatically establish protection against all. A mechanism has a target range and conditions, not a magical universal effect.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does water activity concern?</p>
+<ul>
+<li>A. Water availability in a specified environment</li>
+<li>B. Only the visible height of water in a jar</li>
+<li>C. The number of mango pieces in a bowl</li>
+</ul>
+<p><strong>Answer:</strong> A — Water activity describes availability and is not identical to total moisture content.</p>
+<h3>Q2</h3>
+<p>Why can salt help limit microbial growth?</p>
+<ul>
+<li>A. Every grain instantly destroys all microbes</li>
+<li>B. It can lower water availability</li>
+<li>C. It removes the need for proper handling</li>
+</ul>
+<p><strong>Answer:</strong> B — Dissolved salt can create conditions that inhibit many organisms.</p>
+<h3>Q3</h3>
+<p>A moist salted food shows no obvious spoilage. What is the soundest statement?</p>
+<ul>
+<li>A. It is sterile and safe forever</li>
+<li>B. Every microbe has identical salt tolerance</li>
+<li>C. Appearance alone cannot certify food safety</li>
+</ul>
+<p><strong>Answer:</strong> C — Microbes differ and preservation depends on the full formulation and handling process.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design an educational label titled “Salt is one hurdle.” It should explain changed water availability and distinguish growth inhibition from sterilisation. Include at least two other controls relevant to a specified established preservation process.</p>
+<p>Do not write a recipe, a salt dose or a guaranteed storage life. The label's purpose is to clarify why a validated whole procedure matters, not to certify food safety from a single ingredient or a five-minute classroom observation.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Two foods with similar total moisture can offer different conditions for microbial growth. Measuring what is present is not always the same as measuring how available it is. Water activity expresses that distinction more usefully than the simple visual judgement that a food looks wet.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Dissolved salt can lower water availability and inhibit many microbes, but preservation depends on the organism, formulation and whole handling process.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 32: How does Cuscuta take food from a host plant? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 32</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does Cuscuta take food from a host plant?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how <strong>Cuscuta</strong>, often called amarbel, obtains materials from another living plant. Identify the <strong>host</strong>, the parasite and their feeding connection. Distinguish a stem wrapped around a support from a parasite connected to that support's internal transport tissues.</p>
+</div><h2>1. The mystery</h2>
+<p>You notice a tangle of yellowish threads wound around a green hedge. At first it looks like string caught in the branches. Look more carefully: it is a plant. The threads branch and grip living stems, yet they do not carry the broad green leaves you expect.</p>
+<p>The green hedge has ordinary leaves and roots. The yellowish plant seems to depend on the hedge. Is it only using a convenient climbing frame, or is there a connection hidden beneath the surface? The answer lies at the points where their stems meet.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Cuscuta</strong> is a genus of parasitic flowering plants. Different species vary, so a single statement about every species would be misleading. The familiar yellowish amarbel example has very small, reduced leaves and depends heavily on a host for nutrition.</p>
+<p>A <strong>parasite</strong> gains resources from another living organism, its <strong>host</strong>. The relationship benefits the parasite while imposing a cost on the host. This cost can include losing water and sugars that could otherwise support the host's growth.</p>
+<p>When a suitable Cuscuta stem contacts a host, it coils around it. At attachment sites, it develops specialised structures called <strong>haustoria</strong>. One structure is a <strong>haustorium</strong>. It grows into host tissues and establishes access to the host's transport system.</p>
+<p>The host contains <strong>xylem</strong>, which transports water and dissolved mineral nutrients, and <strong>phloem</strong>, which carries sugars and other organic materials. Successful haustorial connections allow the parasite to obtain resources through these internal pathways. It is not merely licking dew from the outside of a stem.</p>
+<p>This explains why wrapping alone is insufficient. A piece of yellow thread can circle a plant without receiving food. A garden climber can grip a stick while obtaining its own materials elsewhere. A Cuscuta feeding attachment involves living tissues connecting across the boundary between two plants.</p>
+<p>A young Cuscuta seedling initially uses stored resources. It must establish an effective host connection to support continued development. Once established, its dependence on the original soil connection can diminish. For this lesson, the crucial transition is from a seedling's limited reserves to sustained access through a host.</p>
+<p>Descriptions of Cuscuta as completely lacking chlorophyll are useful school simplifications for the familiar example, but the genus includes variation. Some species retain limited photosynthetic activity. The safe general statement is that parasitic Cuscuta obtains substantial resources from its host through haustoria.</p>
+<p>The host may grow less vigorously if the resource drain is large. The effect depends on the host, parasite and growing conditions. A few attachments do not justify inventing a percentage reduction in crop yield. Mechanism tells us why damage is possible without pretending all infestations have identical effects.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a house with its own water and food supplies. Now draw another household using a connection to those supplies without paying them back. The second household receives resources, while the first has fewer available for itself.</p>
+<p>In the plant model, the green stem is the host, the yellowish strand is the parasite, and the haustorium is the specialised attachment. The analogy has limits: a haustorium is living tissue, not a drilled metal pipe.</p>
+<p>Separate <strong>support</strong> from <strong>supply</strong> in your drawing. The winding stem helps maintain contact. The haustorium provides the feeding connection. Labelling only the coils leaves the most important part unexplained.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a green host stem and an amber Cuscuta strand coiled beside it. A magnified section shows an amber attachment entering the host's outer boundary and approaching the internal transport region.</p>
+<p>Arrows point from the host's supply region toward the parasite. Dedicated labels explain that water, minerals and sugars move through established connections. The magnification is a teaching diagram, not a drawing to scale or a claim that tissues have these colours.</p>
+<p>A separate comparison at the bottom shows plain thread touching a stem without a feeding connection. Touching is therefore visually distinguished from parasitic access.</p>
+<figure><img src="../../illustrations/class-7/day_32.svg" alt="Diagram for How does Cuscuta take food from a host plant?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Amarbel can be noticed on shrubs, hedges and some crops in India. Recognising it as a living parasite helps explain why a tangled patch can matter to a gardener. The concern is the host's resource loss, not the yellow colour by itself.</p>
+<p>Different host plants vary in susceptibility. Seeing an unidentified vine does not prove that it is Cuscuta. Many harmless climbers also wrap around other plants. Identification needs more than the fact that something climbs.</p>
+<p>Do not collect or move suspect strands between plants. Carrying a living parasite into a garden would turn a learning observation into an avoidable problem. A drawing or a photograph is enough for classroom discussion.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, two coloured pencils and a piece of thread. There is no need to handle a real parasite.</p>
+<ol>
+<li>Draw a wide green stem and mark an internal transport strip.</li>
+<li>Lay thread across the paper stem to represent simple contact.</li>
+<li>Draw an amber Cuscuta strand beside it, including one haustorium crossing into the stem.</li>
+<li>Add arrows from the transport strip into the haustorium.</li>
+<li>Cover the haustorium with a scrap of paper and explain what is missing from the model.</li>
+</ol>
+<p>Ask someone which drawing represents a feeding connection. If they choose the thread merely because it is wound tightly, show them the internal attachment. The activity tests the mechanism, not artistic skill or the speed of plant growth.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a Cuscuta strand circles a plastic rod placed beside a host. The rod provides support but has no living transport system. Would wrapping around it solve the parasite's need for sustained resources?</p>
+<p>Now imagine a host whose tissues prevent a successful feeding connection. Contact could occur without effective access. Explain why seeing a coil is weaker evidence of successful parasitism than finding a functioning haustorial connection.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which structure connects Cuscuta to host tissues?</p>
+<ul>
+<li>A. A flower petal</li>
+<li>B. A loose outer coil alone</li>
+<li>C. A haustorium</li>
+</ul>
+<p><strong>Answer:</strong> C — Haustoria penetrate host tissues and establish access to transported resources.</p>
+<h3>Q2</h3>
+<p>Why can a host lose growth resources to Cuscuta?</p>
+<ul>
+<li>A. The parasite draws on host supplies</li>
+<li>B. Yellow stems reflect away all sunlight</li>
+<li>C. The parasite returns all borrowed sugar</li>
+</ul>
+<p><strong>Answer:</strong> A — Materials diverted into the parasite are no longer all available to the host.</p>
+<h3>Q3</h3>
+<p>Would a plastic rod alone supply Cuscuta with sustained nutrition?</p>
+<ul>
+<li>A. Yes, because plastic contains phloem</li>
+<li>B. No, it has no living supply system</li>
+<li>C. Yes, because wrapping creates sugar</li>
+</ul>
+<p><strong>Answer:</strong> B — Support alone provides no host transport tissues or continuing biological supply.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a two-panel guide titled “Support or supply?” In the first panel, show a normal climber resting on a fence. In the second, show Cuscuta attached to a host.</p>
+<p>Label the source of resources in each panel and explain where a feeding connection exists. Include one sentence about the host's possible cost, without claiming that every host immediately dies or that every yellow climbing strand is amarbel.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Being a plant does not guarantee the same way of obtaining food. Plants include relationships ranging from independent growth to strong dependence on other plants. Cuscuta is especially revealing because much of its feeding machinery is hidden inside an attachment. The conspicuous yellow coils show you where to look, but not the whole mechanism.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Cuscuta obtains resources from a living host through haustoria; winding around a stem alone does not explain how it feeds.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 2 of 30</footer>
+</div>
+</body>
+</html>

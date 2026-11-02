@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 37: Why can some seeds wait months before sprouting? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 37</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can some seeds wait months before sprouting?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Distinguish a living seed waiting for suitable conditions from a seed with an internal block to germination. Use <strong>viability</strong>, <strong>quiescence</strong> and <strong>dormancy</strong> carefully. Explain how delayed sprouting can help a plant without assuming that every unsprouted seed is dormant or alive.</p>
+</div><h2>1. The mystery</h2>
+<p>A packet of seeds can sit in a cupboard for months. Put some on damp paper, and a tiny root may eventually emerge. Other kinds of seed remain unchanged even when there is moisture and a suitable temperature.</p>
+<p>Both cases look like waiting from the outside. Yet they need not have the same explanation. One seed may simply lack water. Another may have a protective coat or an internal condition that must change first. A third may no longer be alive. The outside appearance alone cannot distinguish these possibilities.</p>
+<h2>2. The science behind it</h2>
+<p>A seed contains a young plant, an <strong>embryo</strong>, together with protective tissues and resources that support early development. A <strong>viable</strong> seed is capable of germinating under appropriate conditions. Viability can be lost through age, damage or poor storage, and the rate differs among species.</p>
+<p><strong>Germination</strong> is the resumption of embryo growth. Water uptake helps rehydrate tissues and allows growth processes to restart. Oxygen and a suitable temperature are also important. Some seeds respond to light conditions as well. The exact requirements depend on the species.</p>
+<p>A seed may fail to germinate because the surroundings are unsuitable. A dry seed waiting for water is often described as <strong>quiescent</strong>. Its environment has not supplied what it needs; an internal dormancy mechanism is not necessarily the obstacle.</p>
+<p><strong>Dormancy</strong> is more specific. A viable dormant seed does not germinate even when the external conditions that would otherwise allow germination are suitable. Something about the seed itself must change before growth can proceed.</p>
+<p>One kind of dormancy involves a seed coat that limits water entry. Another involves internal physiological controls in the embryo or surrounding tissues. These are different barriers, so no single household treatment is appropriate for every seed.</p>
+<p>Some species lose dormancy during a period of dry storage. Others respond to a particular sequence of moist conditions and temperatures. A winter-like period can act as a seasonal cue for certain species, but it is wrong to say that every seed needs chilling.</p>
+<p>Delayed germination can prevent a seed from starting growth during a brief favourable spell followed by conditions that would kill the seedling. Not all seeds in a natural population necessarily respond at exactly the same moment. Spreading emergence across time can reduce the chance that one bad episode destroys all seedlings.</p>
+<p>None of this means seeds can wait forever. Their tissues can deteriorate, and some kinds tolerate dry storage poorly. A seed's history matters. When a seed does not sprout, record what was tried instead of immediately labelling it dormant, dead or defective.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine a room with three requirements for opening a door. There must be power, the outside switch must be pressed, and an internal lock must be released. A broken mechanism will not work even if both controls are correct.</p>
+<p>In the seed model, suitable external conditions are like the outside switch, dormancy is like an internal lock, and viability means the living system can still function. The analogy helps keep three explanations separate.</p>
+<p>Make three cards: unsuitable conditions, dormancy, and loss of viability. Place them beside an unsprouted-seed drawing. Ask what extra evidence you would need before choosing one card.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows three pathways from an unsprouted seed. One receives suitable water and temperature and begins growth. A second remains blocked by an internal dormancy symbol. A third is labelled nonviable and does not resume growth.</p>
+<p>A seed-coat inset shows one possible barrier to water entry. The inset is an example, not a claim that all dormancy comes from coats. Another label identifies physiological control as a separate possibility.</p>
+<p>The growing root marks the start of visible germination. This diagram concerns when growth begins, not how a growing root senses its direction.</p>
+<figure><img src="../../illustrations/class-7/day_37.svg" alt="Diagram for Why can some seeds wait months before sprouting?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Farmers and gardeners need seeds that emerge at an appropriate time and with reasonable consistency. Seed packets often give species-specific sowing advice because moisture, temperature and light requirements vary. A cupboard rule copied from one plant may fail for another.</p>
+<p>In seasonal Indian landscapes, germinating during a short shower before reliable rain could expose a seedling to drying. Delayed germination can therefore matter to survival. However, local patterns must be observed rather than inferred from one example.</p>
+<p>Seeds stored for planting are different from prepared food sprouts. A germination investigation should not be treated as food preparation, particularly if samples have been handled repeatedly or show mould.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a few whole, untreated mung beans intended for sowing or a fresh seed packet, two clean dishes and paper towel. Do not use coated or chemically treated seeds. Do not eat the experiment.</p>
+<ol>
+<li>Put equal numbers of seeds from the same source in both dishes.</li>
+<li>Leave one paper towel dry and moisten the other without flooding it.</li>
+<li>Keep both dishes under similar temperature and light conditions.</li>
+<li>Label the starting date and predict what a moisture effect would look like.</li>
+<li>Plan to record visible root emergence later.</li>
+</ol>
+<p>The setup takes five minutes; germination takes longer. This comparison tests a missing environmental condition. It does not by itself demonstrate dormancy. Discard mouldy material with an adult's help and wash hands after handling.</p>
+</div><h2>7. Think deeper</h2>
+<p>If a seed fails to germinate on damp paper, what would you check before declaring it dormant? Consider whether the temperature is suitable, whether the seed is viable and whether the paper has become waterlogged.</p>
+<p>Now explain why adding more and more water is not always a solution. A trial needs appropriate conditions, not simply the largest possible amount of one ingredient.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a viable seed retain the ability to do?</p>
+<ul>
+<li>A. Germinate under appropriate conditions</li>
+<li>B. Survive forever without damage</li>
+<li>C. Grow without any water</li>
+</ul>
+<p><strong>Answer:</strong> A — Viability means the seed can germinate when its requirements are met.</p>
+<h3>Q2</h3>
+<p>Why is a dry seed not automatically described as dormant?</p>
+<ul>
+<li>A. All dry seeds have already died</li>
+<li>B. Missing water can explain its waiting</li>
+<li>C. Dormancy means the root points upward</li>
+</ul>
+<p><strong>Answer:</strong> B — A seed can be quiescent because external conditions are unsuitable.</p>
+<h3>Q3</h3>
+<p>Seeds fail on flooded paper. What is a useful next check?</p>
+<ul>
+<li>A. Assume every seed needs freezing</li>
+<li>B. Add salt to force rapid growth</li>
+<li>C. Check moisture and oxygen conditions</li>
+</ul>
+<p><strong>Answer:</strong> C — Excess water can restrict oxygen, so unsuitable conditions must be considered first.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a troubleshooting guide for a school seed tray with no visible seedlings. Your first questions should check the seed source and growing conditions. Only then should the guide consider dormancy and species-specific requirements.</p>
+<p>Do not recommend cutting coats, using chemicals or applying extreme temperatures. The aim is to separate possible explanations and find reliable growing instructions, not to force every kind of seed to sprout immediately.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A seed that does nothing visible can still be part of a successful survival strategy. Starting growth at the wrong moment can be more dangerous than waiting. The important distinction is that apparent inactivity has several possible causes, and only some of them count as true dormancy.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>An unsprouted seed may lack suitable conditions, remain dormant, or be nonviable; these explanations look similar but require different evidence.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 7 of 30</footer>
+</div>
+</body>
+</html>

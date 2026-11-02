@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 52: How can a displacement series predict which metal wins a competition? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 52</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a displacement series predict which metal wins a competition?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Use a <strong>reactivity series</strong> to predict the direction of a metal-displacement reaction. Distinguish predicting which metal can replace another from merely recognising a reaction after it occurs. Work with written equations and paper cards rather than metal salts or laboratory chemicals.</p>
+</div><h2>1. The mystery</h2>
+<p>An iron strip can acquire a copper coating in a suitable copper-salt solution. Reversing the labels does not automatically reverse the reaction: copper placed in a suitable iron-salt solution does not simply make iron coat the copper under the same ordinary conditions.</p>
+<p>Why should the direction matter? The two metals do not compete equally in this setting. Their positions in a relative reactivity order help predict which can enter solution while another metal is deposited.</p>
+<p>A prediction needs a comparison, not just the statement that metals are reactive. Different metals have different tendencies under specified conditions.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>displacement reaction</strong> can occur when a more reactive metal replaces a less reactive metal from a suitable solution of its salt. The solid starting metal and the dissolved metal ions play different roles.</p>
+<p>A useful school-level partial order is <strong>magnesium &gt; zinc &gt; iron &gt; copper</strong>. The greater-than sign here means higher in this reactivity order, not a statement about density, cost, melting point or usefulness in construction.</p>
+<p>For a standard example, iron reacts with copper sulphate solution to form iron(II) sulphate and copper: <strong>Fe + CuSO4 → FeSO4 + Cu</strong>. Iron lies above copper in the simplified series, so the predicted displacement direction agrees with this example under suitable conditions.</p>
+<p>The copper initially belongs to dissolved copper ions, not tiny pre-existing copper flakes waiting to stick. During the reaction copper ions gain electrons and become copper metal, while iron atoms enter solution as ions. The relative-order prediction identifies which direction is favoured in this school model.</p>
+<p>Writing <strong>Cu + FeSO4 → CuSO4 + Fe</strong> does not make the reverse displacement happen spontaneously under the same ordinary conditions. Copper is below iron in the order used here. A balanced-looking equation is not by itself evidence that the written process will proceed.</p>
+<p>The same comparison predicts zinc displacing copper from a suitable copper-salt solution and iron failing to displace zinc from a suitable zinc-salt solution. We compare the free metal with the metal represented by the dissolved ions, not with the name of the entire salt as though it were one metal.</p>
+<p>The series is a predictive guide with conditions. Surface coatings, concentration, temperature and the particular solution can affect observed behaviour. Some very reactive metals also react strongly with water, so blindly applying a salt-solution recipe to every metal would be inappropriate.</p>
+<p>A failure to see a quick visible change does not always establish that two metals have equal reactivity. A protective surface or slow process may hide the expected behaviour. A sound scientific prediction includes both an order and a suitable experimental context.</p>
+<p>The lesson's focus is <strong>relative direction</strong>. Electron accounting explains the transformation in the background, but the question here is how a ranked comparison predicts a new pairing before testing it. This differs from learning general reaction indicators or prevention of metal corrosion.</p>
+<h2>3. Build the mental model</h2>
+<p>Write the four metals as a descending ladder. Make a separate card for a solid metal and another for the metal ion in a salt solution.</p>
+<p>If the solid metal sits higher than the dissolved metal in the school order, draw a possible displacement arrow with suitable conditions noted. If it sits lower, cross out that proposed ordinary displacement direction.</p>
+<p>The ladder is not a force pulling metal atoms downward. It stores comparative chemical information. A match between ladder position and observed reaction requires a relevant solution and surface, not simply two dry cards placed next to each other.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the partial order Mg, Zn, Fe and Cu with clearly separated positions. Two comparison routes use zinc with copper ions and copper with iron ions.</p>
+<p>The first route predicts copper deposition while zinc enters solution in the model. The second marks the proposed reverse competition as not favoured under the stated ordinary conditions.</p>
+<p>Labels distinguish solid metal from dissolved ions. The illustration is a prediction diagram, not a home experiment. It includes no instruction to prepare salts, scrape unknown metal surfaces or collect reaction products.</p>
+<figure><img src="../../illustrations/class-10/day_52.svg" alt="Diagram for How can a displacement series predict which metal wins a competition?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Students in Indian science classrooms may see teacher-supervised iron-and-copper-sulphate demonstrations. The important reasoning happens before the colour or coating is observed: which metal is higher in the order, and what should that imply?</p>
+<p>A blue solution or a new coating can support an interpretation, but appearance alone is not the comparative rule. The series also helps ask what should happen for a pairing that has not yet been shown.</p>
+<p>Metal-salt solutions are not kitchen materials. The lesson stays on paper; any real laboratory demonstration belongs with appropriate equipment, supervision and disposal. Do not use cleaning liquids, coins or unknown powders as substitutes for specified laboratory materials.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and a pencil only.</p>
+<ol>
+<li>Write Mg, Zn, Fe and Cu from higher to lower reactivity.</li>
+<li>Make solid-metal cards and separate metal-ion cards.</li>
+<li>Compare Zn with Cu ions and predict the direction.</li>
+<li>Compare Cu with Fe ions and explain the rejected direction.</li>
+<li>Add suitable aqueous conditions as a note beside each claim.</li>
+</ol>
+<p>Ask a partner to change one pairing. Give a reason based on position rather than which metal seems stronger or more expensive. The activity checks chemical comparison without handling any actual metal-salt solution.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does a chemically balanced equation still need a reason to expect the reaction in its written direction? Balance describes accounting, while the series supplies comparative information for this setting.</p>
+<p>Now imagine an expected displacement is very slow on a coated surface. Should you immediately rearrange the entire series? Explain why the surface and conditions must be examined before treating one observation as proof that the ordering is wrong.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which metal is higher in the stated Mg &gt; Zn &gt; Fe &gt; Cu order?</p>
+<ul>
+<li>A. Zinc is higher than copper</li>
+<li>B. Iron is higher than zinc</li>
+<li>C. Copper is higher than magnesium</li>
+</ul>
+<p><strong>Answer:</strong> A — The stated relative order places zinc above iron and copper.</p>
+<h3>Q2</h3>
+<p>Why can iron displace copper from a suitable copper-salt solution?</p>
+<ul>
+<li>A. Iron is always the denser metal</li>
+<li>B. The salt name must contain fewer letters</li>
+<li>C. Iron is more reactive than copper in this series</li>
+</ul>
+<p><strong>Answer:</strong> C — The relative order predicts iron entering solution while copper metal forms.</p>
+<h3>Q3</h3>
+<p>Copper is put in suitable iron(II) sulphate solution under ordinary conditions. What is predicted?</p>
+<ul>
+<li>A. Iron must coat the copper immediately</li>
+<li>B. No ordinary copper-for-iron displacement</li>
+<li>C. Both metals must vanish completely</li>
+</ul>
+<p><strong>Answer:</strong> B — Copper lies below iron, so that displacement direction is not favoured in the stated model.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Using the stated partial order, make a prediction table for zinc, iron and copper as solid metals paired with the other two metals' ions. Mark the proposed displacement as favoured or not favoured in the school model.</p>
+<p>Explain two entries in complete sentences and add one limitation concerning suitable solutions or surfaces. Do not invent a reaction rate. A clear conditional prediction is more useful than a universal promise that every higher metal instantly reacts in every liquid.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Reversing a written arrow can preserve the same element counts while changing a likely reaction into an unlikely one under the same conditions. Correct accounting and correct direction answer different questions. Chemistry needs both before a proposed equation becomes a useful prediction.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A more reactive metal can displace a less reactive metal from a suitable salt solution; the relative order predicts direction, while conditions still matter.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 22 of 30</footer>
+</div>
+</body>
+</html>

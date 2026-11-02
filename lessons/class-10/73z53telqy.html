@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 39: How can a city's dark roofs change its summer heat balance? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 39</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a city's dark roofs change its summer heat balance?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a roof's <strong>solar reflectance</strong>, or albedo, affects absorbed sunlight. Distinguish reflection from thermal emission and insulation. Evaluate a roof as part of an urban heat balance without assuming visible colour alone or one material label predicts every building outcome.</p>
+</div><h2>1. The mystery</h2>
+<p>Two roofs receive similar sunlight, yet one absorbs more of the incoming solar energy. That difference can influence the surface temperature and energy transferred into the building and nearby air.</p>
+<p>A dark-looking roof often absorbs strongly, but colour seen by human eyes is not a complete measurement across the solar spectrum. Some engineered surfaces reflect wavelengths that are not obvious from their visible appearance.</p>
+<p>The useful question is what fraction of the incoming solar energy is reflected and what happens to the absorbed portion afterwards.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Solar reflectance</strong>, often called <strong>albedo</strong> in this context, is the fraction of incoming solar energy reflected by the surface. For an opaque roof in a simple account, the remainder is mainly absorbed rather than transmitted through the material as sunlight.</p>
+<p>A higher reflectance means less absorbed solar energy under the same illumination, all else comparable. This can reduce daytime heating. The result is conditional on the actual properties and conditions, not a universal temperature difference for all roofs.</p>
+<p><strong>Thermal emittance</strong> describes how effectively a surface emits thermal radiation relative to a reference under relevant conditions. A roof can reflect sunlight well yet differ in its ability to release absorbed energy as infrared. Reflection and emission concern different parts of the energy account.</p>
+<p><strong>Insulation</strong> changes heat transfer through the roof assembly. It is not the same property as solar reflectance. A building may need both suitable surface properties and a well-designed assembly to meet its comfort and energy goals.</p>
+<p>The surface also exchanges energy with air and stores energy internally. Wind, material heat capacity, shading and construction affect temperature. A reflectance measurement alone does not fully specify indoor conditions.</p>
+<p>Across a city, many absorbing surfaces can contribute to heat stored and transferred in the urban environment. Roofs are one part of that system, alongside roads, vegetation, building geometry and human activity. The lesson does not claim roofs alone explain every urban temperature pattern.</p>
+<p>Ageing, dirt and surface change can alter reflectance or other performance. Maintenance and the condition of a real roof therefore matter. A freshly labelled sample is not a guarantee of unchanged performance over its whole service life.</p>
+<p>Climate and season affect the wider benefit and trade-offs. A roof choice should consider relevant local conditions and the building's needs. This lesson gives no product recommendation, cost-saving percentage or real school-retrofit temperature promise.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw equal incoming solar arrows over two opaque surfaces. Split each into reflected and absorbed parts according to a hypothetical comparison. Keep the total account balanced.</p>
+<p>Then add thermal emission, air exchange and inward heat-transfer arrows. These describe what happens after absorption. Changing one surface fraction does not erase the rest of the system.</p>
+<p>Place a separate insulation layer below the surface. The drawing now shows why reflection and insulation cannot be substituted as names for the same mechanism. A good roof discussion identifies which part of the energy route each design feature changes.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares lower and higher solar-reflectance roofs under equal incoming sunlight. Reflected and absorbed arrows are separated, while additional arrows identify emission and heat moving toward the building.</p>
+<p>A lower assembly strip labels insulation as a different feature. The diagram uses qualitative arrow sizes and supplies no actual product measurements or temperatures.</p>
+<p>The caption states that visible colour is an imperfect proxy and that aged condition matters. The illustration does not repeat atmospheric greenhouse absorption: its core target is the surface decision about incoming solar reflection.</p>
+<figure><img src="../../illustrations/class-10/day_39.svg" alt="Diagram for How can a city's dark roofs change its summer heat balance?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian schools and homes experience different climates, roof constructions and maintenance conditions. A useful retrofit proposal begins with the actual building rather than a generic claim that one colour solves every problem.</p>
+<p>A ground-level photograph can support a discussion, but students should not climb roofs, touch sun-heated surfaces or apply coatings for this lesson. Data from suitable documentation are safer than an improvised rooftop trial.</p>
+<p>A final building decision may involve durability, drainage, structural condition and local requirements as well as heat performance. The energy model helps identify relevant evidence without pretending to complete an engineering assessment by itself.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours for reflected and absorbed energy.</p>
+<ol>
+<li>Draw two roofs under identical solar input.</li>
+<li>Make one reflect a larger qualitative share.</li>
+<li>Track the remaining absorbed energy.</li>
+<li>Add emission, air exchange and inward-transfer routes.</li>
+<li>Draw insulation separately and identify its job.</li>
+</ol>
+<p>Label the comparison hypothetical. Do not use arrow counts as real measured percentages. The exercise should produce a complete energy-route explanation without sunlight exposure, a hot surface test or a claim about a named commercial material.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why might a dirty aged roof behave differently from its newly measured sample? Identify which surface property could change and which other conditions still matter.</p>
+<p>Now compare high reflection with strong insulation. Can both be useful while changing different pathways? Explain how one affects incoming absorption and the other affects transfer through the assembly.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does roof solar reflectance describe?</p>
+<ul>
+<li>A. The number of people inside the building</li>
+<li>B. The fraction of incoming solar energy reflected</li>
+<li>C. Only the thickness of the roof slab</li>
+</ul>
+<p><strong>Answer:</strong> B — Reflectance accounts for the portion redirected away from the surface.</p>
+<h3>Q2</h3>
+<p>Why is insulation different from high reflectance?</p>
+<ul>
+<li>A. Insulation creates unlimited cooling energy</li>
+<li>B. Both are identical names for visible colour</li>
+<li>C. It changes transfer through the roof assembly</li>
+</ul>
+<p><strong>Answer:</strong> C — Insulation influences a different pathway from incoming solar absorption.</p>
+<h3>Q3</h3>
+<p>Two roofs look the same colour. What should a heat-performance comparison do?</p>
+<ul>
+<li>A. Seek relevant measured properties and context</li>
+<li>B. Assume all spectral properties match exactly</li>
+<li>C. Ignore ageing and weather forever</li>
+</ul>
+<p><strong>Answer:</strong> A — Visible appearance alone does not specify full solar reflectance, emittance or assembly behaviour.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create an evidence checklist for comparing two fictional school-roof options. Include solar reflectance, thermal emittance, insulation, aged condition and local context.</p>
+<p>State one measured property you would need and one wider building question the surface model does not answer. Avoid a universal temperature or savings claim. The proposal should be ready for appropriate adult evaluation rather than a student installation project.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A surface can appear similar in visible colour yet differ in how it handles the full solar spectrum. Human eyesight is useful for appearance, but a performance claim requires the relevant measured property. This is why a roof comparison should follow energy wavelengths and pathways instead of relying only on a colour name.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Higher solar reflectance can reduce absorbed sunlight, while emission, insulation, weather and ageing determine the wider roof and building heat balance.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 9 of 30</footer>
+</div>
+</body>
+</html>

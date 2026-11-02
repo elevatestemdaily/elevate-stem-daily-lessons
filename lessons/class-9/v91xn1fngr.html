@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 38: How does mixed cropping reduce the risk of total crop failure? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 38</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does mixed cropping reduce the risk of total crop failure?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how growing more than one crop can spread the risk of a complete production failure. Distinguish <strong>mixed cropping</strong>, crop-specific vulnerabilities and competition. Evaluate a risk strategy without promising that any mixture always outperforms every single crop.</p>
+</div><h2>1. The mystery</h2>
+<p>A farmer planting one crop may gain a strong harvest when conditions favour it, yet face a large loss when a particular stress affects that crop severely. A field with another suitable crop may retain some useful production under the same event.</p>
+<p>Does this mean adding any second crop always improves the outcome? No. The crops can compete, share vulnerabilities or be difficult to manage together. A risk strategy depends on how their responses differ and how the system is arranged.</p>
+<p>The useful question is not simply how many crop names appear in the field.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Mixed cropping</strong> generally means growing two or more crops together in the same area without the distinct row arrangement emphasised in intercropping. Practical systems vary, but the common risk idea is to avoid depending entirely on one crop response.</p>
+<p>Different crops can have different sensitivities to weather, pests, disease and management conditions. If a particular event affects one much more strongly than the other, their combined production may avoid the worst complete-loss outcome.</p>
+<p>The key is <strong>imperfectly shared risk</strong>. Two crops with nearly identical vulnerability to the event may fail together. Counting them as two species does not automatically create a useful buffer against that particular stress.</p>
+<p>A diversified system can therefore change the distribution of possible outcomes rather than simply maximise the best-case harvest. A farmer may accept a different expected output in exchange for less exposure to total failure. The appropriate judgement depends on the goal and actual evidence.</p>
+<p>Crops also <strong>compete</strong> for resources. Their growth patterns, timing and management needs must be considered. A poor mixture can reduce performance of both components or make harvest and sorting more difficult.</p>
+<p>A useful design may exploit differences in resource use or growth timing, but this lesson does not repeat nitrogen fixation or a natural food-chain mechanism. The core question is how differing vulnerabilities spread agricultural production risk.</p>
+<p>Comparisons should use the same area and clearly stated conditions. Comparing the output of a large mixed plot with a small single-crop plot confuses scale with strategy. Units and the definition of useful output also matter when the crops produce different products.</p>
+<p>A single season cannot establish a universal rule about risk. Weather and other events vary. Evidence across relevant conditions is needed before claiming a mixture's performance advantage. Our paper examples use hypothetical responses rather than invented real yield statistics.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two weather-event columns and two crop rows. Mark qualitative responses such as affected and less affected. Then compare a one-crop plan with a plan that includes both.</p>
+<p>If the rows respond differently, the mixed plan may retain one component during an unfavourable event. If both rows show the same failure pattern, the mixture offers less protection against that event.</p>
+<p>Add a competition note between the crops. The diagram should not turn risk spreading into free extra land or resources. A strong model keeps both the potential buffer and the costs visible, so the design can be evaluated rather than advertised as automatically superior.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows single-crop and mixed-crop plans under two hypothetical stress conditions. Different crop symbols respond differently in one case, while a shared-stress inset affects both.</p>
+<p>A separate arrow identifies competition and management requirements within the mixed plot. The layout is conceptual, not a recommended field spacing or a measured yield comparison.</p>
+<p>The caption states that risk reduction is conditional on differing responses and a workable combination. The drawing does not assign a real crop pair an unsupported survival rate or imply that species diversity alone prevents all agricultural loss.</p>
+<figure><img src="../../illustrations/class-9/day_38.svg" alt="Diagram for How does mixed cropping reduce the risk of total crop failure?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Traditional and modern farming in India includes several multi-crop arrangements. Their purposes can include risk management, resource use and production needs, but the details depend on local crops and practices.</p>
+<p>A textbook example should not be copied into an actual field without appropriate agricultural guidance. A pair suitable in one setting may be difficult in another because water, season, variety or harvesting arrangements differ.</p>
+<p>A school garden can study the decision on paper. It does not need to expose crops deliberately to drought or pests. Hypothetical scenarios reveal the logic while keeping actual plant care and agricultural recommendations separate.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two crop symbols labelled A and B. No seeds or harmful treatment are needed.</p>
+<ol>
+<li>Draw equal-area single-crop and mixed plans.</li>
+<li>Create one invented event that strongly affects A but less strongly affects B.</li>
+<li>Mark what useful production could remain qualitatively.</li>
+<li>Create a second event affecting both.</li>
+<li>Add one competition or harvest-management cost.</li>
+</ol>
+<p>Do not use invented numerical yields as though they were field evidence. The model tests whether the risks differ, not whether a named crop is always drought-proof or disease-proof. State what real observations would be needed before making a recommendation.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can two different crops still share a severe vulnerability? Consider the event rather than relying only on species identity.</p>
+<p>Now imagine a mixture that reduces worst-case loss but lowers the best-case output. Explain why different farmers might value that trade-off differently. The scientifically relevant comparison includes the purpose and range of outcomes, not one preferred season alone.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What risk idea supports mixed cropping?</p>
+<ul>
+<li>A. Creating unlimited field resources</li>
+<li>B. Guaranteeing every crop is immune to stress</li>
+<li>C. Depending on crops with differing responses</li>
+</ul>
+<p><strong>Answer:</strong> C — Different vulnerabilities can reduce dependence on a single crop outcome.</p>
+<h3>Q2</h3>
+<p>Why can a poorly chosen mixture fail to spread risk?</p>
+<ul>
+<li>A. The crops may share the same vulnerability</li>
+<li>B. Competition disappears whenever two crops grow</li>
+<li>C. Different species can never share a problem</li>
+</ul>
+<p><strong>Answer:</strong> A — A common severe stress can affect both components together.</p>
+<h3>Q3</h3>
+<p>A mixture reduces worst-case loss but not best-case output. What is the soundest judgement?</p>
+<ul>
+<li>A. It guarantees a larger harvest every year</li>
+<li>B. Its value depends on the risk-management goal</li>
+<li>C. It has no possible value to any farmer</li>
+</ul>
+<p><strong>Answer:</strong> B — A range of outcomes and the decision objective matter alongside maximum output.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a decision table for a hypothetical mixed-cropping plan. Include crop-specific vulnerabilities, shared stress, resource competition and harvest requirements.</p>
+<p>Write one condition under which the plan could spread risk and one under which it might not. Keep the plot area matched. Your conclusion must avoid a universal claim that any two crops beat one and must distinguish a paper scenario from measured agricultural performance.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A strategy can be useful because it limits a bad outcome rather than producing the largest possible good outcome. Risk management is about a range of possibilities. Looking only at the best harvest can therefore miss why a farmer chooses a mixture under uncertain conditions.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Mixed cropping can spread production risk when crops respond differently to stress, but shared vulnerabilities, competition and management determine the actual benefit.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 8 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 43: Why does a saturated solution leave extra sugar undissolved? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 43</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a saturated solution leave extra sugar undissolved?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why stirring does not always make all added sugar dissolve. Define a <strong>saturated solution</strong> at a stated temperature. Separate the rate of dissolving from the amount that can remain dissolved at equilibrium, and interpret leftover solid without jumping to conclusions.</p>
+</div><h2>1. The mystery</h2>
+<p>You add sugar to a cup of water and stir. The first spoonful disappears from sight. Another does too. After more additions, some grains remain at the bottom even after patient stirring.</p>
+<p>Did the water become tired? Did the spoon stop working? Neither explanation is useful. A given amount of water under specified conditions has a limited capacity to keep sugar dissolved. Before reaching that conclusion, however, you must distinguish a true limit from sugar that simply has not had enough time to dissolve.</p>
+<h2>2. The science behind it</h2>
+<p>In a sugar solution, water is the <strong>solvent</strong> and sugar is the <strong>solute</strong>. Dissolved sugar is dispersed through the liquid at a scale too small to see as individual grains. Its disappearance from view does not mean it has stopped being present.</p>
+<p>An <strong>unsaturated solution</strong> can dissolve more of the same solute under the stated conditions. A <strong>saturated solution</strong> has reached the equilibrium limit for that solute in that amount of solvent at that temperature. Extra solid can then remain alongside the solution.</p>
+<p>The word temperature is essential. <strong>Solubility</strong> is not simply one capacity that applies to every situation. For ordinary table sugar in water, the amount that can dissolve changes with temperature. The solute, solvent and their amounts also matter.</p>
+<p>The <strong>rate of dissolving</strong> is a different question. Stirring brings fresh liquid into contact with sugar surfaces and carries dissolved material away from those surfaces. Crushing a lump can increase exposed surface area. These changes can make dissolving faster without necessarily changing the final equilibrium capacity at the same temperature.</p>
+<p>Imagine two equal cups containing the same amounts of water and sugar. One is stirred and one left still. Their early appearances may differ. If both eventually reach the same temperature and equilibrium, stirring alone does not give one cup an unlimited capacity for sugar.</p>
+<p>At saturation with solid present, particles can continue leaving and joining the solid surface. At <strong>equilibrium</strong>, the opposing processes balance on average. The visible amount of solid need not change even though microscopic exchange continues. “No visible change” does not require every particle to stop moving.</p>
+<p>Leftover solid is evidence to interpret, not an instant proof. A large sugar lump may remain simply because dissolution is slow. A cold spot, a different substance or inadequate mixing can also complicate the observation. A sound saturation claim states the temperature and allows sufficient time.</p>
+<p>This lesson stops at the limit on what remains dissolved. The earlier crystal lesson asked how an ordered solid grows as water is removed. Related vocabulary does not make those questions identical: here the main comparison is <strong>capacity versus speed</strong>, with the solvent amount kept fixed.</p>
+<h2>3. Build the mental model</h2>
+<p>Imagine a waiting room with a limited number of available spaces. Opening another doorway can help people enter faster, but it does not create extra spaces inside. This separates entry rate from final capacity.</p>
+<p>The doorway stands for how efficiently fresh solvent reaches sugar surfaces. The room's capacity stands for an equilibrium solubility limit at a specified temperature. The analogy is imperfect because dissolved particles interact continuously rather than sitting in assigned seats.</p>
+<p>Draw two labels beside a cup: “How fast?” and “How much at equilibrium?” Place stirring under the first. Place solvent amount and temperature under the second, remembering that temperature can influence both questions.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows three equal water samples at the same stated temperature. One has dissolved a small addition, the next has more dissolved sugar, and the last has excess solid beneath a saturated solution.</p>
+<p>A separate pair compares stirring with still water. It is labelled as a rate comparison, not a promise of different final capacities. The liquid's colour is symbolic: a real sugar solution can remain clear as its concentration increases.</p>
+<p>A two-way arrow at the solid surface represents continuing exchange at equilibrium. It does not suggest that the grains must be visibly bouncing between the liquid and the bottom.</p>
+<figure><img src="../../illustrations/class-7/day_43.svg" alt="Diagram for Why does a saturated solution leave extra sugar undissolved?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Making a sweet drink or syrup involves both concentration and preparation time. Stirring a cup may help sugar dissolve sooner, but it cannot make a fixed quantity of water accept unlimited sugar at one temperature.</p>
+<p>Indian sweets use carefully controlled mixtures, and changing temperature can alter how much sugar remains dissolved. Recipes therefore depend on conditions rather than the vague instruction to keep adding sugar until it disappears. This lesson does not require cooking syrup or handling hot mixtures.</p>
+<p>A spoonful is also an imprecise measure of mass. Different spoon sizes and how tightly sugar is packed can change the amount added. A home trial should avoid presenting its spoon count as a universal solubility value.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use room-temperature water, sugar, a spoon and a small clear cup. Do not heat the mixture. Ask an adult before using kitchen ingredients and do not drink the experimental sample.</p>
+<ol>
+<li>Put a small measured volume of water in the cup.</li>
+<li>Add a little sugar and stir, recording whether visible grains remain.</li>
+<li>Add another small portion only after examining the first.</li>
+<li>Record the number of portions and your observation after each.</li>
+<li>Mark whether remaining grains might still need more time.</li>
+</ol>
+<p>Five minutes may not be enough to demonstrate equilibrium. Report what happened within the available time, rather than automatically calling every leftover grain proof of saturation. The exercise distinguishes observation from a stronger scientific claim.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose two students use the same water volume, temperature and sugar mass. One reports that stirring increased solubility because the sugar disappeared sooner. What did the student actually measure?</p>
+<p>Suggest how a longer comparison could distinguish faster dissolving from a different final dissolved amount. State why allowing temperature to change between the cups would weaken that comparison.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does saturated mean at a stated temperature?</p>
+<ul>
+<li>A. The equilibrium dissolved limit is reached</li>
+<li>B. No particles can move anywhere</li>
+<li>C. The solvent has changed into sugar</li>
+</ul>
+<p><strong>Answer:</strong> A — A saturated solution has reached the equilibrium solubility limit under those conditions.</p>
+<h3>Q2</h3>
+<p>Why can stirring make sugar disappear sooner?</p>
+<ul>
+<li>A. It always creates unlimited solubility</li>
+<li>B. It brings fresh liquid to sugar surfaces</li>
+<li>C. It converts sugar into a different element</li>
+</ul>
+<p><strong>Answer:</strong> B — Stirring improves contact and transport near the dissolving surfaces.</p>
+<h3>Q3</h3>
+<p>Sugar remains after ten seconds. What is the soundest conclusion?</p>
+<ul>
+<li>A. Equilibrium saturation is definitely proven</li>
+<li>B. The water can never dissolve any sugar</li>
+<li>C. The sugar may need more time to dissolve</li>
+</ul>
+<p><strong>Answer:</strong> C — A brief observation of solid does not distinguish slow dissolution from an equilibrium limit.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Prepare an instruction card headed “Speed is not capacity.” Use a stirred cup and an unstirred cup to explain the distinction. Specify the quantities and temperature that should be matched.</p>
+<p>Include an honest result statement for a five-minute trial: for example, visible grains remained after a stated time. Then explain what extra evidence is needed before replacing that observation with the claim that an equilibrium saturation limit was reached.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A saturated solution beside solid sugar can be active at the microscopic scale while looking unchanged. Equal average rates of leaving and rejoining the solid keep the visible amount steady. Equilibrium describes a balance of processes, not necessarily the absence of processes.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Stirring can speed dissolving, but saturation limits how much sugar remains dissolved in a given amount of water at a stated temperature.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 13 of 30</footer>
+</div>
+</body>
+</html>

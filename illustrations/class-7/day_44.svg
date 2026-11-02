@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why does a roadside cutting show different soil layers?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Different processes dominate at different depths</text>
+<rect x="545" y="145" width="375" height="68" rx="0" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="545" y="220" width="375" height="68" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="545" y="295" width="375" height="68" rx="0" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="545" y="370" width="375" height="68" rx="0" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<text x="280" y="181" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Topsoil: strong surface inputs</text>
+<text x="280" y="256" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Subsoil: possible accumulation</text>
+<text x="280" y="331" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Weathered parent material</text>
+<text x="280" y="406" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Harder rock in this example</text>
+<path d="M590 150 L605 180 L593 207 M605 180 L620 195" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M655 150 L670 180 L658 207 M670 180 L685 195" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M735 150 L750 180 L738 207 M750 180 L765 195" fill="none" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M600 320 l16 -10 l20 16 l-9 12 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M690 335 l16 -10 l20 16 l-9 12 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M800 315 l16 -10 l20 16 l-9 12 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M865 340 l16 -10 l20 16 l-9 12 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="480" y1="160" x2="480" y2="350" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="500" y="462" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Downward movement can remove material above and accumulate it below.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A simplified profile is an example, not a universal set of colour bands.</text>
+</svg>

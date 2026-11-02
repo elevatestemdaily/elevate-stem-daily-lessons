@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 51: How does a nephron adjust the final volume of urine? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 51</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a nephron adjust the final volume of urine?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Trace fluid from a kidney's filtering unit to the final urine. Explain why filtration is only the beginning and why <strong>selective reabsorption</strong> changes both the contents and volume that remain. Use a paper model rather than collecting samples or interpreting anyone's health.</p>
+</div><h2>1. The mystery</h2>
+<p>A school diagram sometimes draws an arrow from blood straight to a bag labelled urine. That arrow hides a major part of kidney work. The first filtered fluid contains water and useful small substances as well as substances that need removal.</p>
+<p>If everything filtered were simply discarded, useful materials would be lost. Instead, much of the filtered material returns to the body, and the remaining fluid changes along its route.</p>
+<p>The mystery is not just how a filter separates things. It is how filtering and selective recovery work together to produce an appropriate final output.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>nephron</strong> is a microscopic functional unit of the kidney. It includes a filtering region and a tubule. Many such units work together; we need no fixed count to explain the mechanism.</p>
+<p>The <strong>glomerulus</strong> is a cluster of small blood vessels enclosed by <strong>Bowman's capsule</strong>. Blood pressure supports movement of water and small dissolved substances through the filtration barrier into the capsule. Most blood cells and large proteins normally remain on the blood side.</p>
+<p>The resulting <strong>filtrate</strong> is not the same as final urine. Small substances such as glucose and dissolved ions can enter the filtrate along with water and urea. Filtration is not a perfectly informed gate that admits only unwanted molecules.</p>
+<p>As filtrate moves along the <strong>tubule</strong>, useful materials are recovered. <strong>Reabsorption</strong> means movement from the tubule fluid back toward the blood. Under normal conditions, much needed glucose and many other useful solutes are reclaimed, with substantial water recovery too.</p>
+<p>Different tubule regions have different transport properties. Solute transport and the surrounding concentration conditions help water recovery. The detailed pathways are complex, but the essential distinction is clear: the composition changes along the tubule rather than remaining a copy of the initial filtrate.</p>
+<p><strong>Secretion</strong> adds another route. Some substances move from the blood side into the tubular fluid. Thus the final excreted amount of a substance depends on filtration, reabsorption and secretion, rather than filtration alone.</p>
+<p>Later tubule regions and <strong>collecting ducts</strong> help adjust final water recovery. When these pathways allow more water to return to the body, a smaller volume can remain for excretion. The adjustment responds to physiological conditions; this lesson does not repeat the general hormone-control pathway.</p>
+<p>The fluid that remains passes toward the renal pelvis and ureter as urine. The kidney does not send blood cells through the ureter as its normal filtering route. Keeping the blood pathway separate from the tubular-fluid pathway prevents a misleading plumbing picture.</p>
+<p>The liver makes much of the body's urea from nitrogen processing, while the kidney handles its removal. This lesson therefore asks what happens to fluid already reaching the nephron, rather than repeating how urea is made. Making a waste molecule and controlling its excretion are different jobs.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two neighbouring routes: blood and tubular fluid. At the filtering region, transfer some water and small-substance symbols into the tubule route. Leave blood-cell and large-protein symbols in the blood route.</p>
+<p>Add return arrows labelled reabsorption at several positions. Place an opposite arrow labelled secretion where a model substance is added to the tubular fluid. The arrows must have distinct directions.</p>
+<p>Finally, circle what remains at the exit. That remainder represents urine in the model. It is not all the material that originally entered the capsule. The paper symbols illustrate roles and directions, not real filtration percentages or measurements of a person.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG places a glomerulus and capsule above a simplified tubule. One arrow carries initial filtrate forward. Separate arrows return useful materials and water toward a blood-side route.</p>
+<p>A secretion arrow points into the tubule, and the final exit is labelled remaining urine. A second comparison shows greater or smaller water recovery producing different remaining fluid volumes in an otherwise simplified scenario.</p>
+<p>The drawing is schematic, not a complete anatomical map or a clinical test. Colours identify pathways rather than oxygen levels, laboratory values or particular medical conditions.</p>
+<figure><img src="../../illustrations/class-10/day_51.svg" alt="Diagram for How does a nephron adjust the final volume of urine?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>School discussions in India often use the words excretion and filtration together. A nephron explanation becomes more accurate when students add selective recovery rather than describing the kidney as an ordinary kitchen sieve.</p>
+<p>A sieve separates by physical openings but does not normally reclaim particular dissolved nutrients along a living transport tube. The kidney's barrier and tubule have different roles, supported by living cells and regulated transport.</p>
+<p>Changes in an individual's urine have many possible causes. This classroom mechanism cannot diagnose dehydration or kidney disease, set a drinking target, or interpret a test result. No personal observation is needed to learn the biological sequence.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and four colours. Keep everything imaginary; do not collect body fluids.</p>
+<ol>
+<li>Draw a blood route beside a capsule and tubule.</li>
+<li>Keep cell symbols in the blood route while moving selected small symbols into the capsule.</li>
+<li>Return useful-material and water symbols along reabsorption arrows.</li>
+<li>Add one secretion arrow toward the tubule.</li>
+<li>Compare the first filtrate with the final remainder.</li>
+</ol>
+<p>Use invented symbol counts and label them model units. Explain why changing the return arrows changes the output even when the initial filtration symbols stay the same. Ask a partner to check the direction of each arrow rather than guessing a health condition.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why would a filter that removes water and small molecules still need a selective recovery system? Include the problem of useful glucose entering the initial filtrate.</p>
+<p>Now imagine two otherwise identical paper models with different amounts of water returned before the exit. Which leaves a smaller final volume? Keep this a conditional comparison. Actual kidney function involves interacting controls, so one arrow change is not a complete account of a person's physiology.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which structure performs the initial nephron filtration?</p>
+<ul>
+<li>A. The ureter after urine leaves the kidney</li>
+<li>B. The glomerulus within its capsule</li>
+<li>C. The bladder wall after storage</li>
+</ul>
+<p><strong>Answer:</strong> B — Glomerular filtration produces the initial fluid in Bowman's capsule.</p>
+<h3>Q2</h3>
+<p>Why is the first filtrate different from final urine?</p>
+<ul>
+<li>A. Every filtered substance must stay in the tubule</li>
+<li>B. The first fluid contains only unwanted substances</li>
+<li>C. Tubule transport reclaims and adds substances</li>
+</ul>
+<p><strong>Answer:</strong> C — Reabsorption and secretion change the fluid after filtration.</p>
+<h3>Q3</h3>
+<p>In a simplified model, more water returns to blood before the exit. What remains?</p>
+<ul>
+<li>A. A smaller urine volume, other factors equal</li>
+<li>B. A greater urine volume from that change alone</li>
+<li>C. Unchanged volume regardless of water movement</li>
+</ul>
+<p><strong>Answer:</strong> A — Returning more water leaves less fluid for excretion in the stated comparison.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a corrected version of the misleading blood-to-urine arrow. Include a glomerular barrier, initial filtrate, reabsorption, secretion and final urine.</p>
+<p>Write one sentence for each boundary crossing. Your explanation should identify what normally stays in the blood, what may enter the filtrate and what can return later. Do not add a medical threshold or claim that the first filtered fluid contains only waste.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Excretion can begin by moving useful substances into a fluid that will partly be discarded. The system achieves selectivity through several stages rather than one all-knowing filter. Recovery is therefore a central part of waste removal, not an accidental correction after the main job is finished.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>The nephron filters first, then changes the fluid through selective reabsorption and secretion; water recovery helps determine how much urine remains.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 21 of 30</footer>
+</div>
+</body>
+</html>

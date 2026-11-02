@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 60: Ultimate Challenge: Can you design a trustworthy village water-sampling report? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 60</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Ultimate Challenge: Can you design a trustworthy village water-sampling report?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Design a trustworthy water-investigation report rather than a collection of unlabelled readings. Integrate sample identity, control pathways, calibration, comparable procedures and uncertainty. Your output is a report-and-method prototype, not a certificate that a village water source is safe to drink.</p>
+</div><h2>1. The mystery</h2>
+<p>Three fictional sites appear in a report, but their collection times are missing. One bottle was reused, no blank was included and a colour reading was converted to concentration using an unexplained rule. The table looks complete because every cell has a number.</p>
+<p>Does filling the table make the evidence trustworthy? No. The reader cannot trace several values to a clear procedure or separate sample content from background contributions.</p>
+<p>Your challenge is to redesign the information chain so the report makes its observations, methods and limits understandable before anyone draws a practical conclusion.</p>
+<h2>2. The science behind it</h2>
+<p>Begin with a <strong>specific question</strong>, such as comparing one defined property across identified fictional sites under comparable procedures. A broad claim about all water quality requires many kinds of evidence and cannot be supported by one convenient colour measurement.</p>
+<p><strong>Sample identity</strong> links each record with a location label, time, container and handling history. A value without those connections can be impossible to interpret later. The report must distinguish a sample code from a test result.</p>
+<p><strong>Comparable sampling</strong> reduces avoidable method differences. The relevant location, depth or outlet condition must be defined according to the actual professional method. Students design these fields on paper rather than collecting potentially unsafe water themselves.</p>
+<p>A <strong>blank</strong> follows a specified target-free control route to assess introduced response. Its pathway should be drawn explicitly. A laboratory-only blank cannot check field handling it never experienced, so writing control used is not enough.</p>
+<p><strong>Known standards</strong> support an appropriate calibration relation for a defined measurement. The report should state units, supported range and whether the unknown lies within it. A raw signal is not automatically a concentration or a complete water-safety result.</p>
+<p><strong>Repeats</strong> preserve information about variation. Keep individual readings, common timing and method notes. Repetition does not automatically remove a shared calibration bias or repair a contaminated container.</p>
+<p><strong>Uncertainty and missing information</strong> belong in the report. Use not measured, unknown or outside validated range where appropriate instead of inventing a number to complete a layout. A clear limitation is more useful than false precision.</p>
+<p>Finally separate observation, interpretation and decision. A measured property can support a limited comparison while leaving pathogens or other contaminants untested. Actual drinking-water decisions require appropriate validated testing and responsible local expertise, beyond this classroom prototype.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a chain from question to sample identity, method, controls, calibrated result and conclusion. Put a traceable record beside every link. A missing link marks a specific weakness rather than a vague feeling that the project was not scientific enough.</p>
+<p>Now add an uncertainty column that travels with the result. Do not detach the caveat and leave only the attractive number in the summary. Someone reading the conclusion should know which limits affect it.</p>
+<p>Make the report's strongest claim no broader than its weakest necessary evidence link. This is the design principle: the final wording must fit what was actually measured and controlled, not what the team hoped its equipment could establish.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows three fictional site codes feeding into labelled records. Parallel sample, blank and standard pathways lead to an evidence table with units and uncertainty notes.</p>
+<p>A final conclusion box has separate fields for supported comparison and unanswered questions. No actual water-quality values or safe-use labels are supplied. The diagram highlights traceability rather than pretending a complete-looking table is a complete analysis.</p>
+<p>The apparatus icons are conceptual. The lesson does not provide a field collection protocol for children, a chemical test recipe or a claim about any real village, well, tap or pond.</p>
+<figure><img src="../../illustrations/class-9/day_60.svg" alt="Diagram for Ultimate Challenge: Can you design a trustworthy village water-sampling report?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Water reports can influence important decisions, so method and interpretation need to remain connected. A laboratory number copied without units or source context can lose much of its meaning.</p>
+<p>In a school project, fictional records or professionally supplied data allow students to practise critical reporting without handling unsafe samples. A responsible teacher can identify which evidence comes from an actual validated test and which part is a classroom model.</p>
+<p>This challenge differs from the earlier generic physics-model task. The product is an auditable evidence report with specific control and calibration logic, not a general explanation of any chosen phenomenon.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and three fictional site labels. Do not collect or taste water.</p>
+<ol>
+<li>Draft fields for sample identity, time and handling.</li>
+<li>Draw the blank's exact pathway.</li>
+<li>Reserve fields for calibration units and supported range.</li>
+<li>Add repeated-reading and uncertainty columns.</li>
+<li>Write one supported-question field and one unanswered-question field.</li>
+</ol>
+<p>Leave unmeasured values blank or explicitly marked not measured. The five-minute output is a prototype report, not experimental evidence. Ask a partner to find a conclusion that the current fields would not support and revise the design accordingly.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can an honest not measured entry make a report more trustworthy than a plausible-looking invented value? Connect the answer to traceability and the scope of conclusions.</p>
+<p>Now imagine a perfect calibration but a sample label lost during transport. Which part of the evidence chain fails? Accuracy at one stage does not recover identity information that was never preserved.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What should link every reported result to its source?</p>
+<ul>
+<li>A. Only an attractive table border</li>
+<li>B. Sample identity and method records</li>
+<li>C. A guessed number without units</li>
+</ul>
+<p><strong>Answer:</strong> B — Traceable records connect the value with where, when and how it was obtained.</p>
+<h3>Q2</h3>
+<p>Why must a blank pathway be described?</p>
+<ul>
+<li>A. It only evaluates relevant steps it actually follows</li>
+<li>B. Any control checks every possible step</li>
+<li>C. A blank automatically certifies drinking safety</li>
+</ul>
+<p><strong>Answer:</strong> A — Control coverage depends on the handling route represented.</p>
+<h3>Q3</h3>
+<p>One property was measured but several hazards were not tested. What is the best conclusion?</p>
+<ul>
+<li>A. The report can safely invent missing values</li>
+<li>B. Every untested hazard must be absent</li>
+<li>C. Limit the claim and list unanswered questions</li>
+</ul>
+<p><strong>Answer:</strong> C — The conclusion should match measured evidence and preserve the unknowns.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Deliver a one-page report template plus a method diagram. Include identity, timing, controls, standards, units, repeats, uncertainty and the separation between observations and interpretations.</p>
+<p>Peer-review it using three questions: can every result be traced, does each control cover the intended pathway, and do conclusions stay within measured properties? Revise one weakness. End with a statement that no drinking-water certification follows from the paper prototype alone.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A report can become stronger by making its limits easier to see. Empty evidence is not repaired by a full-looking table. Clear missing-information labels help direct the next investigation and prevent an unsupported practical decision, which is a useful scientific outcome in its own right.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A trustworthy water report connects sample identity, controls, calibration and uncertainty to limited conclusions; unmeasured hazards remain unanswered rather than silently absent.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 30 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 59: How does an air-temperature inversion trap city pollution? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 59</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does an air-temperature inversion trap city pollution?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a <strong>temperature inversion</strong> can inhibit vertical mixing of polluted near-surface air. Distinguish emissions from concentration and stable layering from a solid lid. Predict how unchanged emissions can produce different local conditions when dispersion changes.</p>
+</div><h2>1. The mystery</h2>
+<p>A city can experience more concentrated near-surface pollution even without a matching sudden increase in every emission source. The weather has changed how air mixes and carries material away.</p>
+<p>One relevant arrangement places warmer air above cooler air through a layer. This can resist overturning and reduce the vertical spreading that would otherwise dilute near-surface material.</p>
+<p>The useful question is not only how much pollutant is released, but what volume and movement of air are available to disperse it. The atmosphere is part of the concentration story.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>temperature inversion</strong> is a layer in which air temperature increases with height rather than following the more usual decreasing-with-height pattern of many lower-atmosphere situations. The definition concerns a vertical profile, not simply a cold day.</p>
+<p>A parcel moving upward can expand and cool. Its tendency to continue rising depends on how its temperature and density compare with surrounding air. In a sufficiently stable arrangement, a displaced parcel becomes relatively cooler and denser and tends to return rather than keep overturning.</p>
+<p>Warmer air over cooler near-surface air can therefore create <strong>stable stratification</strong>. The layer acts like a lid in an analogy, but it is not a solid barrier. Mixing can be reduced without being physically impossible in every circumstance.</p>
+<p>Pollutants released below the stable layer may remain concentrated in a shallower region than they would under stronger vertical mixing. Their concentration depends on emission, transport, removal and the available mixing volume.</p>
+<p><strong>Emissions</strong> describe material released from sources. <strong>Concentration</strong> describes amount within a volume of air at a place and time. The same release rate can produce different concentrations when winds and mixing change.</p>
+<p>Some inversions develop as the ground loses energy and cools nearby air, while air above remains warmer. Other weather situations can also produce inversions. The lesson focuses on the resulting stability rather than repeating the general thermal-radiation or liquid-convection mechanism.</p>
+<p>Sunlight, wind or changing air masses can alter the profile and dispersion conditions. Terrain can further influence how cool air and pollutants accumulate. No single inversion duration or city-wide pollution value applies universally.</p>
+<p>An inversion does not create every pollutant from nothing or explain all haze by itself. Chemical formation, humidity and emissions can also matter. A careful account treats the profile as one influence and avoids diagnosing current air quality from one photograph.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a shallow lower air box containing source symbols and a warmer layer above. Add fewer vertical mixing arrows than in a comparison box without the stable arrangement.</p>
+<p>Keep the source arrows equal in the two models. The contrast isolates dispersion rather than secretly increasing emissions in the more polluted-looking drawing. Show material spreading through different effective volumes.</p>
+<p>Then replace the hard lid line with a shaded air region. This corrects the analogy before it becomes a misconception. The stability changes tendencies and mixing rates; it is not a glass roof fixed over the city.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows cooler near-surface air under a warmer layer, with reduced upward mixing arrows. A comparison panel spreads the same hypothetical source input through a deeper region.</p>
+<p>A vertical temperature-profile sketch identifies the inversion segment. Separate labels distinguish source release from local concentration. The diagram contains no measured city data, dates or pollutant thresholds.</p>
+<p>The caption states that the lid is an analogy for stable layering. The picture does not repeat cyclone rotation or greenhouse absorption and does not claim that all pollution episodes share one identical weather cause.</p>
+<figure><img src="../../illustrations/class-9/day_59.svg" alt="Diagram for How does an air-temperature inversion trap city pollution?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Air-quality discussions in India sometimes mention poor dispersion and stable conditions. Understanding the mechanism helps separate a change in sources from a change in the atmosphere's ability to spread their output.</p>
+<p>A real local assessment needs current observations of pollutants, wind and temperature structure. This lesson does not provide a present-day pollution diagnosis or personal exposure advice from an abstract diagram.</p>
+<p>Students can use supplied profiles and maps without going outdoors to compare breathing conditions or approaching traffic sources. The paper model keeps the scientific question specific while avoiding unnecessary exposure and unsupported local claims.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and small drawn pollutant dots.</p>
+<ol>
+<li>Draw two equal source inputs beneath two air regions.</li>
+<li>Give one region a shallow stable lower layer.</li>
+<li>Give the comparison stronger mixing through a deeper region.</li>
+<li>Spread the same number of dots according to each qualitative model.</li>
+<li>Label emission and concentration separately.</li>
+</ol>
+<p>Do not turn the dot count into a real air-quality index. The activity illustrates dilution and dispersion with invented symbols. Add a note that atmospheric chemistry and removal can alter real outcomes beyond the simple equal-dot comparison.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why could concentration fall after mixing strengthens even if the source release has not stopped? Identify the changed transport or effective volume rather than declaring the pollutant vanished.</p>
+<p>Now imagine stronger winds but a continuing inversion aloft. Why should one weather label not be treated as a complete prediction? Several transport directions and local conditions can operate together.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What defines a temperature inversion layer?</p>
+<ul>
+<li>A. Wind must be absent everywhere on Earth</li>
+<li>B. Every air parcel has exactly zero temperature</li>
+<li>C. Temperature increases with height through the layer</li>
+</ul>
+<p><strong>Answer:</strong> C — The vertical temperature trend is reversed from the usual decreasing-with-height pattern.</p>
+<h3>Q2</h3>
+<p>Why can an inversion increase near-surface pollutant concentration?</p>
+<ul>
+<li>A. It removes every source of pollution automatically</li>
+<li>B. It can reduce vertical mixing and dilution</li>
+<li>C. It creates all pollutants from empty space</li>
+</ul>
+<p><strong>Answer:</strong> B — Stable layering can keep material within a shallower effectively mixed region.</p>
+<h3>Q3</h3>
+<p>Sources stay equal while mixing reaches a larger volume. What can happen to concentration?</p>
+<ul>
+<li>A. It can decrease through greater dispersion</li>
+<li>B. The material must become a new element</li>
+<li>C. It must be identical regardless of volume</li>
+</ul>
+<p><strong>Answer:</strong> A — The same amount distributed through more air can have a lower concentration.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a two-panel explanation with identical hypothetical emissions but different vertical mixing. Include a temperature-profile inset showing the inversion definition.</p>
+<p>Write one limitation involving wind, terrain or pollutant chemistry. Your conclusion must not claim that a stable layer is solid or that one photograph provides a measured current concentration. The design should clarify a mechanism rather than diagnose a real city.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A pollution change can reflect how material is distributed as well as how much is emitted. The same source output in a smaller effectively mixed volume can produce a larger concentration. Distinguishing source and environment makes the observation more understandable and the next measurement question more precise.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>An inversion can stabilise cooler surface air beneath warmer air, reducing vertical mixing so unchanged emissions may accumulate at higher near-surface concentrations.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 29 of 30</footer>
+</div>
+</body>
+</html>

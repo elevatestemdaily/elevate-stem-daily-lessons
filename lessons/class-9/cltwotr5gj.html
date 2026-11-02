@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 56: How does a formula unit help calculate the mass of a salt sample? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 56</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a formula unit help calculate the mass of a salt sample?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Use a salt's <strong>formula unit</strong> to connect atomic composition with formula mass and molar mass. Distinguish a particle-scale mass in <strong>u</strong> from a sample-scale mass in grams. Calculate an example without treating a sodium-chloride crystal as a collection of separate NaCl molecules.</p>
+</div><h2>1. The mystery</h2>
+<p>A salt packet contains far too many particles to count individually by eye. Yet a chemical formula can help connect the material's composition with a measurable mass.</p>
+<p>What does NaCl actually count? In a sodium-chloride crystal, it describes the simplest sodium-to-chloride ratio in an extended ionic arrangement. It does not mean the crystal is built from isolated two-atom molecules like tiny separate packets.</p>
+<p>The formula unit provides a bookkeeping unit for that ratio. Combining it with atomic masses and the mole connects the invisible composition with a laboratory-scale sample.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>formula unit</strong> expresses the smallest whole-number ratio represented by an ionic compound's formula. For NaCl, that ratio is one sodium ion to one chloride ion. The whole crystal contains many ions in a repeating structure.</p>
+<p><strong>Formula mass</strong> adds the atomic-mass contributions specified by the formula. Using rounded values of 22.99 for sodium and 35.45 for chlorine gives 58.44 in unified atomic mass units, written u, per formula-unit composition.</p>
+<p>The unit <strong>u</strong> describes particle-scale mass. It is not a gram. Writing 58.44 grams for one ordinary formula unit would confuse the microscopic unit with a macroscopic sample by an enormous factor.</p>
+<p>A <strong>mole</strong> is an amount-of-substance unit linked to a specified number of entities. At school precision, one mole contains about 6.02 times ten to the power 23 specified entities. The entities must be named: here we count formula-unit compositions rather than separate NaCl molecules.</p>
+<p>The corresponding <strong>molar mass</strong> of sodium chloride is about 58.44 grams per mole using these rounded values. Formula mass in u and molar mass in g/mol have related numerical values in this calculation, but they are different quantities and units.</p>
+<p>For an example amount of half a mole, mass equals amount multiplied by molar mass. Using 58.44 g/mol gives 29.22 grams before considering practical measurement precision. This is a model calculation, not a claim that an actual salt packet has that amount.</p>
+<p>For a compound whose formula contains more than one of an element, its atomic contribution must be multiplied by the subscript. Ignoring subscripts would lose the composition information that makes the formula useful. Our main worked example stays with NaCl's simple ratio.</p>
+<p>Real samples can contain moisture or other ingredients. A calculation assuming pure NaCl does not determine the composition of arbitrary table salt automatically. The chemical formula and sample assumption must both be stated before converting a measured mass into amount of substance.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a repeating two-colour lattice, then place a small bracket around one simplest ratio as a counting reference. Do not cut the drawing into independent molecules; the bracket represents composition bookkeeping within the extended solid.</p>
+<p>Next make a scale ladder: formula ratio, formula mass, one-mole amount and sample mass. Put the correct unit at every step. This prevents the numerical similarity of 58.44 from hiding the difference between u and g/mol.</p>
+<p>Finally add an impurity symbol to a sample box. The pure-compound conversion no longer describes every gram unless the NaCl fraction is known. The model links composition and mass without pretending a label alone proves purity.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows an extended NaCl lattice with a one-to-one ratio marker. A separate addition panel combines the rounded atomic contributions into 58.44 u.</p>
+<p>The scale conversion then identifies about 58.44 g/mol and the half-mole example of 29.22 g. Unit labels remain explicit rather than presenting one unexplained number at both scales.</p>
+<p>The diagram is a formula-accounting model, not a re-creation of the earlier chemical-bond mechanism. Its caption states that a real mixed or moist sample requires composition information before the pure-salt calculation can be applied.</p>
+<figure><img src="../../illustrations/class-9/day_56.svg" alt="Diagram for How does a formula unit help calculate the mass of a salt sample?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Laboratories use formulas and molar masses to prepare and compare known materials. The calculation depends on the substance identity and the amount being specified, not simply on a white powder's appearance.</p>
+<p>In an Indian kitchen, table salt can include additives or moisture. That does not change the NaCl formula, but it can change what fraction of a sample is NaCl. A classroom calculation should state its pure-salt assumption.</p>
+<p>No weighing of medicines, mixing of unknown chemicals or preparation of a medical solution is needed. The mass relation can be learned with paper values and correctly labelled units.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a calculator if needed.</p>
+<ol>
+<li>Draw a two-colour lattice and identify the one-to-one ratio.</li>
+<li>Add the supplied rounded atomic-mass contributions.</li>
+<li>Write formula mass with u.</li>
+<li>Write molar mass separately with g/mol.</li>
+<li>Calculate the mass of the example half-mole amount.</li>
+</ol>
+<p>State the pure-NaCl assumption and use the given precision consistently. The activity does not measure the purity or mass of a real household sample. Ask a partner to explain why the same numerical value appears with different units at different stages.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does an ionic formula unit not require isolated molecules to exist within the crystal? Separate a composition ratio from a claim about independently bounded particles.</p>
+<p>Now imagine a sample containing NaCl plus another material. Which extra information is needed before the whole measured mass can be treated as sodium chloride? A formula describes the compound, not every possible mixture bearing its everyday name.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does NaCl specify for the ionic crystal?</p>
+<ul>
+<li>A. One isolated molecule for every visible grain</li>
+<li>B. Equal spoonfuls of two kitchen ingredients</li>
+<li>C. A one-to-one sodium-to-chloride ratio</li>
+</ul>
+<p><strong>Answer:</strong> C — The formula unit records the simplest ionic composition ratio in the extended structure.</p>
+<h3>Q2</h3>
+<p>Why must u and g/mol be kept distinct?</p>
+<ul>
+<li>A. They describe different mass scales and quantities</li>
+<li>B. Both mean the mass of a whole salt packet</li>
+<li>C. They are interchangeable labels for one object</li>
+</ul>
+<p><strong>Answer:</strong> A — Formula mass and molar mass are related numerically but have different meanings and units.</p>
+<h3>Q3</h3>
+<p>Using 58.44 g/mol, what mass corresponds to the example 0.5 mol?</p>
+<ul>
+<li>A. 58.44 u for the whole sample</li>
+<li>B. 29.22 g</li>
+<li>C. 116.88 g</li>
+</ul>
+<p><strong>Answer:</strong> B — Multiplying half a mole by 58.44 grams per mole gives 29.22 grams in the calculation.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a unit-safe calculation card with formula ratio, atomic-mass sum, molar mass, sample amount and resulting mass. Include the half-mole example using the supplied values.</p>
+<p>Add two corrections: one formula unit does not weigh 58.44 grams, and an ionic crystal need not contain separate NaCl molecules. Finish with a sample-composition limitation rather than claiming the calculation proves a real salt packet pure.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A useful counting unit can describe a ratio inside a continuous structure rather than a tiny object that exists independently. Formula units let chemistry connect that ratio with mass while respecting the actual extended nature of an ionic solid.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A formula unit supplies ionic composition ratios; formula mass uses u, molar mass uses g/mol, and a pure-sample amount converts to mass through its molar mass.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

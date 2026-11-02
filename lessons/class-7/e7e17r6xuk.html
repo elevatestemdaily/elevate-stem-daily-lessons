@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 36: Why do woollen layers keep you warm? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 36</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do woollen layers keep you warm?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why loose woollen layers can slow cooling. Identify the role of <strong>trapped air</strong>, distinguish insulation from heat production, and predict why compression or wetting can change a garment's performance. Your explanation should work for a warm person and for a warm container.</p>
+</div><h2>1. The mystery</h2>
+<p>On a cold morning, a sweater feels comforting even though it has no heater inside. Place that same sweater over a chair, and the chair does not become a source of warmth. Put your hand between loosely folded layers and you can feel how much space the fibres create.</p>
+<p>The useful question is not whether wool contains a secret supply of heat. It is how the garment changes the rate at which energy leaves something already warmer than its surroundings. The arrangement of fibres and air helps answer that question.</p>
+<h2>2. The science behind it</h2>
+<p>A person's body releases thermal energy as part of its ordinary functioning. In a colder environment, energy tends to transfer outward. An <strong>insulator</strong> slows this transfer; it does not create energy. A sweater helps by changing the barrier between skin and surroundings.</p>
+<p>Wool fibres are often crimped rather than perfectly straight. Their arrangement can hold many small pockets of <strong>air</strong>. Air conducts heat much less readily than many solid materials used in utensils. Keeping air in small, relatively still spaces therefore adds resistance to heat transfer.</p>
+<p>A large open air space is not equivalent to many small protected pockets. In a wide space, air can circulate and replace warmed air with cooler air. Among close fibres, much of this bulk movement is restricted. Insulation depends on both the material and the organisation of the air spaces.</p>
+<p><strong>Thickness</strong> matters because a thicker protected layer increases the distance across which heat must transfer. Two loose layers may provide more useful air space than one thin layer. However, the result depends on fit, compression, wind and moisture. There is no universal rule that a fixed number of garments suits everyone.</p>
+<p>If you press a fluffy layer firmly, its thickness decreases and some trapped air is displaced. You have changed the structure that provided insulation. A tightly compressed garment can perform differently from the same garment when it remains lofted.</p>
+<p>Wind can push cooler air through openings and disturb the warm air near the body. A reasonably wind-resistant outer layer can therefore complement an insulating inner layer. The outer layer's job differs from the inner layer's job: one limits air exchange, while the other provides sheltered air spaces.</p>
+<p>Water also changes the system. It can replace air in spaces and increase heat transfer through parts of the fabric. Evaporation from damp clothing can contribute to cooling. Wool has complex moisture behaviour, so “wet wool has no insulation” is too absolute. The reliable lesson is that wetting changes heat transfer and comfort.</p>
+<p>Insulation slows temperature change in either direction. A wrap around a cool bottle can slow warming when the room is warmer than the bottle. The wrap is not choosing to make everything hot; it resists energy transfer between different temperatures.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a warm rectangle for a person and a cooler border for the surroundings. Between them, draw two versions of a fabric layer. Give the first many sheltered air pockets. Draw the second flattened so its pockets are smaller and the layer thinner.</p>
+<p>Put outward energy arrows across both drawings. Use smaller arrows for the more insulating arrangement, while remembering that arrow size is only a comparison, not measured data.</p>
+<p>Then place a cool bottle inside the same diagram and reverse the energy arrows. The direction comes from the temperature difference. The insulation changes the rate, regardless of direction.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a warm inner object, a loose fibre layer and cooler surroundings. Small spaces between wavy fibres represent sheltered air. Energy arrows cross the layer toward the outside.</p>
+<p>A separate compressed patch has less thickness and less room for air. Labels explain the structural change rather than claiming an exact improvement. A final symbol shows an outer cover reducing wind penetration.</p>
+<p>The drawing is an enlarged section through fabric. Real fibres are much smaller, and their arrangement is irregular. No colour in the drawing represents a measured temperature.</p>
+<figure><img src="../../illustrations/class-7/day_36.svg" alt="Diagram for Why do woollen layers keep you warm?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>In colder parts of India, people often use several clothing layers. A loose insulating layer and an outer layer that limits wind can solve different parts of the same problem. The system must still allow comfortable movement and suitable moisture management.</p>
+<p>Quilts and padded jackets also make use of air held within a fibrous structure. Their filling does more than add weight: it maintains thickness and partitions air into smaller spaces. Flattened filling can create patches where heat transfers more readily.</p>
+<p>A blanket wrapped around a warm tiffin works by slowing heat loss. It cannot reheat food that has already cooled to the temperature of the room.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use two similar closed cups or bottles, comfortably warm water and a dry folded woollen cloth. <strong>Do this with an adult.</strong> Avoid hot water and glass containers that could crack.</p>
+<ol>
+<li>Put similar amounts of warm water in the two containers.</li>
+<li>Wrap one loosely in the cloth and leave the other uncovered.</li>
+<li>Sketch their starting conditions and mark the same waiting time for both.</li>
+<li>If a suitable thermometer is available, compare readings without opening them unnecessarily.</li>
+<li>Explain what a smaller temperature drop would suggest.</li>
+</ol>
+<p>Five minutes sets up a comparison; a clearly detectable difference may require longer. Touch alone is not an accurate temperature measurement. Keep the containers in the same location so a draught or sunny patch does not become an extra difference.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a blanket is placed around two identical bottles: one warmer than the room and one cooler. Predict the direction of energy transfer for each. Then explain how the blanket could slow both changes.</p>
+<p>Would it make sense to describe the blanket as “giving cold” to the cool bottle? Use the two cases to replace that phrase with a description based on transfer rate and temperature difference.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What helps loose woollen layers provide insulation?</p>
+<ul>
+<li>A. Tiny flames inside the wool</li>
+<li>B. Sheltered air between fibres</li>
+<li>C. A supply of stored sunlight</li>
+</ul>
+<p><strong>Answer:</strong> B — The fibres maintain relatively still air spaces that resist heat transfer.</p>
+<h3>Q2</h3>
+<p>Why can pressing a fluffy layer change its insulation?</p>
+<ul>
+<li>A. Compression reduces thickness and air space</li>
+<li>B. Pressure creates fresh heat forever</li>
+<li>C. Compression makes all fibres disappear</li>
+</ul>
+<p><strong>Answer:</strong> A — Flattening changes the sheltered air spaces and distance across the insulating layer.</p>
+<h3>Q3</h3>
+<p>A wrapped bottle is colder than the room. What can the wrap do?</p>
+<ul>
+<li>A. Heat it without any energy source</li>
+<li>B. Make room energy flow out of the bottle</li>
+<li>C. Slow energy transfer into the bottle</li>
+</ul>
+<p><strong>Answer:</strong> C — Insulation resists transfer; the temperature difference sets its direction.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a clothing system for a windy school sports practice in cool weather. Label an inner layer, an insulating layer and an outer cover. Explain what each contributes without claiming that more clothing is always better.</p>
+<p>Include a decision about keeping the insulating layer loose enough to retain thickness. Explain how your design might need adjustment when activity increases or the clothes become damp.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The useful material inside a fluffy jacket is partly the air that its filling keeps organised. A heavy solid sheet can weigh much more without providing the same insulation. Weight, thickness and insulation are related only through the structure and materials involved; they are not interchangeable measures of warmth.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Woollen layers slow heat transfer by maintaining sheltered air spaces; they conserve existing warmth rather than manufacture heat.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 6 of 30</footer>
+</div>
+</body>
+</html>

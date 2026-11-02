@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 46: How does the liver package nitrogen waste for removal? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 46</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does the liver package nitrogen waste for removal?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why nitrogen from amino-acid processing needs a disposal route. Identify the liver's <strong>urea cycle</strong> and distinguish making urea from excreting it. Keep the account at a biological-mechanism level without using it to interpret a personal medical test or prescribe a diet.</p>
+</div><h2>1. The mystery</h2>
+<p>Proteins contain nitrogen as well as carbon, hydrogen, oxygen and other possible elements. When the body processes amino acids, their nitrogen cannot simply be ignored in an energy story.</p>
+<p>Some processing can produce ammonia-related nitrogen that requires controlled handling. The liver converts much of this nitrogen into urea, which can travel in solution toward excretion.</p>
+<p>The useful question is where the waste form is made and how it reaches removal. A kidney diagram alone would miss the important chemical work that occurs before the material arrives there.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Amino acids</strong> are building units of proteins and can be processed in several ways. When amino nitrogen is removed or transferred during metabolism, it contributes to the body's nitrogen-waste handling requirements.</p>
+<p><strong>Ammonia</strong> and its related ammonium form can arise in this processing. Accumulation must be controlled because high amounts can disrupt normal physiology. This statement explains a biological need, not a threshold for diagnosing an individual.</p>
+<p>The liver carries out a sequence called the <strong>urea cycle</strong>, which packages much nitrogen into <strong>urea</strong>. Urea has the formula CO(NH2)2. The cycle is an organised set of enzyme-mediated steps, not simply two free ammonia molecules colliding and automatically becoming urea in a jar.</p>
+<p>The process combines nitrogen inputs with carbon-containing material and requires energy. We do not repeat the earlier ATP-production pathway or protein synthesis mechanism. The new focus is conversion of a nitrogen-waste problem into a transportable excretion form.</p>
+<p>Urea is relatively suitable for transport in aqueous body fluids compared with allowing unrestricted ammonia accumulation. It enters circulation and reaches the kidneys, where renal handling contributes to its eventual excretion in urine.</p>
+<p>The <strong>liver makes</strong> much of the urea, while the <strong>kidneys handle and remove</strong> it as part of their wider work. These are cooperating roles rather than interchangeable names for one organ. A later lesson examines filtration and reabsorption in the nephron separately.</p>
+<p>Not all nitrogen leaves every animal as urea. Different groups use different strategies, including ammonia or uric-acid-based excretion. The human-focused model should not become a universal claim about fish, birds and all other organisms.</p>
+<p>Actual urea production and measured concentrations depend on several physiological conditions. This lesson provides no daily production statistic, laboratory reference range or health interpretation. A classroom pathway cannot determine a person's liver or kidney function.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a material-accounting chain from amino-acid processing to nitrogen handling, liver conversion, transport and renal excretion. Keep each stage in its appropriate organ or fluid context.</p>
+<p>Use a different symbol for the chemical form before and after the liver's conversion step. The nitrogen remains accounted for, but the molecule carrying it changes. Do not draw waste disappearing into nothing.</p>
+<p>Then place a boundary around the kidney stage. It receives material that already includes urea; it is not labelled the only location where every nitrogen transformation occurs. The chain explains why organ cooperation is essential to the whole process.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows nitrogen from amino-acid processing entering a liver-labelled conversion region, followed by urea in a transport route toward kidneys and excretion. A separate formula card identifies urea.</p>
+<p>Arrows distinguish chemical conversion from movement and removal. No numerical production rates or personal test values appear. The organs are simplified symbols, not detailed anatomical drawings.</p>
+<p>The caption notes that this is a human-oriented nitrogen-disposal model and that animal strategies vary. It does not repeat digestion, blood-pumping mechanics or the complete nephron mechanism planned later.</p>
+<figure><img src="../../illustrations/class-10/day_46.svg" alt="Diagram for How does the liver package nitrogen waste for removal?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Medical reports can mention urea, but the meaning of an individual's result depends on clinical context and other evidence. Understanding the pathway is educational background, not permission to interpret or change treatment.</p>
+<p>In a school biology discussion, distinguishing liver conversion from kidney removal helps prevent the common statement that the kidneys simply manufacture all urinary substances. Excretion routes can include materials formed elsewhere.</p>
+<p>No body-fluid sample, dietary experiment or test strip is needed. Students in India can use paper symbols and organ labels to learn the specific mechanism safely without creating a personal health investigation.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three colours for nitrogen input, urea and organ roles.</p>
+<ol>
+<li>Draw amino-acid processing as the starting box.</li>
+<li>Add a liver box labelled urea cycle.</li>
+<li>Change the carrier symbol while preserving nitrogen markers.</li>
+<li>Trace urea toward kidney handling and urine output.</li>
+<li>Write makes and removes beside the appropriate stages.</li>
+</ol>
+<p>Do not use real biological samples or make a health judgement from the drawing. Ask a partner to identify what would be missing if the liver-conversion box were omitted. The activity tests material and role accounting rather than memorisation of a generic organ list.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why is changing the waste's chemical form useful before transport and removal? Explain the difference between moving a material and transforming it.</p>
+<p>Now imagine a report drawing only kidneys and an output arrow. Which earlier stage of nitrogen handling has been hidden? A useful excretion model can begin before the material reaches the organ that finally contributes to its removal.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which organ carries out the main urea-cycle conversion in this human model?</p>
+<ul>
+<li>A. The liver</li>
+<li>B. The lung air space alone</li>
+<li>C. Only a tooth surface</li>
+</ul>
+<p><strong>Answer:</strong> A — The liver packages much amino-acid nitrogen into urea through the urea cycle.</p>
+<h3>Q2</h3>
+<p>Why distinguish urea formation from excretion?</p>
+<ul>
+<li>A. Every waste molecule is made only at its exit</li>
+<li>B. Nitrogen disappears before any transport</li>
+<li>C. Chemical conversion and removal are different roles</li>
+</ul>
+<p><strong>Answer:</strong> C — Urea can be formed in the liver and later handled by the kidneys for excretion.</p>
+<h3>Q3</h3>
+<p>A diagram says every animal excretes nitrogen only as urea. What needs correction?</p>
+<ul>
+<li>A. All animals must lack nitrogen</li>
+<li>B. Different animal groups use different strategies</li>
+<li>C. Urea must contain no atoms</li>
+</ul>
+<p><strong>Answer:</strong> B — Ammonia and uric-acid-based routes are among other nitrogen-excretion strategies.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a nitrogen-disposal map with chemical form, conversion location, transport and removal. Include the urea formula and a note that other animals can use different waste strategies.</p>
+<p>Add a clear limit stating that no personal laboratory value is being interpreted. Your map should distinguish organ roles without describing urine as simply filtered unchanged food or claiming that the kidney makes every waste molecule it excretes.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A waste pathway can involve useful chemistry before the final exit. The body does not only move an unwanted substance toward a drain; it can change the form in which an element is carried. Following nitrogen makes that cooperative process visible across otherwise separate organ diagrams.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>The liver converts much amino-acid nitrogen into urea through the urea cycle, then transport and kidney handling connect that chemical packaging to excretion.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 16 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can matched groups make a cattle-feed trial fair?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Fictional matching and assignment: no real animal intervention</text>
+<text x="200" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Match starting characteristics</text>
+<text x="745" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Comparable treatment groups</text>
+<rect x="65" y="185" width="230" height="40" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="320" y="185" width="230" height="40" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="305" y1="205" x2="315" y2="205" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="560" y1="197" x2="650" y2="197" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="560" y1="213" x2="820" y2="213" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="65" y="255" width="230" height="40" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="320" y="255" width="230" height="40" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="305" y1="275" x2="315" y2="275" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="560" y1="267" x2="650" y2="267" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="560" y1="283" x2="820" y2="283" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="65" y="325" width="230" height="40" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="320" y="325" width="230" height="40" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="305" y1="345" x2="315" y2="345" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="560" y1="337" x2="650" y2="337" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="560" y1="353" x2="820" y2="353" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="660" y="175" width="65" height="195" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="835" y="175" width="65" height="195" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="690" y="415" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A</text>
+<text x="870" y="415" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">B</text>
+<text x="250" y="422" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Similar age and initial condition</text>
+<text x="500" y="466" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Shared procedures + a preselected outcome + remaining-variation notes</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A balanced design improves comparison; it is not already a treatment result.</text>
+</svg>

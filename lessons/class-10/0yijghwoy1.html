@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 56: How does a lung surfactant keep tiny air sacs from collapsing? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 56</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a lung surfactant keep tiny air sacs from collapsing?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a specialised surface film helps tiny lung air spaces remain stable. Connect <strong>surfactant</strong>, the air–liquid interface and <strong>surface tension</strong> without treating a lung as a collection of ordinary soap bubbles. Build a paper model, with no breathing test or chemical experiment.</p>
+</div><h2>1. The mystery</h2>
+<p>An alveolus is a tiny air space with a moist inner surface. At that air–liquid boundary, surface tension contributes a tendency for the exposed surface to shrink. Yet healthy lungs can repeatedly expand without every small air space simply collapsing.</p>
+<p>A specialised film helps solve this mechanical problem. Its importance is not that it supplies oxygen or acts as a rigid prop. It changes the behaviour of the surface itself.</p>
+<p>The question is why changing a very thin interface can change the effort and stability of a much larger organ.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Alveoli</strong> are small air spaces in the lungs. Their walls are thin and moist. The lung's complete function involves several processes, but this lesson isolates the mechanical role of the lining surface rather than repeating gas exchange or the reason breathing rate rises during exercise.</p>
+<p>At an <strong>air–liquid interface</strong>, interactions between liquid molecules produce <strong>surface tension</strong>. It tends to reduce surface area and therefore contributes to an inward tendency in a curved air space. Surface tension is a property of an interface, not a separate elastic string tied around the lung.</p>
+<p><strong>Pulmonary surfactant</strong> is a mixture of lipids and proteins produced by specialised alveolar cells called <strong>type II cells</strong>. It spreads at the lining interface. Its film lowers surface tension and helps the lung expand more easily while reducing the tendency of air spaces to collapse.</p>
+<p>This is different from a soap-cleaning lesson. Here the important effect is the mechanical behaviour of an air–liquid surface in a living organ. We do not need a dirt droplet or a micelle diagram to explain alveolar stability.</p>
+<p>A useful idealisation compares spherical air spaces at the same surface tension. The pressure difference needed to balance that tension increases as radius becomes smaller. In the simplest single-interface model, the relationship is written <strong>pressure difference = 2 × surface tension ÷ radius</strong>.</p>
+<p>The equation is a model, not a complete description of real lung geometry. Alveoli are interconnected, share walls and sit within elastic tissue. We must not infer that every alveolus behaves like a perfectly isolated spherical bubble.</p>
+<p>Surfactant's surface effect changes as the film is compressed and expanded. Its behaviour helps stabilise air spaces across the breathing cycle, especially as surfaces become smaller. A single constant-tension drawing would miss this useful feature of the biological film.</p>
+<p>Lowering the surface contribution also reduces part of the <strong>work of breathing</strong>. The lung still has tissue elasticity, airway resistance and other mechanical requirements. Surfactant does not make breathing require no effort or guarantee that every respiratory problem has the same cause.</p>
+<p>The lesson gives no medical dose, disease diagnosis or treatment instruction. A surface-film mechanism is useful biological knowledge, but it cannot determine an individual's lung condition from a paper diagram or an informal breath-holding comparison.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw one large circular air space and one smaller one. Around each, mark inward arrows representing the surface-tension contribution. Initially label their surface tensions equal.</p>
+<p>Use the radius relationship to explain why the smaller model would require a greater balancing pressure difference under that assumption. Then add a surfactant film and mark the reduced tension contribution.</p>
+<p>Finally, place the circles in a shared tissue region with connections. This final addition reminds you that the bubble comparison isolates one effect. It should not replace the lung with a bag of independent balloons or imply that surfactant physically fills the air spaces.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG contrasts a high-tension air–liquid interface model with a surfactant-covered interface. Inward arrows are shorter in the reduced-tension version. A separate radius comparison identifies the ideal fixed-tension relationship.</p>
+<p>Small film markers sit along the boundary rather than filling the centre. They represent interfacial action, not cells blocking the air space. The surrounding region acknowledges tissue support without attempting a full anatomical drawing.</p>
+<p>The colours and arrows are qualitative. The illustration contains no pressure values, clinical threshold or suggestion that students test their own lung function.</p>
+<figure><img src="../../illustrations/class-10/day_56.svg" alt="Diagram for How does a lung surfactant keep tiny air sacs from collapsing?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>In an Indian classroom, a familiar soap-bubble picture can introduce curved surfaces, but the comparison needs limits. An ordinary soap bubble has two air–liquid surfaces, while the simple alveolar interface model used here has one. Copying a bubble formula without examining the boundary can mislead.</p>
+<p>The lesson also shows why biology and physics meet at small structures. A microscopic film can alter the mechanical effort required for repeated organ movement.</p>
+<p>No student should make inhalable sprays, taste household detergents or perform a breath-holding challenge for this topic. Paper circles and arrows reveal the mechanism without putting substances near anyone's mouth or asking classmates to compare medical signs.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two colours. No liquid, blowing or breathing measurement is needed.</p>
+<ol>
+<li>Draw two model air spaces of different radii.</li>
+<li>Label their initial surface tensions equal.</li>
+<li>Compare the balancing pressure differences qualitatively.</li>
+<li>Add a surfactant film and reduce the surface-tension arrows.</li>
+<li>Write one limitation of the isolated-sphere model.</li>
+</ol>
+<p>Ask a partner to explain whether the film acts at the boundary or fills the central air space. Then identify which assumption allowed the first radius comparison. The activity is about a mechanical relation, not ranking anyone's breathing ability.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why is a soft surface film different from a rigid support ring? Both might be drawn near a boundary, but their mechanisms differ. Explain the film's effect on the interface rather than calling it a tiny bone.</p>
+<p>Now imagine a model that uses constant surface tension throughout expansion and contraction. What important surfactant behaviour would it miss? Describe why a living surface can respond differently as its area changes without claiming that the simple drawing captures every lung force.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a major mechanical effect of pulmonary surfactant?</p>
+<ul>
+<li>A. It fills every air sac with a solid plug</li>
+<li>B. It replaces the lung with a rigid tube</li>
+<li>C. It lowers air–liquid surface tension</li>
+</ul>
+<p><strong>Answer:</strong> C — The interfacial film reduces the surface-tension contribution to collapse and inflation effort.</p>
+<h3>Q2</h3>
+<p>At equal surface tension, why does a smaller ideal sphere need more balancing pressure?</p>
+<ul>
+<li>A. The pressure difference varies inversely with radius</li>
+<li>B. Its central air must turn into bone</li>
+<li>C. It has no curved boundary</li>
+</ul>
+<p><strong>Answer:</strong> A — The ideal single-interface relation is pressure difference = 2 × tension ÷ radius.</p>
+<h3>Q3</h3>
+<p>A drawing treats alveoli as isolated perfect bubbles. What should be added?</p>
+<ul>
+<li>A. A claim that surfactant is a rigid skeleton</li>
+<li>B. Shared walls, tissue support and model limitations</li>
+<li>C. A claim that real lungs have no tissue forces</li>
+</ul>
+<p><strong>Answer:</strong> B — Real alveoli are interconnected structures, so the isolated-sphere picture captures only part of their mechanics.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a two-part explanation of alveolar stability: first the ideal curved-interface relation, then the biological film and shared tissue context. Mark the assumptions beside the model equation.</p>
+<p>Include a sentence explaining reduced breathing work and a sentence explaining why the model is incomplete. Your explanation must not become a medical test or advise adding any household substance to the lungs. The goal is to identify a specific surface mechanism safely.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The smallest model air space is not automatically the easiest to keep open. With the same surface tension, greater curvature can require a larger balancing pressure difference. Changing the interface therefore helps solve a problem that would remain hidden if we looked only at the total amount of air in the lungs.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Pulmonary surfactant lowers air–liquid surface tension, helping stabilise alveoli and reduce breathing work; real lungs also depend on shared tissue and other mechanical properties.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

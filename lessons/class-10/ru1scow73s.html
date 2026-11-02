@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 41: Why do leaves open stomata without emptying all their water? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 41</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do leaves open stomata without emptying all their water?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how changes in <strong>guard-cell turgor</strong> regulate a stomatal pore. Connect solute movement, water entry and cell-wall geometry with opening and closing. Distinguish this local valve mechanism from the broader movement of water through forests or the transport of sugar through phloem.</p>
+</div><h2>1. The mystery</h2>
+<p>A leaf needs gas exchange, but an open surface pathway also permits water vapour to leave. The plant cannot solve the trade-off by treating every pore as permanently wide open or permanently sealed.</p>
+<p>Two specialised cells surround a <strong>stoma</strong> and change its opening. They do not pull a mechanical handle. Changes inside the cells alter their pressure and shape, while the walls constrain how that shape changes.</p>
+<p>The useful question is how a living cell can turn a water-content change into controlled movement at a small opening.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>stoma</strong> is a pore in the plant surface, and <strong>stomata</strong> is the plural. <strong>Guard cells</strong> border the opening and contribute to regulating exchange between internal air spaces and the surroundings.</p>
+<p>In the familiar kidney-shaped guard-cell model, walls and cellulose arrangement constrain expansion unequally. The inner region next to the pore differs mechanically from other parts. As turgor changes, the cells bend in a way that changes the gap.</p>
+<p>Solutes, including potassium ions and other substances, can accumulate during opening responses. Their movement changes water relations, encouraging water entry. Increased internal water pressure against the wall is called <strong>turgor</strong>.</p>
+<p>Greater turgor in the appropriate guard-cell arrangement promotes opening. Loss or redistribution of solutes and water can reduce turgor and support closure. The mechanism is more specific than saying the whole leaf swells at random.</p>
+<p>The shape model is not identical for every plant. Grasses often have differently shaped guard cells and associated structures. The general idea of controlled cell mechanics remains useful, while one kidney-shaped cartoon should not be declared universal anatomy.</p>
+<p>Opening allows carbon dioxide access and also affects water-vapour loss. The appropriate aperture depends on conditions and the plant's needs. Light, internal carbon dioxide, water status and other signals can influence responses without requiring one permanent opening schedule for all species.</p>
+<p>Some plants use distinctive day-night patterns, so always open by day and closed by night is too absolute. The lesson focuses on the actuator mechanism rather than repeating the earlier broad hormone-control topic or detailing every signalling pathway.</p>
+<p>A leaf's water loss also depends on humidity, airflow and other surfaces. Stomatal movement is one important control, not the only factor. A closed pore does not make every possible water-loss route vanish, nor does a wider pore automatically indicate a healthier plant.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two curved flexible cells surrounding a gap. Mark constrained wall regions differently from more expandable ones. Add solute symbols, then water-entry arrows and higher-turgor labels.</p>
+<p>Redraw the shapes with a wider gap in the opening model. In a second sequence, remove some internal water and reduce the opening. The wall geometry converts pressure change into a directional movement.</p>
+<p>Keep the pore separate from the cells. The opening is a space whose size changes; it is not a third cell filling with water. This small distinction makes the diagram clearer and prevents a common confusion between the valve's parts and the passage it controls.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares a smaller and larger stomatal aperture in the kidney-shaped model. Guard cells flank the pore, and separate arrows show solute-related water entry and the resulting turgor change.</p>
+<p>Labels identify the constrained inner wall and the open space. A caption notes that guard-cell anatomy varies among plants and that the diagram is not a universal day-night timetable.</p>
+<p>The illustration does not show forest rainfall production or phloem sap transport. It isolates local pore regulation so the same word water does not conceal different biological mechanisms.</p>
+<figure><img src="../../illustrations/class-10/day_41.svg" alt="Diagram for Why do leaves open stomata without emptying all their water?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Plant water management in Indian gardens and farms depends on both plant responses and environmental conditions. A wilting or green appearance alone does not reveal the exact aperture of every stoma.</p>
+<p>A suitable microscope image can show pores, but interpreting a static picture requires care. Preparation and conditions can influence what is seen, so one image should not be treated as a complete record of the leaf's daily behaviour.</p>
+<p>The home activity needs no leaf peeling, chemical stain or microscope purchase. A paper model can explain the mechanical chain without damaging a plant or handling unfamiliar materials.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two colours.</p>
+<ol>
+<li>Draw two kidney-shaped guard cells around a narrow space.</li>
+<li>Mark the pore-facing constrained wall regions.</li>
+<li>Add solute symbols and water-entry arrows.</li>
+<li>Copy the cells with increased turgor and a wider model gap.</li>
+<li>Reverse the sequence for reduced turgor.</li>
+</ol>
+<p>Label the drawing a common model rather than every species' exact anatomy. Ask a partner to identify which marks are cells and which region is the pore. Do not claim the symbol count measures real ion concentration or opening speed.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does wall geometry matter if both cells receive water? Explain why a pressure change alone does not specify the direction of deformation without structural constraints.</p>
+<p>Now consider dry moving air outside an open pore. Which part of water loss is controlled by the guard cells and which part depends on surroundings? A useful explanation includes both the biological control and the external driving conditions.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the stoma in the guard-cell model?</p>
+<ul>
+<li>A. Only the entire tree root system</li>
+<li>B. A third cell filled with soil</li>
+<li>C. The pore between bordering cells</li>
+</ul>
+<p><strong>Answer:</strong> C — The stoma is the opening whose aperture the guard cells regulate.</p>
+<h3>Q2</h3>
+<p>Why can water entry promote opening in the common model?</p>
+<ul>
+<li>A. It makes the pore become a sugar crystal</li>
+<li>B. It changes turgor and constrained cell shape</li>
+<li>C. It removes every cell wall permanently</li>
+</ul>
+<p><strong>Answer:</strong> B — Pressure and wall geometry together change the gap between the cells.</p>
+<h3>Q3</h3>
+<p>A diagram claims all plants have identical guard-cell shape and daily timing. What needs correction?</p>
+<ul>
+<li>A. Anatomy and response patterns vary among plants</li>
+<li>B. Water has no role in cell mechanics</li>
+<li>C. Every pore must be a root hair</li>
+</ul>
+<p><strong>Answer:</strong> A — The common kidney-shaped explanation is useful without being universal in every detail.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a cause-chain diagram linking solute change, water movement, turgor, cell shape and pore aperture. Keep the cell and empty opening labels distinct.</p>
+<p>Add one anatomical variation and one environmental limitation. Your explanation must avoid treating the pore as a water-filled cell or claiming every species follows an identical daily timetable. The challenge is a specific local mechanism, not a generic instruction to observe a leaf.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A living valve can work by changing the pressure inside its bordering cells. The useful movement emerges from water relations combined with wall architecture. Neither a list of ions nor a cell-outline drawing alone explains the whole actuator; their connection produces the function.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Guard cells convert solute-related water and turgor changes into pore movement through their wall geometry, regulating a gas-exchange and water-loss trade-off.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 11 of 30</footer>
+</div>
+</body>
+</html>

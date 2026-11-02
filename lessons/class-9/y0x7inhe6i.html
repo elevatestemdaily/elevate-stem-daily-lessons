@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 35: How can a batch code help trace contaminated food? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 35</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a batch code help trace contaminated food?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how batch records connect a product to its source and distribution routes. Distinguish <strong>traceability</strong> from a contamination test. Use a fictional record network to identify which batches and destinations need investigation without claiming that every item with a shared code is definitely contaminated.</p>
+</div><h2>1. The mystery</h2>
+<p>A problem is reported for one packaged-food batch. The products have already moved to several shops. How can investigators narrow the relevant route rather than treating every package in every shop as the same unknown object?</p>
+<p>A <strong>batch code</strong> links a group of products to records about production and movement. The printed characters are useful because of those connected records, not because the code physically detects a harmful substance.</p>
+<p>The important question is whether people can follow the chain backward to inputs and forward to destinations with enough detail to investigate the issue.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>batch</strong> is a defined group produced or handled under a specified grouping system. Its code can connect packages with production information, ingredients or source lots, processing records and distribution. The exact scheme varies by operation.</p>
+<p><strong>Traceability</strong> is the ability to follow relevant identities and movements through the chain. Backward tracing asks where inputs came from. Forward tracing asks where the resulting products went. Both need reliable connections between records.</p>
+<p>Consider fictional batches B-A and B-B. B-A goes to shops One and Two, while B-B goes to Two and Three. A report concerning B-A points first to its recorded route, not automatically to every product at shop Three.</p>
+<p>A shared supplier input can expand the question. If both finished batches used the same suspect source lot, investigating only the first printed finished-batch code could miss a relevant connection. The network must include inputs as well as final destinations.</p>
+<p>The code is not itself proof of contamination. It identifies a group for assessment or action according to the responsible investigation. Testing, processing evidence and the actual cause matter. Likewise, absence of a code match is meaningful only if the records are complete and the code is interpreted correctly.</p>
+<p><strong>Record integrity</strong> is essential. Missing transfers, mixed batches or copied labels can break the chain. A perfectly readable package code cannot reconstruct a movement that was never recorded. Product identity and context may be needed because short codes can be reused in different systems.</p>
+<p>A batch code is not necessarily a date label or a unique serial number for one individual item. These identifiers answer different questions. A useful record system states what its code refers to rather than relying on the observer to guess from the characters.</p>
+<p>A recall or safety response is managed by the responsible organisation and authorities using current information. This lesson teaches the record logic through fictional examples. It does not diagnose a real product, issue an alert or instruct students to contact customers or consume a suspicious sample.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw source lots on the left, finished batches in the middle and destinations on the right. Connect them with arrows showing documented use and movement.</p>
+<p>Highlight one finished batch and follow its arrows in both directions. Then highlight a shared source lot and see which additional batches become relevant to investigate. The difference shows why tracing can widen as new evidence arrives.</p>
+<p>Put a question mark on a missing arrow. The gap is uncertainty, not permission to invent the missing destination. A trustworthy system preserves what is known and identifies what must be checked before drawing a more complete route.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows fictional source lots linked to two finished batches and three shops. One batch is highlighted, and its forward destinations are marked separately from the other batch's route.</p>
+<p>A shared-input arrow demonstrates why an investigation can expand. The caption states that highlighting indicates a record relationship, not a positive contamination test.</p>
+<p>All identifiers are invented and do not refer to actual companies, shops or food alerts. The diagram concerns traceability logic rather than microbial disease mechanisms, package chemistry or mobile signal transmission.</p>
+<figure><img src="../../illustrations/class-9/day_35.svg" alt="Diagram for How can a batch code help trace contaminated food?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian food packages can carry several kinds of information, including product identity, date information and production codes. Their roles should not be conflated. A code becomes useful when the producer's records explain the group and route it identifies.</p>
+<p>School supply cupboards can use the same basic idea for non-food materials: record which labelled group arrived and where it was issued. That analogy teaches identity and movement without creating a real food-safety investigation.</p>
+<p>For an actual product concern, students should inform a responsible adult and follow authoritative current instructions. A classroom network cannot certify that a package is safe or unsafe from a code alone.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and invented labels only. Do not inspect suspect food or send messages to shops.</p>
+<ol>
+<li>Draw two source lots, two finished batches and three destinations.</li>
+<li>Connect each batch to its recorded source and destinations.</li>
+<li>Mark a fictional report concerning one finished batch.</li>
+<li>Trace its route backward and forward.</li>
+<li>Add a shared source lot and identify what further checking becomes relevant.</li>
+</ol>
+<p>Keep a missing connection marked unknown rather than filling it in for a tidy picture. The exercise models an investigation route. It does not establish contamination, a real recall boundary or permission to make public claims about a product.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a correctly printed code fail to provide useful traceability if the transfer records are incomplete? Separate identifying a group from knowing its movements.</p>
+<p>Now imagine two shops share one batch, while another shop has a different batch from the same supplier lot. What additional information would determine whether the investigation should expand? The answer depends on the cause and evidence, not simply the number of arrows.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does forward batch tracing ask?</p>
+<ul>
+<li>A. Whether codes can kill microbes</li>
+<li>B. Which colour every package should have</li>
+<li>C. Where the identified products went</li>
+</ul>
+<p><strong>Answer:</strong> C — Forward tracing follows recorded destinations after production or handling.</p>
+<h3>Q2</h3>
+<p>Why can a shared source lot widen an investigation?</p>
+<ul>
+<li>A. All shops must stock identical products</li>
+<li>B. It can connect several finished batches</li>
+<li>C. Every code must identify one single molecule</li>
+</ul>
+<p><strong>Answer:</strong> B — Different output batches may share a relevant input relationship.</p>
+<h3>Q3</h3>
+<p>A package matches a highlighted fictional batch. What does the code alone establish?</p>
+<ul>
+<li>A. A record relationship needing proper interpretation</li>
+<li>B. A complete laboratory safety result</li>
+<li>C. Definite contamination in every package</li>
+</ul>
+<p><strong>Answer:</strong> A — Traceability identifies connections, while contamination status requires additional evidence.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a fictional record sheet with batch identity, input lots, destinations and missing-information notes. Then write two conclusions: one directly supported by the arrows and one stronger claim the records alone cannot establish.</p>
+<p>Your stronger claim should involve contamination status, making clear why traceability is not a laboratory test. Keep every company and code invented so the exercise cannot be mistaken for a real product warning.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A small printed code can be useful because it points to a much larger information network. The characters do not contain every fact directly. Their power depends on accurate links maintained elsewhere, showing why reliable records can matter as much as the visible label on an individual object.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Batch codes support backward and forward tracing through reliable records; they identify relationships for investigation rather than proving contamination by themselves.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 5 of 30</footer>
+</div>
+</body>
+</html>

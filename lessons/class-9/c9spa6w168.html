@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 47: How does momentum help compare two moving trolleys? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 47</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does momentum help compare two moving trolleys?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Calculate <strong>momentum</strong> as mass multiplied by velocity and keep its direction explicit. Compare different moving trolleys without using mass or speed alone as the whole description. Distinguish momentum from force and avoid assuming equal momentum means every feature of a motion is identical.</p>
+</div><h2>1. The mystery</h2>
+<p>A heavy trolley moving slowly and a lighter trolley moving faster can have the same momentum. Looking only at the larger mass or the greater speed would miss that possibility.</p>
+<p>The quantity combines the two. It also keeps direction, so trolleys moving in opposite directions can have momenta that differ even if their masses and speed readings match.</p>
+<p>Why introduce another motion quantity? Because it provides a useful numerical description that responds to both the amount of material and its velocity, rather than reducing the moving system to one of those features alone.</p>
+<h2>2. The science behind it</h2>
+<p>For an ordinary nonrelativistic object, <strong>momentum = mass × velocity</strong>, written <strong>p = mv</strong>. Mass is a scalar, while velocity is a vector, so momentum points in the same direction as velocity for positive mass.</p>
+<p>The SI unit is <strong>kilogram metre per second</strong>, written kg m/s. It is not a newton, the unit of force, and not a joule, the unit of energy. Units help prevent different physical quantities from being treated as interchangeable.</p>
+<p>Consider invented trolley A with mass two kilograms moving east at three metres per second. Its momentum is six kilogram metres per second east. Trolley B with mass one kilogram moving east at six metres per second has the same momentum in this model.</p>
+<p>Now reverse B's direction. Its momentum points west, so it no longer matches A's vector momentum. In one dimension, choose east positive and write the values as plus six and minus six. The sign convention must be stated.</p>
+<p>For the same velocity, doubling mass doubles momentum. For the same mass, doubling velocity doubles momentum. These are conditional comparisons. Changing both factors together requires their product rather than a slogan that the heavier object always has more momentum.</p>
+<p>Momentum differs from <strong>force</strong>. A trolley can have momentum while moving steadily, even when its net force is approximately zero in a simplified model. Force concerns interaction and change, not a stored substance carried inside the object.</p>
+<p>Equal momentum does not mean identical mass, velocity, energy or behaviour under every later interaction. The comparison tells you one combined quantity is equal. Other questions need their own variables and conditions.</p>
+<p>This lesson focuses on defining and comparing momentum. Later lessons use it in recoil and stopping-time relationships. We do not import those whole mechanisms here; understanding the product and direction first provides a sound foundation for interpreting them.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two trolley cards with separate mass and velocity boxes. Multiply each pair and attach a direction arrow to the result. Keep the input values visible so the same final number can be traced back to different combinations.</p>
+<p>Make a second set with equal masses and opposite arrows. The momentum magnitudes match, but the vectors do not. An unsigned number alone loses the direction information.</p>
+<p>Then change one input at a time. This makes the proportional relationships testable in the model. If both mass and velocity are altered, calculate the product explicitly rather than guessing from whichever change looks more dramatic.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the two invented east-moving trolleys with different masses and speeds but the same momentum. A third arrow reverses one trolley's direction to show the vector distinction.</p>
+<p>A unit panel separates kg m/s from force and energy units. The arrows are labelled velocity or momentum so their purpose is unambiguous. Trolley sizes are symbolic, not realistic dimensions.</p>
+<p>The graphic does not show a collision, a gravitational orbit or a real experiment. Its aim is a quantitative comparison using defined inputs, preserving the different targets of the later recoil and impulse lessons.</p>
+<figure><img src="../../illustrations/class-9/day_47.svg" alt="Diagram for How does momentum help compare two moving trolleys?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A loaded hand trolley and an unloaded one can differ in momentum even at similar speed. The example helps explain why describing moving equipment requires more than a speed number.</p>
+<p>A cricket ball and a much heavier slow object can be compared using the same formula if mass, velocity and direction are known. That comparison alone does not establish a safe impact or a complete damage prediction.</p>
+<p>Students do not need to push loaded trolleys, create collisions or throw objects for this lesson. Paper values separate the calculation from the practical hazards and additional complexities of real contact events.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a calculator if needed.</p>
+<ol>
+<li>Make cards for the invented A and B trolleys.</li>
+<li>Write mass in kilograms and velocity in metres per second.</li>
+<li>Multiply to obtain momentum and include east.</li>
+<li>Reverse one velocity and update the direction or sign.</li>
+<li>Invent a third mass-speed pair with the same magnitude and check it.</li>
+</ol>
+<p>Label the data invented. Do not turn the numbers into a collision prediction or call momentum a force. The exercise tests the product, units and vector direction without moving heavy objects.</p>
+</div><h2>7. Think deeper</h2>
+<p>Can a lighter object have greater momentum than a heavier one? State the velocity condition rather than answering from mass alone.</p>
+<p>Now compare two objects with equal momentum magnitude but opposite directions. Why would a record containing only the magnitude be incomplete? Explain what the direction contributes to the physical description without jumping ahead to a specific collision law.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How is ordinary momentum calculated?</p>
+<ul>
+<li>A. Elapsed time multiplied by area only</li>
+<li>B. Mass divided by colour</li>
+<li>C. Mass multiplied by velocity</li>
+</ul>
+<p><strong>Answer:</strong> C — Momentum combines mass with vector velocity.</p>
+<h3>Q2</h3>
+<p>Why must momentum direction be recorded?</p>
+<ul>
+<li>A. Mass can never be measured</li>
+<li>B. Velocity gives momentum a vector direction</li>
+<li>C. Momentum is always an unsigned temperature</li>
+</ul>
+<p><strong>Answer:</strong> B — For positive mass, momentum points along velocity and can reverse when velocity reverses.</p>
+<h3>Q3</h3>
+<p>Invented trolley mass is 2 kg and velocity 3 m/s east. What is its momentum?</p>
+<ul>
+<li>A. 6 kg m/s east</li>
+<li>B. 5 newtons by definition</li>
+<li>C. 1.5 kg m/s east</li>
+</ul>
+<p><strong>Answer:</strong> A — The product of 2 kilograms and 3 metres per second is 6 kilogram metres per second east.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create four fictional trolley cards: equal mass with different velocities, equal velocity with different masses, equal momentum from different products and equal magnitude with opposite directions.</p>
+<p>Calculate each result with units and a sign convention. Add a caption explaining why equal momentum is not a claim that all other motion quantities match. No practical pushing or collision activity should be included.</p>
+</div><h2>10. One surprising idea</h2>
+<p>One combined number can stay the same while its two input factors change. Momentum makes that trade-off explicit, but its arrow adds another layer: equal numerical magnitudes can still describe opposite vectors. Keeping inputs, units and direction together prevents a simple calculation from becoming a misleading summary.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Momentum is mass times velocity, with direction; compare the product and vector rather than assuming mass or speed alone determines it.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 17 of 30</footer>
+</div>
+</body>
+</html>

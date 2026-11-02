@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a nephron adjust the final volume of urine?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Initial filtration, selective recovery and secretion change the final remainder</text>
+<text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Glomerulus + capsule</text>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Tubule handling</text>
+<text x="830" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Remaining urine</text>
+<circle cx="170" cy="225" r="50" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M140 210 q30 -35 55 0 q-50 30 -5 40 q25 -20 0 -40" fill="none" stroke="#e6a23c" stroke-width="6"/>
+<line x1="220" y1="225" x2="350" y2="225" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M360 225 L620 225 L620 315 L360 315 L360 350 L760 350" fill="none" stroke="#1f5f8b" stroke-width="12"/>
+<line x1="785" y1="350" x2="900" y2="350" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="360" y1="170" x2="650" y2="170" stroke="#579b70" stroke-width="8"/>
+<line x1="450" y1="215" x2="450" y2="183" stroke="#579b70" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="550" y1="183" x2="550" y2="215" stroke="#e6a23c" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="170" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Initial filtrate enters tubule</text>
+<text x="500" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Up: recovery; down: secretion</text>
+<text x="830" y="395" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Fluid left after transport</text>
+<text x="500" y="440" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Blood-side route is green; filtrate route is blue.</text>
+<text x="500" y="470" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">More water recovered → less remaining fluid, other factors equal.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Final urine is not simply the initial filtrate; this is a schematic, not a test.</text>
+</svg>

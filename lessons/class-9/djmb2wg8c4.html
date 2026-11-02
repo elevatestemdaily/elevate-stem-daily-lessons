@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 51: How can simple distillation recover water from salty water? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 51</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can simple distillation recover water from salty water?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how <strong>simple distillation</strong> recovers water from an appropriate salt-water mixture. Identify vaporisation, a cooler condensing region and separate collection. Distinguish recovering the solvent from collecting salt crystals, and recognise why the method is not a universal drinking-water guarantee.</p>
+</div><h2>1. The mystery</h2>
+<p>Leaving salt water in an open dish can recover solid salt, but most of the water escapes into the surroundings. Suppose the goal is to collect the water instead. Its gas phase must be guided somewhere it can return to liquid and enter a separate receiver.</p>
+<p>This changes the apparatus and the target, even though water leaving the original mixture remains part of the story. A useful separator must account for where both components go.</p>
+<p>The question is how a phase-change route can be turned into controlled solvent recovery rather than uncontrolled loss.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Simple distillation</strong> separates material by vaporising a suitable liquid component and condensing the vapour into a different container. The collected liquid is called the <strong>distillate</strong>. The original vessel retains less volatile material as a residue or concentrated solution.</p>
+<p>In a basic salt-water model, water readily enters the vapour under the process conditions, while ordinary dissolved sodium chloride is much less volatile. Most salt therefore remains in the original vessel rather than accompanying the water as individual dissolved ions in the vapour.</p>
+<p>The vapour must reach a cooler region where it loses energy and <strong>condenses</strong>. A condenser provides surfaces and heat-transfer conditions that support this change. The recovered liquid is then guided into a separate receiver.</p>
+<p>The sequence is not a chemical transformation of salt into fresh water. Water was already present and is separated through different phase behaviour. The salt remains accounted for in the original side of the system.</p>
+<p>Apparatus design matters. Liquid droplets carried over mechanically can contaminate the distillate even if the dissolved salt itself is nonvolatile. Controlled operation and appropriate geometry help distinguish vapour transport from accidental splashing or spray.</p>
+<p>Other dissolved substances may be volatile. They can travel with the vapour or affect separation. Simple distillation is therefore not a universal method that removes every contaminant from every unknown water sample.</p>
+<p>Energy input and removal are both required in the process model. The source supplies energy for vaporisation, and the condensing region transfers energy away. A drawing containing only an upward vapour arrow leaves the recovery step unexplained.</p>
+<p>The lesson differs from petroleum fractionation, which sorts a complex mixture into several boiling-range streams, and from salt crystallisation, which targets the solid solute. Here the main engineering goal is collecting the solvent while retaining a suitable nonvolatile solute.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw three connected regions: original mixture, guided vapour path and separate receiver. Put water symbols on both sides of the phase-change route, but keep most salt symbols in the first region.</p>
+<p>Add energy-in and energy-out arrows at different places. The first helps produce vapour; the second helps recover liquid. This makes the thermal requirements visible without depicting a construction activity.</p>
+<p>Then add a second hypothetical volatile component. Trace how it could also enter the receiver. The limitation is now part of the same mechanism rather than a disconnected warning. A separator works according to material properties, not according to a label saying unwanted.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a salt-water vessel, a vapour pathway through a cooler condensing section and a distillate receiver. Salt symbols remain mainly in the original region, while water symbols follow the recovery path.</p>
+<p>Separate arrows show energy entering and leaving. A small possible droplet-carryover route identifies an apparatus-related contamination pathway. The drawing is schematic and not an instruction for assembling heated equipment.</p>
+<p>A caption states that other volatile substances can also pass. The diagram therefore explains the useful salt-water model without claiming every distillate is chemically pure or safe to drink.</p>
+<figure><img src="../../illustrations/class-9/day_51.svg" alt="Diagram for How can simple distillation recover water from salty water?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Solvent recovery is important in laboratories and industry. The chosen separation depends on the mixture and desired product. A familiar process name does not remove the need to understand what can travel through it.</p>
+<p>Water-treatment discussions may mention distillation, but an actual system requires suitable design, operation and quality checks. A school paper diagram is not a validated purifier or a source of drinking-water advice.</p>
+<p>Do not boil an unknown liquid, seal a heated container or build a home condenser for this lesson. Heat, pressure, glass and volatile substances create unnecessary risks when the intended mechanism can be learned safely on paper.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and two colours for water and salt. No heating or liquid sample is required.</p>
+<ol>
+<li>Draw the original vessel and separate receiver.</li>
+<li>Connect them with a vapour route and cooler section.</li>
+<li>Trace water through vaporisation and condensation.</li>
+<li>Keep salt mainly in the original side.</li>
+<li>Add a possible volatile impurity and see why it may also travel.</li>
+</ol>
+<p>Label the whole figure a separation model. The number of symbols is not a real purity measurement or recovery efficiency. Ask a partner to identify the product being collected and the energy-removal step that makes recovery possible.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why would an open evaporation dish fail to collect most of the escaping water even if it recovered salt successfully? Separate the desired product from the mere occurrence of a phase change.</p>
+<p>Now imagine the vapour path never becomes cool enough to condense effectively. Which stage of the process is incomplete? A correct starting vessel does not guarantee a useful liquid product if the downstream conditions are unsuitable.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the distillate?</p>
+<ul>
+<li>A. The heater itself</li>
+<li>B. The separately collected condensed liquid</li>
+<li>C. Only the original dry salt residue</li>
+</ul>
+<p><strong>Answer:</strong> B — Distillate is recovered after vapour condenses into the receiving stream.</p>
+<h3>Q2</h3>
+<p>Why does ordinary dissolved salt remain mainly in the original vessel?</p>
+<ul>
+<li>A. The receiver can reject every unwanted substance by name</li>
+<li>B. Salt must become a new element instantly</li>
+<li>C. It is much less volatile under the process conditions</li>
+</ul>
+<p><strong>Answer:</strong> C — Different volatility lets water enter the vapour while most sodium chloride stays behind.</p>
+<h3>Q3</h3>
+<p>An unknown mixture contains another volatile substance. What should you consider?</p>
+<ul>
+<li>A. It may also reach the distillate</li>
+<li>B. It must be completely removed in every case</li>
+<li>C. The mixture has no need for analysis</li>
+</ul>
+<p><strong>Answer:</strong> A — A volatile component can travel through the same vapour-and-condensation route.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Make a component-accounting diagram for water and a nonvolatile salt. Identify the original mixture, residue, vapour, condenser and distillate. Add both energy directions.</p>
+<p>Include one material-related and one apparatus-related reason the collected liquid may not be perfectly pure. Your work must remain a conceptual design rather than a home heating experiment or a claim that unknown water has been made drinkable.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A process can use the same initial phase change to pursue different goals. Open evaporation may target what remains; distillation targets what leaves and is recovered. Following the desired product through every stage explains why the second method needs more than simply heating the original mixture.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Simple distillation recovers a volatile solvent through vaporisation and separate condensation, while suitable nonvolatile solutes remain mainly behind and other limitations still require attention.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 21 of 30</footer>
+</div>
+</body>
+</html>

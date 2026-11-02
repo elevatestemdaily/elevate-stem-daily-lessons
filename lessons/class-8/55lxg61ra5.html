@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 31: How does drip irrigation deliver water where a crop needs it? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 31</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does drip irrigation deliver water where a crop needs it?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a drip-irrigation system delivers water near selected plants. Identify the supply, laterals and <strong>emitters</strong>. Distinguish the amount delivered from the pattern of wetting, and predict why a blockage or pressure difference can make apparently identical plants receive unequal water.</p>
+</div><h2>1. The mystery</h2>
+<p>In one field, water covers a large part of the surface. In another, thin tubes run beside the crop rows and release water at selected points. The second field may look dry between plants even while the soil near each plant receives water.</p>
+<p>Does a dry-looking path prove that the crop has not been irrigated? No. The useful question is where the water enters and whether the wetting pattern reaches the active root region.</p>
+<p>Drip irrigation changes the location and rate of delivery rather than simply making water disappear into an invisible system.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Drip irrigation</strong> supplies water through a network of pipes and small outlets called <strong>emitters</strong>. A main supply feeds smaller lines, often called laterals, positioned near rows or individual plants. Each emitter regulates a relatively small flow at its location.</p>
+<p>Delivering water locally can reduce the area wetted unnecessarily. Less water may be applied to paths or spaces without crop roots, depending on the layout. It can also reduce some losses associated with spreading water over a broad exposed surface.</p>
+<p>These are potential advantages, not a guarantee of one fixed percentage saving. Soil, crop spacing, climate, scheduling, equipment condition and the comparison method all matter. A system can still waste water if it runs too long or is badly positioned.</p>
+<p>The <strong>wetted zone</strong> around an emitter develops as water moves into and through the soil. Its width and depth depend on texture, structure, input rate and duration. Water does not necessarily form an identical spherical bubble around every outlet.</p>
+<p>A useful layout matches emitter placement to the plant's root distribution and growth stage. An outlet too far from active roots may wet a place the plant cannot use effectively. As the plant grows, the relevant root region and water demand can change.</p>
+<p>Delivery also depends on the hydraulic conditions in the pipe network. Differences in elevation, pressure and line length can change outlet flow. Some systems use pressure-compensating emitters, but no device should be assumed perfect under every operating condition.</p>
+<p><strong>Clogging</strong> is another important cause of uneven delivery. Suspended particles or deposits can restrict narrow emitter passages. A properly chosen filter and maintenance procedure help protect the system. This filtration stage supports the irrigation network; the lesson does not repeat mesh separation as its main mechanism.</p>
+<p>A schedule determines how much water is supplied over time. Flow rate multiplied by operating time gives volume in a simple steady-flow model. If an emitter delivers an invented 2 litres per hour for half an hour, the model volume is 1 litre. Those numbers illustrate arithmetic, not a recommended schedule for every crop.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a branching supply network ending in several small outlets. Put a plant beside each outlet and shade only the soil regions that receive water. Leave some path areas unshaded.</p>
+<p>Then block one outlet in the drawing. The network can still look intact while that plant receives little or no water. This shows why inspecting a pipe's presence is not enough to verify delivery.</p>
+<p>Finally write rate and time beside each outlet. The combination determines how much is supplied, while outlet position and soil properties influence where it goes. Keeping volume and wetting pattern separate makes the model more useful for diagnosing uneven growth.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a supply pipe, two laterals and several emitters beside plants. Blue regions indicate possible wetted root zones rather than a continuous flooded surface. One blocked outlet is shown as a comparison.</p>
+<p>A small rate-times-time panel uses explicitly invented values to connect operating time with delivered volume. Separate labels identify delivery location and quantity. The roots are schematic and not a claim that every crop has the same root form.</p>
+<p>The drawing focuses on controlled local application. It does not show deep groundwater recharge, a full irrigation engineering design or the correct watering schedule for a particular farm.</p>
+<figure><img src="../../illustrations/class-8/day_31.svg" alt="Diagram for How does drip irrigation deliver water where a crop needs it?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Drip systems are used for various crops and gardens in India. Row spacing and plant placement make the layout especially important. An orchard tree and a closely spaced vegetable crop need not use the same emitter pattern.</p>
+<p>A school garden can use the idea of placing water near roots without claiming that every small homemade dripper reproduces a farm system. Real equipment must handle supply conditions, filtration and maintenance reliably.</p>
+<p>Farm water management also includes soil condition, weather and crop needs. Installing tubes alone does not establish good irrigation. The system's value comes from matching delivery and scheduling to the actual growing conditions.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a ruler. No tubes, sharp tools or electrical pumps are needed.</p>
+<ol>
+<li>Draw two rows of four plants with a path between them.</li>
+<li>Add a main supply and laterals beside the rows.</li>
+<li>Put emitters near the proposed root zones.</li>
+<li>Shade the wetted regions and leave unnecessary path wetting unshaded.</li>
+<li>Cross out one emitter and identify which observations would reveal the fault.</li>
+</ol>
+<p>Add an example rate and duration only if you label them invented. Do not treat the calculation as watering advice. The design exercise tests placement and delivery logic rather than measuring soil moisture or proving a water-saving percentage.</p>
+</div><h2>7. Think deeper</h2>
+<p>Two emitters release equal volumes, but one is near the plant's active roots and the other is far away. Why can the plants benefit differently?</p>
+<p>Now imagine an emitter supplying water faster than the surface can absorb it. Describe a possible runoff or ponding problem. A locally placed outlet is useful only when its rate, position and operating time suit the soil and crop.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which part releases water at a selected location in a drip system?</p>
+<ul>
+<li>A. An emitter</li>
+<li>B. A leaf vein</li>
+<li>C. A crystal nucleus</li>
+</ul>
+<p><strong>Answer:</strong> A — Emitters provide controlled outlets from the irrigation network.</p>
+<h3>Q2</h3>
+<p>Why can local delivery reduce unnecessary watering?</p>
+<ul>
+<li>A. It stops every plant using water</li>
+<li>B. It can avoid wetting unneeded areas</li>
+<li>C. It creates water inside the roots</li>
+</ul>
+<p><strong>Answer:</strong> B — Suitable placement supplies root regions while leaving some paths unwetted.</p>
+<h3>Q3</h3>
+<p>An invented emitter supplies 2 litres per hour for half an hour. What volume is delivered?</p>
+<ul>
+<li>A. 4 litres</li>
+<li>B. 2 litres</li>
+<li>C. 1 litre</li>
+</ul>
+<p><strong>Answer:</strong> C — Volume equals rate multiplied by time: 2 times one-half gives 1 litre.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create an irrigation layout for a small rectangular vegetable bed. Include the supply, laterals, outlet positions and a simple inspection plan. Name two reasons one plant might receive less water than another even when both have a tube nearby.</p>
+<p>Your proposal must distinguish reducing unnecessary wetted area from guaranteeing a particular total saving. State what you would need to measure before making a numerical comparison with another watering method.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A patch of dry soil between rows can be compatible with effective irrigation. The important target is not making the entire surface look equally wet. It is delivering an appropriate amount to the region the crop can use, while monitoring how the water actually spreads.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Drip irrigation controls where and how quickly water is delivered; useful performance depends on root-zone placement, scheduling and working emitters together.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 1 of 30</footer>
+</div>
+</body>
+</html>

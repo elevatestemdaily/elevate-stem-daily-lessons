@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 41: Why does warm water rise above cooler water? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 41</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does warm water rise above cooler water?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how heating one part of a liquid can produce a circulating flow. Trace both the upward and return paths of a <strong>convection current</strong>. Identify when the model applies and why putting warmer water above cooler water can produce a different arrangement.</p>
+</div><h2>1. The mystery</h2>
+<p>Imagine a transparent tank of water warmed gently from below. Water near the heated region may rise, while other water moves down to replace it. A small coloured marker can reveal a looping path rather than a single upward journey.</p>
+<p>Now imagine the warmer water already sitting on top. It may remain layered for a while instead of mixing by the same strong circulation. The ingredients are still water and heat. What changed is the position of the warm region relative to the cool region.</p>
+<p>Understanding that arrangement is more useful than memorising “hot water always goes up.”</p>
+<h2>2. The science behind it</h2>
+<p><strong>Convection</strong> is the transport of energy through the bulk movement of a fluid. A fluid can be a liquid or a gas. Here the fluid is water, and the important feature is that parcels of water move from one region to another.</p>
+<p>For water at ordinary room temperature and above, warming generally makes a given mass occupy a slightly larger volume. Its <strong>density</strong>, mass per unit volume, becomes lower than that of nearby cooler water. This comparison concerns the same substance at different temperatures.</p>
+<p>If the warmer, less dense water is below cooler, denser water, the arrangement can become unstable. The warmer water tends to rise through its surroundings. Cooler water moves downward and inward to replace the water that left the heated region.</p>
+<p>The return route matters. A container does not create an empty hole at the bottom when water rises. A complete <strong>convection current</strong> includes rising flow, sideways movement, sinking flow and a return toward the heated area. Actual currents may be irregular rather than perfect circles.</p>
+<p>As moving water reaches cooler regions, it can transfer energy to its surroundings. Temperature differences change, and the flow pattern adjusts. Continued heating from below can maintain circulation if the temperature differences remain sufficient.</p>
+<p>This is different from energy moving through a stationary metal spoon. In conduction, material need not travel along the whole transfer route. In convection, the moving water itself carries energy between regions. Both processes can occur in the same container, but they are not the same mechanism.</p>
+<p>If warmer water is above cooler water, the density arrangement is more stable. Strong overturning is less easily produced by that arrangement alone. Energy can still transfer by other routes, and disturbances can still mix the liquid. “No vigorous convection” does not mean “no energy transfer.”</p>
+<p>Water has an important exception near freezing: its density does not follow the same simple warming rule throughout the entire temperature range. This lesson considers water comfortably above that region. We do not use the model to explain ice floating, a topic already covered earlier.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a rectangular tank with a warm patch beneath one side. Put an upward arrow above that patch, a sideways arrow across the top, a downward arrow at the other side and a return arrow along the bottom.</p>
+<p>Mark a small parcel and follow it around the loop. Its temperature need not remain fixed throughout the route. It receives energy near the warm patch and can lose energy elsewhere.</p>
+<p>Then erase the bottom heater and put a warm layer at the top. Ask which part of the first explanation no longer fits. The lower water is no longer made less dense than the water above it, so the same overturning argument does not apply.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows two tanks. In the first, a warm region at the lower left produces an upward arrow and a complete return loop. A blue region at the opposite side marks relatively cooler sinking water.</p>
+<p>The second tank has warmer water above cooler water. A divider-like colour boundary represents the more stable layering; it is not a physical wall. Labels explain why the two temperature arrangements have different tendencies to overturn.</p>
+<p>The arrows are a simplified model of bulk flow. Their widths do not represent measured speeds, and the picture does not imply that every real tank produces one tidy circular current.</p>
+<figure><img src="../../illustrations/class-7/day_41.svg" alt="Diagram for Why does warm water rise above cooler water?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Water in cooking vessels can circulate as different parts receive energy. This helps distribute heat, although thick foods may resist flow and need stirring. This is a connection to the mechanism, not an instruction to experiment beside a stove.</p>
+<p>A room with warm air entering near the floor can develop circulation too. Air is a different fluid, but moving parcels again transport energy. Real rooms also contain furniture, openings and fans that alter the pattern.</p>
+<p>A water-storage tank can sometimes develop layers with different temperatures. Its shape, incoming water and disturbances influence whether layers persist. Heating does not guarantee immediate uniform temperature everywhere in the tank.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, coloured pencils and four arrow-shaped scraps torn from paper. No hot-water experiment is required.</p>
+<ol>
+<li>Draw a tank and colour a small warm region at the bottom left.</li>
+<li>Arrange the four arrows into a complete circulating route.</li>
+<li>Label where a parcel receives energy and where cooler water returns.</li>
+<li>Draw a second tank with the warm region at the top.</li>
+<li>Decide which arrow arrangement needs changing, and explain why.</li>
+</ol>
+<p>Ask another person to trace a single parcel without jumping across a gap. If your model has only an upward arrow, add the missing return pathway. The activity checks a flow explanation safely rather than trying to produce a visible current in a small kitchen container.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose a fan or pump forces water to move through a tank. The fluid can carry energy even if warming did not initiate its movement. This is called forced rather than naturally driven convection.</p>
+<p>Now imagine a very thick paste heated at the bottom. Why might the warm region remain more local than it would in freely flowing water? Use resistance to bulk movement in your explanation, without assuming that energy transfer has stopped altogether.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What moves energy during convection?</p>
+<ul>
+<li>A. An empty region without matter</li>
+<li>B. A solid handle flowing upward</li>
+<li>C. Bulk movement of a fluid</li>
+</ul>
+<p><strong>Answer:</strong> C — Moving parcels of liquid or gas carry energy between regions.</p>
+<h3>Q2</h3>
+<p>Why must other water replace water rising from the bottom?</p>
+<ul>
+<li>A. Rising water stops occupying space</li>
+<li>B. The fluid must fill the region left behind</li>
+<li>C. The bottom creates new water</li>
+</ul>
+<p><strong>Answer:</strong> B — A continuing circulation needs a return flow rather than an empty gap.</p>
+<h3>Q3</h3>
+<p>Warm water is placed above cooler water. What is likely without stirring?</p>
+<ul>
+<li>A. The layering can be relatively stable</li>
+<li>B. All energy transfer must stop</li>
+<li>C. The same strong overturning is guaranteed</li>
+</ul>
+<p><strong>Answer:</strong> A — The less dense upper water is not being driven upward through denser water above it.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design two diagrams for a younger student: one showing a complete natural convection loop and one showing a stable warm-over-cool arrangement. Use the same tank shape and the same total amount of water.</p>
+<p>Explain the changed initial arrangement rather than merely drawing different arrows. Include one sentence about why a tank cannot keep sending water upward without some other water replacing it from elsewhere.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A warm parcel does not carry a permanent label saying “up.” Its motion depends on its density relative to nearby fluid and on the surrounding flow. Moving it to a different environment can change the result. This is why the comparison between neighbouring regions matters more than the word warm alone.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Warming from below can drive a complete convection loop: warmer water rises while cooler water returns to replace it.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 11 of 30</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 31: Why does a persistent pesticide build up more in some predators? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 31</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a persistent pesticide build up more in some predators?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why some persistent substances can increase in concentration across feeding levels. Distinguish <strong>bioaccumulation</strong> within an organism from <strong>biomagnification</strong> across a food chain. Track uptake, elimination and body-mass basis without assuming that every pesticide or every predator follows the same pattern.</p>
+</div><h2>1. The mystery</h2>
+<p>A contaminant occurs at a low concentration in small prey, yet a predator can have a higher concentration in its tissues. The predator did not manufacture the chemical by becoming larger or moving upward in a diagram.</p>
+<p>It consumed material containing the substance and may have eliminated or transformed it slowly. Repeated intake can therefore lead to retained contamination, with consequences for the concentration per unit body mass.</p>
+<p>The useful question is how the chemical moves and persists, not just which organism eats which. That makes this lesson different from a general food-chain explanation.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Persistence</strong> means a substance resists breakdown under relevant environmental conditions. A persistent material can remain available for exposure longer than one that is rapidly transformed, though persistence depends on conditions and chemical properties.</p>
+<p><strong>Bioaccumulation</strong> occurs when uptake from food and the environment exceeds removal sufficiently for a substance to build up within an organism. The balance includes elimination, metabolism, growth and changes in exposure.</p>
+<p>Some persistent substances associate with tissues such as body fat and are not readily eliminated. That can make them available for transfer when the organism is eaten. These properties differ between chemicals, so the word pesticide alone does not predict the outcome.</p>
+<p><strong>Biomagnification</strong> refers to increasing concentration at successive feeding levels in an appropriate food-chain comparison. It is a pattern across organisms, not merely an increase in one individual's body over time.</p>
+<p>A predator consumes many prey during its life. If the contaminant is retained while much of the food's other material is processed, used or lost, the predator's tissue concentration can rise relative to prey. No new contaminant mass needs to be created.</p>
+<p><strong>Concentration</strong> must use a defined basis, such as contaminant mass per tissue mass. Comparing total contaminant in a large animal with total in a tiny prey is not by itself a biomagnification test. The denominator and sampled tissue matter.</p>
+<p>Not all persistent chemicals biomagnify equally, and not every feeding comparison shows an increase. Metabolism, elimination, growth, diet and chemical properties can alter the pattern. A diagram should therefore show a conditional mechanism rather than a universal law for all pollutants.</p>
+<p>DDT-related substances and certain other persistent organic pollutants are familiar historical examples in environmental education. This lesson does not state current Indian pesticide rules, provide food-consumption advice or assign an unsupported concentration to any real fish or bird.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw contaminant tokens entering one organism repeatedly and smaller token flows leaving it. If intake exceeds removal over the model interval, retained tokens increase. That is the within-organism accumulation idea.</p>
+<p>Next connect several feeding levels and compare tokens per equal model tissue unit, not total tokens per differently sized animal. The normalised comparison is what makes the concentration pattern interpretable.</p>
+<p>Add a chemical that is rapidly removed in a counterexample. Its pattern can differ even in the same feeding network. The model shows why chemical behaviour belongs alongside ecology rather than treating a higher trophic position as a machine that automatically multiplies every substance.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a simple feeding sequence with persistent-contaminant symbols transferred along it. Separate uptake and elimination arrows accompany an individual predator panel.</p>
+<p>The concentration markers use a common illustrative tissue basis, with no real numerical pesticide values. A caption distinguishes bioaccumulation from biomagnification and notes that the pattern is conditional.</p>
+<p>The graphic is not a measured ecosystem survey or a current food warning. It also does not repeat a fixed energy-transfer percentage, because contaminant retention and energy flow are different quantities with different accounting.</p>
+<figure><img src="../../illustrations/class-10/day_31.svg" alt="Diagram for Why does a persistent pesticide build up more in some predators?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Environmental investigations can examine water, sediment and tissues to understand contaminant movement. Different sampling media answer different questions, and one water reading alone may not describe a long-lived organism's exposure history.</p>
+<p>In India, students may encounter historical examples in textbooks or reports. A lesson should keep the documented example separate from a claim about a currently sold product or a specific local fishery.</p>
+<p>Do not collect wildlife tissue, sample polluted water or alter eating habits based on a classroom diagram. Actual exposure and food decisions require relevant current evidence and authoritative guidance, beyond this mechanism model.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and small drawn contaminant symbols. No chemical or biological sample is needed.</p>
+<ol>
+<li>Draw an organism with uptake and removal arrows.</li>
+<li>Add repeated input and mark possible retention.</li>
+<li>Draw three feeding levels.</li>
+<li>Compare symbols per equal model tissue unit at each level.</li>
+<li>Add a fast-removal counterexample and explain the changed pattern.</li>
+</ol>
+<p>Label the symbols illustrative, not measured concentrations. Do not claim the token count represents a real ecosystem. The exercise tests mass tracking and denominator choice while separating individual accumulation from a cross-level comparison.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a large predator contain more total contaminant without necessarily having a higher concentration than a small prey? State the missing normalisation.</p>
+<p>Now imagine the predator rapidly transforms the chemical into products that are eliminated. How could that affect the expected pattern? A complete mechanism includes removal pathways, not only the dramatic input arrows.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does bioaccumulation describe?</p>
+<ul>
+<li>A. Build-up within an organism when uptake exceeds removal</li>
+<li>B. Only an animal moving to a higher branch</li>
+<li>C. A guarantee that every pesticide behaves identically</li>
+</ul>
+<p><strong>Answer:</strong> A — Bioaccumulation tracks retention within the organism over relevant conditions and time.</p>
+<h3>Q2</h3>
+<p>Why can some contaminants become more concentrated in predators?</p>
+<ul>
+<li>A. Predators create the chemical from nothing</li>
+<li>B. Repeated intake can be retained while other material is lost</li>
+<li>C. All chemicals are eliminated at the same rate</li>
+</ul>
+<p><strong>Answer:</strong> B — Chemical persistence and limited removal can support concentration increases across feeding levels.</p>
+<h3>Q3</h3>
+<p>A larger animal has more total contaminant. What is still needed to assess biomagnification?</p>
+<ul>
+<li>A. Only its colour</li>
+<li>B. A claim that body size never matters</li>
+<li>C. Comparable concentration per defined tissue mass</li>
+</ul>
+<p><strong>Answer:</strong> C — Total amounts alone do not normalise for different organism sizes and sampled tissues.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a comparison chart for bioaccumulation and biomagnification. Include the level of comparison, uptake and removal, and the concentration basis.</p>
+<p>Add one case where the upward-chain pattern would be weaker or absent. Your explanation must not claim that all pesticides behave identically or invent numerical contamination levels for actual species. Keep a clear boundary between a mechanism diagram and an exposure assessment.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Material and energy do not have to follow the same pattern through a feeding network. A retained chemical can become more concentrated while much of the prey's other material and usable energy follows different routes. Following the particular substance is essential; a general arrow labelled food leaves too much unspecified.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Some persistent chemicals can accumulate when uptake exceeds removal and biomagnify across feeding levels, but the pattern depends on chemistry, biology and a consistent concentration basis.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 1 of 30</footer>
+</div>
+</body>
+</html>

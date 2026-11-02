@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 50: How can a distance–time graph reveal a stop? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 50</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a distance–time graph reveal a stop?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Read a simple <strong>distance–time graph</strong> for travel along a route. Explain why a horizontal segment represents no additional distance during an interval. Use axes, units and slopes carefully, and distinguish a distance travelled graph from a map of the route.</p>
+</div><h2>1. The mystery</h2>
+<p>A line on a graph rises, becomes flat, then rises again. A student says the flat part means the traveller moved along a flat road. Another says it means time stopped. Both have mistaken the meaning of the axes.</p>
+<p>The graph is not a drawing of the landscape. One axis records elapsed time, and the other records total distance travelled. Once those meanings are fixed, the flat part becomes a useful clue about what the traveller did during that interval.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>graph</strong> connects pairs of measurements. On this distance–time graph, the horizontal axis represents elapsed time and the vertical axis represents cumulative distance travelled along the route. Every plotted point links a time with the distance accumulated by then.</p>
+<p>Imagine an invented walk: at zero minutes the total distance is zero metres; at two minutes it is 100 metres; at four minutes it is still 100 metres; at six minutes it is 200 metres. The numbers are a teaching example rather than measured information about a real person.</p>
+<p>Between two and four minutes, time increases but cumulative distance does not. On this graph, that interval is <strong>horizontal</strong>. It represents a stop, or at least no additional measured distance within the resolution of the data.</p>
+<p>The steepness of a rising segment connects distance change with time change. In this example, 100 metres added during two minutes gives an average speed of 50 metres per minute. This is a slope calculation, not the area calculation used with a speed–time graph.</p>
+<p>A steeper segment on the same axes means more distance accumulated per unit time. But graphs with different scales cannot be compared by visual steepness alone. A line drawn at a large angle on one page may represent the same numerical speed as a shallower line on another scale.</p>
+<p>A straight rising segment represents constant speed in the simplified model between plotted points. Real motion may vary within a measurement interval. Joining sparse points with a straight line is an assumption, not proof that every instant had identical speed.</p>
+<p>Because the vertical axis here is <strong>cumulative distance travelled</strong>, it does not decrease when a traveller turns around. Returning along a route adds more distance. A position-from-start graph is a different kind of graph and can decrease as someone returns. Always read the axis label before interpreting a line.</p>
+<p>A vertical segment would suggest distance changing while no time passes. That is not a realistic description of an ordinary walk. If such a segment appears, inspect the data, plotting method or axis interpretation rather than accepting instantaneous travel.</p>
+<h2>3. Build the mental model</h2>
+<p>Use a notebook table beside the graph. Read each row as “At this elapsed time, the distance counter showed this total.” Imagine an odometer rather than a bird's-eye view of the path.</p>
+<p>Move a finger to the right along the flat segment. Time is passing, but the distance-counter reading stays unchanged. Then move along a rising segment and describe both quantities changing together.</p>
+<p>Finally draw the actual route as a separate map. It could be curved or level while the distance graph remains a straight rising line. Keeping the map separate prevents the shape of the graph from being mistaken for hills, bends or road height.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG plots the invented points at zero, two, four and six minutes against zero, 100, 100 and 200 metres. Axes carry explicit units and the vertical label states cumulative distance.</p>
+<p>The horizontal interval is highlighted as a stop. Rising intervals are shown with different colour emphasis so their changes can be followed. A separate small route sketch reinforces that the graph is not the physical shape of the road.</p>
+<p>The plotted values are instructional examples. They do not establish a typical walking speed, and straight connecting segments should be read as a simplified model between observations.</p>
+<figure><img src="../../illustrations/class-7/day_50.svg" alt="Diagram for How can a distance–time graph reveal a stop?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A school walk may include a pause at a gate. A graph of total distance can record that pause even if the route looks unchanged on a map. Travel logs therefore describe timing information that a route map alone does not contain.</p>
+<p>Transport tracking applications may display position, speed or distance using different graph types. The same-looking flat line can mean different things depending on which quantity is plotted. Reading a title and axis label is part of using the information responsibly.</p>
+<p>A train waiting at a platform adds elapsed time without adding distance. A cumulative-distance graph shows a horizontal segment during the wait, regardless of whether the platform itself is level or sloping.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use squared paper, a ruler and a pencil. No outdoor movement or phone tracking is needed.</p>
+<ol>
+<li>Make a table using the invented time–distance pairs from the lesson.</li>
+<li>Draw time horizontally and cumulative distance vertically.</li>
+<li>Choose equal intervals on each axis and write the units.</li>
+<li>Plot the points and join adjacent ones with straight segments.</li>
+<li>Circle the interval with no added distance and label its duration.</li>
+</ol>
+<p>Explain why the horizontal segment lasts two minutes even though its vertical change is zero. Your drawing is an interpretation of example data, not a measurement of an actual walk. Do not add extra decimal places or claim details between the observations that the table does not provide.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose the traveller walks back toward the starting point after the final observation. What happens to cumulative distance? What might happen instead on a graph of position along a straight route measured from the start?</p>
+<p>Use different axis labels for the two drawings. This comparison shows why a correct explanation cannot be built from line shape alone; the represented quantity must come first.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a horizontal interval show on a cumulative distance–time graph?</p>
+<ul>
+<li>A. A road with no hills anywhere</li>
+<li>B. Time no longer passing</li>
+<li>C. No additional distance during that time</li>
+</ul>
+<p><strong>Answer:</strong> C — Elapsed time increases while the cumulative distance remains unchanged.</p>
+<h3>Q2</h3>
+<p>Why is a distance–time graph not a route map?</p>
+<ul>
+<li>A. Its axes show quantities rather than road shape</li>
+<li>B. Every journey must be a straight road</li>
+<li>C. It cannot contain any numbers</li>
+</ul>
+<p><strong>Answer:</strong> A — The graph relates elapsed time to distance rather than drawing the physical route.</p>
+<h3>Q3</h3>
+<p>A traveller turns back. What happens to cumulative distance while moving?</p>
+<ul>
+<li>A. It must return to zero instantly</li>
+<li>B. It continues to increase</li>
+<li>C. It must become negative immediately</li>
+</ul>
+<p><strong>Answer:</strong> B — Travel in either direction adds to the total length of the path travelled.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Invent a four-stage journey containing steady travel, a stop and a later faster segment. Give a table with units and draw a matching cumulative-distance graph.</p>
+<p>Ask a friend to identify the stop without showing the story first. Then show a separate route map and explain why its bends or slopes need not resemble the graph. State that straight segments are your chosen simplified model of the intervals.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A flat line can show an important event rather than missing information. On this graph it records time passing while distance stays unchanged. The absence of vertical change becomes meaningful only because the axes establish what should change during movement.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>On a cumulative distance–time graph, a horizontal interval shows time passing without additional distance; the graph's shape is not the road's shape.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 20 of 30</footer>
+</div>
+</body>
+</html>

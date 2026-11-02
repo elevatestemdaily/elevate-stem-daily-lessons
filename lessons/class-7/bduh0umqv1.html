@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 55: How does a U-shaped drain trap block sewer gases? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 55</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a U-shaped drain trap block sewer gases?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a U-shaped pipe can retain a <strong>water seal</strong> between a room and a drain. Distinguish a barrier to gas passage from a filter or a device that destroys gases. Identify why a dry trap can fail and why real drain maintenance belongs to an adult or professional.</p>
+</div><h2>1. The mystery</h2>
+<p>Water runs into a sink and leaves through the drain, yet some water intentionally remains in a bend below it. That retained water might look like an obstruction. In fact, it has an important job: it interrupts an open gas route from the drainage system into the room.</p>
+<p>Why does the bend stay partly filled after draining? How can more wastewater pass through while a seal remains afterwards? The answer comes from the pipe's shape and the level of its outlet rather than from a chemical that destroys odour molecules.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>trap</strong> is a shaped section of drain designed to retain liquid. A common arrangement includes a U-like bend with a rising outlet. After water flows through, the outlet level prevents the bend from simply emptying completely under ordinary conditions.</p>
+<p>The retained liquid creates a <strong>water seal</strong>. There is no continuous open-air path from one side of the bend to the other. Gas would need to displace or pass through the water rather than travel freely along an empty pipe.</p>
+<p>The trap is therefore a barrier, not a fine-particle filter. A mesh retains suspended pieces according to its openings. A water seal instead blocks an otherwise open gas route. Confusing those functions can lead to the wrong explanation of why a sink has both a strainer and a trap.</p>
+<p>When new water enters, it raises the water level and pushes liquid over the outlet side. After the inflow stops, a suitable amount remains in the low bend. The system can pass wastewater and still restore the liquid barrier afterwards.</p>
+<p>A seal is not invincible. If an unused drain loses enough water through <strong>evaporation</strong>, the bend can become partly or fully dry. A continuous air path may then reappear. That is one reason an unused fitting can behave differently from one regularly supplied with water.</p>
+<p>Pressure changes in a poorly functioning drainage system can also disturb a seal. A properly designed system includes appropriate pipe arrangements and ventilation to help manage those effects. The precise design depends on plumbing standards and the installation; this lesson is a conceptual model, not construction guidance.</p>
+<p>A trap does not guarantee that every smell originates beyond it or that every drainage problem is solved by adding water. Leaks, blockages, biofilms and other faults can require inspection. An odour is a reason to inform an adult, not an invitation to dismantle a pipe or sniff a drain.</p>
+<p>Nor does the water chemically neutralise every gas. The main mechanism is geometric and physical: retained liquid breaks the open pathway. The drain's other parts must still manage waste flow safely, and a water seal does not make sewage or trapped water clean.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a tube that goes down, bends and rises to an outlet. Add water until the bottom bend is covered across its width. Trace a line through the air from the drain side. Stop where the line meets the water.</p>
+<p>Now draw the same tube empty. The air line can continue through the bend and out the other side. The difference is the liquid barrier, not the mere existence of a curved pipe.</p>
+<p>Finally add an inflow arrow and a matching outflow arrow above the outlet level. Keep a water-filled lower region after the flow ends. This shows how passing water and retaining a seal can happen in the same device.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares a water-filled trap with a dry trap. The filled bend has a continuous blue region across the low pipe section. A gas-path arrow stops at that region.</p>
+<p>The dry version has an uninterrupted air route through the same pipe shape. Labels identify the inlet, outlet and retained water. A small flow arrow illustrates how incoming water can displace water over the outlet while leaving a seal after flow stops.</p>
+<p>The diagram is not a specification for dimensions or fitting positions. It isolates the water-seal principle and leaves actual installation and ventilation requirements to qualified guidance.</p>
+<figure><img src="../../illustrations/class-7/day_55.svg" alt="Diagram for How does a U-shaped drain trap block sewer gases?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Washbasins, sinks and other sanitary fittings can use traps to separate indoor air from drainage routes. Their exact form may differ, but the retained-liquid principle is useful for understanding their purpose.</p>
+<p>In a school washroom, a drain left unused over a long holiday may need adult attention before normal use resumes. The lesson suggests a possible mechanism to investigate, not a diagnosis of every odour or an instruction to pour arbitrary chemicals into a fitting.</p>
+<p>A kitchen sink strainer and the trap below it solve different problems. One catches larger solids before they enter the pipe; the other maintains a gas barrier. Recognising these functions helps explain why one cannot simply replace the other.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a blue pencil and a second colour for air paths. Do not touch plumbing, drain covers or wastewater.</p>
+<ol>
+<li>Draw a U-shaped tube with a rising outlet.</li>
+<li>Colour a continuous water region across the lower bend.</li>
+<li>Try to trace an air path through the tube without crossing water.</li>
+<li>Draw the same tube dry and repeat the air-path trace.</li>
+<li>Add an arrow for new water entering and explain how some water can leave while a lower seal remains.</li>
+</ol>
+<p>The paper model does not measure the pressure needed to disturb a real seal. Its purpose is to identify whether a continuous open-air route exists. Keep the model clean and conceptual rather than trying to reproduce sewage conditions at home.</p>
+</div><h2>7. Think deeper</h2>
+<p>Would an empty U-shaped pipe still provide the same barrier? Explain why shape is necessary for retaining water but not sufficient if the liquid is absent.</p>
+<p>Now imagine a fitting used regularly and another left unused for months. What variable could change in the second? Identify evaporation as one possibility while leaving room for other installation faults that cannot be diagnosed from the calendar alone.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is the main role of a water seal in a drain trap?</p>
+<ul>
+<li>A. Interrupting an open gas pathway</li>
+<li>B. Making sewage safe to drink</li>
+<li>C. Grinding food into smaller particles</li>
+</ul>
+<p><strong>Answer:</strong> A — Retained water blocks the continuous air route through the drain.</p>
+<h3>Q2</h3>
+<p>Why does some water remain after flow stops?</p>
+<ul>
+<li>A. The pipe changes water into metal</li>
+<li>B. The bend and outlet level retain it</li>
+<li>C. A mesh must hold every water molecule</li>
+</ul>
+<p><strong>Answer:</strong> B — The low bend below the outlet can retain enough liquid to maintain the seal.</p>
+<h3>Q3</h3>
+<p>A trap loses enough water during long disuse. What may happen?</p>
+<ul>
+<li>A. Its pipe must become a different element</li>
+<li>B. Its barrier becomes infinitely stronger</li>
+<li>C. An open air pathway can reappear</li>
+</ul>
+<p><strong>Answer:</strong> C — Without enough retained water, gas can again have a continuous route through the bend.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Make a two-panel explanation for a school maintenance notice: “Seal present” and “Seal absent.” Mark the water, outlet level and possible air pathway in each panel.</p>
+<p>Include an instruction to report odours or drainage problems to a responsible adult. Do not recommend taking pipes apart, mixing cleaning chemicals or handling trapped water. The notice should explain the mechanism while keeping diagnosis and repair in appropriate hands.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Leaving some water behind can be the intended successful outcome of a drain design. A completely empty pipe is not always better. The small retained amount performs a useful barrier function, showing how engineering can depend on controlling where a material remains rather than removing every last drop.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A U-shaped trap retains water that interrupts an open gas pathway; a dry bend has the same shape but can lose that barrier.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 25 of 30</footer>
+</div>
+</body>
+</html>

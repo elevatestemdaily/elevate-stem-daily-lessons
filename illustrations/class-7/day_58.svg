@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why is air a mixture while pure water is a compound?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Classify the molecule, the substance and the whole sample carefully</text>
+<text x="170" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Air: mixture</text>
+<rect x="40" y="165" width="260" height="190" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Pure water: compound</text>
+<rect x="370" y="165" width="260" height="190" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="830" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Water + another component</text>
+<rect x="700" y="165" width="260" height="190" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="90" cy="205" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="130" cy="205" r="10" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="205" cy="280" r="11" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="235" cy="280" r="11" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="130" cy="310" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="235" cy="205" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="450" cy="210" r="15" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="428" cy="232" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="472" cy="232" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="545" cy="285" r="15" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="523" cy="307" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="567" cy="307" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="775" cy="210" r="15" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="753" cy="232" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="797" cy="232" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="865" cy="285" r="15" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="843" cy="307" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="887" cy="307" r="9" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="760" y="310" width="11" height="11" rx="0" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="885" y="205" width="11" height="11" rx="0" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="815" y="270" width="11" height="11" rx="0" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<text x="170" y="400" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Proportions can vary</text>
+<text x="500" y="400" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Each group represents H2O</text>
+<text x="830" y="400" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Mixture containing water</text>
+<text x="500" y="451" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Symbol counts are illustrative, not atmospheric percentages.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Uniform appearance alone does not establish chemical purity.</text>
+</svg>

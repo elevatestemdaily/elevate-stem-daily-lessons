@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a formula unit help calculate the mass of a salt</text>
+<text x="500" y="70" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">sample?</text>
+<text x="500" y="98" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Keep particle-scale mass, molar mass and sample mass in distinct units</text>
+<text x="245" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Extended NaCl composition</text>
+<text x="745" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Rounded-value calculation</text>
+<circle cx="110" cy="190" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="175" cy="190" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="240" cy="190" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="305" cy="190" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="370" cy="190" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="110" cy="240" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="175" cy="240" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="240" cy="240" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="305" cy="240" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="370" cy="240" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="110" cy="290" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="175" cy="290" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="240" cy="290" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="305" cy="290" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="370" cy="290" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="110" cy="340" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="175" cy="340" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="240" cy="340" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="305" cy="340" r="12" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="370" cy="340" r="12" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="150" y1="180" x2="150" y2="215" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="150" y1="215" x2="205" y2="215" stroke="#1f5f8b" stroke-width="2"/>
+<text x="745" y="205" text-anchor="middle" font-family="Arial" font-size="17" font-weight="400" fill="#1f5f8b">22.99 + 35.45 = 58.44 u</text>
+<text x="745" y="260" text-anchor="middle" font-family="Arial" font-size="17" font-weight="400" fill="#1f5f8b">Molar mass ≈ 58.44 g/mol</text>
+<text x="745" y="315" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">0.5 mol → 29.22 g in the model</text>
+<text x="245" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Formula unit: one-to-one ionic ratio</text>
+<text x="500" y="459" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">An ionic crystal is not a collection of separate NaCl molecules.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">State composition and purity assumptions before converting a real sample.</text>
+</svg>

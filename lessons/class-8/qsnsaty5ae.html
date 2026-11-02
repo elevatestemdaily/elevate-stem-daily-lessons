@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 35: Why does a pointed pin press into cardboard more easily? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 35</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why does a pointed pin press into cardboard more easily?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why the same applied force can have different effects when spread over different contact areas. Define <strong>pressure</strong> for a solid contact and distinguish it from total force. Use a pointed-pin question to understand the principle without handling a sharp tool.</p>
+</div><h2>1. The mystery</h2>
+<p>A pointed pin can enter cardboard more easily than the broad end of a similar object. The point does not necessarily deliver a larger total push. It concentrates the push over a smaller region.</p>
+<p>At the opposite extreme, a broad support can help spread a load so it causes less local indentation. These examples appear different, but both connect total force with contact area.</p>
+<p>The useful question is how much force acts per unit area at the contact, not simply whether an object is heavy or whether someone is pushing hard.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Pressure</strong> is force acting normally on a surface divided by the contact area over which it is distributed. In a simplified uniform contact model, <strong>P = F/A</strong>. The SI unit is the <strong>pascal</strong>, equal to one newton per square metre.</p>
+<p>If the same force is distributed over a smaller area, the average pressure is greater. If the area is larger, average pressure is smaller. This comparison requires keeping the force the same; changing force and area together needs a separate calculation.</p>
+<p>A pin point begins with a very small contact region. The material beneath it experiences a concentrated load and can deform or fail locally. Once the pin enters, the shape of the contact changes, so the initial simple pressure calculation is not a complete model of the whole process.</p>
+<p>A broad end distributes the load over more material. Under otherwise comparable conditions, it may cause less local indentation. The result also depends on the stiffness, strength and structure of the cardboard or other surface.</p>
+<p>This is why pressure alone cannot predict every outcome. A narrow soft object can bend instead of piercing, and a strong surface can resist a load that would indent a weak one. Contact geometry and material behaviour work together.</p>
+<p>Consider an invented comparison: the same push is spread over areas of one and ten square centimetres. The smaller area has ten times the average pressure. No conversion is needed for this ratio because both areas use the same units.</p>
+<p>If a calculation requires an absolute value in pascals, force must be in newtons and area in square metres. Confusing centimetres squared with metres squared can create a large numerical error. State units rather than writing an unexplained pressure number.</p>
+<p>The lesson concerns <strong>contact pressure in solids</strong>. Earlier fluid examples used pressure changing with depth or being transmitted through confined liquid. The shared unit does not make the mechanisms identical: here the main design choice is how a load is distributed across a contact surface.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw the same downward force arrow above two blocks. Give one block a narrow base and the other a wide base. Use several small arrows at each contact to represent the distributed load.</p>
+<p>In the narrow contact, pack the distribution into less area. In the broad contact, spread it farther. Keep the total represented force the same, so the drawing does not secretly change the quantity being compared.</p>
+<p>Then replace the surface with a softer material and predict a greater indentation under similar conditions. That addition reminds you that pressure describes loading, while the visible response also depends on the receiving material.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares narrow and broad blunt contacts pressing into a soft model surface. Equal large force arrows appear above both, while the labelled contact areas differ. The narrow contact shows a more local indentation.</p>
+<p>A formula panel states force divided by area. An example ratio shows that reducing area tenfold increases average pressure tenfold when force remains fixed. The numbers are invented teaching values, not measured pin dimensions.</p>
+<p>The pin itself appears only as a conceptual outline with a warning that the home activity uses blunt objects. The diagram makes no claim that pressure alone determines exactly when cardboard will fail.</p>
+<figure><img src="../../illustrations/class-8/day_35.svg" alt="Diagram for Why does a pointed pin press into cardboard more easily?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>A schoolbag's wider shoulder straps can distribute a load over more contact area, which can reduce average pressure on the shoulder. The total bag weight does not disappear; it is spread differently.</p>
+<p>Broad feet or supports can reduce sinking into a soft surface. A narrow contact may instead be useful when a tool is designed to concentrate force. The choice depends on whether the goal is support or local deformation.</p>
+<p>In each example, geometry and material properties matter alongside force. A strap that twists into a narrow band may lose some of its useful spreading effect even though its original width has not changed.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a clean soft sponge or folded towel and two blunt flat-ended objects with different contact areas. <strong>Do this with an adult.</strong> Do not use pins, nails, knives or sharpened pencils.</p>
+<ol>
+<li>Place the soft material on a stable table.</li>
+<li>Press gently with a broad contact and observe the indentation.</li>
+<li>Repeat with a narrower blunt contact, trying to use a similar light push.</li>
+<li>Draw the two contact regions.</li>
+<li>Explain why the comparison is qualitative rather than a calibrated pressure measurement.</li>
+</ol>
+<p>Your hand cannot guarantee equal forces, and the surface may recover imperfectly between trials. Record those limits. Stop if the objects slip or the material is damaged. The activity illustrates concentrated loading safely without trying to pierce cardboard.</p>
+</div><h2>7. Think deeper</h2>
+<p>A person presses twice as hard while also doubling the contact area. What happens to average pressure in the simple model? Use the ratio rather than assuming that more force always means greater pressure.</p>
+<p>Now consider a flexible strap that touches only part of its apparent width. Which area belongs in the calculation: the full manufactured width or the area actually carrying the load? Explain why real contacts can require more care than a flat diagram.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How is average contact pressure calculated in the simple model?</p>
+<ul>
+<li>A. Force multiplied by the colour of the surface</li>
+<li>B. Contact area divided by elapsed time</li>
+<li>C. Normal force divided by contact area</li>
+</ul>
+<p><strong>Answer:</strong> C — Pressure is normal force per unit contact area.</p>
+<h3>Q2</h3>
+<p>Why can a narrow contact indent a soft surface more under the same force?</p>
+<ul>
+<li>A. It removes all strength from the material</li>
+<li>B. The force is concentrated over less area</li>
+<li>C. It must have a smaller total force</li>
+</ul>
+<p><strong>Answer:</strong> B — Smaller contact area increases average pressure when force is held equal.</p>
+<h3>Q3</h3>
+<p>Both force and contact area double. What happens to average pressure?</p>
+<ul>
+<li>A. It stays the same in the simple model</li>
+<li>B. It always becomes zero</li>
+<li>C. It always doubles</li>
+</ul>
+<p><strong>Answer:</strong> A — The ratio 2F divided by 2A equals the original F divided by A.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design two supports for the same classroom load: one intended to minimise indentation in a soft surface and one intended to concentrate a gentle push. Use blunt shapes in both drawings.</p>
+<p>Label force and contact area, then predict the pressure comparison under the same force. Include a sentence explaining why different receiving materials could respond differently even at the same average pressure. Do not propose testing a sharp object at home.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Spreading a load can reduce local pressure without reducing the total force at all. A comfortable support therefore does not need to make an object lighter; it can change where the load acts. This is a design opportunity visible in straps, furniture feet and many everyday supports.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>For the same force, a smaller contact area creates greater average pressure; the material's response also depends on its strength and structure.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 5 of 30</footer>
+</div>
+</body>
+</html>

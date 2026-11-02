@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 59: Why can extracting too much groundwater make coastal wells salty? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 59</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can extracting too much groundwater make coastal wells salty?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why excessive freshwater pumping can make a coastal well more saline. Follow changing <strong>hydraulic head</strong> and a moving freshwater–saltwater transition. Distinguish this problem from creating salt by a reaction, filtering seawater after collection or explaining the original groundwater-recharge process.</p>
+</div><h2>1. The mystery</h2>
+<p>A coastal well may draw relatively fresh groundwater even though seawater is nearby. A nearby salty source does not automatically mix uniformly with every underground water store at once.</p>
+<p>However, changing the groundwater flow conditions can shift where the saline water moves. A well that once lay safely within the fresher part of the system may begin drawing a different mixture after sustained extraction.</p>
+<p>The question is what held the earlier pattern in place and how pumping disturbs it. The pump does not manufacture salt; it changes the water and dissolved material reaching the well.</p>
+<h2>2. The science behind it</h2>
+<p>An <strong>aquifer</strong> is a body of sufficiently permeable rock or sediment that can store and transmit groundwater. Near a coast, fresher groundwater and saline water can occupy connected parts of a subsurface system.</p>
+<p><strong>Hydraulic head</strong> describes groundwater's potential to move, related to elevation and pressure. Under suitable natural conditions, freshwater flow toward the coast helps maintain a pattern in which fresher water discharges seaward and saltwater remains farther seaward or deeper.</p>
+<p>Saltwater is denser than freshwater, which contributes to their arrangement. The contact is commonly a <strong>transition zone</strong> where mixing occurs, not an infinitely thin waterproof wall. A coloured boundary in a diagram is a convenient summary of a more gradual real distribution.</p>
+<p>Pumping removes freshwater and can lower local groundwater head. If extraction sufficiently changes the balance, saltwater can move toward fresher parts of the aquifer. This is <strong>saltwater intrusion</strong>, a shift in water distribution and quality rather than the creation of a new salt source.</p>
+<p>Intrusion can occur <strong>laterally</strong>, with more saline water advancing inland from the coastal side. It can also occur <strong>vertically</strong>, with deeper saline water moving upward toward a pumping well. This upward distortion is often called <strong>upconing</strong>.</p>
+<p>The response depends on geology, well position, pumping history, recharge and other boundary conditions. Two nearby wells need not change at exactly the same rate. We should not invent a universal pumping limit or assume every coastal aquifer has one identical shape.</p>
+<p>Changes in recharge or sea conditions can also affect the system. The mechanism here remains the pumping-induced change in head and flow. Mentioning recharge as one influence does not replace the explanation with the earlier lesson on how rain enters the ground.</p>
+<p>Monitoring can include groundwater levels and suitable measures of salinity at selected locations over time. A single drawing or isolated taste is not an adequate assessment. Students should never taste unknown well water or infer drinking suitability from clarity alone.</p>
+<p>Managing an affected aquifer requires local evidence and appropriate professional decisions. Reducing stress, altering extraction patterns or considering other supply arrangements may be assessed, but there is no one-step classroom fix. Restoring a freshwater pattern can be complicated once saline water has moved into an aquifer.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a coastal cross-section with land on the left and sea on the right. Place fresher groundwater above and inland of a deeper saline region, with a shaded transition between them.</p>
+<p>In the first panel, show a seaward freshwater-flow arrow and an inland well drawing from the fresher region. In the second, lower the local head near the well and extend the transition landward or upward.</p>
+<p>Keep the rock framework unchanged so the comparison isolates the flow change. Label the altered water reaching the well rather than drawing a salt factory inside the pump. The model is qualitative and does not prescribe a well depth or extraction rate.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares a lower-stress coastal pattern with a pumping-stressed one. The sea remains at the right of each panel. Fresh, saline and mixed-transition regions use distinct flat colours.</p>
+<p>Arrows indicate inland or upward saline movement in the stressed case. A well symbol and a lowered head marker show where extraction changes the local conditions. The transition is drawn as a band rather than a perfect barrier.</p>
+<p>All dimensions are schematic. No coastline is identified, no local water-quality measurement is invented and no pumping recommendation appears. The labels connect changing head to changing source water.</p>
+<figure><img src="../../illustrations/class-10/day_59.svg" alt="Diagram for Why can extracting too much groundwater make coastal wells salty?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Coastal communities in India depend on varied groundwater systems. A village well, an urban supply well and a deep industrial borehole may interact with different formations and extraction patterns. A general mechanism cannot substitute for a local survey.</p>
+<p>A school can discuss supplied cross-sections or anonymised monitoring examples without visiting a borehole site. Wells, pump equipment and coastal edges are not suitable locations for an unsupervised student activity.</p>
+<p>The lesson also separates availability from quality. A pump may still deliver a volume of water while its salinity changes. Counting litres alone would miss the fact that the water's suitability for an intended use may have altered.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and three colours. No real water sample is needed.</p>
+<ol>
+<li>Draw land, sea and a connected coastal aquifer.</li>
+<li>Shade fresher, saline and transition regions.</li>
+<li>Add a well in the fresher region and seaward flow.</li>
+<li>Make a second panel with lower head near a pumping well.</li>
+<li>Move the transition toward the well and explain the changed supply.</li>
+</ol>
+<p>Label the comparison schematic and keep the sea position consistent. Ask a partner whether the pump creates salt or changes which water arrives. Add a note that actual timing and safe extraction require local evidence, not the distances in your sketch.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can pumping affect a quality boundary outside the immediate well casing? Explain how groundwater flow connects different regions of the aquifer.</p>
+<p>Now consider a well above deeper saline water rather than beside a simple coastal wedge. What direction of saline movement could threaten it? This question tests the difference between lateral intrusion and upconing, without assuming that every real site follows only one pattern.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is saltwater intrusion in this lesson?</p>
+<ul>
+<li>A. Rain turning instantly into seawater everywhere</li>
+<li>B. A pump manufacturing new salt atoms</li>
+<li>C. Saline water moving into fresher aquifer regions</li>
+</ul>
+<p><strong>Answer:</strong> C — Changing flow conditions can move saline water into regions previously containing fresher groundwater.</p>
+<h3>Q2</h3>
+<p>Why can strong pumping encourage intrusion?</p>
+<ul>
+<li>A. It builds a perfect underground waterproof wall</li>
+<li>B. It can lower freshwater head and alter flow gradients</li>
+<li>C. It always raises freshwater head everywhere</li>
+</ul>
+<p><strong>Answer:</strong> B — Reduced freshwater head can allow saline water to move toward the well or fresher zone.</p>
+<h3>Q3</h3>
+<p>A well overlies deeper saline water. What pumping-related movement could threaten it?</p>
+<ul>
+<li>A. Saline water can move upward toward the well</li>
+<li>B. The saline region must become solid rock</li>
+<li>C. Salt must move only farther out to sea</li>
+</ul>
+<p><strong>Answer:</strong> A — Upconing is upward saline movement toward a pumping well under suitable conditions.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Prepare a two-panel explanation for a fictional coastal school. Include the original freshwater flow, the pumping-induced head change, a shifting transition and a possible route of saline entry to a well.</p>
+<p>List the evidence a professional assessment would need: groundwater levels, salinity measurements, geology and extraction history. Do not recommend a pumping rate or decide whether a real supply is drinkable. Your task is to explain the mechanism and the information needed to evaluate it.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A well can remain physically intact while the water reaching it changes. The problem may lie in the surrounding flow field and a moving transition, rather than a hole in the pump or salt suddenly appearing from nowhere. Resource quality is therefore part of groundwater management as well as resource volume.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Excessive pumping can lower coastal freshwater head and draw saline water inland or upward; the resulting intrusion changes the mixture reaching wells without creating new salt.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 29 of 30</footer>
+</div>
+</body>
+</html>

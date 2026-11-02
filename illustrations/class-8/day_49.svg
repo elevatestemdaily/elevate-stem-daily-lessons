@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why do constellations shift with the season?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Earth annual position changes the distant direction facing away from sunlight</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Earth at one annual position</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Earth months later</text>
+<circle cx="500" cy="260" r="45" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="250" cy="260" r="25" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="750" cy="260" r="25" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="220" y1="260" x2="95" y2="260" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<line x1="780" y1="260" x2="905" y2="260" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="60" cy="210" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="90" cy="320" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="30" cy="280" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="930" cy="200" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="955" cy="300" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="915" cy="335" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="445" y1="225" x2="300" y2="225" stroke="#e6a23c" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="555" y1="225" x2="700" y2="225" stroke="#e6a23c" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="250" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Night view toward one region</text>
+<text x="750" y="405" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Night view toward another region</text>
+<text x="500" y="451" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Distant stars are drawn too close: this is a direction model, not scale.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Annual viewing change differs from daily sky motion and local cloud cover.</text>
+</svg>

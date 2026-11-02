@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 45: How can a calibration line turn a colour reading into concentration? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 45</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can a calibration line turn a colour reading into concentration?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Use <strong>known standards</strong> to relate a measurement signal to concentration over a stated range. Distinguish calibration from a blank and from direct visual guessing. Interpret an unknown by interpolation while recognising that an attractive straight line is a model with conditions and limits.</p>
+</div><h2>1. The mystery</h2>
+<p>A coloured sample produces a device reading of 40. Without a reference, that number might be only an arbitrary signal. It does not automatically mean 40 concentration units or twice the concentration of a sample reading 20.</p>
+<p>Known standards can establish how the response behaves. In a simple invented system, zero, one and two concentration units produce signals 10, 30 and 50. The nonzero starting signal changes how an unknown should be interpreted.</p>
+<p>Calibration supplies the missing link between a response and the quantity being estimated.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>standard</strong> contains a known amount or concentration of the target under specified conditions. Measuring several standards provides paired values: known concentration and observed signal. These pairs support a <strong>calibration relation</strong>.</p>
+<p>In a simple <strong>linear model</strong>, signal changes by a fixed amount for each concentration increment. The invented standards here give a slope of 20 signal units per concentration unit and an intercept of 10 signal units.</p>
+<p>The intercept represents the model response at zero target concentration. It could include background in this example. Ignoring it would create a wrong proportionality: a signal of 40 is not simply twice the concentration associated with a signal of 20.</p>
+<p>For the invented relation, subtract the intercept and divide by the slope. An unknown signal of 40 corresponds to 1.5 concentration units. The result is an <strong>interpolation</strong> because it lies within the range covered by the standards.</p>
+<p><strong>Extrapolation</strong> uses the model beyond that range. A device can saturate or the chemistry can respond differently at higher concentrations. Extending a straight ruler line indefinitely is not evidence that the real relationship stays linear.</p>
+<p>The standard and sample should be measured under appropriately matched conditions. Different containers, illumination, reagents or sample backgrounds can change the signal. A calibrated device does not make every dissimilar sample automatically comparable.</p>
+<p>A <strong>blank</strong> checks response without the intended target along a specified procedure. A set of known standards establishes how response relates to target amount. Their roles can complement one another, but they are not interchangeable labels for any extra container.</p>
+<p>Calibration also has uncertainty. Standard preparation, instrument variation and repeated readings affect the relation. A result should not be reported with unsupported precision or treated as a complete sample identity and safety assessment. This lesson uses abstract units to avoid pretending to analyse an actual contaminant.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a graph with concentration horizontally and signal vertically. Plot the invented pairs zero-and-10, one-and-30, and two-and-50. Join them with the chosen linear model.</p>
+<p>From a signal of 40, move horizontally to the line and then vertically to the concentration axis. Read the estimate of 1.5 units. Keep the intercept visible so the construction does not accidentally assume the line starts at zero.</p>
+<p>Draw a dashed continuation beyond the standards and label it unvalidated. The graph now shows both what the model supports and where additional evidence would be needed. A boundary on the claim is part of a useful calibration.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows the three invented standards, a straight calibration line and the unknown-signal construction. Axes explicitly use model concentration and signal units rather than naming a real chemical test.</p>
+<p>A marked intercept distinguishes the relation from direct proportionality. The unknown falls within the standard range, while an outside-range arrow is labelled extrapolation rather than a confirmed result.</p>
+<p>A separate caption distinguishes known standards from a blank. The drawing does not claim that a phone photograph, eye judgement or arbitrary colour scale directly measures concentration without a suitable reference procedure.</p>
+<figure><img src="../../illustrations/class-9/day_45.svg" alt="Diagram for How can a calibration line turn a colour reading into concentration?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Laboratory instruments often convert physical responses into reported quantities through calibration. The displayed number can therefore depend on a reference relation, not just on the sample entering the device.</p>
+<p>A school colour-comparison exercise can introduce the idea with safe supplied data. Actual analytical methods require more controls than the simplified graph. A neat line does not by itself validate a method for drinking water, food or medical samples.</p>
+<p>Do not buy sensors or use unknown reagents for this lesson. The important reasoning can be learned from paper values, keeping real test performance and high-stakes decisions separate from the classroom arithmetic.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use squared paper, a ruler and a pencil.</p>
+<ol>
+<li>Plot the three invented standard pairs from the lesson.</li>
+<li>Label both axes and their abstract units.</li>
+<li>Draw the linear model across the supported range.</li>
+<li>Use signal 40 to estimate the concentration graphically.</li>
+<li>Check the result by subtracting 10 and dividing by 20.</li>
+</ol>
+<p>Write invented calibration data on the page. Do not label the result as a real substance concentration. Mark the supported range and state why a signal far above the highest standard would need more evidence before applying the same relation.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can a nonzero intercept make a simple signal ratio misleading? Compare a line through zero with the invented line through signal 10 at zero concentration.</p>
+<p>Now imagine the unknown sample has a different background colour from the standards. What could happen even if the instrument repeats perfectly? Calibration connects a response under conditions; it does not automatically remove every sample-specific interference.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does a known standard provide?</p>
+<ul>
+<li>A. Only a colour name without any scale</li>
+<li>B. A known target concentration for comparison</li>
+<li>C. A guarantee that every sample is safe</li>
+</ul>
+<p><strong>Answer:</strong> B — Standards connect known quantities with observed measurement responses.</p>
+<h3>Q2</h3>
+<p>Why should extrapolation beyond the standards be treated cautiously?</p>
+<ul>
+<li>A. Every detector has infinite linear range</li>
+<li>B. Straight lines are forbidden in science</li>
+<li>C. The real response may change outside the range</li>
+</ul>
+<p><strong>Answer:</strong> C — The observed calibration does not validate behaviour at untested concentrations.</p>
+<h3>Q3</h3>
+<p>Invented signal = 10 + 20 times concentration. What concentration gives signal 40?</p>
+<ul>
+<li>A. 1.5 units</li>
+<li>B. 2 units</li>
+<li>C. 30 units</li>
+</ul>
+<p><strong>Answer:</strong> A — Subtracting 10 leaves 30; dividing by 20 gives 1.5 model units.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Prepare a calibration sheet with standards, units, supported range, an unknown interpolation and an uncertainty note. Use only the invented abstract values.</p>
+<p>Add a correction to the claim that any straight line can be extended safely to any concentration. Your explanation should distinguish a mathematical continuation from a physically validated range and should not convert this paper model into a certified chemical analysis.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A reading of zero target can still produce a nonzero signal. The background is part of the measurement system, not necessarily evidence that the model is useless. Understanding and accounting for that baseline is what lets a signal become a more meaningful estimate of a target quantity.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Calibration links known standards to signal over a supported range; use the intercept, distinguish interpolation from extrapolation, and keep method limits visible.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 15 of 30</footer>
+</div>
+</body>
+</html>

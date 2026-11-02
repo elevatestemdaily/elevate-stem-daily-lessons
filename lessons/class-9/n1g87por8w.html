@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 33: How can matched groups make a cattle-feed trial fair? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 9 · DAY 33</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can matched groups make a cattle-feed trial fair?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 9</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how matched comparison groups help investigate a feed-related question. Identify <strong>confounders</strong>, random assignment within suitable groups and clearly defined outcomes. Use a paper-only example and distinguish a fair design from instructions to experiment on animals.</p>
+</div><h2>1. The mystery</h2>
+<p>Two cattle groups receive different feeds. One group grows more during the observation period. A quick report credits the feed, but the larger-gaining group also began younger, healthier or under different housing conditions.</p>
+<p>The recorded difference could combine several causes. A useful trial tries to make the groups comparable before attributing the outcome to the factor being studied.</p>
+<p>Matching is a way to reduce some starting differences. It is not a guarantee that animals become identical or that an experiment is ethically justified merely because its table looks balanced.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>confounder</strong> is a factor connected with both the treatment comparison and the outcome in a way that can confuse interpretation. Age, initial size, health status and management can influence feed-related measurements.</p>
+<p>The <strong>treatment</strong> is the planned factor being compared, such as two professionally approved feeding arrangements. The <strong>outcome</strong> must be defined before seeing results. It might concern growth over a specified interval, but the precise choice depends on the scientific and welfare context.</p>
+<p><strong>Matching</strong> creates comparison units or groups with similar relevant starting characteristics. For example, a paper model can pair animals of comparable age and initial mass. This reduces the chance that one treatment group begins with all the initially advantaged cases.</p>
+<p>Within suitable matched pairs or blocks, <strong>random assignment</strong> can distribute the approved treatments without choosing according to expected performance. This helps protect against deliberate or unconscious selection based on the outcome one hopes to obtain.</p>
+<p>Known management conditions should remain comparable where the question requires it. Housing, water access, observation duration and measurement method can all affect results. Changing feed while also changing several management conditions weakens a feed-specific interpretation.</p>
+<p>Matching does not remove every difference. Animals vary in ways not fully captured by a short record. Repeated units, adequate records and an appropriate analysis matter. A small classroom dataset cannot establish a universal feed recommendation for every breed or setting.</p>
+<p><strong>Outcome measurement</strong> needs consistency. Measuring mass at different stages of feeding or with different equipment can introduce variation. The paper design should specify a common procedure rather than assuming every number labelled mass is directly comparable.</p>
+<p>Real animal work requires qualified supervision, welfare safeguards and appropriate review. Students must not change a pet's or farm animal's food to implement this lesson. We use fictional records to learn experimental reasoning, not provide nutrition or veterinary advice.</p>
+<h2>3. Build the mental model</h2>
+<p>Make a table with starting characteristics before adding any outcome column. Pair comparable fictional records, then assign one member of each pair to each model treatment using an unbiased paper method.</p>
+<p>Draw a line from each potential confounder to the outcome. Controls and matching reduce specified pathways in the design; they do not erase biological variation. Keep an uncertainty box for factors not represented in the table.</p>
+<p>Finally add an outcome only after the plan is defined. This order discourages selecting a preferred endpoint or rearranging groups after seeing which result makes a treatment look strongest.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows fictional cattle records paired by similar starting characteristics. Each pair contributes one record to each treatment group, and shared management conditions sit between the groups.</p>
+<p>A separate output panel labels a preselected outcome and common measurement procedure. No growth values, feed doses or real animal images are needed to explain the design.</p>
+<p>The drawing is an experimental-design model. It does not certify that a real intervention is suitable, harmless or justified, and it does not claim that matching alone proves a causal effect.</p>
+<figure><img src="../../illustrations/class-9/day_33.svg" alt="Diagram for How can matched groups make a cattle-feed trial fair?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Agricultural research uses careful comparisons because animals and their environments differ. A result may be relevant to a particular population and management arrangement without automatically applying everywhere.</p>
+<p>An Indian dairy farmer's practical decisions can depend on locally appropriate professional guidance and the animals' needs. A classroom example does not replace that expertise or provide a new feeding programme.</p>
+<p>The reasoning also transfers to plant or materials trials. Before crediting one changed factor, ask whether the groups began comparably and whether another systematic difference could explain the outcome. The lesson stays focused on that logic rather than repeating digestion or cellular energy mechanisms.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use six fictional paper records with labels for age group and starting size. Do not use or alter the care of real animals.</p>
+<ol>
+<li>Group the records into three reasonably matched pairs.</li>
+<li>Choose treatment labels A and B for the model.</li>
+<li>Use an unbiased paper draw to place one record from each pair in each group.</li>
+<li>Write shared conditions and a preselected outcome.</li>
+<li>List one factor the cards do not capture.</li>
+</ol>
+<p>The labels are invented and contain no real performance statistics. Explain what matching improves and what remains uncertain. A tidy balanced layout is a design feature, not evidence that treatment A or B has already worked.</p>
+</div><h2>7. Think deeper</h2>
+<p>If every younger record goes to A and every older record to B, why is a later difference hard to attribute to feed? Describe the pathway linking age with the outcome.</p>
+<p>Now imagine perfectly matched starting cards but different observation durations. Which design problem has reappeared? Fair starting groups do not compensate for a procedure that changes systematically between treatments.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a confounder in the model trial?</p>
+<ul>
+<li>A. A guarantee that all groups are identical</li>
+<li>B. A relevant factor that can confuse treatment interpretation</li>
+<li>C. Only the letter used for a group label</li>
+</ul>
+<p><strong>Answer:</strong> B — A factor such as age can systematically influence the outcome alongside the treatment.</p>
+<h3>Q2</h3>
+<p>Why assign treatments within suitable matched pairs?</p>
+<ul>
+<li>A. To make welfare checks unnecessary</li>
+<li>B. To choose only expected winners for one group</li>
+<li>C. To reduce selection linked to starting differences</li>
+</ul>
+<p><strong>Answer:</strong> C — Matching and unbiased assignment help prevent one group collecting the initial advantages.</p>
+<h3>Q3</h3>
+<p>Groups are matched but measured over different durations. What is the best response?</p>
+<ul>
+<li>A. Revise the inconsistent observation procedure</li>
+<li>B. Ignore duration because matching fixes everything</li>
+<li>C. Declare the larger result a universal feed benefit</li>
+</ul>
+<p><strong>Answer:</strong> A — Different durations can affect outcomes independently of feed and weaken the comparison.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a one-page fictional trial plan with a question, matching criteria, assignment procedure, shared conditions and an outcome definition. Include a welfare statement that no real animal intervention is part of the classroom exercise.</p>
+<p>Ask a partner to find a possible confounder before adding invented results. Revise the plan rather than hiding the factor. Your conclusion must distinguish a better design from actual evidence that one feeding arrangement improves performance.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A difference between group averages is not automatically a treatment effect. It can reflect who entered each group and how they were managed. Designing the comparison before collecting outcomes helps separate the question one wants to answer from the many other differences the world supplies.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Matched groups and suitable assignment reduce some confounding, but shared procedures, remaining variation and welfare constraints still determine what a feed trial can establish.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 9 · Month 2 · Day 3 of 30</footer>
+</div>
+</body>
+</html>

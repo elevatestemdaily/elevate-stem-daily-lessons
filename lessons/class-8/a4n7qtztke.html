@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 49: Why do constellations shift with the season? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 49</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why do constellations shift with the season?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why the night sky available at a given time changes through the year. Distinguish daily apparent motion from changing seasonal viewing direction. Use Earth's position around the Sun without repeating the force explanation for its orbit or treating constellations as nearby physical groups.</p>
+</div><h2>1. The mystery</h2>
+<p>A constellation visible in the evening during one part of the year may be difficult to see at the same clock time several months later. The stars did not suddenly switch off or move to an entirely new neighbourhood in a few weeks.</p>
+<p>Earth's nighttime viewing direction has changed relative to the distant stars. Some regions now lie closer to the Sun's direction in our sky and are hidden by daylight, while other regions face the night side.</p>
+<p>The clue is the phrase same time of night. A fair seasonal comparison must specify time and location as well as the calendar period.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>constellation</strong> is a recognised region or pattern used to describe the sky. The stars forming a familiar pattern can be at very different distances. Their apparent grouping does not necessarily mean they are neighbours in space.</p>
+<p>Earth rotates, producing daily apparent motion of the sky. Earth also changes position around the Sun over the year. Today's lesson focuses on how this annual position change alters which distant directions are accessible during nighttime.</p>
+<p>At local midnight in a simplified model, the observer's night-facing direction points broadly away from the Sun. When Earth is on another part of its yearly path, the direction away from the Sun points toward a different part of the distant-star background.</p>
+<p>A star pattern close to the Sun's apparent direction is difficult to see because the bright daytime sky overwhelms it. The stars remain present and continue emitting light; their visibility from the ground has changed.</p>
+<p>Over weeks, familiar star patterns also appear earlier in the evening under comparable observing conditions. This gradual shift links daily viewing with the annual change. We do not need an exact minutes-per-day value to explain the geometry accurately.</p>
+<p>Latitude matters. Some stars can remain above the horizon throughout a daily rotation for particular observers, while others never rise there. Therefore “every constellation disappears each season” is too strong. Seasonal visibility depends on both location and the sky region considered.</p>
+<p>Clock time, time zone and the precise observing date can complicate a comparison. A classroom model should state that it is simplifying these details rather than pretending a midnight diagram predicts every exact local appearance.</p>
+<p>The <strong>axial tilt</strong> also affects other seasonal phenomena, but changing nighttime star directions does not require blaming the stars' disappearance on temperature or monsoon clouds. Weather changes actual observing opportunities, while the geometry explains the underlying annual pattern even in a clear sky.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw the Sun at the centre of a page and distant star patterns around the edges. Put Earth at two opposite positions. At each, draw a night-view arrow pointing away from the Sun.</p>
+<p>The arrows point toward different background regions. A star pattern aligned with one arrow is on the night-facing side at that position but may lie in the Sun-facing direction at the other.</p>
+<p>Now distinguish this top-down annual picture from a daily rotation drawing. Both motions contribute to what an observer sees, but they answer different questions. One explains change during a night; the other helps explain change between comparable nights months apart.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows Earth at two positions around the Sun, with distant-star symbols placed beyond the immediate system. Night-view arrows point outward from the Sun at each position and toward different background patterns.</p>
+<p>A separate small label distinguishes daily sky motion from the annual viewing shift. The stars are drawn much too close for visibility; the diagram explicitly states that spacing is not to scale.</p>
+<p>The graphic does not claim that the four drawn stars form one physically bound group or that every observer at every latitude sees the same constellations at the same season.</p>
+<figure><img src="../../illustrations/class-8/day_49.svg" alt="Diagram for Why do constellations shift with the season?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Indian sky guides often identify good seasonal viewing periods for familiar patterns. Their usefulness depends on the observer's location, time and viewing conditions. A sky photograph without those details can be difficult to compare with a local evening.</p>
+<p>Monsoon cloud cover can hide stars, but that weather effect differs from the annual geometry. A constellation can be on the night side and still invisible behind clouds, or it can be near the Sun's direction even under a perfectly clear sky.</p>
+<p>Students should use a printed sky chart or supervised existing observations. No night travel, rooftop access or direct viewing near the Sun is required for this lesson.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a central Sun symbol and four star-pattern symbols near the page edges.</p>
+<ol>
+<li>Place a small Earth symbol on the left of the Sun.</li>
+<li>Draw a night-facing arrow away from the Sun.</li>
+<li>Move Earth to the opposite side and draw the new outward arrow.</li>
+<li>Identify which background patterns each arrow favours.</li>
+<li>Add a note separating clear-sky geometry from actual cloud conditions.</li>
+</ol>
+<p>The model shows directions, not a scale map or exact observing calendar. Do not assign real constellation names unless a suitable chart supports the arrangement. The activity explains why a seasonal change is possible without pretending to predict every local sky from four arbitrary symbols.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why does a star being hidden in daylight not imply that it stopped emitting? Distinguish the source from the conditions under which an observer can detect it.</p>
+<p>Now compare two observers at different latitudes. Which part of the basic annual model can they share, and which visibility details depend on their horizons? This keeps the model useful without turning one classroom viewpoint into a universal sky map.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What annual change helps explain seasonal constellation visibility?</p>
+<ul>
+<li>A. Earth changes its position around the Sun</li>
+<li>B. Every star stops shining for several months</li>
+<li>C. Constellations move into Earth clouds</li>
+</ul>
+<p><strong>Answer:</strong> A — The changing annual geometry points nighttime viewing toward different distant regions.</p>
+<h3>Q2</h3>
+<p>Why can stars near the Sun direction be hard to see?</p>
+<ul>
+<li>A. They must have become cold rocks</li>
+<li>B. The bright daytime sky overwhelms them</li>
+<li>C. Their distance must shrink to zero</li>
+</ul>
+<p><strong>Answer:</strong> B — Visibility depends on the observing background as well as the source light.</p>
+<h3>Q3</h3>
+<p>A night-side constellation is hidden by monsoon cloud. Which statement is correct?</p>
+<ul>
+<li>A. Its stars must have ceased to exist</li>
+<li>B. Cloud cover caused Earth yearly revolution</li>
+<li>C. Weather and viewing geometry are separate limits</li>
+</ul>
+<p><strong>Answer:</strong> C — A suitable sky direction can still be blocked by local observing conditions.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a two-date explanation for a star pattern's changing evening visibility. State the same observer location and a comparable time of night, then show Earth in different annual positions.</p>
+<p>Include one limitation involving horizon, weather or exact clock time. Your explanation must not say the stars stop shining in the unfavourable season or use the pattern's apparent shape as evidence that all its stars are close together in space.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Night points in a direction. As Earth moves around the Sun, the direction facing away from sunlight changes relative to the distant background. Thinking of nighttime as a moving viewing window makes the seasonal sky easier to understand than imagining the constellations taking turns to exist.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Earth's changing annual position shifts the night-facing view toward different star regions; location, time and weather determine what an observer can actually see.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 19 of 30</footer>
+</div>
+</body>
+</html>

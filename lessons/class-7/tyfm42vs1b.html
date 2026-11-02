@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 59: How does a grit chamber separate sand from sewage? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 59</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a grit chamber separate sand from sewage?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a treatment system can remove sand-like grit from flowing wastewater without retaining all the water. Connect <strong>settling</strong>, horizontal travel and <strong>residence time</strong>. Distinguish a grit chamber from a screen, filter and complete purification system.</p>
+</div><h2>1. The mystery</h2>
+<p>Wastewater entering a treatment works can carry sand, grit and many other materials. Sending abrasive particles through every downstream machine would create avoidable wear. A chamber slows and guides the flow so some particles settle before the water continues.</p>
+<p>How can a particle reach the bottom before the moving water carries it out? The answer involves two journeys at once: downward settling and horizontal transport. The chamber gives selected particles enough opportunity to finish the first journey before completing the second.</p>
+<p>This is separation during flow, not a jar left still indefinitely.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Grit</strong> commonly includes dense mineral particles such as sand. Real wastewater contains a mixture of sizes, shapes and densities, so grit is a practical treatment category rather than a single pure material.</p>
+<p>A particle in water can settle downward if its motion and surrounding forces favour that movement. Settling speed depends on particle size, density, shape and fluid conditions. It is not determined by density alone: two particles of the same material but different sizes can settle differently.</p>
+<p>In a flowing chamber, the particle is also carried horizontally. To be captured, it must reach a collecting region before it travels through the chamber and leaves. The time available for this is related to the chamber's <strong>residence time</strong>, the time material spends within it.</p>
+<p>A simple model compares settling distance with chamber depth. If a particle settles far enough during its available travel time, it reaches the collection region. If not, it can remain in the outgoing flow. The model is useful even without assigning a particular real-world velocity.</p>
+<p>Engineers control chamber geometry and flow conditions to favour removal of grit while limiting unnecessary retention of other materials. Slowing everything as much as possible is not automatically best. Too little motion can encourage unwanted organic solids to settle along with the grit.</p>
+<p>Actual works use different grit-removal arrangements, including controlled-flow and aerated designs. Their details differ. Our simplified rectangular chamber isolates the main competition between settling and travel time rather than claiming every plant has one identical tank.</p>
+<p>A <strong>screen</strong> removes larger objects by a physical opening size. A <strong>filter</strong> passes fluid through a porous barrier. A grit chamber relies mainly on particle movement and settling in a controlled flow field. Recognising the mechanism explains why these stages can complement one another.</p>
+<p>The outgoing water remains wastewater. Removing mineral grit does not remove every dissolved substance, microorganism or fine suspended particle. Further treatment is required. A chamber that works well at its assigned job can therefore produce water that is still unsuitable for drinking or handling.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a rectangle with water entering at the left and leaving at the right. Put a particle near the upper left corner. Give it a horizontal arrow for flow and a downward arrow for settling.</p>
+<p>Combine the two into a sloping path. Make a second particle settle more slowly, so it leaves before reaching the bottom. The contrast connects particle properties with the chamber's available time.</p>
+<p>Then lengthen the model chamber while leaving the example flow speed unchanged. The first particle now has more travel time. Explain this as a conditional comparison, not a guarantee that simply enlarging any real tank solves all treatment problems.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a chamber with an inlet, outlet and lower grit-collection region. One particle follows a downward-sloping route to the bottom, while another remains above the bottom when it reaches the outlet.</p>
+<p>Separate labels identify horizontal flow, settling distance and available travel time. The water arrow continues through the device, making it clear that the whole flow is not being stored permanently.</p>
+<p>A caption states that this is one simplified mechanism model. The drawing does not specify construction dimensions, operating velocities or the full sequence used by a particular Indian wastewater treatment plant.</p>
+<figure><img src="../../illustrations/class-7/day_59.svg" alt="Diagram for How does a grit chamber separate sand from sewage?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Wastewater treatment plants protect pumps and later treatment stages by removing inappropriate materials early. Grit can abrade equipment, while rags and larger objects present different problems that screens address.</p>
+<p>During heavy rain, drainage inputs and particle loads can change. A real system must operate across changing conditions, so its design cannot be inferred from one calm-water demonstration. Maintenance and collection of settled material also matter.</p>
+<p>Never visit an operating treatment area without authorised supervision or use sewage in a home activity. The classroom mechanism can be understood with paper trajectories, leaving the biological and physical hazards of real wastewater entirely out of the exercise.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use squared paper, a pencil and two colours. No liquid or dirty material is needed.</p>
+<ol>
+<li>Draw a chamber six squares long and four squares deep.</li>
+<li>Invent a particle path moving one square right and one square down each step.</li>
+<li>Start it at the top left and mark whether it reaches the bottom before the outlet.</li>
+<li>Draw another path that moves right just as quickly but falls more slowly.</li>
+<li>Compare which particle is captured in your model.</li>
+</ol>
+<p>These step sizes are invented teaching rules, not measured settling speeds. You may lengthen the chamber and repeat the drawing, while keeping the rules fixed. State explicitly that a paper trajectory does not establish real treatment performance.</p>
+</div><h2>7. Think deeper</h2>
+<p>Suppose the flow carries particles through twice as quickly while their downward settling behaviour remains similar. What happens to the time available to reach the collection region?</p>
+<p>Now consider making the flow extremely slow. Why might that capture unwanted organic solids as well as grit? A useful design must meet its target selectively, not simply maximise the amount of material deposited anywhere in the chamber.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is residence time in the chamber model?</p>
+<ul>
+<li>A. Time before the wastewater existed</li>
+<li>B. The age of every sand grain</li>
+<li>C. Time spent travelling within the chamber</li>
+</ul>
+<p><strong>Answer:</strong> C — Residence time describes the interval available inside the treatment region.</p>
+<h3>Q2</h3>
+<p>Why can a settling particle still leave through the outlet?</p>
+<ul>
+<li>A. Settling means instant disappearance</li>
+<li>B. Horizontal flow can carry it out first</li>
+<li>C. All particles must float forever</li>
+</ul>
+<p><strong>Answer:</strong> B — The particle may not reach the bottom before its horizontal journey ends.</p>
+<h3>Q3</h3>
+<p>A chamber removes grit successfully. What follows about the outgoing water?</p>
+<ul>
+<li>A. It still needs further treatment</li>
+<li>B. Every dissolved substance is gone</li>
+<li>C. It must be safe to drink immediately</li>
+</ul>
+<p><strong>Answer:</strong> A — Grit removal targets selected particles rather than every remaining contaminant.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design two paper chambers that differ only in available horizontal travel time for the same particle model. Show one path that reaches the bottom and one that leaves first.</p>
+<p>Explain one possible benefit and one limitation of increasing residence time. End by naming a contamination category the chamber does not completely remove. Your design should describe a separation principle without claiming to produce drinkable water or prescribing a full treatment installation.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A particle can be moving downward and still escape through an outlet. Settling is not enough by itself; it must happen far enough and soon enough. Thinking about both motions together explains why a chamber's geometry and flow conditions matter as much as the statement that grit is dense.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>A grit chamber captures particles that settle into a collection region before horizontal flow carries them out; its effluent still requires further treatment.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 29 of 30</footer>
+</div>
+</body>
+</html>

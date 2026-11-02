@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 56: How do migratory birds use stopover wetlands? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 56</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How do migratory birds use stopover wetlands?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a stopover wetland can support part of a migratory journey. Connect <strong>refuelling</strong>, resting and a network of suitable sites. Distinguish the role of a stopover from a permanent home, and recognise why protecting only the final destination may leave a journey incomplete.</p>
+</div><h2>1. The mystery</h2>
+<p>A wetland hosts birds for a short period, then many depart. Someone says the site cannot matter much because the birds do not stay all year. The conclusion misses the role of a temporary stopping place.</p>
+<p>A long journey can depend on several locations used only briefly. At a stopover, suitable birds may feed, rest and rebuild reserves before moving on. Losing one useful link can alter the demands on the next part of the journey.</p>
+<p>The important unit is therefore not just one destination but a connected route through changing conditions.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Migration</strong> is a regular movement between regions associated with seasonal needs and opportunities. Bird species differ greatly: some travel far, some make shorter movements and some remain resident. The lesson concerns migratory waterbirds that use wetlands, not every bird.</p>
+<p>A <strong>stopover</strong> is a place used during travel rather than simply the final seasonal destination. It can provide feeding opportunities, rest and other resources needed before the next stage. Its value depends on timing and the species using it.</p>
+<p>Flying requires energy, and birds can use stored reserves during demanding movements. At a suitable stopover, feeding can replenish those reserves. We do not repeat the earlier cellular energy mechanism; the focus is where resources are available along the route.</p>
+<p>Food availability depends on habitat conditions. Water depth, exposed mud, vegetation and seasonal biological activity can influence what different birds can reach. A wetland containing water is not automatically equally useful to every species or at every moment.</p>
+<p><strong>Timing</strong> matters because a site must offer resources when the birds arrive. A wetland suitable months earlier may not provide the same conditions during passage. Changes in rainfall, water management and disturbance can alter that match.</p>
+<p>Resting space and disturbance also matter. Repeated interruption can reduce opportunities to feed or rest. Unlike the earlier nesting lesson, the management target here is supporting birds in transit, not protecting a nest and its eggs at the same site.</p>
+<p>A route can be modelled as a <strong>network</strong> of sites and travel links. The loss of a site may require a longer movement or use of an alternative with different resources. The effect depends on whether suitable alternatives exist; not every site loss produces the same outcome.</p>
+<p>Protecting the final breeding or nonbreeding destination alone may therefore be insufficient. Journey support can require several regions and coordinated management. A map should show seasonal use and uncertainty instead of treating every drawn wetland as an interchangeable fuel station.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a journey as a chain of sites rather than one arrow between two endpoints. Put a reserve bar beside a model bird, reduce it along a travel segment and increase it at a suitable feeding stop.</p>
+<p>The bar is a conceptual energy account, not a measured body-fat record. Its role is to connect travel demand with opportunities to replenish resources.</p>
+<p>Now remove one site and test alternatives. A longer link may be more demanding, and a nearby site may not offer the same food or resting conditions. This model shows why distance alone does not describe network quality and why temporary use can still be essential.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a simplified migration route with several wetland nodes. Separate symbols identify travel, feeding and resting. One missing node creates a longer alternative link.</p>
+<p>A resource bar beside each stage represents changing reserves qualitatively. No species, flight distance or refuelling rate is assigned, so the drawing cannot be mistaken for measured tracking data.</p>
+<p>Labels distinguish stopover function from final destination and emphasise timing. The illustration is a network model, not an official migration map or a claim that every migratory bird uses wetlands in the same sequence.</p>
+<figure><img src="../../illustrations/class-8/day_56.svg" alt="Diagram for How do migratory birds use stopover wetlands?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Wetlands in India can form part of wider movements of waterbirds. A site visited briefly during passage can therefore have a different but still important role from a place used for months.</p>
+<p>School observations should use approved routes and distant viewing. A group should never approach birds closely to test whether they are tired or force them to move for a photograph. The educational record can note habitat and use without disturbing the travellers.</p>
+<p>A local wetland project benefits from asking when a site is used and what resources it offers. Counting only the number of permanent residents would miss temporary visitors whose needs connect the place to a wider landscape.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and four or five site symbols. No wildlife visit or food provision is needed.</p>
+<ol>
+<li>Draw two destinations with several possible stopovers between them.</li>
+<li>Give each site a simple feeding or resting label.</li>
+<li>Trace one possible route.</li>
+<li>Remove a middle site and compare alternative links.</li>
+<li>Explain why the nearest alternative may not be equivalent.</li>
+</ol>
+<p>The symbols and distances are invented. Do not turn the route into a claim about a particular species without tracking or observational evidence. The exercise tests network reasoning, not an actual bird's energy budget or safe maximum flight distance.</p>
+</div><h2>7. Think deeper</h2>
+<p>A replacement wetland lies close to the lost site but has unsuitable water depth for the model bird's feeding method. Why might geographical closeness fail to make it a useful substitute?</p>
+<p>Now imagine a wetland with good food but repeated disturbance. Separate the presence of resources from the bird's opportunity to use them. This distinction helps explain why habitat quality is more than the number of water bodies on a map.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is a stopover site?</p>
+<ul>
+<li>A. Only a permanent nest occupied all year</li>
+<li>B. A location that no migrating animal visits</li>
+<li>C. A place used during a journey for needed resources</li>
+</ul>
+<p><strong>Answer:</strong> C — Stopovers support travel stages rather than necessarily serving as final destinations.</p>
+<h3>Q2</h3>
+<p>Why does timing affect stopover usefulness?</p>
+<ul>
+<li>A. Resources must be available when birds arrive</li>
+<li>B. Migration removes the need to feed or rest</li>
+<li>C. Every wetland has identical conditions forever</li>
+</ul>
+<p><strong>Answer:</strong> A — A suitable site must match the travellers needs during their actual passage.</p>
+<h3>Q3</h3>
+<p>A nearby replacement has food the model bird cannot reach. What follows?</p>
+<ul>
+<li>A. The lost site could never have mattered</li>
+<li>B. Closeness alone does not establish suitability</li>
+<li>C. It must be equivalent because it is close</li>
+</ul>
+<p><strong>Answer:</strong> B — Habitat accessibility and resources matter as well as location.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Design a paper conservation map that includes destinations, stopovers and timing notes. Identify a site whose loss creates a difficult link and propose what information would be needed before calling an alternative suitable.</p>
+<p>Your map must avoid invented species-specific distances and must distinguish nesting protection from transit support. End with an observation that could be made from an approved distant viewpoint without approaching or feeding the birds.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A place can matter because of what it allows an animal to do next. A brief stop can connect two regions that would otherwise be harder to move between. Conservation value therefore need not be proportional to how many months an individual remains in one location.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Stopover wetlands can support feeding and rest during migration; a useful route depends on suitable sites being available at the right time.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 26 of 30</footer>
+</div>
+</body>
+</html>

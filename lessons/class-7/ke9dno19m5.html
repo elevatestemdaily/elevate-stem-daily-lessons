@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 40: How does a measuring cylinder avoid a volume-reading mistake? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 40</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a measuring cylinder avoid a volume-reading mistake?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Read a measuring cylinder without introducing a predictable viewing error. Identify the scale interval and <strong>meniscus</strong>, place your eye correctly, and distinguish a careful reading from a claim of impossible precision. Use a paper model if a real cylinder is unavailable.</p>
+</div><h2>1. The mystery</h2>
+<p>Two students look at the same water in the same measuring cylinder. One looks down from above the water surface. The other crouches so their eyes are level with it. They report different volumes even though nobody added or removed any water.</p>
+<p>The disagreement need not mean the cylinder changed or either student is dishonest. A marked line on the cylinder and the liquid surface lie at different positions in space. Looking along a sloping line can make them appear aligned differently. Correct technique removes much of this avoidable error.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>measuring cylinder</strong> estimates liquid volume using a calibrated scale. Its markings correspond to volumes, commonly expressed in millilitres. The scale is useful only if the cylinder is upright on a reasonably level surface and the correct marks are read.</p>
+<p>Start by identifying the value represented by one interval. Suppose marks labelled 20 mL and 30 mL have five equal intervals between them. Each interval represents 2 mL. Count the spaces between marks, not just the number of small lines you happen to notice.</p>
+<p>Water in a clean narrow cylinder usually has a curved surface called a <strong>meniscus</strong>. For an ordinary concave water meniscus, the standard reading is taken at its lowest point. Different liquids can require a different convention, so always know what the instruction specifies.</p>
+<p>The eye should be level with the point being read. Looking from too high or too low changes the apparent alignment of the meniscus with the scale. This viewing-position error is called <strong>parallax</strong>. It is not a change in the actual amount of liquid.</p>
+<p>A useful way to check eye level is to bring your line of sight horizontally toward the meniscus. Do not tip the cylinder toward your face. Tilting changes the liquid's position relative to the scale and defeats the purpose of the measurement.</p>
+<p>The instrument's resolution limits how finely you should report the result. A cylinder with coarse markings does not justify a long string of decimal places. A careful reader may estimate between marks where appropriate, but the estimate must remain consistent with the scale and viewing conditions.</p>
+<p><strong>Accuracy</strong> also depends on the cylinder's calibration and suitability. Correct eye position cannot repair a damaged or badly marked instrument. Choose a cylinder whose capacity and divisions suit the amount being measured. A very wide container can make a small volume difference hard to see as a change in height.</p>
+<p>Allow bubbles and splashes to settle before reading. Droplets left on the wall or liquid spilled during transfer can complicate a comparison. Good technique controls several small sources of error rather than treating eye position as a magical guarantee of perfection.</p>
+<h2>3. Build the mental model</h2>
+<p>Place one pencil in front of another and look from the left, then from the right. Their apparent alignment changes even though neither pencil moves. Objects at different depths do not keep the same apparent alignment from every viewpoint.</p>
+<p>For the cylinder, imagine a horizontal sightline connecting the eye, the selected point on the meniscus and the corresponding scale position. Looking along this line reduces parallax.</p>
+<p>Draw a second sloping sightline and show how it meets a different mark. The model explains the source of disagreement. It does not require the liquid volume to change or the marks to move.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows a cylinder containing water with a concave meniscus. A horizontal sightline passes through the bottom of the curve to an eye symbol at the same height. Two dashed sloping lines show alternative viewing positions.</p>
+<p>A scale inset labels a 10 mL span divided into five equal intervals, illustrating a 2 mL interval. The numbers are an instructional example, not data from an experiment.</p>
+<p>A separate caption warns against tipping the cylinder. The lesson uses the existing meniscus as a reading feature and does not reteach the molecular mechanism that makes liquid surfaces curve.</p>
+<figure><img src="../../illustrations/class-7/day_40.svg" alt="Diagram for How does a measuring cylinder avoid a volume-reading mistake?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>School laboratories use measuring cylinders when mixing liquids or comparing sample volumes. Consistent reading technique matters when different groups combine results. Otherwise a difference caused by viewing angle may be mistaken for a scientific effect.</p>
+<p>Kitchen measuring jugs use marked levels too, although their wider shapes and coarser markings can make small measurements less precise. For a recipe, that may be acceptable. For a small-volume comparison, a more suitable instrument is helpful.</p>
+<p>A medicine dose is a higher-stakes measurement. This lesson does not provide dosing advice; the relevant connection is that appropriate marked devices and the specified reading technique matter whenever a small volume must be measured reliably.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a clear drinking glass, water, a ruler or a marked paper strip, and paper. If a proper measuring cylinder is available, use that instead with adult permission. Do not mark a glass by scratching it.</p>
+<ol>
+<li>Put the container upright on a level table.</li>
+<li>Hold the marked strip just behind it without changing the water amount.</li>
+<li>View the liquid from above, then from level with the surface.</li>
+<li>Record how the apparent alignment changes.</li>
+<li>Draw a horizontal line for the eye-level position.</li>
+</ol>
+<p>The glass model demonstrates viewing error; it does not become a calibrated measuring cylinder. Do not assign true millilitre values to arbitrary paper marks. Keep the water in the container so a spill does not create a real volume change.</p>
+</div><h2>7. Think deeper</h2>
+<p>If three students all look from the same incorrect height, their readings might agree closely. Would that agreement prove the volume was measured correctly?</p>
+<p>Now compare a large cylinder with widely spaced volume intervals and a smaller cylinder with finer intervals. Explain why choosing a suitable instrument and positioning the eye correctly solve different parts of the measurement problem.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Which point is read for an ordinary concave water meniscus?</p>
+<ul>
+<li>A. The bottom of the curve</li>
+<li>B. The top edge of the cylinder</li>
+<li>C. The highest wet mark anywhere</li>
+</ul>
+<p><strong>Answer:</strong> A — The usual convention for water is to read the lowest point of its concave meniscus.</p>
+<h3>Q2</h3>
+<p>Why should the eye be level with the meniscus?</p>
+<ul>
+<li>A. It adds more water to the cylinder</li>
+<li>B. It changes the spacing of scale marks</li>
+<li>C. It reduces parallax error</li>
+</ul>
+<p><strong>Answer:</strong> C — Eye-level viewing reduces apparent misalignment between the liquid surface and scale.</p>
+<h3>Q3</h3>
+<p>A 10 mL span contains five equal intervals. What does one interval represent?</p>
+<ul>
+<li>A. 50 mL</li>
+<li>B. 2 mL</li>
+<li>C. 5 mL</li>
+</ul>
+<p><strong>Answer:</strong> B — Dividing the 10 mL span by five intervals gives 2 mL per interval.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a four-step instruction card for reading an ordinary water meniscus. It should include placing the cylinder upright, finding the scale interval, setting eye level and choosing the bottom of the curve.</p>
+<p>Then give an example of reporting too many decimal places for a coarse scale. Explain why extra digits on paper do not automatically add information to the measurement. Your card should distinguish an observed reading from its uncertainty.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Several people can make the same mistake and still agree. Agreement is useful evidence of consistency, but a shared viewing error can move every reading in the same direction. A sound method therefore needs a reason for the viewing position, not merely a vote among the observers.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Read a water meniscus at eye level, use the bottom of its curve, and report a volume that matches the scale's useful precision.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 10 of 30</footer>
+</div>
+</body>
+</html>

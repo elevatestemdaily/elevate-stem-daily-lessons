@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does a combine harvester separate grain from stalks?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Several mechanical jobs are coordinated into one material flow</text>
+<text x="140" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Gather</text>
+<rect x="50" y="175" width="180" height="170" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="375" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Thresh</text>
+<rect x="285" y="175" width="180" height="170" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="610" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Separate straw</text>
+<rect x="520" y="175" width="180" height="170" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="850" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Clean grain</text>
+<rect x="760" y="175" width="180" height="170" rx="8" fill="#f8fbff" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M75 300 L95 245 L115 300 L135 245 L155 300 L175 245 L195 300" fill="none" stroke="#579b70" stroke-width="4"/>
+<circle cx="375" cy="245" r="35" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="325" y1="305" x2="425" y2="305" stroke="#1f5f8b" stroke-width="4"/>
+<circle cx="345" cy="325" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="380" cy="325" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="410" cy="325" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="560" y1="220" x2="660" y2="260" stroke="#579b70" stroke-width="5"/>
+<line x1="565" y1="230" x2="665" y2="270" stroke="#579b70" stroke-width="5"/>
+<circle cx="575" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="605" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="635" cy="320" r="5" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="790" y1="230" x2="900" y2="230" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<circle cx="815" cy="315" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="845" cy="315" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="875" cy="315" r="6" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M800 290 L900 290" fill="none" stroke="#579b70" stroke-width="4"/>
+<line x1="235" y1="260" x2="270" y2="260" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="470" y1="260" x2="505" y2="260" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="705" y1="260" x2="740" y2="260" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="140" y="402" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Controlled entry</text>
+<text x="375" y="402" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Release grain</text>
+<text x="610" y="402" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Divert long material</text>
+<text x="850" y="402" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Air + sieve stages</text>
+<text x="500" y="454" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Too much cleaning air can carry useful grain into a reject route.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Balance grain recovery, cleanliness and limited mechanical damage.</text>
+</svg>

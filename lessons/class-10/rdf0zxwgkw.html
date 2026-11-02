@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 32: How can oxidation numbers track electron transfer in a reaction? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 32</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can oxidation numbers track electron transfer in a reaction?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Use <strong>oxidation numbers</strong> as a formal accounting tool for redox changes. Identify oxidation as an increase and reduction as a decrease, then balance transferred electrons. Distinguish a bookkeeping number from an atom's literal charge in every chemical bond.</p>
+</div><h2>1. The mystery</h2>
+<p>A reaction equation can show new substances without making the electron-transfer account obvious. Chemists assign oxidation numbers to follow changes in a consistent way.</p>
+<p>These numbers are not coloured marks physically attached to atoms. They are a convention that helps identify which element's assigned electron ownership changes between reactants and products.</p>
+<p>The useful question is how to make the account balance, not merely whether a reaction changed colour or involved oxygen. That focus keeps this lesson distinct from earlier reaction indicators and corrosion examples.</p>
+<h2>2. The science behind it</h2>
+<p>An <strong>oxidation number</strong> is a formal assignment based on rules for distributing bonding electrons. For a monatomic ion, it matches the ion's charge. In covalent substances, it need not equal the atom's actual electrical charge.</p>
+<p>An element in its uncombined form has oxidation number zero. A simple ion such as zinc two-plus has oxidation number plus two. The sum of oxidation numbers equals the total charge of the species.</p>
+<p><strong>Oxidation</strong> is an increase in oxidation number. <strong>Reduction</strong> is a decrease. In an electron-transfer account, oxidation releases electrons and reduction accepts them. The two processes occur together in the complete redox reaction.</p>
+<p>For a paper example, zinc goes from Zn to Zn2+ plus two electrons. Its oxidation number changes from zero to plus two. A copper two-plus ion can be represented as accepting two electrons to form uncombined copper, changing from plus two to zero.</p>
+<p>The electron counts must balance when the half-reactions are combined. Two electrons released in one account match two accepted in the other. Electrons are not created or lost from the complete accounting simply because they appear on opposite sides of separate half-equations.</p>
+<p>The <strong>reducing agent</strong> supplies electrons in this description and is itself oxidised. The <strong>oxidising agent</strong> accepts them and is reduced. The names describe what each does to the other participant, which is why they can initially feel reversed.</p>
+<p>Common rule patterns help with compounds, but exceptions matter. Oxygen is often assigned minus two, yet peroxide is a familiar exception. A reliable method checks the species and total charge rather than applying one memorised value blindly.</p>
+<p>Oxidation numbers do not by themselves predict whether an arbitrary reaction will occur under particular conditions or how fast. The lesson teaches bookkeeping, while relative reactivity and kinetic questions require additional information. No real metal-salt experiment is part of the activity.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two accounts with electron tokens moving from one participant to another. Mark an increase in oxidation number on the donor and a decrease on the receiver.</p>
+<p>Keep the token total balanced. If one half-reaction produces more electrons than another consumes, multiply the appropriate half-equations before combining them. The mathematical scaling preserves both atoms and charge.</p>
+<p>Add a label saying formal assignment beside a covalent example. This prevents the token model from claiming that every bond contains fully transferred electrons in exactly the way the bookkeeping assumes. A useful convention can reveal change without being a literal microscopic picture of all charge distribution.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows zinc's zero-to-plus-two account and copper's plus-two-to-zero account, joined by a two-electron transfer marker. Opposite oxidation-number changes are highlighted separately.</p>
+<p>A lower strip distinguishes formal number from literal atomic charge in every substance. Another label identifies the agent names according to their role in the partner's change.</p>
+<p>The diagram uses symbolic equations only. It does not show apparatus, an electrical circuit or instructions to mix chemicals. Its target is redox accounting rather than an experimental displacement prediction or a repeat of corrosion chemistry.</p>
+<figure><img src="../../illustrations/class-10/day_32.svg" alt="Diagram for How can oxidation numbers track electron transfer in a reaction?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Redox language appears in many chemical descriptions, from material processing to biological chemistry. The same bookkeeping idea can organise very different reactions, but each actual process has additional conditions and mechanisms.</p>
+<p>In school work, a balanced electron account helps check an equation more specifically than saying a substance gained oxygen. Some redox reactions can be described without oxygen being the central participant.</p>
+<p>Students should not mix metal salts, household cleaners or unknown substances to test this lesson. The paper account supplies the required science without a practical chemical procedure or claims about current industrial operating conditions.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two drawn electron tokens.</p>
+<ol>
+<li>Write zinc changing from zero to plus two.</li>
+<li>Put two electron symbols on the product side of that half-equation.</li>
+<li>Write copper changing from plus two to zero.</li>
+<li>Place the same two electrons on its reactant side.</li>
+<li>Combine the equations and cancel the matched electrons.</li>
+</ol>
+<p>Check atom labels and total charge as well as the numbers. The tokens are an accounting model, not loose electrons students should attempt to produce or handle. Add a note distinguishing oxidation-number rules from a prediction of every reaction's feasibility.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can an oxidising agent be reduced itself? Explain the name through what it causes the partner to do rather than treating it as the name of its own change.</p>
+<p>Now consider a covalent molecule. Why should a formal oxidation number not automatically be interpreted as a complete ionic charge physically residing on that atom? The convention deliberately simplifies electron assignment for a useful purpose.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What indicates oxidation in oxidation-number bookkeeping?</p>
+<ul>
+<li>A. A decrease in every possible number</li>
+<li>B. Only a visible colour change</li>
+<li>C. An increase in oxidation number</li>
+</ul>
+<p><strong>Answer:</strong> C — Oxidation corresponds to an increase in the formal oxidation number.</p>
+<h3>Q2</h3>
+<p>Why must electrons cancel in the combined half-equation account?</p>
+<ul>
+<li>A. The released and accepted electron totals must match</li>
+<li>B. Electron numbers are unrelated to charge</li>
+<li>C. The reaction creates arbitrary net charge</li>
+</ul>
+<p><strong>Answer:</strong> A — The complete electron-transfer account preserves charge rather than creating unmatched electrons.</p>
+<h3>Q3</h3>
+<p>An atom in a covalent substance has an assigned oxidation number. What should you avoid assuming?</p>
+<ul>
+<li>A. That total species charge must be checked</li>
+<li>B. That it is always the atom literal ionic charge</li>
+<li>C. That the assignment can help track change</li>
+</ul>
+<p><strong>Answer:</strong> B — Oxidation numbers are formal assignments and need not equal actual local electrical charge.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Make a redox-accounting card with the starting and ending oxidation numbers, half-equations, matched electron count and agent roles. Use the supplied zinc-copper paper example.</p>
+<p>Include one exception warning for a common oxidation-number rule and one limitation about reaction prediction. Do not turn the card into a real mixing instruction. Your conclusion should show what the bookkeeping establishes and what it leaves for other chemistry.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A formal number can be useful without being a literal measured charge. Oxidation numbers make electron changes countable across complex formulas. Recognising their conventional nature strengthens the tool because it prevents the account from being mistaken for a complete picture of bonding.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Oxidation numbers track formal electron changes: increases indicate oxidation, decreases reduction, and the complete redox account must balance transferred electrons and charge.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 2 of 30</footer>
+</div>
+</body>
+</html>

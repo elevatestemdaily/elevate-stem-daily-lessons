@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 52: Why can equal masses of different fuels release different amounts of heat? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 52</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>Why can equal masses of different fuels release different amounts of heat?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain why equal fuel masses can release different energy amounts during complete combustion. Define <strong>calorific value</strong> and distinguish it from flame temperature and the useful heat reaching a task. Use clearly invented numbers for a fair comparison without performing any burning experiment.</p>
+</div><h2>1. The mystery</h2>
+<p>Two fuels have equal masses. Under specified complete-burning conditions, one releases more energy than the other. The difference cannot be explained simply by weighing the samples again: mass alone does not specify the chemical composition or the energy change of the reaction.</p>
+<p>Now imagine the higher-energy fuel used in a badly designed device. It may deliver less useful heat to a pot than another fuel in a better system. Fuel energy and practical cooking performance are related but distinct questions.</p>
+<p>Understanding both prevents one impressive number from being treated as a complete verdict.</p>
+<h2>2. The science behind it</h2>
+<p><strong>Calorific value</strong> is the energy released per unit mass of a fuel during complete combustion under defined conditions. It is commonly expressed in units such as kilojoules per kilogram. Units and the measurement basis are part of the value's meaning.</p>
+<p>Different fuels contain different substances and proportions. Their reactants and products have different energy relationships, so equal masses need not produce equal heat release. The explanation concerns chemical composition and reaction energy, not a hidden stock of flames inside each sample.</p>
+<p>Consider invented fuels A and B with model values of 20 and 30 kilojoules per gram. Ten grams would release 200 and 300 kilojoules respectively under the stated model. These values are arithmetic examples, not real measurements of named commercial fuels.</p>
+<p>The total model energy is calorific value multiplied by fuel mass. A larger mass of a lower-value fuel can release more total energy than a smaller mass of a higher-value one. A fair comparison must therefore state whether masses are equal.</p>
+<p><strong>Useful heat</strong> is the portion transferred to the intended task. Some energy warms the surrounding air, device and exhaust instead. Device design and operating conditions affect the fraction reaching the target.</p>
+<p>Flame temperature is another quantity. It depends on fuel, oxidiser, mixing, losses and conditions. A hotter-looking flame does not directly measure total energy per kilogram. Nor does a bright flame automatically have a higher calorific value than a faint one.</p>
+<p>Moisture and the reporting basis matter. Energy used to warm or vaporise water can change the useful output of a wet fuel. Technical reports can also distinguish heating values according to how water in the products is treated. Values must be compared on a consistent basis.</p>
+<p>Fuel choice includes more than energy content: availability, safe equipment, emissions, cost and the task all matter. This lesson explains the energy-per-mass idea without recommending a current product, changing a stove or inventing pollutant statistics.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw two equal-sized mass boxes labelled A and B. Give each a different number of energy tokens according to an explicitly invented calorific-value model. This distinguishes equal mass from equal energy.</p>
+<p>Next split each energy output into useful and other routes. The number reaching the target depends on the system, not only the fuel label. A high initial output can still be poorly directed.</p>
+<p>Finally place a temperature symbol beside the flame rather than using it as the same token count. Temperature describes a condition, while energy per mass describes a quantity released. The model is stronger when those units remain separate.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares equal 10-gram samples of invented fuels A and B using the stated example values. Separate energy bars show 200 and 300 kilojoules under the model assumptions.</p>
+<p>A second panel divides released energy into useful transfer and other routes. It labels these qualitatively rather than assigning an unsupported real efficiency. No flame colour is used as a numerical thermometer.</p>
+<p>The diagram contains a prominent invented-data note. It is an energy-accounting illustration, not a claim about actual wood, gas or liquid-fuel performance and not a design for building a burner.</p>
+<figure><img src="../../illustrations/class-8/day_52.svg" alt="Diagram for Why can equal masses of different fuels release different amounts of heat?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Cooking and heating discussions in India often compare fuels. A meaningful comparison needs a common unit and a clearly defined purpose. Price per kilogram, energy per kilogram and useful cooking output are three different measures.</p>
+<p>A change of device can affect the useful output from the same fuel. This explains why a fuel's calorific value is informative but insufficient for predicting exactly how fast an arbitrary pot of food will cook.</p>
+<p>Handling and burning fuels belong to responsible adults using appropriate equipment. Students do not need a flame, match, hot container or fuel sample to understand a per-mass energy calculation.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and a calculator if desired. No fuel or heating is needed.</p>
+<ol>
+<li>Write the invented values for model fuels A and B.</li>
+<li>Choose the same sample mass for both.</li>
+<li>Multiply value by mass, keeping the units visible.</li>
+<li>Draw qualitative arrows for useful and other energy routes.</li>
+<li>Change the sample masses and check whether the energy ranking must remain the same.</li>
+</ol>
+<p>Label every number invented. The exercise measures arithmetic understanding rather than real fuel performance. Do not convert a model result into cooking advice, cost advice or an emission claim about a named fuel.</p>
+</div><h2>7. Think deeper</h2>
+<p>A fuel has a high calorific value, but much of its released energy leaves in hot exhaust. Why might it provide less useful heating than expected?</p>
+<p>Now compare a value reported per kilogram of dry material with one reported per kilogram of wet material. Explain why an unqualified numerical comparison could be misleading even if both reports were measured carefully. The basis belongs beside the number.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What does calorific value compare?</p>
+<ul>
+<li>A. Energy released per unit fuel mass</li>
+<li>B. The number of colours in a fuel label</li>
+<li>C. Only the visible height of a flame</li>
+</ul>
+<p><strong>Answer:</strong> A — Calorific value expresses combustion energy relative to fuel mass under defined conditions.</p>
+<h3>Q2</h3>
+<p>Why can useful heat differ from total released energy?</p>
+<ul>
+<li>A. Every device sends all energy into the task</li>
+<li>B. Energy vanishes without any destination</li>
+<li>C. Some energy follows other transfer routes</li>
+</ul>
+<p><strong>Answer:</strong> C — The surroundings, device and exhaust can receive energy instead of the intended target.</p>
+<h3>Q3</h3>
+<p>Invented fuel A releases 20 kJ per gram. What model energy comes from 10 grams?</p>
+<ul>
+<li>A. 2 kJ</li>
+<li>B. 200 kJ</li>
+<li>C. 30 kJ</li>
+</ul>
+<p><strong>Answer:</strong> B — Multiplying 20 kJ per gram by 10 grams gives 200 kJ.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a comparison card with separate spaces for fuel mass, calorific value, model total energy and useful-output limitations. Use only the invented A and B data.</p>
+<p>Add a correction to the statement that the brightest flame must provide the most energy per kilogram. Your card should explain why a real fuel decision requires further information while avoiding an unsupported recommendation or a home combustion test.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A larger energy release is not the same as a larger useful result. The pathway between source and task matters. Following that pathway connects a fuel property to engineering design without confusing either one with the other or treating flame appearance as a complete measurement.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Calorific value compares released energy per fuel mass under stated conditions; total energy, flame temperature and useful delivered heat remain different quantities.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 22 of 30</footer>
+</div>
+</body>
+</html>

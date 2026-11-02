@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 58: How can several cells supply a different voltage when rearranged? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 58</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can several cells supply a different voltage when rearranged?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Compare ideal <strong>series</strong> and <strong>parallel</strong> arrangements of identical cells. Predict output voltage, charge capacity and stored-energy accounting using an explicitly fictional example. Use paper diagrams only; do not build, connect, open or charge real cell packs.</p>
+</div><h2>1. The mystery</h2>
+<p>Two identical cells can represent the same total stored energy while offering different output voltages depending on their connection pattern. More cells does not mean that every electrical rating increases in exactly the same way.</p>
+<p>A series arrangement places voltage rises one after another along a path. A matched parallel arrangement places branches between the same two terminals. These geometries impose different relationships.</p>
+<p>The question concerns sources, not which household appliances belong on separate branches. Understanding the source arrangement helps distinguish voltage, current, capacity and energy instead of treating them as synonyms for battery strength.</p>
+<h2>2. The science behind it</h2>
+<p>A cell supplies a potential difference between its terminals through its chemical processes. In the ideal model here, each identical cell has a stated voltage and a stated <strong>charge capacity</strong>. Real operating voltage and capacity vary with conditions, but we temporarily hold them fixed for comparison.</p>
+<p>In an aiding <strong>series</strong> connection, the positive terminal of one cell joins the negative terminal of the next. Traversing the source chain adds the individual voltage rises. Two identical model cells of voltage V therefore provide 2V across the outer terminals.</p>
+<p>The same charge passes through each element of a simple series path. For matched cells, the pack's ampere-hour rating does not double merely because there are two cells in series. A weak or mismatched cell can limit an actual pack, another reason the ideal assumptions must be explicit.</p>
+<p>In a matched <strong>parallel</strong> model, corresponding positive terminals share one node and corresponding negative terminals another. Both branches span the same terminal potential difference. The ideal pack voltage stays V, while the combined available charge capacity can be the sum of the matched branches.</p>
+<p><strong>Ampere-hour</strong>, written Ah, measures charge capacity. It is not a voltage and not an instantaneous current. One ampere-hour corresponds to one ampere maintained for one hour in the ideal accounting sense, equal to 3,600 coulombs of charge.</p>
+<p>For an invented example, give each ideal cell a constant 2 V and 3 Ah. Two aiding cells in series give 4 V and 3 Ah. Two matched cells in parallel give 2 V and 6 Ah. These are fictional model ratings, not recommended real cells or a wiring instruction.</p>
+<p>Stored-energy accounting in this fixed-voltage model uses <strong>watt-hours ≈ volts × ampere-hours</strong>. The series arrangement gives 4 × 3 = 12 Wh; the parallel arrangement gives 2 × 6 = 12 Wh. Rearrangement changes how the source is presented, not the total ideal energy supplied by the same two cells.</p>
+<p>A real device has voltage limits and power requirements. Equal nominal energy does not make the two packs interchangeable. Actual runtime also depends on load, conversion losses, discharge conditions and protection, so a simple capacity ratio cannot guarantee a runtime for an unspecified gadget.</p>
+<p>Real cells can be unsafe when mismatched, reversed, shorted or improperly charged. Even apparent voltage matching is not a complete compatibility test. All connection language here describes an ideal paper model; it is not permission to rearrange batteries from toys, power banks or discarded equipment.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a route through two aiding voltage rises for series. Mark the outer terminals and write the sum of rises beside them. Then trace one conceptual charge marker through both cells.</p>
+<p>For parallel, draw two branches between a common upper node and a common lower node. Mark the same voltage difference across each branch. Separate conceptual charge supplies can contribute to the shared output while the terminal difference stays the same.</p>
+<p>Finally, make a table with columns for V, Ah and Wh. Keeping those units separate exposes a common mistake: adding every number in sight regardless of which connection or physical quantity the number describes.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares two ideal source arrangements with clearly marked terminal polarities. The series model has two voltage rises in sequence; the parallel model shares two terminal nodes.</p>
+<p>Below each, the fictional 2 V, 3 Ah cell ratings lead to the appropriate pack ratings. A common energy line shows 12 Wh for both arrangements under the fixed-voltage assumptions.</p>
+<p>The drawing includes no wire sizes, charger design or construction steps. It is a comparison of source topology and accounting, with a paper-model caption rather than an invitation to connect actual cells.</p>
+<figure><img src="../../illustrations/class-10/day_58.svg" alt="Diagram for How can several cells supply a different voltage when rearranged?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Battery labels on Indian consumer products often use volts, milliampere-hours or watt-hours. These quantities answer different questions. Comparing only a large capacity number while ignoring voltage can make an energy comparison misleading.</p>
+<p>Manufacturers design packs with compatible cells and protective systems appropriate to the device. A visible arrangement in a diagram does not show all those requirements. Students should leave actual packs sealed and use printed example ratings for arithmetic.</p>
+<p>This also explains why replacing a device's source is not a matter of choosing the highest voltage available. Suitability includes the required voltage range and safe design, not just the largest number on a label.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and a calculator if desired. Do not use real cells or wires.</p>
+<ol>
+<li>Draw two fictional cells, each labelled 2 V and 3 Ah.</li>
+<li>Make an aiding-series diagram and calculate voltage and capacity.</li>
+<li>Make a matched-parallel diagram and calculate the corresponding ratings.</li>
+<li>Compute model watt-hours for both.</li>
+<li>State one ideal assumption and one real-world limitation.</li>
+</ol>
+<p>Ask a partner to identify why the series capacity is not 6 Ah in this comparison. Keep polarity marks readable. The aim is source accounting, not a practical build or a guarantee of device runtime.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why can two packs have equal model energy yet fail to serve the same device? Separate energy available from voltage required at the terminals.</p>
+<p>Now suppose someone says parallel always doubles current. What information is missing? The load and operating conditions determine the current drawn; adding matched branches can increase available capacity without forcing every attached device to consume twice its former current.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What adds in an ideal aiding-series cell chain?</p>
+<ul>
+<li>A. The individual voltage rises</li>
+<li>B. The load's required voltage automatically</li>
+<li>C. Every cell's physical diameter</li>
+</ul>
+<p><strong>Answer:</strong> A — The total source potential difference is the sum of the aiding cell voltages.</p>
+<h3>Q2</h3>
+<p>Why does an ideal matched-parallel pack keep the single-cell voltage?</p>
+<ul>
+<li>A. Each branch must have zero potential difference</li>
+<li>B. Parallel geometry creates an extra voltage rise</li>
+<li>C. Its branches share the same two terminal nodes</li>
+</ul>
+<p><strong>Answer:</strong> C — All parallel branches span the same pair of nodes and therefore the same potential difference.</p>
+<h3>Q3</h3>
+<p>Two fictional 2 V, 3 Ah cells are in aiding series. What are the ideal pack ratings?</p>
+<ul>
+<li>A. 2 V and 6 Ah</li>
+<li>B. 4 V and 3 Ah</li>
+<li>C. 4 V and 6 Ah</li>
+</ul>
+<p><strong>Answer:</strong> B — The voltages add while matched series ampere-hour capacity stays 3 Ah in the stated model.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a comparison card for the fictional two-cell example. Include connection pattern, voltage, ampere-hours and watt-hours, plus a short explanation of the equality in ideal energy.</p>
+<p>Add a crossed-out claim that all real cells can be connected in parallel if their labels look similar. Replace it with the correct limitation about compatibility and protection. All work remains symbolic; no actual battery handling or experimentation is part of the challenge.</p>
+</div><h2>10. One surprising idea</h2>
+<p>The same total energy can be packaged as a larger voltage with less ampere-hour capacity, or a smaller voltage with more ampere-hour capacity. A single capacity number therefore cannot describe the whole source. Units reveal which physical quantity has changed when the diagram is rearranged.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Aiding series cells add voltage; matched parallel cells add charge capacity at the same voltage. Ideal total energy stays accounted for, while real packs require compatible protected design.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 28 of 30</footer>
+</div>
+</body>
+</html>

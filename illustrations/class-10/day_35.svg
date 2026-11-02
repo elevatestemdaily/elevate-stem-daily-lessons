@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can a life-cycle comparison reveal a product&#x27;s hidden waste?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">One defined service, consistent boundaries and explicit use assumptions</text>
+<text x="500" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Common functional unit: the same specified service</text>
+<rect x="70" y="180" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="310" y="180" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="550" y="180" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="790" y="180" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="220" y1="205" x2="300" y2="205" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="460" y1="205" x2="540" y2="205" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="700" y1="205" x2="780" y2="205" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="70" y="290" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="310" y="290" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="550" y="290" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="790" y="290" width="140" height="50" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="220" y1="315" x2="300" y2="315" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="460" y1="315" x2="540" y2="315" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="700" y1="315" x2="780" y2="315" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="140" y="395" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Manufacture</text>
+<text x="380" y="395" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Transport</text>
+<text x="620" y="395" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Use / cleaning</text>
+<text x="860" y="395" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">End of life</text>
+<path d="M620 240 Q740 285 620 290" fill="none" stroke="#579b70" stroke-width="3"/>
+<text x="500" y="455" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Unknown inputs stay unknown; lifetime and replacement change the comparison.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">A material label alone is not a complete environmental assessment.</text>
+</svg>

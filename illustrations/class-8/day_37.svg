@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why does salt help preserve a mango pickle?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Total moisture and water availability are different properties</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Water with fewer solutes</text>
+<rect x="80" y="170" width="340" height="185" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Water with more dissolved salt</text>
+<rect x="580" y="170" width="340" height="185" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="135" cy="215" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="210" cy="280" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="305" cy="220" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="365" cy="310" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="635" cy="215" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="710" cy="280" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="805" cy="220" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="865" cy="310" r="8" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="620" y="230" width="10" height="10" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="655" y="300" width="10" height="10" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="715" y="210" width="10" height="10" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="760" y="270" width="10" height="10" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="810" y="315" width="10" height="10" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="860" y="230" width="10" height="10" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<text x="250" y="399" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Water remains present</text>
+<text x="750" y="399" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Availability can be lower</text>
+<text x="500" y="442" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Different organisms tolerate different environments.</text>
+<text x="500" y="468" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Preservation needs an appropriate whole process, not salt alone.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Inhibiting some microbes is not the same as sterilising food.</text>
+</svg>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 53: How can an electroscope reveal an object's charge? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 8 · DAY 53</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can an electroscope reveal an object's charge?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 8</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how an electroscope converts a change in charge distribution into visible leaf movement. Distinguish <strong>contact charging</strong> from the response to a nearby object. Recognise why spreading leaves do not, by themselves, identify the charge sign or measure a universal amount of charge.</p>
+</div><h2>1. The mystery</h2>
+<p>A detector has a metal terminal connected to two light leaves. A charged object brought near the terminal can make the leaves separate, even without touching them. Under other conditions, touching the terminal can leave a longer-lasting change after the object is removed.</p>
+<p>The visible movement is not caused by a hidden motor. Charge distribution changes within the conducting parts, and the two leaves can acquire like charge.</p>
+<p>To explain the detector, follow the charge rather than treating leaf angle as a magic yes-or-no signal with no mechanism behind it.</p>
+<h2>2. The science behind it</h2>
+<p>An <strong>electroscope</strong> is a device that indicates electrical effects through the motion of a light part. In a simple leaf design, a conducting terminal and stem connect to two light conductive leaves. An insulating support limits unwanted charge flow to the surroundings.</p>
+<p>Like charges <strong>repel</strong>. If both leaves have charge of the same sign, their electrical interaction tends to push them apart. Their weight and mechanical arrangement oppose unlimited separation, so an observed position reflects a balance.</p>
+<p>If a suitable charged object touches the terminal, charge can be transferred through contact. The final distribution depends on the objects and their surroundings. The leaves may remain separated after the object is removed if charge has been left on the detector and has not leaked away.</p>
+<p>A nearby charged object can also cause <strong>redistribution</strong> without contact. Mobile charges in the conductor rearrange in response to its field. The terminal region and lower leaves can then have different local charge distributions while the isolated detector's overall charge remains unchanged.</p>
+<p>In a simple initially neutral detector, the two leaves can obtain like charge during this redistribution and spread. When the external object is removed without other changes, the induced separation can reduce again. This response must not be described automatically as permanent charge transfer.</p>
+<p>An initially uncharged electroscope can respond to either sign of nearby charge. Leaf separation alone therefore does not tell you positive versus negative. Determining sign requires an appropriate comparison method and known initial conditions beyond simply watching one unknown deflection.</p>
+<p>Leaf angle also depends on geometry, mass, stiffness, humidity and leakage. The same angle on two different homemade devices does not establish the same charge. An electroscope is not automatically a calibrated charge meter.</p>
+<p>Damp surfaces and imperfect insulation can allow charge to leak. Mechanical vibration or airflow can move leaves too. A careful interpretation distinguishes electrical response from those disturbances rather than attributing every motion to a charged object.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw one continuous conducting path from terminal to stem and leaves. Put same-sign symbols on both leaves and outward arrows between them. This shows the immediate mechanical reason for spreading.</p>
+<p>In a second picture, bring an external charged object near without contact. Redistribute charge symbols within the detector while keeping its total unchanged. Then remove the object and reverse the redistribution in the model.</p>
+<p>For contact charging, draw a separate transfer arrow across an actual touching point. Keeping the two pictures distinct prevents the mistaken rule that every nearby-object response means electrons crossed an air gap into the detector.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG compares contact transfer with no-contact redistribution. Both panels include a terminal, conducting stem and two leaves, with like-charge markers on the leaves where spreading occurs.</p>
+<p>The no-contact panel has a visible gap between the test object and terminal. An internal redistribution arrow stays within the detector. The contact panel uses a transfer arrow across the touching region.</p>
+<p>The illustration uses conceptual charge symbols rather than measured particle counts. Its caption says that angle alone identifies neither a universal charge amount nor its sign. The device is shown for explanation, not as a construction requiring sharp foil or glass parts.</p>
+<figure><img src="../../illustrations/class-8/day_53.svg" alt="Diagram for How can an electroscope reveal an object's charge?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>Electroscopes illustrate how an invisible electrical arrangement can become a visible mechanical effect. That conversion is a general instrument principle: a detector links a target phenomenon to an observable response.</p>
+<p>In school demonstrations, dry conditions and suitable insulation often matter. A weak response can reflect the apparatus or surroundings rather than proving that the tested object has no electrical influence.</p>
+<p>Never connect an electroscope or any homemade detector to a wall socket, battery pack intended for high voltage or unknown equipment. The lesson concerns small static effects and a paper model; it is not an invitation to investigate household wiring.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper, a pencil and two colours for charge symbols. No foil cutting, glass container or electrical supply is needed.</p>
+<ol>
+<li>Draw a terminal connected to two leaves.</li>
+<li>Put like-charge markers on both and add repulsion arrows.</li>
+<li>Draw a nearby object with a clear gap at the terminal.</li>
+<li>Redistribute symbols while keeping the detector's total unchanged.</li>
+<li>Make a separate contact picture with an actual transfer arrow.</li>
+</ol>
+<p>Ask a partner to identify which picture requires material contact and which does not. The symbol count is a bookkeeping model, not the real number of electrons. Do not infer an exact charge or sign from the size of your drawn leaf angle.</p>
+</div><h2>7. Think deeper</h2>
+<p>If a detector begins already charged, why can its response to a new nearby object differ from the simple neutral-detector example? Identify the initial condition that must be known before interpreting a change.</p>
+<p>Now imagine leaves moving because someone blows on them. What comparison would help distinguish that disturbance from an electrical effect? A detector's visible output needs a tested connection to its intended cause.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>Why do like-charged electroscope leaves separate?</p>
+<ul>
+<li>A. They always receive opposite charges</li>
+<li>B. They need a hidden motor</li>
+<li>C. They repel one another</li>
+</ul>
+<p><strong>Answer:</strong> C — Like-charge repulsion produces an outward electrical force on the light leaves.</p>
+<h3>Q2</h3>
+<p>How can a nearby object affect an isolated neutral electroscope without touching?</p>
+<ul>
+<li>A. It must reverse gravity on the leaves</li>
+<li>B. It can redistribute charge within the conductor</li>
+<li>C. It must create new electrons from nothing</li>
+</ul>
+<p><strong>Answer:</strong> B — The external field can change local charge distribution without contact transfer.</p>
+<h3>Q3</h3>
+<p>Two different electroscopes show the same angle. What should you avoid assuming?</p>
+<ul>
+<li>A. That the charge amounts must be identical</li>
+<li>B. That their designs may differ</li>
+<li>C. That their leaves have visible positions</li>
+</ul>
+<p><strong>Answer:</strong> A — Angle depends on apparatus and conditions, so it is not a universal charge calibration.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a two-panel explanation labelled contact and no contact. Track total detector charge and local leaf charge separately. Include the mechanical reason for spreading in both appropriate examples.</p>
+<p>Add a limitation stating that an unknown deflection does not automatically reveal charge sign. Your explanation must not introduce a hidden electrical current from a wall supply or claim that electrons always jump across the gap merely because the leaves move.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A detector can show an electrical response while its total charge remains unchanged. Redistribution within the conductor is enough to change local forces. This illustrates why knowing only a whole object's total charge can miss the spatial arrangement that determines its behaviour near another object.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>An electroscope's like-charged leaves repel; contact can transfer charge, while a nearby object can redistribute it without changing the isolated detector's total.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 8 · Month 2 · Day 23 of 30</footer>
+</div>
+</body>
+</html>

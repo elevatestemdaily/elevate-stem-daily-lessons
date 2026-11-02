@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 54: How does a tidal barrage choose when to release water? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 10 · DAY 54</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How does a tidal barrage choose when to release water?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 10</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Explain how a tidal barrage uses the timing of water-level differences. Follow an <strong>ebb-generation</strong> example from basin filling to holding and controlled release. Focus on stored head and scheduling, rather than repeating why tides exist or how an electrical generator works.</p>
+</div><h2>1. The mystery</h2>
+<p>Suppose a coastal basin is separated from the sea by a barrier with controlled openings. The sea level rises and falls, but a useful release does not mean leaving every opening wide all the time.</p>
+<p>If the water levels on both sides continually equalise, little useful difference remains across the barrier. Holding water while the outside level changes can create a difference that a controlled flow can exploit.</p>
+<p>The interesting question is when to connect the basin to the sea and when to hold it apart. Timing can be as important as the barrier itself.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>tidal barrage</strong> is a barrier across a suitable tidal inlet or basin. Openings and turbine passages allow control of exchange between basin and sea. We take the changing tide as an input rather than re-explaining its astronomical origin.</p>
+<p>The vertical difference between the basin water surface and the sea surface is a form of <strong>head</strong>. A larger usable head generally offers more energy per unit mass of water passing through an appropriate route, though a real installation has many constraints.</p>
+<p>In one simplified <strong>ebb-generation</strong> cycle, openings allow the basin to fill as the tide rises. Around the high-water part of the cycle, control gates can hold water in the basin while the sea outside starts falling.</p>
+<p>As the sea falls, the retained basin surface stands higher. Once a useful level difference exists, controlled release through the turbine route allows water to move from the higher basin toward the lower sea. Energy is extracted from that flow.</p>
+<p>As release proceeds, the basin level changes too. The head is therefore not a fixed number throughout the generating period. Continuing sea-level change, basin area, gate settings and the rate of release all affect the evolving difference.</p>
+<p>Useful power depends on both <strong>head</strong> and <strong>flow rate</strong>, along with conversion losses and equipment limits. A large flow with almost no head is not equivalent to the same flow under a substantial usable head. Opening everything instantly is not automatically the best schedule.</p>
+<p>When head becomes too small for the intended operating mode, generation can stop and the system prepares for another part of the cycle. The exact operating thresholds depend on the design; this lesson invents no universal water-level trigger or release duration.</p>
+<p>Some barrage systems can generate during incoming flow or in both directions. The example here is deliberately one ebb-oriented operating sequence, not a claim that all real tidal facilities use an identical schedule.</p>
+<p>A barrage differs from a free-standing tidal-stream turbine. It controls water exchange and the basin level to use a head difference. Its effect on an inlet also raises questions about sediment, habitats, navigation and other water uses that cannot be settled by an energy sketch alone.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw three snapshots of the same basin and sea. First, show filling with similar high levels. Second, close the ordinary exchange route and let the sea surface fall while the basin remains comparatively high.</p>
+<p>Third, open a controlled release route with an arrow through the energy-extraction passage. Mark head as the difference between the two water surfaces, not as the depth below the seabed.</p>
+<p>Use the same basin outline in every snapshot. Changing both the shape and the tide would make the sequence harder to interpret. The model shows timing and relative levels without assigning real engineering dimensions or a guaranteed output.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG uses three panels: fill, hold and release. Separate horizontal water surfaces indicate the basin and sea levels in each stage. A vertical bracket identifies the usable head during the release example.</p>
+<p>Gate symbols distinguish a connected route from a held boundary. The release arrow passes through the simplified turbine passage, while captions state that head changes during operation.</p>
+<p>The graphic is not a dam-construction plan. It does not show generator windings or orbital forces because those are not the new mechanism being explained. Its labels describe one ebb-generation sequence with qualitative levels.</p>
+<figure><img src="../../illustrations/class-10/day_54.svg" alt="Diagram for How does a tidal barrage choose when to release water?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>India has coastal regions where students may discuss tidal-energy possibilities. A suitable project would need detailed local records, tidal range, basin geometry and assessments of existing uses. The presence of a coast alone does not establish that a barrage is appropriate.</p>
+<p>Water-level timing is also familiar from controlled irrigation storage, but the sea boundary in this lesson changes through a tidal cycle. A barrage schedule must respond to both sides of the barrier.</p>
+<p>Students should work from diagrams rather than visiting gates, embankments or fast-flowing tidal channels. No model involving deep water or a constructed barrier is needed for the paper timing activity.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use paper and a pencil to make three side-by-side basin sketches.</p>
+<ol>
+<li>Mark the filling stage with a rising external level.</li>
+<li>Mark a held basin while the sea level falls.</li>
+<li>Draw a release arrow from the higher side through a turbine route.</li>
+<li>Label the water-surface difference as head.</li>
+<li>Add a later release snapshot with a changed difference.</li>
+</ol>
+<p>Keep all levels qualitative and clearly label basin and sea. Ask a partner what would happen to the stored difference if an unrestricted opening kept both surfaces equal. This tests the role of timing without prescribing an operating schedule for a real installation.</p>
+</div><h2>7. Think deeper</h2>
+<p>Why might waiting create more usable head but also change the available flow and time remaining in a cycle? The decision involves a changing system rather than one permanently favourable level difference.</p>
+<p>Now imagine a drawing that marks head from the basin surface to the bottom of the sea. What is wrong with that definition here? Explain why the relevant comparison is between the two water surfaces across the controlled route.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>What is head in the simplified barrage model?</p>
+<ul>
+<li>A. Only the total depth beneath the basin</li>
+<li>B. The difference between basin and sea surfaces</li>
+<li>C. The length of the coastline on a map</li>
+</ul>
+<p><strong>Answer:</strong> B — The water-surface difference across the controlled route supplies the relevant head.</p>
+<h3>Q2</h3>
+<p>Why hold basin water while the outside tide falls?</p>
+<ul>
+<li>A. To build a usable basin-to-sea level difference</li>
+<li>B. To ensure both levels always stay identical</li>
+<li>C. To stop the sea from having tides permanently</li>
+</ul>
+<p><strong>Answer:</strong> A — Retaining water while the sea falls can create head for a later controlled release.</p>
+<h3>Q3</h3>
+<p>An unrestricted opening keeps both surfaces nearly equal. What is the consequence?</p>
+<ul>
+<li>A. Maximum power is guaranteed at every instant</li>
+<li>B. Stored head must increase without limit</li>
+<li>C. Little head remains across that route</li>
+</ul>
+<p><strong>Answer:</strong> C — Continuous equalisation prevents a substantial retained surface-level difference in this comparison.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Create a gate-timing storyboard for the simplified ebb-generation case. Include filling, holding, useful head, controlled release and a condition for stopping that release.</p>
+<p>State two additional questions a real proposal would need to answer, such as sediment movement or navigation. Do not invent a power rating, site approval or threshold. Your design argument must show how timing creates an opportunity without claiming that every coastline supplies the same one.</p>
+</div><h2>10. One surprising idea</h2>
+<p>A barrier can gain usefulness by temporarily preventing a flow rather than maximising flow at every instant. Holding water allows the changing sea boundary to create a later difference. The engineering value lies in the sequence of connection and separation, not simply in making the largest opening possible.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>In an ebb-generation barrage model, filling, holding and controlled release create and use a changing basin-to-sea head; timing and flow together shape the opportunity.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 10 · Month 2 · Day 24 of 30</footer>
+</div>
+</body>
+</html>

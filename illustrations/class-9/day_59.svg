@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does an air-temperature inversion trap city pollution?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Same hypothetical sources, different vertical dispersion</text>
+<text x="250" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Stable warmer-over-cooler layer</text>
+<text x="750" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Deeper mixing comparison</text>
+<rect x="70" y="180" width="360" height="70" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="70" y="250" width="360" height="110" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="570" y="180" width="360" height="180" rx="8" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="140" y1="340" x2="140" y2="280" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="250" y1="340" x2="250" y2="280" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="360" y1="340" x2="360" y2="280" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="640" y1="340" x2="640" y2="205" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="750" y1="340" x2="750" y2="205" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="860" y1="340" x2="860" y2="205" stroke="#1f5f8b" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="110" cy="320" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="170" cy="305" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="225" cy="335" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="280" cy="300" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="340" cy="325" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="400" cy="310" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="610" cy="210" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="670" cy="325" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="725" cy="250" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="780" cy="195" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="840" cy="315" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="900" cy="270" r="4" fill="#1f5f8b" stroke="#1f5f8b" stroke-width="2"/>
+<text x="250" y="414" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Reduced vertical mixing</text>
+<text x="750" y="414" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Material spreads through more air</text>
+<text x="500" y="460" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">An inversion is an air-temperature profile, not a solid roof.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Concentration can change without an equal change in source emissions.</text>
+</svg>

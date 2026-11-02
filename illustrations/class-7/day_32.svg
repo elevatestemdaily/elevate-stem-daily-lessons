@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How does Cuscuta take food from a host plant?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">A feeding attachment connects two living plants</text>
+<text x="265" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Green host stem</text>
+<text x="735" y="135" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Cuscuta attachment</text>
+<rect x="215" y="165" width="160" height="185" rx="12" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="260" y="180" width="30" height="155" rx="0" fill="#ddeeff" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="310" y="180" width="30" height="155" rx="0" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M700 175 C760 190 760 230 700 245 C630 260 630 300 700 325" fill="none" stroke="#e6a23c" stroke-width="16"/>
+<path d="M690 245 L380 245 L328 265 L380 283 L690 283 Z" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="346" y1="264" x2="615" y2="264" stroke="#1f5f8b" stroke-width="4" marker-end="url(#arrow)"/>
+<text x="265" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Internal transport tissues</text>
+<text x="735" y="390" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Haustorium enters the host</text>
+<text x="500" y="425" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Arrows: host resources enter the parasite</text>
+<line x1="190" y1="450" x2="340" y2="450" stroke="#579b70" stroke-width="8"/>
+<line x1="610" y1="450" x2="790" y2="450" stroke="#e6a23c" stroke-width="4"/>
+<text x="265" y="472" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Living supply connection</text>
+<text x="735" y="472" text-anchor="middle" font-family="Arial" font-size="14" font-weight="400" fill="#1f5f8b">Thread contact alone: no supply</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Coiling supports contact; haustoria provide access to resources.</text>
+</svg>

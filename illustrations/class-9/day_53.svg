@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">How can an apiary location improve a honey harvest?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">A resource map needs flowering timing as well as location</text>
+<text x="240" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Fictional apiary landscape</text>
+<text x="745" y="135" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1f5f8b">Different flowering windows</text>
+<rect x="180" y="240" width="110" height="75" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<circle cx="100" cy="190" r="28" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="240" y1="240" x2="100" y2="190" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="385" cy="215" r="28" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="240" y1="240" x2="385" y2="215" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<circle cx="330" cy="345" r="28" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<line x1="240" y1="240" x2="330" y2="345" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="575" y="190" width="145" height="20" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="650" y="250" width="175" height="20" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<rect x="790" y="310" width="130" height="20" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<text x="750" y="386" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Early → middle → later model periods</text>
+<text x="250" y="420" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Nectar and pollen are distinct resources</text>
+<text x="500" y="465" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Adding colonies changes demand, not the supply of flowers.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Use paper resources and local evidence; do not approach or move hives.</text>
+</svg>

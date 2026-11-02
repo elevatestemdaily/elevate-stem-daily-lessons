@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560">
+<rect width="1000" height="560" fill="#f8fbff"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#1f5f8b"/></marker></defs>
+<text x="500" y="40" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1f5f8b" data-role="title">Why do woollen layers keep you warm?</text>
+<text x="500" y="75" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Insulation maintains sheltered air; it does not generate heat</text>
+<text x="170" y="132" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Warm inner object</text>
+<text x="495" y="132" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Loose fibres and air</text>
+<text x="820" y="132" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">Cooler surroundings</text>
+<rect x="95" y="180" width="150" height="150" rx="8" fill="#e6a23c" stroke="#1f5f8b" stroke-width="2"/>
+<path d="M350 183 Q385 169 420 183 T490 183 T560 183 T630 183" fill="none" stroke="#579b70" stroke-width="5"/>
+<path d="M350 212 Q385 198 420 212 T490 212 T560 212 T630 212" fill="none" stroke="#579b70" stroke-width="5"/>
+<path d="M350 241 Q385 227 420 241 T490 241 T560 241 T630 241" fill="none" stroke="#579b70" stroke-width="5"/>
+<path d="M350 270 Q385 256 420 270 T490 270 T560 270 T630 270" fill="none" stroke="#579b70" stroke-width="5"/>
+<path d="M350 299 Q385 285 420 299 T490 299 T560 299 T630 299" fill="none" stroke="#579b70" stroke-width="5"/>
+<path d="M350 328 Q385 314 420 328 T490 328 T560 328 T630 328" fill="none" stroke="#579b70" stroke-width="5"/>
+<line x1="270" y1="205" x2="325" y2="205" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="655" y1="205" x2="715" y2="205" stroke="#1f5f8b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="270" y1="265" x2="325" y2="265" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="655" y1="265" x2="715" y2="265" stroke="#1f5f8b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="270" y1="320" x2="325" y2="320" stroke="#1f5f8b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="655" y1="320" x2="715" y2="320" stroke="#1f5f8b" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="835" y1="165" x2="835" y2="340" stroke="#1f5f8b" stroke-width="5"/>
+<text x="170" y="389" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Energy is already present</text>
+<text x="495" y="389" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Small still-air spaces</text>
+<text x="820" y="389" text-anchor="middle" font-family="Arial" font-size="15" font-weight="400" fill="#1f5f8b">Cover limits wind entry</text>
+<rect x="370" y="420" width="250" height="15" rx="8" fill="#579b70" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="463" text-anchor="middle" font-family="Arial" font-size="16" font-weight="400" fill="#1f5f8b">Compression reduces thickness and displaces some air.</text>
+<line x1="40" y1="484" x2="960" y2="484" stroke="#1f5f8b" stroke-width="2"/>
+<text x="500" y="519" text-anchor="middle" font-family="Arial" font-size="17" font-weight="700" fill="#1f5f8b">The temperature difference sets direction; insulation slows transfer.</text>
+</svg>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day 45: How can repeated timings make a race result more trustworthy? | STEM Idea Probe</title>
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/brand/favicon_32.png">
+<link rel="apple-touch-icon" href="../../assets/brand/favicon_180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A5B; --navy-deep:#071A3E; --navy-soft:#4A6080;
+    --offwhite:#F6F7FA; --white:#FFFFFF; --line:#E3E7EF;
+    --electric:#0AA0F5; --teal:#22B24C; --amber:#FFC628;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--offwhite); color:var(--navy); font-family:'Plus Jakarta Sans', sans-serif; line-height:1.65;}
+  .wrap{max-width:680px; margin:0 auto; padding:0 24px 80px;}
+  header{background:var(--navy); color:#fff; padding:18px 0;}
+  header .hwrap{max-width:680px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between;}
+  header .brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:#fff;}
+  header .brand-name{font-weight:800; font-size:1rem; white-space:nowrap; line-height:1;}
+  header .day-badge{font-family:'IBM Plex Mono'; font-size:0.72rem; font-weight:600; background:rgba(255,255,255,0.12); padding:5px 12px; border-radius:999px; flex-shrink:0;}
+  .eyebrow{font-family:'IBM Plex Mono'; font-size:0.74rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--electric); margin:36px 0 10px;}
+  h1{font-size:1.9rem; font-weight:800; line-height:1.2; margin:0 0 8px;}
+  .meta{color:var(--navy-soft); font-size:0.86rem; margin-bottom:32px;}
+  .meta span:not(:last-child)::after{content:"·"; margin:0 8px; color:var(--line);}
+  h2{font-size:1.2rem; font-weight:800; margin:38px 0 12px;}
+  h3{font-size:1rem; font-weight:700; margin:24px 0 10px; color:var(--navy);}
+  p{margin:0 0 14px; color:#2A3552;}
+  .card{background:var(--white); border:1px solid var(--line); border-radius:14px; padding:22px 24px; margin:20px 0;}
+  .card h2{margin-top:0;}
+  .mission-card{background:var(--navy); color:#fff; border-radius:14px; padding:24px 26px; margin:24px 0;}
+  .mission-card p{color:#DDE4F0; margin-bottom:0;}
+  .mission-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:#7DD6FC; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block;}
+  figure{margin:26px 0; text-align:center;}
+  figure img{max-width:100%; border-radius:12px; border:1px solid var(--line);}
+  figcaption{font-size:0.8rem; color:var(--navy-soft); margin-top:10px;}
+  ul, ol{padding-left:22px; color:#2A3552;}
+  li{margin-bottom:8px;}
+  blockquote{border-left:4px solid var(--electric); margin:18px 0; padding:12px 18px; background:var(--white); border-radius:0 8px 8px 0;}
+  blockquote p{margin:0; color:var(--navy);}
+  .quiz-item{border-left:3px solid var(--electric); padding-left:16px; margin-bottom:18px;}
+  .quiz-item .q{font-weight:700; margin-bottom:4px;}
+  .quiz-item .a{color:var(--navy-soft); font-size:0.9rem; background:var(--offwhite); border-radius:8px; padding:10px 12px; margin-top:6px;}
+  .takeaway{background:linear-gradient(135deg, var(--navy), #112E60); color:#fff; border-radius:14px; padding:26px; margin:34px 0; text-align:center;}
+  .takeaway .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; display:block;}
+  .takeaway p{color:#fff; font-size:1.05rem; font-weight:600; margin:0;}
+  .challenge-card{border:1.5px dashed var(--teal); border-radius:14px; padding:20px 22px; margin:24px 0; background:rgba(34,178,76,0.05);}
+  .challenge-card .label{font-family:'IBM Plex Mono'; font-size:0.7rem; color:var(--teal); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px; display:block; font-weight:700;}
+  code{background:var(--offwhite); border:1px solid var(--line); border-radius:4px; padding:2px 6px; font-family:'IBM Plex Mono'; font-size:0.85em;}
+  footer.page-footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:0.78rem; color:var(--navy-soft); text-align:center;}
+  @media(max-width:480px){
+    h1{font-size:1.5rem;}
+    header .brand img{height:32px;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="../../index.html">
+      <img src="../../assets/brand/icon_bulb_transparent.png" alt="STEM Idea Probe" style="height:40px;width:auto;display:block;">
+      <span class="brand-name"><span style="color:#fff;">STEM </span><span style="color:#F2332C;">I</span><span style="color:#FF8A00;">d</span><span style="color:#22B24C;">e</span><span style="color:#0AA0F5;">a</span><span style="color:#fff;"> Probe</span></span>
+    </a>
+    <span class="day-badge">CLASS 7 · DAY 45</span>
+  </div>
+</header>
+<div class="wrap">
+  <span class="eyebrow">Today's Science Mystery</span>
+  <h1>How can repeated timings make a race result more trustworthy?</h1>
+  <div class="meta"><span>10 min read</span><span>Daily STEM</span><span>Class 7</span></div>
+
+  <div class="mission-card"><span class="label">Today's Mission</span>
+<p>Use repeated manual timings to describe variation in a measured result. Calculate a simple <strong>range</strong> and <strong>mean</strong> from example data. Explain why repetition helps reveal random variation without claiming that averaging removes every possible measurement error.</p>
+</div><h2>1. The mystery</h2>
+<p>Three friends time the same short practice race. Their stopwatches do not agree exactly. Nobody changed the track length, but fingers started and stopped at slightly different moments. Each reading contains both information about the run and variation from the measuring process.</p>
+<p>One student wants to choose the fastest reading because it looks impressive. Another wants to hide the disagreement and publish only an average. A stronger report keeps the individual readings, explains the conditions and uses a summary that does not pretend the variation disappeared.</p>
+<h2>2. The science behind it</h2>
+<p>A <strong>measurement</strong> connects a physical event with a recorded value. Manual timing includes several decisions: recognising the start signal, pressing the start control, recognising the finish and pressing stop. Human responses can differ slightly each time.</p>
+<p><strong>Random variation</strong> makes repeated readings spread around rather than agree exactly. A <strong>repeat</strong> means performing the measurement again under comparable conditions. Repeats help show the size of the spread and reveal whether a single reading is unusual relative to the others.</p>
+<p>Consider an invented practice dataset: 10.2 seconds, 10.4 seconds and 10.3 seconds. The <strong>range</strong> is the largest minus the smallest reading, so it is 0.2 seconds. These numbers illustrate arithmetic; they are not statistics about Indian students or measured results from this activity.</p>
+<p>The <strong>mean</strong> is the total divided by the number of readings. Here the total is 30.9 seconds, and dividing by three gives 10.3 seconds. The mean uses information from all three readings instead of selecting only the one that makes the result look best.</p>
+<p>A mean does not erase the original spread. Report that the readings ranged from 10.2 to 10.4 seconds if the variation matters to the comparison. A difference smaller than the observed timing variation may not support a confident claim about which runner is faster.</p>
+<p>Repeated timings can refer to different arrangements. Several observers timing the same run mostly compare their measurement processes. One runner completing several runs introduces genuine performance differences as well. Those two datasets should not be interpreted as if they tested exactly the same thing.</p>
+<p>Averaging helps with some random effects, but not every error. If a device's clock is consistently wrong, taking more readings does not automatically correct it. That limitation matters, although this lesson focuses on observed variation rather than a full study of calibration and accuracy.</p>
+<p>An unusual reading should prompt investigation. Perhaps someone missed the start signal or pressed the wrong control. Do not delete it merely because it is inconvenient. Record the reason for excluding a value, and keep enough information for someone else to understand the decision.</p>
+<h2>3. Build the mental model</h2>
+<p>Draw a horizontal time line. Place one dot for each reading, then mark the lowest and highest dots. The span between them shows the range. Put a different symbol at the mean.</p>
+<p>The dots are the evidence; the mean is a summary. Keeping both prevents the summary from concealing the size of the disagreement. A cluster of readings tells a different story from widely scattered readings with the same mean.</p>
+<p>Now draw two datasets with the same average but different spreads. You do not need advanced statistics to see why those datasets would support different levels of confidence in a tiny difference between results.</p>
+<h2>4. Visual explanation</h2>
+<p>The SVG shows three example readings on a number line and a bracket marking their range. A central marker identifies the mean. The same values appear in a separate arithmetic panel.</p>
+<p>A second pair of small dot plots shows similar central positions with different spreads. The diagram's job is to connect a numerical summary with the readings that produced it, not to introduce a new physical law.</p>
+<p>Every number is labelled as invented example data. The arrows and dots therefore teach reporting and arithmetic without pretending that an experiment or school race actually produced those values.</p>
+<figure><img src="../../illustrations/class-7/day_45.svg" alt="Diagram for How can repeated timings make a race result more trustworthy?"><figcaption>Today's visual explanation.</figcaption></figure>
+
+<h2>5. Real-world connection</h2>
+<p>School sports events often depend on timing. When a close finish matters, start and finish procedures become especially important. Repeating practice measurements can reveal how much a handheld timing method varies before anyone uses it to compare very small differences.</p>
+<p>A science class might time the passage of a toy car between marks. Several observers can measure the same trip, keeping the motion identical while comparing their readings. Releasing the car repeatedly instead changes the trial itself and can introduce release variation.</p>
+<p>A useful notebook records the method as well as the numbers. Without that context, a table of repeated values may mix different sources of variation and invite the wrong conclusion.</p>
+<div class="card"><h2>6. Mini activity — 5 minutes</h2>
+<p>Use a phone stopwatch with permission, paper and a pencil. Remain seated or stand safely; no racing is needed.</p>
+<ol>
+<li>Choose a target interval, such as roughly ten seconds.</li>
+<li>Start the stopwatch, hide its display and try to stop at that interval.</li>
+<li>Record the displayed result without changing it.</li>
+<li>Repeat several times using the same procedure.</li>
+<li>Find the smallest and largest values, then calculate the range.</li>
+</ol>
+<p>If time allows, calculate a mean too. This exercise measures a mixture of your interval estimation and button timing, not the accuracy of the phone clock. Label it honestly so the activity does not claim to isolate one source of variation that it actually combines with another.</p>
+</div><h2>7. Think deeper</h2>
+<p>Two runners differ by 0.1 seconds in one pair of manual readings, while practice timings of the same event vary by several tenths of a second. What should you say about the strength of the evidence?</p>
+<p>Suggest a better measurement arrangement rather than simply declaring the smaller number the winner. Consider a shared recording of the start and finish, while recognising that any new method also needs a clear procedure.</p>
+<h2>8. Quick quiz</h2>
+<h3>Q1</h3>
+<p>How is the range of repeated readings calculated?</p>
+<ul>
+<li>A. Smallest reading multiplied by the count</li>
+<li>B. Largest reading minus smallest reading</li>
+<li>C. Total divided by the largest reading</li>
+</ul>
+<p><strong>Answer:</strong> B — The range measures the span from the smallest to the largest recorded value.</p>
+<h3>Q2</h3>
+<p>Why keep the individual readings after calculating a mean?</p>
+<ul>
+<li>A. The readings must all be deleted</li>
+<li>B. The mean proves all readings were exact</li>
+<li>C. The readings reveal the spread</li>
+</ul>
+<p><strong>Answer:</strong> C — The individual values preserve information about variation hidden by one summary.</p>
+<h3>Q3</h3>
+<p>The invented times are 10.2, 10.4 and 10.3 seconds. What is their mean?</p>
+<ul>
+<li>A. 10.3 seconds</li>
+<li>B. 30.9 seconds</li>
+<li>C. 0.2 seconds</li>
+</ul>
+<p><strong>Answer:</strong> A — Their sum is 30.9 seconds; dividing by three gives 10.3 seconds.</p>
+<div class="challenge-card"><span class="label">Challenge</span>
+<p>Write a short race-timing report using the invented readings 10.2, 10.4 and 10.3 seconds. Include the individual values, their mean and their range, with units.</p>
+<p>Explain whether the data alone justify reporting a result to many decimal places. Add a sentence distinguishing several observers timing one run from one observer timing several different runs. That distinction should be visible in the table heading, not hidden in a footnote.</p>
+</div><h2>10. One surprising idea</h2>
+<p>Two collections of readings can have the same mean and very different spreads. One number cannot describe every important feature of a dataset. Repetition adds value when the report preserves the differences it reveals, rather than using an average to make the disagreement invisible.</p>
+<div class="takeaway"><span class="label">Daily Takeaway</span>
+<p><strong>Repeated timings reveal variation; report the readings and a suitable summary instead of assuming one value or an average is perfectly exact.</strong></p></div>
+
+  <footer class="page-footer">STEM Idea Probe · Daily Discovery for Young Minds · Class 7 · Month 2 · Day 15 of 30</footer>
+</div>
+</body>
+</html>
